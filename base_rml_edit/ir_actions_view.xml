@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		
+		<record model='ir.ui.view' id='act_report_xml_view_inherit_rml'>
+			<field name='name'>ir.actions.report.xml.inherit.rml</field>
+			<field name='model'>ir.actions.report.xml</field>
+			<field name='inherit_id' ref='base.act_report_xml_view'/>
+			<field name='type'>form</field>
+			<field name='arch' type='xml'>
+				<xpath expr="/form/notebook/page[@string='Security']" position="after">
+					<page string="RML Edit">
+						<separator string="RML Syntax" colspan="4"/>
+						<field name="report_rml_content_txt" nolabel="1" colspan="4"/>
+						
+					</page>
+				</xpath>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

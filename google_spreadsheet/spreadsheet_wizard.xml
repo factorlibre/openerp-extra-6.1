@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+            
+        <record model="ir.ui.view" id="worksheet_import_view_wiz_form_1">
+            <field name="name">google.worksheet.import.wizard.form.login</field>
+            <field name="model">google.worksheet.import.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Wizard">
+					<label string="Put your Google user and password to get the Spreadsheet:" colspan="4"/>
+					<newline/>
+					<field name="email" string="Google User (email)" colspan="4"/>
+					<newline/>
+					<field name="password" password="True" colspan="4"/>
+					<newline/>
+                    <button name="action_login" 
+                            string="Connect to Google"                 
+                            type="object" 
+                            icon="gtk-ok"
+                            colspan="2"
+                            />
+					
+                    <button type="special" special="cancel"
+                                            string="Cancel" 
+                                            icon="gtk-cancel"
+                                            colspan="2"/>
+
+                </form>
+            </field>
+        </record>
+            
+        <record model="ir.ui.view" id="worksheet_import_view_wiz_form_2">
+            <field name="name">google.worksheet.import.wizard.form.get_data</field>
+            <field name="model">google.worksheet.import.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Wizard">
+					<label string="Welcome" colspan="4"/>
+					<newline/>
+					<field name="email" colspan="4" readonly="True"/>
+					<label string="Select the Google Spreadsheet and the Worksheet as data source:" colspan="4"/>
+					<newline/>
+					<field name="worksheet_id" colspan="4"/>
+					<newline/>
+					<label string="Select the model on OpenERP as destination of the data:" colspan="4"/>
+					<newline/>
+					<field name="model_id" colspan="4"/>
+					<newline/>
+                    <button name="action_get_data" 
+                            string="Get Data"                 
+                            type="object" 
+                            icon="gtk-ok"
+                            colspan="2"/>
+                    <button type="special" special="cancel"
+                                            string="Cancel" 
+                                            icon="gtk-cancel"
+                                            colspan="2"/>
+                            
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="worksheet_import_view_wiz_form_3">
+            <field name="name">google.worksheet.import.wizard.form.do</field>
+            <field name="model">google.worksheet.import.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Import Data">
+			<field name="worksheet_id" readonly="True"/>
+			<field name="model_id" readonly="True"/>
+			<field name="email" readonly="True"/>
+			<group col="4" colspan="2">
+				<field name="partial"/>
+				<field name="row_data"/>
+			</group>
+		       <notebook colspan="4">
+				<page string="Fields Mapping">
+					<field name="import_fields" mode="tree,form" nolabel="1" colspan="4"/>
+					<button name="action_refresh_fields" string="Refresh Fields" type="object" confirm="Are you sure?"/>
+				</page>
+				<page string="Rows to Import">
+					<field name="import_data" mode="tree,form" nolabel="1" colspan="4"/>
+					<button name="action_refresh_data" string="Refresh Data" type="object" confirm="Are you sure?"/>
+				</page>
+				<page string="Messages">
+					<separator string="Messages Output" colspan="4"/>
+					<field name="messages" nolabel="1" colspan="4"/>
+					<separator string="Last Errors" colspan="4"/>
+					<field name="errors" nolabel="1" colspan="4"/>
+				</page>
+			</notebook>
+                    <button type="special" special="cancel"
+                                            string="Exit" 
+                                            icon="gtk-cancel"
+                                            confirm="Are you sure to exit?"
+                                            colspan="2"/>
+                    <button name="action_do_import" 
+                            string="Process"                 
+                            type="object" 
+                            confirm="Do you want start the process data import?"
+                            icon="gtk-ok"
+                            colspan="2"/>
+
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="google_worksheet_tree">
+            <field name="name">google.worksheet.tree</field>
+            <field name="model">google.worksheet</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Google Worksheets">
+			<field name="key_title"/>
+			<field name="worksheet_title"/>
+			<field name="key_id"/>
+			<field name="worksheet_id"/>
+                </tree>
+            </field>
+        </record>
+	<record model="ir.ui.view" id="google_worksheet_form">
+            <field name="name">google.worksheet.form</field>
+            <field name="model">google.worksheet</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Google Worksheet">
+			<field name="key_title"/>
+			<field name="worksheet_title"/>
+			<field name="key_id"/>
+			<field name="worksheet_id"/>
+			<field name="key_url"/>
+			
+			<notebook colspan="4">
+				<page string="Fields Mapping">
+					<field name="fields_mapping" mode="tree,form" nolabel="1" colspan="4"/>
+					<!--button name="action_refresh_fields" string="Refresh Fields" type="object" confirm="Are you sure?"/-->
+				</page>
+				<page string="Worksheet Columns">
+					<field name="field_ids" mode="tree,form" nolabel="1" colspan="4"/>
+					<!--button name="action_refresh_data" string="Refresh Data" type="object" confirm="Are you sure?"/-->
+				</page>
+				<page string="Worksheet Rows">
+					<field name="row_ids" mode="tree,form" nolabel="1" colspan="4"/>
+					<!--button name="action_refresh_data" string="Refresh Data" type="object" confirm="Are you sure?"/-->
+				</page>
+				<page string="Worksheet Cells">
+					<field name="cell_ids" mode="tree,form" nolabel="1" colspan="4"/>
+					<!--button name="action_refresh_data" string="Refresh Data" type="object" confirm="Are you sure?"/-->
+				</page>
+				<page string="Messages">
+					<separator string="Messages Output" colspan="4"/>
+					<field name="messages" nolabel="1" colspan="4"/>
+					<separator string="Last Errors" colspan="4"/>
+					<field name="errors" nolabel="1" colspan="4"/>
+				</page>
+			</notebook>
+			<!--button name="action_refresh" string="Reload Worksheet" type="object" confirm="Are you sure?" icon="gtk-ok" colspan="2"/-->
+			<!--button name="action_do_import" string="Import from worksheet" type="object" confirm="Are you sure?" icon="gtk-ok" colspan="2"/-->
+                </form>
+            </field>
+        </record>
+	
+	
+        <record model="ir.ui.view" id="google_worksheet_columns_tree">
+            <field name="name">google.worksheet.columns.tree</field>
+            <field name="model">google.worksheet.columns</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Google Worksheets Columns">
+		    <field name="col"/>
+		    <field name="name"/>
+		    <field name="column"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="google_worksheet_columns_form">
+            <field name="name">google.worksheet.columns.form</field>
+            <field name="model">google.worksheet.columns</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Google Worksheet Column">
+			<field name="name"/>
+			<group colspan="2">
+				<field name="col"/>
+				<field name="column"/>
+			</group>
+			<separator string="Cells Data" colspan="4"/>
+			<field name="cell_ids" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="google_worksheet_fields_mapping_tree">
+            <field name="name">google.worksheet.fields.mapping.tree</field>
+            <field name="model">google.worksheet.fields.mapping</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+		<tree editable="bottom" string="Fields Mapping">
+			<field name="model_field_id"/>
+			<field name="worksheet_field_id"/>
+		</tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="google_worksheet_fields_mapping_form">
+            <field name="name">google.worksheet.fields.mapping.form</field>
+            <field name="model">google.worksheet.fields.mapping</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Fields Mapping">
+			<field name="model_field_id"/>
+			<field name="worksheet_field_id"/>
+		</form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="google_worksheet_rows_tree">
+            <field name="name">google.worksheet.rows.tree</field>
+            <field name="model">google.worksheet.rows</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Google Worksheets Rows">
+		    <field name="row"/>
+		    <field name="name"/>
+		    <field name="state"/>
+		    <field name="error"/>
+		    <field name="row_id"/>
+                </tree>
+            </field>
+        </record>        
+        <record model="ir.ui.view" id="google_worksheet_rows_form">
+            <field name="name">google.worksheet.rows.form</field>
+            <field name="model">google.worksheet.rows</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Row Form">
+			<group colspan="2">
+				<field name="row"/>
+				<field name="row_id"/>
+			</group>
+			<field name="state"/>
+			<field name="row_url"/>
+			<field name="worksheet_id"/>
+			<label string="Content" colspan="2"/>
+			<label string="Errors" colspan="2"/>
+			<field name="content" colspan="2" nolabel="1"/>
+			<field name="error" colspan="2" nolabel="1"/>
+			<separator string="Cells Data" colspan="4"/>
+			<field name="cell_ids" colspan="4" nolabel="1" string="Cells"/>
+		</form>
+            </field>
+        </record>
+
+	
+        <record model="ir.ui.view" id="google_worksheet_cells_tree">
+            <field name="name">google.worksheet.cells.tree</field>
+            <field name="model">google.worksheet.cells</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+		<tree string="Cells" editable="bottom">
+			<field name="name"/>
+			<field name="content"/>
+			<field name="cell_id"/>
+			<field name="state"/>
+			<field name="cell_row"/>
+			<field name="cell_col"/>
+		</tree>
+            </field>
+        </record>  
+        <record model="ir.ui.view" id="google_worksheet_cells_form">
+            <field name="name">google.worksheet.cells.form</field>
+            <field name="model">google.worksheet.cells</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Google Worksheet Cells">
+					<field name="row_id"/>
+					<field name="col_id"/>
+					<field name="name"/>
+					<group colspan="2">
+						<field name="cell_row"/>
+						<field name="cell_col"/>
+					</group>
+					<separator string="Cell Content" colspan="4"/>
+					<field name="content" colspan="4" nolabel="1"/>
+					<field name="cell_id"/>
+					<field name="cell_url"/>
+					<field name="state"/>
+                </form>
+            </field>
+        </record>   
+
+
+        <record id="google_worksheet_import_wizard" model="ir.actions.act_window">
+             <field name="name">Import Data (Spreadsheet)</field>
+             <field name="res_model">google.worksheet.import.wizard</field>
+             <field name="src_model">ir.model</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+             <field name="view_id" ref="worksheet_import_view_wiz_form_1"/>
+             <field name="context">{'model_id':active_id}</field>
+             <field name="target">new</field>
+       </record>
+
+        <record id="google_worksheet_action" model="ir.actions.act_window">
+             <field name="name">Google Spreadsheet and Worksheet</field>
+             <field name="res_model">google.worksheet</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+        <record id="google_worksheet_columns_action" model="ir.actions.act_window">
+             <field name="name">Google Worksheet Columns Data</field>
+             <field name="res_model">google.worksheet.columns</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+        <record id="google_worksheet_rows_action" model="ir.actions.act_window">
+             <field name="name">Google Worksheet Rows Data</field>
+             <field name="res_model">google.worksheet.rows</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+        <record id="google_worksheet_cells_action" model="ir.actions.act_window">
+             <field name="name">Google Worksheet Cells Data</field>
+             <field name="res_model">google.worksheet.cells</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+       </record>
+
+		
+
+        <menuitem 
+            id="google_spreadsheet_menu" 
+            name="Google Spreadsheets" 
+            parent="base.menu_custom"/>
+	    <menuitem 
+		id="google_worksheet_menu" 
+		name="Google Worksheets" 
+		parent="google_spreadsheet_menu"
+		action="google_worksheet_action"/>
+	    <menuitem 
+		id="google_worksheet_columns_menu" 
+		name="Google Worksheets Columns Data" 
+		parent="google_spreadsheet_menu"
+		action="google_worksheet_columns_action"/>
+	    <menuitem 
+		id="google_worksheet_rows_menu" 
+		name="Google Worksheets Rows Data" 
+		parent="google_spreadsheet_menu"
+		action="google_worksheet_rows_action"/>
+	    <menuitem 
+		id="google_worksheet_cells_menu" 
+		name="Google Worksheets Cells Data" 
+		parent="google_spreadsheet_menu"
+		action="google_worksheet_cells_action"/>
+	    <menuitem 
+		id="google_worksheet_import_wizard_menu" 
+		name="Import Data from Spreadsheet to OpenERP" 
+		parent="google_spreadsheet_menu"
+		action="google_worksheet_import_wizard"/>
+
+
+
+
+
+    </data>
+</openerp>

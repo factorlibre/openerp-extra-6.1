@@ -1,0 +1,191 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-11 14:02+0000\n"
+"PO-Revision-Date: 2011-05-12 20:04+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: training_payment
+#: selection:training.payment,state:0
+msgid "Confirmed"
+msgstr "Confirmat"
+
+#. module: training_payment
+#: model:ir.ui.menu,name:training_payment.menu_training_payment
+msgid "e-sale Payments"
+msgstr "Pagaments web"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_offer_invoicing
+msgid "Training Offer Invoicing history"
+msgstr "Training Offer Invoicing history"
+
+#. module: training_payment
+#: field:training.offer.invoicing,state:0
+#: field:training.payment,state:0
+msgid "State"
+msgstr "Estat"
+
+#. module: training_payment
+#: selection:training.payment,state:0
+msgid "Draft"
+msgstr "Esborrany"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_offer_payment_line
+msgid "Training Offer Payment Line"
+msgstr "Training Offer Payment Line"
+
+#. module: training_payment
+#: view:training.payment:0
+msgid "External Referentials"
+msgstr "External Referentials"
+
+#. module: training_payment
+#: constraint:training.subscription.line:0
+msgid "Invalid Subscription"
+msgstr "Subscripció invàlida"
+
+#. module: training_payment
+#: field:training.subscription.line,invoicing_ids:0
+msgid "Invoicing"
+msgstr "Facturació"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_offer_payment
+msgid "Training Offer Payment"
+msgstr "Pagament curs"
+
+#. module: training_payment
+#: field:training.offer.invoicing,price:0
+msgid "Price"
+msgstr "Preu"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_subscription
+msgid "training.subscription"
+msgstr "training.subscription"
+
+#. module: training_payment
+#: field:training.subscription,esale_payment:0
+msgid "e-sale Payment"
+msgstr "Pagament web"
+
+#. module: training_payment
+#: field:training.offer.invoicing,date:0
+msgid "Date"
+msgstr "Data"
+
+#. module: training_payment
+#: field:training.payment,payment_id:0
+#: field:training.subscription,payment_id:0
+msgid "Payment"
+msgstr "Pagament"
+
+#. module: training_payment
+#: view:training.payment:0
+msgid "Training Payments"
+msgstr "Pagament formació"
+
+#. module: training_payment
+#: field:training.offer.invoicing,invoice_id:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_subscription_line
+msgid "training.subscription.line"
+msgstr "training.subscription.line"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_create_invoice_wizard
+msgid "training.create.invoice.wizard"
+msgstr "training.create.invoice.wizard"
+
+#. module: training_payment
+#: sql_constraint:training.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr "The name of the subscription must be unique !"
+
+#. module: training_payment
+#: selection:training.offer.invoicing,state:0
+msgid "Error"
+msgstr "Error"
+
+#. module: training_payment
+#: field:training.offer.invoicing,subscription_line_id:0
+msgid "Subscription Line"
+msgstr "Línia de subscripció"
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_offer
+msgid "training.offer"
+msgstr "training.offer"
+
+#. module: training_payment
+#: help:training.payment,state:0
+msgid "Workfow to change the Subscription with this payment."
+msgstr "Flux per canviar la subscripció en aquest pagament."
+
+#. module: training_payment
+#: model:ir.model,name:training_payment.model_training_create_payment_wizard
+msgid "training.create.payment.wizard"
+msgstr "training.create.payment.wizard"
+
+#. module: training_payment
+#: field:training.payment,name:0
+msgid "Code"
+msgstr "Codi"
+
+#. module: training_payment
+#: field:training.offer.invoicing,seq:0
+msgid "Sequence"
+msgstr "Seqüència"
+
+#. module: training_payment
+#: field:training.payment,payment_term_id:0
+msgid "Payment Term"
+msgstr "Termini de pagament"
+
+#. module: training_payment
+#: selection:training.offer.invoicing,state:0
+msgid "Waiting"
+msgstr "Esperant"
+
+#. module: training_payment
+#: model:ir.actions.act_window,name:training_payment.action_training_payment_action
+#: model:ir.model,name:training_payment.model_training_payment
+msgid "Training Payment"
+msgstr "Pagament formació"
+
+#. module: training_payment
+#: selection:training.offer.invoicing,state:0
+msgid "Ready to be invoiced"
+msgstr "Llest per facturar"
+
+#. module: training_payment
+#: field:training.subscription,comment:0
+msgid "Additional Information"
+msgstr "Informació addicional"
+
+#. module: training_payment
+#: field:training.offer.invoicing,company_id:0
+msgid "Company"
+msgstr "Companyia"
+
+#. module: training_payment
+#: selection:training.offer.invoicing,state:0
+msgid "Invoiced"
+msgstr "Facturat"

@@ -1,0 +1,10 @@
+<openerp>
+	<data>
+<!--  		<wizard
+        	id="open_statement"
+        	model="account.bank.statement"
+        	menu="False"
+        	name="statement.open"
+        	string="Open Statement"/-->
+    </data>
+</openerp>

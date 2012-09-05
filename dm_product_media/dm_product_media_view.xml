@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+	<record id="dm_product_media_form_view" model="ir.ui.view">
+        <field name="name">dm.product.media.form.inherit</field>
+        <field name="model">product.product</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name="language_id" position="after">
+				<separator string="Product Media" colspan="4"/>
+                <field name="media_content_id" colspan="4" nolabel="1"/>
+			</field>
+        </field>
+    </record>
+
+	</data>
+</openerp>

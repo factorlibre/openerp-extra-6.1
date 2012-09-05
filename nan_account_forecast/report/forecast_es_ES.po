@@ -1,0 +1,74 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-01 09:56+0200\n"
+"PO-Revision-Date: 2010-12-21 03:37+0100\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /tmp/tmp.hHuoSAFaOb:749 /tmp/tmp.hHuoSAFaOb:925 /tmp/tmp.hHuoSAFaOb:1101
+msgid "Partner"
+msgstr "Empresa"
+
+#: /tmp/tmp.hHuoSAFaOb:753 /tmp/tmp.hHuoSAFaOb:929 /tmp/tmp.hHuoSAFaOb:1105
+msgid "Document"
+msgstr "Documento"
+
+#: /tmp/tmp.hHuoSAFaOb:757 /tmp/tmp.hHuoSAFaOb:933 /tmp/tmp.hHuoSAFaOb:1109
+msgid "Expiry Date"
+msgstr "Vencimiento"
+
+#: /tmp/tmp.hHuoSAFaOb:761 /tmp/tmp.hHuoSAFaOb:937 /tmp/tmp.hHuoSAFaOb:1113
+msgid "Amount"
+msgstr "Importe"
+
+#: /tmp/tmp.hHuoSAFaOb:765 /tmp/tmp.hHuoSAFaOb:941 /tmp/tmp.hHuoSAFaOb:1117
+msgid "Aggregated Amount"
+msgstr "Importe acumulado"
+
+#: /tmp/tmp.hHuoSAFaOb:769 /tmp/tmp.hHuoSAFaOb:945 /tmp/tmp.hHuoSAFaOb:1121
+msgid "Payment Type"
+msgstr "Tipo de pago"
+
+#: /tmp/tmp.hHuoSAFaOb:773 /tmp/tmp.hHuoSAFaOb:949 /tmp/tmp.hHuoSAFaOb:1125
+msgid "Bank Account"
+msgstr "Cuenta bancaria"
+
+#: /tmp/tmp.hHuoSAFaOb:777 /tmp/tmp.hHuoSAFaOb:953 /tmp/tmp.hHuoSAFaOb:1129
+msgid "Bank Name"
+msgstr "Banco"
+
+#: /tmp/tmp.hHuoSAFaOb:781 /tmp/tmp.hHuoSAFaOb:957 /tmp/tmp.hHuoSAFaOb:1133
+msgid "Check?"
+msgstr "Cheque?"
+
+#: /tmp/tmp.hHuoSAFaOb:793 /tmp/tmp.hHuoSAFaOb:969 /tmp/tmp.hHuoSAFaOb:1145
+msgid "Expiry date totals:"
+msgstr "Totales al vencimiento:"
+
+#: /tmp/tmp.hHuoSAFaOb:797 /tmp/tmp.hHuoSAFaOb:973 /tmp/tmp.hHuoSAFaOb:1149
+msgid "Payment/receivables forecast"
+msgstr "Previsión de pagos/cobros "
+
+#: /tmp/tmp.hHuoSAFaOb:809 /tmp/tmp.hHuoSAFaOb:985 /tmp/tmp.hHuoSAFaOb:1161
+msgid "Page:"
+msgstr "Página:"
+
+#: /tmp/tmp.hHuoSAFaOb:845 /tmp/tmp.hHuoSAFaOb:1021 /tmp/tmp.hHuoSAFaOb:1197
+msgid "Yes"
+msgstr "Sí"
+
+#: /tmp/tmp.hHuoSAFaOb:845 /tmp/tmp.hHuoSAFaOb:1021 /tmp/tmp.hHuoSAFaOb:1197
+msgid "No"
+msgstr "No"

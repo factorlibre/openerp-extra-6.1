@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+		<record model="ir.ui.view" id="view_users_form_tasks_access_restrict">
+            <field name="name">res.users.form.restricted</field>
+            <field name="type">form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Projects" groups="base.group_extended">
+                    	<separator string="Projects" colspan="4"/>
+                        <field name="project_ids" nolabel="1" colspan="4"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+        
+        <record id="project_task_form_tasks_access_restrict" model="ir.ui.view">
+			<field name="name">project.task.form.restricted</field>
+			<field name="model">project.task</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="project.view_task_form2"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='user_id']" position="attributes">
+	                <attribute name="domain">['|',('id','=',uid),('project_ids','=',project_id)]</attribute>
+                </xpath>
+			</field>
+		</record>
+        
+        
+        
+    </data>
+</openerp>

@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_groups_participation","groups.participation","model_groups_participation","base.group_user",1,0,0,0
+"access_groups_group","groups.group","model_groups_group","base.group_user",1,0,0,0
+"access_groups_group_assignation","groups.group_assignation","model_groups_group_assignation","base.group_user",1,0,0,0
+
+"access_groups_participation_admin","groups.participation.admin","model_groups_participation","base.group_partner_manager",1,1,1,1
+"access_groups_group_admin","groups.group.admin","model_groups_group","base.group_partner_manager",1,1,1,1
+"access_groups_group_assignation_admin","groups.group_assignation.admin","model_groups_group_assignation","base.group_partner_manager",1,1,1,1

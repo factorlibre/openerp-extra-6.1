@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  sale_bundle_product for OpenERP
+  # Copyright (c) 2011 CamptoCamp. All rights reserved. @author Joel Grand-Guillaume
+  The licence is in the file __openerp__.py
+-->
+
+<openerp>
+    <data>
+    
+
+        <!-- VIEW FOR THE OBJECT : sale_order_line_item_set -->
+        <record id="sale_order_line_item_set_view_form" model="ir.ui.view">
+            <field name="name">sale_bundle_product.sale_order_line_item_set.view_form</field>
+            <field name="model">sale.order.line.item.set</field>
+            <field eval="16" name="priority"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="sale_order_line_item_set">
+                    <field name="product_id" />
+                    <field name="uom_id" />
+                    <field name="qty_uom" />
+                </form>
+            </field>
+        </record>
+
+        <record id="sale_order_line_item_set_view_tree" model="ir.ui.view">
+            <field name="name">sale_bundle_product.sale_order_line_item_set.view_tree</field>
+            <field name="model">sale.order.line.item.set</field>
+            <field eval="16" name="priority"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="sale_order_line_item_set">
+                    <field name="product_id" />
+                    <field name="uom_id" />
+                    <field name="qty_uom" />
+                </tree>
+            </field>
+        </record>
+
+
+
+        <!-- VIEW FOR THE OBJECT : product_item_set_line -->
+        <record id="product_item_set_line_view_form" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_item_set_line.view_form</field>
+            <field name="model">product.item.set.line</field>
+            <field eval="16" name="priority"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="product_item_set_line">
+                    <field name="sequence" />
+                    <field name="product_id" />
+                    <field name="qty_uom" />
+                    <field name="uom_id" />
+                    <field name="allow_chg_qty" />
+                    <field name="is_default" />
+                </form>
+            </field>
+        </record>
+        
+        <record id="product_item_set_line_view_tree" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_item_set_line.view_tree</field>
+            <field name="model">product.item.set.line</field>
+            <field eval="16" name="priority"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="product_item_set_line">
+                    <field name="sequence" />
+                    <field name="product_id" />
+                    <field name="qty_uom" />
+                    <field name="uom_id" />
+                    <field name="allow_chg_qty" />
+                    <field name="is_default" />
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- VIEW FOR THE OBJECT : product_item_set -->
+        <record id="product_item_set_view_form" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_item_set.view_form</field>
+            <field name="model">product.item.set</field>
+            <field eval="16" name="priority"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="product_item_set">
+                    <field name="sequence" />
+                    <field name="name" />
+                    <field name="multi_select" />
+                    <field name="required" />
+                    <field name="item_set_line_ids" nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="product_item_set_view_tree" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_item_set.view_tree</field>
+            <field name="model">product.item.set</field>
+            <field eval="16" name="priority"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="product_item_set">
+                    <field name="sequence" />
+                    <field name="name" />
+                    <field name="multi_select" />
+                    <field name="required" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_item_set_action_form" model="ir.actions.act_window">
+            <field name="name">Item Sets</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.item.set</field>
+            <field name="view_type">form</field>
+        </record>
+        <menuitem action="product_item_set_action_form"
+            groups="base.group_extended"
+            id="menu_product_item_set_action_form"
+            parent="product.prod_config_main"/>
+
+    </data>
+</openerp>

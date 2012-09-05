@@ -1,0 +1,176 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* newsletter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.0-rc1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-12-24 12:25:48+0000\n"
+"PO-Revision-Date: 2010-12-24 12:25:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: newsletter
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "The Object name must start with x_ and not contain any special character !"
+
+#. module: newsletter
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Error ! You can not create recursive Menu."
+
+#. module: newsletter
+#: model:ir.ui.menu,name:newsletter.menu_newsletter_newsletter
+#: view:newsletter.newsletter:0
+msgid "Newsletter Category"
+msgstr "Newsletter Category"
+
+#. module: newsletter
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Invalid model name in the action definition."
+
+#. module: newsletter
+#: field:newsletter.newsletter,parent_id:0
+msgid "Partner Newsletter"
+msgstr "Partner Newsletter"
+
+#. module: newsletter
+#: field:newsletter.newsletter,child_ids:0
+msgid "Child Newsletter"
+msgstr "Child Newsletter"
+
+#. module: newsletter
+#: model:ir.actions.act_window,name:newsletter.action_newsletter_unsubscribe_reason
+#: field:newsletter.subscription,newsletter_unsubscribe:0
+#: view:res.partner.address:0
+msgid "Unsubscribe"
+msgstr "Unsubscribe"
+
+#. module: newsletter
+#: view:res.partner.address:0
+msgid "Address"
+msgstr "Address"
+
+#. module: newsletter
+#: model:ir.actions.act_window,name:newsletter.action_partner_addess_newsletter
+#: model:ir.ui.menu,name:newsletter.menu_partner_address_newsletter_main
+msgid "Partner Contacts with Newsletter"
+msgstr "Partner Contacts with Newsletter"
+
+#. module: newsletter
+#: field:newsletter.subscription,newsletter_unsubscribe_reason_id:0
+msgid "Newsletter Unsubscribe Reason"
+msgstr "Newsletter Unsubscribe Reason"
+
+#. module: newsletter
+#: field:newsletter.subscription,partner_address_id:0
+msgid "Partner Address"
+msgstr "Partner Address"
+
+#. module: newsletter
+#: model:ir.actions.act_window,name:newsletter.action_newsletter_newsletter_by_category
+msgid "Subscriptions by Newsletter"
+msgstr "Subscriptions by Newsletter"
+
+#. module: newsletter
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Invalid XML for View Architecture!"
+
+#. module: newsletter
+#: field:newsletter.newsletter,name:0
+#: field:newsletter.unsubscribe.reason,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: newsletter
+#: view:newsletter.newsletter:0
+msgid "Newsletter Categories"
+msgstr "Newsletter Categories"
+
+#. module: newsletter
+#: help:newsletter.newsletter,active:0
+msgid "The active field allows you to hide the newsletter without removing it."
+msgstr "The active field allows you to hide the newsletter without removing it."
+
+#. module: newsletter
+#: help:newsletter.unsubscribe.reason,active:0
+msgid "The active field allows you to hide the unsubscribe without removing it."
+msgstr "The active field allows you to hide the unsubscribe without removing it."
+
+#. module: newsletter
+#: field:newsletter.newsletter,active:0
+#: field:newsletter.unsubscribe.reason,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: newsletter
+#: view:newsletter.unsubscribe.reason:0
+msgid "unsubscribe"
+msgstr "unsubscribe"
+
+#. module: newsletter
+#: model:ir.model,name:newsletter.model_newsletter_unsubscribe_reason
+msgid "Newsletter Unsubscribe reason"
+msgstr "Newsletter Unsubscribe reason"
+
+#. module: newsletter
+#: field:newsletter.newsletter,complete_name:0
+msgid "Full Name"
+msgstr "Full Name"
+
+#. module: newsletter
+#: view:res.partner.address:0
+msgid "Postal Address"
+msgstr "Postal Address"
+
+#. module: newsletter
+#: model:ir.actions.act_window,name:newsletter.action_newsletter_newsletter
+#: model:ir.actions.act_window,name:newsletter.action_newsletter_newsletter_category
+#: model:ir.model,name:newsletter.model_newsletter_newsletter
+#: model:ir.ui.menu,name:newsletter.menu_newsletter
+#: model:ir.ui.menu,name:newsletter.menu_newsletter_newsletter_main
+#: field:newsletter.subscription,newsletter_id:0
+#: view:res.partner.address:0
+#: field:res.partner.address,newsletter:0
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#. module: newsletter
+#: view:res.partner.address:0
+msgid "Communication"
+msgstr "Communication"
+
+#. module: newsletter
+#: model:ir.ui.menu,name:newsletter.menu_newsletter_unsubscribe_reason
+msgid "Unsubscribe Category"
+msgstr "Unsubscribe Category"
+
+#. module: newsletter
+#: view:newsletter.subscription:0
+msgid "subscription"
+msgstr "subscription"
+
+#. module: newsletter
+#: model:ir.model,name:newsletter.model_res_partner_address
+#: view:res.partner.address:0
+msgid "Partner Addresses"
+msgstr "Partner Addresses"
+
+#. module: newsletter
+#: sql_constraint:ir.model.fields:0
+msgid "Size of the field can never be less than 1 !"
+msgstr "Size of the field can never be less than 1 !"
+
+#. module: newsletter
+#: model:ir.model,name:newsletter.model_newsletter_subscription
+msgid "Newsletter subscription"
+msgstr "Newsletter subscription"
+

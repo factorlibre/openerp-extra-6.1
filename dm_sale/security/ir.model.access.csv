@@ -1,0 +1,14 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_dm_event_sale_offeradmin","dm.event.sale","model_dm_event_sale","dm.res_groups_offeradmin",1,1,1,1
+"access_dm_event_sale_offermanager","dm.event.sale","model_dm_event_sale","dm.res_groups_offermanager",1,1,1,1
+"access_dm_event_sale_campadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_campaignadmin",1,0,0,0
+"access_dm_event_sale_campmanager","dm.event.sale","model_dm_event_sale","dm.res_groups_campaignmanager",1,0,0,0
+"access_dm_event_sale_custfileadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_custfileadmin",1,0,0,0
+"access_dm_event_sale_custfilemanager","dm.event.sale","model_dm_event_sale","dm.res_groups_custfilemanager",1,0,0,0
+"access_dm_event_sale_itemadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_itemadmin",1,0,0,0
+"access_dm_event_sale_itemmanager","dm.event.sale","model_dm_event_sale","dm.res_groups_itemmanager",1,0,0,0
+"access_dm_event_sale_manufacturingadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_manufacturingadmin",1,0,0,0
+"access_dm_event_sale_manufacturingmanager","dm.event.sale","model_dm_event_sale","dm.res_groups_manufacturingmanager",1,0,0,0
+"access_dm_event_sale_dtpadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_dtpadmin",1,0,0,0
+"access_dm_event_sale_dtpmanager","dm.event.sale","model_dm_event_sale","dm.res_groups_dtpmanager",1,0,0,0
+"access_dm_event_sale_dmadmin","dm.event.sale","model_dm_event_sale","dm.res_groups_dmadmin",1,1,1,1

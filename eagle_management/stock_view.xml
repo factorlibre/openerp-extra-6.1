@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: stock_view.xml
+  Module: eagle_management
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="eagle_view_stock_form_inherit_1">
+			<field name="name">Eagle Stock View Std</field>
+			<field name="model">stock.picking</field>
+			<field name="inherit_id" ref="stock.view_picking_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field groups="base.group_extended" name="backorder_id" position="after">
+					<field name="contract_id" select="1" groups="base.group_extended"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_stock_form_inherit_2">
+			<field name="name">Eagle Stock View Out</field>
+			<field name="model">stock.picking</field>
+			<field name="inherit_id" ref="stock.view_picking_out_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field groups="base.group_extended" name="backorder_id" position="after">
+					<field name="contract_id" select="1" groups="base.group_extended"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_stock_form_inherit_3">
+			<field name="name">Eagle Stock View In</field>
+			<field name="model">stock.picking</field>
+			<field name="inherit_id" ref="stock.view_picking_in_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field groups="base.group_extended" name="backorder_id" position="after">
+					<field name="contract_id" select="1" groups="base.group_extended"/>
+				</field>
+			</field>
+		</record>
+
+	</data>
+</openerp>

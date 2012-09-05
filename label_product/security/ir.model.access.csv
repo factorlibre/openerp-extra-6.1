@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_label_wizard_product_all","label_wizard_product all","model_label_wizard_product",,1,1,1,1
+"access_label_wizard_product_line_all","label_wizard_product_line all","model_label_wizard_product_line",,1,1,1,1

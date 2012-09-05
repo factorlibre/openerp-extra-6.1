@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="wizard_idea_cleanup" model="ir.ui.view">
+            <field name="name">memento_idea.cleanup.wizard.form</field> 
+            <field name="model">memento_idea.cleanup.wizard</field> 
+            <field name="type">form</field> 
+            <field name="arch" type="xml">
+                <form string="Idea Cleanup Wizard">
+                    <label colspan="4" string="Select the age (in days) of ideas to cleanup"/>
+                    <field name="idea_age"/>
+                    <group colspan="4">
+                        <button string="Cancel" special="cancel" icon="gtk-cancel"/>
+                        <button string="Cleanup" name="do_cleanup" type="object" icon="gtk-ok"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_idea_cleanup_wizard" model="ir.actions.act_window">
+            <field name="name">Cleanup</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">memento_idea.cleanup.wizard</field>
+            <field name="src_model">memento_idea.idea</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        
+        <record id="ir_open_cleanup_wizard" model="ir.values">
+            <field name="key2">client_action_multi</field>
+            <field name="model">memento_idea.idea</field>
+            <field name="name">Cleanup Wiz</field>
+            <field eval="'ir.actions.act_window,%d'%action_idea_cleanup_wizard" name="value"/>
+            <field eval="True" name="object"/>
+        </record>
+        
+        <menuitem id="menu_memento_idea_cleanup" 
+        	parent="menu_memento_idea" 
+        	sequence="40" 
+        	action="action_idea_cleanup_wizard"/>
+    </data>
+    
+        	
+
+	<!--  Just to show how it is done, let's add this cleanup wizard 
+          as a 'config wizard'.
+          Of course it does not make sense to cleanup ideas at startup.
+     -->	
+  	<data noupdate="1">
+        <record id="config_wizard_cleanup" model="ir.actions.todo">
+            <field name="name">Ideas (Memento)</field>
+            <field name="note">This module does not implement a real functional specification.
+It contains the source of most examples used in the Technical Memento for OpenERP, and
+can be used as a reference combining all code excerpts into a working module.
+
+For instance, this startup wizard (Cleanup) is merely an example, because there
+is no real use for Ideas cleanup at the module installation!              
+
+(The XML source for this config wizard can be found at the bottom of wizard/cleanup.xml
+in the source of the memento_idea module)
+            </field>
+            <field name="action_id" ref="action_idea_cleanup_wizard"/>
+            <field name="sequence">10</field>
+        </record>
+    </data>
+    
+</openerp>
+

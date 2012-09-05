@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<wizard	string="ATA Carnet Printing"
+			model="cci_missions.ata_carnet"
+			name="cci_missions_print_carnet"
+			id="wizard_cci_carnet"
+			 />
+
+		<!-- stats per mission type -->
+
+        <menuitem
+            icon="STOCK_PRINT"
+            action="wizard_mission_type"
+            id="menu_wizard_stats_mission"
+            parent="menu_mission_reporting"
+            type="wizard"/>
+
+        <report header="False" auto="False" id="wizard_stats_mission1" menu="False" model="cci_missions.certificate" name="stats.mission.type" rml="addons/cci_mission/report/stats_mission_type.rml" string="Stats per mission"/>
+
+	</data>
+</openerp>
+

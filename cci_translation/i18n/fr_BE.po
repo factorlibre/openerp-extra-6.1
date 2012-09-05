@@ -1,0 +1,324 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_translation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:14:01+0000\n"
+"PO-Revision-Date: 2009-12-10 10:14:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_translation
+#: field:letter.credence,asked_amount:0
+msgid "Asked Amount"
+msgstr "Montant demandé"
+
+#. module: cci_translation
+#: field:translation.folder,base_amount:0
+msgid "Base Amount"
+msgstr "Montant de base"
+
+#. module: cci_translation
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x- et ne pas comporter de caractères spéciaux"
+
+#. module: cci_translation
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect dans la définition de l'action"
+
+#. module: cci_translation
+#: field:letter.credence,emission_date:0
+msgid "Emission Date"
+msgstr "Date d'émission"
+
+#. module: cci_translation
+#: selection:res.partner,awex_eligible:0
+msgid "No"
+msgstr "Non"
+
+#. module: cci_translation
+#: selection:res.partner,awex_eligible:0
+msgid "Unknown"
+msgstr "Indéterminé"
+
+#. module: cci_translation
+#: wizard_view:create_invoice_transfolder,init:0
+msgid "Create invoices"
+msgstr "Créer les factures"
+
+#. module: cci_translation
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Erreur: l'unité de mesure par défaut et l'unité de mesure d'achat doivent être dans la même catégorie"
+
+#. module: cci_translation
+#: view:translation.folder:0
+#: selection:translation.folder,state:0
+msgid "Confirmed"
+msgstr "Confirmé"
+
+#. module: cci_translation
+#: field:translation.folder,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: cci_translation
+#: selection:translation.folder,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: cci_translation
+#: field:credit.line,from_date:0
+#: wizard_field:translation_awex_report,init,date_from:0
+msgid "From Date"
+msgstr "Date de début"
+
+#. module: cci_translation
+#: field:credit.line,customer_credit:0
+msgid "Customer Max Credit"
+msgstr "Crédit maximum par client"
+
+#. module: cci_translation
+#: view:credit.line:0
+#: model:ir.actions.act_window,name:cci_translation.action_credit_line
+#: model:ir.model,name:cci_translation.model_credit_line
+msgid "Credit line"
+msgstr "Ligne de crédit"
+
+#. module: cci_translation
+#: model:ir.module.module,description:cci_translation.module_meta_information
+msgid "\n"
+"        cci translation\n"
+"    "
+msgstr "\n"
+"        CCI translation\n"
+"    "
+
+#. module: cci_translation
+#: rml:translation.awex:0
+#: field:translation.folder,order_desc:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_translation
+#: wizard_field:create_invoice_transfolder,init,inv_created:0
+msgid "Invoice Created"
+msgstr "Facture créée"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Internal Object"
+msgstr "Object Interne"
+
+#. module: cci_translation
+#: wizard_button:translation_awex_report,init,end:0
+msgid "_Cancel"
+msgstr "_Annule"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "."
+msgstr "."
+
+#. module: cci_translation
+#: wizard_button:create_invoice_transfolder,init,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Invoice Number"
+msgstr "Numéro de facture"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Date"
+msgstr "Date"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Internal Reference"
+msgstr "Référence interne"
+
+#. module: cci_translation
+#: model:ir.actions.wizard,name:cci_translation.invoice_transfolder
+msgid "Make Invoice"
+msgstr "Facturer"
+
+#. module: cci_translation
+#: model:ir.module.module,shortdesc:cci_translation.module_meta_information
+msgid "CCI Translation"
+msgstr "CCI Translation"
+
+#. module: cci_translation
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues"
+
+#. module: cci_translation
+#: view:res.partner:0
+msgid "Certificate Details"
+msgstr "Détails du certificat"
+
+#. module: cci_translation
+#: field:credit.line,name:0
+#: field:translation.folder,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_translation
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Erreur: l'unité de mesure secondaire doit être dans une autre catégorie que l'unité de mesure principale"
+
+#. module: cci_translation
+#: field:res.partner,awex_eligible:0
+#: field:translation.folder,awex_eligible:0
+msgid "AWEX Eligible"
+msgstr "Eligible pour l'AWEX"
+
+#. module: cci_translation
+#: field:translation.folder,order_date:0
+msgid "Order Date"
+msgstr "Date de commande"
+
+#. module: cci_translation
+#: field:translation.folder,purchase_order:0
+msgid "Purchase Order"
+msgstr "Bon d'achat"
+
+#. module: cci_translation
+#: field:credit.line,global_credit:0
+msgid "Global Credit"
+msgstr "Crédit global"
+
+#. module: cci_translation
+#: wizard_field:create_invoice_transfolder,init,inv_rej_reason:0
+msgid "Error Messages"
+msgstr "Messages d'erreur"
+
+#. module: cci_translation
+#: wizard_button:translation_awex_report,init,open:0
+msgid "Open _Report"
+msgstr "Ouvrir _Rapport"
+
+#. module: cci_translation
+#: model:ir.actions.act_window,name:cci_translation.action_translation_folder
+#: model:ir.ui.menu,name:cci_translation.menu_translation_root_dossier
+#: view:translation.folder:0
+msgid "Translation Dossier"
+msgstr "Dossier Traduction"
+
+#. module: cci_translation
+#: selection:res.partner,awex_eligible:0
+msgid "Yes"
+msgstr "Eligible"
+
+#. module: cci_translation
+#: model:ir.ui.menu,name:cci_translation.menu_translation_root
+#: view:res.partner:0
+msgid "Translation"
+msgstr "Traduction"
+
+#. module: cci_translation
+#: field:translation.folder,awex_amount:0
+msgid "AWEX Amount"
+msgstr "Montant AWEX"
+
+#. module: cci_translation
+#: wizard_button:create_invoice_transfolder,init,open:0
+msgid "Open Invoice"
+msgstr "Ouvrir facture"
+
+#. module: cci_translation
+#: model:ir.ui.menu,name:cci_translation.menu_translation_root_credit
+#: field:translation.folder,credit_line_id:0
+msgid "Credit Line"
+msgstr "Ligne de crédit"
+
+#. module: cci_translation
+#: model:ir.actions.act_window,name:cci_translation.action_letter_credence
+#: model:ir.model,name:cci_translation.model_letter_credence
+#: model:ir.ui.menu,name:cci_translation.menu_translation_root_letter
+#: view:letter.credence:0
+msgid "Letter of Credence"
+msgstr "Lettre de créance"
+
+#. module: cci_translation
+#: wizard_field:create_invoice_transfolder,init,inv_rejected:0
+msgid "Invoice Rejected"
+msgstr "Facture rejetée"
+
+#. module: cci_translation
+#: model:ir.actions.report.xml,name:cci_translation.invoice_transfolder_report
+#: model:ir.actions.wizard,name:cci_translation.translation_awex_report
+#: model:ir.ui.menu,name:cci_translation.menu_trans_awex_report
+#: rml:translation.awex:0
+#: wizard_view:translation_awex_report,init:0
+msgid "Awex Report"
+msgstr "Rapport AWEX"
+
+#. module: cci_translation
+#: field:credit.line,to_date:0
+#: wizard_field:translation_awex_report,init,date_to:0
+msgid "To Date"
+msgstr "Date de fin"
+
+#. module: cci_translation
+#: model:ir.model,name:cci_translation.model_translation_folder
+#: model:product.template,name:cci_translation.cci_product_product_translation_folder_product_template
+msgid "Translation Folder"
+msgstr "Dossier Traduction"
+
+#. module: cci_translation
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Erreur: code EAN incorrect"
+
+#. module: cci_translation
+#: view:translation.folder:0
+#: selection:translation.folder,state:0
+msgid "Done"
+msgstr "Terminé"
+
+#. module: cci_translation
+#: field:translation.folder,invoice_id:0
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: cci_translation
+#: view:translation.folder:0
+#: selection:translation.folder,state:0
+msgid "Cancel"
+msgstr "Annulé"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+#: field:translation.folder,partner_id:0
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Num."
+msgstr "Num."
+
+#. module: cci_translation
+#: rml:translation.awex:0
+msgid "Awex Amount"
+msgstr "Montant AWEX"
+
+#. module: cci_translation
+#: selection:translation.folder,state:0
+msgid "Invoiced"
+msgstr "Facturé"
+

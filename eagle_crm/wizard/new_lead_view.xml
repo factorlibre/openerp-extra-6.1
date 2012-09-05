@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/crm_contact_to_lead_view.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+	
+		<!-- Partner to lead form -->
+		
+		<record model="ir.ui.view" id="view_eagle_crm_contact2lead">
+			<field name="name">Eagle Wizard Contact 2 New Lead</field>
+			<field name="model">eagle.contact2lead</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="New Lead">
+					<group col="4" colspan="4" height="400" width="500">
+						<group colspan="4" attrs="{'invisible': [('state','!=','step1')]}" height="320" width="500">
+							<separator string="Lead description" colspan="4"/>
+							<label string="Subject"/>
+							<field name="name" nolabel="1" required="1" colspan="4" />
+							<newline/>
+							<label string="Description"/>
+							<newline/>
+							<field name="description" nolabel="1" colspan="4"/>
+							<newline/>
+							<field name="partner_id" invisible="1"/>
+							<separator string="Contact" colspan="4"/>
+							<field name="partner_contact_id" nolabel="1" required="True" colspan="4" domain="[('partner_id','=',partner_id)]"/>
+						</group>
+						<newline/>
+						<group colspan="4" attrs="{'invisible': [('state','!=','step2')]}" height="320" width="500">
+							<separator string="Info" colspan="4"/>
+							<field name="user_id" />
+							<field name="priority"/>
+							<field name="section_id"/>
+							<field name="type_id" select="1" widget="selection"/>
+							<field name="channel_id" select="1" widget="selection"/>
+							<field name="lead_categ_id" widget="selection"
+							domain="[('object_id.model','=','crm.lead')]"/>
+						</group>
+						<newline/>
+						<separator string=" " colspan="4"/>
+						<field name="state" readonly="1" colspan="4" invisible="1"/>
+						<group col="10" colspan="4" width="500">
+							<button special="cancel" string="Cancel" icon="gtk-cancel"/>
+							<button name="go_step2" states="step1" string="Information" type="object" icon="gtk-go-forward"/>
+							<button name="make_lead" states="step1" string="Create" type="object" icon="gtk-ok"/>
+							<button name="go_step1" states="step2" string="Description" type="object" icon="gtk-go-back"/>
+							<button name="make_lead" states="step2" string="Create" type="object" icon="gtk-ok"/>
+						</group>
+					</group>
+				</form>
+			</field>
+		</record>
+		
+		<!-- Partner to lead Action -->
+		
+		<record model="ir.actions.act_window" id="action_view_eagle_crm_contact2lead">
+			<field name="name">Create a Lead</field>
+			<field name="res_model">eagle.contact2lead</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+		
+		<!-- Partner to lead wizard -->
+		
+		<act_window id="eagle_crm_contact2lead"
+			key2="client_action_multi" name="Create a Lead"
+			res_model="eagle.contact2lead" src_model="res.partner.contact"
+			view_id="view_eagle_crm_contact2lead"
+			view_mode="form" target="new" view_type="form"
+			groups="base.group_extended"/>
+	
+		<!-- New Lead form -->
+		
+		<record model="ir.ui.view" id="view_eagle_crm_new_lead">
+			<field name="name">Eagle Wizard New Lead</field>
+			<field name="model">eagle.contact2lead</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="New Lead">
+					<group col="4" colspan="4" height="400" width="500">
+						<group colspan="4" attrs="{'invisible': [('state','!=','step1')]}" height="320" width="500">
+							<separator string="Lead description" colspan="4"/>
+							<label string="Subject"/>
+							<field name="name" nolabel="1" required="1" colspan="4" />
+							<newline/>
+							<label string="Description"/>
+							<newline/>
+							<field name="description" nolabel="1" colspan="4"/>
+							<newline/>
+							<field name="partner_id" invisible="1"/>
+							<separator string="Contact" colspan="4"/>
+							<field name="partner_contact_id" required="True" nolabel="1" colspan="4"/>
+						</group>
+						<newline/>
+						<group colspan="4" attrs="{'invisible': [('state','!=','step2')]}" height="320" width="500">
+							<separator string="Info" colspan="4"/>
+							<field name="user_id" />
+							<field name="priority"/>
+							<field name="section_id"/>
+							<field name="type_id" select="1" widget="selection"/>
+							<field name="channel_id" select="1" widget="selection"/>
+							<field name="lead_categ_id" widget="selection"
+							domain="[('object_id.model','=','crm.lead')]"/>
+						</group>
+						<newline/>
+						<separator string=" " colspan="4"/>
+						<field name="state" readonly="1" colspan="4" invisible="1"/>
+						<group col="10" colspan="4" width="500">
+							<button special="cancel" string="Cancel" icon="gtk-cancel"/>
+							<button name="go_step2" states="step1" string="Information" type="object" icon="gtk-go-forward"/>
+							<button name="make_lead" states="step1" string="Create" type="object" icon="gtk-ok"/>
+							<button name="go_step1" states="step2" string="Description" type="object" icon="gtk-go-back"/>
+							<button name="make_lead" states="step2" string="Create" type="object" icon="gtk-ok"/>
+						</group>
+					</group>
+				</form>
+			</field>
+		</record>
+		
+		<!-- New Lead Action -->
+		
+		<record model="ir.actions.act_window" id="action_view_eagle_crm_new_lead">
+			<field name="name">New Lead</field>
+			<field name="res_model">eagle.contact2lead</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+		<!-- New Lead wizard -->
+		
+		<menuitem 
+			name="New Lead" 
+			id="eagle_view_lead_form" 
+			action="action_view_eagle_crm_new_lead" 
+			parent="base.menu_sales" 
+			icon="STOCK_ADD" 
+			sequence="1" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+	</data>
+</openerp>

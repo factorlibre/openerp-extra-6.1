@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_promotion_rules_form">
+            <field name="name">promos.rules.form</field>
+            <field name="model">promos.rules</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Promotions">
+                    <group col="8" colspan="4">
+                        <field name="name" colspan="2" select="1"/>
+                        <field name="sequence" colspan="2" />
+                        <field name="active" colspan="2" select="1"/>
+                        <field name="shop" colspan="2" />
+                        <field name="stop_further" colspan="2" />
+                    </group>
+                    <group col="4" colspan="4">
+                        <separator string="Description"
+                            colspan="4" />
+                        <field name="description" colspan="4"
+                            nolabel="1" />
+
+                    </group>
+			        <group colspan="6">
+                        <group colspan="2">
+                            <separator colspan="4"
+                                string="Coupon/Voucher Settings" />
+                            <field name="coupon_code" />
+						    <field name="coupon_used" />
+                            <field name="uses_per_coupon"
+                                attrs="{'required':[('coupon_code','!=',False)]}" />
+                            <field name="uses_per_partner"
+                                attrs="{'required':[('coupon_code','!=',False)]}" />
+                        </group>
+                        <group col="2" colspan="2">
+                            <separator colspan="4" string="Applicable Period" />
+                            <field name="from_date" />
+                            <field name="to_date" />
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Conditions">
+                            <group colspan="4" col="8">
+                                <label string="If" colspan="2" />
+                                <field name="logic" nolabel="1"
+                                    colspan="2" />
+                                <label string="expressions are"
+                                    colspan="2" />
+                                <field name="expected_logic_result"
+                                    nolabel="1" colspan="2" />
+                            </group>
+                            <field name="expressions" nolabel="1">
+                                <tree string="Expressions"
+                                    editable="bottom">
+                                    <field name="sequence" />
+                                    <field name="stop_further" />
+                                    <field name="attribute"
+                                        on_change="on_change(attribute, value)" />
+                                    <field name="comparator" />
+                                    <field name="value" />
+                                </tree>
+                                <form>
+                                    <field name="sequence" />
+                                    <field name="attribute"
+                                        on_change="_on_change(attribute, value)" />
+                                    <field name="comparator" />
+                                    <field name="value" />
+                                    <field name="stop_further" />
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Actions">
+                            <field name="actions" nolabel="1">
+                                <tree editable="bottom" string="Actions">
+                                    <field name="sequence" />
+                                    <field name="action_type"
+                                        on_change="on_change(action_type, product_code, arguments)" />
+                                    <field name="product_code" />
+                                    <field name="arguments" />
+                                </tree>
+                                <form>
+                                    <field name="sequence" />
+                                    <field name="action_type"
+                                        on_change="_on_change(action_type, product_code, arguments)" />
+                                    <field name="product_code" />
+                                    <field name="arguments" />
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Partner Categories">
+                            <field name="partner_categories"
+                                nolabel="1" />
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_promotion_rules_tree">
+            <field name="name">promos.rules.tree</field>
+            <field name="model">promos.rules</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Promotions">
+                    <field name="sequence" />
+                    <field name="name" />
+                    <field name="shop" />
+                    <field name="active" />
+                    <field name="coupon_code" />
+                    <field name="from_date" />
+                    <field name="to_date" />
+                </tree>
+            </field>
+        </record>
+        <record id="act_promotion_rules" model="ir.actions.act_window">
+            <field name="name">Promotion Rules</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">promos.rules</field>
+            <field name="src_model">promos.rules</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="promos" action="act_promotion_rules"
+            parent="base.menu_sale_config_sales" />
+
+        <record model="ir.ui.view" id="view_promotion_cond_expr_form">
+            <field name="name">promos.rules.conditions.exps.form</field>
+            <field name="model">promos.rules.conditions.exps</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Expressions">
+                    <field name="sequence" />
+                    <field name="serialised_expr" />
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_promotion_cond_expr_tree">
+            <field name="name">promos.rules.conditions.expres.tree
+            </field>
+            <field name="model">promos.rules.conditions.expres
+            </field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Expressions">
+                    <field name="sequence" />
+                    <field name="serialised_expr" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,772 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_joomla
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-28 14:43+0000\n"
+"PO-Revision-Date: 2011-03-01 08:09+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+"X-Poedit-Language: Spanish\n"
+
+#. module: training_joomla
+#: help:training.joomla,location:0
+msgid "Your Joomla! URL. For example: http://www.domain.com"
+msgstr "La URL de su  Joomla!. Por ejemplo: http://www.domain.com"
+
+#. module: training_joomla
+#: field:training.joomla.images.wizard,images_update:0
+msgid "Images Update"
+msgstr "Imágenes actualizadas"
+
+#. module: training_joomla
+#: view:training.course:0
+#: view:training.offer:0
+#: view:training.session:0
+msgid "Metakey"
+msgstr "Meta Palabras clave"
+
+#. module: training_joomla
+#: field:training.offer,frontpage:0
+msgid "Front Page"
+msgstr "Portada"
+
+#. module: training_joomla
+#: view:training.offer:0
+msgid "Notification Note"
+msgstr "Nota de notificación"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Offer"
+msgstr "Curso"
+
+#. module: training_joomla
+#: field:training.joomla.session.wizard,session_new:0
+msgid "Session New"
+msgstr "Ediciones nuevas"
+
+#. module: training_joomla
+#: field:training.course,metakey:0
+#: field:training.offer,metakey:0
+#: field:training.session,metakey:0
+msgid "MetaKey"
+msgstr "Palabras clave"
+
+#. module: training_joomla
+#: field:training.joomla,duplicate_subscription:0
+msgid "Duplicate subscription"
+msgstr "Subscripción duplicada"
+
+#. module: training_joomla
+#: view:training.joomla.offer.wizard:0
+msgid "Are you sure to export all offers?"
+msgstr "Queréis exportar todos los cursos?"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,address_new:0
+msgid "Address New"
+msgstr "Direcciones nuevas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,product_delete:0
+msgid "Product Delete"
+msgstr "Productos eliminados"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_offer
+msgid "Export Offers to Joomla!"
+msgstr "Exportar cursos a Joomla!"
+
+#. module: training_joomla
+#: code:addons/training_joomla/wizard/export_table.py:47
+#: code:addons/training_joomla/wizard/export_table.py:95
+#: code:addons/training_joomla/wizard/export_table.py:100
+#: code:addons/training_joomla/wizard/wizard_training_joomla_configuration.py:178
+#: code:addons/training_joomla/wizard/wizard_training_joomla_course.py:89
+#: code:addons/training_joomla/wizard/wizard_training_joomla_images.py:77
+#: code:addons/training_joomla/wizard/wizard_training_joomla_offer.py:87
+#: code:addons/training_joomla/wizard/wizard_training_joomla_session.py:111
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Joomla"
+msgstr "Joomla"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,partner_new:0
+msgid "Partner New"
+msgstr "Empresas nuevas"
+
+#. module: training_joomla
+#: field:training.joomla,session_cancelled:0
+msgid "Cancelled"
+msgstr "Cancela"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,type_delete:0
+msgid "Type Delete"
+msgstr "Tipos eliminados"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,theme_new:0
+msgid "Theme New"
+msgstr "Temas nuevos"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Course"
+msgstr "Asignaturas"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_session
+msgid "training.session"
+msgstr "training.session"
+
+#. module: training_joomla
+#: code:addons/training_joomla/wizard/wizard_training_joomla_configuration.py:178
+#: code:addons/training_joomla/wizard/wizard_training_joomla_course.py:89
+#: code:addons/training_joomla/wizard/wizard_training_joomla_images.py:77
+#: code:addons/training_joomla/wizard/wizard_training_joomla_offer.py:87
+#: code:addons/training_joomla/wizard/wizard_training_joomla_session.py:111
+#, python-format
+msgid ""
+"No Joomla! location defined!\n"
+"Please create one."
+msgstr ""
+"No se ha definido una localización para Joomla!\n"
+"Crea una."
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "XML-RPC"
+msgstr "XML-RPĈ"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla_configuration_wizard
+msgid "training.joomla.configuration.wizard"
+msgstr "training.joomla.configuration.wizard"
+
+#. module: training_joomla
+#: field:training.joomla,session_opened_confirmed:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: training_joomla
+#: field:training.joomla.session.wizard,d_from:0
+msgid "From"
+msgstr "Desde"
+
+#. module: training_joomla
+#: help:training.joomla,duplicate_subscription:0
+msgid ""
+"If active, cancel other subscriptions with same edition and create new "
+"subscription"
+msgstr ""
+"If active, cancel other subscriptions with same edition and create new "
+"subscription"
+
+#. module: training_joomla
+#: help:training.joomla,password:0
+msgid "Super administrator user: password"
+msgstr "Usuario Super-Administrador: password"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,product_new:0
+msgid "Product New"
+msgstr "Productos nuevos"
+
+#. module: training_joomla
+#: view:training.joomla:0
+#: field:training.joomla.configuration.wizard,state:0
+#: field:training.joomla.course.wizard,state:0
+#: field:training.joomla.images.wizard,state:0
+#: field:training.joomla.offer.wizard,state:0
+#: field:training.joomla.session.wizard,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,partner_update:0
+msgid "Partner Update"
+msgstr "Empresas actualizadas"
+
+#. module: training_joomla
+#: field:training.joomla,location:0
+msgid "Location"
+msgstr "Localización"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,type_update:0
+msgid "Type Update"
+msgstr "Tipos actualizados"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_offer_wizard
+msgid "Export Offers"
+msgstr "Exportar cursos"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_session_wizard
+msgid "Export Session"
+msgstr "Exportar ediciones"
+
+#. module: training_joomla
+#: view:training.joomla.configuration.wizard:0
+msgid "Are you sure to export all training configuration?"
+msgstr "Queréis exportar todas las configuraciones?"
+
+#. module: training_joomla
+#: code:addons/training_joomla/training.py:259
+#: code:addons/training_joomla/training.py:312
+#: code:addons/training_joomla/training.py:316
+#: code:addons/training_joomla/training.py:330
+#, python-format
+msgid "Training Joomla Subscription"
+msgstr "Joomla! Formación Subscripción"
+
+#. module: training_joomla
+#: code:addons/training_joomla/training.py:259
+#, python-format
+msgid "Training Enrol Component not defined Name Website"
+msgstr "Training Enrol Component not defined Name Website"
+
+#. module: training_joomla
+#: field:training.joomla,product_category_id:0
+msgid "Product Category"
+msgstr "Categoría del producto"
+
+#. module: training_joomla
+#: constraint:training.subscription.line:0
+msgid "Invalid Subscription"
+msgstr "Subscripción inválida"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,type_new:0
+msgid "Type New"
+msgstr "Tipos nuevos"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla
+msgid "Training Joomla Configuration"
+msgstr "Configuración Joomla! - Formación"
+
+#. module: training_joomla
+#: field:training.joomla,price_list_id:0
+msgid "Pricelist"
+msgstr "Pricelist"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_session
+msgid "Export Sessions to Joomla!"
+msgstr "Exporta ediciones a Joomla!"
+
+#. module: training_joomla
+#: view:training.course:0
+#: field:training.course,metadescription:0
+#: view:training.offer:0
+#: field:training.offer,metadescription:0
+#: view:training.session:0
+#: field:training.session,metadescription:0
+msgid "MetaDescription"
+msgstr "Meta Descripción"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,lang_delete:0
+msgid "Lang Delete"
+msgstr "Lenguas eliminadas"
+
+#. module: training_joomla
+#: view:training.joomla.offer.wizard:0
+msgid "Joomla! Export Offers"
+msgstr "Joomla! Cursos exportados"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,country_new:0
+msgid "Country New"
+msgstr "Países nuevos"
+
+#. module: training_joomla
+#: view:training.joomla.session.wizard:0
+msgid "Are you sure to export the sessions within interval dates?"
+msgstr "Queréis exportar todas las configuraciones?"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,theme_update:0
+msgid "Theme Update"
+msgstr "Temas actualizados"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,format_delete:0
+msgid "Format Delete"
+msgstr "Formato eliminados"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_course
+msgid "training.course"
+msgstr "training.course"
+
+#. module: training_joomla
+#: field:training.joomla.images.wizard,images_new:0
+msgid "Images New"
+msgstr "Imágenes nuevas"
+
+#. module: training_joomla
+#: constraint:training.course:0
+msgid "Please, Can you check the duration ?"
+msgstr "Please, Can you check the duration ?"
+
+#. module: training_joomla
+#: code:addons/training_joomla/wizard/export_table.py:47
+#: code:addons/training_joomla/wizard/export_table.py:95
+#: code:addons/training_joomla/wizard/export_table.py:100
+#, python-format
+msgid ""
+"No Joomla! connection or username not valid!\n"
+"Try again."
+msgstr ""
+"No se ha podido conectar a Joomla! o el usuario no es válido!\n"
+"Revisa la configuración."
+
+#. module: training_joomla
+#: view:training.joomla.configuration.wizard:0
+msgid "Joomla! Export configuration"
+msgstr "Joomla! Configuraciones exportadas"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_offer
+msgid "training.offer"
+msgstr "training.offer"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,country_delete:0
+msgid "Country Delete"
+msgstr "Países eliminados"
+
+#. module: training_joomla
+#: selection:training.joomla.configuration.wizard,state:0
+#: selection:training.joomla.course.wizard,state:0
+#: selection:training.joomla.images.wizard,state:0
+#: selection:training.joomla.offer.wizard,state:0
+#: selection:training.joomla.session.wizard,state:0
+msgid "First"
+msgstr "Primero"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_course
+msgid "Export Courses to Joomla!"
+msgstr "Exporta asignaturas a Joomla!"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,format_new:0
+msgid "Format New"
+msgstr "Formatos nuevos"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Session"
+msgstr "Ediciones"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,address_update:0
+msgid "Address Update"
+msgstr "Direcciones actualizadas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,audience_delete:0
+msgid "Audience Delete"
+msgstr "Destinatarios eliminados"
+
+#. module: training_joomla
+#: code:addons/training_joomla/training.py:312
+#, python-format
+msgid "Subscription Create: %s"
+msgstr "Subscripción creada: %s"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla_images_wizard
+msgid "training.joomla.images.wizard"
+msgstr "training.joomla.images.wizard"
+
+#. module: training_joomla
+#: field:training.joomla,session_opened:0
+msgid "Opened"
+msgstr "Abierto"
+
+#. module: training_joomla
+#: view:training.joomla:0
+msgid "Partner Address Export"
+msgstr "Empresas y direcciones para exportar"
+
+#. module: training_joomla
+#: field:training.joomla.images.wizard,images_delete:0
+msgid "Images Delete"
+msgstr "Imágenes eliminadas"
+
+#. module: training_joomla
+#: field:training.joomla,course_draft:0
+#: field:training.joomla,offer_draft:0
+#: field:training.joomla,session_draft:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: training_joomla
+#: field:training.joomla,session_closed:0
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: training_joomla
+#: field:training.joomla.course.wizard,course_delete:0
+msgid "Course Delete"
+msgstr "Asignaturas eliminadas"
+
+#. module: training_joomla
+#: field:training.joomla,course_pending:0
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla_session_wizard
+msgid "training.joomla.session.wizard"
+msgstr "training.joomla.session.wizard"
+
+#. module: training_joomla
+#: view:training.joomla.course.wizard:0
+msgid "Are you sure to export all courses?"
+msgstr "Queréis exportar todas las asignaturas?"
+
+#. module: training_joomla
+#: field:training.joomla.offer.wizard,offer_new:0
+msgid "Offer New"
+msgstr "Cursos nous"
+
+#. module: training_joomla
+#: field:training.joomla,username:0
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#. module: training_joomla
+#: view:training.joomla.course.wizard:0
+msgid "Joomla! Export Courses"
+msgstr "Jooml! Asignaturas exportadas"
+
+#. module: training_joomla
+#: code:addons/training_joomla/training.py:316
+#, python-format
+msgid "Price List %s not found or not active"
+msgstr "Price List %s not found or not active"
+
+#. module: training_joomla
+#: view:training.session:0
+msgid "Groups"
+msgstr "Nombre de usuario"
+
+#. module: training_joomla
+#: field:training.joomla,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla_offer_wizard
+msgid "training.joomla.offer.wizard"
+msgstr "training.joomla.offer.wizard"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,audience_new:0
+msgid "Audience New"
+msgstr "Destinatarios nuevos"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_configuration_wizard
+msgid "Export Configuration"
+msgstr "Exportar configuración"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_subscription_line
+msgid "training.subscription.line"
+msgstr "training.subscription.line"
+
+#. module: training_joomla
+#: field:training.joomla,course_deprecated:0
+#: field:training.joomla,offer_deprecated:0
+msgid "Deprecated"
+msgstr "Descatalogado"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,lang_new:0
+msgid "Lang New"
+msgstr "Lenguas nuevas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,theme_delete:0
+msgid "Theme Delete"
+msgstr "Temas eliminados"
+
+#. module: training_joomla
+#: view:training.joomla.session.wizard:0
+msgid "Joomla! Export Sessions"
+msgstr "Joomla! Ediciones exportadas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,product_update:0
+msgid "Product Update"
+msgstr "Productos actualizados"
+
+#. module: training_joomla
+#: view:training.course:0
+msgid "History"
+msgstr "Historial"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,country_update:0
+msgid "Country Update"
+msgstr "Países actualizados"
+
+#. module: training_joomla
+#: field:training.joomla.course.wizard,course_update:0
+msgid "Course Update"
+msgstr "Asignaturas actualizadas"
+
+#. module: training_joomla
+#: field:training.joomla.session.wizard,session_update:0
+msgid "Session Update"
+msgstr "Ediciones actualizadas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,audience_update:0
+msgid "Audience Update"
+msgstr "Destinatarios actualizados"
+
+#. module: training_joomla
+#: code:addons/training_joomla/wizard/export_table.py:88
+#, python-format
+msgid "Table:%s,Value:%s"
+msgstr "Tabla:%s, Valor:%s"
+
+#. module: training_joomla
+#: code:addons/training_joomla/training.py:330
+#, python-format
+msgid "Subscription %s is cancell"
+msgstr "La subscripción %s  se ha cancelado"
+
+#. module: training_joomla
+#: selection:training.joomla.configuration.wizard,state:0
+#: selection:training.joomla.course.wizard,state:0
+#: selection:training.joomla.images.wizard,state:0
+#: selection:training.joomla.offer.wizard,state:0
+#: selection:training.joomla.session.wizard,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: training_joomla
+#: field:training.joomla.offer.wizard,offer_update:0
+msgid "Offer Update"
+msgstr "Cursos actualizados"
+
+#. module: training_joomla
+#: view:training.joomla.configuration.wizard:0
+#: view:training.joomla.course.wizard:0
+#: view:training.joomla.images.wizard:0
+#: view:training.joomla.offer.wizard:0
+#: view:training.joomla.session.wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: training_joomla
+#: view:training.joomla.configuration.wizard:0
+#: view:training.joomla.course.wizard:0
+#: view:training.joomla.images.wizard:0
+#: view:training.joomla.offer.wizard:0
+#: view:training.joomla.session.wizard:0
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: training_joomla
+#: field:training.joomla,course_validated:0
+#: field:training.joomla,offer_validated:0
+msgid "Validated"
+msgstr "Validado"
+
+#. module: training_joomla
+#: help:training.joomla,username:0
+msgid "Super administrator user: username"
+msgstr "Usuario Super-Administrador: username"
+
+#. module: training_joomla
+#: field:training.joomla,session_inprogress:0
+msgid "In Progress"
+msgstr "En progreso"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_config_joomla_mi
+msgid "Joomla! Configuration"
+msgstr "Configuración de Joomla!"
+
+#. module: training_joomla
+#: constraint:training.session:0
+msgid "You have a seance with a date inferior to the session's date"
+msgstr "You have a seance with a date inferior to the session's date"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,partner_delete:0
+msgid "Partner Delete"
+msgstr "Empresas eliminadas"
+
+#. module: training_joomla
+#: field:training.joomla.course.wizard,course_new:0
+msgid "Course New"
+msgstr "Asignaturas nuevas"
+
+#. module: training_joomla
+#: field:training.joomla.session.wizard,d_to:0
+msgid "To"
+msgstr "Hasta"
+
+#. module: training_joomla
+#: field:training.joomla.offer.wizard,offer_delete:0
+msgid "Offer Delete"
+msgstr "Cursos eliminados"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_joomla_course_wizard
+msgid "training.joomla.course.wizard"
+msgstr "training.joomla.course.wizard"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,address_delete:0
+msgid "Address Delete"
+msgstr "Direcciones eliminadas"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,format_update:0
+msgid "Format Update"
+msgstr "Formatos actualizados"
+
+#. module: training_joomla
+#: model:ir.model,name:training_joomla.model_training_subscription
+msgid "training.subscription"
+msgstr "training.subscription"
+
+#. module: training_joomla
+#: field:training.joomla,password:0
+msgid "Password"
+msgstr "Clave acceso"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_images
+msgid "Export Images to Joomla!"
+msgstr "Exporta imágenes a Joomla!"
+
+#. module: training_joomla
+#: model:ir.module.module,description:training_joomla.module_meta_information
+msgid "Synchronizes Training objects to Joomla! MySQL tables"
+msgstr "Sincroniza los objetos de Training a las tablas de MySQL de Jomla!"
+
+#. module: training_joomla
+#: field:training.joomla,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: training_joomla
+#: view:training.joomla.images.wizard:0
+msgid "Joomla! Export Images"
+msgstr "Joomla! Imágenes exportadas"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_images_wizard
+msgid "Export Images"
+msgstr "Exporta imágenes"
+
+#. module: training_joomla
+#: sql_constraint:training.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr "The name of the subscription must be unique !"
+
+#. module: training_joomla
+#: view:training.joomla.images.wizard:0
+msgid "Are you sure to export all images?"
+msgstr "Estáis seguros de exportar todas las imágenes?"
+
+#. module: training_joomla
+#: field:training.course,alias:0
+#: field:training.offer,alias:0
+#: field:training.session,alias:0
+msgid "Alias"
+msgstr "Alias"
+
+#. module: training_joomla
+#: field:training.joomla,partner_joomla_ids:0
+msgid "Partner to export"
+msgstr "Empresas a exportar"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_action
+#: view:training.course:0
+#: view:training.joomla:0
+#: view:training.offer:0
+#: view:training.session:0
+msgid "Joomla!"
+msgstr "Joomla!"
+
+#. module: training_joomla
+#: model:ir.actions.act_window,name:training_joomla.action_training_joomla_course_wizard
+msgid "Export Courses"
+msgstr "Exportar asignaturas"
+
+#. module: training_joomla
+#: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_configuration
+msgid "Export Configuration to Joomla!"
+msgstr "Exporta configuraciones a Joomla!"
+
+#. module: training_joomla
+#: help:training.offer,frontpage:0
+msgid "Show this offer at Front Page"
+msgstr "Mostrar este curso a la portada"
+
+#. module: training_joomla
+#: field:training.joomla.session.wizard,session_delete:0
+msgid "Session Delete"
+msgstr "Ediciones eliminadas"
+
+#. module: training_joomla
+#: field:training.joomla,session_closed_confirmed:0
+msgid "Closed Subscriptions"
+msgstr "Subscripciones cerradas"
+
+#. module: training_joomla
+#: view:training.joomla.configuration.wizard:0
+#: view:training.joomla.course.wizard:0
+#: view:training.joomla.images.wizard:0
+#: view:training.joomla.offer.wizard:0
+#: view:training.joomla.session.wizard:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: training_joomla
+#: code:addons/training_joomla/wizard/export_table.py:88
+#: model:ir.module.module,shortdesc:training_joomla.module_meta_information
+#, python-format
+msgid "Training Joomla"
+msgstr "Joomla! formación"
+
+#. module: training_joomla
+#: field:training.joomla.configuration.wizard,lang_update:0
+msgid "Lang Update"
+msgstr "Lenguas actualizadas"

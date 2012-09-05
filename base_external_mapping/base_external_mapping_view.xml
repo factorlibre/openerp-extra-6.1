@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<!--External Mapping line-->
+    <record model="ir.ui.view" id="view_base_external_mapping_line_form">
+        <field name="name">base.external.mapping.line.form</field>
+        <field name="model">base.external.mapping.line</field>
+        <field name="type">form</field>
+        <field name="priority" eval="5"/>
+        <field name="arch" type="xml">
+            <form string="External Referentials">
+                <field name="field_id"/>
+                <field name="external_field"/>
+                <field name="type"/>
+                <field name="external_type"/>
+                <field name="active"/>
+                <field name="sequence"/>
+                <field name="translate"/>
+                <field name="update"/>
+                <group attrs="{'invisible':[('translate', '=', True)]}" colspan="4">
+                    <separator string="Import in OpenERP Mapping Python Function" colspan="4"/>
+                    <field name="in_function" colspan="4" nolabel="1"/>
+                    <separator string="Export from OpenERP Mapping Python Function" colspan="4"/>
+                    <field name="out_function" colspan="4" nolabel="1"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_base_external_mapping_line_tree">
+        <field name="name">base.external.mapping.line.tree</field>
+        <field name="model">base.external.mapping.line</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="5"/>
+        <field name="arch" type="xml">
+            <tree string="External Referentials">
+                <field name="field_id" />
+                <field name="external_field" />
+                <field name="type" />
+                <field name="external_type" />
+                <field name="active"/>
+                <field name="sequence"/>
+                <field name="translate"/>
+                <field name="update"/>
+            </tree>
+        </field>
+    </record>
+
+<!--External Mapping-->
+    <record model="ir.ui.view" id="view_base_external_mapping_form">
+        <field name="name">base.external.mapping.form</field>
+        <field name="model">base.external.mapping</field>
+        <field name="type">form</field>
+        <field name="priority" eval="5"/>
+        <field name="arch" type="xml">
+        <form string="External Referentials">
+            <field name="name" attrs="{'readonly': [('state', '!=', 'draft')]}" select="1"/>
+            <field name="model_id" attrs="{'readonly': [('state', '!=', 'draft')]}" select="1"/>
+            <separator string="Mappings" colspan="4"/>
+            <field name="mapping_ids" colspan="4" nolabel="1"/>
+            <field name="state"/>
+        </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_base_external_mapping_tree">
+        <field name="name">base.external.mapping.tree</field>
+        <field name="model">base.external.mapping</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="5"/>
+        <field name="arch" type="xml">
+            <tree string="External Referentials">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_base_external_mapping_action">
+        <field name="name">External Mapping</field>
+        <field name="res_model">base.external.mapping</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help">Remember if you add new field in this mapping, you will inherit model (Example Django: Administration/Customization/Database Structure/Create Django Model and update Django Model. Also, you will update SQL Database Django (use wizard SQL Update)).</field>
+    </record>
+
+   <act_window name="Fields"
+        domain="[('mapping_id', '=', active_id)]"
+        context="{'mapping_id': active_id}"
+        res_model="base.external.mapping.line"
+        src_model="base.external.mapping"
+        id="act_base_external_mapping_fields"/>
+
+    <menuitem id="menu_base_external_mapping" name="Base External Mapping" parent="base.next_id_9" action="action_base_external_mapping_action" />
+</data>
+</openerp>

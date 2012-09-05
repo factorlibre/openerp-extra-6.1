@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+        <report
+                string="Forecast"
+                model="account.move.line"
+                name="report_account_move_line_forecast"
+                rml="nan_account_forecast/report/forecast.jrxml"
+                id="report_forecast_account_move_lines"
+                />
+</data>
+</openerp>

@@ -1,0 +1,38 @@
+<openerp>
+<data>
+	<!-- account.move.line -->
+	<record id="account_move_line_statement_of_accounts_view" model="ir.ui.view">
+		<field name="name">account.move.line.statement_of_accounts</field>
+		<field name="model">account.move.line</field>
+		<field name="type">form</field>
+		<field name="priority">30</field>
+		<field name="arch" type="xml">
+			<tree string="Statement of Accounts" colors="red:reconcile_id==False and reconcile_partial_id==False; blue:reconcile_partial_id!=False">
+				<field name="date"/>
+				<field name="period_id"/>
+				<field name="move_id"/>
+				<field name="name"/>
+				<field name="partner_id"/>
+				<!--
+				<field name="account_id" domain="[('journal_id','=',journal_id)]"/>
+				-->
+				<field name="journal_id"/>
+				<field name="debit" sum="Total debit"/>
+				<field name="credit" sum="Total credit"/>
+				<field name="balance"/>
+				<field name="date_maturity"/>
+				<field name="invoice"/>
+				<field name="received_check"/>
+				<field name="reconcile_id"/>
+				<field name="reconcile_partial_id" groups="base.group_extended"/>
+				<field name="ref"/>
+				<field name="account_tax_id" groups="base.group_extended"/>
+				<field name="analytic_account_id"/>
+				<field name="amount_currency" groups="base.group_extended"/>
+				<field name="currency_id" groups="base.group_extended"/>
+				<field name="state"/>
+			</tree>
+		</field>
+	</record>
+</data>
+</openerp>

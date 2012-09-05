@@ -1,0 +1,91 @@
+# Portuguese translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-01-29 23:02+0000\n"
+"PO-Revision-Date: 2011-02-15 15:13+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: l10n_fr_account_generation
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML Inválido para a Arquitectura de Vista!"
+
+#. module: l10n_fr_account_generation
+#: field:account.generation.config,supplier:0
+msgid "Global Supplier"
+msgstr "Fornecedor Global"
+
+#. module: l10n_fr_account_generation
+#: field:account.generation.config,name:0
+msgid "Configuration Name"
+msgstr "Configuração de Nome"
+
+#. module: l10n_fr_account_generation
+#: field:account.generation.config,nbcar:0
+msgid "Char size"
+msgstr "Tamanho do char"
+
+#. module: l10n_fr_account_generation
+#: view:account.generation.config:0
+#: model:ir.actions.act_window,name:l10n_fr_account_generation.action_account_generation_config_form
+#: model:ir.ui.menu,name:l10n_fr_account_generation.menu_action_account_generation_config_form
+msgid "Account generation config"
+msgstr "Configuração da geração da conta"
+
+#. module: l10n_fr_account_generation
+#: model:ir.model,name:l10n_fr_account_generation.model_account_generation_config
+msgid "Account Generation Configuration"
+msgstr "Configuração da Geração da Conta"
+
+#. module: l10n_fr_account_generation
+#: field:account.generation.config,customer:0
+msgid "Global Customer"
+msgstr "Cliente Global"
+
+#. module: l10n_fr_account_generation
+#: help:account.generation.config,nbcar:0
+msgid "Number of character for the creation of accounts"
+msgstr "Número de caracter para a criação de contas"
+
+#. module: l10n_fr_account_generation
+#: model:ir.module.module,shortdesc:l10n_fr_account_generation.module_name_translation
+msgid "France - Generation de compte comptable tiers"
+msgstr "França - Geração de camadas compte comptable"
+
+#. module: l10n_fr_account_generation
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"O nome do Objecto deve começar com x_ e não pode conter nenhum caracter "
+"especial !"
+
+#. module: l10n_fr_account_generation
+#: model:ir.module.module,description:l10n_fr_account_generation.module_name_translation
+msgid ""
+"Add a button in partners form for creating the payable and receive accounts "
+"in general account.\n"
+"\n"
+"Credits: Sistheo Zeekom\n"
+msgstr ""
+"Adiciona um botão em terceiros no formuláro para a criação  contas pagas e "
+"recebidas na conta geral.\n"
+"\n"
+"Créditos: Sistheo Zeekom\n"
+
+#. module: l10n_fr_account_generation
+#: view:res.partner:0
+msgid "Account generate"
+msgstr "Geração de Conta"

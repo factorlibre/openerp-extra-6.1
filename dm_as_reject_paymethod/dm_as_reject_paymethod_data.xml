@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+        
+        <!-- Payment Method Reject Sections -->
+
+         <record model="dm.as.reject.type" id="dm_reject_paymethod_demo">
+            <field name="name">Payment Method Rejected</field>
+            <field name="code">paymethod</field>
+        </record>
+    </data>
+</openerp>

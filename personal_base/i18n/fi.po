@@ -1,0 +1,355 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 10:50+0000\n"
+"PO-Revision-Date: 2011-06-28 08:42+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_after_login
+msgid "After Login"
+msgstr "Kirjautumisen jälkeen"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_confirmed_account_lines_list
+#: model:ir.ui.menu,name:personal_base.menu_action_confirmed_account_lineslist
+msgid "Confirmed Account Lines"
+msgstr "Vahvistetut tilirivit"
+
+#. module: personal_base
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Virheellinen mallin nimi toiminnon määrittelyssä."
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Entry lines"
+msgstr "Syötetyt rivit"
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Confirm"
+msgstr "Vahvista"
+
+#. module: personal_base
+#: model:ir.ui.menu,name:personal_base.personal_administration_menu
+msgid "Personal"
+msgstr "Henkilökohtainen"
+
+#. module: personal_base
+#: selection:personal.base.account.type,sign:0
+msgid "Positive"
+msgstr "Positiivinen"
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_open_line_entry
+#: model:ir.actions.wizard,name:personal_base.wizard_open_line_entry_id
+msgid "Open Line Entry"
+msgstr "Avaa rivinsyöttö"
+
+#. module: personal_base
+#: selection:personal.base.account.entry,state:0
+#: selection:personal.base.account.entry.line,state:0
+msgid "Confirmed"
+msgstr "Vahvistettu"
+
+#. module: personal_base
+#: selection:personal.base.account.type,sign:0
+msgid "Negative"
+msgstr "Negatiivinen"
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,debit_amount:0
+msgid "Debit Amount"
+msgstr "Veloitusmäärä"
+
+#. module: personal_base
+#: field:personal.base.account.entry,state:0
+#: field:personal.base.account.entry.line,state:0
+msgid "State"
+msgstr "Tila"
+
+#. module: personal_base
+#: selection:personal.base.account.entry,state:0
+#: selection:personal.base.account.entry.line,state:0
+msgid "Draft"
+msgstr "Luonnos"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_account_entries_list
+#: view:personal.base.account.entry:0
+msgid "Account Entries"
+msgstr "Tilitapahtumat"
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,parent_id:0
+msgid "Entry"
+msgstr "Tietue"
+
+#. module: personal_base
+#: model:ir.ui.menu,name:personal_base.menu_action_account_form
+msgid "Accounts Definition"
+msgstr "Tilien määritys"
+
+#. module: personal_base
+#: model:ir.module.module,shortdesc:personal_base.module_meta_information
+msgid "Personal Base"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_type
+#: field:personal.base.account,type_id:0
+#: view:personal.base.account.type:0
+msgid "Account Type"
+msgstr "Tilityyppi"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_tree
+#: model:ir.ui.menu,name:personal_base.menu_action_account_tree
+#: view:personal.base.account:0
+msgid "Chart of Accounts"
+msgstr "Tilikartta"
+
+#. module: personal_base
+#: field:res.users,created:0
+msgid "Created"
+msgstr "Luotu"
+
+#. module: personal_base
+#: field:personal.base.account,name:0
+#: field:personal.base.action.login,name:0
+msgid "Name"
+msgstr "Nimi"
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,amount_base:0
+msgid "Amount Base"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Return"
+msgstr "Takaisin"
+
+#. module: personal_base
+#: field:personal.base.account.entry,name:0
+#: field:personal.base.account.entry.line,name:0
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: personal_base
+#: view:personal.base.account:0
+#: view:personal.base.account.entry:0
+msgid "General Information"
+msgstr "Yleiset tiedot"
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_action_login
+msgid "personal.base.action.login"
+msgstr ""
+
+#. module: personal_base
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Objektin nimi täytyy alkaa X_ eikä se saa sisältää mitää erikoismerkkejä!"
+
+#. module: personal_base
+#: view:personal.base.account.entry.line:0
+msgid "Account Entry Lines"
+msgstr "Tilin syöttörivit"
+
+#. module: personal_base
+#: field:personal.base.account,parent_id:0
+msgid "Parent Code"
+msgstr "Ylempi koodi"
+
+#. module: personal_base
+#: field:res.users,first_login:0
+msgid "First Login"
+msgstr "Ensimmäinen kirjautuminen"
+
+#. module: personal_base
+#: field:personal.base.account,child_ids:0
+msgid "Child Codes"
+msgstr "Alikoodit"
+
+#. module: personal_base
+#: field:personal.base.account,user_id:0
+#: field:personal.base.account.entry,user_id:0
+#: field:personal.base.account.entry.line,user_id:0
+msgid "User"
+msgstr "Käyttäjä"
+
+#. module: personal_base
+#: field:personal.base.account.entry,line_ids:0
+msgid "Entries"
+msgstr "Merkinnät"
+
+#. module: personal_base
+#: field:personal.base.account.entry,date:0
+#: field:personal.base.account.entry.line,date:0
+msgid "Date"
+msgstr "Päiväys"
+
+#. module: personal_base
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account
+#: view:personal.base.account:0
+#: field:personal.base.account.entry.line,account_id:0
+msgid "Account"
+msgstr "Tili"
+
+#. module: personal_base
+#: field:res.users,currency_id:0
+msgid "Default Currency"
+msgstr "Oletusvaluutta"
+
+#. module: personal_base
+#: field:personal.base.account.entry,created_in_model_id:0
+msgid "Created in Model"
+msgstr "Luotu mallissa"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_confirmed_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_confirmed_account_entries_list
+msgid "Confirmed Account Entries"
+msgstr "Vahvistetut tilimerkinnät"
+
+#. module: personal_base
+#: view:personal.base.account:0
+#: view:personal.base.account.entry:0
+msgid "Notes"
+msgstr "Huomautukset"
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_entry_line
+#: view:personal.base.account.entry.line:0
+msgid "Account Entry Line"
+msgstr "Tilimerkinnän rivi"
+
+#. module: personal_base
+#: field:personal.base.account,note:0
+#: field:personal.base.account.entry,note:0
+msgid "Note"
+msgstr "Huomautus"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_personal_base_action_login_list
+#: model:ir.ui.menu,name:personal_base.menu_action_personal_base_action_login_list
+msgid "Actions After Login"
+msgstr "Toiminnot kirjautumisen jälkeen"
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,amount_base_with_sign:0
+msgid "Amount"
+msgstr "Määrä"
+
+#. module: personal_base
+#: field:personal.base.action.login,action_id:0
+msgid "Action"
+msgstr "Toiminto"
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,credit_amount:0
+msgid "Credit Amount"
+msgstr "Luoton määrä"
+
+#. module: personal_base
+#: field:personal.base.account,balance:0
+#: field:personal.base.account.entry.line,balance:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: personal_base
+#: field:res.users,email:0
+msgid "E-Mail Address"
+msgstr "Sähköposti osoite"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_entry_form_form
+#: model:ir.ui.menu,name:personal_base.menu_action_account_entry_form_form
+msgid "New Account Entry"
+msgstr "Uusi tilitapahtuma"
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_entry
+#: view:personal.base.account.entry:0
+msgid "Account Entry"
+msgstr "Tilitapahtuma"
+
+#. module: personal_base
+#: field:personal.base.account,unit_test:0
+#: field:personal.base.account.entry,unit_test:0
+#: field:personal.base.account.entry.line,unit_test:0
+#: field:res.users,unit_test:0
+msgid "unit_test"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,currency_rate:0
+msgid "Currency Rate"
+msgstr "Valuuttakurssikerroin"
+
+#. module: personal_base
+#: field:personal.base.account.type,sign:0
+msgid "Sign"
+msgstr "Allekirjoita"
+
+#. module: personal_base
+#: field:personal.base.account,currency_id:0
+#: field:personal.base.account.entry,currency_id:0
+#: field:personal.base.account.entry.line,currency_id:0
+msgid "Currency"
+msgstr "Valuutta"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_form
+msgid "Accounts"
+msgstr "Tilit"
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_create_account_types
+#: model:ir.ui.menu,name:personal_base.menu_wizard_create_account_types
+msgid "Create Account Types"
+msgstr "Luo tilityypit"
+
+#. module: personal_base
+#: model:ir.module.module,description:personal_base.module_meta_information
+msgid "Sandas Personal Financials base module."
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_type_form
+#: model:ir.ui.menu,name:personal_base.menu_action_account_type_form
+msgid "Account Types"
+msgstr "Tilityypit"
+
+#. module: personal_base
+#: field:personal.base.account.type,name:0
+msgid "Acc. Type Name"
+msgstr "Tilityypin nimi"
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_draft_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_draft_account_entries_list
+msgid "Draft Account Entries"
+msgstr "Luonnostilassa olevat tilitapahtumat"

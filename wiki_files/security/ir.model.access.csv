@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_wiki_media","wiki_media","model_wiki_media","base.group_document_user",1,1,1,1
+"access_wiki_files_conf","wiki_files_conf","model_wiki_files_conf","base.group_document_user",1,0,0,0
+"access_wiki_files_conf","wiki_files_conf","model_wiki_files_conf","base.group_sale_manager",1,1,1,1
+"access_wiki_files_wizard","wiki_files_wizard","model_wiki_files_wizard","base.group_document_user",1,1,1,1

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - one2many_list</name>
+  <icon>one2many.png</icon>
+  <connections/>
+  <aspectratio type="fixed"/>
+        <textbox x1="1" y1="0.5" x2="10" y2="2"/> 
+  <svg:svg>
+    <svg:image x="0" y="0" width="38.4" height="2.2" href="one2many_real.png"/>
+  </svg:svg>
+</shape>

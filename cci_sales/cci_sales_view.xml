@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_order_form_inherit_cci_sales">
+            <field name="name">sale.order.form.inherit.cci.sales</field>
+            <field name="type">form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Riders">
+                    <field name="parent_so" />
+                    <field name="child_so" colspan="4" nolabel="1"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_order_form_inherit_cci_sales_2">
+            <field name="name">sale.order.form.inherit</field>
+            <field name="type">form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="advertising_agency" on_change="onchange_advertising_agency(advertising_agency)" position="after">
+                    <field name="case_ids" colspan="4" nolabel="1"/>
+                    <separator string="Related Cases" colspan="4"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_order_form_inherit_cci_sales_3">
+            <field name="name">sale.order.form.inherit.cci.internal.notes</field>
+            <field name="type">form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="note" position="after">
+	               	<field name="internal_notes" colspan="4" nolabel="1"/>
+	                <separator string="Internal Note" colspan="4"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_order_form_inherit_cci_sales_4">
+            <field name="name">sale.order.form.inherit.cci.date.deadline</field>
+          	<field name="type">form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="fiscal_position" position="after">
+               		<field name="deadline" select="2"/>
+                </field>
+           </field>
+        </record>
+
+    </data>
+</openerp>

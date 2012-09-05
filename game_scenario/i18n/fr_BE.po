@@ -1,0 +1,200 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* game_scenario
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:37:40+0000\n"
+"PO-Revision-Date: 2009-11-25 14:37:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: game_scenario
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: game_scenario
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,menu_id:0
+msgid "Menu"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,tip:0
+msgid "Tip"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario,note:0
+msgid "Note"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+#: field:game.scenario.step,step_next_ids:0
+msgid "Next Steps"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,pre_process_object:0
+msgid "Preprocess Object"
+msgstr ""
+
+#. module: game_scenario
+#: selection:game.scenario,state:0
+#: selection:game.scenario.step,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "Postprocess"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "Preprocess"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.model,name:game_scenario.model_game_scenario_step
+msgid "game.scenario.step"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.model,name:game_scenario.model_game_scenario
+msgid "game.scenario"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,description:0
+msgid "Description"
+msgstr ""
+
+#. module: game_scenario
+#: selection:game.scenario,state:0
+#: selection:game.scenario.step,state:0
+msgid "Running"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.ui.menu,name:game_scenario.menu_game_scenario_step_root
+msgid "Game Scenario"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "Next steps"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,pre_process_method:0
+msgid "Preprocess Method"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.ui.menu,name:game_scenario.menu_game_scenario_step_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.module.module,description:game_scenario.module_meta_information
+msgid "Allows to check the scenario of games"
+msgstr ""
+
+#. module: game_scenario
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario,name:0
+#: field:game.scenario.step,name:0
+msgid "Name"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario:0
+#: field:game.scenario.step,scenario_id:0
+#: model:ir.actions.act_window,name:game_scenario.action_game_scenario_form
+#: model:ir.ui.menu,name:game_scenario.menu_game_scenario_form
+msgid "Scenario"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario:0
+msgid "Notes"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "Extra Information"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "Steps"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,error:0
+msgid "Error"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,post_process_object:0
+msgid "Postprocess Object"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario,state:0
+#: view:game.scenario.step:0
+#: field:game.scenario.step,state:0
+msgid "State"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+#: model:ir.actions.act_window,name:game_scenario.action_game_scenario_step_form
+#: model:ir.ui.menu,name:game_scenario.menu_game_scenario_step_form
+msgid "Scenario Steps"
+msgstr ""
+
+#. module: game_scenario
+#: model:ir.module.module,shortdesc:game_scenario.module_meta_information
+msgid "Scenario of games"
+msgstr ""
+
+#. module: game_scenario
+#: view:game.scenario.step:0
+msgid "General Information"
+msgstr ""
+
+#. module: game_scenario
+#: field:game.scenario.step,post_process_method:0
+msgid "Postprocess Method"
+msgstr ""
+
+#. module: game_scenario
+#: selection:game.scenario,state:0
+#: selection:game.scenario.step,state:0
+msgid "Done"
+msgstr ""
+
+#. module: game_scenario
+#: selection:game.scenario,state:0
+#: selection:game.scenario.step,state:0
+msgid "Cancel"
+msgstr ""
+

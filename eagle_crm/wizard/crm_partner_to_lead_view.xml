@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/crm_partner_to_lead_view.xml
+  Module: eagle_crm
+
+  Created by sbe@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+      <data>
+
+        <!-- partner To lead form -->
+
+          <record id="view_eagle_crm_partner2lead" model="ir.ui.view">
+          <field name="name">eagle.partner2lead</field>
+          <field name="model">eagle.partner2lead</field>
+          <field name="type">form</field>
+          <field name="arch" type="xml">
+              <form string="New Lead">
+				<group col="4" colspan="4" height="400" width="500">
+	            	<group colspan="4" attrs="{'invisible': [('state','!=','step1')]}" height="320" width="500">
+	            		<separator string="Lead description" colspan="4"/>
+		                    <field name="name" string="Subject" required="1" colspan="2" />
+							<field name="partner_id" invisible="1" />
+							<field name="partner_contact_id" string="Contact" />
+		                    <newline/>
+		                    <label string="Description"/>
+		                    <newline/>
+							<field name="description" nolabel="1" colspan="4"/>
+					</group>
+					<newline/>
+	            	<group colspan="4" attrs="{'invisible': [('state','!=','step2')]}" height="320" width="500">
+	            		<separator string="Info" colspan="4"/>
+		                    <field name="user_id" />
+	                    	<field name="priority"/>
+	                    	<field name="section_id"/>
+							<field name="type_id" select="1" widget="selection"/>
+							<field name="channel_id" select="1" widget="selection"/>
+							<field name="lead_categ_id" widget="selection"
+								domain="[('object_id.model','=','crm.lead')]"/>
+					</group>
+					<newline/>
+            		<separator string=" " colspan="4"/>
+					<field name="state" readonly="1" colspan="4" invisible="1"/>
+					<group col="10" colspan="4" width="500">
+						<button special="cancel" string="Cancel" icon="gtk-cancel"/>
+						<button name="go_step2" states="step1" string="Information" type="object" icon="gtk-go-forward"/>
+						<button name="make_lead" states="step1" string="Create" type="object" icon="gtk-ok"/>
+						<button name="make_lead" states="step2" string="Create" type="object" icon="gtk-ok"/>
+						<!--<button name="go_step1" states="step2" string="Description" type="object" icon="gtk-go-back"/>
+						<button name="go_step2" states="step1" string="Partner" type="object" icon="gtk-go-forward"/>
+						<button name="go_step2" states="step3" string="Partner" type="object" icon="gtk-go-back"/>
+						<button name="go_step3" states="step2" string="Lead" type="object" icon="gtk-go-forward"/>
+						<button name="go_step3" states="step4,step5" string="Lead" type="object" icon="gtk-go-back"/>
+						<button name="go_step4" states="step3" string="Meeting" type="object" icon="gtk-go-forward"/>
+						<button name="go_step5" states="step3" string="Call" type="object" icon="gtk-go-forward"/>
+						<button name="make_lead" states="step4" string="Create" type="object" icon="gtk-ok"/>
+						<button name="make_lead" states="step5" string="Create" type="object" icon="gtk-ok"/>-->
+					</group>
+				</group>
+            </form>
+          </field>
+       </record>
+
+<!-- partner To lead Action -->
+
+      <record model="ir.actions.act_window" id="action_view_eagle_crm_partner2lead">
+            <field name="name">Create Note</field>
+            <field name="res_model">eagle.partner2lead</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+	    <!-- partner To lead wizard -->
+
+	   <act_window id="eagle_crm_partner2lead"
+    		key2="client_action_multi" name="Create Note"
+    		res_model="eagle.partner2lead" src_model="res.partner"
+    		view_id="view_eagle_crm_partner2lead"
+    		view_mode="form" target="new" view_type="form"
+    		groups="base.group_extended"/>
+
+ 	</data>
+
+</openerp>

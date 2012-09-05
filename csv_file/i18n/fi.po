@@ -1,0 +1,284 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-05-09 10:53+0000\n"
+"PO-Revision-Date: 2011-07-05 08:44+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: csv_file
+#: field:csv.file.field,export_expression:0
+msgid "Export Expression"
+msgstr "Vie määrittely"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Float"
+msgstr "Liukuluku"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "cr - database cursor"
+msgstr "cr - tietokantakursori"
+
+#. module: csv_file
+#: help:csv.file,quote:0
+msgid "Character to use as quote"
+msgstr "Merkki jota käytetään lainausmerkkinä"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Tabulator"
+msgstr "Sarkain"
+
+#. module: csv_file
+#: help:csv.file,name:0
+msgid "Code Name of this file. Use lowcase and az09 characters."
+msgstr "Koodinimi tälle tiedostolle. Käytä pieniä kirjaimia a...z ja 0...9."
+
+#. module: csv_file
+#: field:csv.file,state:0
+msgid "State"
+msgstr "Tila"
+
+#. module: csv_file
+#: selection:csv.file,state:0
+msgid "Draft"
+msgstr "Luonnos"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "self - objects pointer"
+msgstr ""
+
+#. module: csv_file
+#: field:csv.file.field,type:0
+msgid "Type"
+msgstr "Tyyppi"
+
+#. module: csv_file
+#: field:csv.file.field,field_id:0
+msgid "OpenERP Field"
+msgstr "OpenERP kenttä"
+
+#. module: csv_file
+#: view:csv.file:0
+msgid "Files"
+msgstr "Tiedostot"
+
+#. module: csv_file
+#: help:csv.file,file:0
+msgid "CSV Filename"
+msgstr "CSV tiedostonimi"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "String"
+msgstr "merkkijono"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "re - regular expression"
+msgstr ""
+
+#. module: csv_file
+#: field:csv.file,quote:0
+msgid "Quote"
+msgstr "Lainaus"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Available global variables:"
+msgstr "Saatavissa olevat globaalit muuttujat"
+
+#. module: csv_file
+#: field:csv.file.field,sequence:0
+msgid "Sequence"
+msgstr "Sekvenssi"
+
+#. module: csv_file
+#: help:csv.file,file_csv_separator:0
+msgid "Product File CSV Separator"
+msgstr "Tuotetiedoston CSV erotusmerkki"
+
+#. module: csv_file
+#: model:ir.model,name:csv_file.model_csv_file
+msgid "csv.file"
+msgstr "csv tiedosto"
+
+#. module: csv_file
+#: field:csv.file,model:0
+msgid "Model Name"
+msgstr "Mallin nimi"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "value - value return"
+msgstr "Arvo - arvon palautus"
+
+#. module: csv_file
+#: selection:csv.file,state:0
+msgid "Done"
+msgstr "Valmis"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Import CSV Expression"
+msgstr "Tuo CSV määrittely"
+
+#. module: csv_file
+#: field:csv.file.field,name:0
+msgid "Name"
+msgstr "Nimi"
+
+#. module: csv_file
+#: field:csv.file,file_csv_separator:0
+msgid "CSV Separator"
+msgstr "CSV erotin"
+
+#. module: csv_file
+#: field:csv.file,field_ids:0
+msgid "Fields"
+msgstr "Kentät"
+
+#. module: csv_file
+#: code:addons/csv_file/csv_file.py:67
+#, python-format
+msgid "Error!"
+msgstr "Virhe!"
+
+#. module: csv_file
+#: field:csv.file,file:0
+#: model:ir.actions.act_window,name:csv_file.csv_file_action
+#: model:ir.ui.menu,name:csv_file.csv_file_menu
+msgid "CSV File"
+msgstr "CSV -tiedosto"
+
+#. module: csv_file
+#: help:csv.file,path:0
+msgid "The path to the file name. The last slash is not necessary"
+msgstr "Polku tiedostonimeen. Viimeinen kenoviiva ei ole välttämätön"
+
+#. module: csv_file
+#: help:csv.file,header:0
+msgid "Header (fields name) on files"
+msgstr "Otsikot (kenttänimet) tiedostoille"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Integer"
+msgstr "kokonaisluku"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "incsv - value csv to OpenERP"
+msgstr ""
+
+#. module: csv_file
+#: model:ir.model,name:csv_file.model_csv_file_field
+msgid "csv.file.field"
+msgstr ""
+
+#. module: csv_file
+#: field:csv.file,model_id:0
+msgid "OpenERP Model"
+msgstr "OpenERP malli"
+
+#. module: csv_file
+#: field:csv.file.field,import_expression:0
+msgid "Import Expression"
+msgstr "Tuo määritys"
+
+#. module: csv_file
+#: field:csv.file,name:0
+msgid "Code"
+msgstr "Koodi"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Semicolon"
+msgstr "Puolipiste"
+
+#. module: csv_file
+#: code:addons/csv_file/csv_file.py:67
+#, python-format
+msgid "Another External Mapping have the same code!"
+msgstr "Toisella ulkoisella mäppäyksellä on sama koodi!"
+
+#. module: csv_file
+#: help:csv.file.field,export_expression:0
+#: help:csv.file.field,import_expression:0
+msgid ""
+"Where we put the python code. The fields are called like '$name_of_field' "
+"(without the simple quotes)"
+msgstr ""
+"Tähän laitamme python koodin. Kentät nimetään kuten '$kentän_nimi' (ilman "
+"heittomerkkejä)"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Export CSV Expression"
+msgstr "Vie CSV määrittely"
+
+#. module: csv_file
+#: field:csv.file,path:0
+msgid "Path"
+msgstr "Polku"
+
+#. module: csv_file
+#: field:csv.file.field,file_id:0
+msgid "External Mapping"
+msgstr "Ulkoinen mäppäys"
+
+#. module: csv_file
+#: field:csv.file,header:0
+msgid "Header"
+msgstr "Otsikko"
+
+#. module: csv_file
+#: help:csv.file.field,sequence:0
+msgid "Is the order that you want for the columns field in the file"
+msgstr "Onko haluamasi sarakejärjestys tiedostossa"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Boolean"
+msgstr "Totuusarvo"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Comma"
+msgstr "Pilkku"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "uid - current user ID"
+msgstr "uid - nykyinen käyttäjätunnus"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "outcsv - value OpenERP to CSV"
+msgstr "outcsv - arvo OpenERP:istä CSV tiedostoon"
+
+#. module: csv_file
+#: help:csv.file.field,name:0
+msgid ""
+"The name of the field. It's used if you have selected the Header checkbox"
+msgstr "Kentän nimi. Käytetään jos olet valinnut otsikko - valintaruudun."
+
+#. module: csv_file
+#: view:csv.file:0
+#: view:csv.file.field:0
+msgid "External Referentials"
+msgstr "Ulkoiset viittaukset"

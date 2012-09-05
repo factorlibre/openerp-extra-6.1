@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_network_encrypt_password_user","network.encrypt.password User","network_extension.model_network_encrypt_password","network.group_network_user",1,1,1,1
+"access_network_protocol_user","network.protocol User","network_extension.model_network_protocol","network.group_network_user",1,0,0,0
+"access_network_service_user","network.service User","network_extension.model_network_service","network.group_network_user",1,1,1,1
+"access_network_encrypt_password_namager","network.encrypt.password Manager","network_extension.model_network_encrypt_password","network.group_network_user",1,1,1,1
+"access_network_service","network.service Manager","model_network_service","network.group_network_manager",1,1,1,1
+"access_network_protocol","network.protocol Manager","model_network_protocol","network.group_network_manager",1,1,1,1

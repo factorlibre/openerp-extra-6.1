@@ -1,0 +1,216 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_numbers
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:29:02+0000\n"
+"PO-Revision-Date: 2009-11-25 14:29:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Order N° :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "SALE ORDER"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "For"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Our salesman"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Division"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Disc. (%)"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Price"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Customer :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Unit Price"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Sr. No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Range"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Shipping address :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "PAN No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Description"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Service Tax No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice To:"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Authorised Signatory"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Date ordered"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "-"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid ":"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice address :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr ""
+
+#. module: sale_numbers
+#: model:ir.actions.report.xml,name:sale_numbers.report_sale_order_india
+msgid "Print Sale Order"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Your order reference"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Net Total :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Reg. No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: model:ir.module.module,shortdesc:sale_numbers.module_meta_information
+msgid "Sale Number"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quantity"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "VAT :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quotation N° :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "LST/VAT No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "CST No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "TOTAL :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr ""
+
+#. module: sale_numbers
+#: model:ir.module.module,description:sale_numbers.module_meta_information
+msgid "\n"
+"    remove the drawback of the sales numbering, \n"
+"    and add new feature that will create number on \n"
+"    confirmation of the sales order\n"
+"    "
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes :"
+msgstr ""
+

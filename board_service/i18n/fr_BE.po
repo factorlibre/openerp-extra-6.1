@@ -1,0 +1,283 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* board_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:19:19+0000\n"
+"PO-Revision-Date: 2009-11-26 06:19:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Forecast Lines"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Sale Orders Created"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_service.action_view_forecast
+msgid "Draft Sales Forecast Lines"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Sales Pipeline"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Results"
+msgstr ""
+
+#. module: board_service
+#: view:project.task:0
+msgid "Delay"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "My Inbox"
+msgstr ""
+
+#. module: board_service
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Open Cases"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Filter on Cases Sections"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_service.action_service_daily_board
+#: model:ir.ui.menu,name:board_service.menu_daily_board
+msgid "Daily Dashboard"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "My Planning Statistics"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Closed Cases"
+msgstr ""
+
+#. module: board_service
+#: view:crm.case:0
+msgid "Meetings Tree"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Draft Sales Forcast Lines"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Timesheet Lines"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Filter on Cases Categories"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Forecasts"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_service.action_view_task_pending_dashboard
+#: view:project.task:0
+msgid "My Pending Tasks"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Cases By Section"
+msgstr ""
+
+#. module: board_service
+#: model:ir.actions.act_window,name:board_service.act_hr_timesheet_sheet_my_dept
+msgid "My Departments' Timesheets To Validate"
+msgstr ""
+
+#. module: board_service
+#: model:ir.ui.menu,name:board_service.service_dashboard_menu
+msgid "Service Profile"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Filter on States"
+msgstr ""
+
+#. module: board_service
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Turnover Per Month"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Notes"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_service.action_service_weekly_board
+#: model:ir.ui.menu,name:board_service.menu_weekly_board
+msgid "Weekly Dashboard"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Invoices Created"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Aged Receivables"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Filter on Products"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Turnover Per Product"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "My Departments' Timesheets to Validate"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "My Open Tasks"
+msgstr ""
+
+#. module: board_service
+#: model:ir.actions.act_window,name:board_service.action_service_random_activities_board
+#: model:ir.ui.menu,name:board_service.menu_random_activities_board
+msgid "Random Activities(Within Last 15 Days)"
+msgstr ""
+
+#. module: board_service
+#: view:project.task:0
+msgid "Delegated To"
+msgstr ""
+
+#. module: board_service
+#: view:crm.case:0
+msgid "Meeting Date"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_service.action_my_meetings
+msgid "My Meeting of the Day"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Feedback"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Filter on Product Categories"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Random Timesheet Lines"
+msgstr ""
+
+#. module: board_service
+#: model:ir.module.module,description:board_service.module_meta_information
+msgid "\n"
+"        This module displays three dashboards for the logged in user:\n"
+"        \n"
+"        A. Dashboard 1: Weekly Dashboard\n"
+"                   - Draft Forecasts Lines\n"
+"                   - Turnover by Product and Month\n"
+"                   - Aged Receivables\n"
+"                   - Timesheet to Validate\n"
+"                   - Sales pipeline\n"
+"                   - Planning Statistics\n"
+"                    \n"
+"                This dashboard is reachable from Dashboards/Service Profile/Weekly Dashboard.\n"
+"           \n"
+"        B. Dashboard 2: Daily Dashboard\n"
+"                   - Open Tasks\n"
+"                   - Pending Tasks\n"
+"                   - Inbox\n"
+"                   - Meeting of the Day\n"
+"                   - Departement's Timesheet Lines of last 3 days.\n"
+"        \n"
+"                This dashboard is reachable from Dashboards/Service Profile/Daily Dashboard.\n"
+"                \n"
+"        C. Dashboard 3 : Random Activities\n"
+"                   - Random Timesheet Lines from the past 15 days\n"
+"                   - Random Tasks Closed within the past 15 days\n"
+"                   - Random Cases Closed within the past 15 days\n"
+"                   - Random Open Cases Created within the past 15 days\n"
+"                   - Random Sales Orders Created within the past 15 days\n"
+"                   - Random Invoices Created within the past 15 days \n"
+"\n"
+"                This dashboard is reachable from Dashboards/Service Profile/Random Activities(Within Last 15 Days).\n"
+"                \n"
+"                "
+msgstr ""
+
+#. module: board_service
+#: model:ir.module.module,shortdesc:board_service.module_meta_information
+msgid "Dashboard for Service Profile"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Random Activities"
+msgstr ""
+
+#. module: board_service
+#: view:board.board:0
+msgid "Closed Tasks"
+msgstr ""
+
+#. module: board_service
+#: view:sale.forecast.line:0
+msgid "Forecast Details"
+msgstr ""
+

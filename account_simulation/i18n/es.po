@@ -1,0 +1,94 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-24 12:56+0000\n"
+"PO-Revision-Date: 2011-11-15 22:50+0000\n"
+"Last-Translator: Equipo OPENTIA (http://www.opentia.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_simulation
+#: field:account.journal,state:0
+msgid "Status"
+msgstr "Estado"
+
+#. module: account_simulation
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML no válido para la definición de la vista!"
+
+#. module: account_simulation
+#: field:account.journal,child_ids:0
+msgid "Parent journal"
+msgstr "Diario padre"
+
+#. module: account_simulation
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: account_simulation
+#: model:ir.actions.act_window,name:account_simulation.action_view_account_journal_simulation_form
+#: model:ir.ui.menu,name:account_simulation.menu_action_view_account_journal_simulation_form
+msgid "Journal Simulations"
+msgstr "Simulaciones de diario"
+
+#. module: account_simulation
+#: model:ir.model,name:account_simulation.model_account_journal_simulation
+msgid "Simulation level"
+msgstr "Nivel de simulación"
+
+#. module: account_simulation
+#: model:ir.module.module,shortdesc:account_simulation.module_meta_information
+msgid "Accounting simulation journal"
+msgstr "Diario de simulación contable"
+
+#. module: account_simulation
+#: field:account.journal.simulation,code:0
+msgid "Simulation code"
+msgstr "Código de simulación"
+
+#. module: account_simulation
+#: model:ir.module.module,description:account_simulation.module_meta_information
+msgid "Accounting simulation plan."
+msgstr "Plan de simulación contable"
+
+#. module: account_simulation
+#: view:account.journal.simulation:0
+msgid "Journal simulation"
+msgstr "Simulación de diario"
+
+#. module: account_simulation
+#: field:account.journal.simulation,name:0
+msgid "Simulation name"
+msgstr "Nombre de la simulación"
+
+#. module: account_simulation
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo no válido en la definición de la acción."
+
+#. module: account_simulation
+#: field:account.journal,parent_ids:0
+msgid "Child journals"
+msgstr "Diarios hijos"
+
+#. module: account_simulation
+#: view:account.journal:0
+#: model:ir.actions.act_window,name:account_simulation.action_account_journal_tree
+#: model:ir.ui.menu,name:account_simulation.menu_action_account_journal_tree
+msgid "Account Journal"
+msgstr "Diario contable"

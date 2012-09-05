@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="contact_planning_change_states_form_view">
+            <field name="name">contact.planning_change_states.form.all</field>
+            <field name="model">contact.planning_change_states</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Planning state changes">
+                    <field name="name" />
+                    <field name="date" />
+                    <field name="user_id" />
+                    <field name="state" />
+                    <notebook colspan="4">
+                        <page string="State ranges" attrs="{'invisible': [('state','!=','new')]}" >
+                            <field name="state_ranges2" colspan="4" nolabel="1" >
+                        <tree string="State ranges"  >
+                            <field name="lstate" readonly="1" />
+                            <field name="datetime_from" readonly="1" />
+                            <field name="datetime_to" readonly="1" />
+                            <field name="contact_id" readonly="1" />
+                            <field name="anno_ids_text" readonly="1" />
+                        </tree>
+                        <form string="State range"  >
+                            <field name="lstate" readonly="1" />
+                            <field name="datetime_from" readonly="1" />
+                            <field name="datetime_to" readonly="1" />
+                            <field name="contact_id" readonly="1" />
+                            <field nolabel="1" colspan="4" name="annotation_ids" readonly="1" />
+                        </form>
+                            </field>
+                        </page>
+                        <page string="State ranges" attrs="{'invisible': [('state','=','new')]}" >
+                        <field name="state_ranges" colspan="4" nolabel="1" on_change="_change_state_ranges(state_ranges)" >
+                        <tree string="State ranges"  >
+                            <field name="lstate" readonly="1" />
+                            <field name="datetime_from" readonly="1" />
+                            <field name="datetime_to" readonly="1" />
+                            <field name="contact_id" readonly="1" />
+                            <field name="anno_ids_text" readonly="1" />
+                        </tree>
+                        <form string="State range"  >
+                            <field name="lstate" readonly="1" />
+                            <field name="datetime_from" readonly="1" />
+                            <field name="datetime_to" readonly="1" />
+                            <field name="contact_id" readonly="1" />
+                            <field nolabel="1" colspan="4" name="annotation_ids" readonly="1" />
+                        </form>
+                        </field>
+                        </page>
+                        <page string="Comment">
+                                <field name="comment" colspan="4" nolabel="1" />
+                        </page>
+                    </notebook>
+                    <field name="anno_type" domain="[('id','in',map(int,domain_anno_types.split(',')) )]" />
+                    <field name="domain_anno_types" invisible="1" />
+
+                    <field name="permanent" />
+                    <separator colspan="4" />
+                    <button name="action_execute_planning" string="Execute plan" type="object" colspan="2" />
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="contact_planning_change_states_tree_view">
+            <field name="name">contact.planning_change_states.tree.all</field>
+            <field name="model">contact.planning_change_states</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Planning state changes">
+                    <field name="name" />
+                    <field name="date" />
+                    <field name="user_id" />
+                    <field name="state" />
+                    <field name="state_ranges" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="contact_planning_change_states_list_act">
+            <field name="name">Change States Planning</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">contact.planning_change_states</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">new</field>
+        </record>
+
+		<record id="ir_actions_act_window_view_contact_planning_change_states_1" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_planning_change_states_list_act" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="contact_planning_change_states_form_view" />
+			<field eval="20" name="sequence" />
+		</record>
+
+		<record id="ir_actions_act_window_view_contact_planning_change_states_0" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_planning_change_states_list_act" />
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="contact_planning_change_states_tree_view" />
+			<field eval="10" name="sequence" />
+		</record>
+
+        <record model="ir.actions.act_window" id="contact_planning_change_states_new_act">
+            <field name="name">Change States Planning</field>
+            <field name="res_model">contact.planning_change_states</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+
+		<record id="ir_actions_act_window_view_contact_planning_change_states_2" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_planning_change_states_new_act" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="contact_planning_change_states_form_view" />
+			<field eval="20" name="sequence" />
+		</record>
+
+        <wizard string="Change States" model="contact.state_range2" name="contact_open_change_states" id="contact_wizard_simple_state_change" />
+
+        <record id="ir_change_states" model="ir.values">
+            <field eval="'client_action_multi'" name="key2"/>
+            <field eval="'contact.state_range2'" name="model"/>
+            <field name="name">Change States</field>
+            <field eval="'ir.actions.wizard,%d'%contact_wizard_simple_state_change" name="value"/>
+            <field eval="True" name="object"/>
+        </record>
+
+        <menuitem
+            id="contact_planning_change_states_mi"
+            parent="annotations_mi"
+            action="contact_planning_change_states_list_act"/>
+
+    </data>
+</openerp>

@@ -1,0 +1,82 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:49+0000\n"
+"PO-Revision-Date: 2011-08-27 15:15+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: electronic_report_intrastat
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: electronic_report_intrastat
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: electronic_report_intrastat
+#: field:report.intrastat.export.log,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: electronic_report_intrastat
+#: field:report.intrastat.export.log,nbr:0
+msgid "Total lines Exported"
+msgstr "Total de líneas exportadas"
+
+#. module: electronic_report_intrastat
+#: field:report.intrastat.export.log,date_create:0
+msgid "Export Time"
+msgstr "Exportar fecha"
+
+#. module: electronic_report_intrastat
+#: model:ir.ui.menu,name:electronic_report_intrastat.menu_action_intrastat_export_log_tree
+#: view:report.intrastat.export.log:0
+msgid "Intrastat Export Logs"
+msgstr "Registros de las exportaciones Intrastat"
+
+#. module: electronic_report_intrastat
+#: field:report.intrastat.export.log,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: electronic_report_intrastat
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: electronic_report_intrastat
+#: model:ir.module.module,description:electronic_report_intrastat.module_meta_information
+msgid "A module that export intrastat data into .SDV format"
+msgstr "Un módulo que exportar los datos Intrastat en formato .SDV"
+
+#. module: electronic_report_intrastat
+#: model:ir.module.module,shortdesc:electronic_report_intrastat.module_meta_information
+msgid "Electronic Intrastat Reporting"
+msgstr "Informe electrónico Instrastat"
+
+#. module: electronic_report_intrastat
+#: field:report.intrastat.export.log,note:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: electronic_report_intrastat
+#: model:ir.model,name:electronic_report_intrastat.model_report_intrastat_export_log
+msgid "report.intrastat.export.log"
+msgstr "informe.Intrastat.exportar.registro"

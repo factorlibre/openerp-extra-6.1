@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="idea_categ_tech" model="memento_idea.category">
+            <field name="name">Technology</field>
+            <field name="description">Tools and Technology ideas</field>
+        </record>
+        <record id="idea_categ_tech_comp" model="memento_idea.category">
+            <field name="name">Computing</field>
+            <field name="description">IT-related ideas</field>
+           	<field name="parent_id" ref="idea_categ_tech"/> 
+        </record>
+        <record id="idea_categ_ergo" model="memento_idea.category">
+            <field name="name">Ergonomics</field>
+            <field name="description">Ergonomics and workplace improvement ideas</field>
+        </record> 
+        
+        <record id="partner_mister_ergonomics" model="res.partner">
+            <field name="name">Mr. Ergonomy</field>
+        </record>
+        
+        <record id="idea_window_orientation" model="memento_idea.idea">
+            <field name="name">Proper screen orientation</field>
+            <field name="description">Everyone should attempt to turn their desk or screen so as not to be directly facing a window, but rather having a 45 degree angle towards windows. This is in order to reduce eye strain and sunglare as much as possible.</field>
+           	<field name="category_id" ref="idea_categ_ergo"/> 
+           	<field name="inventor_id" ref="partner_mister_ergonomics"/>
+           	<field name="invent_date" eval="time.strftime('%Y-%m-%d')"/>
+        </record>
+    </data>
+</openerp>

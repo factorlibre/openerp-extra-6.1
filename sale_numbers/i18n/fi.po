@@ -1,0 +1,218 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:29+0000\n"
+"PO-Revision-Date: 2011-06-28 06:31+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Order N° :"
+msgstr "Tilasu no :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "SALE ORDER"
+msgstr "MYYNTITILAUS"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "For"
+msgstr "Kenelle"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Our salesman"
+msgstr "Myyntihenkilömme"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Division"
+msgstr "Valmistevero osasto"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Disc. (%)"
+msgstr "Ale. (%)"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Price"
+msgstr "Hinta"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Customer :"
+msgstr "Asiakas :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Unit Price"
+msgstr "Yksikköhinta"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Sr. No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Range"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Shipping address :"
+msgstr "Toimitusosoite:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "PAN No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Description"
+msgstr "Kuvaus"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Service Tax No."
+msgstr "Palvelun veronumero"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice To:"
+msgstr "Laskutusosoite:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Authorised Signatory"
+msgstr "Hyväksytty allekirjoitus"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Date ordered"
+msgstr "Tilauspäivä"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "-"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr "Puh.:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr "Faksi:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid ":"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice address :"
+msgstr "Laskutusosoite:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr "Puh.:"
+
+#. module: sale_numbers
+#: model:ir.actions.report.xml,name:sale_numbers.report_sale_order_india
+msgid "Print Sale Order"
+msgstr "Tulosta myyntitilaus"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes"
+msgstr "Verot"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Your order reference"
+msgstr "Tilausviitteenne"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Net Total :"
+msgstr "Yhteensä veroton"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Reg. No. & Date"
+msgstr "Valmisteveron rek.no ja päiväys"
+
+#. module: sale_numbers
+#: model:ir.module.module,shortdesc:sale_numbers.module_meta_information
+msgid "Sale Number"
+msgstr "Myynnin numero"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quantity"
+msgstr "Määrä"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "VAT :"
+msgstr "ALV:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quotation N° :"
+msgstr "Tarjous no :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "LST/VAT No. & Date"
+msgstr "LST/ Alv numero ja päiväys"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "CST No. & Date"
+msgstr "CST numero ja päiväys"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "TOTAL :"
+msgstr "YHTEENSÄ :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr "Faksi:"
+
+#. module: sale_numbers
+#: model:ir.module.module,description:sale_numbers.module_meta_information
+msgid ""
+"\n"
+"    remove the drawback of the sales numbering, \n"
+"    and add new feature that will create number on \n"
+"    confirmation of the sales order\n"
+"    "
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes :"
+msgstr "Verot:"

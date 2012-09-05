@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <wizard
+            string="View Documents"
+            model="dm.offer"
+            name="wizard_offer_documents"
+            id="wizard_offer_documents"/>
+            
+        <wizard
+            string="View Offers"
+            model="product.product"
+            name="wizard_product_offers"
+            id="wizard_product_offers"/>
+            
+        <wizard
+            string="View Campaigns"
+            model="product.product"
+            name="wizard_products_campaign"
+            id="wizard_products_campaign"/>
+	
+		<wizard
+            string="View Campaigns"
+            model="res.partner"
+            name="wizard_campaign_partners"
+            id="wizard_campaign_partners"/>
+        <wizard
+            string="Document Report"
+            model="dm.offer.document"
+            name="wizard_document_report"
+            keyword="client_print_multi"
+            id="wizard_document_report"/>
+<!--
+        <wizard
+            string="All Document Report"
+            model="dm.offer"
+            name="wizard_all_document_report"
+            id="wizard_all_document_report"/>
+-->
+        <wizard
+        	string="Modify Workitem"
+            model="dm.workitem"
+            name="wizard.workitem"
+            multi="1"
+            id="workitem_wiz"/>
+
+        <wizard
+            string="Show Segments"
+            model="res.partner.address"
+            name="wizard_address_segments"
+            id="wizard_address_segments"/>
+
+		<wizard
+			id="wizard_resend_campaign_documents"
+            string="Resend Documents"
+            model="dm.campaign.document"
+            name="wizard.resend.campaign.documents"
+			multi="True"/>
+
+		<wizard
+			id="wizard_process_customer_file"
+            string="Process Customers file"
+            model="dm.campaign.proposition.segment"
+            name="wizard.process.customer.file"
+			/>
+            
+<!--        <wizard
+            string="After-Sale Action"
+            model="res.partner.address"
+            name="wizard_after_sale_action"
+            id="wizard_after_sale_action"/>
+            
+		<wizard
+            string="After-Sale Action"
+            model="sale.order"
+            name="wizard_so_after_sale_action"
+            id="wizard_so_after_sale_action"/>
+
+         <wizard
+            string="Duplicate"
+            model="dm.campaign.proposition"
+            name="wizard_prop_copy"
+            id="wizard_prop_copy"/>
+
+        <wizard
+            string="Duplicate"
+            model="dm.campaign"
+            name="wizard_campaign_copy"
+            id="wizard_campaign_copy"/> -->
+    </data>
+</openerp>

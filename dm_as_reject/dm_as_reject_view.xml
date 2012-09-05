@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<menuitem name="Rejects" id="menu_dm_config_custo_rejects" parent="dm.menu_dm_config_customer" sequence="1"/>
+
+    <!--
+    =======================================================
+    AS reject type 
+    =======================================================
+    -->
+       
+	<record model="ir.ui.view" id="view_dm_reject_type_tree">
+        <field name="name">dm.as.reject.type.tree</field>
+        <field name="model">dm.as.reject.type</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Rejects">
+                <field name="name" string="Name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+	<record model="ir.ui.view" id="view_dm_reject_type_form">
+        <field name="name">dm.as.reject.type.form</field>
+        <field name="model">dm.as.reject.type</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Rejects Type">
+                <field name="name" string="Name"/>
+                <field name="code"/>
+            </form>
+         </field>
+   </record>
+
+    <!--
+    =======================================================
+    AS reject
+    =======================================================
+    -->
+   
+   <record model="ir.ui.view" id="view_dm_reject_tree">
+        <field name="name">dm.as.reject.tree</field>
+        <field name="model">dm.as.reject</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Rejects">
+                <field name="name" string="Name"/>
+				<field name="to_disable"/>
+            </tree>
+        </field>
+    </record>
+
+	<record model="ir.ui.view" id="view_dm_reject_form">
+        <field name="name">dm.as.reject.form</field>
+        <field name="model">dm.as.reject</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Rejects">
+                <field name="name" string="Name"/>
+                <field name="type_od" on_change="on_change_reject_type(type_od)" widget="selection"/>
+				<field name="to_disable"/>
+                <field name="reject_type" on_change="on_change_reject_type(type_od)" invisible="1"/>
+            </form>
+         </field>
+   </record>
+   
+   
+     <record model="ir.actions.act_window" id="action_dm_reject">
+        <field name="name">All Rejects</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.as.reject</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_reject_tree"/>
+    </record>
+    
+    <menuitem id="menu_action_dm_reject_form" parent="menu_dm_config_custo_rejects" action="action_dm_reject" sequence="0" />
+
+    <!--
+    =======================================================
+    Address Segmentation inherit : ignore_reject and active
+    =======================================================
+    -->
+
+   <record model="ir.ui.view" id="view_dm_reject_segmentation_form">
+        <field name="name">dm.address.segmentation.inherit</field>
+        <field name="model">dm.address.segmentation</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_extract.view_dm_address_segmentation_form"/>
+        <field name="arch" type="xml">
+ 			<page string="SQL" position="before">
+     			<page string="Advanced" >
+	  				<field name="ignore_rejects"/>
+	  				<field name="active_only"/>
+ 				</page>
+			</page>
+        </field>
+    </record>
+
+   <!--
+    =======================================================
+    As reject incident
+    =======================================================
+    -->
+	<record model="ir.ui.view" id="view_dm_reject_incident_tree">
+        <field name="name">dm.as.reject.incident.tree</field>
+        <field name="model">dm.as.reject.incident</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Reject Information">
+                <field name="date"/>
+                <field name="user_id"/>
+				<field name="partner_id"/>
+				<field name="partner_address_id"/>
+                <field name="origin"/>
+            </tree>
+        </field>
+    </record>
+
+	<record model="ir.ui.view" id="view_dm_reject_incident_form">
+        <field name="name">dm.as.reject.incident.form</field>
+        <field name="model">dm.as.reject.incident</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Reject Information">
+				<field name="partner_id"/>
+				<field name="partner_address_id"/>
+				<field name="reject_id"/>
+                <field name="date"/>
+				<field name="user_id"/>
+                <field name="origin"/>
+                <field name="active"/>
+				<newline/>
+				<separator colspan="4" string="Notes"/>
+				<field name="note" colspan="4" nolabel="1"/>
+            </form>
+        </field>
+    </record>
+	
+	<record model="ir.actions.act_window" id="action_dm_reject_incident_form">
+        <field name="name">All Reject Incidents</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.as.reject.incident</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_reject_incident_tree"/>
+    </record>
+    
+    <menuitem id="menu_action_dm_reject_incident_form" parent="menu_dm_config_custo_rejects" action="action_dm_reject_incident_form" sequence="1"/>
+
+   <!--
+    =======================================================
+    Partner inherit : Reject Information
+    =======================================================
+    -->
+    
+	<record model="ir.ui.view" id="view_dm_reject_res_partner_form">
+        <field name="name">res.partner.form.inherit1</field>
+        <field name="model">res.partner</field>
+		<field name="type">form</field>
+		<field name="inherit_id" ref="dm.view_partner_property_form1"/>
+        <field name="arch" type="xml">
+            <field name="state_ids" position="after">
+				<field name="reject_ids" nolabel="1" colspan="4" mode="tree,form">
+					<form string="Reject Information">
+		                <field name="reject_id"/>
+		                <field name="origin"/>
+		                <field name="date"/>
+						<field name="user_id"/>
+						<newline/>
+                        <separator string="Description" colspan="4"/>
+						<field name="note" colspan="4" nolabel="1"/>
+		            </form>
+					<tree string="Reject Information">
+		                <field name="date"/>
+		                <field name="reject_id"/>
+		                <field name="user_id"/>
+		                <field name="origin"/>
+		            </tree>
+				</field>
+			</field>
+		</field>
+	</record>
+
+   <!--
+    =======================================================
+    Partner address inherit : Reject Information
+    =======================================================
+    -->
+    
+	<record id="view_dm_reject_partner_address_form" model="ir.ui.view">
+        <field name="name">res.partner.address.form.inherit1</field>
+        <field name="model">res.partner.address</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm_partner_address.view_partner_address_form_inherit5"/>
+        <field name="arch" type="xml">
+			<field name="origin_country_id" position="after">
+				<field name="reject_ids" nolabel="1" colspan="4" mode="tree,form">
+					<form string="Reject Information">
+		                <field name="reject_id"/>
+		                <field name="origin"/>
+		                <field name="date"/>
+						<field name="user_id"/>
+						<newline/>
+						<field name="note" colspan="4"/>
+		            </form>
+					<tree string="Reject Information">
+		                <field name="date"/>
+		                <field name="reject_id"/>
+		                <field name="user_id"/>
+		                <field name="origin"/>
+		            </tree>
+				</field>
+			</field>
+        </field>
+	</record>
+
+    <!--
+    =======================================================
+    Segment Inherit : customer list in segment
+    =======================================================
+    -->
+           
+    <record id="view_dm_campaign_proposition_segment_rejects_inherit" model="ir.ui.view">
+	    <field name="name">dm.campaign.proposition.segment.inherit</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm_extract.view_dm_campaign_proposition_segments_criteria_inherit"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+			<field name="list_criteria_id" position="after">
+				<group colspan="2">
+					<field name="reject_criteria"/>
+				</group>
+	 		</field>
+   		</field>
+  </record>
+
+    <!--
+    =======================================================
+    Proposition Inherit : customer list in segment
+    =======================================================
+    -->
+       
+    <record model="ir.ui.view" id="view_campaign_proposition_form_inherit_segment_form2">
+        <field name="name">view.campaign.proposition.form.inherit.segment.form2</field>
+        <field name="model">dm.campaign.proposition</field>
+        <field name="type">form</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_form"/>        
+        <field name="arch" type="xml">
+		   	<separator string="Segmentation" colspan="4" position="after">
+				<group colspan="4" col="6">
+					<field name="reject_criteria" colspan="2"/>
+				</group>
+	 		</separator>
+        </field>
+    </record>
+</data>
+</openerp>

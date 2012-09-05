@@ -1,0 +1,347 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* printjob
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-10-04 19:40:08+0000\n"
+"PO-Revision-Date: 2009-10-04 21:41+0200\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"X-Generator: Lokalize 1.0\n"
+
+#. module: printjob
+#: selection:printjob.job,state:0
+msgid "In Progress"
+msgstr "En progreso"
+
+#. module: printjob
+#: wizard_button:printjob.job.reprint,init,end:0
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#. module: printjob
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: printjob
+#: view:printjob.job:0
+msgid "Parameters"
+msgstr "Parámetros"
+
+#. module: printjob
+#: model:ir.model,name:printjob.model_printjob_action
+msgid "printjob.action"
+msgstr ""
+
+#. module: printjob
+#: model:ir.model,name:printjob.model_printjob_job
+msgid "Print Job"
+msgstr "Trabajo de impresión"
+
+#. module: printjob
+#: field:printjob.job,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: printjob
+#: field:printjob.printer,system_name:0
+msgid "System Name"
+msgstr "Nombre de sistema"
+
+#. module: printjob
+#: field:printjob.job,data:0
+msgid "Param. Data"
+msgstr "Parámetro \"Data\""
+
+#. module: printjob
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de model inválido en la definición de la acción."
+
+#. module: printjob
+#: model:ir.actions.act_window,name:printjob.action_printjob_printer_form
+#: model:ir.ui.menu,name:printjob.menu_printjob_printer_form
+#: view:printjob.printer:0
+msgid "Printers"
+msgstr "Impresoras"
+
+#. module: printjob
+#: wizard_button:printjob.job.reprint,init,print:0
+msgid "Print"
+msgstr "Impresora"
+
+#. module: printjob
+#: view:printjob.printer:0
+msgid "Set Default"
+msgstr "Establecer por defecto"
+
+#. module: printjob
+#: field:printjob.job,result:0
+msgid "Document"
+msgstr "Documento"
+
+#. module: printjob
+#: field:printjob.action,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Report sent to printer"
+msgstr "Informe enviado a la impresora"
+
+#. module: printjob
+#: model:ir.actions.wizard,name:printjob.printjob_job_preview
+#: view:printjob.job:0
+msgid "Preview"
+msgstr "Vista previa"
+
+#. module: printjob
+#: field:printjob.job,keep:0
+msgid "Keep the document"
+msgstr "Mantener el documento"
+
+#. module: printjob
+#: field:printjob.job,format:0
+msgid "Format"
+msgstr "Formato"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Report generated in background"
+msgstr "Informe generado en segundo plano"
+
+#. module: printjob
+#: view:printjob.report.xml.action:0
+msgid "Report Printing Actions"
+msgstr "Acciones de impresión de informes"
+
+#. module: printjob
+#: model:ir.module.module,description:printjob.module_meta_information
+msgid ""
+"This module updates OpenERP printing by adding the following features:\n"
+"* Enables batch printing \n"
+"* Correct memory leak when printing crashes\n"
+"* Permits reprinting lost PDFs\n"
+"* Possibilty to send jobs to a printer attached to the server \n"
+"* Settings can be configured globaly, per user, per report and per user and "
+"report.\n"
+"    "
+msgstr ""
+"Este módulo actualiza el sistema de impresión de OpenERP añadiendo las "
+"siguientes funcionalidades:\n"
+"* Permite la impresión por lotes\n"
+"* Corrige un error de liberación de memoria cuando falla la impresión\n"
+"* Permite reimprimir informes perdidos\n"
+"* Permite enviar trabajos a una impresora accesible desde el servidor\n"
+"* Se puede configurar de forma global, por usuario, por informe y por "
+"usuario e informe.\n"
+
+#. module: printjob
+#: model:ir.module.module,shortdesc:printjob.module_meta_information
+#: view:printjob.job:0
+msgid "PrintJob"
+msgstr "Trabajo de impresión"
+
+#. module: printjob
+#: model:ir.model,name:printjob.model_printjob_report_xml_action
+msgid "printjob.report.xml.action"
+msgstr ""
+
+#. module: printjob
+#: field:printjob.report.xml.action,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: printjob
+#: field:printjob.job,report:0
+#: field:printjob.report.xml.action,report_id:0
+msgid "Report"
+msgstr "Informe"
+
+#. module: printjob
+#: model:ir.ui.menu,name:printjob.menu_printjob_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: printjob
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr "Argumentos inválidos"
+
+#. module: printjob
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: printjob
+#: field:res.users,printjob_action:0
+msgid "Printing Action"
+msgstr "Acción de impresión"
+
+#. module: printjob
+#: field:printjob.action,name:0
+#: field:printjob.job,name:0
+#: field:printjob.printer,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: printjob
+#: selection:printjob.job,state:0
+msgid "Processed"
+msgstr "Procesado"
+
+#. module: printjob
+#: field:printjob.job,create_date:0
+msgid "Created"
+msgstr "Creado"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Send to Client"
+msgstr "Enviar al cliente"
+
+#. module: printjob
+#: field:printjob.printer,default:0
+#: field:res.users,printjob_printer_id:0
+msgid "Default Printer"
+msgstr "Impresora por defecto"
+
+#. module: printjob
+#: field:printjob.job,ids:0
+msgid "Ids"
+msgstr "Ids"
+
+#. module: printjob
+#: field:printjob.job,context:0
+msgid "Context Data"
+msgstr "Información de contexto"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Send to Printer"
+msgstr "Enviar a una impresora"
+
+#. module: printjob
+#: field:ir.actions.report.xml,printjob_printer_id:0
+#: model:ir.model,name:printjob.model_printjob_printer
+#: wizard_field:printjob.job.reprint,init,printer:0
+#: field:printjob.report.xml.action,printer_id:0
+msgid "Printer"
+msgstr "Impresora"
+
+#. module: printjob
+#: field:printjob.job,create_uid:0
+msgid "Created By"
+msgstr "Creado por"
+
+#. module: printjob
+#: selection:printjob.job,state:0
+msgid "Error"
+msgstr "Error"
+
+#. module: printjob
+#: field:ir.actions.report.xml,property_printjob_action:0
+#: field:printjob.job,action:0
+#: field:printjob.report.xml.action,action:0
+msgid "Action"
+msgstr "Acción"
+
+#. module: printjob
+#: model:ir.actions.wizard,name:printjob.printjob_job_reprint
+msgid "RePrint"
+msgstr "Reimprimir"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "This report has been sent directly to printer: %s"
+msgstr "El informe se ha mandado directamente a la impresora: %s"
+
+#. module: printjob
+#: field:printjob.job,pages:0
+msgid "Number of Pages"
+msgstr "Número de páginas"
+
+#. module: printjob
+#: help:ir.actions.report.xml,printjob_action_ids:0
+msgid "This field allows configuring action and printer on a per user basis"
+msgstr "Este campo permite configurar la acción e impresora por usuario"
+
+#. module: printjob
+#: help:printjob.job,keep:0
+msgid "A job marked with keep will not be deleted by the cron job"
+msgstr ""
+"Un trabajo marcado con \"Mantener el trabajo\" no será eliminado por el "
+"proceso automático"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Send to Spool Only"
+msgstr "Enviar sólo a la cola"
+
+#. module: printjob
+#: field:ir.actions.report.xml,printjob_action_ids:0
+msgid "Actions"
+msgstr "Acciones"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid ""
+"This report is generated in background. In a few minutes look at your print "
+"jobs."
+msgstr ""
+"Este informe se genera en segundo plano. Podrá encontrarlo con sus trabajos "
+"de impresión dentro de unos minutos."
+
+#. module: printjob
+#: view:printjob.job:0
+msgid "Send to printer"
+msgstr "Enviar a una impresora"
+
+#. module: printjob
+#: model:ir.ui.menu,name:printjob.menu_printjob_main
+#: wizard_view:printjob.job.reprint,init:0
+msgid "Printing"
+msgstr "Impresión"
+
+#. module: printjob
+#: selection:printjob.job,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: printjob
+#: model:ir.ui.menu,name:printjob.menu_printjob_job_form
+#: view:printjob.job:0
+msgid "Print Jobs"
+msgstr "Imprimir trabajos"
+
+#. module: printjob
+#: code:addons/printjob/printjob.py:0
+#, python-format
+msgid "Use user's defaults"
+msgstr "Utilizar la configuración del usuario"
+
+#. module: printjob
+#: model:ir.actions.act_window,name:printjob.action_printjob_job_form
+msgid "Print jobs"
+msgstr "Imprimir trabajos"
+
+#~ msgid "Imprimir"
+#~ msgstr "Imprimir"

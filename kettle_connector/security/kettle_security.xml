@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><openerp><data noupdate="0">
+
+<!-- KETTLE GROUP -->
+
+    <record id="group_kettle_administrateur" model="res.groups">
+        <field name="name">Kettle Administrateur</field>
+    </record>
+
+    <record id="group_kettle_user" model="res.groups">
+        <field name="name">Kettle User</field>
+    </record>
+
+
+<!-- KETTLE MENU RIGHT -->
+
+	<record id="menu_kettle_connection" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_kettle_administrateur'), ref('group_kettle_user')])]" name="groups_id"/>
+	</record>
+
+	<record id="menu_kettle_server" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_kettle_administrateur')])]" name="groups_id"/>
+	</record>
+
+	<record id="menu_kettle_transformation" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_kettle_administrateur')])]" name="groups_id"/>
+	</record>
+
+	<record id="menu_kettle_task" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_kettle_administrateur'), ref('group_kettle_user')])]" name="groups_id"/>
+	</record>
+
+	<record id="menu_kettle_parameter" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_kettle_administrateur')])]" name="groups_id"/>
+	</record>
+
+
+
+</data></openerp>

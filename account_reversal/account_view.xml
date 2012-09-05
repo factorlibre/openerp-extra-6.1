@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Account reversal module for OpenERP
+  Copyright (C) 2011 Akretion (http://www.akretion.com). All Rights Reserved
+  @author Alexis de Lattre <alexis.delattre@akretion.com>
+  The licence is in the file __terp__.py
+-->
+
+<openerp>
+<data>
+
+<record id="account_reversal_wizard" model="ir.ui.view">
+    <field name="name">account_reversal_wizard</field>
+    <field name="model">account.reversal.wizard</field>
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+        <form string="Create reversal account moves">
+            <separator string="Create reversal account moves" colspan="4" />
+            <newline />
+            <label string="This wizard will generate a reversal account move for each account move currently selected" colspan="4" />
+            <newline />
+            <field name="reversal_date" />
+            <field name="reversal_reconcile" />
+            <field name="reversal_line_prefix" />
+            <field name="reversal_ref_prefix" />
+            <newline />
+            <button special="cancel" icon="gtk-cancel" string="Cancel" colspan="2" />
+            <button name="start_wizard_reversal" icon="gtk-ok" string="Create reversals" type="object" colspan="2" />
+        </form>
+    </field>
+</record>
+
+<record id="act_account_reversal_wizard" model="ir.actions.act_window">
+    <field name="name">Create reversals wizard</field>
+    <field name="res_model">account.reversal.wizard</field>
+    <field name="src_model">account.reversal.wizard</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+</record>
+
+<record id="ir_account_reversal_wizard" model="ir.values">
+    <field name="name">Create reversals</field>
+    <field name="key2">client_action_multi</field>
+    <field name="model">account.move</field>
+    <field name="value" eval="'ir.actions.act_window,%d'%act_account_reversal_wizard" />
+    <field name="object" eval="True" />
+</record>
+
+</data>
+</openerp>

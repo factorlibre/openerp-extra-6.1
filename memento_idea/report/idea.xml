@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report id="memento_idea_simple_report" 
+            model="memento_idea.idea"
+            string="Idea Report"
+            name="idea.simple.report"
+            rml="memento_idea/report/idea.rml"
+            auto="False"
+            />
+    </data>
+</openerp>
+

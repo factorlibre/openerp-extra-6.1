@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_res_partner_company_log_rule","res_partner_company_log_rule","model_res_partner_company_log_rule","base.group_system",1,1,1,1
+"access_res_partner_company_log_rule","res_partner_company_log_rule","model_res_partner_company_log_rule","base.group_user",1,0,0,0
+"access_res_partner_company_log","res_partner_company_log","model_res_partner_company_log","base.group_user",1,1,1,1

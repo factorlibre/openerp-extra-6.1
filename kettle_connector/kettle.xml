@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+<!-- KETTLE PARAM VIEW -->
+
+<record id="kettle_parameter_form" model="ir.ui.view">
+    <field name="name">kettle.parameter.form</field>
+    <field name="model">kettle.parameter</field>
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+        <form string="Kettle parameters">
+            <field name="task_id" select="1" invisible="not context.get('kettle_parameter_main_view', False)" />
+            <field name="name" select="1" />
+            <field name="value" select="1" />
+            <field name="user_id" select="2" />
+        </form>
+    </field>
+</record>
+
+<record id="kettle_parameter_tree" model="ir.ui.view">
+    <field name="name">kettle.parameter.tree</field>
+    <field name="model">kettle.parameter</field>
+    <field name="type">tree</field>
+    <field name="arch" type="xml">
+        <tree string="Kettle parameters" editable="bottom">
+            <field name="task_id" invisible="not context.get('kettle_parameter_main_view', False)" />
+            <field name="name" />
+            <field name="value" />
+            <field name="user_id" />
+        </tree>
+    </field>
+</record>
+
+<record id="kettle_trans_log_table" model="ir.ui.view">
+    <field name="name">kettle_trans_log_table</field>
+    <field name="model">kettle.trans.log.table</field>
+    <field name="type">tree</field>
+    <field name="arch" type="xml">
+        <tree string="Logs" colors="red:errors!=0">
+            <field name="transname" />
+            <field name="jobname" />
+            <field name="id_batch" />
+            <field name="enddate" />
+            <field name="status" />
+            <field name="errors" />
+            <field name="lines_read" />
+        </tree>
+    </field>
+</record>
+
+
+<record id="kettle_trans_log_table_form" model="ir.ui.view">
+    <field name="name">kettle_trans_log_table_form</field>
+    <field name="model">kettle.trans.log.table</field>
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+        <form string="Logs">
+            <field name="transname" />
+            <field name="jobname" />
+            <field name="id_batch" />
+            <field name="status" />
+            <field name="errors" />
+            <field name="lines_read" />
+            <field name="startdate" />
+            <field name="enddate" />
+            <field name="step_log_ids">
+                <tree>
+                    <field name="stepname"/>
+                    <field name="lines_read"/>
+                    <field name="lines_written"/>
+                    <field name="lines_input"/>
+                    <field name="lines_output"/>
+                    <field name="lines_rejected"/>
+                    <field name="errors"/>
+                </tree>
+            </field>
+            <field name="log_field" />
+        </form>
+    </field>
+</record>
+
+
+<record id="action_kettle_parameter" model="ir.actions.act_window">
+    <field name="name">Parameter</field>
+    <field name="res_model">kettle.parameter</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="context">{'kettle_parameter_main_view': True}</field>
+</record>
+
+<!-- KETTLE TASK VIEW -->
+
+		<record id="kettle_task_form" model="ir.ui.view">
+			<field name="name">kettle.task.form</field>
+			<field name="model">kettle.task</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="kettle task">
+					<group colspan="4" >
+	 			        <field name="name" select="1"/>
+                                        <field name="server_id" groups="base.group_extended" select="1"/>
+				        <field name="transformation_id" groups="base.group_extended" select="1"/>
+				        <field name="scheduler" groups="base.group_extended"/>
+				        <field name="upload_file" groups="base.group_extended"/>
+				        <field name="output_file" groups="base.group_extended"/>
+				        <field name="active_python_code" groups="base.group_extended"/>
+                                        </group>
+                    <notebook colspan="4">
+                        <page string="Main information">
+				        <separator colspan="4" string="Parameters" />
+                                        <field name="parameter_ids" nolabel="1" colspan="4" />
+                                        <separator colspan="4" string="Execution logs" />
+                                        <field name="carte_id"/>
+                                        <field name="url"  widget="url"/>
+                                        <field name="last_date"/>
+                                        <field name="related_logs">
+                                            <tree colors="red:errors!=0">
+                                                <field name="enddate" />
+                                                <field name="status" />
+                                                <field name="errors" />
+                                                <field name="lines_read" />
+                                            </tree>
+                                        </field>
+                        </page>
+                        <page attrs="{'invisible':[('active_python_code','!=',1)]}"  string="Python code" groups="base.group_extended">
+				        <separator colspan="4" string="Python code executed before transformation/job" />
+				        <field name="python_code_before" colspan = "4" nolabel="1"/>
+				        <separator colspan="4" string="Python code executed after transformation/job" />
+				        <field name="python_code_after" colspan = "4" nolabel="1"/>
+                        </page>
+                    </notebook>
+
+				</form>
+			</field>
+		</record>
+
+		<record id="kettle_task_tree" model="ir.ui.view">
+			<field name="name">kettle.task.tree</field>
+			<field name="model">kettle.task</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="kettle task">
+			        <field name="name" />
+			        <field name="transformation_id" />
+                    <field name="server_id" />
+			        <field name="scheduler"/>
+			        <field name="last_date"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_kettle_task" model="ir.actions.act_window">
+			<field name="name">Task</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kettle.task</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="context">{'wizard_object' : 'kettle.task', 'function' : 'start_kettle_task', 'object_link' : 'kettle.task' }</field>
+		</record>
+
+<!-- KETTLE SERVER VIEW -->
+
+		<record id="kettle_server_form" model="ir.ui.view">
+			<field name="name">kettle.server.form</field>
+			<field name="model">kettle.server</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="kettle server">
+					<group col="6" colspan="6">
+				        <field name="name" select="1"/>
+				        <field name="kettle_dir"/>
+				        <button name="button_install" string="Install Kettle" type="object" icon="gtk-execute" colspan="1"/>
+                        <button name="button_update_terminatooor" string="Update Terminatooor" type="object" icon="gtk-execute" colspan="1"/>
+			        </group>
+				<group col="6" colspan="6">
+                                        <field name="url" widget="url" colspan="2"/>
+                                        <field name="user" colspan="2" attrs="{'invisible':[('url','=',False)], 'required':[('url','!=',False)]}"/>
+				        <field name="password" password="True" colspan="2" attrs="{'invisible':[('url','=',False)], 'required':[('url','!=',False)]}"/>
+				</group>
+				</form>
+			</field>
+		</record>
+		
+		<record id="kettle_server_tree" model="ir.ui.view">
+			<field name="name">kettle.server.tree</field>
+			<field name="model">kettle.server</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="kettle server">
+			        <field name="name" select="1"/>
+			        <field name="kettle_dir"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_kettle_server" model="ir.actions.act_window">
+			<field name="name">Server</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kettle.server</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+<!-- KETTLE TRANSFORMATION VIEW -->
+
+		<record id="kettle_transformation_form" model="ir.ui.view">
+			<field name="name">kettle.transformation.form</field>
+			<field name="model">kettle.transformation</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="kettle transformation">
+					<group colspan="4">
+				        <field name="name" select="1"/>
+				        <field name="read_from_filesystem" select="2"/>
+                                        <field name="file" filename="filename" colspan="2"/>
+                                        <field name="filename" colspan="2" select="1"/>
+                                        <field name="type" select="1"/>
+			        </group> 
+				</form>
+			</field>
+		</record>
+		
+		<record id="kettle_transformation_tree" model="ir.ui.view">
+			<field name="name">kettle.transformation.tree</field>
+			<field name="model">kettle.transformation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="kettle transformation">
+			        <field name="name" select="1"/>
+			        <field name="filename"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_kettle_transformation" model="ir.actions.act_window">
+			<field name="name">Transformation / Job</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">kettle.transformation</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+                <record id="action_kettle_transformation_logs" model="ir.actions.act_window">
+                        <field name="name">Execution Logs</field>
+                        <field name="type">ir.actions.act_window</field>
+                        <field name="res_model">kettle.trans.log.table</field>
+                        <field name="view_type">form</field>
+                        <field name="view_mode">tree,form</field>
+                </record>
+
+<!-- KETTLE  WIZARD START TASK -->
+		<record id="kettle_wizard" model="ir.ui.view">
+			<field name="name">kettle.wizard.form</field>
+			<field name="model">kettle.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="kettle starter">
+					<group colspan="4">
+                        <group colspan="4">
+				    	<separator colspan="4" string="Start Kettle Task" />
+                        <field name="upload_file" invisible="1"/>
+                        </group>
+                        <group attrs="{'invisible':[('upload_file','=',False)]}" colspan="2">
+                            <field name="file" filename="filename" colspan="2"/>
+                            <field name="filename" colspan="2"/>
+			            </group>
+                        <group colspan="4">
+				        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+				        <button icon="gtk-ok" name="action_start_task" string="Start" type="object"/>
+                        <separator colspan="4"/>
+                        </group>
+ 					</group>
+ 				</form>
+			</field>
+		</record>
+		
+		<record id="action_kettle_wizard" model="ir.actions.act_window">
+			<field name="name">Start task</field>
+			<field name="res_model">kettle.wizard</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+			<field name="context">{}</field>
+		</record>
+
+		<record id="ir_action_start_kettle_task" model="ir.values">
+			<field name="key2">client_action_multi</field>
+			<field name="model">kettle.task</field>
+			<field name="name">Start task</field>
+			<field eval="'ir.actions.act_window,%d'%action_kettle_wizard" name="value"/>
+			<field eval="True" name="object"/>
+		</record>
+
+
+<!-- KETTLE  WIZARD ADD SCHEDULER -->
+
+		<record id="ir_action_create_scheduler_in_kettle" model="ir.values">
+			<field name="key2">client_action_multi</field>
+			<field name="model">kettle.task</field>
+			<field name="name">Create a scheduler</field>
+			<field eval="'ir.actions.act_window,%d'%ref('base_scheduler_creator.action_scheduler_creator_wizard')" name="value"/>
+			<field eval="True" name="object"/>
+		</record>
+		
+<!-- KETTLE  MENU -->
+
+        <!-- just remove 'web_icon_hover' and 'web_icon' to make it work with OpenERP v5 -->
+<!--		<menuitem id="menu_kettle_connection" name="Kettle connector" web_icon_hover="images/spoon-hover.png" web_icon="images/spoon.png"/> -->
+		<menuitem id="menu_kettle_connection" name="Kettle connector" />
+		
+		<menuitem action="action_kettle_server" id="menu_kettle_server" parent="menu_kettle_connection"/>
+		<menuitem action="action_kettle_transformation" id="menu_kettle_transformation" parent="menu_kettle_connection"/>
+		<menuitem action="action_kettle_task" id="menu_kettle_task" parent="menu_kettle_connection"/>
+		<menuitem action="action_kettle_parameter" id="menu_kettle_parameter" parent="menu_kettle_connection"/>
+                <menuitem action="action_kettle_transformation_logs" id="menu_kettle_transformation_logs" parent="menu_kettle_connection"/>
+    </data>
+</openerp>

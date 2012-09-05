@@ -1,0 +1,9 @@
+"id","type_id:id","model_id:id","external_field","type","external_type","in_function","out_function"
+"sf_partner_1","salesforce","base.model_res_partner","Name","in","str","result=[('name',ifield)]",
+"sf_partner_2","salesforce","base.model_res_partner","Id","in","str","result=[('salesforce_id',ifield)]",
+"sf_partner_3","salesforce","base_contact.model_res_partner_contact","FirstName","in","str","result=[('first_name',ifield)]",
+"sf_partner_4","salesforce","base_contact.model_res_partner_contact","LastName","in","str","result=[('name',ifield)]",
+"sf_partner_5","salesforce","base_contact.model_res_partner_contact","MobilePhone","in","str","result=[('mobile',ifield)]",
+"sf_partner_6","salesforce","base_contact.model_res_partner_contact","Email","in","str","result=[('email',ifield)]",
+"sf_partner_7","salesforce","base_contact.model_res_partner_contact","Id","in","str","result=[('salesforce_id',ifield)]",
+"sf_partner_8","salesforce","base_contact.model_res_partner_contact","AccountId","in","str","result=[('partner_id',self.pool.get('res.partner').extid_to_oeid(cr, uid, ifield, external_referential_id))]",

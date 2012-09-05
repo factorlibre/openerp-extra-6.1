@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		
+		<record model='ir.ui.view' id='account_invoice_line_cc_form_view'>
+			<field name='name'>Account Invoice Cost Center Form Inherit</field>
+			<field name='model'>account.invoice.line</field>
+			<field name='inherit_id' ref='account.view_invoice_line_form'/>
+			<field name='type'>form</field>
+			<field name='arch' type='xml'>	
+				<xpath expr="/form/notebook/page[@string='Line']/field[@name='account_id']" position="after">
+					<field name="invoice_type" invisible="True"/>
+					<field name="account_cc_id"  attrs="{'invisible':[('invoice_type','=','out_invoice')]}" groups="account.group_account_user"/>
+					<field name="account_ch_id"  attrs="{'invisible':[('invoice_type','=','out_invoice')]}" groups="account.group_account_user"/>
+				</xpath>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

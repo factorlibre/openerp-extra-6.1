@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<report string="Domains" model="internetdomain.domain" auto="True" name="internetdomain.domain" rml="internetdomain/report/domain.rml" id="internetdomain_domain" menu="True" header="False" />
+	</data>
+</openerp>

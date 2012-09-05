@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-08 01:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/tmp.gvsN25YTod:773 /tmp/tmp.gvsN25YTod:981 /tmp/tmp.gvsN25YTod:1189
+msgid "Total"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:793 /tmp/tmp.gvsN25YTod:1001 /tmp/tmp.gvsN25YTod:1209
+msgid "General Ledger"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:809 /tmp/tmp.gvsN25YTod:1017 /tmp/tmp.gvsN25YTod:1225
+msgid "Credit"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:813 /tmp/tmp.gvsN25YTod:1021 /tmp/tmp.gvsN25YTod:1229
+msgid "Balance"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:817 /tmp/tmp.gvsN25YTod:1025 /tmp/tmp.gvsN25YTod:1233
+msgid "Debit"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:821 /tmp/tmp.gvsN25YTod:1029 /tmp/tmp.gvsN25YTod:1237
+msgid "Description"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:825 /tmp/tmp.gvsN25YTod:1033 /tmp/tmp.gvsN25YTod:1241
+msgid "Reference"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:829 /tmp/tmp.gvsN25YTod:1037 /tmp/tmp.gvsN25YTod:1245
+msgid "Partner"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:833 /tmp/tmp.gvsN25YTod:1041 /tmp/tmp.gvsN25YTod:1249
+msgid "Date"
+msgstr ""
+
+#: /tmp/tmp.gvsN25YTod:837 /tmp/tmp.gvsN25YTod:1045 /tmp/tmp.gvsN25YTod:1253
+msgid "Number"
+msgstr ""

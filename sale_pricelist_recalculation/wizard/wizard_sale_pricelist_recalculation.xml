@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_sale_inherited">
+            <field name="name">view.sale.inherited</field>
+            <field name="model">sale.extended.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Price Change">
+                <field name="pricelist_id" />
+                <group col="2" colspan="4">
+                    <button icon="gtk-cancel" special="cancel" string="Close"/>
+                    <button name="change_pricelist_products" string="Change" type="object" icon="gtk-ok"/>
+                </group>
+            </form>
+            </field>
+        </record>
+
+    <act_window
+            id="sale_pricelist_act_window"
+            name="Change Pricelist"
+            view_mode="form"
+            view_type="form"
+            res_model="sale.extended.wizard"
+            src_model="sale.order"
+            target="new"/>
+
+    </data>
+</openerp>

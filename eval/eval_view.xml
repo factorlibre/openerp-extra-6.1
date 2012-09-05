@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+           <record id="view_gridrate_form" model="ir.ui.view">
+            <field name="name">Rate</field>
+            <field name="model">hr.grid.rate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Evaluation">
+                    <field name="rate" select="1"/>
+                    <field name="date_rate" select="1"/>
+                    <field name="active" select="1"/>
+                </form>
+              </field>
+            </record>
+
+           <record id="view_evalgrid_form" model="ir.ui.view">
+            <field name="name">Eval</field>
+            <field name="model">hr.evaluation.grid</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Evaluation">
+                    <field name="name" select="1"/>
+                    <field name="salary"/>
+                    <field name="salary_market"/>
+                    <field name="ratio"/>
+                    <field name="ratio2"/>
+                    <field name="ratio1"/>
+                    <field name="active" select="1"/>
+                   <field name="rate_ids" colspan="4" nolabel="1">
+                          <tree string="Rates" editable="bottom">
+                              <field name="rate"/>
+                              <field name="date_rate"/>
+                          </tree>
+                  </field>
+        <!--
+                    <field name="code"/>
+                    <field name="product_id"/>
+                    <field name="criteria_ids" colspan="4" nolabel="1">
+                          <tree string="Criteria" editable="bottom">
+                              <field name="name" />
+                              <field name="active" />
+                          </tree>
+                  </field-->
+                </form>
+            </field>
+        </record>
+
+        <record id="view_evalgrid_tree" model="ir.ui.view">
+            <field name="name">Eval</field>
+            <field name="model">hr.evaluation.grid</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Eval">
+                    <field name="name"/>
+                    <field name="salary"/>
+                    <field name="salary_market"/>
+                    <field name="ratio"/>
+             <!--
+                    <field name="code"/>
+                    <field name="product_id"/-->
+                    <field name="active" select="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_eval_grid_form" model="ir.actions.act_window">
+            <field name="name">Evaluation Grids</field>
+            <field name="res_model">hr.evaluation.grid</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="eval_id_menu" name="Evaluation" groups = "base.group_user"/>
+        <menuitem id="grid_id_menu" name="Configuration Grids/Criteria/Sections" parent="eval_id_menu" sequence="1"  groups="hr.group_hr_manager"/>
+        <menuitem action="action_eval_grid_form" id="menu_action_evaluation_form" parent="grid_id_menu" sequence="3"/>
+
+           <record id="view_eval_crit_form" model="ir.ui.view">
+            <field name="name">Eval Criteria</field>
+            <field name="model">hr.evaluation.criteria</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Evaluation Criteria">
+                    <field name="name" select="1" />
+                    <field name="section_id" select="1"/>
+                    <field name="sequence" select="1"/>
+                    <field name="active" select="1"/>
+                    <field name="format_text" select="1"/>
+                    <field name="format_select" select="1"/>
+                    <field name="desc_criteria" select="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_evalcriteria_tree" model="ir.ui.view">
+            <field name="name">Eval</field>
+            <field name="model">hr.evaluation.criteria</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Eval">
+                    <field name="name" select="1"/>
+                    <field name="section_id" select="1"/>
+                    <field name="active" select="1"/>
+                    <!--field name="grid_id"/-->
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_eval_crit_form" model="ir.actions.act_window">
+            <field name="name">Evaluations Criteria</field>
+            <field name="res_model">hr.evaluation.criteria</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--field name="domain">[('grid_id','!=',False)]</field-->
+        </record>
+
+        <menuitem action="action_eval_crit_form" id="menu_action_evaluation_crit_form" parent="grid_id_menu" sequence="2"/>
+
+
+        <record id="view_eval_hist_form" model="ir.ui.view">
+            <field name="name">Evaluations History</field>
+            <field name="model">hr.evaluation.history</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Eval">
+                   <field name="date_eval" select="1"/>
+                    <field name="old_salary" select="1"/>
+                    <field name="old_grid_id"/>
+                    <field name="employee_id"/>
+                    <field name="salary_market"/>
+
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_eval_hist_tree" model="ir.ui.view">
+            <field name="name">Evaluations History</field>
+            <field name="model">hr.evaluation.history</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Eval">
+                    <field name="date_eval" select="1"/>
+                    <field name="old_salary" select="1"/>
+                    <field name="old_grid_id"/>
+                    <field name="employee_id"/>
+                    <field name="salary_market"/>
+                </tree>
+            </field>
+        </record>
+
+           <record id="view_hreval_form" model="ir.ui.view">
+            <field name="name">Eval</field>
+            <field name="model">hr.evaluation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Evaluation">
+                <notebook >
+                  <page string="General">
+                    <field name="name" select="1"/>
+                    <field name="next_eval" select="1"/>
+                    <field name="employee_id" select="1"/>
+                     <group colspan="4" col="5" groups="hr.group_hr_manager">
+                    <field name="state" select="1"/>
+                    <button name="button_done" string="Confirm and Send Notifications" type="object" states="draft" />
+                   <!-- <button name="button_done" string="Confirm and Send Notifications" type="object"  attrs="{'invisible':[('state','!=','draft')]}"/-->
+                    <button name="button_update" string="Update Salary" type="object" states="pending,done"/>
+                    <button name="button_cancel" string="Cancel Evaluations" type="object" states="pending,done,draft" />
+                  </group>
+                </page>
+                <page string="Forms of Evaluations">
+                    <field name="eval_form_ids" nolabel="1" >
+                    <tree string="Forms Evaluations" editable="bottom">
+                        <field name="name" />
+                        <field name="employee_id2" />
+                        <field name="setting_id" />
+                        <field name="state" />
+                        <field name="note" />
+                        <button name="button_show" string="Show" type="object"/>
+                    </tree>
+                    </field>
+                </page>
+                </notebook>
+              </form>
+            </field>
+        </record>
+
+        <record id="view_hreval_tree" model="ir.ui.view">
+            <field name="name">Eval</field>
+            <field name="model">hr.evaluation</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Eval">
+                    <field name="name" />
+                    <field name="employee_id"/>
+                    <field name="next_eval" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_eval_hrset12" model="ir.actions.act_window">
+            <field name="name">My Evaluation Forms by Sections</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.evaluation.setting</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree,form</field>
+
+             <!--field name="context">{'setting_id':active_id, 'uid' : uid, 'states': 'done', 'set':'my'}</field-->
+             <field name="context">{'setting_id':active_id, 'uid' : uid, 'set':'my'}</field>
+        </record>
+        <record id="action_eval_hrset_form1" model="ir.actions.act_window">
+            <field name="name">All Forms by Settings </field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.evaluation.setting</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_eval_hrset_form2" model="ir.actions.act_window">
+            <field name="name">All Confirmed Forms by Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.evaluation.setting</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'states':'done'}</field>
+        </record>
+        <record id="action_eval_hr_form" model="ir.actions.act_window">
+            <field name="name">All Evaluation Forms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.evaluation.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'setting_id':active_id,'uid':uid}</field>
+        </record>
+      <record id="ir_eval_open" model="ir.values">
+            <field eval="'tree_but_open'" name="key2"/>
+            <field eval="'hr.evaluation.setting'" name="model"/>
+            <field name="name">Forms by Settings</field>
+            <field eval="'ir.actions.act_window,%d'%action_eval_hr_form" name="value"/>
+            <field eval="True" name="object"/>
+
+        </record>
+
+        <record id="action_eval_form_tosend" model="ir.actions.act_window">
+            <field name="name">Evaluations to Send</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','draft')]</field>
+            <field name="context">{'setting_id':active_id}</field>
+        </record>
+        <record id="action_eval_form_curr" model="ir.actions.act_window">
+            <field name="name">Pending Evaluations</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','pending')]</field>
+        </record>
+        <record id="action_eval_form_pending" model="ir.actions.act_window">
+            <field name="name">Pending Evaluations</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','pending')]</field>
+        </record>
+        <record id="action_eval_form_updated" model="ir.actions.act_window">
+            <field name="name">Updated Salaries</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','updated')]</field>
+        </record>
+        <record id="action_eval_form_closed" model="ir.actions.act_window">
+            <field name="name">Closed Evaluations</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','done')]</field>
+        </record>
+        <menuitem id="menu_eval_form_id" parent="eval_id_menu" name="Evaluation Forms" sequence="3" groups = "hr.group_hr_user"/>
+        <menuitem id="menu_eval_id" parent="eval_id_menu" name="Evaluations" groups="hr.group_hr_manager" sequence="2"/>
+        <menuitem action="action_eval_form_tosend" id="menu_action_evaltosend" parent="menu_eval_id" sequence="1"/>
+        <menuitem action="action_eval_form_curr" id="menu_action_evalcurr_form" parent="menu_eval_id" sequence="2"/>
+        <menuitem action="action_eval_form_updated" id="menu_action_evalcurr_form" parent="menu_eval_id" sequence="3"/>
+        <menuitem action="action_eval_form_pending" id="menu_action_evalpending_form" parent="menu_eval_id" sequence="4"/>
+        <menuitem action="action_eval_form_closed" id="menu_action_evalclosed_form" parent="menu_eval_id" sequence="4"/>
+        <menuitem action="action_eval_hrset_form1" id="m_menu_action_evaluationhr_form" parent="menu_eval_form_id" sequence="5"  groups = "hr.group_hr_manager"/>
+        <menuitem action="action_eval_hrset_form2" id="m_menu_action_evaluation2" parent="menu_eval_form_id" sequence="5" groups = "hr.group_hr_manager"/>
+        <menuitem action="action_eval_hrset12" id="m_menu_action_evaluationhr_form1" parent="menu_eval_form_id" sequence="5" groups = "hr.group_hr_user"/>
+
+
+        <record model="ir.ui.view" id="view_employee_form">
+            <field name="name">Employee</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="priority">10</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                    <notebook position="inside">
+                          <page string="Evaluation">
+                            <field name="grid_id"/>
+                            <field name="product_id" domain="[('type', '=', 'service')]"/>
+                            <field name="date_entry"/>
+                            <field name="current_salary" groups="hr.group_hr_manager"/>
+                            <field name="skill_id"/>
+                            <newline/>
+                            <field name="history_ids" colspan="4" nolabel="1" groups="hr.group_hr_manager" >
+                              <tree string="History" editable="bottom">
+                                 <field name="date_eval" select="1"/>
+                                  <field name="old_salary" select="1"/>
+                                  <field name="old_grid_id"/>
+                                  <field name="salary_market"/>
+                              </tree>
+                              <form string="History">
+                                 <field name="date_eval" select="1"/>
+                                  <field name="old_salary" select="1"/>
+                                  <field name="old_grid_id"/>
+                                  <field name="salary_market"/>
+                              </form>
+                            </field>
+                          </page>
+                      </notebook>
+              </field>
+          </record>
+
+           <record id="view_hrskill_tree" model="ir.ui.view">
+            <field name="name">Skill Description</field>
+            <field name="model">hr.skill.level</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Skill Level">
+                    <field name="name" />
+                    <field name="code" />
+                </tree>
+            </field>
+        </record>
+           <record id="view_hrskill_form" model="ir.ui.view">
+            <field name="name">Skill Level</field>
+            <field name="model">hr.skill.level</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Skill Level">
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="active" select="1"/>
+                    <newline/>
+                    <group colspan="4">
+                    <separator colspan="4" string="Description"/>
+                    <field name="desc_skill" nolabel="1"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_skill_form" model="ir.actions.act_window">
+            <field name="name">Skill levels</field>
+            <field name="res_model">hr.skill.level</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_skill_form" id="menu_skill_form" parent="hr.menu_open_view_employee_list" groups="hr.group_hr_manager" sequence="1"/>
+
+           <record id="view_hrevalsection_form" model="ir.ui.view">
+            <field name="name">Evaluation Section</field>
+            <field name="model">hr.evaluation.section</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Evaluation Section">
+                    <field name="name" select = "1"/>
+                    <field name="code" select = "1"/>
+                    <field name="active" select = "1"/>
+                </form>
+            </field>
+        </record>
+           <record id="view_hrevalsection_tree" model="ir.ui.view">
+            <field name="name">Evaluation Section</field>
+            <field name="model">hr.evaluation.section</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Evaluation Section">
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="active" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_eval_sections" model="ir.actions.act_window">
+            <field name="name">Sections</field>
+            <field name="res_model">hr.evaluation.section</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_eval_sections" id="menu_sections_id" parent="grid_id_menu" sequence="1"/>
+
+           <record id="view_hrevalform_tree" model="ir.ui.view">
+            <field name="name">Evaluation Form</field>
+            <field name="model">hr.evaluation.form</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Evaluation">
+                    <field name="name" />
+                    <field name="employee_id" />
+                    <field name="employee_id2" />
+                    <field name="send_date" />
+                    <field name="state" />
+                    <field name="note" />
+                </tree>
+            </field>
+        </record>
+           <record id="view_hrevalform_form" model="ir.ui.view">
+            <field name="name">Evaluation Form</field>
+            <field name="model">hr.evaluation.form</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Evaluation">
+                    <field name="name" select="1"/>
+                    <field name="send_date" select="1"/>
+                    <field name="employee_id" select="1"/>
+                    <field name="employee_id2" select="1"/>
+                    <field name="setting_id" select="1" context="{'setting_id':setting_id}"/>
+                    <field name="note"  colspan="4"  nolabel="1"/>
+                     <group colspan="4" col="5" >
+                    <field name="state" select="1" readonly="1"/>
+                    <button name="button_done" string="Con_firm" type="object" states="draft" />
+                    <button name="button_cancel" string="Can_cel" type="object"  states="draft,done,review"/>
+                    <button name="button_review" string="Re_viewed by top management" type="object" states="done" groups="hr.group_hr_manager"/>
+                     </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_eval_hrform_conf" model="ir.actions.act_window">
+            <field name="name">All Confirmed Evaluation Forms</field>
+            <field name="res_model">hr.evaluation.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','done')]</field>
+             <field name="context">{'setting_id':active_id}</field>
+        </record>
+        <record id="action_eval_hrform_form" model="ir.actions.act_window">
+            <field name="name">All Evaluations</field>
+            <field name="res_model">hr.evaluation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_eval_hrform_form" id="menu_action_evaluationhr_form" parent="menu_eval_id" sequence="5"/>
+        <record id="y_action_formeval_closed_form" model="ir.actions.act_window">
+            <field name="name">My confirmed Evaluations Forms</field>
+            <field name="res_model">hr.evaluation.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('employee_id2.user_id.id','=',uid),('states','=','done')]</field>
+             <field name="context">{'setting_id':active_id}</field>
+        </record>
+
+        <record id="my_action_eval_hrform_form" model="ir.actions.act_window">
+            <field name="name">My Evaluations Forms</field>
+            <field name="res_model">hr.evaluation.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','!=','done')]</field>
+             <field name="context">{'setting_id':active_id, 'set' : 'my', 'states': 'done'}</field>
+        </record>
+<!--        <menuitem action="action_eval_hrform_conf" id="menu_action_evaluationhrconf_form" parent="menu_eval_form_id" groups="base.group_extended" sequence="1"/>
+        <menuitem action="action_eval_hrform_form" id="menu_action_evaluationhrform_form" parent="menu_eval_form_id" groups="base.group_extended" sequence="2"/>
+        <menuitem action="my_action_eval_hrform_form" id="menu_action_myevalhrform_form" parent="menu_eval_form_id" sequence="3"/>
+        <menuitem action="my_action_formeval_closed_form" id="menu_action_myclosedform_form" parent="menu_eval_form_id" sequence="4"/-->
+
+        <record id="hr_contract.hr_hr_employee_view_form2" model="ir.ui.view">
+            <field name="name">hr.hr.employee.view.form3</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Contracts">
+                        <field colspan="4" name="contract_ids" nolabel="1" mode="form,tree">
+                            <form string="Contract ">
+                                <separator colspan="4" string="Generalities"/>
+                                <field colspan="4" name="name" select="1"/>
+                                <newline/>
+                                <separator colspan="4" string="Contract Duration"/>
+                                <field name="function"/>
+                                <field name="working_hours_per_day"/>
+                                <field name="date_start" select="1"/>
+                                <field name="date_end" select="1"/>
+                                <separator colspan="4" string="Salary"/>
+                                <field name="wage_type_id"/>
+                                <field name="wage"/>
+                                <separator colspan="4" string="Notes"/>
+                                <field colspan="4" name="notes" nolabel="1"/>
+                            </form>
+                            <tree string="Contracts">
+                                <field name="name"/>
+                                <field name="function"/>
+                                <field name="date_start"/>
+                                <field name="date_end"/>
+                                <field name="working_hours_per_day"/>
+                                <field name="wage_type_id"/>
+                                <field name="wage"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+           <record id="view_hrsetting_tree" model="ir.ui.view">
+            <field name="name">Evaluation Settings</field>
+            <field name="model">hr.evaluation.setting</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Setting">
+                    <field name="name" />
+                    <field name="product_id" />
+                </tree>
+            </field>
+        </record>
+           <record id="view_hrsetting_form" model="ir.ui.view">
+            <field name="name">Evaluation Settings</field>
+            <field name="model">hr.evaluation.setting</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Settings">
+                    <field name="name" select = "1"/>
+                    <field name="product_id" select = "1" domain="[('type', '=', 'service')]"/>
+                    <separator colspan="4" string="Criteria"/>
+                    <field name="criteria_ids" nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_eval_setting_conf" model="ir.actions.act_window">
+            <field name="name">Evaluation Settings</field>
+            <field name="res_model">hr.evaluation.setting</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_setting_form" model="ir.actions.act_window">
+            <field name="name">Evaluation Settings</field>
+            <field name="res_model">hr.evaluation.setting</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_setting_form" parent="grid_id_menu" id="menu_setting_eval_id"  sequence="5"/>
+
+	</data>
+</openerp>

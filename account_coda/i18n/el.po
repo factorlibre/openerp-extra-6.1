@@ -1,0 +1,151 @@
+# Greek translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-24 13:11+0000\n"
+"PO-Revision-Date: 2010-06-09 04:29+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: Greek <el@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-18 05:22+0000\n"
+"X-Generator: Launchpad (build 12177)\n"
+
+#. module: account_coda
+#: help:account.coda,journal_id:0
+#: field:account.coda.import,journal_id:0
+msgid "Bank Journal"
+msgstr "Ημερολόγιο τράπεζας"
+
+#. module: account_coda
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Το όνομα του Αντικειμένου πρέπει να ξεκινά με x_ και δεν πρέπει να περιέχει "
+"ειδικούς χαρακτήρες!"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda.import,note:0
+msgid "Log"
+msgstr "Καταγραφή"
+
+msgid "_Open Statement"
+msgstr "_Ανοιχτή δήλωση"
+
+msgid "Account CODA"
+msgstr "Λογαριασμός CODA"
+
+#. module: account_coda
+#: field:account.coda,name:0
+msgid "Coda file"
+msgstr "Αρχείο Coda"
+
+msgid "Clic on 'New' to select your file :"
+msgstr "Πατήστε \"Νέο\" για να επιλέξετε το αρχείο σας"
+
+msgid "Import Coda File"
+msgstr "Εισαγωγή αρχείου Coda"
+
+#. module: account_coda
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Λανθασμένο όνομα μοντέλου στον ορισμό ενέργειας"
+
+#. module: account_coda
+#: field:account.coda,note:0
+msgid "Import log"
+msgstr "Εισαγωγή ιστορικού καταγραφής"
+
+msgid "Default receivable Account"
+msgstr "Προεπιλεγμένος λογαριασμός είσπραξης"
+
+msgid ""
+"Module provides functionality to import\n"
+"    bank statements from .csv file.\n"
+"    Import coda file wizard is used to import bank statements."
+msgstr ""
+"Η μονάδα παρέχει λειτουργικότητα για να εισάγεται\n"
+"    τραπεζικούς λογαριασμούς απο αρχείο .csv .\n"
+"    Οδηγός εισαγωγής αρχείων coda χρησιμοποιείται για την εισαγωγή των "
+"τραπεζικών λογαριασμών."
+
+msgid "_Close"
+msgstr "_Κλείσιμο"
+
+msgid "Generated Bank Statement"
+msgstr "Δημιουργημένος τραπεζικός λογαριασμός"
+
+#. module: account_coda
+#: view:account.coda:0
+msgid "Coda import"
+msgstr "Εισαγωγή Coda"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda,user_id:0
+msgid "User"
+msgstr "Χρήστης"
+
+#. module: account_coda
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Λανθασμένο XML για αρχιτεκτονική όψης!"
+
+#. module: account_coda
+#: model:ir.model,name:account_coda.model_account_coda
+msgid "coda for an Account"
+msgstr "coda για εναν λογαριασμό"
+
+#. module: account_coda
+#: field:account.coda.import,def_payable:0
+msgid "Default Payable Account"
+msgstr "Προεπιλεγμένος λογαριασμός πληρωμής"
+
+msgid "Coda Statements"
+msgstr "Λογαριασμοί Coda"
+
+#. module: account_coda
+#: model:ir.ui.menu,name:account_coda.menu_account_coda_import
+msgid "Import Coda Statements"
+msgstr "Εισαγωγή λογαριασμών Coda"
+
+msgid "_Ok"
+msgstr "_Εντάξει"
+
+#. module: account_coda
+#: view:account.coda.import:0
+#: model:ir.actions.act_window,name:account_coda.action_account_coda_import
+msgid "Import Coda Statement"
+msgstr "Εισαγωγή λογαριασμών Coda"
+
+#. module: account_coda
+#: field:account.bank.statement,coda_id:0
+msgid "Coda"
+msgstr "Coda"
+
+#. module: account_coda
+#: view:account.coda.import:0
+msgid "Results :"
+msgstr "Αποτελέσματα :"
+
+#. module: account_coda
+#: field:account.coda.import,coda:0
+#: model:ir.actions.act_window,name:account_coda.act_account_payment_account_bank_statement
+msgid "Coda File"
+msgstr "Αρχείο Coda"
+
+#. module: account_coda
+#: help:account.coda,date:0
+msgid "Import Date"
+msgstr "Εισαγωγή ημερομηνίας"
+
+msgid "Select your bank journal :"
+msgstr "Επιλέξτε το ημερολόγιο τράπεζά σας :"

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_order_tree_discounts" model="ir.ui.view">
+            <field name="name">sale.order.tree.discounts</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+		<xpath expr="/form/notebook/page/field[@name='order_line']/tree/field[@name='discount']" position="replace">
+                    <field name="discount1"  on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount2" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount3" on_change="onchange_discount( discount1,discount2,discount3)" />
+                     <field name="discount" on_change="onchange_discount( discount1,discount2,discount3)" />
+                </xpath>
+            </field>
+        </record>
+        <record id="view_order_form_discounts" model="ir.ui.view">
+            <field name="name">sale.order.form.discounts</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <field name="discount" position="replace">
+                    <field name="discount1"  on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount2" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount3" on_change="onchange_discount( discount1,discount2,discount3)" />
+                        <field name="discount" />
+                </field>
+            </field>
+        </record>
+
+        <!-- Sale order line view -->
+        <record id="view_order_line_form2_discounts" model="ir.ui.view">
+            <field name="name">sale.order.line.form2.discounts</field>
+            <field name="model">sale.order.line</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_line_form2" />
+            <field name="arch" type="xml">
+                <field name="discount" position="replace">
+                    <field name="discount1"  on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount2" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount3" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount" />
+                </field>
+            </field>
+        </record>
+        
+        <!-- Invoice Line 3 Discount -->
+
+        <record id="view_invoice_line_3discount_tree" model="ir.ui.view">
+            <field name="name">account.invoice.line.3discount.tree</field>
+            <field name="model">account.invoice.line</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="account.view_invoice_line_tree" />
+            <field name="arch" type="xml">
+                <field name="discount" position="replace" >
+                     <field name="discount1" />
+                     <field name="discount2" />
+                     <field name="discount3" />
+                     <field name="discount" />
+                </field>
+            </field>
+        </record>
+        
+        <record id="view_invoice_line_3discount_form" model="ir.ui.view">
+            <field name="name">account.invoice.line.3discount.form</field>
+            <field name="model">account.invoice.line</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_invoice_line_form" />
+            <field name="arch" type="xml">
+                <field name="discount" position="replace" >
+                    <field name="discount1"  on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount2" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount3" on_change="onchange_discount( discount1,discount2,discount3)" />
+                    <field name="discount" />
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

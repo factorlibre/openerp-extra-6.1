@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <!--
+    =======================================================
+    ORDER SESSION VIEWS
+    =======================================================
+    -->
+	<record model="ir.ui.view" id="view_dm_order_session_form">
+        <field name="name">dm.order.session.form</field>
+        <field name="model">dm.order.session</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Order Session">
+				<separator string="Session Description" colspan="4"/>
+                <field name="user_id"/>
+                 <newline/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+				<newline/>
+                <field name="order_ids" colspan="4" nolabel="1" attrs="{'readonly':[('state','!=','running')]}"/>
+                <separator string="Status" colspan="4"/>
+				<group col="4" colspan="4">
+                	<field name="state" readonly="True"/>
+                	<button string="Start Session" name="start_session" type ="object" states="pending"/>
+               		<button string="Stop Session" name="stop_session" type ="object" states="running"/>
+				</group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_order_session_tree">
+        <field name="name">dm.order.session.tree</field>
+        <field name="model">dm.order.session</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Order Session">
+                <field name="user_id" select="1"/>
+                <field name="date_start" select="1"/>
+                <field name="date_stop" select="1"/>
+                <field name="order_ids" select="1"/>
+               	<field name="state"/>
+            </tree>
+        </field>
+    </record>
+   
+
+    <record model="ir.actions.act_window" id="action_dm_order_session_form">
+        <field name="name">All Orders Sessions</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.order.session</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_dm_order_session_tree"/>
+    </record>
+
+    <menuitem id="menu_action_dm_order_session_form" parent="dm_order_entry.menu_dm_config_custo_entries" action="action_dm_order_session_form" sequence="1"/>
+	
+	<record model="ir.actions.act_window" id="action_dm_order_session_new_form">
+        <field name="name">New Orders Session</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.order.session</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <menuitem id="menu_action_dm_order_session_new_form" parent="dm_order_entry.menu_dm_config_custo_entries" action="action_dm_order_session_new_form" sequence="2"/>
+
+
+    </data>
+</openerp>

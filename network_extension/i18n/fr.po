@@ -1,0 +1,387 @@
+# French translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-04-15 07:36+0000\n"
+"PO-Revision-Date: 2011-04-17 09:31+0000\n"
+"Last-Translator: Christophe Chauvet - http://www.syleam.fr/ <Unknown>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: network_extension
+#: field:network.software.logpass,superuser:0
+msgid "Super User"
+msgstr "Super-utilisateur"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_encrypt_password
+#: view:network.encrypt.password:0
+msgid "En/Decrypt password"
+msgstr "En/Decoder le mot de passe"
+
+#. module: network_extension
+#: help:network.protocol,port:0
+msgid ""
+"Default port defined see(http://www.iana.org/assignments/port-numbers)"
+msgstr ""
+"Port défini par défaut voir(http://www.iana.org/assignments/port-numbers)"
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+msgid "Encrypt"
+msgstr "Encoder"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_network
+#: field:network.software,network_id:0
+msgid "Network"
+msgstr "Gestion parc informatique"
+
+#. module: network_extension
+#: field:network.service,public_url:0
+msgid "Public URL"
+msgstr "URL publique"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_encrypt_password
+msgid "Password encryption"
+msgstr "Chiffrement du mot de passe"
+
+#. module: network_extension
+#: help:network.service,public_port:0
+msgid "Sometimes public and private ports are different."
+msgstr "Quelques fois, les ports publiques et privés sont différents."
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_pop0
+msgid "Post Office Protocol - Version 3"
+msgstr "Post Office Protocol - Version 3"
+
+#. module: network_extension
+#: view:network.service:0
+#: view:network.software:0
+msgid "Compute URL"
+msgstr "Calculer l'URL"
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+#: field:network.software.logpass,note:0
+msgid "Note"
+msgstr "Note"
+
+#. module: network_extension
+#: view:network.protocol:0
+#: view:network.service:0
+msgid "Group By..."
+msgstr "Grouper par ..."
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:159
+#, python-format
+msgid "Wrong encrypt/decrypt password."
+msgstr "Mauvais Cryptage/Décryptage du mot de passe"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "Other"
+msgstr "Autre"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "TCP"
+msgstr "TCP"
+
+#. module: network_extension
+#: field:network.material,mac_addr:0
+msgid "MAC addresss"
+msgstr "Adresse MAC"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:122
+#: code:addons/network_extension/network.py:145
+#, python-format
+msgid "Package python-crypto no installed."
+msgstr "Le paquet python-crypto n'est pas installé"
+
+#. module: network_extension
+#: field:network.protocol,port:0
+#: field:network.service,port:0
+msgid "Port"
+msgstr "Port"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_http0
+msgid "World Wide Web HTTP"
+msgstr "World Wide Web HTTP"
+
+#. module: network_extension
+#: field:network.service,public_port:0
+msgid "Public port"
+msgstr "Port publique"
+
+#. module: network_extension
+#: field:network.network,public_domain:0
+msgid "Public domain"
+msgstr "Domaine publique"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_software_logpass
+msgid "Software login"
+msgstr "Identifiant logiciel"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:122
+#: code:addons/network_extension/network.py:137
+#: code:addons/network_extension/network.py:145
+#: code:addons/network_extension/network.py:159
+#: code:addons/network_extension/network.py:161
+#, python-format
+msgid "Error !"
+msgstr "Erreur !"
+
+#. module: network_extension
+#: field:network.protocol,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:157
+#, python-format
+msgid " password:"
+msgstr " mot de passe:"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_service
+#: view:network.service:0
+#: view:network.software:0
+#: field:network.software,service_ids:0
+msgid "Service"
+msgstr "Service"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_material
+#: view:network.service:0
+#: field:network.service,material:0
+#: field:network.software.logpass,material:0
+msgid "Material"
+msgstr "Matériel"
+
+#. module: network_extension
+#: help:network.network,dns:0
+msgid "List of DNS servers, separated by commas"
+msgstr "Liste des serveurs DNS, séparé par des virgules"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_xmlrpc0
+msgid "Open ERP XML-RPC"
+msgstr "Open ERP XML-RPC"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_imap0
+msgid "Internet Message Access Protocol"
+msgstr "Internet Message Access Protocol"
+
+#. module: network_extension
+#: field:network.service,path:0
+msgid "Path"
+msgstr "Répertoire"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_smtp0
+msgid "Simple Mail Transfer"
+msgstr "Transfert de mail simple"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_softwares
+msgid "Softwares"
+msgstr "Logiciels"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "Both"
+msgstr "Les deux"
+
+#. module: network_extension
+#: field:network.protocol,name:0
+#: field:network.service,name:0
+#: field:network.software.logpass,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_ssh0
+msgid "The Secure Shell (SSH)"
+msgstr "Le Shell Sécurisé (SSH)"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_netrpc0
+msgid "Open ERP NET-RPC"
+msgstr "Open ERP NET-RPC"
+
+#. module: network_extension
+#: model:ir.module.module,shortdesc:network_extension.module_meta_information
+msgid "Network Management Extension"
+msgstr "Extension de la gestion de réseau"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_software
+#: model:ir.model,name:network_extension.model_network_software
+#: model:ir.ui.menu,name:network_extension.menu_action_software_tree
+#: field:network.service,software_id:0
+msgid "Software"
+msgstr "Logiciel"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_materials
+msgid "Materials"
+msgstr "Matériels"
+
+#. module: network_extension
+#: field:network.network,dns:0
+msgid "DNS"
+msgstr "DNS"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_https0
+msgid "http protocol over TLS/SSL"
+msgstr "Protocole http au travers de TLS/SSL"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_service
+msgid "Service Network"
+msgstr "Service réseau"
+
+#. module: network_extension
+#: field:network.service,private_url:0
+msgid "Private URL"
+msgstr "URL Privée"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_ftp0
+msgid "File Transfer [Control]"
+msgstr "Transfert de fichier [Canal de Control]"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "UDP"
+msgstr "UDP"
+
+#. module: network_extension
+#: field:network.network,public_ip_address:0
+msgid "Public IP address"
+msgstr "Adresse IP Publique"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_protocol
+#: model:ir.model,name:network_extension.model_network_protocol
+#: model:ir.ui.menu,name:network_extension.menu_action_protocol_tree
+#: view:network.protocol:0
+#: field:network.protocol,protocol:0
+#: view:network.service:0
+#: field:network.service,protocol_id:0
+msgid "Protocol"
+msgstr "Protocole"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_logpass
+#: view:network.software:0
+msgid "Login/Password"
+msgstr "Identifiant/Mot de passe"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_encrypt_password_tree
+#: field:network.encrypt.password,name:0
+msgid "Encrypt/Decrypt password"
+msgstr "Encoder/Décoder le mot de passe"
+
+#. module: network_extension
+#: field:network.software.logpass,encrypted:0
+msgid "Encrypted"
+msgstr "Encoder"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:137
+#: code:addons/network_extension/network.py:161
+#, python-format
+msgid "Not encrypt/decrypt password has given."
+msgstr "Aucun mot de passe crypter/décrypter donné"
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+msgid "Decrypt"
+msgstr "Décoder"
+
+#. module: network_extension
+#: model:ir.module.module,description:network_extension.module_meta_information
+msgid ""
+"\n"
+"Organize your software and configurations.\n"
+"    - Additional network information: IP, domain, DNS, gateway\n"
+"    - Protocols\n"
+"    - Services\n"
+"    - Ports\n"
+"    - Public and private URLs\n"
+"    - Password encryption\n"
+"\n"
+"System dependency: package python-crypto required."
+msgstr ""
+"\n"
+"Organiser vos logiciels et configurations.\n"
+"    - Information réseaux additionnelle: IP, domaine, DNS? passerelle\n"
+"    - Protocoles\n"
+"    - Services\n"
+"    - Ports\n"
+"    - URL privé et publique\n"
+"    - encodage des mots de passe\n"
+"\n"
+"Dépendance du système: paquet python-crypto requis."
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_networks
+msgid "Networks"
+msgstr "Réseaux"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_logpass_tree
+msgid "Logins/Passwords"
+msgstr "Identifiant/Mot de passe"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_service_tree
+msgid "Services"
+msgstr "Services"
+
+#. module: network_extension
+#: field:network.material,partner_id:0
+#: field:network.software,partner_id:0
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: network_extension
+#: field:network.network,gateway:0
+msgid "Gateway"
+msgstr "Passerelle"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Modèle non valide pour le définition de l'action"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Le nom de l'object doit commencer par x_ et ne doit pas contenir de "
+#~ "caractères spéciaux !"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "XML Invalide pour cette vue"

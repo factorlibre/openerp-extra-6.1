@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<terp>
+	<data>
+
+	<report string="Contact Labels"
+		model="res.partner.address"
+		name="res.partner.contact"
+		xml="report_partner_contact/report/partner_contact.xml"
+		xsl="report_partner_contact/report/partner_contact.xsl"
+		id="res_partner_contact_report"/>
+
+	</data>
+</terp>
+

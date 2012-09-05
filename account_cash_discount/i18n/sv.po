@@ -1,0 +1,87 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_cash_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-24 13:09+0000\n"
+"PO-Revision-Date: 2011-02-15 15:01+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_cash_discount
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: account_cash_discount
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,name:0
+msgid "Name"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,delay:0
+msgid "Number of Days"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,discount:0
+msgid "Discount (%)"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,credit_account_id:0
+msgid "Credit Account"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,debit_account_id:0
+msgid "Debit Account"
+msgstr ""
+
+#. module: account_cash_discount
+#: model:ir.module.module,description:account_cash_discount.module_meta_information
+msgid ""
+"\n"
+"    This module adds cash discounts on payment terms. Cash discounts\n"
+"    for a payment term can be configured with:\n"
+"        * A number of days,\n"
+"        * A discount (%),\n"
+"        * A debit and a credit account\n"
+"    "
+msgstr ""
+
+#. module: account_cash_discount
+#: model:ir.module.module,shortdesc:account_cash_discount.module_meta_information
+msgid "Payement Term with Cash Discount"
+msgstr "Payement Term with Cash Discount"
+
+#. module: account_cash_discount
+#: view:account.cash.discount:0
+#: view:account.payment.term:0
+#: model:ir.model,name:account_cash_discount.model_account_cash_discount
+msgid "Cash Discount"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.cash.discount,payment_id:0
+msgid "Associated Payment Term"
+msgstr ""
+
+#. module: account_cash_discount
+#: field:account.payment.term,cash_discount_ids:0
+msgid "Cash Discounts"
+msgstr ""

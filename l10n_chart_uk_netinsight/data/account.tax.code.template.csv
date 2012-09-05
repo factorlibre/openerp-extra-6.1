@@ -1,0 +1,36 @@
+"id","name","code","parent_id:id","notprintable","sign"
+"tax_0","company",,,,1
+"vat_code_chart_root","Net Value Added Tax",,"tax_0",TRUE,1
+"vat_dues","VAT Due",,"vat_code_chart_root",TRUE,1
+"vat_dues_sales","VAT Due on Sales",,"vat_dues",TRUE,1
+"vat_dues_ec_aq","VAT due from EC Acquisition",,"vat_dues_sales",TRUE,1
+"S-C","Oil Vat - Sales","C","vat_dues_sales",FALSE,1
+"S-E","Tax Excempt – Sales","E","vat_dues_sales",FALSE,1
+"S-F","Heating VAT – Sales","F","vat_dues_sales",FALSE,1
+"S-L","New 2009 VAT – Sales","L","vat_dues_sales",FALSE,1
+"S-N","Not Registered – Sales","N","vat_dues_sales",FALSE,1
+"S-P","2.5% Discount Rate – Sales","P","vat_dues_sales",FALSE,1
+"S-S","Standard – Sales","S","vat_dues_sales",FALSE,1
+"S-Z","Zero Rated – Sales","Z","vat_dues_sales",FALSE,1
+"S-ES","EEC Standard Code – Sales","ES","vat_dues_ec_aq",FALSE,1
+"S-EZ","EEC Zero Rated – Sales","EZ","vat_dues_ec_aq",FALSE,1
+"vat_purchase","VAT Reclaimed on purchase",,"vat_code_chart_root",TRUE,-1
+"P-C","Oil Vat - Purchase","C","vat_purchase",FALSE,1
+"P-E","Tax Excempt – Purchase","E","vat_purchase",FALSE,1
+"P-F","Heating VAT – Purchase","F","vat_purchase",FALSE,1
+"P-L","New 2009 VAT – Purchase","L","vat_purchase",FALSE,1
+"P-N","Not Registered – Purchase","N","vat_purchase",FALSE,1
+"P-P","2.5% Discount Rate – Purchase","P","vat_purchase",FALSE,1
+"P-S","Standard – Purchase","S","vat_purchase",FALSE,1
+"P-Z","Zero Rated – Purchase","Z","vat_purchase",FALSE,1
+"P-ES","EEC Standard Code – Purchase","ES","vat_purchase",FALSE,1
+"P-EZ","EEC Zero Rated – Purchase","EZ","vat_purchase",FALSE,1
+"tax_base","NET Sales & Purchase",,"tax_0",FALSE,1
+"total_sales","Total Sales",,"tax_base",FALSE,1
+"total_purchases","Total Purchases",,"tax_base",FALSE,-1
+"local_sales","Local Sales",,"total_sales",FALSE,1
+"local_purchases","Local Purchases",,"total_purchases",FALSE,1
+"ec_sales","EC Sales",,"total_sales",FALSE,1
+"ec_purchases","EC Purchases",,"total_purchases",FALSE,1
+"other_sales","Other Sales",,"total_sales",FALSE,1
+"other_purchases","Other Purchases",,"total_purchases",FALSE,1

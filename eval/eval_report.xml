@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+	<data>
+
+<!--		<report
+			id="pos_users_product_re"
+			string="User's Product"
+			model="account.bank.statement"
+			name="pos.user.product"
+			auto="False"
+			multi="True"
+			rml="statement/report/pos_users_product.rml"
+			 /-->
+
+
+	</data>
+</openerp>

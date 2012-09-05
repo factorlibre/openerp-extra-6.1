@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record id="view_partner_partner_company_log_form" model="ir.ui.view">
+        <field name="name">partner.partner.company.log.form</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="/form/notebook" position="inside">
+                <page string="Company Log">
+                    <field name="partner_company_log" nolabel="1">
+                        <tree string="Company Log">
+                            <field name="company_id"/>
+                            <field name="model_id"/>
+                            <field name="first_date"/>
+                            <field name="first_user_id"/>
+                            <field name="last_date"/>
+                            <field name="last_user_id"/>
+                        </tree>
+                        <form string="Company Log">
+                            <field name="company_id"/>
+                            <field name="model_id"/>
+                            <separator string="Created" colspan="4"/>
+                            <field name="first_date" string="Date"/>
+                            <field name="first_user_id"/>
+                            <separator string="Updated" colspan="4"/>
+                            <field name="last_date" string="Date"/>
+                            <field name="last_user_id"/>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</data>
+</openerp>

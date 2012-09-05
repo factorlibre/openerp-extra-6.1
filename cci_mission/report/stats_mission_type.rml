@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#e0e0e0" start="0,0" stop="2,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#e0e0e0" start="1,1" stop="2,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e0e0e0" start="0,2" stop="2,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e0e0e0" start="0,0" stop="-2,2"/>
+
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e0e0e0" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#e0e0e0" start="0,0" stop="-1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="-1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e0e0e0" start="0,1" stop="-1,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica"/>
+    <paraStyle name="P2" fontName="Helvetica-Bold" fontSize="11.0" leading="14"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="10.0" leading="13"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P6" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="Helvetica"/>
+    <paraStyle name="P8" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="P1">[[ repeatIn(objects,'certificate') ]]</para>
+    <para style="P6">Tableau Mission déléguées</para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="61.0,93.0,112.0,74.0,137.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P5">Mois :</para>
+        </td>
+        <td>
+          <para style="P5">Date de:</para>
+        </td>
+        <td>
+          <para style="P4">[[ time.strftime('%m/%Y', time.strptime( data['form']['date1'], '%Y-%m-%d')) ]]</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">Date à:</para>
+        </td>
+        <td>
+          <para style="P4">[[ time.strftime('%m/%Y', time.strptime( data['form']['date2'], '%Y-%m-%d')) ]]</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="147.0,110.0,110.0,110.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P2">Type</para>
+        </td>
+        <td>
+          <para style="P2">Nombre</para>
+        </td>
+        <td>
+          <para style="P2">Montant</para>
+        </td>
+        <td>
+          <para style="P2">Droits</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Certificats</para>
+        </td>
+        <td>
+          <para style="P8">[[repeatIn(get_total_certi(data['form']['date1'] ,data['form']['date2'] ),'get_total') ]] [[ get_total['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[get_total['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">[[repeatIn( get_missions_states(data['form']['date1'] ,data['form']['date2']),'get_data')]]</para>
+          <para style="P8">[[ ((get_data['section']=='certificate') or removeParentNode('tr')) and '']]</para>
+          <para style="P8">[[ get_data['name'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Légalisations</para>
+        </td>
+        <td>
+          <para style="P8">[[repeatIn(get_total_legalization(data['form']['date1'] ,data['form']['date2'] ),'get_total') ]][[ get_total['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">[[repeatIn( get_missions_states(data['form']['date1'] ,data['form']['date2']),'get_data')]]</para>
+          <para style="P8">[[ ((get_data['section']=='legalization') or removeParentNode('tr')) and '']]</para>
+          <para style="P8">[[ get_data['name'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Carnets ATA</para>
+        </td>
+        <td>
+          <para style="P8">[[repeatIn(get_total_ata(data['form']['date1'] ,data['form']['date2'] ),'get_total') ]][[ get_total['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">[[repeatIn( get_missions_states(data['form']['date1'] ,data['form']['date2']),'get_data')]]</para>
+          <para style="P8">[[ ((get_data['section']=='ATA') or removeParentNode('tr')) and '']]</para>
+          <para style="P8">[[ get_data['name'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_goods'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Dossiers ambassade</para>
+        </td>
+        <td>
+          <para style="P8">[[repeatIn(get_total_ambassy(data['form']['date1'] ,data['form']['date2'] ),'get_total') ]][[ get_total['no_certi'] ]]</para>
+        </td>
+        <td>
+         <para style="P8">-</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_total['total_sub'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">[[repeatIn( get_missions_states(data['form']['date1'] ,data['form']['date2']),'get_data')]]</para>
+          <para style="P8">[[ ((get_data['section']=='folder') or removeParentNode('tr')) and '']]</para>
+          <para style="P8">[[ get_data['name'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['no_certi'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">-</para>
+        </td>
+        <td>
+          <para style="P8">[[ get_data['total_sub'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>

@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_internetdomain_domain_user","internetdomain_domain group_user","model_internetdomain_domain","internetdomain.group_internetdomain_user",1,1,1,1
+"access_internetdomain_renewal_user","internetdomain_renewal group_user","model_internetdomain_renewal","internetdomain.group_internetdomain_user",1,1,1,1

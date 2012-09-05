@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-08 01:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/tmp.C0UkEqNfiz:767 /tmp/tmp.C0UkEqNfiz:787 /tmp/tmp.C0UkEqNfiz:959
+#: /tmp/tmp.C0UkEqNfiz:979 /tmp/tmp.C0UkEqNfiz:1151 /tmp/tmp.C0UkEqNfiz:1171
+msgid "Journal"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:783 /tmp/tmp.C0UkEqNfiz:975 /tmp/tmp.C0UkEqNfiz:1167
+msgid "Date"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:791 /tmp/tmp.C0UkEqNfiz:983 /tmp/tmp.C0UkEqNfiz:1175
+msgid "Account"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:795 /tmp/tmp.C0UkEqNfiz:987 /tmp/tmp.C0UkEqNfiz:1179
+msgid "Move"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:799 /tmp/tmp.C0UkEqNfiz:991 /tmp/tmp.C0UkEqNfiz:1183
+msgid "Description"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:803 /tmp/tmp.C0UkEqNfiz:995 /tmp/tmp.C0UkEqNfiz:1187
+msgid "Debit"
+msgstr ""
+
+#: /tmp/tmp.C0UkEqNfiz:807 /tmp/tmp.C0UkEqNfiz:999 /tmp/tmp.C0UkEqNfiz:1191
+msgid "Credit"
+msgstr ""

@@ -1,0 +1,73 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 08:01+0000\n"
+"PO-Revision-Date: 2011-06-28 08:26+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:31+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: invoice_multi_currency
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: invoice_multi_currency
+#: wizard_button:account.invoice.currency_change,message,end:0
+msgid "Ok"
+msgstr "OK"
+
+#. module: invoice_multi_currency
+#: model:ir.module.module,shortdesc:invoice_multi_currency.module_meta_information
+msgid "Multi-Currency Invoice"
+msgstr "Monivaluutta lasku"
+
+#. module: invoice_multi_currency
+#: wizard_button:account.invoice.currency_change,change,next:0
+#: model:ir.actions.wizard,name:invoice_multi_currency.wizard_invoice_currency_change
+msgid "Change Currency"
+msgstr "Vaihda valuuttaa"
+
+#. module: invoice_multi_currency
+#: model:ir.module.module,description:invoice_multi_currency.module_meta_information
+msgid ""
+"Multi-Currency Invoice\n"
+"    that will allows user to change the invoice currency.\n"
+"    "
+msgstr ""
+
+#. module: invoice_multi_currency
+#: wizard_view:account.invoice.currency_change,change:0
+#: wizard_view:account.invoice.currency_change,message:0
+msgid "Invoice Currency"
+msgstr "Laskutusvaluutta"
+
+#. module: invoice_multi_currency
+#: wizard_button:account.invoice.currency_change,change,end:0
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: invoice_multi_currency
+#: view:account.invoice:0
+msgid "Invoice lines"
+msgstr "Laskun rivit"
+
+#. module: invoice_multi_currency
+#: wizard_view:account.invoice.currency_change,message:0
+msgid "You can not change currency for Open Invoice !"
+msgstr "Et voi vaihtaa valuuttaa avoimelle laskulle !"
+
+#. module: invoice_multi_currency
+#: wizard_field:account.invoice.currency_change,change,currency_id:0
+msgid "New Currency"
+msgstr "Uusi valuutta"

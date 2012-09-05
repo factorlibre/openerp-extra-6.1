@@ -1,0 +1,335 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* internetdomain
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-29 11:10+0000\n"
+"PO-Revision-Date: 2011-03-31 02:27+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: internetdomain
+#: view:internetdomain.domain:0
+#: model:ir.actions.act_window,name:internetdomain.action_internetdomain_domain_action
+msgid "domain"
+msgstr "domini"
+
+#. module: internetdomain
+#: model:ir.module.module,description:internetdomain.module_meta_information
+msgid ""
+"\n"
+"Organize your domains and services\n"
+"Tools -> Domain\n"
+"* Domains\n"
+"* Renewals\n"
+"* Products/Services\n"
+"* Network\n"
+"* Send email expiration domain with Schuddle Action and Power Email\n"
+"* Invoice renewal domain\n"
+"    "
+msgstr ""
+"\n"
+"Organitza els vostres dominis d'internet i serveis:\n"
+"* Dominis\n"
+"* Renovacions\n"
+"* Productes\n"
+"* Xarxa\n"
+"* Enviament de correu mitjançant Accions Planificades i Power Email\n"
+"    "
+
+#. module: internetdomain
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar amb x_ i no contenir cap caràcter "
+"especial!"
+
+#. module: internetdomain
+#: field:internetdomain.domain,network_id:0
+msgid "Network"
+msgstr "Xarxa"
+
+#. module: internetdomain
+#: code:addons/internetdomain/internetdomain.py:0
+#: model:ir.module.module,shortdesc:internetdomain.module_meta_information
+#: view:res.company:0
+#, python-format
+msgid "Internet Domain"
+msgstr "Gestió de dominis"
+
+#. module: internetdomain
+#: field:internetdomain.domain,date_create:0
+msgid "Create"
+msgstr "Data alta"
+
+#. module: internetdomain
+#: wizard_view:internetdomain.renewal.make_invoice,init:0
+#: wizard_button:internetdomain.renewal.make_invoice,init,invoice:0
+msgid "Create invoices"
+msgstr "Crea factures"
+
+#. module: internetdomain
+#: view:internetdomain.domain:0
+#: field:internetdomain.domain,comments:0
+#: view:internetdomain.renewal:0
+#: field:internetdomain.renewal,comments:0
+msgid "Comments"
+msgstr "Notes"
+
+#. module: internetdomain
+#: wizard_field:internetdomain.renewal.make_invoice,init,price:0
+msgid "Price"
+msgstr "Preu"
+
+#. module: internetdomain
+#: wizard_view:internetdomain.renewal.make_invoice,init:0
+msgid "Select product do you create invoice lines:"
+msgstr "Seleccioneu el producte per crear les línies de factura"
+
+#. module: internetdomain
+#: field:internetdomain.domain,warning_expire:0
+msgid "Warning expired"
+msgstr "Advertència de venciment"
+
+#. module: internetdomain
+#: field:internetdomain.domain,date_expire:0
+msgid "Date expired"
+msgstr "Data venciment"
+
+#. module: internetdomain
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de model no vàlid en la definició de l'acció."
+
+#. module: internetdomain
+#: view:internetdomain.renewal:0
+#: model:ir.actions.act_window,name:internetdomain.action_internetdomain_renewal_action
+msgid "renewals"
+msgstr "renovacions"
+
+#. module: internetdomain
+#: model:ir.model,name:internetdomain.model_internetdomain_domain
+msgid "internetdomain.domain"
+msgstr "dominiinternet.domini"
+
+#. module: internetdomain
+#: field:internetdomain.domain,registrator_website:0
+msgid "Website"
+msgstr "Web"
+
+#. module: internetdomain
+#: field:internetdomain.domain,dns4:0
+msgid "DNS Secundary (3)"
+msgstr "DNS Secundari (3)"
+
+#. module: internetdomain
+#: wizard_field:internetdomain.renewal.make_invoice,init,product_id:0
+msgid "Product"
+msgstr "Producte"
+
+#. module: internetdomain
+#: field:res.company,intdomain_alert_expire:0
+msgid "Alert Expire"
+msgstr "Alertes venciment"
+
+#. module: internetdomain
+#: field:internetdomain.domain,company_id:0
+msgid "Company"
+msgstr "Companyia"
+
+#. module: internetdomain
+#: field:internetdomain.domain,dns3:0
+msgid "DNS Secundary (2)"
+msgstr "DNS Secundari (2)"
+
+#. module: internetdomain
+#: field:internetdomain.renewal,date_renewal:0
+msgid "Date"
+msgstr "Data"
+
+#. module: internetdomain
+#: field:res.company,intdomain_template:0
+msgid "Template"
+msgstr "Plantilla"
+
+#. module: internetdomain
+#: view:res.company:0
+msgid "Configuration"
+msgstr "Configuració"
+
+#. module: internetdomain
+#: rml:internetdomain.domain:0
+msgid "Expired"
+msgstr "Venciment"
+
+#. module: internetdomain
+#: code:addons/internetdomain/internetdomain.py:0
+#, python-format
+msgid "Send email domain: %s"
+msgstr "Send email domain: %s"
+
+#. module: internetdomain
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr "Arguments no vàlids"
+
+#. module: internetdomain
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML invàlid per a la definició de la vista!"
+
+#. module: internetdomain
+#: rml:internetdomain.domain:0
+#: field:internetdomain.domain,registrator_id:0
+#: field:internetdomain.renewal,registrator_id:0
+msgid "Registrator"
+msgstr "Registrador"
+
+#. module: internetdomain
+#: field:internetdomain.domain,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: internetdomain
+#: rml:internetdomain.domain:0
+msgid "Created"
+msgstr "Data alta"
+
+#. module: internetdomain
+#: field:internetdomain.domain,IP:0
+msgid "IP"
+msgstr "IP"
+
+#. module: internetdomain
+#: help:res.company,intdomain_alert_expire:0
+msgid "Days notice of expire (separated with comma. Ex. 30,15,10)"
+msgstr "Dies d'avís de venciment (separats amb coma. Per ex. 30,15,10)"
+
+#. module: internetdomain
+#: field:internetdomain.domain,dns1:0
+msgid "DNS Primary"
+msgstr "DNS Primari"
+
+#. module: internetdomain
+#: field:internetdomain.domain,active:0
+msgid "Active"
+msgstr "Actiu"
+
+#. module: internetdomain
+#: view:internetdomain.domain:0
+#: field:internetdomain.domain,product_ids:0
+msgid "Products"
+msgstr "Productes"
+
+#. module: internetdomain
+#: model:ir.actions.report.xml,name:internetdomain.internetdomain_domain
+msgid "Domains"
+msgstr "Dominis"
+
+#. module: internetdomain
+#: model:ir.actions.wizard,name:internetdomain.wizard_internetdomain_renewal_make_invoice
+msgid "Make invoice"
+msgstr "Crea factura"
+
+#. module: internetdomain
+#: rml:internetdomain.domain:0
+#: field:internetdomain.renewal,domain_id:0
+#: model:ir.ui.menu,name:internetdomain.menu_internetdomain
+#: model:ir.ui.menu,name:internetdomain.menu_internetdomain_domain
+msgid "Domain"
+msgstr "Domini"
+
+#. module: internetdomain
+#: field:internetdomain.domain,dns2:0
+msgid "DNS Secundary"
+msgstr "DNS Secundari"
+
+#. module: internetdomain
+#: field:internetdomain.domain,partner_address_id:0
+msgid "Partner Contact"
+msgstr "Contacte"
+
+#. module: internetdomain
+#: code:addons/internetdomain/wizard/make_invoice.py:0
+#, python-format
+msgid "Invoices"
+msgstr "Factures"
+
+#. module: internetdomain
+#: view:internetdomain.domain:0
+msgid "General"
+msgstr "General"
+
+#. module: internetdomain
+#: wizard_field:internetdomain.renewal.make_invoice,init,account_id:0
+msgid "Analytic Account"
+msgstr "Compte analític"
+
+#. module: internetdomain
+#: field:internetdomain.renewal,date_expire:0
+msgid "Expire"
+msgstr "Venciment"
+
+#. module: internetdomain
+#: field:internetdomain.renewal,price_unit:0
+msgid "Unit Price"
+msgstr "Preu"
+
+#. module: internetdomain
+#: wizard_button:internetdomain.renewal.make_invoice,init,end:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: internetdomain
+#: rml:internetdomain.domain:0
+#: field:internetdomain.domain,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: internetdomain
+#: view:internetdomain.domain:0
+#: field:internetdomain.domain,renewal_ids:0
+#: model:ir.actions.act_window,name:internetdomain.act_domain_2_renewals
+#: model:ir.model,name:internetdomain.model_internetdomain_renewal
+#: model:ir.ui.menu,name:internetdomain.menu_internetdomain_renewal
+msgid "Renewals"
+msgstr "Renovacions"
+
+#. module: internetdomain
+#: code:addons/internetdomain/internetdomain.py:0
+#, python-format
+msgid ""
+"Not template configurated. Configure your company template or desactive "
+"Scheduled Actions"
+msgstr ""
+"Not template configurated. Configure your company template or desactive "
+"Scheduled Actions"
+
+#~ msgid ""
+#~ "\n"
+#~ "Organize your domains and services\n"
+#~ "* Domains\n"
+#~ "* Renewals\n"
+#~ "* Products/Services\n"
+#~ "* Network\n"
+#~ "* Send email expiration domain with Schuddle Action and Power Email\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "Organitza els vostres dominis d'internet i serveis:\n"
+#~ "* Dominis\n"
+#~ "* Renovacions\n"
+#~ "* Productes\n"
+#~ "* Xarxa\n"
+#~ "* Enviament de correu mitjançant Accions Planificades i Power Email\n"
+#~ "    "

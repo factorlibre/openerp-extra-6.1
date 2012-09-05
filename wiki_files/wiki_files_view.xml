@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+<!-- Inherit Wiki Form view  -->
+        <record model="ir.ui.view" id="inherit_wiki_form_view">
+            <field name="name">inherit.wiki.wiki.form</field>
+            <field name="model">wiki.wiki</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="wiki.view_wiki_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Content']" position="after">
+                    <page string="Media File">
+                        <field name="media_ids" nolabel="1" readonly="1">
+                            <form string="Media Files">
+                                <field name="file_wiki"/>
+							<separator string="Preview (Only when saved)" colspan="4" />
+							<field name="preview" widget="image" nolabel="1" colspan="4"/>
+                            </form>
+                            <tree string="Media Files">
+                                <field name="file_wiki"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="wiki_files_conf_tree">
+            <field name="name">wiki.files.conf.tree</field>
+            <field name="model">wiki.files.conf</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="FTP Server">
+                    <field name="name"/>
+                    <field name="active" />
+                    <field name="ftpusername" />
+                    <field name="ftpurl" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="wiki_files_conf_form">
+            <field name="name">wiki.files.conf.form</field>
+            <field name="model">wiki.files.conf</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Wiki Files">
+                    <field name="name" />
+                    <field name="active" />
+                    <notebook colspan="4">
+                        <page string="FTP Server">
+                            <field name="ftpip" attrs="{'required':[('ftp','=',True)]}" />
+                            <field name="ftpdirectory" attrs="{'required':[('ftp','=',True)]}" />
+                            <field name="ftpusername" attrs="{'required':[('ftp','=',True)]}" />
+                            <field name="ftppassword" attrs="{'required':[('ftp','=',True)]}" />
+                            <field name="ftpurl" attrs="{'required':[('ftp','=',True)]}" />
+                            <button name="check_ftp" string="Check FTP" colspan="4" type="object" />
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_wiki_files_conf">
+            <field name="name">Wiki Files Conf</field>
+            <field name="res_model">wiki.files.conf</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help">FTP Server Management. You need authoritzation to configure FTP Server. Only one server is available (Active).</field>
+        </record>
+
+        <menuitem name="Wiki Files" parent="wiki.menu_wiki_configuration" id="menu_wiki_files_conf" action="action_wiki_files_conf"/>
+
+    </data>
+</openerp>

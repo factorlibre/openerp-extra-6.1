@@ -1,0 +1,121 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* sale_shop_user
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-02-16 12:09+0000\n"
+"PO-Revision-Date: 2012-04-10 21:36+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_multi_shop
+#: field:res.users,shop_id:0
+msgid "Shop"
+msgstr "Botiga"
+
+#. module: sale_multi_shop
+#: help:sale.shop,sequence_id:0
+msgid "The sequence used for sale order numbers."
+msgstr "La  seqüència que s'utilitza en les comandes de venda."
+
+#. module: sale_multi_shop
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "La referència de la comanda ha de ser única!"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_sale_order
+msgid "Sales Order"
+msgstr "Comandes de venda"
+
+#. module: sale_multi_shop
+#: field:sale.shop,exclude_lines_notes:0
+msgid "Exclude Order Line Notes"
+msgstr "Excloure notes"
+
+#. module: sale_multi_shop
+#: help:sale.shop,journal_id:0
+msgid "The journal used for this shop."
+msgstr "El diari utilitzat per aquesta botiga."
+
+#. module: sale_multi_shop
+#: help:sale.shop,exclude_lines_notes:0
+msgid "Exclude copy sale description to sale order line"
+msgstr ""
+"Excloure que la descripció de venda es copii a les notes de la línia de la "
+"comanda de venda"
+
+#. module: sale_multi_shop
+#: model:ir.module.module,description:sale_multi_shop.module_meta_information
+msgid ""
+"\n"
+"This module allows to manage the multi shops by multi companies: \n"
+"- Relationship between shops and users\n"
+"- Search filter and list by shop\n"
+msgstr ""
+"\n"
+"This module allows to manage the multi shops by multi companies: \n"
+"- Relationship between shops and users\n"
+"- Search filter and list by shop\n"
+
+#. module: sale_multi_shop
+#: help:res.users,shop_id:0
+msgid "The current shop related to the user"
+msgstr "La botiga relacionada amb l'usuari actualment"
+
+#. module: sale_multi_shop
+#: sql_constraint:res.users:0
+msgid "You can not have two users with the same login !"
+msgstr "No podeu tenir dos usuaris amb el mateix identificador!"
+
+#. module: sale_multi_shop
+#: constraint:res.users:0
+msgid "The chosen company is not in the allowed companies for this user"
+msgstr ""
+"La companyia seleccionada no està a les companyies permeses per aquest usuari"
+
+#. module: sale_multi_shop
+#: model:ir.module.module,shortdesc:sale_multi_shop.module_meta_information
+msgid "Sale Multi Shop"
+msgstr "Botigues de venda"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_sale_shop
+msgid "Sales Shop"
+msgstr "Botigues de venda"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_res_users
+msgid "res.users"
+msgstr "res.users"
+
+#. module: sale_multi_shop
+#: view:sale.shop:0
+#: field:sale.shop,user_ids:0
+msgid "Users"
+msgstr "Usuaris"
+
+#. module: sale_multi_shop
+#: view:res.users:0
+#: field:res.users,shop_ids:0
+msgid "Shops"
+msgstr "Botigues"
+
+#. module: sale_multi_shop
+#: field:sale.shop,sequence_id:0
+msgid "Sale Order Sequence"
+msgstr "Seqüència comandes de venda"
+
+#. module: sale_multi_shop
+#: field:sale.shop,journal_id:0
+msgid "Account Journal"
+msgstr "Diari"

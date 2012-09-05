@@ -1,0 +1,113 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* label_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-10-04 17:12:35+0000\n"
+"PO-Revision-Date: 2010-10-04 17:12:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: label_product
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: label_product
+#: field:label.wizard.product.line,wizard_id:0
+msgid "Wizard"
+msgstr ""
+
+#. module: label_product
+#: model:ir.module.module,shortdesc:label_product.module_meta_information
+msgid "Product label printing wizards"
+msgstr ""
+
+#. module: label_product
+#: model:ir.module.module,description:label_product.module_meta_information
+msgid "\n"
+"    Provides an editable grid to fill in with products and label quantities\n"
+"    to print. Adds a button on pickings to automatically fill in this grid\n"
+"    from their data.\n"
+"\n"
+"    NOTE: The basic functionality works as it is but the button on pickings\n"
+"    needs the --enable-code-actions parameter for the server.\n"
+"    Compatibility: tested with OpenERP v5.0\n"
+"    "
+msgstr ""
+
+#. module: label_product
+#: field:label.wizard.product,line_ids:0
+#: view:label.wizard.product.line:0
+msgid "Items"
+msgstr ""
+
+#. module: label_product
+#: field:label.wizard.product,template_id:0
+msgid "Label Template"
+msgstr ""
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Label Wizard"
+msgstr ""
+
+#. module: label_product
+#: field:label.wizard.product.line,product_id:0
+msgid "Product"
+msgstr ""
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Print"
+msgstr ""
+
+#. module: label_product
+#: field:label.wizard.product.line,quantity:0
+msgid "Qty"
+msgstr ""
+
+#. module: label_product
+#: view:label.wizard.product.line:0
+msgid "Item"
+msgstr ""
+
+#. module: label_product
+#: model:ir.actions.act_window,name:label_product.action_label_product
+#: model:ir.actions.server,name:label_product.act_picking_product_label_wizard
+#: model:ir.ui.menu,name:label_product.menu_label_product
+msgid "Print Labels"
+msgstr ""
+
+#. module: label_product
+#: model:ir.model,name:label_product.model_label_wizard_product
+msgid "label.wizard.product"
+msgstr ""
+
+#. module: label_product
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Cancel"
+msgstr ""
+
+#. module: label_product
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: label_product
+#: model:ir.model,name:label_product.model_label_wizard_product_line
+msgid "label.wizard.product.line"
+msgstr ""
+

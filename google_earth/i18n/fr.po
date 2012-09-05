@@ -1,0 +1,304 @@
+# French translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-01-01 10:44+0000\n"
+"PO-Revision-Date: 2011-02-15 15:07+0000\n"
+"Last-Translator: Mustufa Rangwala (Open ERP) <mra@tinyerp.com>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: google_earth
+#: wizard_view:google.network.link,info:0
+msgid "Upload to google earth"
+msgstr "Upload to google earth"
+
+#. module: google_earth
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,refresh_mode:0
+msgid "RefreshMode"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.actions.wizard,name:google_earth.wizard_customer_on_map
+#: model:ir.ui.menu,name:google_earth.menu_google_earth
+msgid "KML for Partner"
+msgstr ""
+
+#. module: google_earth
+#: wizard_button:google.network.link,init,make:0
+msgid "Generate KML"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,view_refresh_time:0
+msgid "View Refresh Time"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,refresh_interval:0
+msgid "Indicates to refresh the file every n seconds"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,view_refresh_mode:0
+msgid "onStop"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,refresh_mode:0
+msgid "onInterval"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,route_select:0
+msgid "Delivery route"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,partner_select:0
+msgid "KML with All Details of partners"
+msgstr ""
+
+#. module: google_earth
+#: wizard_view:google.earth,init:0
+#: wizard_view:google.find.route,init:0
+#: wizard_view:google.map.open,init:0
+#: wizard_view:google.network.link,init:0
+#: wizard_view:google.network.link,make:0
+#: model:ir.model,name:google_earth.model_google_map
+#: model:ir.ui.menu,name:google_earth.google_earth
+#: wizard_view:layers.region.catery,init:0
+msgid "Google Map/Earth"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.actions.wizard,name:google_earth.wizard_network_link
+#: model:ir.ui.menu,name:google_earth.menu_google_network_link
+msgid "KML For Network link"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.module.module,description:google_earth.module_meta_information
+msgid ""
+"\n"
+"            This Module will includes following :\n"
+"\n"
+"            * Layers with characteristics by regions (menu: Partners/Google "
+"Map/Earth)\n"
+"                - country wise turnover display (low turnover=light red, "
+"high turnover=dark red) with information\n"
+"                - partners display on map with its information\n"
+"            * Display customers, whom country has colors by turnover (menu: "
+"Partners/Google Map/Earth)\n"
+"                - partners display on map with its turnover\n"
+"            * Most frequent delivery routes (menu: Partners/Google "
+"Map/Earth)\n"
+"                - grouping of delivery by city and put route path on map "
+"with differnt color by number of deliveries\n"
+"            * Network link kml file for dynamic updates of data on google "
+"earth.\n"
+"            * directly open google map in your browser with different "
+"information.\n"
+"    "
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,path:0
+msgid "URL for e.g: http://yourserver:port/kml/"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,country_select:0
+msgid "KML with All Details of partners and its country"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,view_refresh_mode:0
+msgid "ViewRefreshMode"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,refresh_interval:0
+msgid "Refresh Interval"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,refresh_mode:0
+msgid "onChange"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.map.open,init,path:0
+#: wizard_field:google.network.link,init,path:0
+msgid "Path (URL)"
+msgstr ""
+
+#. module: google_earth
+#: wizard_button:google.earth,init,end:0
+#: wizard_button:google.find.route,init,end:0
+#: wizard_button:google.network.link,info,end:0
+#: wizard_button:google.network.link,make,info:0
+#: wizard_button:layers.region.catery,init,end:0
+msgid "Ok"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,refresh_mode:0
+msgid "Specifies a time-based refresh mode"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,init,country_select:0
+msgid "Country"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.ui.menu,name:google_earth.menu_google_delivery_route
+msgid "KML for Delivery Route"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,view_refresh_mode:0
+msgid "never"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.map.open,init,map_model:0
+msgid "Map For"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.actions.wizard,name:google_earth.wizard_layers_basedon_region_category
+#: model:ir.ui.menu,name:google_earth.menu_layers_of_region_category
+msgid "KML for Partner-Country"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.module.module,shortdesc:google_earth.module_meta_information
+msgid "Google Earth/Map Module"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.actions.wizard,name:google_earth.wizard_map_open
+#: model:ir.ui.menu,name:google_earth.menu_google_map_open
+msgid "Open Google Map"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.map.open,init,map_model:0
+#: wizard_field:google.network.link,init,partner_select:0
+msgid "Partner"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.network.link,info,summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,route_select:0
+msgid "Delivery route kml"
+msgstr ""
+
+#. module: google_earth
+#: wizard_view:google.earth,init:0
+#: wizard_view:google.find.route,init:0
+#: wizard_view:google.network.link,make:0
+#: wizard_view:layers.region.catery,init:0
+msgid "Select path to store KML file"
+msgstr ""
+
+#. module: google_earth
+#: help:google.map.open,init,path:0
+msgid ""
+"URL for e.g: http://maps.google.com/maps?q=http://yourserver:port/kml/"
+msgstr ""
+
+#. module: google_earth
+#: wizard_view:google.network.link,init:0
+msgid "Select option to make kml"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,view_refresh_mode:0
+msgid "Specifies how the link is refreshed when the \"camera\" changes"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,view_refresh_mode:0
+msgid "onRequest"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.earth,init,name:0
+#: wizard_field:google.find.route,init,name:0
+#: wizard_field:google.network.link,make,name:0
+#: wizard_field:layers.region.catery,init,name:0
+msgid "KML File name"
+msgstr ""
+
+#. module: google_earth
+#: model:ir.actions.wizard,name:google_earth.wizard_find_route
+msgid "KML for delivery routes"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,view_refresh_mode:0
+msgid "onRegion"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.map.open,init,map_model:0
+msgid "Partner-Country"
+msgstr ""
+
+#. module: google_earth
+#: wizard_field:google.earth,init,kml_file:0
+#: wizard_field:google.find.route,init,kml_file:0
+#: wizard_field:google.network.link,make,kml_file:0
+#: wizard_field:layers.region.catery,init,kml_file:0
+msgid "Save KML file"
+msgstr ""
+
+#. module: google_earth
+#: wizard_button:google.map.open,init,end:0
+#: wizard_button:google.network.link,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.map.open,init,map_model:0
+msgid "Delivery Route"
+msgstr ""
+
+#. module: google_earth
+#: selection:google.network.link,init,refresh_mode:0
+msgid "onExpire"
+msgstr ""
+
+#. module: google_earth
+#: help:google.network.link,init,view_refresh_time:0
+msgid ""
+"After camera movement stops, specifies the number of seconds to wait before "
+"refreshing the view"
+msgstr ""
+
+#. module: google_earth
+#: wizard_button:google.map.open,init,launch:0
+msgid "Open"
+msgstr ""

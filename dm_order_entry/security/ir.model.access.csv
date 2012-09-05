@@ -1,0 +1,14 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_dm_order_offeradmin","dm.order","model_dm_order","dm.res_groups_offeradmin",1,0,0,0
+"access_dm_order_offermanager","dm.order","model_dm_order","dm.res_groups_offermanager",1,0,0,0
+"access_dm_order_campadmin","dm.order","model_dm_order","dm.res_groups_campaignadmin",1,0,0,0
+"access_dm_order_campmanager","dm.order","model_dm_order","dm.res_groups_campaignmanager",1,0,0,0
+"access_dm_order_custfileadmin","dm.order","model_dm_order","dm.res_groups_custfileadmin",1,0,0,0
+"access_dm_order_custfilemanager","dm.order","model_dm_order","dm.res_groups_custfilemanager",1,0,0,0
+"access_dm_order_itemadmin","dm.order","model_dm_order","dm.res_groups_itemadmin",1,0,0,0
+"access_dm_order_itemmanager","dm.order","model_dm_order","dm.res_groups_itemmanager",1,0,0,0
+"access_dm_order_manufacturingadmin","dm.order","model_dm_order","dm.res_groups_manufacturingadmin",1,0,0,0
+"access_dm_order_manufacturingmanager","dm.order","model_dm_order","dm.res_groups_manufacturingmanager",1,0,0,0
+"access_dm_order_dtpadmin","dm.order","model_dm_order","dm.res_groups_dtpadmin",1,0,0,0
+"access_dm_order_dtpmanager","dm.order","model_dm_order","dm.res_groups_dtpmanager",1,0,0,0
+"access_dm_order_dmadmin","dm.order","model_dm_order","dm.res_groups_dmadmin",1,1,1,1

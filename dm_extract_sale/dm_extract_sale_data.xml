@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+		<!-- Segmentation Type -->
+	
+		<record model="dm.segmentation.type" id="dm_segmentation_type_sale">
+            <field name="name">Sales Informations</field>
+            <field name="code">sale</field>
+			<field name="mode">process</field>
+        </record>
+       
+
+	</data>
+</openerp>

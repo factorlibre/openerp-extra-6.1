@@ -1,0 +1,59 @@
+# Polish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-01-04 10:58+0000\n"
+"PO-Revision-Date: 2010-08-22 06:07+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-18 05:25+0000\n"
+"X-Generator: Launchpad (build 12177)\n"
+
+#. module: caldav
+#: model:ir.model,name:caldav.model_caldav_attendee
+msgid "caldav.attendee"
+msgstr ""
+
+#. module: caldav
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Nazwa obiektu musi zaczynać się od x_ oraz nie może zawierać znaków "
+"specjalnych !"
+
+#. module: caldav
+#: selection:user.preference,service:0
+msgid "CalDAV"
+msgstr ""
+
+#. module: caldav
+#: model:ir.module.module,description:caldav.module_meta_information
+msgid ""
+"\n"
+" To develop a full featured caldav system that support:\n"
+"  - access through webdav (based on xrg code)\n"
+"  - alerts (create requests)\n"
+"  - recurring events (*)\n"
+"  - invitations to others people (exactly like sunbird)\n"
+"  - availabilities of users/calendars\n"
+"  - full day events"
+msgstr ""
+
+#. module: caldav
+#: model:ir.model,name:caldav.model_caldav_calendar
+msgid "caldav.calendar"
+msgstr ""
+
+#. module: caldav
+#: model:ir.model,name:caldav.model_caldav_event
+msgid "caldav.event"
+msgstr ""

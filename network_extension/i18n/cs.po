@@ -1,0 +1,386 @@
+# Czech translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-04-15 07:36+0000\n"
+"PO-Revision-Date: 2011-09-03 22:56+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: network_extension
+#: field:network.software.logpass,superuser:0
+msgid "Super User"
+msgstr ""
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_encrypt_password
+#: view:network.encrypt.password:0
+msgid "En/Decrypt password"
+msgstr "(De)kódovat heslo"
+
+#. module: network_extension
+#: help:network.protocol,port:0
+msgid ""
+"Default port defined see(http://www.iana.org/assignments/port-numbers)"
+msgstr ""
+"Určen výchozí port viz. (http://www.iana.org/assignments/port-numbers)"
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+msgid "Encrypt"
+msgstr "Kódovat"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_network
+#: field:network.software,network_id:0
+msgid "Network"
+msgstr "Síť"
+
+#. module: network_extension
+#: field:network.service,public_url:0
+msgid "Public URL"
+msgstr "Veřejné URL"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_encrypt_password
+msgid "Password encryption"
+msgstr "Kódování hesla"
+
+#. module: network_extension
+#: help:network.service,public_port:0
+msgid "Sometimes public and private ports are different."
+msgstr "Někdy jsou veřejné a soukromé porty odlišné."
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_pop0
+msgid "Post Office Protocol - Version 3"
+msgstr "Post Office Protokol - Verze 3"
+
+#. module: network_extension
+#: view:network.service:0
+#: view:network.software:0
+msgid "Compute URL"
+msgstr "Spočítat URL"
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+#: field:network.software.logpass,note:0
+msgid "Note"
+msgstr "Poznámka"
+
+#. module: network_extension
+#: view:network.protocol:0
+#: view:network.service:0
+msgid "Group By..."
+msgstr ""
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:159
+#, python-format
+msgid "Wrong encrypt/decrypt password."
+msgstr ""
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "Other"
+msgstr "Jiné"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "TCP"
+msgstr "TCP"
+
+#. module: network_extension
+#: field:network.material,mac_addr:0
+msgid "MAC addresss"
+msgstr "Adresa MAC"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:122
+#: code:addons/network_extension/network.py:145
+#, python-format
+msgid "Package python-crypto no installed."
+msgstr ""
+
+#. module: network_extension
+#: field:network.protocol,port:0
+#: field:network.service,port:0
+msgid "Port"
+msgstr "Port"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_http0
+msgid "World Wide Web HTTP"
+msgstr "World Wide Web HTTP"
+
+#. module: network_extension
+#: field:network.service,public_port:0
+msgid "Public port"
+msgstr "Veřejný port"
+
+#. module: network_extension
+#: field:network.network,public_domain:0
+msgid "Public domain"
+msgstr "Veřejná doména"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_software_logpass
+msgid "Software login"
+msgstr ""
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:122
+#: code:addons/network_extension/network.py:137
+#: code:addons/network_extension/network.py:145
+#: code:addons/network_extension/network.py:159
+#: code:addons/network_extension/network.py:161
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: network_extension
+#: field:network.protocol,description:0
+msgid "Description"
+msgstr "Popis"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:157
+#, python-format
+msgid " password:"
+msgstr ""
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_service
+#: view:network.service:0
+#: view:network.software:0
+#: field:network.software,service_ids:0
+msgid "Service"
+msgstr "Služba"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_material
+#: view:network.service:0
+#: field:network.service,material:0
+#: field:network.software.logpass,material:0
+msgid "Material"
+msgstr "Materiál"
+
+#. module: network_extension
+#: help:network.network,dns:0
+msgid "List of DNS servers, separated by commas"
+msgstr "Seznam serverů DNS oddělených čárkou"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_xmlrpc0
+msgid "Open ERP XML-RPC"
+msgstr "Open ERP XML-RPC"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_imap0
+msgid "Internet Message Access Protocol"
+msgstr "Internet Message Access Protocol"
+
+#. module: network_extension
+#: field:network.service,path:0
+msgid "Path"
+msgstr "Cesta"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_smtp0
+msgid "Simple Mail Transfer"
+msgstr "Jednoduchý přenos pošty"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_softwares
+msgid "Softwares"
+msgstr "Software"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "Both"
+msgstr "Oba"
+
+#. module: network_extension
+#: field:network.protocol,name:0
+#: field:network.service,name:0
+#: field:network.software.logpass,name:0
+msgid "Name"
+msgstr "Jméno"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_ssh0
+msgid "The Secure Shell (SSH)"
+msgstr "The Secure Shell (SSH)"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_netrpc0
+msgid "Open ERP NET-RPC"
+msgstr "Open ERP NET-RPC"
+
+#. module: network_extension
+#: model:ir.module.module,shortdesc:network_extension.module_meta_information
+msgid "Network Management Extension"
+msgstr "Rozšíření správy sítě"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_software
+#: model:ir.model,name:network_extension.model_network_software
+#: model:ir.ui.menu,name:network_extension.menu_action_software_tree
+#: field:network.service,software_id:0
+msgid "Software"
+msgstr "Software"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_materials
+msgid "Materials"
+msgstr "Materiály"
+
+#. module: network_extension
+#: field:network.network,dns:0
+msgid "DNS"
+msgstr "DNS"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_https0
+msgid "http protocol over TLS/SSL"
+msgstr "http protokol přes TLS/SSL"
+
+#. module: network_extension
+#: model:ir.model,name:network_extension.model_network_service
+msgid "Service Network"
+msgstr "Servisní síť"
+
+#. module: network_extension
+#: field:network.service,private_url:0
+msgid "Private URL"
+msgstr "Soukromé URL"
+
+#. module: network_extension
+#: model:network.protocol,description:network_extension.network_protocol_ftp0
+msgid "File Transfer [Control]"
+msgstr "Přenos souborů [Řízení]"
+
+#. module: network_extension
+#: selection:network.protocol,protocol:0
+msgid "UDP"
+msgstr "UDP"
+
+#. module: network_extension
+#: field:network.network,public_ip_address:0
+msgid "Public IP address"
+msgstr "Veřejná adresa IP"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_protocol
+#: model:ir.model,name:network_extension.model_network_protocol
+#: model:ir.ui.menu,name:network_extension.menu_action_protocol_tree
+#: view:network.protocol:0
+#: field:network.protocol,protocol:0
+#: view:network.service:0
+#: field:network.service,protocol_id:0
+msgid "Protocol"
+msgstr "Protokol"
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.action_network_logpass
+#: view:network.software:0
+msgid "Login/Password"
+msgstr "Přihlášení/Heslo"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_encrypt_password_tree
+#: field:network.encrypt.password,name:0
+msgid "Encrypt/Decrypt password"
+msgstr "Kódovat/Dekódovat heslo"
+
+#. module: network_extension
+#: field:network.software.logpass,encrypted:0
+msgid "Encrypted"
+msgstr "Kódováno"
+
+#. module: network_extension
+#: code:addons/network_extension/network.py:137
+#: code:addons/network_extension/network.py:161
+#, python-format
+msgid "Not encrypt/decrypt password has given."
+msgstr ""
+
+#. module: network_extension
+#: view:network.software:0
+#: view:network.software.logpass:0
+msgid "Decrypt"
+msgstr "Dekódovat"
+
+#. module: network_extension
+#: model:ir.module.module,description:network_extension.module_meta_information
+msgid ""
+"\n"
+"Organize your software and configurations.\n"
+"    - Additional network information: IP, domain, DNS, gateway\n"
+"    - Protocols\n"
+"    - Services\n"
+"    - Ports\n"
+"    - Public and private URLs\n"
+"    - Password encryption\n"
+"\n"
+"System dependency: package python-crypto required."
+msgstr ""
+"\n"
+"Organizuje vaše software a nastavení.\n"
+"    - Přidávané informace sítě: IP, doména, DNS, brána\n"
+"    - Protokoly\n"
+"    - Služby\n"
+"    - Porty\n"
+"    - Veřejné a soukromé URLs\n"
+"    - Kódování hesel\n"
+"\n"
+"Systémové závislosti: požadován balík python-crypto."
+
+#. module: network_extension
+#: model:ir.actions.act_window,name:network_extension.act_partner_2_networks
+msgid "Networks"
+msgstr "Sítě"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_logpass_tree
+msgid "Logins/Passwords"
+msgstr "Přihlášení/Hesla"
+
+#. module: network_extension
+#: model:ir.ui.menu,name:network_extension.menu_action_service_tree
+msgid "Services"
+msgstr "Služby"
+
+#. module: network_extension
+#: field:network.material,partner_id:0
+#: field:network.software,partner_id:0
+msgid "Partner"
+msgstr "Společník"
+
+#. module: network_extension
+#: field:network.network,gateway:0
+msgid "Gateway"
+msgstr "Brána"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Neplatné jméno modulu v definici akce."
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Jméno objektu musí začínat znakem x_ a nesmí obsahovat žádný speciální znak!"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Neplatné XML pro zobrazení architektury!"

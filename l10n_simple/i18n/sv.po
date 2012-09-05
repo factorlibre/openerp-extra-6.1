@@ -1,0 +1,154 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* l10n_simple
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 09:52+0000\n"
+"PO-Revision-Date: 2011-02-15 15:13+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_receivable
+msgid "Receivable"
+msgstr ""
+
+#. module: l10n_simple
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: l10n_simple
+#: field:tax.config.wizard,name:0
+msgid "Tax(%) On Invoice"
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_equity
+msgid "Equity"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.actions.todo,note:l10n_simple.config_call_account_template_simple
+msgid ""
+"Generate Chart of Accounts from a Chart Template. You will be asked to pass "
+"the name of the company, the chart template to follow, the no. of digits to "
+"generate the code for your accounts and Bank account, currency to create "
+"Journals. Thus,the pure copy of chart Template is generated.\n"
+"\tThis is the same wizard that runs from Financial "
+"Management/Configuration/Financial Accounting/Financial Accounts/Generate "
+"Chart of Accounts from a Chart Template."
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_asset
+msgid "Asset"
+msgstr ""
+
+#. module: l10n_simple
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_income
+msgid "Income"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.module.module,shortdesc:l10n_simple.module_meta_information
+msgid "Simple Account Chart"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.actions.todo,note:l10n_simple.config_tax
+msgid ""
+"Set Normal tax percent to\n"
+"apply on invoices"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.module.module,description:l10n_simple.module_meta_information
+msgid ""
+"This is the module to manage the accounting chart for Europe in Open ERP."
+msgstr ""
+"This is the module to manage the accounting chart for Europe in Open ERP."
+
+#. module: l10n_simple
+#: constraint:account.account.template:0
+msgid "Error ! You can not create recursive account templates."
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_payable
+msgid "Payable"
+msgstr ""
+
+#. module: l10n_simple
+#: constraint:account.tax.code.template:0
+msgid "Error ! You can not create recursive Tax Codes."
+msgstr ""
+
+#. module: l10n_simple
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.actions.act_window,name:l10n_simple.action_tax_config_wizard_form
+msgid "Tax Configure Wizard "
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_cash
+msgid "Cash"
+msgstr ""
+
+#. module: l10n_simple
+#: view:tax.config.wizard:0
+msgid "Continue"
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_expense
+msgid "Expense"
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_view
+msgid "View"
+msgstr ""
+
+#. module: l10n_simple
+#: model:ir.model,name:l10n_simple.model_tax_config_wizard
+msgid "tax.config.wizard"
+msgstr ""
+
+#. module: l10n_simple
+#: view:tax.config.wizard:0
+msgid "Skip"
+msgstr ""
+
+#. module: l10n_simple
+#: help:tax.config.wizard,name:0
+msgid "Normal tax percent to apply on invoices"
+msgstr ""
+
+#. module: l10n_simple
+#: model:account.account.type,name:l10n_simple.account_type_tax
+msgid "Tax"
+msgstr ""
+
+#. module: l10n_simple
+#: view:tax.config.wizard:0
+msgid "Tax Configure"
+msgstr ""

@@ -1,0 +1,149 @@
+# Croatian translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-24 13:11+0000\n"
+"PO-Revision-Date: 2010-09-09 15:37+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-18 05:22+0000\n"
+"X-Generator: Launchpad (build 12177)\n"
+
+#. module: account_coda
+#: help:account.coda,journal_id:0
+#: field:account.coda.import,journal_id:0
+msgid "Bank Journal"
+msgstr "Dnevnik banke"
+
+#. module: account_coda
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Naziv objekta mora počinjati s x_ i ne smije sadržavati posebne znakove !"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda.import,note:0
+msgid "Log"
+msgstr "Zapisnik"
+
+msgid "_Open Statement"
+msgstr "_Otvori izvod"
+
+msgid "Account CODA"
+msgstr ""
+
+#. module: account_coda
+#: field:account.coda,name:0
+msgid "Coda file"
+msgstr ""
+
+msgid "Clic on 'New' to select your file :"
+msgstr "Kliknite na \"Novi\" za odabir datoteke"
+
+msgid "Import Coda File"
+msgstr ""
+
+#. module: account_coda
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: account_coda
+#: field:account.coda,note:0
+msgid "Import log"
+msgstr ""
+
+msgid "Default receivable Account"
+msgstr "Osnovni Konto Prihoda"
+
+msgid ""
+"Module provides functionality to import\n"
+"    bank statements from .csv file.\n"
+"    Import coda file wizard is used to import bank statements."
+msgstr ""
+"Ovaj modul omogucava gunkionalnost uvoza\n"
+"    Bancinih izvoda iz .csv fajla.\n"
+"    Coda fajl carobnjak za uvoz se koristi za uvoz bancinih stavki"
+
+msgid "_Close"
+msgstr "_Zatvori"
+
+msgid "Generated Bank Statement"
+msgstr "Generisani Bancin Izvod"
+
+#. module: account_coda
+#: view:account.coda:0
+msgid "Coda import"
+msgstr "Coda Uvoz"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda,user_id:0
+msgid "User"
+msgstr "Korisnik"
+
+#. module: account_coda
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Neispravan XML za arhitekturu View-a !"
+
+#. module: account_coda
+#: model:ir.model,name:account_coda.model_account_coda
+msgid "coda for an Account"
+msgstr "coda za jedan nalog"
+
+#. module: account_coda
+#: field:account.coda.import,def_payable:0
+msgid "Default Payable Account"
+msgstr "Osnovni platni konto"
+
+msgid "Coda Statements"
+msgstr "Coda stavke"
+
+#. module: account_coda
+#: model:ir.ui.menu,name:account_coda.menu_account_coda_import
+msgid "Import Coda Statements"
+msgstr ""
+
+msgid "_Ok"
+msgstr ""
+
+#. module: account_coda
+#: view:account.coda.import:0
+#: model:ir.actions.act_window,name:account_coda.action_account_coda_import
+msgid "Import Coda Statement"
+msgstr ""
+
+#. module: account_coda
+#: field:account.bank.statement,coda_id:0
+msgid "Coda"
+msgstr ""
+
+#. module: account_coda
+#: view:account.coda.import:0
+msgid "Results :"
+msgstr ""
+
+#. module: account_coda
+#: field:account.coda.import,coda:0
+#: model:ir.actions.act_window,name:account_coda.act_account_payment_account_bank_statement
+msgid "Coda File"
+msgstr ""
+
+#. module: account_coda
+#: help:account.coda,date:0
+msgid "Import Date"
+msgstr ""
+
+msgid "Select your bank journal :"
+msgstr ""

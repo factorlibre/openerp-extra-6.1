@@ -1,0 +1,305 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* wiki_files
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-07 11:34+0000\n"
+"PO-Revision-Date: 2011-04-14 23:08+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: wiki_files
+#: model:ir.module.module,description:wiki_files.module_meta_information
+msgid ""
+"\n"
+"Add public files in Wiki Pages (http)\n"
+"Configure FTP server and publish public files in your Wiki Pages\n"
+"When editing a wiki page will have a wizard for publishing files on public "
+"FTP server and it is available in the files section of the wiki page.\n"
+"To publish a file, select a file on your hard disk. We propose a file name. "
+"This name if contain non-alphanumeric characters (az09) and spaces, it will "
+"be removed later.\n"
+"If an image file, it will be offered image tag to copy and paste\n"
+"If other type of document, it will be offered link tag to copy and paste\n"
+"    "
+msgstr ""
+"\n"
+"Cuando edite una página wiki dispondrá de un asistente para la publicación "
+"de ficheros en el servidor público FTP y lo tendrá disponible en el apartado "
+"Ficheros de la wiki de la página de la wiki.\n"
+"    "
+
+#. module: wiki_files
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:78
+#, python-format
+msgid "File name don't have extension."
+msgstr "El fichero no contiene extensión"
+
+#. module: wiki_files
+#: view:wiki.files.conf:0
+msgid "FTP Server"
+msgstr "Servidor FTP"
+
+#. module: wiki_files
+#: view:wiki.files.wizard:0
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:112
+#, python-format
+msgid "File don't remove local server."
+msgstr "El fichero no ha podido ser eliminado del servidor local"
+
+#. module: wiki_files
+#: field:wiki.files.wizard,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: wiki_files
+#: field:wiki.files.conf,ftpusername:0
+msgid "Username"
+msgstr "Usuario"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wiki_files.py:133
+#: code:addons/wiki_files/wiki_files.py:137
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: wiki_files
+#: field:wiki.media,preview:0
+msgid "unknown"
+msgstr "no se conoce"
+
+#. module: wiki_files
+#: help:wiki.files.conf,ftpurl:0
+msgid "URL FTP Dir: \"http://domain/directory/\"."
+msgstr "URL FTP Dir: \"http://domain/directory/\"."
+
+#. module: wiki_files
+#: help:wiki.files.conf,ftpusername:0
+msgid "The login user to connect to the ftp server."
+msgstr "El nombre de usuario para conectarse al servidor de FTP."
+
+#. module: wiki_files
+#: model:ir.actions.act_window,name:wiki_files.wiki_files_publish_index_action
+#: view:wiki.files.wizard:0
+msgid "Wiki Files Publish"
+msgstr "Publicar ficheros"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wiki_files.py:140
+#, python-format
+msgid "FTP connection was successfully!"
+msgstr "La conexión FTP realizada correctamente!"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wiki_files.py:140
+#, python-format
+msgid "Ok !"
+msgstr "Ok !"
+
+#. module: wiki_files
+#: view:wiki.wiki:0
+#: field:wiki.wiki,media_ids:0
+msgid "Media File"
+msgstr "Ficheros"
+
+#. module: wiki_files
+#: field:wiki.files.conf,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: wiki_files
+#: help:wiki.files.conf,active:0
+msgid ""
+"If the Active field is not set, the FTP server will be hide without removing "
+"it."
+msgstr ""
+"If the Active field is not set, the FTP server will be hide without removing "
+"it."
+
+#. module: wiki_files
+#: field:wiki.files.conf,ftppassword:0
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: wiki_files
+#: model:ir.actions.act_window,name:wiki_files.action_wiki_files_conf
+#: model:ir.model,name:wiki_files.model_wiki_files_conf
+msgid "Wiki Files Conf"
+msgstr "Ficheros de la wiki"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wiki_files.py:137
+#, python-format
+msgid "Username/password FTP connection was not successfully!"
+msgstr "Conexión FTP errónea. Revise usuario y contraseña!"
+
+#. module: wiki_files
+#: view:wiki.wiki:0
+msgid "Media Files"
+msgstr "Ficheros"
+
+#. module: wiki_files
+#: field:wiki.files.conf,ftpurl:0
+msgid "URL"
+msgstr "URL"
+
+#. module: wiki_files
+#: field:wiki.files.conf,ftpip:0
+msgid "IP"
+msgstr "IP"
+
+#. module: wiki_files
+#: model:ir.module.module,shortdesc:wiki_files.module_meta_information
+#: model:ir.ui.menu,name:wiki_files.menu_wiki_files_conf
+#: view:wiki.files.conf:0
+msgid "Wiki Files"
+msgstr "Ficheros"
+
+#. module: wiki_files
+#: help:wiki.files.conf,ftpdirectory:0
+msgid ""
+"If you use a directory, insert the path of the FTP folder, otherwise insert "
+"a dot \".\"."
+msgstr ""
+"Si utiliza un directorio, inserte la ruta del directorio, si no, utilice un "
+"punto \".\"."
+
+#. module: wiki_files
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:70
+#, python-format
+msgid "Configure your Wiki Files!"
+msgstr "Debe activar un  servidor FTP!"
+
+#. module: wiki_files
+#: model:ir.model,name:wiki_files.model_wiki_media
+msgid "Wiki Media"
+msgstr "Ficheros"
+
+#. module: wiki_files
+#: sql_constraint:wiki.files.conf:0
+msgid "Active must be unique."
+msgstr "Sólo se permite un servidor FTP activo."
+
+#. module: wiki_files
+#: code:addons/wiki_files/wiki_files.py:133
+#, python-format
+msgid "IP FTP connection was not successfully!"
+msgstr "Conexión FTP errónea. Revise usuario y contraseña!"
+
+#. module: wiki_files
+#: model:ir.actions.act_window,name:wiki_files.wiki_files_publish_action
+msgid "Wiki File Publish"
+msgstr "Publica un fichero"
+
+#. module: wiki_files
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:70
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:78
+#: code:addons/wiki_files/wizard/wiki_files_wizard.py:112
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: wiki_files
+#: field:wiki.files.conf,ftpdirectory:0
+msgid "Directory"
+msgstr "Directorio"
+
+#. module: wiki_files
+#: help:wiki.files.conf,ftppassword:0
+msgid "The login password to conect to the ftp server."
+msgstr "El usuario para conectarse via FTP"
+
+#. module: wiki_files
+#: model:ir.model,name:wiki_files.model_wiki_wiki
+msgid "wiki.wiki"
+msgstr "wiki.wiki"
+
+#. module: wiki_files
+#: selection:wiki.files.wizard,state:0
+msgid "First"
+msgstr "Primero"
+
+#. module: wiki_files
+#: view:wiki.files.wizard:0
+msgid "Select file"
+msgstr "Seleccione un fichero"
+
+#. module: wiki_files
+#: field:wiki.files.wizard,filename:0
+msgid "File Name"
+msgstr "Nombre"
+
+#. module: wiki_files
+#: model:ir.model,name:wiki_files.model_wiki_files_wizard
+msgid "Wiki Files Wizard"
+msgstr "Asistente de publicación de ficheros"
+
+#. module: wiki_files
+#: view:wiki.wiki:0
+msgid "Preview (Only when saved)"
+msgstr "Previsualizar"
+
+#. module: wiki_files
+#: view:wiki.files.conf:0
+msgid "Check FTP"
+msgstr "Compruebe conexión FTP"
+
+#. module: wiki_files
+#: selection:wiki.files.wizard,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: wiki_files
+#: field:wiki.files.wizard,result:0
+msgid "Result"
+msgstr "Resultado"
+
+#. module: wiki_files
+#: field:wiki.files.wizard,file:0
+#: field:wiki.media,file:0
+#: field:wiki.media,file_wiki:0
+msgid "File"
+msgstr "Fichero"
+
+#. module: wiki_files
+#: view:wiki.files.wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: wiki_files
+#: view:wiki.files.wizard:0
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: wiki_files
+#: field:wiki.files.conf,name:0
+msgid "FTP Server Name"
+msgstr "Nombre del servidor FTP"
+
+#. module: wiki_files
+#: field:wiki.media,media_id:0
+msgid "Wiki Name"
+msgstr "Nombre"
+
+#. module: wiki_files
+#: model:ir.actions.act_window,help:wiki_files.action_wiki_files_conf
+msgid ""
+"FTP Server Management. You need authoritzation to configure FTP Server. Only "
+"one server is available (Active)."
+msgstr ""
+"Gestión de servidores de FTP. Necesita un servidor FTP con autenticación. "
+"Sólo un servidor se puede activar a la vez (activo)."

@@ -1,0 +1,67 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* partner_ldap
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 10:45+0000\n"
+"PO-Revision-Date: 2011-02-15 15:15+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: partner_ldap
+#: wizard_view:partners.sync_ldap,init:0
+msgid "LDAP Credentials"
+msgstr ""
+
+#. module: partner_ldap
+#: wizard_field:partners.sync_ldap,init,dn:0
+#: field:res.partner.address,dn:0
+msgid "Distinguished name"
+msgstr ""
+
+#. module: partner_ldap
+#: model:ir.module.module,description:partner_ldap.module_meta_information
+msgid ""
+"Synchronise partners through a LDAP module. Has been used to synchronise "
+"partners in Outlook and Tiny ERP."
+msgstr ""
+"Synchronise partners through a LDAP module. Has been used to synchronise "
+"partners in Outlook and Tiny ERP."
+
+#. module: partner_ldap
+#: wizard_button:partners.sync_ldap,init,sync:0
+msgid "Synchronize"
+msgstr ""
+
+#. module: partner_ldap
+#: model:ir.actions.wizard,name:partner_ldap.wizard_ldap_sync
+msgid "Synchronize with ldap"
+msgstr ""
+
+#. module: partner_ldap
+#: model:ir.module.module,shortdesc:partner_ldap.module_meta_information
+msgid "Partner extension to synchronize TinyERP with ldap"
+msgstr ""
+
+#. module: partner_ldap
+#: wizard_button:partners.sync_ldap,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: partner_ldap
+#: wizard_field:partners.sync_ldap,init,password:0
+msgid "Password"
+msgstr ""
+
+#. module: partner_ldap
+#: wizard_field:partners.sync_ldap,init,ldap_host:0
+msgid "LDAP Host"
+msgstr ""

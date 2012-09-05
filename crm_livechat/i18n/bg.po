@@ -1,0 +1,470 @@
+# Bulgarian translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 15:03+0000\n"
+"PO-Revision-Date: 2011-03-30 07:43+0000\n"
+"Last-Translator: Dimitar Markov <dimitar.markov@gmail.com>\n"
+"Language-Team: Bulgarian <bg@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/common.py:0
+#, python-format
+msgid "Information"
+msgstr "Информация"
+
+#. module: crm_livechat
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Името на обекта трябва да започва с x_ и не може да никакви специални знаци !"
+
+#. module: crm_livechat
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Невалидно име на модел при задаване на действие"
+
+#. module: crm_livechat
+#: model:ir.actions.act_window,name:crm_livechat.action_jabber_livechat_log
+msgid "Livechat - Logs"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,name:0
+#: field:crm_livechat.livechat.partner,jabber_id:0
+#: field:crm_livechat.livechat.user,jabber_id:0
+msgid "Jabber Account"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.actions.act_window,name:crm_livechat.action_jabber_livechat_partner
+msgid "Visitors Accounts - Livechat"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.log:0
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config_log
+msgid "Live Chat Logs"
+msgstr ""
+
+#. module: crm_livechat
+#: selection:crm_livechat.jabber,ssl:0
+msgid "SSL with port remapped"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat,state:0
+#: field:crm_livechat.livechat.partner,state:0
+#: field:crm_livechat.livechat.user,state:0
+msgid "State"
+msgstr "Състояние"
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#: code:addons/crm_livechat/crm-lc/livechat/subcontrollers/livechat/chatfunc.py:0
+#, python-format
+msgid "Connection refused !"
+msgstr "Свързването е отхвърлено!"
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.partner,name:0
+msgid "Account Name"
+msgstr "Име на сметка"
+
+#. module: crm_livechat
+#: model:ir.actions.act_window,name:crm_livechat.action_jabber_livechat
+msgid "Live Chat - Livechat"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.module.module,shortdesc:crm_livechat.module_meta_information
+msgid "CRM - Livechat Jabber Client"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.module.module,description:crm_livechat.module_meta_information
+msgid ""
+"\n"
+"This module allows you to configure and manage a livechat on your website.\n"
+"So that your salesman can directly talk with your users in your website, "
+"using\n"
+"their normal jabber account. This project includes two parts:\n"
+"* An OpenERP module to manage everything\n"
+"* A python Ajax client to set on your website for the end-user interface.\n"
+"\n"
+"It allows you to define:\n"
+"* XMPP (Jabber) Accounts for your users\n"
+"* XMPP Accounts for anonymous customers\n"
+"\n"
+"Then based one some events (a customer visiting some pages), it can open a\n"
+"window so that the visitor can directly talk with your teams. It goes to a\n"
+"jabber user according to what you configured in the OpenERP interface.\n"
+"    "
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.log,name:0
+msgid "Date and Time"
+msgstr "Дата и време"
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+#: view:crm_livechat.livechat.partner:0
+#: view:crm_livechat.livechat.user:0
+msgid "Status"
+msgstr "Статус"
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.partner,available_date:0
+msgid "Available Date"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config_visitor
+msgid "Visitors Accounts"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config_session
+msgid "Live Chat Sessions"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#, python-format
+msgid "Application Error !"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.actions.act_window,name:crm_livechat.action_jabber_livechat_user
+msgid "Users Accounts - Livechat"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.jabber:0
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config_jabber
+msgid "Jabber Accounts"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#, python-format
+msgid "Authorization Error !"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.user,name:0
+msgid "User Name"
+msgstr "Име на потребител"
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+#: field:crm_livechat.livechat,user_ids:0
+#: view:crm_livechat.livechat.user:0
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config_user
+msgid "Users Accounts"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/subcontrollers/livechat/chatfunc.py:0
+#, python-format
+msgid ""
+"%s \n"
+" Verify USERNAME and PASSWORD in Jabber Config\" % err))\n"
+"        return cl\n"
+"   \n"
+"    def messageCB(self,conn,msg):\n"
+"        cmd = 0\n"
+"        body = msg.getBody()\n"
+"        print \"Body Of masg is ::::::::::::\", body\n"
+"        who = str(msg.getFrom())\n"
+"        who =  who.split('/"
+msgstr ""
+
+#. module: crm_livechat
+#: selection:crm_livechat.livechat,state:0
+#: selection:crm_livechat.livechat.partner,state:0
+#: selection:crm_livechat.livechat.user,state:0
+msgid "Active"
+msgstr "Активен"
+
+#. module: crm_livechat
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat_config
+msgid "Configuration"
+msgstr "Настройка"
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.user,livechat_id:0
+#: field:crm_livechat.log,livechat_id:0
+msgid "Livechat"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#, python-format
+msgid "Not logged..."
+msgstr "Не сте влезли в системата..."
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat,max_per_user:0
+msgid "Maximum Customer per User"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+msgid "Live Chats"
+msgstr ""
+
+#. module: crm_livechat
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: crm_livechat
+#: selection:crm_livechat.livechat,state:0
+#: selection:crm_livechat.livechat.partner,state:0
+#: selection:crm_livechat.livechat.user,state:0
+msgid "Not Active"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+#: view:crm_livechat.livechat.partner:0
+#: view:crm_livechat.livechat.user:0
+msgid "Desactivate"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat,name:0
+#: model:ir.model,name:crm_livechat.model_crm_livechat_jabber
+msgid "Livechat Account"
+msgstr ""
+
+#. module: crm_livechat
+#: selection:crm_livechat.jabber,ssl:0
+msgid "SSL with 5223 or 443 port"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,server:0
+msgid "Server"
+msgstr "Сървър"
+
+#. module: crm_livechat
+#: selection:crm_livechat.jabber,ssl:0
+msgid "No SSL"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+#: view:crm_livechat.livechat.partner:0
+#: view:crm_livechat.livechat.user:0
+msgid "Activate"
+msgstr "Активирай"
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.partner,available:0
+msgid "Available IP"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,port:0
+msgid "Port Number"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.actions.act_window,name:crm_livechat.action_jabber_account
+msgid "Live Chat - Jabber Account"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/common.py:0
+#, python-format
+msgid "Error"
+msgstr "Грешка"
+
+#. module: crm_livechat
+#: model:ir.model,name:crm_livechat.model_crm_livechat_livechat_partner
+msgid "LiveChat Visitors"
+msgstr ""
+
+#. module: crm_livechat
+#: help:crm_livechat.livechat,session_delay:0
+msgid ""
+"Put here to number of minutes after which a session is considered as closed"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.model,name:crm_livechat.model_crm_livechat_log
+msgid "LiveChat Log"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.log,note:0
+msgid "History"
+msgstr "История"
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/subcontrollers/livechat/chatfunc.py:0
+#, python-format
+msgid ""
+"%s \n"
+" Verify USERNAME and PASSWORD in Jabber Config\" % err))\n"
+"                \n"
+"                self.client = cl\n"
+"                self.client.send(msg_obj)\n"
+"            msgformat = {\"sender\":str(self.login) , \"message\" : "
+"str(msg),\"type\":'sender'}\n"
+"            self.msglist.append(msgformat)\n"
+"            self.newlist.append(msgformat)\n"
+"            return dict()\n"
+"        return {}\n"
+"\n"
+"    def myConnection(self,topicid):\n"
+"        cr = ''\n"
+"        uid = ''\n"
+"        self.topicid = topicid\n"
+"        \n"
+"        '''\n"
+"        1. Partner Check\n"
+"        2. User Availablity for support\n"
+"        3. if 1 and 2 proceed else stop\n"
+"        '''\n"
+"        self.partnerdata=rpc.RPCProxy('crm_livechat.livechat.partner"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.ui.menu,name:crm_livechat.menu_crm_livechat
+msgid "Live Chat"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,login:0
+msgid "Account Login"
+msgstr "Влизане в акаунт"
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#, python-format
+msgid ""
+"You select a timezone but Tiny ERP could not find pytz library !\n"
+"The timezone functionality will be disable."
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,ssl:0
+msgid "SSL Info"
+msgstr ""
+
+#. module: crm_livechat
+#: model:ir.model,name:crm_livechat.model_crm_livechat_livechat
+msgid "LiveChat Account"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/rpc.py:0
+#, python-format
+msgid ""
+"Unsupported protocol: %s\" % protocol))\n"
+"\n"
+"    def __getattr__(self, name):\n"
+"        try:\n"
+"            return super(RPCSession, self).__getattribute__(name)\n"
+"        except:\n"
+"            pass\n"
+"\n"
+"        return self.storage.get(name)\n"
+"\n"
+"    def __setattr__(self, name, value):\n"
+"        if name in self.__slots__:\n"
+"            super(RPCSession, self).__setattr__(name, value)\n"
+"        else:\n"
+"            self.storage[name] = value\n"
+"\n"
+"    def __getitem__(self, name):\n"
+"        return self.storage.get(name)\n"
+"\n"
+"    def __setitem__(self, name, value):\n"
+"        self.storage[name] = value\n"
+"\n"
+"    def __delitem__(self, name):\n"
+"        try:\n"
+"            del self.storage[name]\n"
+"        except:\n"
+"            pass\n"
+"\n"
+"    def get(self, name, default=None):\n"
+"        return self.storage.get(name, default)\n"
+"\n"
+"    def get_url(self):\n"
+"        return self.gateway.get_url()\n"
+"\n"
+"    def listdb(self):\n"
+"        return self.gateway.listdb()\n"
+"\n"
+"    def login(self, db, user, passwd):\n"
+"\n"
+"        if passwd is None:\n"
+"            return -1\n"
+"\n"
+"        uid = self.gateway.login(db, user or '', passwd or '"
+msgstr ""
+
+#. module: crm_livechat
+#: help:crm_livechat.livechat.partner,available:0
+msgid "If empty, the acount is available/not used"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.user,languages:0
+msgid "Language Regex"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.jabber,password:0
+msgid "Account Password"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat.partner:0
+msgid "partners Accounts"
+msgstr ""
+
+#. module: crm_livechat
+#: code:addons/crm_livechat/crm-lc/livechat/common.py:0
+#, python-format
+msgid "Warning"
+msgstr "Предупреждение"
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat.user,user_id:0
+#: field:crm_livechat.log,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: crm_livechat
+#: view:crm_livechat.livechat:0
+msgid "Users"
+msgstr "Потребители"
+
+#. module: crm_livechat
+#: model:ir.model,name:crm_livechat.model_crm_livechat_livechat_user
+msgid "LiveChat Users"
+msgstr ""
+
+#. module: crm_livechat
+#: field:crm_livechat.livechat,session_delay:0
+msgid "Minutes to Close a session"
+msgstr ""

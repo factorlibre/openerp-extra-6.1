@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<openerp>
+
+<data>
+		<record id="res_groups_253" model="res.groups">
+			<field eval="&quot;&quot;&quot;Evaluation&quot;&quot;&quot;" name="name"/>
+		</record>
+
+		<record id="ir_model_access_246" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Evaluation&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+
+		<record id="ir_model_access_247" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation_section"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Evaluation Section&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+
+		<record id="ir_model_access_248" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation_criteria"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Evaluation Criteria&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+
+		<record id="ir_model_access_249" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation_setting"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Setting Evaluation Form&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+
+		<record id="ir_model_access_250" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation_form"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Evaluation Form&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+
+		<record id="ir_model_access_251" model="ir.model.access">
+			<field name="model_id" ref="eval.model_hr_evaluation_values"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="&quot;&quot;&quot;Evaluation values&quot;&quot;&quot;" name="name"/>
+			<field eval="0" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="0" name="perm_create"/>
+			<field model="res.groups" name="group_id" search="[('name', '=', u'Evaluation')]"/>
+		</record>
+	</data>
+</openerp>

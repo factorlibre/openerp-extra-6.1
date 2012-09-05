@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: products_view.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="eagle_view_product_recurrence_unit_form">
+            <field name="name">Eagle Product Recurrence Unit Form</field>
+            <field name="model">product.recurrence.unit</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Units of Recurrence" col="6">
+                    <field name="name" select="True"/>
+                    <field name="value"/>
+                    <field name="unit"/>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="eagle_view_product_recurrence_unit_list">
+            <field name="name">Eagle Product Recurrence Unit List</field>
+            <field name="model">product.recurrence.unit</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Units of Recurrence">
+                    <field name="name" select="True"/>
+                    <field name="value"/>
+                    <field name="unit"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="eagle_action_product_recurrence_unit_view">
+            <field name="name">Units of Recurrence</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.recurrence.unit</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="eagle_view_product_recurrence_unit_list"/>
+        </record>
+
+		<record model="ir.ui.view" id="eagle_view_view_product_form_inherit_1">
+			<field name="name">Eagle Product Form Inherit 1</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_normal_form_view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="uom_po_id" position="after">
+					<field name="warranty_id"/>
+					<field name="recurrence_id"/>
+				</field>
+			</field>
+		</record>
+
+	</data>
+</openerp>

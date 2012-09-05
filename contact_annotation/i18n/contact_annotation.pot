@@ -1,0 +1,576 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* contact_annotation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-23 15:14+0000\n"
+"PO-Revision-Date: 2011-03-23 15:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,permanent:0
+msgid "Permanent"
+msgstr "Permanent"
+
+#. module: contact_annotation
+#: field:contact.annotation.function,name:0
+msgid "Function name"
+msgstr "Function name"
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.state_range,anno_ids_text:0
+#: field:contact.state_range,annotation_ids:0
+#: field:contact.state_range2,anno_ids_text:0
+#: field:contact.state_range2,annotation_ids:0
+#: model:ir.actions.act_window,name:contact_annotation.contact_annotation_list_act
+#: model:ir.ui.menu,name:contact_annotation.annotations_mi
+#: model:ir.ui.menu,name:contact_annotation.contact_annotation_mi
+msgid "Annotations"
+msgstr "Annotations"
+
+#. module: contact_annotation
+#: field:contact.annotation.state,code:0
+msgid "State code"
+msgstr "State code"
+
+#. module: contact_annotation
+#: view:contact.planning_change_states:0
+#: view:contact.state_range2:0
+msgid "Planning state changes"
+msgstr "Planning state changes"
+
+#. module: contact_annotation
+#: model:ir.actions.wizard,name:contact_annotation.contact_wizard_simple_state_change
+msgid "Change States"
+msgstr "Change States"
+
+#. module: contact_annotation
+#: field:contact.annotation,comment:0
+msgid "Commment"
+msgstr "Commment"
+
+#. module: contact_annotation
+#: view:contact.subtype_annotation:0
+msgid "Annotation subtype"
+msgstr "Annotation subtype"
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+msgid "Annotation"
+msgstr "Annotation"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_annotation_state
+msgid "contact.annotation.state"
+msgstr "contact.annotation.state"
+
+#. module: contact_annotation
+#: view:contact.annotation.function:0
+#: model:ir.actions.act_window,name:contact_annotation.contact_annotation_function_list_act
+#: model:ir.ui.menu,name:contact_annotation.contact_annotation_function_mi
+msgid "Contact functions"
+msgstr "Contact functions"
+
+#. module: contact_annotation
+#: selection:contact.planning_change_states,state:0
+msgid "Sended"
+msgstr "Sended"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,anno_type:0
+msgid "Type to register"
+msgstr "Type to register"
+
+#. module: contact_annotation
+#: view:contact.partner.function:0
+#: model:ir.actions.act_window,name:contact_annotation.contact_partner_function_list_act
+#: model:ir.ui.menu,name:contact_annotation.contact_partner_function_mi
+msgid "Contact-Partner functions"
+msgstr "Contact-Partner functions"
+
+#. module: contact_annotation
+#: view:contact.state_range2_norm:0
+msgid "Normalize state ranges"
+msgstr "Normalize state ranges"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_state_range2
+msgid "contact.state_range2"
+msgstr "contact.state_range2"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_partner_function
+msgid "contact.partner.function"
+msgstr "contact.partner.function"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,state_ranges:0
+#: field:contact.planning_change_states,state_ranges2:0
+#: field:contact.state_range,planning_id:0
+msgid "Planning"
+msgstr "Planning"
+
+#. module: contact_annotation
+#: view:contact.type_annotation:0
+msgid "Annotation types"
+msgstr "Annotation types"
+
+#. module: contact_annotation
+#: selection:contact.planning_change_states,state:0
+msgid "Ready"
+msgstr "Ready"
+
+#. module: contact_annotation
+#: view:contact.partner.function:0
+#: field:contact.partner.function,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: contact_annotation
+#: field:contact.anno_type.state,op:0
+msgid "Operation"
+msgstr "Operation"
+
+#. module: contact_annotation
+#: view:contact.annotation.state:0
+#: field:contact.annotation.state,function_ids:0
+msgid "Functions"
+msgstr "Functions"
+
+#. module: contact_annotation
+#: field:contact.state_range,datetime_from:0
+#: field:contact.state_range2,datetime_from:0
+msgid "From"
+msgstr "From"
+
+#. module: contact_annotation
+#: model:ir.actions.act_window,name:contact_annotation.contact_normalitza_list_act
+#: model:ir.ui.menu,name:contact_annotation.state_normalitza_mi
+msgid "Normalize State ranges"
+msgstr "Normalize State ranges"
+
+#. module: contact_annotation
+#: field:contact.annotation,domain_anno_types:0
+msgid "Domain Annotation Types"
+msgstr "Domain Annotation Types"
+
+#. module: contact_annotation
+#: sql_constraint:contact.annotation.state:0
+msgid "Code must be unique"
+msgstr "Code must be unique"
+
+#. module: contact_annotation
+#: field:contact.anno_type.state,state_id:0
+#: field:contact.planning_change_states,state:0
+#: field:contact.state_range,lstate:0
+#: field:contact.state_range2,lstate:0
+msgid "State"
+msgstr "State"
+
+#. module: contact_annotation
+#: field:contact.annotation.state,valid:0
+msgid "Valid"
+msgstr "Valid"
+
+#. module: contact_annotation
+#: selection:contact.planning_change_states,state:0
+msgid "New"
+msgstr "New"
+
+#. module: contact_annotation
+#: field:contact.annotation,informer:0
+msgid "Informer"
+msgstr "Informer"
+
+#. module: contact_annotation
+#: field:contact.annotation.function,ref:0
+msgid "Ref"
+msgstr "Ref"
+
+#. module: contact_annotation
+#: field:contact.annotation_type.function_access,perm_create:0
+#: field:contact.annotation_type.group_access,perm_create:0
+msgid "Create Access"
+msgstr "Create Access"
+
+#. module: contact_annotation
+#: view:contact.state_range2_norm:0
+msgid "When the button is clicked, all the contact state ranges will be recomputed."
+msgstr "When the button is clicked, all the contact state ranges will be recomputed."
+
+#. module: contact_annotation
+#: view:contact.annotation.state:0
+#: model:ir.actions.act_window,name:contact_annotation.contact_annotation_state_list_act
+#: model:ir.ui.menu,name:contact_annotation.contact_annotation_states_mi
+msgid "Contact States"
+msgstr "Contact States"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_state_range
+msgid "contact.state_range"
+msgstr "contact.state_range"
+
+#. module: contact_annotation
+#: model:ir.module.module,shortdesc:contact_annotation.module_meta_information
+msgid "Contact Annotation"
+msgstr "Contact Annotation"
+
+#. module: contact_annotation
+#: view:contact.annotation.state:0
+msgid "Contact State"
+msgstr "Contact State"
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.annotation,valid_from:0
+msgid "Valid from"
+msgstr "Valid from"
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.annotation,contact_id:0
+#: view:contact.partner.function:0
+#: field:contact.partner.function,contact_id:0
+#: field:contact.state_range,contact_id:0
+#: field:contact.state_range2,contact_id:0
+msgid "Contact"
+msgstr "Contact"
+
+#. module: contact_annotation
+#: view:contact.subtype_annotation:0
+msgid "Annotation subtypes"
+msgstr "Annotation subtypes"
+
+#. module: contact_annotation
+#: view:contact.planning_change_states:0
+#: field:contact.planning_change_states,comment:0
+msgid "Comment"
+msgstr "Comment"
+
+#. module: contact_annotation
+#: view:contact.type_annotation:0
+msgid "Group access"
+msgstr "Group access"
+
+#. module: contact_annotation
+#: code:addons/contact_annotation/contact_annotation.py:267
+#: code:addons/contact_annotation/contact_annotation.py:278
+#: code:addons/contact_annotation/contact_annotation.py:285
+#: code:addons/contact_annotation/contact_annotation.py:292
+#, python-format
+msgid "Not granted!"
+msgstr "Not granted!"
+
+#. module: contact_annotation
+#: view:contact.planning_change_states:0
+#: view:contact.state_range2:0
+msgid "State range"
+msgstr "State range"
+
+#. module: contact_annotation
+#: help:contact.annotation.state,function_ids:0
+msgid "Partners can view the status over contact with these functions."
+msgstr "Partners can view the status over contact with these functions."
+
+#. module: contact_annotation
+#: sql_constraint:contact.annotation:0
+msgid "Date from must to be minor than date to"
+msgstr "Date from must to be minor than date to"
+
+#. module: contact_annotation
+#: model:ir.module.module,description:contact_annotation.module_meta_information
+msgid "\n"
+"Contact annotation management. Initialy created to support school_base module.\n"
+""
+msgstr "\n"
+"Contact annotation management. Initialy created to support school_base module.\n"
+""
+
+#. module: contact_annotation
+#: view:contact.planning_change_states:0
+#: model:ir.actions.act_window,name:contact_annotation.contact_state_range2_list_act
+#: model:ir.ui.menu,name:contact_annotation.state_range_mi
+msgid "State ranges"
+msgstr "State ranges"
+
+#. module: contact_annotation
+#: view:contact.annotation.state:0
+#: field:contact.annotation_type.group_access,group_id:0
+msgid "Group"
+msgstr "Group"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_annotation_function
+msgid "contact.annotation.function"
+msgstr "contact.annotation.function"
+
+#. module: contact_annotation
+#: view:contact.annotation.function:0
+msgid "Contact function"
+msgstr "Contact function"
+
+#. module: contact_annotation
+#: sql_constraint:contact.annotation_type.group_access:0
+msgid "Each annotation type must have only one group."
+msgstr "Each annotation type must have only one group."
+
+#. module: contact_annotation
+#: code:addons/contact_annotation/wizard_change_states.py:214
+#, python-format
+msgid "Planing"
+msgstr "Planing"
+
+#. module: contact_annotation
+#: view:contact.type_annotation:0
+#: field:contact.type_annotation,perms_functions:0
+msgid "Informer functions"
+msgstr "Informer functions"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,domain_anno_types:0
+#: field:contact.type_annotation,data_states:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: contact_annotation
+#: constraint:contact.annotation.state:0
+msgid "The code must'n have comas"
+msgstr "The code must'n have comas"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_annotation_type_function_access
+msgid "contact.annotation_type.function_access"
+msgstr "contact.annotation_type.function_access"
+
+#. module: contact_annotation
+#: help:contact.type_annotation,perms_groups:0
+msgid "Group which users could create and modify that annotation type."
+msgstr "Group which users could create and modify that annotation type."
+
+#. module: contact_annotation
+#: field:contact.annotation.state,group_ids:0
+#: field:contact.type_annotation,perms_groups:0
+msgid "Groups"
+msgstr "Groups"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: contact_annotation
+#: model:ir.actions.act_window,name:contact_annotation.contact_subtype_annotation_list_act
+#: model:ir.ui.menu,name:contact_annotation.contact_subtype_annotation_mi
+msgid "Annotation Subtypes"
+msgstr "Annotation Subtypes"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,user_id:0
+msgid "User"
+msgstr "User"
+
+#. module: contact_annotation
+#: field:contact.annotation,creation_date:0
+msgid "Creation date"
+msgstr "Creation date"
+
+#. module: contact_annotation
+#: field:contact.annotation_type.function_access,perm_unlink:0
+#: field:contact.annotation_type.group_access,perm_unlink:0
+msgid "Delete Permission"
+msgstr "Delete Permission"
+
+#. module: contact_annotation
+#: help:contact.annotation.state,group_ids:0
+msgid "Groups that can view the status."
+msgstr "Groups that can view the status."
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.annotation,anno_subtype:0
+#: view:contact.subtype_annotation:0
+msgid "Subtype"
+msgstr "Subtype"
+
+#. module: contact_annotation
+#: model:ir.actions.act_window,name:contact_annotation.contact_type_annotation_list_act
+#: model:ir.ui.menu,name:contact_annotation.contact_type_annotation_mi
+msgid "Annotation Types"
+msgstr "Annotation Types"
+
+#. module: contact_annotation
+#: code:addons/contact_annotation/contact_annotation.py:267
+#: code:addons/contact_annotation/contact_annotation.py:278
+#: code:addons/contact_annotation/contact_annotation.py:285
+#: code:addons/contact_annotation/contact_annotation.py:292
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_state_range2_norm
+msgid "contact.state_range2_norm"
+msgstr "contact.state_range2_norm"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_annotation
+msgid "contact.annotation"
+msgstr "contact.annotation"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_annotation_type_group_access
+msgid "contact.annotation_type.group_access"
+msgstr "contact.annotation_type.group_access"
+
+#. module: contact_annotation
+#: field:contact.annotation.function,code:0
+#: field:contact.subtype_annotation,code:0
+#: field:contact.type_annotation,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: contact_annotation
+#: help:contact.type_annotation,perms_functions:0
+msgid "Perms for informer function over contact to create that annotation type."
+msgstr "Perms for informer function over contact to create that annotation type."
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.annotation,valid_to:0
+msgid "Valid to"
+msgstr "Valid to"
+
+#. module: contact_annotation
+#: field:contact.annotation_type.function_access,perm_read:0
+#: field:contact.annotation_type.group_access,perm_read:0
+msgid "Read Access"
+msgstr "Read Access"
+
+#. module: contact_annotation
+#: field:contact.annotation_type.function_access,perm_write:0
+#: field:contact.annotation_type.group_access,perm_write:0
+msgid "Write Access"
+msgstr "Write Access"
+
+#. module: contact_annotation
+#: view:contact.state_range2_norm:0
+msgid "Normalize"
+msgstr "Normalize"
+
+#. module: contact_annotation
+#: help:contact.anno_type.state,op:0
+msgid "True add the state, False remove the state."
+msgstr "True add the state, False remove the state."
+
+#. module: contact_annotation
+#: field:contact.annotation,user_id:0
+msgid "Responsible"
+msgstr "Responsible"
+
+#. module: contact_annotation
+#: field:contact.state_range,datetime_to:0
+#: field:contact.state_range2,datetime_to:0
+msgid "To"
+msgstr "To"
+
+#. module: contact_annotation
+#: field:contact.anno_type.state,anno_type:0
+msgid "Annotation type"
+msgstr "Annotation type"
+
+#. module: contact_annotation
+#: field:contact.annotation_type.function_access,function_id:0
+#: view:contact.partner.function:0
+#: field:contact.partner.function,function_id:0
+msgid "Function"
+msgstr "Function"
+
+#. module: contact_annotation
+#: view:contact.annotation:0
+#: field:contact.annotation,anno_type:0
+#: field:contact.annotation_type.function_access,contact_type_annotation_id:0
+#: field:contact.annotation_type.group_access,contact_type_annotation_id:0
+#: field:contact.subtype_annotation,anno_type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: contact_annotation
+#: view:contact.planning_change_states:0
+msgid "Execute plan"
+msgstr "Execute plan"
+
+#. module: contact_annotation
+#: field:contact.planning_change_states,name:0
+#: field:contact.subtype_annotation,name:0
+#: field:contact.type_annotation,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_planning_change_states
+msgid "contact.planning_change_states"
+msgstr "contact.planning_change_states"
+
+#. module: contact_annotation
+#: field:contact.annotation,partner_id:0
+msgid "Main Employer"
+msgstr "Main Employer"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_anno_type_state
+msgid "contact.anno_type.state"
+msgstr "contact.anno_type.state"
+
+#. module: contact_annotation
+#: field:contact.annotation.state,name:0
+msgid "Contact state name"
+msgstr "Contact state name"
+
+#. module: contact_annotation
+#: model:ir.actions.act_window,name:contact_annotation.contact_planning_change_states_list_act
+#: model:ir.actions.act_window,name:contact_annotation.contact_planning_change_states_new_act
+#: model:ir.ui.menu,name:contact_annotation.contact_planning_change_states_mi
+msgid "Change States Planning"
+msgstr "Change States Planning"
+
+#. module: contact_annotation
+#: help:contact.type_annotation,states:0
+msgid "States (letters from A-Z, words separates with comas, prefix - if retire state of annotations superseded)."
+msgstr "States (letters from A-Z, words separates with comas, prefix - if retire state of annotations superseded)."
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_type_annotation
+msgid "contact.type_annotation"
+msgstr "contact.type_annotation"
+
+#. module: contact_annotation
+#: field:contact.annotation,state_range_ids:0
+#: view:contact.type_annotation:0
+#: field:contact.type_annotation,states:0
+msgid "States"
+msgstr "States"
+
+#. module: contact_annotation
+#: selection:contact.planning_change_states,state:0
+msgid "Executed"
+msgstr "Executed"
+
+#. module: contact_annotation
+#: model:ir.model,name:contact_annotation.model_contact_subtype_annotation
+msgid "contact.subtype_annotation"
+msgstr "contact.subtype_annotation"
+
+#. module: contact_annotation
+#: sql_constraint:contact.annotation_type.function_access:0
+msgid "Each annotation type must have only one function."
+msgstr "Each annotation type must have only one function."
+

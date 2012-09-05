@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data>
+            <record id="view_category_property_tax_form" model="ir.ui.view">
+              <field name="name">product.category.property.form.tax.inherit</field>
+              <field name="model">product.category</field>
+              <field name="type">form</field>
+              <field name="inherit_id" ref="product.product_category_form_view"/>
+              <field name="arch" type="xml">
+		<field name="type" position="after">
+		  <group colspan="4" col="2">
+		    <label string="Sales Taxes"/>
+		    <label string="Purchase Taxes"/>		    
+		    <field name="taxes_id" nolabel="1"/>
+		    <field name="supplier_taxes_id" nolabel="1"/>
+		  </group>
+		</field>
+	      </field>
+	    </record>
+  </data>
+</openerp>

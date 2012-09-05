@@ -1,0 +1,218 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:06+0000\n"
+"PO-Revision-Date: 2011-08-27 14:20+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Order N°:"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Supplier:"
+msgstr "Proveedor:"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Applicable Taxes"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "For"
+msgstr "Para"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Tél. :"
+msgstr "Tél. :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Excise Division"
+msgstr ""
+
+#. module: purchase_number
+#: model:ir.module.module,description:purchase_number.module_meta_information
+msgid ""
+"\n"
+"    Remove the drawback of the purchase numbering, \n"
+"    and add new feature that will create number on \n"
+"    confirmation of the purchase order\n"
+"    "
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Sr. No."
+msgstr "Sr. No."
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Qty"
+msgstr "Ctdad"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Excise Range"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Shipping address :"
+msgstr "Dirección de envío :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "PAN No."
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Product Description"
+msgstr "Descripción del producto"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Invoice To:"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Authorised Signatory"
+msgstr "Firma autorizada"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Date ordered"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "-"
+msgstr "-"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Tel. :"
+msgstr "Tel. :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Service Tax No."
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Fax :"
+msgstr "Fax :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid ":"
+msgstr ":"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Our order reference"
+msgstr ""
+
+#. module: purchase_number
+#: model:ir.module.module,shortdesc:purchase_number.module_meta_information
+msgid "Purchase Number"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Your order reference"
+msgstr ""
+
+#. module: purchase_number
+#: model:ir.actions.report.xml,name:purchase_number.report_purchase_order_india
+msgid "Print Purchase Order"
+msgstr "Imprimir Orden de Compra"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Net Total :"
+msgstr "Total neto :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Quotation N°:"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Excise Reg. No. & Date"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "LST/VAT No. & Date"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "TVA :"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "PURCHASE ORDER"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "CST No. & Date"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "TOTAL :"
+msgstr "TOTAL :"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Validated by"
+msgstr "Validada por"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Fax :"
+msgstr "Fax:"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Net Price"
+msgstr "Precio neto"
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Date Requested"
+msgstr ""
+
+#. module: purchase_number
+#: rml:purchase.order.india:0
+msgid "Taxes :"
+msgstr "Impuestos :"

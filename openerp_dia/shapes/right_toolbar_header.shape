@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - right_toolbar_header</name>
+  <icon>right_toolbar_header.png</icon>
+  <connections/>
+  <textbox x1="0.8" y1="0.0" x2="8.7" y2="1.25"/> 
+  <svg:svg width="8.79" height="1.47">
+    <svg:image x="0" y="0" width="8.79" height="1.25" href="right_toolbar_header_real.png"/>
+  </svg:svg>
+</shape>

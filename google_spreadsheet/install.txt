@@ -1,0 +1,21 @@
+=Google Spreadsheet with OpenERP=
+
+To get started using this module, you need to make sure that the Google Data 
+Python libraries (download from http://code.google.com/p/gdata-python-client/)
+and dependencies can be imported. Short instructions:
+
+1) Download the gdata-python-client (http://gdata-python-client.googlecode.com/files/gdata-2.0.14.tar.gz)
+
+   $ wget http://gdata-python-client.googlecode.com/files/gdata-2.0.14.tar.gz
+
+2) Uncompress:
+   
+   $ sudo tar -xzvf gdata-2.0.14.tar.gz
+   
+3) Install
+
+   $ sudo cd gdata-2.0.14/
+   $ sudo python setup.py install
+
+
+It only works on Linux

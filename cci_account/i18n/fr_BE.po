@@ -1,0 +1,247 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:06:55+0000\n"
+"PO-Revision-Date: 2009-12-10 10:06:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_account
+#: model:ir.actions.report.xml,name:cci_account.partner_draft_invoices
+msgid "Draft Invoices"
+msgstr "Factures brouillon"
+
+#. module: cci_account
+#: wizard_view:cci_use_model,create:0
+msgid "Use Model"
+msgstr "Utiliser le Modèle"
+
+#. module: cci_account
+#: wizard_button:cci_debit_credit_switch,init,end:0
+msgid "No"
+msgstr "Non"
+
+#. module: cci_account
+#: wizard_view:cci_debit_credit_switch,init:0
+msgid "Are you sure you want to switch debit-credit for selected entries?"
+msgstr "Etes-vous sûr de vouloir intervertir les débit-crédit pour les lignes sélectionnées"
+
+#. module: cci_account
+#: rml:cci.vcs:0
+msgid "VCS -"
+msgstr "VCS -"
+
+#. module: cci_account
+#: rml:cci.vcs:0
+msgid "Printing date:"
+msgstr "Date d'impression:"
+
+#. module: cci_account
+#: model:ir.actions.report.xml,name:cci_account.report_cci_vcs
+#: model:ir.actions.wizard,name:cci_account.wizard_cci_vcs
+msgid "Print VCS"
+msgstr "Imprimer avec VCS"
+
+#. module: cci_account
+#: rml:cci.vcs:0
+msgid "at"
+msgstr ""
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "........."
+msgstr "........."
+
+#. module: cci_account
+#: field:account.invoice,dept:0
+#: field:sale.order,dept:0
+msgid "Department"
+msgstr "Département"
+
+#. module: cci_account
+#: wizard_button:cci_use_model,create,end:0
+#: wizard_button:wizard.cci.vcs,init,report:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: cci_account
+#: wizard_view:wizard.cci.vcs,init:0
+msgid "Are you sure?"
+msgstr "Etes-vous sûr ?"
+
+#. module: cci_account
+#: wizard_button:cci_use_model,init,create:0
+msgid "Create Entries"
+msgstr "Créer les Entrées"
+
+#. module: cci_account
+#: wizard_view:cci_debit_credit_switch,init:0
+msgid "Switch Values"
+msgstr "Intervertir les valeurs"
+
+#. module: cci_account
+#: wizard_view:cci_use_model,create:0
+msgid "Move Lines Created"
+msgstr "Lignes de mouvement créées"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Invoice Date"
+msgstr "Date de facture"
+
+#. module: cci_account
+#: wizard_view:wizard.cci.vcs,init:0
+msgid "Make Sure that the invoice has invoice number."
+msgstr "Soyez sûr que la facture a un numéro de facture."
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Membership"
+msgstr "Membership"
+
+#. module: cci_account
+#: field:account.invoice,invoice_special:0
+msgid "Special Invoice"
+msgstr "Facture spéciale"
+
+#. module: cci_account
+#: model:ir.module.module,shortdesc:cci_account.module_meta_information
+msgid "CCI Account"
+msgstr "CCI Account"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Customer Ref."
+msgstr "Réf. Client"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Nationality"
+msgstr "Nationalité"
+
+#. module: cci_account
+#: wizard_field:cci_use_model,init,model:0
+msgid "Account Model"
+msgstr "Modèle comptable"
+
+#. module: cci_account
+#: view:account.invoice:0
+#: field:account.invoice,internal_note:0
+msgid "Internal Note"
+msgstr "Note interne"
+
+#. module: cci_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues"
+
+#. module: cci_account
+#: model:ir.actions.wizard,name:cci_account.cci_switch_debit_credit
+msgid "Display Reverted Debit-Credit"
+msgstr ""
+
+#. module: cci_account
+#: view:account.bank.statement:0
+msgid "Notes"
+msgstr "Notes"
+
+#. module: cci_account
+#: wizard_view:cci_use_model,init:0
+msgid "Select Message"
+msgstr "Choisir Message"
+
+#. module: cci_account
+#: model:ir.module.module,description:cci_account.module_meta_information
+msgid "\n"
+"        specific module for cci project which will use account module (Reports).\n"
+"    "
+msgstr "\n"
+"        Module spéicifique pour le projet CCI qui utilisera le module account (Reports).\n"
+"    "
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Total :"
+msgstr "Total:"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Draft Invoices:"
+msgstr "Factures brouillon"
+
+#. module: cci_account
+#: view:account.bank.statement:0
+msgid "Statement lines"
+msgstr "Lignes de paiement"
+
+#. module: cci_account
+#: wizard_button:cci_debit_credit_switch,init,open:0
+msgid "Yes"
+msgstr "Oui"
+
+#. module: cci_account
+#: field:account.invoice,vat_num:0
+#: rml:partner.draft_invoices:0
+msgid "VAT"
+msgstr "TVA"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "General Account"
+msgstr "Compte général"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Total"
+msgstr "Total"
+
+#. module: cci_account
+#: model:ir.actions.wizard,name:cci_account.wizard_use_model
+#: model:ir.ui.menu,name:cci_account.menu_use_model
+msgid "Use Models"
+msgstr "Utiliser les Modèles"
+
+#. module: cci_account
+#: rml:cci.vcs:0
+msgid "The Value of VCS character for invoice"
+msgstr ""
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Analytic Account"
+msgstr "Compte analytique"
+
+#. module: cci_account
+#: wizard_button:cci_use_model,init,end:0
+msgid "Cancel"
+msgstr "Annule"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Domiciliation"
+msgstr "Domiciliation"
+
+#. module: cci_account
+#: field:account.invoice.line,cci_special_reference:0
+msgid "Special Reference"
+msgstr "Référence spéciale"
+
+#. module: cci_account
+#: rml:partner.draft_invoices:0
+msgid "Untaxed Amount"
+msgstr "Montant HTVA"
+

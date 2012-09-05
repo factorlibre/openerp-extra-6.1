@@ -1,0 +1,97 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_pricelist_3discounts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-03-20 11:50+0000\n"
+"PO-Revision-Date: 2012-03-20 11:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_pricelist_3discounts
+#: model:ir.model,name:product_pricelist_3discounts.model_product_pricelist_item
+msgid "Pricelist item"
+msgstr "Pricelist item"
+
+#. module: product_pricelist_3discounts
+#: code:addons/product_pricelist_3discounts/pricelist.py:109
+#, python-format
+msgid "At least one pricelist has no active version!\n"
+"Please create or activate one."
+msgstr "At least one pricelist has no active version!\n"
+"Please create or activate one."
+
+#. module: product_pricelist_3discounts
+#: code:addons/product_pricelist_3discounts/pricelist.py:110
+#, python-format
+msgid "Warning !"
+msgstr "Warning !"
+
+#. module: product_pricelist_3discounts
+#: model:ir.model,name:product_pricelist_3discounts.model_stock_picking
+msgid "Picking List"
+msgstr "Picking List"
+
+#. module: product_pricelist_3discounts
+#: model:ir.model,name:product_pricelist_3discounts.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Invoice Line"
+
+#. module: product_pricelist_3discounts
+#: constraint:product.pricelist.item:0
+msgid "Error ! You cannot assign the Main Pricelist as Other Pricelist in PriceList Item!"
+msgstr "Error ! You cannot assign the Main Pricelist as Other Pricelist in PriceList Item!"
+
+#. module: product_pricelist_3discounts
+#: field:account.invoice.line,discount_description:0
+#: field:sale.order.line,discount_description:0
+msgid "Disc. Name"
+msgstr "Disc. Name"
+
+#. module: product_pricelist_3discounts
+#: help:product.pricelist.item,discount_2:0
+msgid "Second discount in %."
+msgstr "Second discount in %."
+
+#. module: product_pricelist_3discounts
+#: help:product.pricelist.item,discount_1:0
+msgid "First discount in %."
+msgstr "First discount in %."
+
+#. module: product_pricelist_3discounts
+#: field:product.pricelist.item,discount_3:0
+msgid "Discount 3"
+msgstr "Discount 3"
+
+#. module: product_pricelist_3discounts
+#: field:product.pricelist.item,discount_2:0
+msgid "Discount 2"
+msgstr "Discount 2"
+
+#. module: product_pricelist_3discounts
+#: field:product.pricelist.item,discount_1:0
+msgid "Discount 1"
+msgstr "Discount 1"
+
+#. module: product_pricelist_3discounts
+#: help:product.pricelist.item,discount_3:0
+msgid "Third discount in %."
+msgstr "Third discount in %."
+
+#. module: product_pricelist_3discounts
+#: model:ir.model,name:product_pricelist_3discounts.model_product_pricelist
+msgid "Pricelist"
+msgstr "Pricelist"
+
+#. module: product_pricelist_3discounts
+#: model:ir.model,name:product_pricelist_3discounts.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Sales Order Line"
+

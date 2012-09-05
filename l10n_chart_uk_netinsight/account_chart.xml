@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="0">
+		<!-- Chart Template -->
+        <record id="l10n_uk_chart_template_main" model="account.chart.template">
+            <field name="name">UK Account Chart Template by Net Insight</field>
+            <field name="account_root_id" ref="acc_0"/>
+            <field name="tax_code_root_id" ref="l10n_chart_uk_netinsight.tax_0"/>
+          	<field name="bank_account_view_id" ref="l10n_chart_uk_netinsight.1200"/>
+            <field name="property_account_receivable" ref="l10n_chart_uk_netinsight.1101"/>
+            <field name="property_account_payable" ref="l10n_chart_uk_netinsight.2101"/>
+            <field name="property_account_expense_categ" ref="l10n_chart_uk_netinsight.5001"/>
+            <field name="property_account_income_categ" ref="l10n_chart_uk_netinsight.4001"/>
+        </record>
+	</data>
+</openerp>

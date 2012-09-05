@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="partner_company_log_mi" name="Partner Company Log" parent="base.menu_res_company_global"/>
+
+        <!-- Partner Company Log Rule-->
+        <record id="partner_company_log_rule_tree" model="ir.ui.view">
+            <field name="name">partner.company.log.rule.tree</field>
+            <field name="model">res.partner.company.log.rule</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Partner Company Log Rule">
+                    <field name="object_id" />
+                    <field name="partner_field_id" />
+                    <field name="log_create" />
+                    <field name="log_write" />
+                    <field name="log_unlink" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="partner_company_log_rule_form" model="ir.ui.view">
+            <field name="name">partner.company.log.rule.form</field>
+            <field name="model">res.partner.company.log.rule</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Partner Company Log Rule">
+                    <field name="object_id" />
+                    <field name="partner_field_id" />
+                    <separator string="Logs" colspan="4"/>
+                    <group col="6" colspan="4">
+                        <field name="log_create" />
+                        <field name="log_write" />
+                        <field name="log_unlink" />
+                    </group>
+                    <group col="6" colspan="4">
+                        <field name="state" />
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="partner_company_log_rule_action" model="ir.actions.act_window">
+            <field name="name">Partner Company Log Rule</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.company.log.rule</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="partner_company_log_rule_mi"
+            name="Partner Company Log Rules"
+            parent="partner_company_log_mi"
+            action="partner_company_log_rule_action"
+            groups="base.group_extended"/>
+
+        <!-- Partner Company Log-->
+       <record id="res_partner_company_log_filter" model="ir.ui.view">
+            <field name="name">res.partner.company.log.search</field>
+            <field name="model">res.partner.company.log</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Course">
+                   <group col='15' colspan='4'>
+                        <field name="partner_id"/>
+                        <field name="company_id"/>
+                        <field name="model_id"/>
+                        <field name="first_date"/>
+                        <field name="first_user_id"/>
+                        <field name="last_date"/>
+                        <field name="last_user_id"/>
+                   </group>
+                   <newline/>
+                   <group expand="0" string="Group By...">
+                        <filter string="Model" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'model_id'}"/>
+                        <filter string="Company" icon="terp-tools" domain="[]" context="{'group_by' : 'company_id'}"/>
+                   </group>
+               </search>
+            </field>
+        </record>
+
+        <record id="res_partner_company_log_tree" model="ir.ui.view">
+            <field name="name">res.partner.company.log.tree</field>
+            <field name="model">res.partner.company.log</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Logs">
+                    <field name="partner_id" />
+                    <field name="company_id"/>
+                    <field name="model_id"/>
+                    <field name="first_date"/>
+                    <field name="first_user_id"/>
+                    <field name="last_date"/>
+                    <field name="last_user_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_company_log_form" model="ir.ui.view">
+            <field name="name">res.partner.company.log.form</field>
+            <field name="model">res.partner.company.log</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Logs">
+                    <field name="partner_id" />
+                    <field name="company_id"/>
+                    <field name="model_id"/>
+                    <separator string="Logs" colspan="4"/>
+                    <field name="first_date"/>
+                    <field name="first_user_id"/>
+                    <field name="last_date"/>
+                    <field name="last_user_id"/>
+                </form>
+            </field>
+        </record>
+        
+        <record id="res_partner_company_log_action" model="ir.actions.act_window">
+            <field name="name">Logs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.company.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="res_partner_company_log_mi"
+            name="Partner Company Log"
+            parent="partner_company_log_mi"
+            action="res_partner_company_log_action"
+            groups="base.group_extended"/>
+    </data>
+</openerp>

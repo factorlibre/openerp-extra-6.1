@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+	<menuitem name="Events" id="menu_dm_config_lowlevel_events" parent="dm.menu_dm_config_lowlevel" sequence="2"/>
+
+	<menuitem name="Monitoring" id="menu_dm_config_lowlevel_monitoring" parent="dm.menu_dm_config_lowlevel" sequence="3"/>
+   
+    <!--
+    =======================================================
+    MONITOR VIEWS
+    =======================================================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_perf_monitor_form">
+        <field name="name">dm_perf_monitor.form</field>
+        <field name="model">dm.perf_monitor</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Performance Monitor">
+                <field name="name" />
+                <field name="model"/>
+                <field name="duration"/>
+                <field name="date" />
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_perf_monitor_tree">
+        <field name="name">dm_perf_monitor.tree</field>
+        <field name="model">dm.perf_monitor</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Performance Monitor">
+                 <field name="name"/>
+                <field name="model"/>
+                <field name="duration"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_perf_monitor_form">
+        <field name="name">All Performance Monitors</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.perf_monitor</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_perf_monitor_tree"/>
+    </record>
+
+    <menuitem id="menu_action_view_dm_perf_monitor_form" parent="menu_dm_config_lowlevel_monitoring" action="action_dm_perf_monitor_form" sequence="1"/>
+
+	<!--
+    =======================================================
+    Graph views for performance monitor
+    =======================================================
+    -->
+ 	
+	<record model="ir.ui.view" id="view_report_dm_performance_monitor_graph">
+        <field name="name">report.dm.performance.monitor.graph</field>
+        <field name="model">report.dm.performance.monitor</field>
+        <field name="type">graph</field>
+        <field name="arch" type="xml">
+            <graph string="Performance" type="pie">
+                <field name="name" />
+                <field name="duration" operator="+"/>
+            </graph>
+        </field>
+    </record>
+
+	<record model="ir.actions.act_window" id="action_report_dm_performance_monitor_graph">
+        <field name="name">Performances - Pie chart</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">report.dm.performance.monitor</field>
+        <field name="view_type">form</field>
+		<field name="view_mode">graph</field>
+        <field name="view_id" ref="view_report_dm_performance_monitor_graph"/>
+    </record>
+
+    <menuitem id="menu_report_dm_performance_monitor_graph" parent="menu_dm_config_lowlevel_monitoring" action="action_report_dm_performance_monitor_graph"/>
+
+
+	<record model="ir.ui.view" id="view_dm_pref_monitor_graph">
+        <field name="name">dm.perf_monitor.graph</field>
+        <field name="model">dm.perf_monitor</field>
+        <field name="type">graph</field>
+        <field name="arch" type="xml">
+            <graph string="Performance" type="bar">
+                <field name="date"/>
+                <field name="duration" operator="+"/>
+				<field group="True" name="name"/>
+            </graph>
+        </field>
+    </record>
+
+	<wizard
+		id="wizard_dm_performance_monitor"
+        string="Performance Monitor"
+        model="dm.perf_monitor"
+        name="wizard.performance.monitor"
+		multi="True" />
+
+	<menuitem
+		action="wizard_dm_performance_monitor"
+		id = "menu_wizard_dm_performance_monitor"
+		type="wizard"
+		parent="menu_dm_config_lowlevel_monitoring"
+		icon="terp-graph"/>
+    
+    <!--
+    =======================================================
+    WORKITEM VIEWS
+    =======================================================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_workitem_form">
+        <field name="name">dm.worktitem.form</field>
+        <field name="model">dm.workitem</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Workitem">
+            <group colspan="4">
+                <field name="name" select="1"/>
+                <newline/>
+                <field name="address_id" select="1"/>
+                <field name="step_id" select="1"/>
+                <field name="segment_id" select="1"/>
+                <field name="source" select="1"/>
+                <field name="tr_from_id" select="1">
+                    <tree>
+                        <field name="condition_id"/>
+                        <field name="step_from_id"/>
+                        <field name="step_to_id"/>
+                        <field name="delay"/>
+                        <field name="delay_type"/>
+                        <field name="action_hour"/>
+                    </tree>
+                </field>
+                <field name="mail_service_id" select="2"/>
+                <field name="action_time" select="2"/>
+                <field name="is_realtime" select="2"/>
+                <field name="is_preview" select="2"/>
+             </group>
+                <newline/>
+                <separator string="System Message" colspan="4"/>
+                <field name="error_msg" select="2" colspan="4" nolabel="1"/>
+                <separator string="Status" colspan="4"/>
+	                <field name="state" select="1" nolabel="1" readonly="1"/>
+<!--               <field name="is_global" select="2"/>-->
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_workitem_tree">
+        <field name="name">dm.workitem.tree</field>
+        <field name="model">dm.workitem</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Workitems">
+                <field name="name"/>
+                <field name="address_id" />
+                <field name="customer_id" />
+                <field name="customer_email" />
+                <field name="source" />
+                <field name="step_id" />
+                <field name="segment_id" />
+                <field name="action_time" />
+                <field name="state" />
+                <field name="error_msg" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_workitem_form">
+        <field name="name">All Workitems</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.workitem</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_dm_workitem_tree"/>
+    </record>
+
+    <menuitem id="menu_action_view_dm_workitem_form" parent="dm.menu_dm_config_lowlevel" action="action_dm_workitem_form"/>
+
+    <!--
+    =======================================================
+    EVENT VIEWS
+    =======================================================
+    -->
+
+    <record id="view_dm_event_tree" model="ir.ui.view">
+        <field name="name">dm.event.tree</field>
+        <field name="model">dm.event</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom" string="Events">
+                <field name="segment_id"/>
+                <field name="step_id"/>
+                <field name="address_id" required="1"/>
+                <field name="trigger_type_id" widget="selection"/>
+                <field name="action_time"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_dm_event_form" model="ir.ui.view">
+        <field name="name">dm.event.form</field>
+        <field name="model">dm.event</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Events">
+                <field name="segment_id"/>
+                <field name="step_id" select="2"/>
+                <field name="address_id" required="1"/>
+                <field name="trigger_type_id" widget="selection" select="1"/>
+                <field name="is_realtime"/>
+                <field name="action_time"/>
+            </form>
+        </field>
+    </record>
+    <record id="act_dm_event_form" model="ir.actions.act_window">
+        <field name="name">Edit Customer Events</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.event</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="act_dm_event_form" id="menu_act_dm_event_form" parent="dm.menu_dm_config_lowlevel_events"/>
+
+    <!--
+    ======================
+    DM SYSMSG
+    ======================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_sysmsg_form">
+        <field name="name">dm.sysmsg.form</field>
+        <field name="model">dm.sysmsg</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="System Message">
+                <field name="name" select="1"/>
+                <field name="code" select="1"/>
+                <field name="model" select="1"/>
+                <field name="field" select="2"/>
+                <field name="state"/>
+                <field name="result"/>
+                <field name="level"/>
+                <field name="send_email"/>
+                <field name="email_user"/>
+                <separator string="Message" colspan="4"/>
+                <field name="message" nolabel="1" colspan="4"/>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_sysmsg_tree">
+        <field name="name">dm.sysmsg.tree</field>
+        <field name="model">dm.sysmsg</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="System Messages">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="state"/>
+                <field name="level"/>
+                <field name="model"/>
+                <field name="field"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_sysmsg_form">
+        <field name="name">All System Messages</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.sysmsg</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_sysmsg_tree"/>
+    </record>
+
+    <menuitem id="menu_dm_sysmsg_form" parent="dm.menu_dm_config_lowlevel" action="action_dm_sysmsg_form"/>
+
+    <act_window name="Workitems"
+        res_model="dm.workitem"
+        src_model="res.partner.address"
+        view_type="form"
+        view_mode="tree,form"
+        id="act_customer_workitems"
+        domain = "[('address_id','in',[active_id])]"
+        />
+
+    </data>
+</openerp>

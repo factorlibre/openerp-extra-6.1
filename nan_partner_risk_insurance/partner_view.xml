@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+	<!--
+		Add risk insurance tab in partner form.
+	-->
+	<record model="ir.ui.view" id="view_partner_form">
+		<field name="name">res.partner.form.risk_insurance</field>
+		<field name="model">res.partner</field>
+		<field name="type">form</field>
+		<field name="inherit_id" ref="base.view_partner_form"/>
+		<field name="arch" type="xml">
+			<page string="Accounting" position="after">
+				<page string="Credit Insurance">
+					<field name="company_credit_limit"/>
+					<field name="insurance_credit_limit"/>
+					<field name="risk_insurance_requested"/>
+					<field name="risk_insurance_grant_date"/>
+					<field name="risk_insurance_coverage_percent"/>
+					<newline/>
+					<field name="risk_insurance_code"/>
+					<field name="risk_insurance_code_2"/>
+				</page>
+			</page>
+		</field>
+	</record>
+</data>
+</openerp>

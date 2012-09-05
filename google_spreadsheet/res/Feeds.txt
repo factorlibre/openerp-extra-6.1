@@ -1,0 +1,71 @@
+https://spreadsheets.google.com/feeds/list/0AgtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/xbmx4
+Cells
+=====
+<?xml version='1.0' encoding='UTF-8'?>
+  <ns0:entry xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://schemas.google.com/spreadsheets/2006">
+    <ns0:category scheme="http://schemas.google.com/spreadsheets/2006" term="http://schemas.google.com/spreadsheets/2006#cell" />
+    <ns0:id>
+      https://spreadsheets.google.com/feeds/cells/0AgtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/R501C9
+    </ns0:id>
+    <ns0:content type="text">
+      Comprar
+    </ns0:content>
+    <ns0:title type="text">
+      I501
+    </ns0:title>
+    <ns1:cell col="9" inputValue="Comprar" row="501">
+      Comprar
+    </ns1:cell>
+    <ns0:link href="https://spreadsheets.google.com/feeds/cells/0AgtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/R501C9" rel="self" type="application/atom+xml" />
+    <ns0:link href="https://spreadsheets.google.com/feeds/cells/0AgtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/R501C9/5j8bdg" rel="edit" type="application/atom+xml" />
+    <ns0:updated>2011-10-05T16:18:34.136Z</ns0:updated>
+  </ns0:entry>
+G501 - 501 - 7
+H501 - 501 - 8
+I501 - 501 - 9
+>>> for w in client.GetCellsFeed(key,worksheet).entry:
+>>>   print "%s - %s - %s"%(w.title.text,w.cell.row,w.cell.col)
+
+Rows
+====
+<?xml version='1.0' encoding='UTF-8'?>
+  <ns0:entry xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://schemas.gogle.com/spreadsheets/2006/extended">
+      <ns0:category scheme="http://schemas.googlecom/spreadsheets/2006" term="http://schemas.google.com/spreadsheets/2006#list">
+      <ns0:id>
+        https://spreadsheets.google.com/feeds/list/0AgtrTIkZZV9udDM2SERoZFE2WmyRkZnRGdqMnhNdWc/od6/private/full/xbmx4
+      </ns0:id>
+      <ns0:content type="text">
+        nombreelproducto: libra,
+        categoria: No Perecibles/Bases/Vidrio, 
+        unidaddemedidau.empleda: unidad, 
+        costos.pqte: 8, 
+        precioventas.: 24.8, 
+        tipodeproducto: Almacenable, 
+        m¬tododeabastecimiento: Obtener para stock, 
+        m+¬tododesuministro: Comprar
+      </ns0:cotent>
+      <ns0:updated>2011-10-08T12:13:53.375Z</ns0:updated>
+      <ns0:title type="text">Row: 501</ns0:title>
+      <ns0:link href="https://spreadsheets.google.com/feeds/list/0gtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/xbmx4" rel="self" tpe="application/atom+xml" />
+      <ns0:link href="https://spreadsheets.google.com/fees/list/0AgtrTIkZZV9udDM2SERoZFE2WmpyRkZnRGdqMnhNdWc/od6/private/full/xbmx4/2l94lec8ja2hh" rel="edit" type="application/atom+xml" />
+      <ns1:categoria>No Perecible/Bases/Vidrio</ns1:categoria>
+      <ns1:m+¬tododeabastecimiento>Obtener para stock</n1:m+¬tododeabastecimiento>
+      <ns1:costos.pqte>8</ns1:costos.pqte>
+      <ns1:unidadesxlotdecompra />
+      <ns1:unidaddemedidau.empleada>unidad</ns1:unidaddemedidau.empleada>
+      <ns1:tipodeproducto>Almacenable</ns1:tipodeproducto>
+      <ns1:nombredelproducto>libra</ns1:nombredelproducto>
+      <ns1:lotedecompra />
+      <ns1:_cokwr />
+      <ns1:precioventas.>24.8</ns1:precioventas.>
+      <ns1:m+¬tododesuministro>Comprar</ns1:m+¬tododesuministro>
+  </ns0:entry>
+  
+Row: 501 - 
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:nombredelproducto xmlns:ns0="http://schemas.google.com/spreadsheets/2006/extended">libra</ns0:nombredelproducto>
+- 
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:categoria xmlns:ns0="http://schemas.google.com/spreadsheets/2006/extended">No Perecibles/Bases/Vidrio</ns0:categoria>
+>>> for w in client.GetListFeed(key,worksheet).entry:
+>>>   print "%s - %s - %s"%(w.title.text,w.custom['nombredelproducto'],w.custom['categoria'])

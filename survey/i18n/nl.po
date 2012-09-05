@@ -1,0 +1,690 @@
+# Dutch translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 06:01+0000\n"
+"PO-Revision-Date: 2010-10-28 18:17+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-18 05:26+0000\n"
+"X-Generator: Launchpad (build 12177)\n"
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_survey_form1
+#: model:ir.ui.menu,name:survey.menu_print_survey_form
+#: model:ir.ui.menu,name:survey.menu_reporting
+#: model:ir.ui.menu,name:survey.menu_survey_form
+#: model:ir.ui.menu,name:survey.menu_surveys
+msgid "Surveys"
+msgstr "Enquête"
+
+msgid "Survey Analysis Report"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_survey_question_form
+msgid "Survey Questions"
+msgstr "Enquêtevragen"
+
+#. module: survey
+#: view:survey:0
+msgid "Set to draft"
+msgstr "Zet op concept"
+
+#. module: survey
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Ongeldige modelnaam in de actie definitie."
+
+#. module: survey
+#: field:survey.history,date:0
+msgid "Date started"
+msgstr "Datum gestart"
+
+#. module: survey
+#: field:survey,history:0
+msgid "History Lines"
+msgstr "Geschiedenisregels"
+
+#. module: survey
+#: field:survey.send.invitation,mail:0
+msgid "Body"
+msgstr "Inhoud"
+
+msgid "Give Survey Response"
+msgstr ""
+
+msgid "All Questions"
+msgstr ""
+
+#. module: survey
+#: field:survey,date_open:0
+msgid "Survey Open Date"
+msgstr ""
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_name_wiz
+msgid "survey.name.wiz"
+msgstr ""
+
+msgid "Users Details"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_view_survey_question_message
+#: model:ir.model,name:survey.model_survey_question
+#: view:survey:0
+#: view:survey.page:0
+#: view:survey.question:0
+msgid "Survey Question"
+msgstr ""
+
+msgid "Set to one if  you require only one response per user"
+msgstr ""
+
+#. module: survey
+#: field:survey.page,title:0
+msgid "Page Title"
+msgstr ""
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_history
+msgid "Survey History"
+msgstr ""
+
+#. module: survey
+#: field:survey.response.answer,comment:0
+#: field:survey.response.line,comment:0
+msgid "Notes"
+msgstr ""
+
+msgid "Total Response"
+msgstr ""
+
+#. module: survey
+#: view:survey.question.wiz:0
+msgid "Your Messages"
+msgstr "Uw berichten"
+
+#. module: survey
+#: selection:survey,state:0
+#: view:survey.request:0
+#: selection:survey.request,state:0
+msgid "Cancelled"
+msgstr ""
+
+#. module: survey
+#: field:survey.question,allow_comment:0
+msgid "Allow Comment Field"
+msgstr "Opmerkingveld toestaan"
+
+#. module: survey
+#: code:addons/survey/survey.py:375
+#: code:addons/survey/survey.py:387
+#: code:addons/survey/survey.py:401
+#: code:addons/survey/survey.py:406
+#: code:addons/survey/survey.py:416
+#: code:addons/survey/survey.py:422
+#: code:addons/survey/survey.py:428
+#: code:addons/survey/survey.py:434
+#: code:addons/survey/survey.py:438
+#: code:addons/survey/survey.py:444
+#: code:addons/survey/survey.py:448
+#: code:addons/survey/survey.py:458
+#: code:addons/survey/survey.py:462
+#: code:addons/survey/survey.py:467
+#: code:addons/survey/survey.py:473
+#: code:addons/survey/survey.py:475
+#: code:addons/survey/survey.py:477
+#: code:addons/survey/survey.py:482
+#: code:addons/survey/survey.py:484
+#: code:addons/survey/survey.py:642
+#: code:addons/survey/wizard/survey_answer.py:124
+#: code:addons/survey/wizard/survey_answer.py:131
+#: code:addons/survey/wizard/survey_answer.py:699
+#: code:addons/survey/wizard/survey_answer.py:738
+#: code:addons/survey/wizard/survey_answer.py:758
+#: code:addons/survey/wizard/survey_answer.py:787
+#: code:addons/survey/wizard/survey_answer.py:792
+#: code:addons/survey/wizard/survey_answer.py:800
+#: code:addons/survey/wizard/survey_answer.py:811
+#: code:addons/survey/wizard/survey_answer.py:820
+#: code:addons/survey/wizard/survey_answer.py:825
+#: code:addons/survey/wizard/survey_answer.py:899
+#: code:addons/survey/wizard/survey_answer.py:935
+#: code:addons/survey/wizard/survey_answer.py:953
+#: code:addons/survey/wizard/survey_answer.py:981
+#: code:addons/survey/wizard/survey_answer.py:984
+#: code:addons/survey/wizard/survey_answer.py:987
+#: code:addons/survey/wizard/survey_answer.py:999
+#: code:addons/survey/wizard/survey_answer.py:1006
+#: code:addons/survey/wizard/survey_answer.py:1009
+#: code:addons/survey/wizard/survey_selection.py:134
+#: code:addons/survey/wizard/survey_selection.py:138
+#: code:addons/survey/wizard/survey_send_invitation.py:74
+#, python-format
+msgid "Warning !"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation:0
+#: field:survey.send.invitation,send_mail_existing:0
+msgid "Send reminder for existing user"
+msgstr ""
+
+msgid "New Survey Question"
+msgstr ""
+
+msgid "Skip"
+msgstr ""
+
+msgid "Partner"
+msgstr ""
+
+#. module: survey
+#: field:survey.send.invitation,mail_subject:0
+#: field:survey.send.invitation,mail_subject_existing:0
+msgid "Subject"
+msgstr ""
+
+msgid "Maximum Response Limit"
+msgstr ""
+
+#. module: survey
+#: field:survey.send.invitation,mail_from:0
+msgid "From"
+msgstr ""
+
+msgid "Response Type"
+msgstr ""
+
+#. module: survey
+#: field:survey.name.wiz,transfer:0
+msgid "Page Transfer"
+msgstr ""
+
+#. module: survey
+#: field:survey.answer,question_id:0
+#: field:survey.page,question_ids:0
+#: field:survey.question,question:0
+#: field:survey.question.column.heading,question_id:0
+#: field:survey.response.line,question_id:0
+msgid "Question"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation:0
+msgid "Send"
+msgstr ""
+
+msgid "#Response"
+msgstr ""
+
+msgid "Response Answer"
+msgstr ""
+
+msgid "Response Summary"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation:0
+#: field:survey.send.invitation,send_mail:0
+msgid "Send mail for new user"
+msgstr ""
+
+#, python-format
+msgid "Error !"
+msgstr ""
+
+msgid "Skipped Question"
+msgstr ""
+
+msgid "_Ok"
+msgstr ""
+
+#. module: survey
+#: selection:survey.response,response_type:0
+msgid "Link"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_question_wiz
+msgid "survey.question.wiz"
+msgstr ""
+
+#. module: survey
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+msgid "Survey Response Answer"
+msgstr ""
+
+msgid "Page :-"
+msgstr ""
+
+msgid "Maximum Response per User"
+msgstr ""
+
+msgid "Total Started Survey :-"
+msgstr ""
+
+#. module: survey
+#: field:survey.response.answer,comment_field:0
+#: view:survey.response.line:0
+msgid "Comment"
+msgstr ""
+
+msgid "Modify Date"
+msgstr ""
+
+msgid "Answered Question"
+msgstr ""
+
+#. module: survey
+#: code:addons/survey/wizard/survey_selection.py:134
+#, python-format
+msgid "You can not give response for this survey more than %s times"
+msgstr ""
+
+#. module: survey
+#: selection:survey.response,response_type:0
+msgid "Manually"
+msgstr ""
+
+msgid "All Surveys"
+msgstr ""
+
+#. module: survey
+#: field:survey,users:0
+msgid "Users"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation:0
+msgid "Message"
+msgstr ""
+
+#. module: survey
+#: field:survey.name.wiz,page_no:0
+msgid "Page Number"
+msgstr ""
+
+#. module: survey
+#: field:survey.send.invitation.log,note:0
+msgid "Log"
+msgstr ""
+
+msgid "All Survey Questions"
+msgstr ""
+
+#. module: survey
+#: field:survey,date_close:0
+msgid "Survey Close Date"
+msgstr ""
+
+#. module: survey
+#: view:survey.browse.answer:0
+#: view:survey.name.wiz:0
+msgid "Start"
+msgstr ""
+
+#. module: survey
+#: selection:survey,state:0
+#: selection:survey.request,state:0
+#: selection:survey.response.line,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: survey
+#: selection:survey,state:0
+msgid "Closed"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: field:survey.answer,answer:0
+#: field:survey.name.wiz,response:0
+#: view:survey.page:0
+#: view:survey.print.answer:0
+#: field:survey.print.answer,response_ids:0
+#: view:survey.question:0
+#: field:survey.question,answer_choice_ids:0
+#: field:survey.request,response:0
+#: field:survey.response,question_ids:0
+#: field:survey.response.answer,answer_id:0
+#: field:survey.response.answer,response_id:0
+#: view:survey.response.line:0
+#: field:survey.response.line,response_answer_ids:0
+#: field:survey.response.line,response_id:0
+#: field:survey.response.line,response_table_ids:0
+#: field:survey.send.invitation,partner_ids:0
+#: field:survey.tbl.column.heading,response_table_id:0
+msgid "Answer"
+msgstr ""
+
+msgid "All Survey Pages"
+msgstr ""
+
+#. module: survey
+#: field:survey.name.wiz,store_ans:0
+msgid "Store Answer"
+msgstr ""
+
+#. module: survey
+#: field:survey,state:0
+#: field:survey.response,state:0
+#: field:survey.response.line,state:0
+msgid "Status"
+msgstr ""
+
+#. module: survey
+#: model:ir.module.module,shortdesc:survey.module_meta_information
+msgid "Survey Module"
+msgstr ""
+
+msgid ""
+"\n"
+"    This module is used for surveing. It depends on the answers or reviews "
+"of some questions by different users.\n"
+"    A survey may have multiple pages. Each page may contain multiple "
+"questions and each question may have multiple answers.\n"
+"    Different users may give different answers of question and according to "
+"that survey is done. \n"
+"    Partners are also sent mails with user name and password for the "
+"invitation of the survey\n"
+"    "
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: view:survey.name.wiz:0
+msgid "Survey Details"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: view:survey.page:0
+#: view:survey.question:0
+msgid "Required Answer"
+msgstr ""
+
+#. module: survey
+#: field:survey.history,user_id:0
+#: view:survey.request:0
+#: field:survey.request,user_id:0
+#: field:survey.response,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: survey
+#: field:res.users,survey_id:0
+msgid "Groups"
+msgstr ""
+
+msgid "Response"
+msgstr ""
+
+msgid "New Survey"
+msgstr ""
+
+msgid "Survey Management"
+msgstr ""
+
+#. module: survey
+#: selection:survey.response.line,state:0
+msgid "Skiped"
+msgstr ""
+
+#. module: survey
+#: model:ir.model,name:survey.model_survey_answer
+#: model:ir.model,name:survey.model_survey_response_answer
+#: view:survey.answer:0
+#: view:survey.response:0
+#: view:survey.response.answer:0
+#: view:survey.response.line:0
+msgid "Survey Answer"
+msgstr ""
+
+#, python-format
+msgid "Attention!"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.report.xml,name:survey.report_survey_form
+#: model:ir.model,name:survey.model_survey
+#: view:survey:0
+#: view:survey.browse.answer:0
+#: field:survey.browse.answer,survey_id:0
+#: field:survey.history,survey_id:0
+#: view:survey.name.wiz:0
+#: field:survey.name.wiz,survey_id:0
+#: view:survey.page:0
+#: field:survey.page,survey_id:0
+#: view:survey.print:0
+#: field:survey.print,survey_ids:0
+#: field:survey.print.statistics,survey_ids:0
+#: field:survey.question,survey:0
+#: view:survey.request:0
+#: field:survey.request,survey_id:0
+#: field:survey.response,survey_id:0
+msgid "Survey"
+msgstr ""
+
+msgid "Total Completed Survey :-"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+msgid "History"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: view:survey.answer:0
+#: view:survey.page:0
+#: view:survey.question:0
+msgid "Seq"
+msgstr ""
+
+#. module: survey
+#: field:survey,tot_comp_survey:0
+msgid "Total Completed Survey"
+msgstr ""
+
+msgid "Response Percentage"
+msgstr ""
+
+#. module: survey
+#: field:survey.question.wiz,name:0
+msgid "Number"
+msgstr ""
+
+msgid "Survey Title :-"
+msgstr ""
+
+#. module: survey
+#: view:survey.request:0
+#: selection:survey.request,state:0
+msgid "Done"
+msgstr ""
+
+#, python-format
+msgid "'\" + que_rec[0]['question'] + \"' This question requires an answer."
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: view:survey.browse.answer:0
+#: view:survey.name.wiz:0
+#: view:survey.print:0
+#: view:survey.print.answer:0
+#: view:survey.print.statistics:0
+#: view:survey.send.invitation:0
+msgid "Cancel"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+msgid "Close"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: selection:survey,state:0
+msgid "Open"
+msgstr ""
+
+#. module: survey
+#: field:survey,tot_start_survey:0
+msgid "Total Started Survey"
+msgstr ""
+
+#. module: survey
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+msgid "Survey Response"
+msgstr ""
+
+#. module: survey
+#: field:survey.answer,average:0
+msgid "#Avg"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: field:survey,responsible_id:0
+msgid "Responsible"
+msgstr ""
+
+#. module: survey
+#: selection:survey.response.line,state:0
+msgid "Answered"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+msgid "Other"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_view_survey_send_invitation
+#: view:survey.send.invitation:0
+msgid "Send Invitation"
+msgstr ""
+
+#. module: survey
+#: field:survey,title:0
+msgid "Survey Title"
+msgstr ""
+
+msgid "%"
+msgstr ""
+
+#. module: survey
+#: field:survey,note:0
+#: field:survey.name.wiz,note:0
+#: view:survey.page:0
+#: field:survey.page,note:0
+#: view:survey.response.line:0
+msgid "Description"
+msgstr ""
+
+#. module: survey
+#: view:survey.name.wiz:0
+msgid "Select Survey"
+msgstr ""
+
+msgid "New Survey Page"
+msgstr ""
+
+#. module: survey
+#: view:survey:0
+#: view:survey.page:0
+#: field:survey.question,page_id:0
+msgid "Survey Page"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.report.xml,name:survey.survey_browse_response
+#: field:survey.browse.answer,response_id:0
+msgid "Survey Answers"
+msgstr ""
+
+#. module: survey
+#: view:survey.page:0
+msgid "#Questions"
+msgstr ""
+
+msgid "Que:"
+msgstr ""
+
+#. module: survey
+#: field:survey,page_ids:0
+#: view:survey.question:0
+#: field:survey.response.line,page_id:0
+msgid "Page"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation.log:0
+msgid "User creation"
+msgstr ""
+
+#. module: survey
+#: field:survey.answer,sequence:0
+#: field:survey.question,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation.log:0
+msgid "Results :"
+msgstr "Resultaten :"
+
+#. module: survey
+#: code:addons/survey/wizard/survey_send_invitation.py:74
+#, python-format
+msgid "%sSurvey is not in open state"
+msgstr ""
+
+#. module: survey
+#: view:survey.send.invitation:0
+msgid "Select Partner"
+msgstr ""
+
+#. module: survey
+#: field:survey.response,date_create:0
+#: field:survey.response.line,date_create:0
+msgid "Create Date"
+msgstr ""
+
+#. module: survey
+#: model:ir.actions.act_window,name:survey.action_survey_page_form
+#: model:ir.model,name:survey.model_survey_page
+#: model:ir.ui.menu,name:survey.menu_survey_page_form1
+#: view:survey.page:0
+msgid "Survey Pages"
+msgstr ""
+
+msgid "Response Count"
+msgstr ""
+
+#. module: survey
+#: field:survey.name.wiz,page:0
+msgid "Page Position"
+msgstr ""

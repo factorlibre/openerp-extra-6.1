@@ -1,0 +1,49 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* pxgo_cash_statement_analytic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.10\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-06-17 08:47:17+0000\n"
+"PO-Revision-Date: 2010-06-17 10:49+0100\n"
+"Last-Translator: Borja López Soilán (Pexego) <borjals@pexego.es>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: pxgo_cash_statement_analytic
+#: field:account.bank.statement.line.type,analytic_account_id:0
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: pxgo_cash_statement_analytic
+#: model:ir.module.module,description:pxgo_cash_statement_analytic.module_meta_information
+msgid ""
+"\n"
+"Extends the Cash Statements to add support for analytic accounting.\n"
+"\n"
+"A analytic account field will be added to cash statement line types, allowing\n"
+"the user to preset analytic accounts for the line types.\n"
+"            "
+msgstr ""
+"\n"
+"Extiende las hojas de caja para añadir soporte de contabilidad analítica.\n"
+"\n"
+"Un campo cuenta analítica se añadirá a los tipos de línea de hoja de caja, permitiendo\n"
+"al usuario preseleccionar cuentas analíticas para los tipos de línea.\n"
+"            "
+
+#. module: pxgo_cash_statement_analytic
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la estructura de la vista!"
+
+#. module: pxgo_cash_statement_analytic
+#: model:ir.module.module,shortdesc:pxgo_cash_statement_analytic.module_meta_information
+msgid "Pexego - Analytic in Cash Statements"
+msgstr "Pexego - Analítica en hojas de caja"
+

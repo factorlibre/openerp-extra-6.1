@@ -1,0 +1,84 @@
+# Catalan translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 09:05+0000\n"
+"PO-Revision-Date: 2011-02-15 16:57+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: base_contact_team
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML no vàlid per a la definició de la vista!"
+
+#. module: base_contact_team
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar amb x_ i no contenir cap caràcter "
+"especial!"
+
+#. module: base_contact_team
+#: field:res.partner.team,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: base_contact_team
+#: model:ir.model,name:base_contact_team.model_res_partner_team
+msgid "res.partner.team"
+msgstr "res.partner.team"
+
+#. module: base_contact_team
+#: field:res.partner.job,team_id:0
+#: view:res.partner.team:0
+msgid "Team"
+msgstr "Equip"
+
+#. module: base_contact_team
+#: model:ir.actions.act_window,name:base_contact_team.res_partner_team_all_act
+#: model:ir.ui.menu,name:base_contact_team.res_partner_team_all_mi
+msgid "Teams"
+msgstr "Equips"
+
+#. module: base_contact_team
+#: model:ir.actions.act_window,name:base_contact_team.res_partner_team_new_act
+#: model:ir.ui.menu,name:base_contact_team.res_partner_team_new_mi
+msgid "New Team"
+msgstr "Nou equip"
+
+#. module: base_contact_team
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de model no vàlid en la definició de l'acció."
+
+#. module: base_contact_team
+#: model:ir.module.module,shortdesc:base_contact_team.module_meta_information
+msgid "Base Contact Team"
+msgstr ""
+
+#. module: base_contact_team
+#: model:ir.module.module,description:base_contact_team.module_meta_information
+msgid ""
+"With this module will help you to manages teams of contacts for different "
+"purposes."
+msgstr ""
+"Aquest mòdul us ajudarà a gestionar els equips de contactes amb diferents "
+"propòsits."
+
+#. module: base_contact_team
+#: view:res.partner.team:0
+#: field:res.partner.team,description:0
+msgid "Description"
+msgstr "Descripció"

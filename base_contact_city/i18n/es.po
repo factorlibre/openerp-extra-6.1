@@ -1,0 +1,42 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* base_contact_city
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 09:04+0000\n"
+"PO-Revision-Date: 2011-02-19 07:17+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: base_contact_city
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML no válido para la definición de la vista!"
+
+#. module: base_contact_city
+#: model:ir.module.module,description:base_contact_city.module_meta_information
+msgid ""
+"Zip code, city, state and country fields are replaced with a location field "
+"in partner form when base_contact module is installed.\n"
+"This module helps to keep homogeneous address data in our database.\n"
+"You should use this module if you are already using base_contact and city"
+msgstr ""
+"Los campos de código postal, provincia y país son reemplazados con un campo "
+"de localización en el formulario de empresa cuando el módulo base_contact "
+"está instalado.\n"
+"Este módulo ayuda a mantener información homogénea de direcciones en la base "
+"de datos.\n"
+"Debería usar este módulo si ya está usando los módulos base_contact y city."
+
+#. module: base_contact_city
+#: model:ir.module.module,shortdesc:base_contact_city.module_meta_information
+msgid "City for base_contact"
+msgstr "Ciudad para base_contact"

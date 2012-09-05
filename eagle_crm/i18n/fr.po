@@ -1,0 +1,1033 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* eagle_crm, crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-13 09:00+0000\n"
+"PO-Revision-Date: 2011-07-13 09:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: eagle_crm
+#: model:ir.module.module,description:eagle_crm.module_meta_information
+msgid "This module increases your productivity by introducing a complete contracts management.\n"
+"This is the CRM module, it introduces:\n"
+"	- new wizards:\n"
+"		- contact for opportunity\n"
+"		- new lead\n"
+"		- new opportunity\n"
+"    "
+msgstr "This module increases your productivity by introducing a complete contracts management.\n"
+"This is the CRM module, it introduces:\n"
+"	- new wizards:\n"
+"		- contact for opportunity\n"
+"		- new lead\n"
+"		- new opportunity\n"
+"    "
+
+#. module: eagle_crm
+#: code:addons/eagle_crm/wizard/crm_partner_to_lead.py:127
+#: code:addons/eagle_crm/wizard/new_lead.py:284
+#: selection:eagle.lead,type:0
+#: selection:eagle.wizard.new_opportunity,type:0
+#: selection:eagle.partner2lead,type:0
+#, python-format
+msgid "Lead"
+msgstr "Piste"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:eagle.contract:0
+msgid "Previous Stage"
+msgstr "Étape précédente"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:eagle.contract:0
+#: field:eagle.contract,opportunity_ids:0
+#: view:res.partner:0
+#: field:res.partner,opportunity:0
+msgid "Opportunities"
+msgstr "Opportunités"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+msgid "Privacy"
+msgstr "Privé"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,title:0
+#: field:eagle.contact4partner,title:0
+msgid "Title"
+msgstr "Title"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_new_lead
+msgid "Create a new lead"
+msgstr "Nouvelle piste"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+msgid " "
+msgstr " "
+
+#. module: eagle_crm
+#: field:crm.lead,contacts_jobs:0
+msgid "Jobs"
+msgstr "Jobs"
+
+#. module: eagle_crm
+#: field:eagle.lead,zip:0
+msgid "Zip"
+msgstr "Zip"
+
+#. module: eagle_crm
+#: field:crm.lead,lead_statut:0
+msgid "Lead State"
+msgstr "Statut"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_eagle_contact4opport
+#: model:ir.model,name:eagle_crm.model_eagle_contact4partner
+msgid "Contact for a Partner"
+msgstr "Contact"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_eagle_partner2lead
+msgid "Partner To Lead"
+msgstr "Piste pour un partenaire"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "News"
+msgstr "Nouveaux"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+msgid "Show time as"
+msgstr "Afficher l'heure en"
+
+#. module: eagle_crm
+#: selection:eagle.lead,priority:0
+#: selection:eagle.wizard.new_opportunity,priority:0
+#: selection:eagle.partner2lead,priority:0
+msgid "Highest"
+msgstr "Highest"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+msgid "Lead description"
+msgstr "Description de la piste"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2opportunity
+#: model:ir.ui.menu,name:eagle_crm.eagle_view_opportunity_form
+msgid "New Opportunity"
+msgstr "Nouvelle opportunité"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,mobile:0
+#: field:eagle.contact4partner,mobile:0
+#: field:eagle.lead,partner_mobile:0
+#: field:eagle.wizard.new_opportunity,partner_mobile:0
+msgid "Mobile"
+msgstr "Mobile"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: field:eagle.contact4opport,comment:0
+#: view:eagle.contact4partner:0
+#: field:eagle.contact4partner,comment:0
+#: field:eagle.lead,description:0
+#: field:eagle.lead,meeting_description:0
+#: field:eagle.wizard.new_opportunity,description:0
+#: field:eagle.wizard.new_opportunity,meeting_description:0
+#: field:eagle.partner2lead,description:0
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_contact2leads
+#: view:res.partner:0
+msgid "Notes"
+msgstr "Remarques"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:eagle.contract:0
+msgid "Next Stage"
+msgstr "Étape suivante"
+
+#. module: eagle_crm
+#: selection:crm.lead,lead_statut:0
+#: selection:eagle.lead,lead_statut:0
+#: selection:eagle.wizard.new_opportunity,lead_statut:0
+msgid "Old"
+msgstr "Ancien"
+
+#. module: eagle_crm
+#: field:eagle.lead,type_id:0
+#: field:eagle.partner2lead,type_id:0
+msgid "Campaign"
+msgstr "Campaign"
+
+#. module: eagle_crm
+#: code:addons/eagle_crm/leads.py:185
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_contact2meetings
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2meetings
+#: view:res.partner:0
+#: view:res.partner.contact:0
+#, python-format
+msgid "Meetings"
+msgstr "Rendez-vous"
+
+#. module: eagle_crm
+#: code:addons/eagle_crm/wizard/crm_lead_to_opportunity.py:106
+#, python-format
+msgid "Lead '%s' has been converted to an opportunity."
+msgstr "La piste '%s' a été convertie en opportunité."
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Held"
+msgstr "Suspendu"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+#: model:ir.ui.menu,name:eagle_crm.eagle_view_lead_form
+msgid "New Lead"
+msgstr "Nouvelle piste"
+
+#. module: eagle_crm
+#: field:eagle.lead,date_deadline:0
+#: field:eagle.wizard.new_opportunity,date_deadline:0
+msgid "Deadline"
+msgstr "Date limite"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+#: view:eagle.contract:0
+#: field:eagle.lead,partner_id:0
+#: field:eagle.partner2lead,partner_id:0
+#: model:ir.model,name:eagle_crm.model_res_partner
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Schedule Other Call"
+msgstr "Planifier d'autres appels"
+
+#. module: eagle_crm
+#: view:res.partner:0
+msgid "Previous"
+msgstr "Précédent"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "Partners"
+msgstr "Partnaires"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_crm_phonecall
+msgid "crm.phonecall"
+msgstr "crm.phonecall"
+
+#. module: eagle_crm
+#: field:eagle.contract,phonecall_id:0
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_contact2calls
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2calls
+#: view:res.partner:0
+#: view:res.partner.contact:0
+#: field:res.partner.contact,phonecalls:0
+msgid "Phone Call"
+msgstr "Appel téléphonique"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+#: view:eagle.partner2lead:0
+msgid "Create"
+msgstr "Création"
+
+#. module: eagle_crm
+#: sql_constraint:eagle.contract:0
+msgid "The name of the contract must be unique!"
+msgstr "Le nom d'un contrat doit être unique!"
+
+#. module: eagle_crm
+#: view:res.partner:0
+msgid "Next"
+msgstr "Suivant"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+#: field:eagle.lead,priority:0
+#: field:eagle.wizard.new_opportunity,priority:0
+#: field:eagle.partner2lead,priority:0
+msgid "Priority"
+msgstr "Priorité"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: field:eagle.lead,lead_statut:0
+#: field:eagle.wizard.new_opportunity,lead_statut:0
+msgid "State"
+msgstr "État"
+
+#. module: eagle_crm
+#: field:eagle.lead,location:0
+#: field:eagle.wizard.new_opportunity,location:0
+msgid "Location"
+msgstr "Location"
+
+#. module: eagle_crm
+#: view:crm.phonecall:0
+#: view:eagle.contract:0
+#: field:eagle.lead,type:0
+#: field:eagle.wizard.new_opportunity,type:0
+#: field:eagle.partner2lead,type:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Type"
+msgstr "Type"
+
+#. module: eagle_crm
+#: field:eagle.lead,channel_id:0
+#: field:eagle.partner2lead,channel_id:0
+msgid "Channel"
+msgstr "Channel"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+msgid "CRM"
+msgstr "CRM"
+
+#. module: eagle_crm
+#: selection:eagle.lead,priority:0
+#: selection:eagle.wizard.new_opportunity,priority:0
+#: selection:eagle.partner2lead,priority:0
+msgid "Lowest"
+msgstr "Le plus bas"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "Create a contact"
+msgstr "Création d'un contact"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,seq:0
+#: field:eagle.contact4partner,seq:0
+msgid "Contact sequence number"
+msgstr "Séquence du contact"
+
+#. module: eagle_crm
+#: field:eagle.lead,partner_phone:0
+#: field:eagle.wizard.new_opportunity,partner_phone:0
+msgid "Phone"
+msgstr "Téléphone"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+msgid "Information"
+msgstr "Information"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Reset to Draft"
+msgstr "Repasser à l'état \"Brouillon\""
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "Pending"
+msgstr "En attente"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "Extra Info"
+msgstr "Informations supplémentaires"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+msgid "Inforomation"
+msgstr "Information"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.action_view_eagle_crm_partner2lead
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_contact2lead
+msgid "Create Note"
+msgstr "Création d'une piste"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: field:res.partner,offres:0
+msgid "Offers"
+msgstr "Offres"
+
+#. module: eagle_crm
+#: field:eagle.lead,contact_name:0
+msgid "Contact Name"
+msgstr "Nom du contact"
+
+#. module: eagle_crm
+#: field:eagle.contract,meetings:0
+#: field:eagle.contract,phonecalls:0
+msgid "Phone Call"
+msgstr "Appel téléphonique"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+#: view:eagle.partner2lead:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: eagle_crm
+#: field:crm.lead,sel_contact_id:0
+#: view:crm.meeting:0
+#: field:crm.meeting,contact_id:0
+#: field:crm.phonecall,partner_addr_contact:0
+#: view:eagle.partner2lead:0
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2contact
+#: model:ir.model,name:eagle_crm.model_res_partner_contact
+msgid "Contact"
+msgstr "Contact"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:res.partner:0
+msgid "Close"
+msgstr "Clôturer"
+
+#. module: eagle_crm
+#: field:res.partner.contact,mailing:0
+msgid "Mailing"
+msgstr "Mailing"
+
+#. module: eagle_crm
+#: field:eagle.wizard.new_opportunity,planned_revenue:0
+msgid "Expected Revenue"
+msgstr "Expected Revenue"
+
+#. module: eagle_crm
+#: view:res.partner:0
+msgid "Tasks"
+msgstr "Tâches"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,name:0
+#: field:eagle.contact4partner,name:0
+#: field:eagle.lead,name:0
+#: field:eagle.wizard.new_opportunity,name:0
+#: field:eagle.partner2lead,name:0
+msgid "Last Name"
+msgstr "Nom"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+msgid "Communication"
+msgstr "Communication"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,photo:0
+#: field:eagle.contact4partner,photo:0
+#: field:eagle.lead,config_logo:0
+msgid "Image"
+msgstr "Image"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+msgid "Issue Tracker Tree"
+msgstr "Issue Tracker Tree"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:res.partner:0
+#: field:res.partner,lead:0
+#: view:res.partner.contact:0
+#: field:res.partner.contact,lead:0
+msgid "Leads"
+msgstr "Pistes"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+#: view:eagle.partner2lead:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Subject"
+msgstr "Objet"
+
+#. module: eagle_crm
+#: field:eagle.lead,user_id:0
+#: field:eagle.wizard.new_opportunity,user_id:0
+#: field:eagle.partner2lead,user_id:0
+msgid "Salesman"
+msgstr "Vendeur"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_crm_opportunity2phonecall
+msgid "Opportunity to Phonecall"
+msgstr "Affaire en appel téléphonique"
+
+#. module: eagle_crm
+#: field:eagle.lead,categ_call_id:0
+#: field:eagle.lead,lead_categ_id:0
+#: field:eagle.wizard.new_opportunity,categ_call_id:0
+#: field:eagle.partner2lead,lead_categ_id:0
+msgid "Category"
+msgstr "Categorie"
+
+#. module: eagle_crm
+#: field:eagle.lead,partner_name:0
+msgid "Partner Name"
+msgstr "Nom du partenaire"
+
+#. module: eagle_crm
+#: field:crm.lead,partner_addresses:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Contacts"
+msgstr "Contacts"
+
+#. module: eagle_crm
+#: selection:eagle.lead,priority:0
+#: selection:eagle.wizard.new_opportunity,priority:0
+#: selection:eagle.partner2lead,priority:0
+msgid "Low"
+msgstr "Low"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:eagle.contract:0
+msgid "Total of Planned Revenue"
+msgstr "Total des revenus planifiés"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+#: field:eagle.contract,meeting_id:0
+#: model:ir.model,name:eagle_crm.model_crm_meeting
+#: field:res.partner.contact,meetings:0
+msgid "Meeting"
+msgstr "Rendez-vous"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+msgid "7 Days"
+msgstr "7 Jours"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,website:0
+#: field:eagle.contact4partner,website:0
+msgid "Website"
+msgstr "Site web"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Create a Partner"
+msgstr "Créer un partenaire"
+
+#. module: eagle_crm
+#: selection:eagle.lead,priority:0
+#: selection:eagle.wizard.new_opportunity,priority:0
+#: selection:eagle.partner2lead,priority:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:res.partner:0
+msgid "Escalate"
+msgstr "Escalader"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Not Held"
+msgstr "Non conclu"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,email:0
+#: field:eagle.contact4partner,email:0
+#: field:eagle.lead,partner_email:0
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,active:0
+#: field:eagle.contact4partner,active:0
+#: field:eagle.lead,active:0
+#: field:eagle.partner2lead,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_eagle_lead
+msgid "New lead"
+msgstr "Nouvelle piste"
+
+#. module: eagle_crm
+#: field:crm.lead,partner_ids:0
+msgid "Partners Contacts"
+msgstr "Contacts"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,lang_id:0
+#: field:eagle.contact4partner,lang_id:0
+msgid "Language"
+msgstr "Language"
+
+#. module: eagle_crm
+#: field:eagle.lead,street2:0
+msgid "Street 2"
+msgstr "Street 2"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2contract
+msgid "Dossier"
+msgstr "Dossier"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+msgid "Extra Information"
+msgstr "Extra Information"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: field:crm.lead,contract_id:0
+#: field:crm.lead2opportunity,contract_id:0
+#: view:crm.meeting:0
+#: field:crm.meeting,contract_id:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,contract_id:0
+#: field:eagle.wizard.new_opportunity,contract_id:0
+#: model:ir.model,name:eagle_crm.model_eagle_contract
+#: field:project.issue,contract_id:0
+msgid "Contract"
+msgstr "Dossier"
+
+#. module: eagle_crm
+#: field:eagle.lead,call_name:0
+#: field:eagle.lead,meeting_name:0
+#: field:eagle.wizard.new_opportunity,call_name:0
+#: field:eagle.wizard.new_opportunity,meeting_name:0
+msgid "Summary"
+msgstr "Résumé"
+
+#. module: eagle_crm
+#: field:eagle.lead,date_call:0
+#: field:eagle.lead,date_meeting:0
+#: field:eagle.wizard.new_opportunity,date_call:0
+#: field:eagle.wizard.new_opportunity,date_meeting:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Date"
+msgstr "Date"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_eagle_wizard_new_opportunity
+msgid "New opportunity"
+msgstr "Nouvelle opportunité"
+
+#. module: eagle_crm
+#: view:res.partner:0
+msgid "History"
+msgstr "Historique"
+
+#. module: eagle_crm
+#: field:eagle.lead,state:0
+#: field:eagle.wizard.new_opportunity,state:0
+#: field:eagle.partner2lead,state:0
+msgid "states"
+msgstr "status"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_newopportunity
+msgid "Create a new opportunity"
+msgstr "Nouvelle opportunité"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+#: field:eagle.lead,partner_contact_id:0
+#: field:eagle.wizard.new_opportunity,partner_contact_id:0
+#: field:eagle.wizard.new_opportunity,partner_id:0
+#: field:eagle.wizard.new_opportunity,partner_ids:0
+#: field:eagle.partner2lead,partner_contact_id:0
+msgid "Partner Contact"
+msgstr "Contact"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,first_name:0
+#: field:eagle.contact4partner,first_name:0
+msgid "First Name"
+msgstr "Prénom"
+
+#. module: eagle_crm
+#: field:eagle.contract,issue:0
+#: field:eagle.contract,issues:0
+msgid "Contracts issue"
+msgstr "Incidents"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+#: view:res.partner.contact:0
+msgid "General"
+msgstr "Général"
+
+#. module: eagle_crm
+#: view:eagle.contact4opport:0
+#: view:eagle.contact4partner:0
+msgid "Photo"
+msgstr "Photo"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_contract_2_corr_opportunities
+msgid "Corr. opportunities"
+msgstr "Opportunités corr."
+
+#. module: eagle_crm
+#: help:eagle.contact4opport,active:0
+#: help:eagle.contact4partner,active:0
+msgid "If the active field is set to true,				 it will allow you to hide the partner contact without removing it."
+msgstr "If the active field is set to true,				 it will allow you to hide the partner contact without removing it."
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Open"
+msgstr "Ouvert"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+msgid "Issues"
+msgstr "Incidents"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,birthdate:0
+#: field:eagle.contact4partner,birthdate:0
+msgid "Birth Date"
+msgstr "Date de naissance"
+
+#. module: eagle_crm
+#: field:eagle.lead,city:0
+msgid "City"
+msgstr "Ville"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Categorization"
+msgstr "Catégorisation"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_project_issue
+msgid "Project Issue"
+msgstr "Incident de projet"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: eagle_crm
+#: selection:crm.lead,lead_statut:0
+#: selection:eagle.lead,lead_statut:0
+#: selection:eagle.wizard.new_opportunity,lead_statut:0
+msgid "Late"
+msgstr "Tard"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_newcontact4opport
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_newcontact4partner
+msgid "Create a Contact"
+msgstr "Création d'un contact"
+
+#. module: eagle_crm
+#: view:eagle.contract:0
+msgid "Call"
+msgstr "Appel"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2offre
+msgid "Offre"
+msgstr "Offre"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2opportunité
+msgid "Affaire"
+msgstr "Affaire"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_crm_partner2issue
+msgid "Issue"
+msgstr "Incident"
+
+#. module: eagle_crm
+#: field:eagle.lead,function:0
+msgid "Function"
+msgstr "Fonction"
+
+#. module: eagle_crm
+#: view:eagle.partner2lead:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Description"
+msgstr "Description"
+
+#. module: eagle_crm
+#: field:eagle.wizard.new_opportunity,probability:0
+msgid "Probability (%)"
+msgstr "Probabilité (%)"
+
+#. module: eagle_crm
+#: selection:crm.lead,lead_statut:0
+#: selection:eagle.lead,lead_statut:0
+#: selection:eagle.wizard.new_opportunity,lead_statut:0
+msgid "Running"
+msgstr "En cours"
+
+#. module: eagle_crm
+#: model:ir.module.module,shortdesc:eagle_crm.module_meta_information
+msgid "Eagle View, management module"
+msgstr "Eagle View, management module"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:eagle.contract:0
+#: field:eagle.lead,categ_id:0
+#: field:eagle.wizard.new_opportunity,categ_id:0
+msgid "Meeting Type"
+msgstr "Type de réunion"
+
+#. module: eagle_crm
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+msgid "Address"
+msgstr "Adresse"
+
+#. module: eagle_crm
+#: field:eagle.contact4opport,country_id:0
+#: field:eagle.contact4partner,country_id:0
+msgid "Nationality"
+msgstr "Nationalité"
+
+#. module: eagle_crm
+#: view:crm.phonecall:0
+#: view:eagle.contract:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Phone Calls"
+msgstr "Appels téléphoniques"
+
+#. module: eagle_crm
+#: code:addons/eagle_crm/wizard/crm_lead_to_opportunity.py:98
+#: code:addons/eagle_crm/wizard/crm_lead_to_opportunity.py:109
+#: code:addons/eagle_crm/wizard/new_opportunity.py:252
+#: view:crm.lead:0
+#: view:eagle.contract:0
+#: field:eagle.contract,opportunity_id:0
+#: selection:eagle.lead,type:0
+#: selection:eagle.wizard.new_opportunity,type:0
+#: selection:eagle.partner2lead,type:0
+#, python-format
+msgid "Opportunity"
+msgstr "Affaire"
+
+#. module: eagle_crm
+#: field:eagle.lead,partner_address_id:0
+msgid "Partner Address"
+msgstr "Adresse du partenaire"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Schedule a Meeting"
+msgstr "Planifier un rendez vous"
+
+#. module: eagle_crm
+#: field:eagle.lead,country_id:0
+msgid "Country"
+msgstr "Pays"
+
+#. module: eagle_crm
+#: field:eagle.lead,alarm_id:0
+#: field:eagle.wizard.new_opportunity,alarm_id:0
+msgid "Alarm"
+msgstr "Alarme"
+
+#. module: eagle_crm
+#: view:crm.lead:0
+#: view:eagle.contract:0
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Convert to Opportunity"
+msgstr "Convertir en opportunité"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_contract_2_corr_phonecalls
+msgid "Corr. Phone Calls"
+msgstr "Corr. Appels téléphoniques"
+
+#. module: eagle_crm
+#: view:res.partner:0
+#: view:res.partner.contact:0
+msgid "Call Summary"
+msgstr "Résumé de l'appel"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_crm_lead
+msgid "crm.lead"
+msgstr "crm.lead"
+
+#. module: eagle_crm
+#: model:ir.model,name:eagle_crm.model_crm_lead2opportunity
+msgid "Lead To Opportunity"
+msgstr "Conversion d'une piste en opportunité"
+
+#. module: eagle_crm
+#: selection:eagle.lead,priority:0
+#: selection:eagle.wizard.new_opportunity,priority:0
+#: selection:eagle.partner2lead,priority:0
+msgid "High"
+msgstr "Haute"
+
+#. module: eagle_crm
+#: field:eagle.lead,section_id:0
+#: field:eagle.wizard.new_opportunity,section_id:0
+#: field:eagle.partner2lead,section_id:0
+msgid "Sales Team"
+msgstr "Département"
+
+#. module: eagle_crm
+#: field:eagle.lead,street:0
+msgid "Street"
+msgstr "Rue"
+
+#. module: eagle_crm
+#: model:ir.actions.act_window,name:eagle_crm.eagle_action_contract_2_corr_meetings
+msgid "Corr. Meetings"
+msgstr "Corr. Rendez-vous"
+
+
+#. module: eagle_crm
+#: field:eagle.lead,duration:0
+#: field:eagle.wizard.new_opportunity,duration:0
+msgid "Duration"
+msgstr "Durée"
+
+#. module: crm
+#: view:crm.lead:0
+#: selection:crm.lead,type:0
+#: selection:crm.lead.report,type:0
+msgid "Lead"
+msgstr "Piste"
+
+#. module: crm
+#: view:crm.lead:0
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_leads_all
+#: model:ir.ui.menu,name:crm.menu_crm_case_categ0_act_leads
+#: model:process.node,name:crm.process_node_leads0
+msgid "Leads"
+msgstr "Pistes"
+
+#. module: crm
+#: view:res.partner:0
+#: field:res.partner,opportunity_ids:0
+msgid "Leads and Opportunities"
+msgstr "Pistes et oppportunités"
+
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "#Opportunities"
+msgstr "Nb. d'opportunités"
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "Opportunity Analysis"
+msgstr "Analyse des opportunités"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:278
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:197
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:231
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:299
+#: view:crm.lead2opportunity:0
+#: view:crm.partner2opportunity:0
+#: model:ir.actions.act_window,name:crm.action_crm_lead2opportunity
+#: model:ir.actions.act_window,name:crm.action_view_crm_partner2opportunity
+#: model:ir.actions.act_window,name:crm.crm_partner2opportunity
+#, python-format
+msgid "Create Opportunity"
+msgstr "Créer une opportunité"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:88
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:98
+#: code:addons/crm/wizard/crm_partner_to_opportunity.py:101
+#: code:addons/crm/wizard/crm_phonecall_to_opportunity.py:117
+#: view:crm.lead:0
+#: selection:crm.lead,type:0
+#: selection:crm.lead.report,type:0
+#: field:crm.lead2opportunity,name:0
+#: field:crm.meeting,opportunity_id:0
+#: field:crm.phonecall,opportunity_id:0
+#, python-format
+msgid "Opportunity"
+msgstr "Affaire"
+
+#. module: crm
+#: view:crm.phonecall2opportunity:0
+msgid "Convert To Opportunity "
+msgstr "Convertir en opportunité "
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.merge.opportunity,opportunity_ids:0
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_oppor11
+#: model:ir.ui.menu,name:crm.menu_crm_case_opp
+#: model:process.node,name:crm.process_node_opportunities0
+msgid "Opportunities"
+msgstr "Opportunités"
+

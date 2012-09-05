@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+			<wizard
+				string="LP Synchronization"
+				model="project.project"
+				name="lp_sync"
+				id="wizard_lp_sync"/>        
+	</data>
+</openerp>

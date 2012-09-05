@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="0">
+
+        <!-- Remote Printer -->
+        
+		<record model="res.partner.category" id="dm_remote_edition_print_dealer">
+				<field name="name" eval="&quot;Printer &quot;"/>
+				<field name="parent_id" ref="dm.res_partner_category_directmarketing0" />
+		</record>
+        
+       <!-- Mail Service Type -->
+       
+     	<record model="dm.mail_service.type" id="dm_remote_edition_mail_service_type">
+            <field name="name" eval="&quot;Printing Service&quot;"/>
+            <field name="code" eval="&quot;print_service&quot;"/>
+        </record>
+		
+       <!-- Server Action -->
+       
+		<record id="ir_actions_server_generatedocumentjob0" model="ir.actions.server">
+            <field eval="&quot;&quot;&quot;from dm_edition import dm_edition \naction = dm_edition.generate_document_job(cr, uid, obj.id, context)&quot;&quot;&quot;" name="code"/>
+			<field eval="5" name="sequence"/>
+			<field eval="&quot;&quot;&quot;code&quot;&quot;&quot;" name="state"/>
+			<field eval="&quot;&quot;&quot;ir.actions.server&quot;&quot;&quot;" name="type"/>
+			<field name="model_id" ref="dm.model_dm_campaign_document"/>
+			<field eval="[(6,0,[])]" name="child_ids"/>
+			<field eval="0" name="dm_action"/>
+			<field eval="&quot;&quot;&quot;True&quot;&quot;&quot;" name="condition"/>
+			<field eval="&quot;&quot;&quot;Generate Document Job&quot;&quot;&quot;" name="name"/>
+		</record>
+		
+    </data>
+</openerp>

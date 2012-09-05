@@ -1,0 +1,110 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:52+0000\n"
+"PO-Revision-Date: 2011-08-27 13:43+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Information"
+msgstr "Información"
+
+#. module: portal_service
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases_close
+msgid "Closed Cases"
+msgstr ""
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Click on 'Get this Case' to acquire the case."
+msgstr ""
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_crm_case_open
+msgid "My opened cases"
+msgstr ""
+
+#. module: portal_service
+#: model:ir.module.module,shortdesc:portal_service.module_meta_information
+msgid "Portal Management - Service"
+msgstr ""
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases_open
+msgid "Opened Cases"
+msgstr ""
+
+#. module: portal_service
+#: model:ir.module.module,description:portal_service.module_meta_information
+msgid "Potal Management - Service company specific data."
+msgstr ""
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_support
+msgid "Support"
+msgstr "Soporte"
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "The list of all your acquired cases are in your leads menu."
+msgstr ""
+
+#. module: portal_service
+#: view:crm.case:0
+#: model:ir.actions.wizard,name:portal_service.wizard_case_get_open
+msgid "Get this Case and Open It"
+msgstr ""
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_project
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: portal_service
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Get this Case"
+msgstr ""
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases
+msgid "All Support Cases"
+msgstr ""
+
+#. module: portal_service
+#: view:crm.case.section:0
+msgid "Case Section"
+msgstr "Sección del caso"
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_crm_case_closed
+msgid "My closed cases"
+msgstr "Mis casos cerrados"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_your
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_your_projects
+msgid "Your Projects"
+msgstr "Mis proyectos"

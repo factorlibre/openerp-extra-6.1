@@ -1,0 +1,293 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* timed_groups
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-23 15:11+0000\n"
+"PO-Revision-Date: 2011-03-31 12:06+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: timed_groups
+#: field:groups.group_assignation,datetime_from:0
+msgid "Begining"
+msgstr "Inicio"
+
+#. module: timed_groups
+#: field:groups.participation,participant:0
+msgid "Participant"
+msgstr "Participante"
+
+#. module: timed_groups
+#: field:groups.group_assignation,datetime_to:0
+msgid "End"
+msgstr "Fin"
+
+#. module: timed_groups
+#: model:ir.module.module,description:timed_groups.module_meta_information
+msgid ""
+"\n"
+"Base module for extends. It serves to manage the participations time in a "
+"groups.\n"
+msgstr ""
+"\n"
+"Módulo base  para extender. Se utiliza para gestionar tiempos de "
+"participación en grupos.\n"
+
+#. module: timed_groups
+#: model:ir.module.module,shortdesc:timed_groups.module_meta_information
+msgid "Groups Management"
+msgstr "Gestión de Grupos"
+
+#. module: timed_groups
+#: help:groups.group,parent_ids:0
+msgid "The parent groups."
+msgstr "Los grupos padres."
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group,priority:0
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group_assignation_wizard,datetime_to:0
+#: view:groups.participation:0
+msgid "To"
+msgstr "Hasta"
+
+#. module: timed_groups
+#: field:groups.group,parent_ids:0
+msgid "Parents"
+msgstr "Padres"
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group,assignation_ids:0
+#: view:groups.participation:0
+#: field:groups.participation,assignation_ids:0
+msgid "Assignations"
+msgstr "Asignaciones"
+
+#. module: timed_groups
+#: constraint:groups.group:0
+msgid ""
+"When a group is member of a classification, it must have only one parent."
+msgstr ""
+"Cuando un grupo es miembro de una clasificación, sólo puede tener un padre."
+
+#. module: timed_groups
+#: field:groups.group_assignation,group_id:0
+#: view:groups.group_assignation_wizard:0
+#: view:groups.participation:0
+msgid "Group"
+msgstr "Grupo"
+
+#. module: timed_groups
+#: help:groups.group,name:0
+msgid "The group name."
+msgstr "El nombre del grupo."
+
+#. module: timed_groups
+#: help:groups.group,children_ids:0
+msgid "The subgroups of the group."
+msgstr "Subgrupos del grupo."
+
+#. module: timed_groups
+#: field:groups.participation,name:0
+msgid "Ref"
+msgstr "Ref"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Parent groups"
+msgstr "Grupos padres"
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group_assignation,participation_id:0
+msgid "Participation"
+msgstr "Participación"
+
+#. module: timed_groups
+#: field:groups.group,name2:0
+msgid "Complete name"
+msgstr "Nombre completo"
+
+#. module: timed_groups
+#: code:addons/timed_groups/timed_groups.py:333
+#: code:addons/timed_groups/timed_groups.py:475
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (copia)"
+
+#. module: timed_groups
+#: view:groups.participation:0
+msgid "Participation name"
+msgstr "Nombre de la participatión"
+
+#. module: timed_groups
+#: view:groups.group_assignation_wizard:0
+msgid "Create assignations"
+msgstr "Crear asignaciones"
+
+#. module: timed_groups
+#: field:groups.group,participants:0
+#: field:groups.group_assignation_wizard,group_id:0
+msgid "unknown"
+msgstr "desconocido"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Parents Group"
+msgstr "Grupos padres"
+
+#. module: timed_groups
+#: help:groups.participation,participant:0
+msgid "The contact of the participation."
+msgstr "El contacto de la participación."
+
+#. module: timed_groups
+#: view:groups.group:0
+#: view:groups.participation:0
+#: field:groups.participation,group_ids:0
+#: model:ir.actions.act_window,name:timed_groups.groups_group_list_act
+#: model:ir.ui.menu,name:timed_groups.groups_group_mi
+#: model:ir.ui.menu,name:timed_groups.groups_mi
+msgid "Groups"
+msgstr "Grupos"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Participation assignation"
+msgstr "Asignación de la participación"
+
+#. module: timed_groups
+#: field:groups.group_assignation_wizard,participation_ids:0
+#: view:groups.participation:0
+#: model:ir.actions.act_window,name:timed_groups.groups_participation_list_act
+#: model:ir.ui.menu,name:timed_groups.groups_participation_mi
+msgid "Participations"
+msgstr "Participaciones"
+
+#. module: timed_groups
+#: model:ir.model,name:timed_groups.model_groups_group
+msgid "groups.group"
+msgstr "groups.group"
+
+#. module: timed_groups
+#: model:ir.model,name:timed_groups.model_groups_group_assignation
+msgid "groups.group_assignation"
+msgstr "groups.group_assignation"
+
+#. module: timed_groups
+#: field:groups.group,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: timed_groups
+#: model:ir.model,name:timed_groups.model_groups_group_assignation_wizard
+msgid "groups.group_assignation_wizard"
+msgstr "groups.group_assignation_wizard"
+
+#. module: timed_groups
+#: view:groups.group_assignation_wizard:0
+#: model:ir.actions.act_window,name:timed_groups.groups_group_assignation_wizard_list_act
+msgid "Group Assignation Wizard"
+msgstr "Asistente de asignación de grupo"
+
+#. module: timed_groups
+#: field:groups.group,creation:0
+msgid "Auto creation"
+msgstr "Creación automática"
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group_assignation_wizard,datetime_from:0
+#: view:groups.participation:0
+msgid "From"
+msgstr "Desde"
+
+#. module: timed_groups
+#: view:groups.participation:0
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Automatic creation"
+msgstr "Creación automática"
+
+#. module: timed_groups
+#: constraint:groups.group:0
+msgid "Error ! You can not create recursive groups."
+msgstr "¡Error! No puede crear grupos recursivos."
+
+#. module: timed_groups
+#: constraint:groups.group_assignation:0
+msgid ""
+"Assignation dates out of domain of the parents or parent assignation does "
+"not exist yet!"
+msgstr ""
+"¡Asignación de fechas fuera del dominio de sus padres, o todavía no tiene "
+"asignado ningún padre!"
+
+#. module: timed_groups
+#: field:groups.group_assignation_wizard,participation_domain:0
+msgid "Participations domain"
+msgstr "Dominio de las participaciones"
+
+#. module: timed_groups
+#: view:groups.group:0
+#: field:groups.group,classification:0
+msgid "Classification"
+msgstr "Clasificación"
+
+#. module: timed_groups
+#: field:groups.participation,group_txt:0
+msgid "Groups with assignation"
+msgstr "Grupos asignados"
+
+#. module: timed_groups
+#: model:ir.model,name:timed_groups.model_groups_participation
+msgid "groups.participation"
+msgstr "groups.participation"
+
+#. module: timed_groups
+#: view:groups.participation:0
+msgid "Group Assignations"
+msgstr "Asignaciones de grupo"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Parent Groups"
+msgstr "Grupos padre"
+
+#. module: timed_groups
+#: sql_constraint:groups.group_assignation:0
+msgid "Date to is minor than date from"
+msgstr "La fecha desde es anterior a la fecha hasta"
+
+#. module: timed_groups
+#: view:groups.group_assignation_wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: timed_groups
+#: view:groups.group:0
+msgid "Group name"
+msgstr "Nombre del grupo"
+
+#. module: timed_groups
+#: field:groups.group,children_ids:0
+msgid "Children"
+msgstr "Hijos"

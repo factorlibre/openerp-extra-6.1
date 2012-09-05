@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!--
+  File: contracts_view.xml
+  Module: eagle_project
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="eagle_view_project_form_inherit_1">
+			<field name="name">Eagle Project Form 1</field>
+			<field name="model">project.project</field>
+			<field name="inherit_id" ref="project.edit_project"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<group name="misc" position="after">
+                    <group col="2" colspan="2" name="contracts">
+                        <separator colspan="2" string="Contract"/>
+                        <field name="contract_id" select="1" groups="base.group_multi_company" string="Linked to"/>
+                        <field name="project_use" select="1" groups="base.group_multi_company"/>
+                    </group>
+				</group>
+			</field>
+		</record>
+
+        <record model="ir.ui.view" id="eagle_view_project_tree">
+            <field name="name">Eagle Project List</field>
+            <field name="model">project.project</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="red:date and (date&lt;current_date) and (state in ('open'));blue:state in ('draft','pending');grey: state in ('close','cancelled')" string="Projects">
+                    <field name="sequence" invisible="1"/>
+                    <field name="date" invisible="1"/>
+                    <field name="name" string="Project Name"/>
+                    <field name="user_id" string="Project Manager"/>
+                    <field name="partner_id" string="Partner"/>
+                    <field name="planned_hours" widget="float_time"/>
+                    <field name="total_hours" widget="float_time"/>
+                    <field name="effective_hours" widget="float_time"/>
+                    <field name="progress_rate" widget="progressbar"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+<!-- 	Removed 2011-04-10/Cyp for Jae
+		<act_window 
+			domain="[('contract_id', '=', active_id)]" 
+			id="act_contract_2_corr_projects"
+			name="Corr. projects" 
+			view_id="ons_view_project_tree"
+			res_model="project.project" 
+			src_model="ons.contract"/>
+-->
+		<act_window 
+			domain="[('contract_id', '=', active_id)]" 
+			id="act_contract_2_all_tasks"
+			name="All Tasks"
+			res_model="project.task"
+			src_model="eagle.contract"/>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id),('user_id','=',uid)]" 
+			id="act_contract_2_my_tasks"
+			name="My Tasks"
+			res_model="project.task"
+			src_model="eagle.contract"/>
+
+		<record model="ir.ui.view" id="eagle_view_task_work_inherit">
+			<field name="name">Eagle Project Task Works View</field>
+			<field name="model">project.task.work</field>
+			<field name="inherit_id" ref="project.view_task_work_tree"/>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<field name="user_id" position="after">
+					<field name="ons_hrtif_changed" />
+					<field name="ons_hrtif_to_invoice" attrs="{'readonly':[('ons_hrtif_changed','=',False)]}"/>
+					<field name="ons_hrtif_why_chg" attrs="{'readonly':[('ons_hrtif_changed','=',False)],'required':[('ons_hrtif_changed','&lt;&gt;',False)]}"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_task_work_inherit">
+			<field name="name">Eagle Project Task View</field>
+			<field name="model">project.task</field>
+			<field name="inherit_id" ref="project.view_task_form2"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="date" position="after">
+					<field name="ons_hrtif_changed" />
+					<field name="ons_hrtif_to_invoice" attrs="{'readonly':[('ons_hrtif_changed','=',False)]}"/>
+					<field name="ons_hrtif_why_chg" attrs="{'readonly':[('ons_hrtif_changed','=',False)],'required':[('ons_hrtif_changed','&lt;&gt;',False)]}"/>
+				</field>
+			</field>
+		</record>
+
+	</data>
+</openerp>

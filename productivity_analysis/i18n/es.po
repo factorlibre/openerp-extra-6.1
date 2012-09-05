@@ -1,0 +1,187 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 13:30+0000\n"
+"PO-Revision-Date: 2011-08-27 14:05+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,model:0
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: productivity_analysis
+#: model:ir.ui.menu,name:productivity_analysis.menu_productivity_reporting
+msgid "Reporting"
+msgstr "Informes"
+
+#. module: productivity_analysis
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: productivity_analysis
+#: model:ir.actions.wizard,name:productivity_analysis.wizard_productivity_analysis_print
+#: model:ir.module.module,shortdesc:productivity_analysis.module_meta_information
+#: model:ir.ui.menu,name:productivity_analysis.menu_productivity_reporting_analysis
+#: model:ir.ui.menu,name:productivity_analysis.wiz_productivity_reporting_analysis
+msgid "Productivity Analysis"
+msgstr ""
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,type2:0
+msgid "Modifications"
+msgstr ""
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,type2:0
+msgid "Creations"
+msgstr ""
+
+#. module: productivity_analysis
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: productivity_analysis
+#: model:ir.actions.report.xml,name:productivity_analysis.report_productivity_analysis_models
+msgid "Users Productivity Analysis"
+msgstr ""
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,type:0
+msgid "Week"
+msgstr "Semana"
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,type2:0
+msgid "Analysis Value"
+msgstr ""
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,date1:0
+msgid "Start of period"
+msgstr "Inicio del período"
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,model:0
+msgid "Object"
+msgstr "Objeto"
+
+#. module: productivity_analysis
+#: wizard_button:productivity_analysis.models.print,init,report:0
+msgid "Print Analysis"
+msgstr ""
+
+#. module: productivity_analysis
+#: field:productivity_analysis.models,name:0
+msgid "Model Name"
+msgstr "Nombre de modelo"
+
+#. module: productivity_analysis
+#: field:productivity_analysis.models,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,type:0
+msgid "Day"
+msgstr "Día"
+
+#. module: productivity_analysis
+#: model:ir.model,name:productivity_analysis.model_productivity_analysis_models
+msgid "Objects for Productivity Analysis"
+msgstr ""
+
+#. module: productivity_analysis
+#: model:ir.ui.menu,name:productivity_analysis.menu_productivity_reporting_def
+msgid "Definition"
+msgstr "Definición"
+
+#. module: productivity_analysis
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: productivity_analysis
+#: model:ir.ui.menu,name:productivity_analysis.menu_productivity_reporting_models
+msgid "Available Models"
+msgstr "Modelos disponibles"
+
+#. module: productivity_analysis
+#: model:ir.actions.act_window,name:productivity_analysis.action_productivity_analysis_models_form
+msgid "productivity_analysis.models.action.form"
+msgstr ""
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,model:0
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,date2:0
+msgid "End of period"
+msgstr "Fin del período"
+
+#. module: productivity_analysis
+#: field:productivity_analysis.models,model:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: productivity_analysis
+#: wizard_view:productivity_analysis.models.print,init:0
+msgid "Select period"
+msgstr "Seleccionar periodo"
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,users_id:0
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: productivity_analysis
+#: model:ir.module.module,description:productivity_analysis.module_meta_information
+msgid ""
+"A module that analyse the productivity of Tiny ERP users in terms of "
+"creation and modification of objects. It is able to render graphs, compare "
+"users, eso."
+msgstr ""
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,model:0
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: productivity_analysis
+#: wizard_field:productivity_analysis.models.print,init,type:0
+msgid "Period"
+msgstr "Periodo"
+
+#. module: productivity_analysis
+#: selection:productivity_analysis.models.print,init,type:0
+msgid "Month"
+msgstr "Mes"
+
+#. module: productivity_analysis
+#: view:productivity_analysis.models:0
+msgid "Productivity Analysis Objects"
+msgstr ""
+
+#. module: productivity_analysis
+#: wizard_button:productivity_analysis.models.print,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<record model="ir.ui.view" id="view_dm_reject_trademark_type_form">
+        <field name="name">dm.as.reject.inherit</field>
+        <field name="model">dm.as.reject</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_as_reject.view_dm_reject_form"/>
+        <field name="arch" type="xml">
+           <field name= "to_disable" position="after">
+				<newline/>
+					<group colspan="4" attrs="{'invisible':[('reject_type','!=','trademark')]}">
+                        <separator string="Trademarks" colspan="4"/>
+						<field name="trademark_ids" colspan="4" nolabel="1" height="390"/>
+					</group>
+			</field>
+        </field>
+    </record>
+    
+     <record model="ir.ui.view" id="view_dm_reject_trademark_segmentation_form">
+        <field name="name">dm.address.segmentation.inherit</field>
+        <field name="model">dm.address.segmentation</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_as_reject.view_dm_reject_segmentation_form"/>
+        <field name="arch" type="xml">
+ 			<field name="active_only" position="after">
+	  			<field name="trademark_id"/>
+ 			</field>
+        </field>
+    </record>    
+    
+</data>
+</openerp>

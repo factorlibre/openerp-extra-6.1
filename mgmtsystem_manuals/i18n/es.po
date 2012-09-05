@@ -1,0 +1,45 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-09-30 20:34+0000\n"
+"PO-Revision-Date: 2012-06-29 01:12+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: mgmtsystem_manuals
+#: model:ir.module.module,description:mgmtsystem_manuals.module_meta_information
+msgid ""
+"\n"
+"          This module adds a menu item \"Manual\" and is a dependencies of:\n"
+"             * wiki_environment_manual\n"
+"             * wiki_health_safety_manual\n"
+"             * mgmtsystem_quality\n"
+"    "
+msgstr ""
+
+#. module: mgmtsystem_manuals
+#: model:ir.actions.act_window,help:mgmtsystem_manuals.action_manuals
+msgid "Manuals of your management systems."
+msgstr ""
+
+#. module: mgmtsystem_manuals
+#: model:ir.actions.act_window,name:mgmtsystem_manuals.action_manuals
+#: model:ir.ui.menu,name:mgmtsystem_manuals.menu_mgmtsystem_manuals_manuals
+msgid "Manuals"
+msgstr ""
+
+#. module: mgmtsystem_manuals
+#: model:ir.module.module,shortdesc:mgmtsystem_manuals.module_meta_information
+msgid "Management System - Manual"
+msgstr ""

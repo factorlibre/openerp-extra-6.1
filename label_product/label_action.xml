@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+		<record id="act_picking_product_label_wizard" model="ir.actions.server">
+			<field name="code">
+wiz_obj = self.pool.get('label.wizard.product')
+pick_obj = self.pool.get('stock.picking')
+lines = []
+for pick in pick_obj.browse(cr, uid, context['active_ids']):
+	for m in pick.move_lines:
+		lines.append((0, 0, {
+			'product_id': m.product_id.id,
+			'quantity': m.product_qty,
+		}))
+wiz_id = wiz_obj.create(cr, uid, {'line_ids': lines})
+
+#this act_window will open the window of the lines
+action = {
+	'view_type': 'form',
+    'view_mode': 'form',
+    'res_id': wiz_id,
+    'res_model': 'label.wizard.product',
+    'type': 'ir.actions.act_window',
+	'target': 'new',
+}</field>
+			<field name="state">code</field>
+			<field name="type">ir.actions.server</field>
+			<field name="model_id" ref="stock.model_stock_picking"/>
+			<field name="name">Print Labels</field>
+		</record>
+
+	    <record id="ir_picking_product_label_wizard" model="ir.values">
+	    	<field eval="'client_action_multi'" name="key2"/>
+	        <field eval="'stock.picking'" name="model"/>
+	        <field name="name">Print Labels</field>
+	        <field eval="'ir.actions.server,'+str(act_picking_product_label_wizard)" name="value"/>
+	        <field eval="True" name="object"/>
+	    </record>
+	</data>
+</openerp>

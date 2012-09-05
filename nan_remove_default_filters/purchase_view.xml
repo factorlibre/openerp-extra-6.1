@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="purchase.purchase_form_action" model="ir.actions.act_window">
+            <field name="context">{'search_default_approved': 1,'search_default_create_uid':False}</field>
+        </record>
+        <record model="ir.actions.act_window" id="purchase_requisition.action_purchase_requisition">
+            <field name="context">{"search_default_create_uid":uid,'search_default_draft': 1}</field>
+        </record>
+    </data>
+</openerp>

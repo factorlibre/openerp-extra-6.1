@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" alignment="RIGHT"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="P4" rightIndent="0.0" leftIndent="54.0" fontName="Times-Roman"/>
+    <paraStyle name="P5" rightIndent="0.0" leftIndent="54.0" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="P6" fontName="Times-Bold" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="P8" fontName="Times-Roman" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P9" fontName="Helvetica"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="10.0" leading="13"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P13" fontName="Helvetica" alignment="RIGHT"/>
+    <paraStyle name="P14" fontName="Helvetica" alignment="JUSTIFY" leftIndent="70"/>
+    <paraStyle name="P15" fontName="Times-Roman" alignment="RIGHT"/>
+    <paraStyle name="P16" fontName="Helvetica" textColor="#000000"/>
+    <paraStyle name="P17" fontName="Helvetica-Bold" textColor="#000000"/>
+    <paraStyle name="P18" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P19" rightIndent="0.0" leftIndent="54.0" fontName="Times-Roman"/>
+    <paraStyle name="P20" rightIndent="0.0" leftIndent="54.0" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="P9">[[repeatIn(carnet_before(),'ata_carnet')]]</para>
+    <para style="P18">
+      <font color="white"> </font>
+    </para>
+    <para style="P13">[[ ata_carnet['partner_name'] or removeParentNode('para') ]]</para>
+    <para style="P13">[[ ata_carnet['partner_address'] or removeParentNode('para') ]]</para>
+    <para style="P9">
+      <font color="white"> </font>
+    </para>
+    <para style="P9">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font face="Helvetica" size="10.0"/>
+      <font face="Helvetica" size="10.0">Liège, le </font>
+      <font face="Helvetica" size="11.0"/>
+      <font face="Times-Roman" size="11.0">[[ time.strftime('%Y-%m-%d') ]]</font>
+    </para>
+    <para style="P13">
+      <font color="white"> </font>
+    </para>
+    <para style="P10">Madame/Monsieur,</para>
+    <para style="P10">
+      <font color="white"> </font>
+    </para>
+    <para style="P9">
+      <font face="Helvetica-Bold" size="10.0">Concerne:</font>
+      <font face="Helvetica-Bold" size="10.0"> votre carnet A.T.A. n° </font>
+      <font face="Times-Bold" size="10.0"/>
+      <font face="Helvetica-Bold" size="10.0">[[ ata_carnet['name'] ]]</font>
+      <font face="Times-Roman" size="10.0">([[ata_carnet['type'] ]])</font>
+    </para>
+    <para style="P9">
+      <font face="Times-Roman" size="10.0"/>
+    </para>
+    <para style="P9">
+      <font face="Times-Roman" size="10.0"/>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P14">
+      <font face="Helvetica-Bold" size="10.0">Date d’émission : </font>
+      <font face="Helvetica-Bold" size="10.0"/>
+      <font face="Helvetica-Bold" size="10.0">[[ata_carnet['creation_date'] or removeParentNode('para') ]]</font>
+    </para>
+    <para style="P14">
+      <font face="Helvetica-Bold">Date </font>
+      <font face="Times-Bold">d’expiration : </font>
+      <font face="Helvetica-Bold"/>
+      <font face="Helvetica-Bold" size="10.0">[[ata_carnet['validity_date'] or removeParentNode('para') ]]</font>
+    </para>
+
+    <para style="P12">
+      <font face="Times-Roman"/>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">Le carnet sous rubrique arrive à échéance.</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">A toutes fins utiles, nous croyons devoir vous rappeler deux points fondamentaux :</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font face="Times-Roman" size="10.0">1.  Toutes les marchandises doivent être réexportées de l'étranger et réimportées en Belgique </font>
+      <font face="Times-Bold" size="10.0">AVANT</font>
+      <font face="Times-Roman" size="10.0"> la date limite de validité du carnet.</font>
+    </para>
+    <para style="P5">2.  Veuillez contrôler si cette réexportation et cette réimportation ont bien été constatées par les douanes respectives au moyen d'un cachet qu'elles apposent à l'endroit réservé.</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="Standard">
+      <font face="Times-Roman" size="10.0">Si ce n'est pas le cas, nous vous conseillons de les représenter, </font>
+      <font face="Times-Bold" size="10.0">avant la date d'échéance</font>
+      <font face="Times-Roman" size="10.0">, à un bureau de douane belge pour apporter la preuve de leur présence en UE.</font>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">Pour vous éviter tout problème, nous vous invitons à suivre ces conseils avec diligence et ensuite nous renvoyer le carnet concerné.</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">En espérant ainsi vous rendre service, nous vous remercions de votre bienveillante attention et vous prions de croire, Madame, Monsieur, à nos meilleures salutations.</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">Chantale Cool,</para>
+    <para style="P8">Service « Légalisations »</para>
+    <para style="P8">Tél. : 04/341.91.91</para>
+    <para style="P8">
+      Courriel : cc@cciconnect.be
+    </para>
+  </story>
+</document>

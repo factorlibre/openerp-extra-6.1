@@ -1,0 +1,304 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_extract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:30:38+0000\n"
+"PO-Revision-Date: 2009-11-25 07:30:38+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_extract
+#: model:ir.actions.act_window,name:dm_extract.action_dm_address_segmentation_form
+#: model:ir.ui.menu,name:dm_extract.menu_action_dm_address_segmentation_form
+msgid "All Segmentations"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.model,name:dm_extract.model_dm_address_text_criteria
+msgid "address Segmentation Textual Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.boolean_criteria,operator:0
+msgid "is not"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.campaign.proposition.segment,segmentation_id:0
+msgid "Segments"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.campaign.proposition.segment:0
+msgid "Extraction"
+msgstr ""
+
+#. module: dm_extract
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.module.module,description:dm_extract.module_meta_information
+msgid "\n"
+"           \n"
+"            "
+msgstr ""
+
+#. module: dm_extract
+#: wizard_field:wizard.extract.customer,init,name:0
+msgid "Customer File Name"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Segmentation Informations"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "General"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,name:0
+msgid "Name"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Customers"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,address_boolean_criteria_ids:0
+msgid "Address Boolean Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+#: field:dm.address.segmentation,notes:0
+msgid "Description"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,address_date_criteria_ids:0
+msgid "Address Date Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.boolean_criteria,field_id:0
+#: field:dm.address.date_criteria,field_id:0
+#: field:dm.address.numeric_criteria,field_id:0
+#: field:dm.address.text_criteria,field_id:0
+msgid "Address Field"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.text_criteria,operator:0
+msgid "ilike"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.model,name:dm_extract.model_dm_address_boolean_criteria
+msgid "address Segmentation Boolean Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.date_criteria,value:0
+msgid "Date"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.date_criteria,operator:0
+msgid "before"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.boolean_criteria,value:0
+msgid "True"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Customer Date Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,address_numeric_criteria_ids:0
+msgid "Address Numeric Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.date_criteria,operator:0
+msgid "after"
+msgstr ""
+
+#. module: dm_extract
+#: wizard_button:wizard.extract.customer,init,ok:0
+#: wizard_button:wizard.extract.customer,ok,end:0
+msgid "Ok"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Compute Sql Query"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.model,name:dm_extract.model_dm_address_numeric_criteria
+msgid "address Segmentation Numeric Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Customer Textual Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Customer Numeric Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.model,name:dm_extract.model_dm_address_date_criteria
+msgid "address Segmentation Date Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.boolean_criteria,segmentation_id:0
+#: field:dm.address.date_criteria,segmentation_id:0
+#: field:dm.address.numeric_criteria,segmentation_id:0
+#: view:dm.address.segmentation:0
+#: field:dm.address.text_criteria,segmentation_id:0
+#: view:dm.campaign.proposition.segment:0
+#: model:ir.model,name:dm_extract.model_dm_address_segmentation
+msgid "Segmentation"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.boolean_criteria,value:0
+#: field:dm.address.numeric_criteria,value:0
+#: field:dm.address.text_criteria,value:0
+msgid "Value"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.date_criteria,operator:0
+#: selection:dm.address.numeric_criteria,operator:0
+msgid "equals"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.boolean_criteria,operator:0
+#: field:dm.address.date_criteria,operator:0
+#: field:dm.address.numeric_criteria,operator:0
+#: field:dm.address.text_criteria,operator:0
+msgid "Operator"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.numeric_criteria,operator:0
+msgid "smaller then"
+msgstr ""
+
+#. module: dm_extract
+#: wizard_field:wizard.extract.customer,ok,number_pa:0
+msgid "Number of customers extracted"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.boolean_criteria,operator:0
+msgid "is"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.text_criteria,operator:0
+msgid "like"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,address_text_criteria_ids:0
+msgid "Address Textual Criteria"
+msgstr ""
+
+#. module: dm_extract
+#: field:dm.address.segmentation,code:0
+msgid "Code"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.boolean_criteria,value:0
+msgid "False"
+msgstr ""
+
+#. module: dm_extract
+#: selection:dm.address.numeric_criteria,operator:0
+msgid "bigger then"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+#: field:dm.address.segmentation,sql_query:0
+msgid "SQL Query"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.module.module,shortdesc:dm_extract.module_meta_information
+msgid "DM Extract"
+msgstr ""
+
+#. module: dm_extract
+#: wizard_field:wizard.extract.customer,init,code:0
+msgid "Customer File Code"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Segmentations"
+msgstr ""
+
+#. module: dm_extract
+#: model:ir.actions.wizard,name:dm_extract.wizard_extract_customers
+#: wizard_view:wizard.extract.customer,ok:0
+msgid "Extract Customers"
+msgstr ""
+
+#. module: dm_extract
+#: wizard_view:wizard.extract.customer,init:0
+msgid "Customers Extraction"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "SQL"
+msgstr ""
+
+#. module: dm_extract
+#: wizard_button:wizard.extract.customer,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: dm_extract
+#: view:dm.address.segmentation:0
+msgid "Customer Boolean Criteria"
+msgstr ""
+

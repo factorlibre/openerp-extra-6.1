@@ -1,0 +1,47 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-04 09:01+0200\n"
+"PO-Revision-Date: 2011-07-04 08:49+0200\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /tmp/tmp.oNi5unIrTL:765 /tmp/tmp.oNi5unIrTL:785 /tmp/tmp.oNi5unIrTL:949
+#: /tmp/tmp.oNi5unIrTL:969 /tmp/tmp.oNi5unIrTL:1133 /tmp/tmp.oNi5unIrTL:1153
+msgid "Journal"
+msgstr "Diario"
+
+#: /tmp/tmp.oNi5unIrTL:781 /tmp/tmp.oNi5unIrTL:965 /tmp/tmp.oNi5unIrTL:1149
+msgid "Date"
+msgstr "Fecha"
+
+#: /tmp/tmp.oNi5unIrTL:789 /tmp/tmp.oNi5unIrTL:973 /tmp/tmp.oNi5unIrTL:1157
+msgid "Account"
+msgstr "Cuenta"
+
+#: /tmp/tmp.oNi5unIrTL:793 /tmp/tmp.oNi5unIrTL:977 /tmp/tmp.oNi5unIrTL:1161
+msgid "Move"
+msgstr "Asiento"
+
+#: /tmp/tmp.oNi5unIrTL:797 /tmp/tmp.oNi5unIrTL:981 /tmp/tmp.oNi5unIrTL:1165
+msgid "Description"
+msgstr "Descripción"
+
+#: /tmp/tmp.oNi5unIrTL:801 /tmp/tmp.oNi5unIrTL:985 /tmp/tmp.oNi5unIrTL:1169
+msgid "Debit"
+msgstr "Debe"
+
+#: /tmp/tmp.oNi5unIrTL:805 /tmp/tmp.oNi5unIrTL:989 /tmp/tmp.oNi5unIrTL:1173
+msgid "Credit"
+msgstr "Haber"

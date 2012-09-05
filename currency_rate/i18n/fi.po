@@ -1,0 +1,85 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 06:38+0000\n"
+"PO-Revision-Date: 2011-06-28 07:12+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: currency_rate
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr "Virheelliset argumentit"
+
+#. module: currency_rate
+#: wizard_button:currency.rate,init,convert:0
+msgid "Convert"
+msgstr "Muunna"
+
+#. module: currency_rate
+#: wizard_field:currency.rate,convert,rate:0
+msgid "Current Rate"
+msgstr "Nykyinen kurssi"
+
+#. module: currency_rate
+#: model:ir.actions.wizard,name:currency_rate.wizard_currency_rate
+#: model:ir.ui.menu,name:currency_rate.menu_currency_rate
+msgid "Get Currency Rate"
+msgstr "Hae valuuttakurssi"
+
+#. module: currency_rate
+#: wizard_button:currency.rate,convert,init:0
+msgid "Back"
+msgstr "Takaisin"
+
+#. module: currency_rate
+#: wizard_field:currency.rate,init,from_cur:0
+msgid "Currency From"
+msgstr "Kurssi alkaen"
+
+#. module: currency_rate
+#: wizard_field:currency.rate,convert,final_amount:0
+#: wizard_field:currency.rate,init,amount:0
+msgid "Amount"
+msgstr "Määrä"
+
+#. module: currency_rate
+#: wizard_button:currency.rate,convert,end:0
+msgid "Exit"
+msgstr "Lopeta"
+
+#. module: currency_rate
+#: model:ir.module.module,shortdesc:currency_rate.module_meta_information
+msgid "Currency Rates"
+msgstr "Valuuttakurssit"
+
+#. module: currency_rate
+#: wizard_button:currency.rate,init,end:0
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: currency_rate
+#: wizard_field:currency.rate,init,to_cur:0
+msgid "Currency To"
+msgstr "Kurssi asti"
+
+#. module: currency_rate
+#: wizard_view:currency.rate,init:0
+msgid "Currency Rate"
+msgstr "Valuuttakurssi"
+
+#. module: currency_rate
+#: wizard_view:currency.rate,convert:0
+msgid "Result"
+msgstr "Tulos"

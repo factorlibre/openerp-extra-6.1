@@ -1,0 +1,49 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* nan_sale_delivery
+#
+# Jordi Pasquina <jordi@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-18 10:50+0000\n"
+"PO-Revision-Date: 2011-03-31 12:08+0000\n"
+"Last-Translator: Jordi Pasquina - http://www.nan-tic.com <Unknown>\n"
+"Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+"Language: es\n"
+
+#. module: nan_sale_delivery
+#: field:sale.order.line,date_planned:0
+msgid "Delivery date"
+msgstr "Fecha de envío"
+
+#. module: nan_sale_delivery
+#: model:ir.module.module,shortdesc:nan_sale_delivery.module_meta_information
+msgid "NaN sale order with delivery date on sale order lines"
+msgstr "NaN Pedido de venta con fecha de envío en cada línea"
+
+#. module: nan_sale_delivery
+#: model:ir.model,name:nan_sale_delivery.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea pedido de venta"
+
+#. module: nan_sale_delivery
+#: model:ir.module.module,description:nan_sale_delivery.module_meta_information
+msgid ""
+"This module provides sale order lines with delivery order date.\n"
+"\n"
+"        - *Note: this module ignore Company security Days on expected day "
+"calculations of Stock pickings\n"
+"        "
+msgstr ""
+"Este módulo proporciona la fecha de envío a las líneas del pedido de venta.\n"
+"\n"
+"        - *Nota: Este módulo ignora los Días de seguridad de la compañía en "
+"el cálculo de fecha denvío de los Albaranes\n"
+"        "

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<!--
+    =============================
+    CAMPAIGN PROPOSITION ITEM
+    =============================
+    -->
+	
+	<record model="ir.ui.view" id="view_dm_campaign_proposition_item_inherit_multi_form">
+        <field name="name">dm.campaign.proposition.price.multi.inherit</field>
+        <field name="model">dm.campaign.proposition</field>
+        <field name="type">form</field>
+     	<field name="inherit_id" ref="dm_sale.view_campaign_proposition_form_inherit"/>
+        <field name="arch" type="xml">
+         	<field name="price" position="after">
+          	<field name="price2"/>
+            <field name="price3"/>
+			<field name="price4"/>
+			<field name="price5"/>
+			<field name="price6"/>
+		  	<field name="price7"/>
+		 	<field name="price8"/>
+			</field>
+		</field>
+   	 </record>
+	
+	<record model="ir.ui.view" id="view_dm_campaign_proposition_item_inherit_multi_form1">
+        <field name="name">dm.campaign.proposition.price.multi.inherit1</field>
+        <field name="model">dm.campaign.proposition</field>
+        <field name="type">form</field>
+     	<field name="inherit_id" ref="dm_sale.view_campaign_proposition_form_inherit"/>
+        <field name="arch" type="xml">
+         	<field name="price" string= "Sale Price " position="after">
+          	<field name="price2"/>
+            <field name="price3"/>
+			<field name="price4"/>
+			<field name="price5"/>
+			<field name="price6"/>
+		  	<field name="price7"/>
+		 	<field name="price8"/>
+			</field>
+		</field>
+   	 </record>
+	
+	</data>
+</openerp>

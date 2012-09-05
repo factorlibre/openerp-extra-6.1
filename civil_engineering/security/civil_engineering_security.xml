@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+    <record id="group_civil_engineering_user" model="res.groups">
+        <field name="name">Civil Engineering / User</field>
+    </record>
+
+    <record id="group_civil_engineering_manager" model="res.groups">
+        <field name="name">Civil Engineering / Manager</field>
+    </record>
+
+    </data>
+</openerp>

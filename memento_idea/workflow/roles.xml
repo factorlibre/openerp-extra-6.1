@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="role_idea_validator" model="res.roles">
+			<field name="name">Idea / Validator</field>
+		</record>
+	</data>
+</openerp>

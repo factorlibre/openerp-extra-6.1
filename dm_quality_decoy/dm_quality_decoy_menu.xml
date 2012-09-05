@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+        <!-- Case Sections -->
+        <record model="crm.case.section" id="section_dm_quality_decoy">
+            <field name="name">Decoy</field>
+            <field name="parent_id" ref="dm_crm.section_direct_marketing"/>
+            <field name="code">DMD</field>
+        </record>
+
+    <menuitem id="menu_dm_quality" name="Quality" parent="dm.menu_dm_config" sequence="0"/>
+    <menuitem id="menu_dm_quality_decoy" name="Decoy" parent="menu_dm_quality" sequence="0"/>
+    
+    <!--
+    =======================================================
+    CRM CASE VIEWS 
+    =======================================================
+    -->
+
+         <record id="crm_case_section_qualtiy_decoy" model="ir.actions.act_window">
+             <field name="name">Decoy Cases Sections</field>
+             <field name="res_model">crm.case.section</field>
+             <field name="view_type">form</field>
+            <field name="view_id" ref="crm.crm_case_section_view_tree"/>
+            <field name="domain" eval="'[(\'parent_id\',\'=\','+str(section_dm_quality_decoy)+')]'"/>
+        </record>
+    <menuitem name="Decoy Cases Section" id="menu_crm_case_section_decoy"  parent="menu_dm_quality_decoy" action = "crm_case_section_qualtiy_decoy"/>
+         
+         <record id="crm_case_qualtiy_decoy" model="ir.actions.act_window">
+             <field name="name">Decoy Cases</field>
+            <field name="res_model">crm.case</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar</field>
+            <field name="view_id" ref="crm.crm_case_tree-view"/>
+            <field name="domain" eval="'[(\'section_id\',\'=\','+str(section_dm_quality_decoy)+')]'"/>
+    </record>
+    <menuitem name="Decoy Cases" id="menu_crm_case_decoy"  parent="menu_dm_quality_decoy" action = "crm_case_qualtiy_decoy"/>
+         
+</data>
+</openerp>
+ 

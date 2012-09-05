@@ -1,0 +1,224 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:38:41+0000\n"
+"PO-Revision-Date: 2009-11-25 07:38:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Get Products"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,invoice_pay_do:0
+msgid "Auto pay invoice"
+msgstr ""
+
+#. module: dm_sale
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Prices policy"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,segment_id:0
+#: field:sale.order,segment_id:0
+msgid "Segment"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,source:0
+msgid "Source"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Catalogue"
+msgstr ""
+
+#. module: dm_sale
+#: model:ir.module.module,description:dm_sale.module_meta_information
+msgid "\n"
+"            This module adds sales management for Direct Marketing.\n"
+"            "
+msgstr ""
+
+#. module: dm_sale
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.offer.step,forecasted_yield:0
+msgid "Forecasted Yield"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,invoice_validate_do:0
+msgid "Auto validate invoice"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,trigger_type_id:0
+msgid "Trigger Condition"
+msgstr ""
+
+#. module: dm_sale
+#: view:sale.order:0
+msgid "Direct Marketing"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,mail_service_id:0
+msgid "Mail Service"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,invoice_create_do:0
+msgid "Auto create invoice"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Product"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.event.sale:0
+msgid "Sale Events"
+msgstr ""
+
+#. module: dm_sale
+#: view:sale.order:0
+msgid "Automatic actions"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.offer.step:0
+msgid "Offer Step Product"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,journal_id:0
+msgid "Journal"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Products and Prices"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,address_id:0
+msgid "Address"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Payment Methods"
+msgstr ""
+
+#. module: dm_sale
+#: model:ir.actions.act_window,name:dm_sale.act_dm_event_sale_form
+#: model:ir.ui.menu,name:dm_sale.menu_act_dm_event_sale_form
+msgid "Edit Sale Events"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,is_realtime:0
+msgid "Realtime Processing"
+msgstr ""
+
+#. module: dm_sale
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,action_time:0
+msgid "Action Time"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.offer.step,item_ids:0
+msgid "Items"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Notes"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,sale_order_id:0
+#: field:dm.workitem,sale_order_id:0
+msgid "Sale Order"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.offer.step:0
+#: model:ir.actions.act_window,name:dm_sale.act_offer_product_opened
+msgid "Products"
+msgstr ""
+
+#. module: dm_sale
+#: model:ir.model,name:dm_sale.model_dm_event_sale
+msgid "dm.event.sale"
+msgstr ""
+
+#. module: dm_sale
+#: selection:dm.event.sale,source:0
+msgid "Addresses"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,so_confirm_do:0
+msgid "Auto confirm sale order"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "General"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.campaign.proposition:0
+msgid "Keep Prices at Duplication"
+msgstr ""
+
+#. module: dm_sale
+#: field:sale.order,lines_number:0
+msgid "Number of sale order lines"
+msgstr ""
+
+#. module: dm_sale
+#: field:dm.event.sale,step_id:0
+#: field:sale.order,offer_step_id:0
+msgid "Offer Step"
+msgstr ""
+
+#. module: dm_sale
+#: view:dm.offer.step:0
+msgid "Transitions"
+msgstr ""
+
+#. module: dm_sale
+#: model:ir.module.module,shortdesc:dm_sale.module_meta_information
+msgid "Sales Management for DM"
+msgstr ""
+

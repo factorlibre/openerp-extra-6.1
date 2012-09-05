@@ -1,0 +1,218 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:29+0000\n"
+"PO-Revision-Date: 2011-08-26 22:14+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Order N° :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "SALE ORDER"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "For"
+msgstr "Para"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Our salesman"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Division"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Disc. (%)"
+msgstr "Desc. (%)"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Price"
+msgstr "Precio"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Customer :"
+msgstr "Cliente :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Sr. No."
+msgstr "Sr. No."
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Range"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Shipping address :"
+msgstr "Dirección de envío :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "PAN No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Service Tax No."
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice To:"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Authorised Signatory"
+msgstr "Firma autorizada"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Date ordered"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "-"
+msgstr "-"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr "Tel. :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr "Fax :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid ":"
+msgstr ":"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Invoice address :"
+msgstr "Dirección de factura:"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Tel. :"
+msgstr "Tel. :"
+
+#. module: sale_numbers
+#: model:ir.actions.report.xml,name:sale_numbers.report_sale_order_india
+msgid "Print Sale Order"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Your order reference"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Net Total :"
+msgstr "Total neto :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Excise Reg. No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: model:ir.module.module,shortdesc:sale_numbers.module_meta_information
+msgid "Sale Number"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "VAT :"
+msgstr "IVA :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Quotation N° :"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "LST/VAT No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "CST No. & Date"
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "TOTAL :"
+msgstr "TOTAL :"
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Fax :"
+msgstr "Fax:"
+
+#. module: sale_numbers
+#: model:ir.module.module,description:sale_numbers.module_meta_information
+msgid ""
+"\n"
+"    remove the drawback of the sales numbering, \n"
+"    and add new feature that will create number on \n"
+"    confirmation of the sales order\n"
+"    "
+msgstr ""
+
+#. module: sale_numbers
+#: rml:sale.order.india:0
+msgid "Taxes :"
+msgstr "Impuestos :"

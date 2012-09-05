@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="forecast" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.1289478601075547"/>
+	<property name="ireport.x" value="105"/>
+	<property name="ireport.y" value="0"/>
+	<style name="defecto" isDefault="true" forecolor="#000000" backcolor="#FFFFFF" fill="Solid" vAlign="Middle" markup="none" pattern="" isBlankWhenNull="true" fontName="SansSerif" fontSize="8" isBold="false" isItalic="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+	<style name="textoscabecera" style="defecto" forecolor="#000000" backcolor="#FFFFFF" radius="10" isBold="true" pdfFontName="Helvetica-Bold">
+		<pen lineWidth="1.0" lineColor="#000000"/>
+	</style>
+	<style name="negrita" vAlign="Middle" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/id]]></fieldDescription>
+	</field>
+	<field name="date_maturity" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/date_maturity]]></fieldDescription>
+	</field>
+	<field name="debit" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/debit]]></fieldDescription>
+	</field>
+	<field name="credit" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/credit]]></fieldDescription>
+	</field>
+	<field name="number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/invoice/number]]></fieldDescription>
+	</field>
+	<field name="comercial" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/User/company_id/partner_id/comercial]]></fieldDescription>
+	</field>
+	<field name="lang" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/partner_id/lang]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/partner_id/name]]></fieldDescription>
+	</field>
+	<field name="acc_number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/partner_bank_id/acc_number]]></fieldDescription>
+	</field>
+	<field name="iban" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/partner_bank_id/iban]]></fieldDescription>
+	</field>
+	<field name="bank_name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/partner_bank_id/bank/name]]></fieldDescription>
+	</field>
+	<field name="payment_type" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/payment_type/name]]></fieldDescription>
+	</field>
+	<field name="received_check" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[/data/record/received_check]]></fieldDescription>
+	</field>
+	<field name="ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/ref]]></fieldDescription>
+	</field>
+	<field name="amount_to_pay" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/amount_to_pay]]></fieldDescription>
+	</field>
+	<sortField name="date_maturity"/>
+	<variable name="importe" class="java.math.BigDecimal" resetType="None">
+		<variableExpression><![CDATA[$F{amount_to_pay} < 0.0 ? -$F{amount_to_pay} : $F{amount_to_pay}]]></variableExpression>
+	</variable>
+	<variable name="total-vto" class="java.lang.Double" resetType="Group" resetGroup="FECVTO" calculation="Sum">
+		<variableExpression><![CDATA[$V{importe}]]></variableExpression>
+	</variable>
+	<variable name="acumulado" class="java.lang.Double" incrementType="Group" incrementGroup="FECVTO" calculation="Sum">
+		<variableExpression><![CDATA[$V{total-vto}]]></variableExpression>
+	</variable>
+	<variable name="L" class="java.util.Locale">
+		<variableExpression><![CDATA[$F{lang} != null && $F{lang}.length() == 5 ? new Locale( $F{lang}.substring(0,2), $F{lang}.substring(3,5) ) : ( $F{lang} != null && $F{lang}.length() == 2 ? new Locale( $F{lang}.substring(0,2) ) : $P{REPORT_LOCALE} )]]></variableExpression>
+		<initialValueExpression><![CDATA[$F{lang} != null && $F{lang}.length() == 5 ? new Locale( $F{lang}.substring(0,2), $F{lang}.substring(3,5) ) : ( $F{lang} != null && $F{lang}.length() == 2 ? new Locale( $F{lang}.substring(0,2) ) : $P{REPORT_LOCALE} )]]></initialValueExpression>
+	</variable>
+	<filterExpression><![CDATA[$V{importe} != 0.0 && $V{importe} != null]]></filterExpression>
+	<group name="FECVTO">
+		<groupExpression><![CDATA[$F{date_maturity}]]></groupExpression>
+		<groupHeader>
+			<band height="32">
+				<textField>
+					<reportElement style="defecto" x="46" y="10" width="124" height="19"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Partner")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="520" y="11" width="87" height="18"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Document")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="608" y="10" width="66" height="19"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Expiry Date")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="675" y="10" width="62" height="19"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Amount")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="738" y="10" width="62" height="19"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Aggregated Amount")]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="29" width="802" height="1"/>
+				</line>
+				<textField>
+					<reportElement style="defecto" x="183" y="11" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Payment Type")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="273" y="11" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Bank Account")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="364" y="11" width="87" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Bank Name")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="454" y="11" width="66" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Check?")]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="27">
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="738" y="6" width="62" height="15"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{acumulado}]]></textFieldExpression>
+				</textField>
+				<textField pattern="#,##0.00;-#,##0.00">
+					<reportElement x="675" y="6" width="62" height="15"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression class="java.lang.Double"><![CDATA[$V{total-vto}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="defecto" x="520" y="6" width="154" height="15"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isItalic="false" isUnderline="false"/>
+					</textElement>
+					<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Expiry date totals:")]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement style="textoscabecera" x="123" y="20" width="332" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Payment/receivables forecast")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="negrita" x="0" y="0" width="282" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{comercial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="527" y="0" width="28" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="defecto" x="465" y="0" width="62" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="8" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[tr($V{L},"Page:")]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="455" y="20" width="100" height="16"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="607" y="1" width="66" height="15"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{date_maturity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="182" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="675" y="1" width="62" height="14"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$V{importe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="1" width="87" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{number} != null ? $F{number} : $F{ref}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="1" width="87" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{payment_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="1" width="87" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{acc_number} != null ? $F{acc_number} : $F{iban}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="1" width="87" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{bank_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="1" width="66" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{received_check} ? tr($V{L}, "Yes") : tr($V{L},"No")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="32" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

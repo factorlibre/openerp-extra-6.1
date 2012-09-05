@@ -1,0 +1,130 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* label_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-10-04 17:12+0000\n"
+"PO-Revision-Date: 2012-06-28 15:15+0000\n"
+"Last-Translator: Jordi Esteve (Zikzakmedia) <jesteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: label_product
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML no válido para la definición de la vista!"
+
+#. module: label_product
+#: field:label.wizard.product.line,wizard_id:0
+msgid "Wizard"
+msgstr "Asistente"
+
+#. module: label_product
+#: model:ir.module.module,shortdesc:label_product.module_meta_information
+msgid "Product label printing wizards"
+msgstr "Asistentes de impresión de etiquetas de productos"
+
+#. module: label_product
+#: model:ir.module.module,description:label_product.module_meta_information
+msgid ""
+"\n"
+"    Provides an editable grid to fill in with products and label quantities\n"
+"    to print. Adds a button on pickings to automatically fill in this grid\n"
+"    from their data.\n"
+"\n"
+"    NOTE: The basic functionality works as it is but the button on pickings\n"
+"    needs the --enable-code-actions parameter for the server.\n"
+"    Compatibility: tested with OpenERP v5.0\n"
+"    "
+msgstr ""
+"\n"
+"    Proporciona un formulario editable para rellenar con los productos y el "
+"número de etiquetas\n"
+"    a imprimir. Añade un botón en los albaranes para completar "
+"automáticamente este formulario\n"
+"    con sus datos.\n"
+"\n"
+"    NOTA: La funcionalidad básica funciona tal cual pero para usar el botón "
+"en los albaranes\n"
+"    es necesario iniciar el servidor con el parámetro --enable-code-actions "
+".\n"
+"    Compatibilidad: Testeado con OpenERP v5.0\n"
+"    "
+
+#. module: label_product
+#: field:label.wizard.product,line_ids:0
+#: view:label.wizard.product.line:0
+msgid "Items"
+msgstr "Artículos"
+
+#. module: label_product
+#: field:label.wizard.product,template_id:0
+msgid "Label Template"
+msgstr "Plantilla etiqueta"
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Label Wizard"
+msgstr "Asistente plantilla"
+
+#. module: label_product
+#: field:label.wizard.product.line,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: label_product
+#: field:label.wizard.product.line,quantity:0
+msgid "Qty"
+msgstr "Ctdad"
+
+#. module: label_product
+#: view:label.wizard.product.line:0
+msgid "Item"
+msgstr "Artículo"
+
+#. module: label_product
+#: model:ir.actions.act_window,name:label_product.action_label_product
+#: model:ir.actions.server,name:label_product.act_picking_product_label_wizard
+#: model:ir.ui.menu,name:label_product.menu_label_product
+msgid "Print Labels"
+msgstr "Imprimir etiquetas"
+
+#. module: label_product
+#: model:ir.model,name:label_product.model_label_wizard_product
+msgid "label.wizard.product"
+msgstr "label.wizard.product"
+
+#. module: label_product
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo no válido en la definición de acción."
+
+#. module: label_product
+#: view:label.wizard.product:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: label_product
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: label_product
+#: model:ir.model,name:label_product.model_label_wizard_product_line
+msgid "label.wizard.product.line"
+msgstr "label.wizard.product.line"

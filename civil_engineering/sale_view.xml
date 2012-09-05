@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <!--
+    ======================
+    Sale Order
+    ======================
+    -->
+	<record model="ir.ui.view" id="edit_sale_civilengineering">
+		<field name="name">sale.order.form.civilengineering</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<notebook position="inside">
+				<page string="Civil Engineering Work">
+                    <separator string="Civil Engineering Work" colspan="4" />
+					<field name="work_id" />
+				</page>
+			</notebook>
+		</field>
+	</record>
+</data>
+</openerp>

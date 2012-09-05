@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/import_n_split_view.xml
+  Module: ons_autosplit_picking
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="ons_view_import_n_split">
+        <field name="name">Open-Net Wizard Import'n'split a picking's details</field>
+        <field name="model">ons.import_n_split</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="File to import">
+            	<field name="csv_file"/>
+                <separator string="" colspan="4" />
+				<group col="4" colspan="4">
+					<button special="cancel" string="Cancel" icon="gtk-cancel"/>
+					<button name="do_it" string="Import and split" type="object" icon="gtk-ok"/>
+				</group>
+            </form>
+        </field>
+    </record>
+
+	<record id="action_newcontact4partner" model="ir.actions.act_window">
+		<field name="name">Import details and split</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">ons.import_n_split</field>
+		<field name="view_type">form</field>
+		<field name="view_type">form</field>
+		<field name="view_id" ref="ons_view_import_n_split"/>
+		<field name="target">new</field>
+	</record>
+
+	<act_window id="wiz_newcontact4partner"
+		key2="client_action_multi" 
+		name="Import details and split"
+		res_model="ons.import_n_split" 
+		src_model="stock.picking"
+		view_mode="form" 
+		target="new" 
+		view_type="form" />
+
+</data>
+</openerp>

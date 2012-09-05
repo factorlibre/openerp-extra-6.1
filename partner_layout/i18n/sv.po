@@ -1,0 +1,62 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* partner_layout
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:41+0000\n"
+"PO-Revision-Date: 2011-02-15 15:15+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: partner_layout
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: partner_layout
+#: view:res.partner:0
+msgid "Layout"
+msgstr ""
+
+#. module: partner_layout
+#: model:ir.module.module,shortdesc:partner_layout.module_meta_information
+msgid "Partner Layout"
+msgstr "Partner Layout"
+
+#. module: partner_layout
+#: field:res.partner,header:0
+msgid "Header (.odt)"
+msgstr ""
+
+#. module: partner_layout
+#: view:res.partner:0
+msgid "Header"
+msgstr ""
+
+#. module: partner_layout
+#: model:ir.module.module,description:partner_layout.module_meta_information
+msgid ""
+"\n"
+"    \n"
+"                    "
+msgstr ""
+
+#. module: partner_layout
+#: view:res.partner:0
+#: field:res.partner,signature:0
+msgid "Signature"
+msgstr ""
+
+#. module: partner_layout
+#: view:res.partner:0
+#: field:res.partner,logo:0
+msgid "Logo"
+msgstr ""

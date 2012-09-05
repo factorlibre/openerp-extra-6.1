@@ -1,0 +1,822 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* esale_osc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:51:27+0000\n"
+"PO-Revision-Date: 2009-11-25 14:51:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Taxes Mapping"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_paytype
+msgid "esale_oscom PayType"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.tax,name:0
+msgid "Tax name"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Recreate Procurement"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "Created: %d categories\nUpdated: %d categories\n\nRefresh screen to see updates"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import Languages"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,manufacturer_id:0
+msgid " Manufacturer"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_esale_oscom_products
+msgid "Synchronize products and stocks to all OScommerce web shops"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Proceed with the mappings before adding products!"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.actions.wizard,name:esale_osc.wizard_esale_oscom_select_stocks
+#: model:ir.actions.wizard,name:esale_osc.wizard_esale_oscom_stocks
+msgid "Update stocks"
+msgstr ""
+
+#. module: esale_osc
+#: view:product.product:0
+msgid "E-Sale Information"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom_product.py:0
+#: constraint:product.product:0
+#, python-format
+msgid "You can not give other value in Special Price! Please enter number with % or decimal value"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_esale_oscom_product_manufacturer
+msgid "Manufacturers"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.actions.wizard,name:esale_osc.wizard_esale_oscom_products
+#: model:ir.actions.wizard,name:esale_osc.wizard_esale_oscom_select_products
+msgid "Sync. products and stocks"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Set to Draft"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "Created: %d products\nUpdated: %d products\n\nRefresh screen to see updates"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_export_products.py:0
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_update_stocks.py:0
+#, python-format
+msgid "You asked to synchronize to non-active OScommerce web shop: IDs %s"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,oscom_url:0
+msgid "URL to OScommerce"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Cancel Order"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom_product.py:0
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_export_select_products.py:0
+#, python-format
+msgid "User Error"
+msgstr ""
+
+#. module: esale_osc
+#: selection:product.product,spe_price_status:0
+msgid "On"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,url:0
+#: field:product.manufacturer,manufacturer_url:0
+#: field:product.product,product_url:0
+msgid "URL"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_esale_oscom_stocks
+msgid "Update stocks to all OScommerce web shops"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Notes"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import and create/update Categories"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.actions.wizard,name:esale_osc.wizard_esale_oscom_saleorders
+msgid "Import sale orders"
+msgstr ""
+
+#. module: esale_osc
+#: field:sale.order,shipping_title:0
+msgid "Shipping"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.category:0
+msgid "taxes"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_esale_oscom_root
+msgid "Internet Sales"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_product_manufacturer
+msgid "Product Manufacturer that produces the product"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.paytype:0
+msgid "Payment types mapping"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Sales Order"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Order Line"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_button:esale.oscom.products,init,end:0
+#: wizard_button:esale.oscom.saleorders,init,end:0
+#: wizard_button:esale.oscom.select.products,init,end:0
+#: wizard_button:esale.oscom.select.stocks,init,end:0
+#: wizard_button:esale.oscom.stocks,init,end:0
+msgid "End"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Recreate Invoice"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.module.module,shortdesc:esale_osc.module_meta_information
+msgid "OScommerce Interface / ZenCart"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.lang,language_id:0
+msgid "OpenERP language"
+msgstr ""
+
+#. module: esale_osc
+#: view:product.product:0
+msgid "Special price information"
+msgstr ""
+
+#. module: esale_osc
+#: view:product.product:0
+msgid "Other information"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Generated Invoices"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_view:esale.oscom.saleorders,init:0
+msgid "Sale orders succesfully imported"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Confirm Order"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_field:esale.oscom.products,init,prod_new:0
+#: wizard_field:esale.oscom.select.products,init,prod_new:0
+msgid "New products"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Active Products"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.paytype,paytyp:0
+msgid "SO in State Draft"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.category:0
+#: field:esale.oscom.web,category_ids:0
+msgid "Categories"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "General Informations"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_field:esale.oscom.products,init,prod_update:0
+#: wizard_field:esale.oscom.select.products,init,prod_update:0
+msgid "Updated products"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_tax
+msgid "esale_oscom Tax"
+msgstr ""
+
+#. module: esale_osc
+#: field:sale.order,esale_oscom_id:0
+msgid "esale_oscom Id"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_esale_oscom_saleorder_new
+msgid "New order"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Payment types Mapping"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "Product import done"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "OScommerce Web Shop"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_saleorder_tree_progress
+msgid "In progress"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_esale_oscom_saleorders
+msgid "Import sale orders from all OScommerce web shops"
+msgstr ""
+
+#. module: esale_osc
+#: help:esale.oscom.web,esale_account_id:0
+msgid "Payment account for web invoices."
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Other data"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_esale_oscom_saleorder
+msgid "Web sale orders"
+msgstr ""
+
+#. module: esale_osc
+#: field:sale.order,orders_status:0
+msgid "Oscommerce Status"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom_product.py:0
+#, python-format
+msgid "You must define a pricelist in the sale shop associated to the web shop!"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,product_ids:0
+msgid "Web products"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_category
+msgid "esale_oscom Category"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Languages Mapping"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Categories Mapping"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_oscom_invoice_open_tree
+msgid "Opened"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.paytype,paytyp:0
+msgid "Invoice Payed"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "Category import done"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,language_ids:0
+msgid "Languages"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_oscom_invoice_draft_tree
+msgid "Draft"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_product
+msgid "esale_oscom Product"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Procurement Corrected"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_view:esale.oscom.products,init:0
+#: wizard_view:esale.oscom.select.products,init:0
+msgid "Product Export"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,esale_account_id:0
+msgid "Dest. account"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.tax,tax_id:0
+msgid "OpenERP tax"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_oscom_invoice_proforma_tree
+msgid "PRO-FORMA"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.paytype,paytyp:0
+msgid "Invoice Draft"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,spe_price_status:0
+msgid "Status"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,date_available:0
+msgid "Available Date"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.paytype,journal_id:0
+msgid "OpenERP payment journal"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_field:esale.oscom.products,init,prod_delete:0
+#: wizard_field:esale.oscom.select.products,init,prod_delete:0
+msgid "Deleted products"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.web,price_type:0
+msgid "Taxed price"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.lang:0
+msgid "Language mapping"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import Taxes"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.paytype:0
+#: field:esale.oscom.web,pay_typ_ids:0
+msgid "Payment types"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,active:0
+msgid "Active"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,product_picture:0
+msgid "Product Picture"
+msgstr ""
+
+#. module: esale_osc
+#: view:product.manufacturer:0
+msgid "Manufacturer"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Compute"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "esale_oscom Shop Info"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.lang:0
+msgid "Language"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import Payment Methods"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.product,product_id:0
+msgid "OpenERP product"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_esale_oscom_web
+msgid "Websites"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.product,esale_oscom_id:0
+msgid "OScommerce product Id"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_export_products.py:0
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_update_stocks.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import Categories"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.category,category_id:0
+msgid "OpenERP category"
+msgstr ""
+
+#. module: esale_osc
+#: view:product.product:0
+msgid "Link to Oscommerce"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.paytype,payment_id:0
+msgid "OpenERP payment"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "History"
+msgstr ""
+
+#. module: esale_osc
+#: model:product.template,name:esale_osc.product_product_discount_coupon_product_template
+msgid "Discount Coupon"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_view:esale.oscom.products,init:0
+#: wizard_view:esale.oscom.select.products,init:0
+msgid "Products exported"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_saleorder_tree_draft
+msgid "Request for quotation"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_saleorder_tree_manual
+msgid "Waiting invoice"
+msgstr ""
+
+#. module: esale_osc
+#: model:product.template,name:esale_osc.product_product_cash_delivery_product_template
+msgid "Cash On Delivery"
+msgstr ""
+
+#. module: esale_osc
+#: selection:product.product,in_out_stock:0
+msgid "Out Stock"
+msgstr ""
+
+#. module: esale_osc
+#: model:product.category,name:esale_osc.cat_shipping_cost
+#: model:product.template,name:esale_osc.product_product_shipping_Cost_product_template
+msgid "Shipping Cost"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.ui.menu,name:esale_osc.menu_action_esale_oscom_invoices
+msgid "Invoices"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_lang
+msgid "esale_oscom Language"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,spe_price:0
+msgid "Special price"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Sales Orders"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.product:0
+msgid "Product Information"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Create Invoice"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,exp_date:0
+msgid "Expiry date"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,price_type:0
+msgid "Price type"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_export_select_products.py:0
+#, python-format
+msgid "This product must belong to a web category!"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.product:0
+msgid "Product"
+msgstr ""
+
+#. module: esale_osc
+#: field:sale.order,pay_met_title:0
+msgid "Payment Method"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Invoice Corrected"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.web,shop_id:0
+msgid "Sale shop"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_view:esale.oscom.select.stocks,init:0
+#: wizard_view:esale.oscom.stocks,init:0
+msgid "Stock Update"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.category,esale_oscom_id:0
+#: field:esale.oscom.lang,esale_oscom_id:0
+#: field:esale.oscom.paytype,esale_oscom_id:0
+#: field:esale.oscom.tax,esale_oscom_id:0
+#: field:res.partner,esale_oscom_id:0
+#: field:res.partner.address,esale_oscom_id:0
+msgid "OScommerce Id"
+msgstr ""
+
+#. module: esale_osc
+#: selection:product.product,in_out_stock:0
+msgid "In Stock"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.web:0
+msgid "Import all products from OSCommerce"
+msgstr ""
+
+#. module: esale_osc
+#: view:sale.order:0
+msgid "Generated Pickings"
+msgstr ""
+
+#. module: esale_osc
+#: selection:product.product,spe_price_status:0
+msgid "Off"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.category,name:0
+#: field:esale.oscom.lang,name:0
+#: field:esale.oscom.paytype,name:0
+#: field:esale.oscom.product,name:0
+#: field:esale.oscom.web,name:0
+#: field:product.manufacturer,name:0
+msgid "Name"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.paytype,paytyp:0
+msgid "Invoice Confirmed"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.paytype,paytyp:0
+msgid "SO Confirmed"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.tax:0
+#: field:esale.oscom.web,tax_ids:0
+msgid "Taxes"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.model,name:esale_osc.model_esale_oscom_web
+msgid "OScommerce Website"
+msgstr ""
+
+#. module: esale_osc
+#: field:account.invoice,esale_oscom_web:0
+#: field:esale.oscom.category,web_id:0
+#: field:esale.oscom.lang,web_id:0
+#: field:esale.oscom.paytype,web_id:0
+#: field:esale.oscom.product,web_id:0
+#: field:esale.oscom.tax,web_id:0
+#: field:sale.order,esale_oscom_web:0
+msgid "Website"
+msgstr ""
+
+#. module: esale_osc
+#: field:esale.oscom.paytype,paytyp:0
+msgid "Payment type"
+msgstr ""
+
+#. module: esale_osc
+#: wizard_view:esale.oscom.select.stocks,init:0
+#: wizard_view:esale.oscom.stocks,init:0
+msgid "Stock succesfully updated"
+msgstr ""
+
+#. module: esale_osc
+#: view:esale.oscom.tax:0
+msgid "Taxes mapping"
+msgstr ""
+
+#. module: esale_osc
+#: model:ir.module.module,description:esale_osc.module_meta_information
+msgid "OSCommerce (Zencart) eCommerce interface synchronisation.\n"
+"Users can order on the website, orders are automatically imported in OpenERP.\n"
+"\n"
+"You can export products, stock level and create links between\n"
+"categories of products, taxes and languages.\n"
+"\n"
+"If you product has an image attached, it sends the image to the OScommerce website.\n"
+"\n"
+"Developed by Tiny, Axelor and Zikzakmedia"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/esale_oscom.py:0
+#, python-format
+msgid "First you must map OScommerce languages to OpenERP languages in the Web Shop!"
+msgstr ""
+
+#. module: esale_osc
+#: selection:esale.oscom.web,price_type:0
+msgid "Untaxed price"
+msgstr ""
+
+#. module: esale_osc
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr ""
+
+#. module: esale_osc
+#: field:product.product,in_out_stock:0
+msgid "In/Out Stock"
+msgstr ""
+
+#. module: esale_osc
+#: code:addons/esale_osc/wizard/wizard_esale_oscom_export_select_products.py:0
+#, python-format
+msgid "Select only products which belong to a web category!"
+msgstr ""
+

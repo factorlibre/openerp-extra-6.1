@@ -1,0 +1,58 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-04 09:01+0200\n"
+"PO-Revision-Date: 2011-07-04 08:48+0200\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /tmp/tmp.c3PeIl4kXU:771 /tmp/tmp.c3PeIl4kXU:971 /tmp/tmp.c3PeIl4kXU:1171
+msgid "Total"
+msgstr "Total"
+
+#: /tmp/tmp.c3PeIl4kXU:791 /tmp/tmp.c3PeIl4kXU:991 /tmp/tmp.c3PeIl4kXU:1191
+msgid "General Ledger"
+msgstr "Libro Mayor"
+
+#: /tmp/tmp.c3PeIl4kXU:807 /tmp/tmp.c3PeIl4kXU:1007 /tmp/tmp.c3PeIl4kXU:1207
+msgid "Credit"
+msgstr "Haber"
+
+#: /tmp/tmp.c3PeIl4kXU:811 /tmp/tmp.c3PeIl4kXU:1011 /tmp/tmp.c3PeIl4kXU:1211
+msgid "Balance"
+msgstr "Saldo"
+
+#: /tmp/tmp.c3PeIl4kXU:815 /tmp/tmp.c3PeIl4kXU:1015 /tmp/tmp.c3PeIl4kXU:1215
+msgid "Debit"
+msgstr "Debe"
+
+#: /tmp/tmp.c3PeIl4kXU:819 /tmp/tmp.c3PeIl4kXU:1019 /tmp/tmp.c3PeIl4kXU:1219
+msgid "Description"
+msgstr "Descripción"
+
+#: /tmp/tmp.c3PeIl4kXU:823 /tmp/tmp.c3PeIl4kXU:1023 /tmp/tmp.c3PeIl4kXU:1223
+msgid "Reference"
+msgstr "Referencia"
+
+#: /tmp/tmp.c3PeIl4kXU:827 /tmp/tmp.c3PeIl4kXU:1027 /tmp/tmp.c3PeIl4kXU:1227
+msgid "Partner"
+msgstr "Empresa"
+
+#: /tmp/tmp.c3PeIl4kXU:831 /tmp/tmp.c3PeIl4kXU:1031 /tmp/tmp.c3PeIl4kXU:1231
+msgid "Date"
+msgstr "Fecha"
+
+#: /tmp/tmp.c3PeIl4kXU:835 /tmp/tmp.c3PeIl4kXU:1035 /tmp/tmp.c3PeIl4kXU:1235
+msgid "Number"
+msgstr "Número"

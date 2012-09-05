@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_pe_nan_product_plane_salesman","nan_product_plane.nan_product_plane","model_product_plane","base.group_sale_salesman",1,1,1,1
+"access_pe_nan_product_plane_user","nan_product_plane.nan_product_plane","model_product_plane","base.group_user",1,0,0,0
+"access_pe_product_product_salesman","nan_product_plane.product_product","model_product_product","base.group_sale_salesman",1,1,1,1
+"access_pe_product_product_user","nan_product_plane.product_product","model_product_product","base.group_user",1,0,0,0
+

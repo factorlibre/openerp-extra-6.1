@@ -1,0 +1,54 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* stock_supplier_average_price
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-02-21 15:05+0000\n"
+"PO-Revision-Date: 2012-03-05 11:14+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: stock_supplier_average_price
+#: model:ir.model,name:stock_supplier_average_price.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: stock_supplier_average_price
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+
+#. module: stock_supplier_average_price
+#: code:addons/stock_supplier_average_price/stock.py:62
+#: code:addons/stock_supplier_average_price/stock.py:221
+#, python-format
+msgid "Missing partial picking data for move #%s"
+msgstr "Faltan datos del albarán parcial para el movimiento #%s"
+
+#. module: stock_supplier_average_price
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción a este producto"
+
+#. module: stock_supplier_average_price
+#: model:ir.model,name:stock_supplier_average_price.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: stock_supplier_average_price
+#: model:ir.model,name:stock_supplier_average_price.model_stock_partial_picking
+msgid "Partial Picking"
+msgstr "Albarán parcial"
+
+#. module: stock_supplier_average_price
+#: model:ir.model,name:stock_supplier_average_price.model_stock_partial_move
+msgid "Partial Move"
+msgstr "Movimiento parcial"

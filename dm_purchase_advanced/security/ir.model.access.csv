@@ -1,0 +1,14 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_purchase_tender_offeradmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_offeradmin",1,0,0,0
+"access_purchase_tender_offermanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_offermanager",1,0,0,0
+"access_purchase_tender_campadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_campaignadmin",1,1,1,1
+"access_purchase_tender_campmanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_campaignmanager",1,1,1,1
+"access_purchase_tender_custfileadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_custfileadmin",1,1,1,1
+"access_purchase_tender_custfilemanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_custfilemanager",1,1,1,1
+"access_purchase_tender_itemadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_itemadmin",1,1,1,1
+"access_purchase_tender_itemmanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_itemmanager",1,1,1,1
+"access_purchase_tender_manufacturingadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_manufacturingadmin",1,1,1,1
+"access_purchase_tender_manufacturingmanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_manufacturingmanager",1,1,1,1
+"access_purchase_tender_dtpadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_dtpadmin",1,1,1,1
+"access_purchase_tender_dtpmanager","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_dtpmanager",1,1,1,1
+"access_purchase_tender_dmadmin","purchase.tender","purchase_tender.model_purchase_tender","dm.res_groups_dmadmin",1,1,1,1

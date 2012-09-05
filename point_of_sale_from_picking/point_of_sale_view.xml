@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+<!-- pos.order -->
+        <record model="ir.ui.view" id="inherited_pos_order_form_view">
+            <field name="name">inherited.pos.order</field>
+            <field name="model">pos.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Extra Info']/group/field[@name='price_type']"
+                        position="after">
+                    <field name="pos_warn_sale_order"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

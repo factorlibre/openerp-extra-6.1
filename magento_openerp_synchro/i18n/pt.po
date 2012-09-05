@@ -1,0 +1,676 @@
+# Portuguese translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-03-04 18:40+0000\n"
+"PO-Revision-Date: 2011-02-15 15:13+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.wizard,name:magento_openerp_synchro.wizard_magento_saleorders_update
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_saleorders_update
+msgid "Update sale orders"
+msgstr "Actualizar ordens de venda"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "You must have only one shop with Magento flag turned on"
+msgstr "Deves ter apenas uma loja com a bandeira Magento ligado"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#: code:addons/magento_openerp_synchro/magento_utils.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_correct.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_update.py:0
+#, python-format
+msgid "Magento Import"
+msgstr "Importar Magento"
+
+#. module: magento_openerp_synchro
+#: field:product.product,magento_id:0
+msgid "Magento product id"
+msgstr "Identificação do produto Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "Magento Export"
+msgstr "Exportar Magento"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.categories.sync,init,categ_new:0
+msgid "New Categories"
+msgstr "Novas Categorias"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#, python-format
+msgid "Successfully updated category with OpenERP id %s and Magento id %s"
+msgstr ""
+"Categoria actualizado com sucesso com identificação OpenERP %s e "
+"identificação  Magento  %s"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.products.sync,init:0
+msgid "Product and Stock Synchronization"
+msgstr "Sincronização de Produtos e Stock"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_update.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders update, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!\n"
+"Error %s"
+msgstr ""
+"Erro ocurrido durante a actualização das Ordens de Vendas, Verifique o seu "
+"debug.xmlrpc.log no Smile_OpenERP_Sunch na pasta do seu Apache!\n"
+"Erro %s"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "Magento Connect"
+msgstr "Conectar Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders Sync, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!\n"
+"Error %s"
+msgstr ""
+"Ocorreu um erro durante uma Sincronização de Ordens Vendas, consulte o seu "
+"debug.xmlrpc.log na pasta Smile_OpenERP_Synch no seu Apache!\n"
+"Erro% s"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.saleorders.correct,init,has_error:0
+#: wizard_field:magento.saleorders.import,init,has_error:0
+msgid "Sales Orders With Error"
+msgstr "Ordens de Vendas com Erro"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "MagentoError"
+msgstr "Erro Magento"
+
+#. module: magento_openerp_synchro
+#: model:product.category,name:magento_openerp_synchro.cat_service
+msgid "Services"
+msgstr "Serviços"
+
+#. module: magento_openerp_synchro
+#: view:magento.web:0
+msgid "Magento web"
+msgstr "Web magento"
+
+#. module: magento_openerp_synchro
+#: field:product.category,updated:0
+msgid "Category updated on Magento"
+msgstr "Categoria actualizado em Magento"
+
+#. module: magento_openerp_synchro
+#: view:sale.order:0
+msgid "Sale Order"
+msgstr "Ordem de Venda"
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.wizard,name:magento_openerp_synchro.wizard_magento_saleorders_import
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_saleorders_import
+msgid "Import sale orders"
+msgstr "Importar ordens de venda"
+
+#. module: magento_openerp_synchro
+#: view:product.product:0
+msgid "Products"
+msgstr "Produtos"
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.act_window,name:magento_openerp_synchro.action_magento_web_form
+#: model:ir.model,name:magento_openerp_synchro.model_magento_web
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_web_form
+msgid "Magento Web"
+msgstr "Web Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "Magento returned %s"
+msgstr "Magento devolvido %s"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#: code:addons/magento_openerp_synchro/magento_utils.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid "UserError"
+msgstr "Erro Utilizador"
+
+#. module: magento_openerp_synchro
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Erro ! Não é possivel criar categorias recursivas."
+
+#. module: magento_openerp_synchro
+#: field:product.category,magento_product_attribute_set_id:0
+msgid "Magento Product Attribute Set Id"
+msgstr "Definir Atribução do ID do Produto Magento"
+
+#. module: magento_openerp_synchro
+#: field:sale.order,has_error:0
+msgid "magento order error"
+msgstr "Erro na ordem magento"
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.wizard,name:magento_openerp_synchro.wizard_magento_categories
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_categories
+msgid "Synchronize Categories"
+msgstr "Sincronizar Categorias"
+
+#. module: magento_openerp_synchro
+#: view:product.product:0
+#: view:res.partner:0
+#: view:sale.order:0
+msgid "Magento"
+msgstr "Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento_utils.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid "You must have one shop with magento_id set to 1"
+msgstr "Deve ter uma loja com magento_id definido como 1"
+
+#. module: magento_openerp_synchro
+#: field:res.partner,magento_id:0
+msgid "magento partner id"
+msgstr "identificação terceiro magento"
+
+#. module: magento_openerp_synchro
+#: view:res.partner:0
+msgid "Partners"
+msgstr "Terceiros"
+
+#. module: magento_openerp_synchro
+#: view:magento.web:0
+msgid "Magento Api Information"
+msgstr "Informação Api Magento"
+
+#. module: magento_openerp_synchro
+#: wizard_button:magento.categories.sync,init,end:0
+#: wizard_button:magento.products.sync,init,end:0
+#: wizard_button:magento.saleorders.correct,init,end:0
+#: wizard_button:magento.saleorders.import,init,end:0
+#: wizard_button:magento.saleorders.update,init,end:0
+msgid "End"
+msgstr "Fim"
+
+#. module: magento_openerp_synchro
+#: model:ir.module.module,description:magento_openerp_synchro.module_meta_information
+msgid ""
+"Magento OpenERP Interface - This module allows product catalog \n"
+"and sale orders synchronization between OpenERP and Magento.\n"
+"This module is contributed by the Smile French IT company (www.smile.fr)\n"
+"and Zikzakmedia (www.zikzakmedia.com)"
+msgstr ""
+"Interface OpenERP Magento - Este módulo permite o catálogo de produto \n"
+"e sincronizar ordens de venda entre OpenERP e Magento.\n"
+"Este módulo é contribuido por Smile French IT Company (www.smile.fr)\n"
+"e Zikazkmedia (www.zikzakmedia.com)"
+
+#. module: magento_openerp_synchro
+#: model:ir.module.module,shortdesc:magento_openerp_synchro.module_meta_information
+msgid "Magento Synchro Smile"
+msgstr "Magento Synchro Smile"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_update.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders update, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!"
+msgstr ""
+"Erro ocorrido durante a actulização de Ordens de Vendas, Veja a "
+"debug.xmlrpc.log na pasta Smile_OpenERP_Synch Apache!"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "Successfully created product with OpenERP id %s and Magento id %s"
+msgstr ""
+"Produto criado com sucesso com a identificação de OpenERP %s e identificação "
+"Magento %s"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.categories.sync,init:0
+msgid "Categories exported"
+msgstr "Categorias exportados"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,magento_name:0
+msgid "Magento Web Name"
+msgstr "Nome Web Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_correct.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders correct, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!"
+msgstr ""
+"Erro ocurrido durante a correcção das Ordens de Vendas, Verifique a sua "
+"pasta debug.xmlrpc.log no Smile_OpenERP_Sinch no seu Apache!"
+
+#. module: magento_openerp_synchro
+#: model:product.uom.categ,name:magento_openerp_synchro.product_uom_categ_unit
+msgid "PCE"
+msgstr "PCE"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#, python-format
+msgid "you asked to export non-exportable categories : IDs %s"
+msgstr "Pediu para exportar categorias não exportáveis:% s IDs"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "ConnectionError"
+msgstr "Erro de Conecção"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.products.sync,init,prod_fail:0
+msgid "Failed to export products"
+msgstr "Falha ao exportar produtos"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_update.py:0
+#, python-format
+msgid "Magento SO update"
+msgstr "Actualizar Magento SO"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.products.sync,init,prod_new:0
+msgid "New products"
+msgstr "Novos produtos"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid ""
+"ERROR: couldn't create a shipping product, did you configure a shipping "
+"product in the delivery module? %s"
+msgstr ""
+"ERRO: não é possivel criar um produto de recolha, deve configurar um produto "
+"no módulo de entrega? % s"
+
+#. module: magento_openerp_synchro
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML Inválido para a Arquitectura de Vista!"
+
+#. module: magento_openerp_synchro
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Erro: UOS deve estar em uma categoria diferente da UOM"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.products.sync,init,prod_update:0
+msgid "Updated products"
+msgstr "Produtos actualizados"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "Couldn't connect to Magento with URL %sindex.php/api/xmlrpc"
+msgstr "Não é possivel conectar a Magento com URL %sindex.php/api/xmlrpc"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_correct.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders correct, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!\n"
+"Error %s"
+msgstr ""
+"Erro ocurrido durante a correcção das Ordens de Vendas, Verifique a sua "
+"pasta debug.xmlrpc.log no Smile_OpenERP_Synch no seu Apache!\n"
+"Erro %s"
+
+#. module: magento_openerp_synchro
+#: view:sale.order:0
+msgid "Sales orders"
+msgstr "Ordens de Vendas"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.saleorders.correct,init,corrected:0
+msgid "Corrected Sales Orders"
+msgstr "Ordens de Vendas rectificado"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#, python-format
+msgid "Successfully created category with OpenERP id %s and Magento id %s"
+msgstr ""
+"Categoria criada com sucesso com a identificação de OpenERP %s e Magento id "
+"%s"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.saleorders.import,init,so_nb:0
+msgid "New Sales Orders"
+msgstr "Novas Orens de Venda"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,auto_update:0
+msgid "Enhance auto update for products and category"
+msgstr "Melhore actualização automática para produtos e categorias"
+
+#. module: magento_openerp_synchro
+#: view:product.category:0
+msgid "Product Categories"
+msgstr "Categorias de Produto"
+
+#. module: magento_openerp_synchro
+#: constraint:product.template:0
+msgid ""
+"Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Erro: O UOM padrão e o UOM compra deve ser feita na mesma categoria."
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.wizard,name:magento_openerp_synchro.wizard_magento_products
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_products
+msgid "Synchronize Products And Stocks"
+msgstr "Sincronizar Produtos e Stocks"
+
+#. module: magento_openerp_synchro
+#: view:magento.web:0
+#: view:product.category:0
+#: view:product.product:0
+#: view:res.partner:0
+#: view:sale.order:0
+#: view:sale.shop:0
+msgid "Magento Information"
+msgstr "Informação Magento"
+
+#. module: magento_openerp_synchro
+#: field:sale.shop,magento_flag:0
+msgid "Magento webshop"
+msgstr "Loja Web Magento"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,magento_flag:0
+msgid "magento web flag"
+msgstr "bandeira web magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid "Sale Order %s : Error on product id : %s sku : %s name %s"
+msgstr ""
+"Ordem de Vendas %s : Erro na identificação do produto :%s sku : %s nome %s"
+
+#. module: magento_openerp_synchro
+#: field:product.category,magento_product_type:0
+msgid "Magento Product Type"
+msgstr "Tipo de Produto Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#: constraint:magento.web:0
+#, python-format
+msgid "Error: The module has been designed for only one Magento Web."
+msgstr "Erro: O módulo foi concebido apenas para uma Magento web."
+
+#. module: magento_openerp_synchro
+#: field:sale.order,magento_id:0
+msgid "magento order id"
+msgstr "identificação de ordem magento"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,magento_url:0
+msgid "Magento Url"
+msgstr "Url Magento"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.saleorders.correct,init:0
+#: wizard_view:magento.saleorders.import,init:0
+#: wizard_view:magento.saleorders.update,init:0
+msgid "Saleorders import"
+msgstr "importar ordem de venda"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "Successfully updated product with OpenERP id %s and Magento id %s"
+msgstr ""
+"Produto actualizado com sucesso com a identificação OpenERP  %s e "
+"identificação Magento %s"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,api_user:0
+msgid "Magento Api User"
+msgstr "Utilizador Api Magento"
+
+#. module: magento_openerp_synchro
+#: model:ir.actions.wizard,name:magento_openerp_synchro.wizard_magento_saleorders_correct
+#: model:ir.ui.menu,name:magento_openerp_synchro.menu_magento_saleorders_correct
+msgid "Correct sale orders"
+msgstr "Corrigir ordens de venda"
+
+#. module: magento_openerp_synchro
+#: field:product.category,exportable:0
+#: field:product.product,exportable:0
+msgid "Export to website"
+msgstr "Exportar para website"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "Magento API return an error on product id %s . Error %s"
+msgstr "Magento API retorna um erro na identificação de produto %s . Erro %s"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.saleorders.correct,init:0
+msgid "Magento Sale Orders Correction"
+msgstr "Correção da Ordem de Venda Magento"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.categories.sync,init:0
+msgid "Categories Synchronization"
+msgstr "Sincronização de Categororias"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento_utils.py:0
+#, python-format
+msgid "Sale Order %s : Cannot find product with id : %s sku : %s name %s"
+msgstr "Ordem de Venda %s : Produto não encontrado : %s sku : %s nome %s"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid ""
+"You must have a declared website with a valid URL, a Magento username and "
+"password"
+msgstr ""
+"Deve ter um site declarada com uma URL válida, um nome de utilizador e "
+"palavra passe Magento"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.products.sync,init:0
+msgid "Products exported"
+msgstr "Produtos exportados"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.saleorders.update,init,updated:0
+msgid "Sales Orders Updated"
+msgstr "Ordem de Vendas Actualizado"
+
+#. module: magento_openerp_synchro
+#: view:res.partner:0
+msgid "General"
+msgstr "Geral"
+
+#. module: magento_openerp_synchro
+#: view:sale.shop:0
+msgid "Sale Shop"
+msgstr "Loja de Venda"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.categories.sync,init,categ_fail:0
+msgid "Failed to export Categories"
+msgstr "Falha ao exportar Categorias"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.saleorders.update,init:0
+msgid "Magento Sale Orders Update"
+msgstr "Actualizar Ordens de Venda Magento"
+
+#. module: magento_openerp_synchro
+#: model:product.uom,name:magento_openerp_synchro.product_uom_unit
+msgid "Unit"
+msgstr "Unidade"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "An error occurred : %s "
+msgstr "Ocorreu um erro:% s "
+
+#. module: magento_openerp_synchro
+#: view:product.product:0
+msgid "Information"
+msgstr "Informação"
+
+#. module: magento_openerp_synchro
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"O nome do Objecto deve começar com x_ e não pode conter nenhum caracter "
+"especial !"
+
+#. module: magento_openerp_synchro
+#: wizard_field:magento.categories.sync,init,categ_update:0
+msgid "Updated Categories"
+msgstr "Categorias Actualizado"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "short description"
+msgstr "breve descrição"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento.py:0
+#, python-format
+msgid "Error : %s"
+msgstr "Erro : %s"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "you asked to export non-exportable products : IDs %s"
+msgstr "Pediu para exportar produtos não exportáveis:% s IDs"
+
+#. module: magento_openerp_synchro
+#: field:product.product,magento_tax_class_id:0
+msgid "Magento tax class Id"
+msgstr "Identificação de classe de imposto Magento"
+
+#. module: magento_openerp_synchro
+#: model:product.template,name:magento_openerp_synchro.product_product_shipping_product_template
+msgid "Shipping and Handling"
+msgstr "Expedição e Handling"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid ""
+"Error occurred during Sales Orders Sync, See your debug.xmlrpc.log in the "
+"Smile_OpenERP_Synch folder in your Apache!"
+msgstr ""
+"Ocorreu um erro durante a  Sincronização Ordens de Vendas, consulte o seu "
+"debug.xmlrpc.log na pasta Smile_OpenERP_Synch no seu Apache!"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "Error"
+msgstr "Erro"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "description"
+msgstr "descrição"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#, python-format
+msgid "Magento API return an error on category id %s . Error %s"
+msgstr ""
+"Magento API retornará um erro na identificação de categoria %s. Erro% s"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_category_synchronize.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_product_synchronize.py:0
+#, python-format
+msgid "OpenERP Error"
+msgstr "Erro OpenERP"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/wizard/magento_so_update.py:0
+#, python-format
+msgid "Sale Order ID %s wrong update !"
+msgstr "Identificação de Ordem de Venda % s actualização errada !"
+
+#. module: magento_openerp_synchro
+#: wizard_view:magento.saleorders.import,init:0
+msgid "Magento Sale Orders Synchronization"
+msgstr "Sicronização de Ordem de Venda Magento"
+
+#. module: magento_openerp_synchro
+#: field:magento.web,api_pwd:0
+msgid "Magento Api Password"
+msgstr "Palavra Passe Api Magento"
+
+#. module: magento_openerp_synchro
+#: field:product.category,magento_id:0
+msgid "magento category id"
+msgstr "Identificação da categoria magento"
+
+#. module: magento_openerp_synchro
+#: field:product.product,updated:0
+msgid "Product updated on Magento"
+msgstr "Produto actualizado no Magento"
+
+#. module: magento_openerp_synchro
+#: code:addons/magento_openerp_synchro/magento_utils.py:0
+#: code:addons/magento_openerp_synchro/wizard/magento_so_import.py:0
+#, python-format
+msgid "magento SO/"
+msgstr "magento SO/"
+
+#. module: magento_openerp_synchro
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Erro: Código  ean inválido"

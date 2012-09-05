@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="xmlrpc">
+	<name>XML-RPC - OpenERP to VirtueMart 1.1 API</name>
+	<author>Jacques-Etienne Baudoux</author>
+	<creationDate>February 2010</creationDate>
+	<copyright>
+		Copyright (C) 2010 BCIM sprl. All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>http://www.bcim.be</authorUrl>
+	<version>0.1</version>
+	<description>VirtueMart 1.1 XML-RPC API for OpenERP</description>
+	<files>
+		<filename plugin="openerp2vm">openerp2vm.php</filename>
+	</files>
+	<params>
+		<param name="logfile" type="text" default="openerp2vm.log"
+			label="Log File" description="Log File" />
+	</params>
+</install>

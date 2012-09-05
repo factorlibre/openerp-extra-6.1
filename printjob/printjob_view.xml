@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <menuitem name="Printing" id="menu_printjob_main" icon="STOCK_PRINT"/>
+    
+    <menuitem name="Configuration" id="menu_printjob_config" parent="menu_printjob_main" />
+    
+    <record model="ir.ui.view" id="view_printjob_printer_form">
+            <field name="name">printjob.printer.form</field>
+            <field name="model">printjob.printer</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Printers">
+                <field name="name" select="1"/>
+                <field name="system_name" select="1"/>
+                <group colspan="2" col="4">
+                    <field name="default"/>
+                    <button name="set_default" string="Set Default" type="object"/>
+                </group>
+            </form>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_printjob_printer_tree">
+        <field name="name">printjob.printer.tree</field>
+        <field name="model">printjob.printer</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+          <tree string="Printers">
+                    <field name="default"/>
+                    <field name="name" select="1"/>
+                    <field name="system_name" select="1"/>
+          </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_printjob_printer_form">
+            <field name="name">Printers</field>
+            <field name="res_model">printjob.printer</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+    <wizard
+        string="Preview"
+        model="printjob.job"
+        name="printjob.job.preview"
+        menu="False"
+        id="printjob_job_preview"/>
+
+    <wizard
+        string="RePrint"
+        model="printjob.job"
+        name="printjob.job.reprint"
+        menu="False"
+        id="printjob_job_reprint"/>
+
+    
+    <record model="ir.ui.view" id="view_printjob_job_form">
+            <field name="name">printjob.job.form</field>
+            <field name="model">printjob.job</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="PrintJob">
+            <notebook>
+             <page string="PrintJob">
+                <field name="name" select="1"/>
+                <field name="report"/>
+                <field name="state" select="1"/>
+                <field name="format"/>
+                <field name="action"/>
+                <field name="pages" />
+                <newline/>
+                <field name="result" widget="binary"/>
+                <field name="keep" />
+                <newline/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <group col="4" colspan="4">
+                    <label/>
+                    <button name="%(printjob_job_preview)d" string="Preview" icon="STOCK_PRINT_PREVIEW" 
+                            type="action" states="ready,done"/>
+                    <button name="%(printjob_job_reprint)d" string="Send to printer" icon="STOCK_PRINT" 
+                            type="action" states="ready,done"/>
+                    <label/>
+                </group>
+             </page>
+             <page string="Parameters">
+                <field name="ids" colspan="4"/>
+                <field name="data" colspan="4"/>
+                <field name="context" colspan="4"/>
+             </page>
+            </notebook>
+            </form>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_printjob_job_tree">
+        <field name="name">printjob.job.tree</field>
+        <field name="model">printjob.job</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+          <tree string="Print Jobs" 
+            colors="blue:state=='draft';red:state=='error';gray:state=='done'">
+                    <field name="name" select="1"/>
+                    <field name="state" />
+                    <field name="action" />
+                    <field name="keep" />
+                    <field name="pages" />
+                    <field name="create_uid" />
+                    <field name="create_date" />
+          </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_printjob_job_form">
+            <field name="name">Print jobs</field>
+            <field name="res_model">printjob.job</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Print Jobs" 
+        id="menu_printjob_job_form" 
+        parent="menu_printjob_main" 
+        icon="STOCK_PRINT_PREVIEW"
+        action="action_printjob_job_form"/>
+
+    <menuitem name="Printers" 
+        id="menu_printjob_printer_form" 
+        parent="menu_printjob_config" 
+        icon="STOCK_PRINT" 
+        action="action_printjob_printer_form"/>
+
+	<record model="ir.ui.view" id="action_report_xml_form">
+		<field name="name">ir.actions.report.xml.printjob</field>
+		<field name="model">ir.actions.report.xml</field>
+		<field name="type">form</field>
+		<field name="inherit_id" ref="base.act_report_xml_view" />
+		<field name="arch" type="xml">
+			<field name="groups_id" position="before">
+				<field name="property_printjob_action"/>
+				<field name="printjob_printer_id"/>
+				<field name="printjob_action_ids" colspan="4"/>
+			</field>
+		</field>
+	</record>
+
+	<!-- res.users -->
+	<record model="ir.ui.view" id="view_printjob_users_form">
+	    <field name="name">res.users.form.printjob</field>
+	    <field name="type">form</field>
+	    <field name="model">res.users</field>
+	    <field name="inherit_id" ref="base.view_users_form" />
+	    <field name="arch" type="xml">
+		<field name="context_tz" position="after">
+		    <field name="printjob_action" />
+		    <field name="printjob_printer_id" />
+		</field>
+	    </field>
+	</record>
+
+	<!-- printjob.report.xml.action -->
+	<record model="ir.ui.view" id="printjob_report_xml_action_form">
+		<field name="name">printjob.report.xml.action.form</field>
+		<field name="model">printjob.report.xml.action</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Report Printing Actions">
+				<field name="user_id"/>
+				<label string=""/>
+				<field name="action"/>
+				<field name="printer_id" select="1"/>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="printjob_report_xml_action_tree">
+		<field name="name">printjob.report.xml.action.tree</field>
+		<field name="model">printjob.report.xml.action</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Report Printing Actions">
+				<field name="user_id"/>
+				<field name="action" />
+				<field name="printer_id" />
+			</tree>
+		</field>
+	</record>
+</data>
+</openerp>

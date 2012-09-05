@@ -1,0 +1,315 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:42+0000\n"
+"PO-Revision-Date: 2011-08-23 14:56+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: fashion
+#: selection:product.template,life_cycle:0
+msgid "Prototype conception"
+msgstr "Prototipo de concepto"
+
+#. module: fashion
+#: selection:mrp.characteristic.group,axis:0
+msgid "X Horizontal axis"
+msgstr "Eje horizontal X"
+
+#. module: fashion
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El objeto debe empezar con  x_ y no puede contener ningún carácter especial!"
+
+#. module: fashion
+#: model:ir.model,name:fashion.model_mrp_characteristic_group
+#: field:mrp.characteristic,group_id:0
+#: field:mrp.characteristic.group,name:0
+msgid "Characteristic Group"
+msgstr "Grupo de características"
+
+#. module: fashion
+#: wizard_button:fashion.help.wizard,init,end:0
+msgid "Quit"
+msgstr "Salir"
+
+#. module: fashion
+#: model:product.template,name:fashion.fashion_demo11_product_template
+msgid "shirt"
+msgstr "camisa"
+
+#. module: fashion
+#: constraint:product.template:0
+msgid ""
+"Error: The default UOM and the purchase UOM must be in the same category."
+msgstr ""
+"Error: La UdM por defecto y la UdM de compra deben estar en la misma "
+"categoría."
+
+#. module: fashion
+#: selection:mrp.characteristic.group,axis:0
+msgid "T 4th axis"
+msgstr "Eje T 4º"
+
+#. module: fashion
+#: field:mrp.characteristic.group,axis:0
+msgid "Prefered axis for layout"
+msgstr "Eje preferido para el diseño"
+
+#. module: fashion
+#: model:ir.model,name:fashion.model_mrp_bom_variation
+msgid "BOM characteristic variation"
+msgstr "LdM variación características"
+
+#. module: fashion
+#: model:ir.ui.menu,name:fashion.menu_production
+msgid "Production"
+msgstr "Producción"
+
+#. module: fashion
+#: field:mrp.bom.variation,bom_id:0
+msgid "BOM"
+msgstr "LdM"
+
+#. module: fashion
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: fashion
+#: wizard_view:fashion.help.wizard,init:0
+msgid "message"
+msgstr "mensaje"
+
+#. module: fashion
+#: selection:product.template,life_cycle:0
+msgid "Idea or Order"
+msgstr ""
+
+#. module: fashion
+#: view:product.template:0
+msgid "Conception and design"
+msgstr "Concepción y diseño"
+
+#. module: fashion
+#: model:ir.module.module,description:fashion.module_meta_information
+msgid "Product charactristics"
+msgstr "características del producto"
+
+#. module: fashion
+#: view:mrp.characteristic:0
+#: field:mrp.characteristic,description:0
+#: field:mrp.characteristic.group,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: fashion
+#: wizard_button:fashion.help.wizard,init,complete:0
+msgid "create"
+msgstr "crear"
+
+#. module: fashion
+#: code:addons/fashion/picture.py:0
+#, python-format
+msgid "Select the file to picture(jpg,jpeg,gif,png)"
+msgstr "Seleccione el archivo de imagen (jpg, jpeg, gif, png)"
+
+#. module: fashion
+#: model:ir.actions.wizard,name:fashion.wiz_mrp_procf
+msgid "Fashion help"
+msgstr "Ayuda moda"
+
+#. module: fashion
+#: field:mrp.bom.variation,product_qty:0
+msgid "Product Qty"
+msgstr "Ctdad producto"
+
+#. module: fashion
+#: selection:mrp.characteristic.group,axis:0
+msgid "Y Vertical axis"
+msgstr "Eje vertical Y"
+
+#. module: fashion
+#: wizard_field:fashion.help.wizard,init,template_id:0
+msgid "template"
+msgstr "plantilla"
+
+#. module: fashion
+#: model:ir.actions.act_window,name:fashion.mrp_characteristic_action
+#: model:ir.model,name:fashion.model_mrp_characteristic
+#: model:ir.ui.menu,name:fashion.menu_mrp_characteristic_action
+#: field:mrp.characteristic,name:0
+msgid "Characteristic"
+msgstr "Característico"
+
+#. module: fashion
+#: wizard_field:fashion.help.wizard,init,characteristic_ids:0
+msgid "characteristic to combine"
+msgstr "característica de combinar"
+
+#. module: fashion
+#: field:product.template,schema:0
+msgid "schema"
+msgstr "esquema"
+
+#. module: fashion
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Error: La UdV debe estar en una categoría diferente que la UdM"
+
+#. module: fashion
+#: field:mrp.bom,variation_lines:0
+msgid "Variation lines"
+msgstr "líneas de variación"
+
+#. module: fashion
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: fashion
+#: selection:product.template,life_cycle:0
+msgid "Given up"
+msgstr ""
+
+#. module: fashion
+#: wizard_view:fashion.help.wizard,init:0
+msgid "help for variants creation"
+msgstr "ayuda para la creación de variantes"
+
+#. module: fashion
+#: code:addons/fashion/picture.py:0
+#, python-format
+msgid "Error reading the file"
+msgstr "Error leyendo del archivo"
+
+#. module: fashion
+#: selection:product.template,life_cycle:0
+msgid "Industrial design for mrp"
+msgstr "Diseño industrial para MRP"
+
+#. module: fashion
+#: code:addons/fashion/picture.py:0
+#, python-format
+msgid "Error writing the file!"
+msgstr "¡Error escribiendo el archivo!"
+
+#. module: fashion
+#: view:mrp.bom:0
+#: view:mrp.bom.variation:0
+msgid "Variations"
+msgstr "Variaciones"
+
+#. module: fashion
+#: model:ir.actions.act_window,name:fashion.mrp_characteristic_group_action
+#: model:ir.ui.menu,name:fashion.menu_mrp_characteristic_group_action
+#: view:mrp.characteristic.group:0
+msgid "Characteristic Groups"
+msgstr "Grupos característica"
+
+#. module: fashion
+#: code:addons/fashion/picture.py:0
+#, python-format
+msgid ""
+"Unable to preview image file !\n"
+"Verify the format."
+msgstr ""
+"No es posible obtener una vista previa de archivos de imagen!\n"
+"Comprobar el formato."
+
+#. module: fashion
+#: field:mrp.characteristic,magnitude:0
+msgid "Magnitude"
+msgstr "Magnitud"
+
+#. module: fashion
+#: code:addons/fashion/picture.py:0
+#, python-format
+msgid "Save attachment as..."
+msgstr "Guardar como archivo adjunto ..."
+
+#. module: fashion
+#: model:ir.ui.menu,name:fashion.menu_production_definition
+msgid "Definitions"
+msgstr "Definiciones"
+
+#. module: fashion
+#: selection:mrp.characteristic.group,axis:0
+msgid "Z 3rd axis"
+msgstr "3er eje Z"
+
+#. module: fashion
+#: model:ir.module.module,shortdesc:fashion.module_meta_information
+msgid "Tiny TERP fashion module"
+msgstr "OpenERP módulo de moda"
+
+#. module: fashion
+#: field:product.template,picture:0
+msgid "picture"
+msgstr "imagen"
+
+#. module: fashion
+#: field:mrp.bom.variation,product_characteristic_id:0
+msgid "Component Characteristic"
+msgstr "Componente característico"
+
+#. module: fashion
+#: model:ir.ui.menu,name:fashion.menu_production_definition_characteristics
+#: view:mrp.characteristic:0
+#: field:product.product,characteristic_ids:0
+msgid "Characteristics"
+msgstr "Características"
+
+#. module: fashion
+#: field:mrp.bom.variation,characteristic_group_id:0
+msgid "characteristic group"
+msgstr "grupo de características"
+
+#. module: fashion
+#: field:mrp.bom.variation,characteristic_id:0
+msgid "Parent Characteristic"
+msgstr "Características padre"
+
+#. module: fashion
+#: field:product.template,characteristic_group_ids:0
+msgid "Characteristic groups"
+msgstr "Grupos característicos"
+
+#. module: fashion
+#: view:mrp.characteristic:0
+#: view:mrp.characteristic.group:0
+msgid "General Information"
+msgstr "Información general"
+
+#. module: fashion
+#: field:product.template,life_cycle:0
+msgid "Life Cycle"
+msgstr "Ciclo de vida"
+
+#. module: fashion
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN inválido"
+
+#. module: fashion
+#: field:product.template,rough_drawing:0
+msgid "rough drawing"
+msgstr "boceto"
+
+#. module: fashion
+#: field:mrp.bom.variation,exclude:0
+msgid "Exclude"
+msgstr "Excluir"

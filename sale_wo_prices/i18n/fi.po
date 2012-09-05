@@ -1,0 +1,77 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:31+0000\n"
+"PO-Revision-Date: 2011-06-28 07:23+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_wo_prices
+#: view:product.product:0
+msgid "Base Prices"
+msgstr "Perushinnat"
+
+#. module: sale_wo_prices
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "Compute"
+msgstr "Laske"
+
+#. module: sale_wo_prices
+#: model:ir.module.module,description:sale_wo_prices.module_meta_information
+msgid ""
+"Hides prices in sales and product forms. Only sale manager can see them. "
+"Normal salesmen can do sales without seeing the product prices."
+msgstr ""
+"Piilottaa hinnat myynti ja tuotelomakkeilla. Vain myyntipäällikkö voi nähdä "
+"ne. Normaalit myyntimiehet voivat tehdä myyntiä näkemättä tuotehintoja."
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "Sales order lines"
+msgstr "Myyntitilauksen rivit"
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "Total amount"
+msgstr "Yhteensä"
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Määrä"
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "UoM"
+msgstr "Mittayksikkö"
+
+#. module: sale_wo_prices
+#: view:product.product:0
+msgid "Prices & Suppliers"
+msgstr "Hinnat ja toimittajat"
+
+#. module: sale_wo_prices
+#: model:ir.module.module,shortdesc:sale_wo_prices.module_meta_information
+msgid "Sales without prices"
+msgstr "Myynnit ilman hintoja"
+
+#. module: sale_wo_prices
+#: view:sale.order:0
+msgid "Untaxed amount"
+msgstr "Veroton summa"

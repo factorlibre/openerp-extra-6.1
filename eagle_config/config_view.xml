@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: config_view.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+		Events
+	-->
+		<record model="ir.ui.view" id="eagle_view_event_config_tree">
+			<field name="name">Eagle Events List</field>
+			<field name="model">eagle.config.event</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Events">
+					<field name="name"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_event_config_form">
+			<field name="name">Eagle Event View</field>
+			<field name="model">eagle.config.event</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Event">
+					<field name="name"/>
+					<group colspan="2">
+						<newline/>
+					</group>
+					<separator string="Lines" colspan="4"/>
+					<field name="lines" colspan="4" nolabel="1" mode="tree">
+						<tree string="Events" editable="bottom">
+							<field name="seq"/>
+							<field name="module_descr"/>
+							<field name="function_name"/>
+						</tree>
+					</field>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_event_config_view">
+			<field name="name">Eagle's events configuration</field>
+			<field name="res_model">eagle.config.event</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_event_config_tree"/>
+		</record>
+
+	<!--
+		Parameters
+	-->
+		<record model="ir.ui.view" id="eagle_view_config_params_tree">
+			<field name="name">Eagle Params List</field>
+			<field name="model">eagle.config.params</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Parameters">
+					<field name="use_prices" string="Prices"/>
+					<field name="use_members_list" string="Members list"/>
+					<field name="show_all_meta_tabs" string="All meta?"/>
+					<field name="auto_production_state" string="Auto Prod.?"/>
+					<field name="send_mail_with_request" string="Mail/Request"/>
+					<field name="smtp_ok"/>
+					<field name="void"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_config_params_form">
+			<field name="name">Eagle Params View</field>
+			<field name="model">eagle.config.params</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Parameters">
+					<field name="name" readonly="1"/>
+					<group colspan="2">
+						<newline/>
+					</group>
+					<notebook>
+						<page string="Eagle Base">
+							<field name="use_prices"/>
+							<field name="use_members_list"/>
+							<field name="show_all_meta_tabs"/>
+							<field name="auto_production_state"/>
+							<field name="send_mail_with_request"/>
+							<field name="smtp_ok"/>
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_config_params_view">
+			<field name="name">Eagle's Parameters</field>
+			<field name="res_model">eagle.config.params</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_config_params_tree"/>
+		</record>
+
+        <record model="ir.actions.act_window" id="eagle_action_modules_view">
+            <field name="name">Eagle's Modules</field>
+            <field name="res_model">ir.module.module</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain" eval="[('name','like','eagle_%')]"/>
+            <field name="search_view_id" ref="base.view_module_filter"/>
+        </record>
+	</data>
+</openerp>

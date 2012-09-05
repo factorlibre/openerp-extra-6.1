@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="pricelist_item_three_discount_form_view">
+            <field name="name">product.pricelist.item.three.discount.form.view</field>
+            <field name="model">product.pricelist.item</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_pricelist_item_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/label[@string='New Price =']" position="before">
+                    <field name="discount_1" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_2" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_3" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pricelist_version_three_discount_inherited_form_view">
+            <field name="name">product.pricelist.version.three.discount.inherited.form.view</field>
+            <field name="model">product.pricelist.version</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product_pricelist_allinone.product_pricelist_version_form_imp_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field/tree/field[@name='base']" position="after">
+                    <field name="discount_1" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_2" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_3" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pricelist_item_three_discount_tree_view">
+            <field name="name">product.pricelist.item.three.discount.tree.view</field>
+            <field name="model">product.pricelist.item</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="product_pricelist_allinone.product_pricelist_item_tree_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='base']" position="after">
+                    <field name="discount_1" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_2" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_3" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_pricelist_imp_three_discount_tree_view">
+            <field name="name">product.pricelist.three.discount.tree.view</field>
+            <field name="model">product.pricelist</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product_pricelist_allinone.product_pricelist_imp_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='version_id']/form/field[@name='items_id']/tree/field[@name='base']" position="after">
+                    <field name="discount_1" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_2" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                    <field name="discount_3" on_change="onchange_3_discount(discount_1, discount_2, discount_3)"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,837 @@
+# Portuguese translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-07-14 10:44+0000\n"
+"PO-Revision-Date: 2011-02-15 15:26+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Company name:"
+msgstr "Nome de Compainha:"
+
+#. module: radiotv
+#: wizard_view:radiotv.channel_program.export,init:0
+msgid "Channels, programs and categories export"
+msgstr "Canais, programas e exportação de categorias"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,production_country_id:0
+msgid "Production country"
+msgstr "País de Produção"
+
+#. module: radiotv
+#: field:radiotv.podcast,author:0
+msgid "Author"
+msgstr "Autor"
+
+#. module: radiotv
+#: model:ir.actions.report.xml,name:radiotv.radiotv_broadcast_declaration_report
+msgid "Radio TV broadcast declaration report"
+msgstr "Relatório de Declaração de Transmissão de Rádio TV"
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_export_podcast
+#: model:ir.ui.menu,name:radiotv.menu_wizard_export_podcast
+msgid "Export podcasts"
+msgstr "Podcasts Exportados"
+
+#. module: radiotv
+#: model:ir.actions.report.xml,name:radiotv.radiotv_broadcast_report
+msgid "Radio TV broadcast report"
+msgstr "Relatório de Transmissões Rádio TV"
+
+#. module: radiotv
+#: field:radiotv.podcast,pub_date:0
+msgid "Publication"
+msgstr "Publicação"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,original_language:0
+msgid "Original language"
+msgstr "Linguagem Original"
+
+#. module: radiotv
+#: wizard_field:radiotv.podcast.export,export,podcast_delete:0
+msgid "Deleted podcasts"
+msgstr "Podcasts Excluídos"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Program name"
+msgstr "Nome do Programa"
+
+#. module: radiotv
+#: wizard_field:radiotv.broadcast.export,export,broadcast_new:0
+msgid "New broadcasts"
+msgstr "Novas Transmissões"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.copy,init:0
+msgid ""
+"Copy the broadcasts from a range of days (or one day) to another range of "
+"days. The previous broadcasts in the destination range of days are deleted."
+msgstr ""
+"Copiar as transmissões a partir de um intervalo de dias (ou um dia) para "
+"outro intervalo de dias. As transmissões anteriores no intervalo de dias são "
+"apagadas."
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,classification:0
+msgid "For everybody"
+msgstr "Para todos"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.radiotv_main_menu
+msgid "Radio TV"
+msgstr ""
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_podcast_form
+#: view:radiotv.podcast:0
+msgid "Podcast"
+msgstr "Podcast"
+
+#. module: radiotv
+#: report:radiotv.broadcast.report:0
+msgid "Day"
+msgstr "Dia"
+
+#. module: radiotv
+#: report:radiotv.broadcast.compact.report:0
+msgid "evening"
+msgstr "Á Noite"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_program_form
+#: view:radiotv.category:0
+#: field:radiotv.category,program_ids:0
+#: view:radiotv.channel:0
+#: field:radiotv.channel,program_ids:0
+#: view:radiotv.program:0
+msgid "Programs"
+msgstr "Programas"
+
+#. module: radiotv
+#: field:radiotv.broadcast,url:0
+#: report:radiotv.broadcast.report:0
+#: field:radiotv.web,url:0
+msgid "URL"
+msgstr "URL"
+
+#. module: radiotv
+#: field:radiotv.podcast,file_name:0
+msgid "File name"
+msgstr "Nome do Ficheiro"
+
+#. module: radiotv
+#: field:radiotv.podcast,explicit:0
+msgid "Explicit"
+msgstr "Explícito"
+
+#. module: radiotv
+#: code:addons/radiotv/wizard/wizard_export_broadcasts.py:73
+#: code:addons/radiotv/wizard/wizard_export_channels_programs.py:54
+#: code:addons/radiotv/wizard/wizard_export_podcasts.py:73
+#, python-format
+msgid "Error!"
+msgstr "Erro!"
+
+#. module: radiotv
+#: wizard_view:radiotv.channel_program.export,init:0
+msgid "Channels exported"
+msgstr "Canais Exportados"
+
+#. module: radiotv
+#: model:ir.module.module,shortdesc:radiotv.module_meta_information
+msgid "Tiny ERP TV & Radio Program Grid Module"
+msgstr ""
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Period: From"
+msgstr "Periodo: De"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,channel_update:0
+msgid "Updated channels"
+msgstr "Canais Actualizados"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.compact.report,init:0
+#: wizard_view:radiotv.broadcast.declaration.report,init:0
+msgid "Select period"
+msgstr "Seleccionar Período"
+
+#. module: radiotv
+#: field:radiotv.podcast,subtitle:0
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,classification:0
+msgid "Especially recommended for the children"
+msgstr "Recomendado especialmente para as crianças"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form11
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form11
+msgid "Yesterday broadcasts"
+msgstr "Transmissões de Ontem"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.act_program_2_broadcasts
+msgid "Program broadcasts"
+msgstr "Transmissões Programadas"
+
+#. module: radiotv
+#: report:radiotv.broadcast.compact.report:0
+msgid "morning"
+msgstr "Manhã"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_channel_form
+#: view:radiotv.channel:0
+#: field:radiotv.program,channel_ids:0
+msgid "Channels"
+msgstr "Canais"
+
+#. module: radiotv
+#: wizard_view:radiotv.podcast.export,init:0
+msgid "Export podcasts published"
+msgstr "Exportação de podcasts publicadas"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_web_form
+msgid "Configuration/Website configuration"
+msgstr ""
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_broadcast_compact_report
+#: model:ir.ui.menu,name:radiotv.menu_wizard_broadcast_compact_report
+msgid "Broadcasts compact report"
+msgstr "Relatório compacto de Transmissões"
+
+#. module: radiotv
+#: field:radiotv.broadcast,dt_end:0
+#: wizard_field:radiotv.broadcast.compact.report,init,d_to:0
+#: wizard_field:radiotv.broadcast.declaration.report,init,d_to:0
+#: wizard_button:radiotv.broadcast.export,export,end:0
+#: report:radiotv.broadcast.report:0
+#: wizard_button:radiotv.channel_program.export,init,end:0
+#: wizard_button:radiotv.podcast.export,export,end:0
+msgid "End"
+msgstr "Fim"
+
+#. module: radiotv
+#: wizard_field:radiotv.podcast.export,export,podcast_update:0
+msgid "Updated podcasts"
+msgstr "Podcasts Actualizado"
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_export_channel_program
+#: model:ir.ui.menu,name:radiotv.menu_wizard_export_channel_program
+msgid "Export channels and programs"
+msgstr "Exportação de canais e programas"
+
+#. module: radiotv
+#: selection:radiotv.program,state:0
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_broadcast
+msgid "radiotv.broadcast"
+msgstr "radiotv.broadcast"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form
+#: view:radiotv.broadcast:0
+msgid "Broadcasts"
+msgstr "Transmissões"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,editor:0
+msgid "Editor"
+msgstr "Editor"
+
+#. module: radiotv
+#: wizard_button:radiotv.broadcast.compact.report,init,report:0
+#: wizard_button:radiotv.broadcast.declaration.report,init,report:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_category
+msgid "radiotv.category"
+msgstr "radiotv.category"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: radiotv
+#: field:radiotv.program,email:0
+msgid "Email"
+msgstr "Email"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_channel_form
+#: field:radiotv.broadcast,channel_id:0
+#: wizard_field:radiotv.broadcast.compact.report,init,channel_id:0
+#: wizard_field:radiotv.broadcast.copy,init,channel_id:0
+#: wizard_field:radiotv.broadcast.declaration.report,init,channel_id:0
+#: report:radiotv.broadcast.report:0
+#: view:radiotv.channel:0
+msgid "Channel"
+msgstr "Canal"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,channel_delete:0
+msgid "Deleted channels"
+msgstr "Apagar canais"
+
+#. module: radiotv
+#: model:ir.actions.report.xml,name:radiotv.radiotv_broadcast_compact_report
+msgid "Radio TV broadcast compact report"
+msgstr "Relatório compacto de transmissões de Rádio TV"
+
+#. module: radiotv
+#: report:radiotv.broadcast.compact.report:0
+msgid "/"
+msgstr "/"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,production_year:0
+msgid "Production year"
+msgstr "Ano de Produção"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_program_form3
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_program_form3
+msgid "Unpublished programs"
+msgstr "Programas Inéditos"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,category_new:0
+msgid "New categories"
+msgstr "Novas Categorias"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_configuration_menu
+msgid "Configuration"
+msgstr ""
+
+#. module: radiotv
+#: view:radiotv.category:0
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: radiotv
+#: wizard_field:radiotv.broadcast.copy,init,d_from2:0
+#: wizard_field:radiotv.broadcast.export,init,d_to:0
+#: wizard_field:radiotv.podcast.export,init,d_to:0
+msgid "To"
+msgstr "Para"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,channel_new:0
+msgid "New channels"
+msgstr "Novos Canais"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_channel
+msgid "radiotv.channel"
+msgstr "radiotv.channel"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,program_new:0
+msgid "New programs"
+msgstr "Novos Programas"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_program_form2
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_program_form2
+msgid "Published programs"
+msgstr "Programas Publicados"
+
+#. module: radiotv
+#: wizard_button:radiotv.broadcast.compact.report,init,end:0
+#: wizard_button:radiotv.broadcast.copy,init,end:0
+#: wizard_button:radiotv.broadcast.declaration.report,init,end:0
+#: wizard_button:radiotv.broadcast.export,init,end:0
+#: wizard_button:radiotv.podcast.export,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: radiotv
+#: wizard_view:radiotv.channel_program.export,init:0
+msgid "Programs exported"
+msgstr "Programas Exportados"
+
+#. module: radiotv
+#: field:radiotv.program,team:0
+msgid "Team"
+msgstr "Equipa"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,production_type:0
+msgid "Foreign"
+msgstr "Estrangeiro"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.export,export:0
+msgid "Broadcast Export"
+msgstr "Exportação de Transmissões"
+
+#. module: radiotv
+#: field:radiotv.podcast,block:0
+msgid "Block"
+msgstr "Bloco"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,category_update:0
+msgid "Updated categories"
+msgstr "Categorias Actualizadas"
+
+#. module: radiotv
+#: help:radiotv.program,approx_duration:0
+msgid "Approximate duration in minutes"
+msgstr "Tempo aproximado em minutos"
+
+#. module: radiotv
+#: model:ir.module.module,description:radiotv.module_meta_information
+msgid ""
+"This module allows to control TV & Radio channels, programs, grid of "
+"date/time of broadcasting and podcasts\n"
+"\n"
+"channel <--n---m--> program <--1---n--> broadcast <--1---n--> podcast\n"
+"\n"
+"Features:\n"
+"    * Menu entries to see daily and weekly broadcasts\n"
+"    * The date/time end of each broadcast is computed automatically\n"
+"    * The broadcasts can be copied from a range of days to other\n"
+"    * A TinyERP cron is provided to copy broadcasts every day\n"
+"    * Several broadcasting reports are included\n"
+"    * Several wizards to synchronize the channels, programs and broadcasts "
+"to a\n"
+"      mysql-php web site are included. They can be also synchronized "
+"automatically."
+msgstr ""
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,production_type:0
+msgid "Production type"
+msgstr "Tipo de Produção"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_web
+msgid "RadioTV website configuration"
+msgstr "Configuração website de Radio TV"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,classification:0
+msgid "Not recommended for minors of 18"
+msgstr "Não recomendado a menores de 18"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Owner"
+msgstr "Proprietário"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,classification:0
+msgid "Not recommended for minors of 13"
+msgstr "Não recomendado a menores de 13"
+
+#. module: radiotv
+#: view:radiotv.category:0
+#: field:radiotv.podcast,category:0
+#: field:radiotv.program,category_id:0
+msgid "Category"
+msgstr "Categoria"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Operator name:"
+msgstr "Nome do Operador:"
+
+#. module: radiotv
+#: help:radiotv.web,sync:0
+msgid ""
+"The changes in channels, programs and broadcasts are synchronized "
+"automatically to the website"
+msgstr ""
+"A mudança de canais, programas e transmissões são sincronizadas "
+"automáticamentes para a página web"
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_broadcast_declaration_report
+#: model:ir.ui.menu,name:radiotv.menu_wizard_broadcast_declaration_report
+msgid "Broadcasts declaration report"
+msgstr "Relatório de Declaração de Transmissões"
+
+#. module: radiotv
+#: field:radiotv.broadcast,dt_start:0
+#: wizard_field:radiotv.broadcast.compact.report,init,d_from:0
+#: wizard_field:radiotv.broadcast.declaration.report,init,d_from:0
+#: report:radiotv.broadcast.report:0
+msgid "Start"
+msgstr "Início"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_program_form
+#: field:radiotv.broadcast,program_id:0
+#: report:radiotv.broadcast.report:0
+#: view:radiotv.program:0
+msgid "Program"
+msgstr "Programa"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: selection:radiotv.program,classification:0
+msgid "Not recommended for minors of 7"
+msgstr "Não recomendado a menores de 7"
+
+#. module: radiotv
+#: wizard_field:radiotv.broadcast.copy,init,d_from:0
+#: wizard_field:radiotv.broadcast.copy,init,d_to:0
+#: wizard_field:radiotv.broadcast.export,init,d_from:0
+#: wizard_field:radiotv.podcast.export,init,d_from:0
+msgid "From"
+msgstr "De"
+
+#. module: radiotv
+#: view:radiotv.web:0
+msgid "Website"
+msgstr "Página Web"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form
+#: view:radiotv.broadcast:0
+#: field:radiotv.podcast,broadcast_id:0
+msgid "Broadcast"
+msgstr "Transmissão"
+
+#. module: radiotv
+#: selection:radiotv.program,state:0
+msgid "Unpublish"
+msgstr "Inédito"
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_copy_broadcast
+#: model:ir.ui.menu,name:radiotv.menu_wizard_copy_broadcast
+#: wizard_view:radiotv.broadcast.copy,init:0
+msgid "Copy broadcasts from a day to other"
+msgstr "Copiar transmissões de um dia para o outro"
+
+#. module: radiotv
+#: wizard_field:radiotv.broadcast.export,export,broadcast_delete:0
+msgid "Deleted broadcasts"
+msgstr "Transmissões Excluídas"
+
+#. module: radiotv
+#: field:radiotv.web,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_program_form1
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_program_form1
+msgid "Archive programs"
+msgstr "Arquivo de programas"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,program_delete:0
+msgid "Deleted programs"
+msgstr "Programas Excluídos"
+
+#. module: radiotv
+#: report:radiotv.broadcast.report:0
+msgid "RadioTV broadcasts"
+msgstr "Transmissões RadioTV"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_podcast
+msgid "radiotv.podcast"
+msgstr "radiotv.podcast"
+
+#. module: radiotv
+#: view:radiotv.broadcast:0
+msgid "Date/time"
+msgstr "Data/Tempo"
+
+#. module: radiotv
+#: wizard_view:radiotv.channel_program.export,init:0
+msgid "Program categories exported"
+msgstr "Categorias de Programas Exportados"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,classification:0
+msgid "Classification"
+msgstr "Cassificação"
+
+#. module: radiotv
+#: model:ir.actions.wizard,name:radiotv.wizard_export_broadcast
+#: model:ir.ui.menu,name:radiotv.menu_wizard_export_broadcast
+#: wizard_view:radiotv.broadcast.export,init:0
+msgid "Export broadcasts"
+msgstr "Transmissões Exportadas"
+
+#. module: radiotv
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_category_form
+msgid "Program categories"
+msgstr "Categorias de Programa"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,category_delete:0
+msgid "Deleted categories"
+msgstr "Categorias Excluídas"
+
+#. module: radiotv
+#: field:radiotv.program,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form12
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form12
+msgid "Today broadcasts"
+msgstr "Transmissões Diárias"
+
+#. module: radiotv
+#: field:radiotv.podcast,keywords:0
+msgid "Keywords"
+msgstr "Palavras-chave"
+
+#. module: radiotv
+#: selection:radiotv.program,state:0
+msgid "Archive"
+msgstr "Arquivo"
+
+#. module: radiotv
+#: field:radiotv.program,introduction:0
+msgid "Introduction"
+msgstr "Introdução"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,broadcast_language:0
+msgid "Broadcast language"
+msgstr "Língua de Transmissão"
+
+#. module: radiotv
+#: wizard_field:radiotv.podcast.export,export,podcast_new:0
+msgid "New podcasts"
+msgstr "Novo Podcasts"
+
+#. module: radiotv
+#: report:radiotv.broadcast.compact.report:0
+msgid "RadioTV broadcasts:"
+msgstr "Transmissões RádioTV:"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form23
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form23
+msgid "Next week broadcasts"
+msgstr "Transmissões da Próxima Semana"
+
+#. module: radiotv
+#: wizard_field:radiotv.channel_program.export,init,program_update:0
+msgid "Updated programs"
+msgstr "Actualizar Programas"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "Broadcast days/hours:"
+msgstr "Transmissões dias/horas:"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+msgid "-"
+msgstr "-"
+
+#. module: radiotv
+#: wizard_button:radiotv.broadcast.copy,init,copy:0
+msgid "Copy"
+msgstr "Copia"
+
+#. module: radiotv
+#: report:radiotv.broadcast.compact.report:0
+msgid "afternoon"
+msgstr "Á tarde"
+
+#. module: radiotv
+#: field:radiotv.category,name:0
+#: field:radiotv.channel,name:0
+#: field:radiotv.podcast,name:0
+#: field:radiotv.program,name:0
+#: field:radiotv.web,name:0
+msgid "Name"
+msgstr "Nome"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.copy,init:0
+msgid "Start range"
+msgstr "Intervalo Ínicial"
+
+#. module: radiotv
+#: wizard_field:radiotv.broadcast.export,export,broadcast_update:0
+msgid "Updated broadcasts"
+msgstr "Transmissões Actualizadas"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.act_broadcast_2_podcasts
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_podcast_form
+#: view:radiotv.podcast:0
+msgid "Podcasts"
+msgstr "Podcasts"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.act_channel_2_broadcasts
+msgid "Channel broadcasts"
+msgstr "Canal transmissões"
+
+#. module: radiotv
+#: model:ir.model,name:radiotv.model_radiotv_program
+msgid "radiotv.program"
+msgstr "radiotv.program"
+
+#. module: radiotv
+#: report:radiotv.broadcast.declaration.report:0
+#: field:radiotv.program,approx_duration:0
+msgid "Approx. duration"
+msgstr "Duração Aproximada"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form13
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form13
+msgid "Tomorrow broadcasts"
+msgstr "Transmissões de Amanhã"
+
+#. module: radiotv
+#: field:radiotv.broadcast,description:0
+#: report:radiotv.broadcast.report:0
+#: field:radiotv.category,description:0
+#: field:radiotv.channel,description:0
+#: field:radiotv.podcast,description:0
+#: field:radiotv.program,description:0
+msgid "Description"
+msgstr "Descrição"
+
+#. module: radiotv
+#: code:addons/radiotv/wizard/wizard_export_broadcasts.py:73
+#: code:addons/radiotv/wizard/wizard_export_channels_programs.py:54
+#: code:addons/radiotv/wizard/wizard_export_podcasts.py:73
+#, python-format
+msgid ""
+"No website defined!\n"
+"Please create one."
+msgstr ""
+"Sem site definido!\n"
+"Por favor, crie um."
+
+#. module: radiotv
+#: selection:radiotv.program,production_type:0
+msgid "Own"
+msgstr "Próprio"
+
+#. module: radiotv
+#: field:radiotv.web,sync:0
+msgid "Synchronize"
+msgstr "Sincronizar"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form22
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form22
+msgid "This week broadcasts"
+msgstr "Transmissões Desta Semana"
+
+#. module: radiotv
+#: wizard_view:radiotv.podcast.export,export:0
+msgid "Podcast Export"
+msgstr "Exportação Podcast"
+
+#. module: radiotv
+#: wizard_button:radiotv.broadcast.export,init,export:0
+#: wizard_button:radiotv.podcast.export,init,export:0
+msgid "Export"
+msgstr "Exportação"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.copy,init:0
+msgid "End range"
+msgstr "Intervalo Final"
+
+#. module: radiotv
+#: wizard_view:radiotv.broadcast.export,export:0
+msgid "Broadcasts exported"
+msgstr "Broadcasts Exportados"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_web_form
+msgid "RadioTV Website"
+msgstr "Página Web Rádio TV"
+
+#. module: radiotv
+#: field:radiotv.podcast,duration:0
+msgid "Duration"
+msgstr "Duração"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_category_form
+msgid "Program category"
+msgstr "Categoria de Programa"
+
+#. module: radiotv
+#: wizard_view:radiotv.podcast.export,export:0
+msgid "Podcasts exported"
+msgstr "Podcasts Exportados"
+
+#. module: radiotv
+#: model:ir.actions.act_window,name:radiotv.action_radiotv_broadcast_form21
+#: model:ir.ui.menu,name:radiotv.menu_radiotv_broadcast_form21
+msgid "Previous week broadcasts"
+msgstr "Transmissões da Semana Anterior"
+
+#~ msgid "to"
+#~ msgstr "Para"
+
+#~ msgid "Website configuration"
+#~ msgstr "Configuração da Página web"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "XML Inválido para a Arquitectura de Vista!"
+
+#~ msgid "."
+#~ msgstr "."
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "O nome do Objecto deve começar com x_ e não pode conter nenhum carácter "
+#~ "especial!"

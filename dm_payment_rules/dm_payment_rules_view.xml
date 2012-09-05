@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <!--
+    ======================
+    PAYMENT RULES
+    ======================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_payment_rule_form">
+        <field name="name">dm.payment_rule.form</field>
+        <field name="model">dm.payment_rule</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Payment Rules">
+                <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                 <field name="journal_id"/>
+             </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_payment_rule_tree">
+        <field name="name">dm.payment_rule.tree</field>
+        <field name="model">dm.payment_rule</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Payment Rules">
+               <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                 <field name="journal_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_payment_rule_form">
+        <field name="name">All Payment Rules</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.payment_rule</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_payment_rule_tree"/>
+    </record>
+	
+    <menuitem id="menu_dm_payment_rule_form" parent="dm_payment_method.menu_dm_config_financial" action="action_dm_payment_rule_form" sequence="1" />
+	
+	<!--
+    ======================
+    CAMPAIGN
+    ======================
+    -->
+
+	<record model="ir.ui.view" id="view_dm_campaign_payment_rule_form">
+        <field name="name">dm.campaign.payment_rule.form</field>
+        <field name="model">dm.campaign.payment_rule</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Campaign Payment Rules">
+                <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                 <field name="journal_id"/>
+             </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_payment_rule_tree">
+        <field name="name">dm.campaign.payment_rule.tree</field>
+        <field name="model">dm.campaign.payment_rule</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Campaign Payment Rules">
+               <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                <field name="journal_id"/>
+            </tree>
+        </field>
+    </record>
+
+	<record id="view_dm_campaign_form_inherit" model="ir.ui.view">
+        <field name="name">dm.campaign.form.inherit</field>
+        <field name="model">dm.campaign</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm.view_campaign_form"/>
+        <field name="arch" type="xml">
+            <page string="Accounting" position="inside">
+				<field name="payment_rule_ids" colspan = "4" nolabel="1"/>
+			</page>
+        </field>
+    </record>
+
+<!--
+    ======================
+    CAMPAIGN PROPOSITION
+    ======================
+    -->
+
+	<record model="ir.ui.view" id="view_dm_campaign_proposition_payment_rule_form">
+        <field name="name">dm.campaign.proposition.payment_rule.form</field>
+        <field name="model">dm.campaign.proposition.payment_rule</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Campaign Proposition Payment Rules">
+                <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                 <field name="journal_id"/>
+             </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_campaign_proposition_payment_rule_tree">
+        <field name="name">dm.campaign.proposition.payment_rule.tree</field>
+        <field name="model">dm.campaign.proposition.payment_rule</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Campaign Proposition Payment Rules">
+               <field name="name"/>
+                <field name="dealer_id"/>
+                <field name="trademark_id"/>
+                <field name="country_id"/>
+                <field name="currency_id"/>
+                <field name="payment_method_id"/>
+                <field name="journal_id"/>
+            </tree>
+        </field>
+    </record>
+
+	<record id="view_campaign_proposition_form_inherit" model="ir.ui.view">
+        <field name="name">dm.campaign.proposition.form.inherit</field>
+        <field name="model">dm.campaign.proposition</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm.view_campaign_proposition_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Accounting">
+					<field name="payment_rule_ids" colspan = "4" nolabel="1"/>
+				</page>
+			</notebook>
+        </field>
+    </record>
+
+	</data>
+</openerp>

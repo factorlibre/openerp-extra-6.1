@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.actions.act_window" id="crm.crm_case_categ_meet">
+            <field name="context">{"search_default_user_id":False, 'search_default_section_id': section_id}</field>
+        </record>
+        <record id="crm.action_view_attendee_form" model="ir.actions.act_window">
+             <field name="context">{"search_default_toreview":1, "search_default_user_id":False}</field>
+         </record>
+         <record model="ir.actions.act_window" id="crm.crm_case_category_act_oppor11">
+              <field name="context">{"search_default_user_id":False,'search_default_current':1, 'search_default_section_id':section_id, 'stage_type': 'opportunity'}</field>
+         </record>
+    </data>
+</openerp>
+

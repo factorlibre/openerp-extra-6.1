@@ -1,0 +1,96 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_close_journal_period
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-11-30 14:59+0000\n"
+"PO-Revision-Date: 2011-06-24 12:18+0000\n"
+"Last-Translator: Jordi Esteve (Zikzakmedia) <jesteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_close_journal_period
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML no vàlid per a la definició de la vista!"
+
+#. module: account_close_journal_period
+#: model:ir.module.module,shortdesc:account_close_journal_period.module_meta_information
+msgid "Account close journal period"
+msgstr "Tancament del diari d'un període comptable"
+
+#. module: account_close_journal_period
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar amb x_ y no contenir cap caràcter "
+"especial!"
+
+#. module: account_close_journal_period
+#: view:account.journal.period.close:0
+msgid "Are you sure?"
+msgstr "Esteu segur?"
+
+#. module: account_close_journal_period
+#: view:account.journal.period:0
+msgid "Period"
+msgstr "Període"
+
+#. module: account_close_journal_period
+#: view:account.journal.period:0
+msgid "Set to Draft"
+msgstr "Canvia a esborrany"
+
+#. module: account_close_journal_period
+#: view:account.journal.period:0
+msgid "States"
+msgstr "Estats"
+
+#. module: account_close_journal_period
+#: field:account.journal.period.close,sure:0
+msgid "Check this box"
+msgstr "Marqueu aquesta opció"
+
+#. module: account_close_journal_period
+#: model:ir.actions.act_window,name:account_close_journal_period.action_account_journal_period_form
+#: model:ir.ui.menu,name:account_close_journal_period.menu_action_account_journal_period_form
+msgid "Journal Period"
+msgstr "Diari de període"
+
+#. module: account_close_journal_period
+#: model:ir.actions.act_window,name:account_close_journal_period.action_account_journal_period_close
+msgid "Close a Journal Period"
+msgstr "Tanca el diari de període"
+
+#. module: account_close_journal_period
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modelo no vàlid en la definició de l'acció."
+
+#. module: account_close_journal_period
+#: view:account.journal.period.close:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: account_close_journal_period
+#: model:ir.model,name:account_close_journal_period.model_account_journal_period_close
+msgid "journal period close"
+msgstr "Diari de període tancat"
+
+#. module: account_close_journal_period
+#: view:account.journal.period.close:0
+msgid "Close Journal Period"
+msgstr "Tanca diari de període"
+
+#. module: account_close_journal_period
+#: model:ir.module.module,description:account_close_journal_period.module_meta_information
+msgid "Module that allows to close a particular journal of a given period"
+msgstr "Mòdul que permet tancar un determinat diari d'un període concret"

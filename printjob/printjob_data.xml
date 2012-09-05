@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+	<record model="ir.cron" id="ir_cron_delete_printjobs">
+		<field name="name">Delete Old PrintJobs</field>
+		<field name="interval_number">1</field>
+		<field name="interval_type">hours</field>
+		<field name="numbercall">-1</field>
+		<field name="doall" eval="False"/>
+		<field name="model" eval="'printjob.job'"/>
+		<field name="function" eval="'_clean_old'"/>
+		<field name="args" eval="'()'"/>
+	</record>
+	<!-- printjob.action -->
+	<record model="printjob.action" id="printjob_action_0">
+		<field name="name">Send to Spool</field>
+		<field name="type">spool</field>
+	</record>
+	<record model="printjob.action" id="printjob_action_1">
+		<field name="name">Send to Printer</field>
+		<field name="type">server</field>
+	</record>
+	<record model="printjob.action" id="printjob_action_2">
+		<field name="name">Send to Client</field>
+		<field name="type">client</field>
+	</record>
+	<!-- properties -->
+	<record forcecreate="True" id="property_printjob_action" model="ir.property">
+		<field name="name">property_printjob_action</field>
+		<field name="fields_id" search="[('model','=','ir.actions.report.xml'),('name','=','property_printjob_action')]"/>
+		<field name="value" eval="'printjob.action,'+str(printjob_action_2)"/>
+	</record>
+	<!--
+	<record forcecreate="True" id="property_printjob_printer" model="ir.property">
+		<field name="name">property_printjob_printer</field>
+		<field name="fields_id" search="[('model','=','ir.actions.report.xml'),('name','=','property_printjob_printer')]"/>
+	</record>
+	-->
+</data>
+</openerp>

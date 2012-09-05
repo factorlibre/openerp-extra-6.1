@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <!--
+    =======================================================
+    PARTNER EMAIL EXTENSIONS
+    =======================================================
+    -->
+   
+	<record id="view_partner_address_form_cust" model="ir.ui.view">
+        <field name="name">res.partner.address.form.inherit.cust</field>
+        <field name="model">res.partner.address</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_address_form1"/>
+        <field name="arch" type="xml">
+  			<form position ="inside">
+  			    <notebook colspan="4">
+       				<page string="Email">
+      					<separator string="Customer Email Content" colspan = "4"/>
+					    <field name="cust_email_content"  nolabel="1" attrs="{'readonly':[('partner_id.customer','!=',True)]}"/>
+              			<separator string="Supplier Email Content" colspan = "4"/>
+              			<field name="supp_email_content" nolabel="1" attrs="{'readonly':[('partner_id.supplier','!=',True)]}"/>
+				    </page>
+			    </notebook>
+			</form>
+        </field>
+    </record>
+
+</data>
+</openerp>

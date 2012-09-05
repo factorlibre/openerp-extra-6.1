@@ -1,0 +1,146 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:08:15+0000\n"
+"PO-Revision-Date: 2009-12-10 10:08:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_crm
+#: field:meeting.confidential.info,group:0
+msgid "Group"
+msgstr "Groupe"
+
+#. module: cci_crm
+#: model:ir.module.module,shortdesc:cci_crm.module_meta_information
+msgid "CCI CRM"
+msgstr "CCI CRM"
+
+#. module: cci_crm
+#: model:crm.case.section,name:cci_crm.case_section_acp
+msgid "ACP"
+msgstr "ACP"
+
+#. module: cci_crm
+#: view:crm.case:0
+#: model:crm.case.section,name:cci_crm.case_section_sponsoring
+#: view:event.event:0
+msgid "Sponsoring"
+msgstr "Sponsoring"
+
+#. module: cci_crm
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect pour la définition de l'action"
+
+#. module: cci_crm
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x_ et ne doit pas comporter de caractères spéciaux !"
+
+#. module: cci_crm
+#: view:crm.case:0
+#: field:crm.case,event_ids:0
+msgid "Events"
+msgstr "Events"
+
+#. module: cci_crm
+#: model:crm.case.section,name:cci_crm.case_section_oups
+msgid "Oups"
+msgstr "Oups"
+
+#. module: cci_crm
+#: model:ir.module.module,description:cci_crm.module_meta_information
+msgid "\n"
+"        - défini certains groupes avec des règles d'accès liées\n"
+"        - en utilisant ces nouvelles règles, des informations peuvent être indiquée comme étant réservées aux membres d'un certain groupe\n"
+"    "
+msgstr ""
+
+#. module: cci_crm
+#: field:meeting.confidential.info,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_crm
+#: selection:meeting.confidential.info,group:0
+msgid "Every One"
+msgstr "Tout le monde"
+
+#. module: cci_crm
+#: constraint:crm.case.section:0
+msgid "Error ! You cannot create recursive sections."
+msgstr "Erreur ! Vous ne pouvez pas créer de sections récursives."
+
+#. module: cci_crm
+#: model:ir.model,name:cci_crm.model_meeting_confidential_info
+#: model:ir.ui.menu,name:cci_crm.menu_meeting_confidential_info
+msgid "Meeting Confidential Info"
+msgstr "Information confidentielle"
+
+#. module: cci_crm
+#: view:event.event:0
+#: field:event.event,case_ids:0
+msgid "Cases"
+msgstr "Cas"
+
+#. module: cci_crm
+#: field:crm.case,meeting_id:0
+msgid "Meeting confidential"
+msgstr "Rendez-vous confidentiel"
+
+#. module: cci_crm
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues !"
+
+#. module: cci_crm
+#: model:crm.case.section,name:cci_crm.case_section_agenda
+msgid "Agenda"
+msgstr "Agenda"
+
+#. module: cci_crm
+#: model:ir.actions.act_window,name:cci_crm.action_meeting_confidential_info
+#: view:meeting.confidential.info:0
+msgid "Confidential Info"
+msgstr "Info confidentielle"
+
+#. module: cci_crm
+#: model:crm.case.section,name:cci_crm.case_section_rsf
+msgid "RSF"
+msgstr "RSF"
+
+#. module: cci_crm
+#: model:ir.actions.act_window,name:cci_crm.act_res_partner_2_new_rsf
+msgid "Open a New RSF"
+msgstr "Ouvrir une nouvelle RSF"
+
+#. module: cci_crm
+#: selection:meeting.confidential.info,group:0
+msgid "Group1"
+msgstr "Groupe 1"
+
+#. module: cci_crm
+#: selection:meeting.confidential.info,group:0
+msgid "Group2"
+msgstr "Groupe 2"
+
+#. module: cci_crm
+#: field:meeting.confidential.info,name:0
+msgid "Table"
+msgstr "Table"
+
+#. module: cci_crm
+#: model:crm.case.section,name:cci_crm.case_section_ncf
+msgid "NCF"
+msgstr "NCF"
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record model="ir.ui.view" id="view_partner_contact_form_newsletter">
+        <field name="name">view.partner.contact.form.newsletter</field>
+        <field name="model">res.partner.contact</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base_contact.view_partner_contact_form"/>
+        <field name="priority" eval="20"/>
+        <field name="arch" type="xml">
+        <notebook>
+            <page string="Newsletter" position="inside">
+                <field colspan="4" mode="form,tree" name="newsletter" nolabel="1" select="1">
+                    <form string="Newsletter">
+			            <separator string="Newsletter" colspan="4"/>
+                        <field name="newsletter_id" select="2" colspan="4" nolabel="1"/>
+                        <newline/>
+			            <separator string="Unsubscribe" colspan="4"/>
+                        <field name="newsletter_unsubscribe" select="1"/>
+                        <field name="newsletter_unsubscribe_reason_id" attrs="{'readonly':[('newsletter_unsubscribe','!=',1)]}" select="2" />
+                    </form>
+                    <tree string="Newsletter">
+                        <field name="newsletter_id"/>
+                        <field name="newsletter_unsubscribe" select="1"/>
+                        <field name="newsletter_unsubscribe_reason_id" select="2" />
+                    </tree>
+                </field>
+            </page>
+        </notebook>
+        </field>
+    </record>
+</data>
+</openerp>

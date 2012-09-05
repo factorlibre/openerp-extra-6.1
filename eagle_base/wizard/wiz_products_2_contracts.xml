@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/wiz_products_2_contracts.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+
+        <wizard
+           string="Contracts"
+           model="product.product"
+           name="eagle_wizard_products_2_contracts"
+           id="eagle_action_wizard_products_2_contracts"
+		   keyword="client_action_multi"/>
+
+</data>
+</openerp>

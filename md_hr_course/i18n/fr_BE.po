@@ -1,0 +1,152 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* md_hr_course
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:06:16+0000\n"
+"PO-Revision-Date: 2009-11-26 05:06:16+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: md_hr_course
+#: view:md.hr.course:0
+#: view:md.hr.course.student:0
+msgid "Information"
+msgstr ""
+
+#. module: md_hr_course
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.ui.menu,name:md_hr_course.menu_hr_root
+msgid "Human Resources"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,payback_clause_ends:0
+msgid "Pay back clause ends"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,state:0
+msgid "State"
+msgstr ""
+
+#. module: md_hr_course
+#: selection:md.hr.course.student,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,payback_clause:0
+msgid "Pay back clause (in %)"
+msgstr ""
+
+#. module: md_hr_course
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,employee_id:0
+msgid "Employee"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,date:0
+msgid "Date followed"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,personal_contribution:0
+msgid "Personal Contribution"
+msgstr ""
+
+#. module: md_hr_course
+#: selection:md.hr.course.student,state:0
+msgid "Canceled"
+msgstr ""
+
+#. module: md_hr_course
+#: selection:md.hr.course.student,state:0
+msgid "Completed"
+msgstr ""
+
+#. module: md_hr_course
+#: view:md.hr.course.student:0
+msgid "Courses By Employee"
+msgstr ""
+
+#. module: md_hr_course
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.ui.menu,name:md_hr_course.menu_open_view_md_hr_course_student_tree
+msgid "Courses by Employee"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.ui.menu,name:md_hr_course.menu_courses_md
+#: model:ir.ui.menu,name:md_hr_course.menu_open_view_md_hr_course_tree
+#: view:md.hr.course:0
+msgid "Courses"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course.student,amount:0
+msgid "Amount"
+msgstr ""
+
+#. module: md_hr_course
+#: view:md.hr.course:0
+#: view:md.hr.course.student:0
+msgid "Course Information"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.module.module,shortdesc:md_hr_course.module_meta_information
+msgid "Pilot Human Resources"
+msgstr ""
+
+#. module: md_hr_course
+#: selection:md.hr.course.student,state:0
+msgid "Approved by HR"
+msgstr ""
+
+#. module: md_hr_course
+#: selection:md.hr.course.student,state:0
+msgid "Approved by manager"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course,name:0
+msgid "Course title"
+msgstr ""
+
+#. module: md_hr_course
+#: field:md.hr.course,code:0
+msgid "Code"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.model,name:md_hr_course.model_md_hr_course_student
+msgid "Course Student"
+msgstr ""
+
+#. module: md_hr_course
+#: model:ir.model,name:md_hr_course.model_md_hr_course
+#: field:md.hr.course.student,course_id:0
+msgid "Course"
+msgstr ""
+

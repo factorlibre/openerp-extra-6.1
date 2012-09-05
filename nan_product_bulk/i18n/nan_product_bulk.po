@@ -1,0 +1,68 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_product_bulk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-02-22 08:22:03+0000\n"
+"PO-Revision-Date: 2011-02-22 08:22:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nan_product_bulk
+#: field:product.product,bulk_of_product_ids:0
+msgid "Bulk Of"
+msgstr "Bulk Of"
+
+#. module: nan_product_bulk
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Invalid XML for View Architecture!"
+
+#. module: nan_product_bulk
+#: help:product.product,bulk:0
+msgid "A product is a bulk if there are products that have this as bulk."
+msgstr "A product is a bulk if there are products that have this as bulk."
+
+#. module: nan_product_bulk
+#: help:product.product,bulk_of_product_ids:0
+msgid "List of all products that have the current one as a bulk."
+msgstr "List of all products that have the current one as a bulk."
+
+#. module: nan_product_bulk
+#: model:ir.module.module,description:nan_product_bulk.module_meta_information
+#: model:ir.module.module,shortdesc:nan_product_bulk.module_meta_information
+msgid "Product Bulk"
+msgstr "Product Bulk"
+
+#. module: nan_product_bulk
+#: field:product.product,bulk_qty_available:0
+msgid "Stock with bulk"
+msgstr "Stock with bulk"
+
+#. module: nan_product_bulk
+#: field:product.product,bulk_virtual_available:0
+msgid "Virt. stock with bulk"
+msgstr "Virt. stock with bulk"
+
+#. module: nan_product_bulk
+#: field:product.product,bulk_id:0
+msgid "Bulk"
+msgstr "Bulk"
+
+#. module: nan_product_bulk
+#: field:product.product,bulk:0
+msgid "Is Bulk?"
+msgstr "Is Bulk?"
+
+#. module: nan_product_bulk
+#: help:product.product,bulk_id:0
+msgid "Bulk related with this product"
+msgstr "Bulk related with this product"
+

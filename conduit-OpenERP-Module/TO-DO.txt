@@ -1,0 +1,20 @@
+CONDUIT is synchronization Application for GNOME. Here we have integrated it with OPENERP.
+
+TO INSTALL CONDUIT : Go to System -> Synaptic  Package Manager and install "conduit". 
+After installation  You can see it in Application -> Accesories -> Conduit Synchronizer.
+
+TO RUN CONDUIT: Take this folder and paste it in  conduits libraries.
+
+REQUIREMENTS:
+1) VCARD to OpenERP
+2)OpenERP to VCARD
+3)CSV to OPENERP
+
+VCARD  to OPENERP is running succesfully. We can select .vcf files  and synchronize it with our database.
+NOTE : VCARD to OPENERP right right now we are passing dbname statically. case should be we have to read value of selection box.
+
+TO-DO:(FUTURE ENHANCEMENT)
+1)OpenERP to VCARD
+2)CSV to OPENERP
+Any other suggestions and enhancement if any, will also be considered.
+

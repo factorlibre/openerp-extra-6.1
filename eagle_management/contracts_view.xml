@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<!--
+  File: contracts_view.xml
+  Module: eagle_management
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+			Inherited contract form view from the Eagle Base module 
+	-->
+		<record model="ir.ui.view" id="eagle_management_view_contract_form_1">
+			<field name="name">Eagle Management Contract View 1</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<page string="Content" position="after">
+					<page string="Current Sale Order Lines" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="current_sale_order_lines" nolabel="1" colspan="4" mode="tree,form">
+			                <tree string="Sales Order Lines">
+			                    <field name="order_id"/>
+			                    <field name="order_partner_id"/>
+<!--
+			                    <field name="product_id"/>
+-->
+			                    <field name="name"/>
+			                    <field name="product_uom_qty" string="Qty"/>
+			                    <field name="product_uom" string="UoM"/>
+			                    <field name="salesman_id"/>
+			                    <field name="price_subtotal" sum="Total"/>
+			                    <field name="state"/>
+			                    <field name="invoiced"/>
+			                </tree>
+			                <!-- Use default form view -->
+						</field>
+					</page>
+					<page string="Past Sale Order Lines" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="past_sale_order_lines" nolabel="1" colspan="4" mode="tree,form">
+			                <tree string="Sales Order Lines">
+			                    <field name="order_id"/>
+			                    <field name="order_partner_id"/>
+<!--
+			                    <field name="product_id"/>
+-->
+			                    <field name="name"/>
+			                    <field name="product_uom_qty" string="Qty"/>
+			                    <field name="product_uom" string="UoM"/>
+			                    <field name="salesman_id"/>
+			                    <field name="price_subtotal" sum="Total"/>
+			                    <field name="state"/>
+			                    <field name="invoiced"/>
+			                </tree>
+			                <!-- Use default form view -->
+						</field>
+					</page>
+					<page string="Purchases" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="purchase_orders" nolabel="1" colspan="4"/>
+					</page>
+					<page string="Invoices" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="account_invoices" nolabel="1" colspan="4" mode="tree,form">
+							<tree colors="blue:state in ('draft');black:state in ('proforma','proforma2','open');gray:state in ('cancel')" string="Invoice">
+								<field name="date_invoice"/>
+								<field name="number"/>
+								<field name="partner_id" groups="base.group_user"/>
+								<field name="name"/>
+								<field name="journal_id" invisible="1"/>
+								<field name="period_id" invisible="1" groups="account.group_account_user"/>
+								<field name="company_id" groups="base.group_multi_company" widget="selection"/>
+								<field name="user_id"/>
+								<field name="date_due"/>
+								<field name="origin"/>
+								<field name="currency_id"/>
+								<field name="residual" sum="Residual Amount"/>
+								<field name="amount_untaxed" sum="Untaxed Amount"/>
+								<field name="amount_total" sum="Total Amount"/>
+								<field name="state"/>
+								
+								<button name="invoice_open" states="draft,proforma2" string="Approve" icon="terp-camera_test"/>
+							</tree>
+							<form string="Invoice">
+								<group colspan="4" col="8">
+								<field name="journal_id" groups="base.group_user" on_change="onchange_journal_id(journal_id)" widget="selection"/>
+								<field name="number"/>
+								<field name="type" invisible="1"/>
+								<field name="currency_id" width="50"/>
+								<button name="%(account.action_account_change_currency)d" type="action" icon="terp-stock_effects-object-colorize" string="Change" attrs="{'invisible':[('state','!=','draft')]}" groups="account.group_account_user"/>
+								<newline/>
+								<field string="Customer" name="partner_id" on_change="onchange_partner_id(type,partner_id,date_invoice,payment_term, partner_bank_id,company_id)" groups="base.group_user"/>
+								<field domain="[('partner_id','=',partner_id)]" name="address_invoice_id"/>
+								<field name="financial_partner_id"/>
+								<field name="fiscal_position" groups="base.group_extended" widget="selection"/>
+								<newline/>
+								<field name="date_invoice"/>
+								<field name="period_id" domain="[('state', '=', 'draft')]" groups="account.group_account_user" widget="selection"/>
+								<group colspan="2" col="1" groups="account.group_account_user">
+									<label align="0.0" string="(keep empty to use the current period)"/>
+								</group>
+								</group>
+								<notebook colspan="4">
+									<page string="Invoice">
+										<field domain="[('company_id', '=', company_id),('type','=', 'receivable')]" name="account_id" groups="account.group_account_user"/>
+										<field name="name"/>
+										<field name="payment_term" widget="selection"/>
+										<field colspan="4" name="invoice_line" nolabel="1" widget="one2many_list"/>
+										<group col="1" colspan="2">
+											<field name="tax_line" nolabel="1">
+												<tree editable="bottom" string="Taxes">
+													<field name="name"/>
+													 <field name="base" on_change="base_change(base,parent.currency_id,parent.company_id,parent.date_invoice)" readonly="1"/>
+													<field name="amount" on_change="amount_change(amount,parent.currency_id,parent.company_id,parent.date_invoice)"/>
+													<field invisible="True" name="base_amount"/>
+													<field invisible="True" name="tax_amount"/>
+													<field name="factor_base" invisible="True"/>
+													<field name="factor_tax" invisible="True"/>
+												</tree>
+											</field>
+										</group>
+										<group col="4" colspan="2">
+											<button colspan="2" name="button_reset_taxes" states="draft" string="Compute Taxes" type="object" groups="base.group_user" icon="terp-stock_format-scientific"/>
+											<field name="amount_untaxed"/>
+											<label string="" colspan="2"/>
+											<field name="amount_tax"/>
+											<field name="reconciled"/>
+											<field name="amount_total"/>
+											<field name="state"/>
+											<field name="residual"/>
+											<group col="7" colspan="4" groups="base.group_user">
+												<button name="invoice_cancel" states="draft,proforma2,sale,open" string="Cancel" icon="gtk-cancel"/>
+												<button name="action_cancel_draft" states="cancel" string="Reset to Draft" type="object" icon="terp-stock_effects-object-colorize"/>
+			
+												<button name="%(account.action_account_invoice_refund)d" type='action' string='Refund' states='open,paid' icon="gtk-execute"/>
+												<button name='%(account.action_account_state_open)d' type='action' string='Re-Open' states='paid' icon="gtk-convert" groups="base.group_no_one"/>
+												<button name="invoice_proforma2" states="draft" string="PRO-FORMA" icon="terp-gtk-media-pause" groups="account.group_account_user"/>
+												<button name="invoice_open" states="draft,proforma2" string="Validate" icon="gtk-go-forward"/>
+											</group>
+										</group>
+									</page>
+									<page string="Other Info">
+										<field name="company_id" on_change="onchange_company_id(company_id,partner_id,type,invoice_line,currency_id)" widget="selection" groups="base.group_multi_company"/>
+										<newline/>
+										<field name="date_due"/>
+										<field name="user_id"/>
+										<newline/>
+										<field domain="[('partner_id.ref_companies', 'in', [company_id])]" name="partner_bank_id"
+											groups="base.group_extended"/>
+										<field name="origin"/>
+										<field colspan="4" domain="[('partner_id','=',partner_id)]" name="address_contact_id"
+											groups="base.group_extended"/>
+										<field name="move_id" groups="account.group_account_user"/>
+										<separator colspan="4" string="Additional Information"/>
+										<field colspan="4" name="comment" nolabel="1"/>
+									</page>
+									<page string="Payments">
+										<field name="payment_ids" colspan="4" nolabel="1">
+											<tree string="Payments">
+												<field name="date"/>
+												<field name="ref"/>
+												<field name="name"/>
+												<field name="journal_id" groups="base.group_user"/>
+												<field name="debit"/>
+												<field name="credit"/>
+												<field name="amount_currency"/>
+												<field name="currency_id"/>
+											</tree>
+										</field>
+									</page>
+								</notebook>
+							</form>
+						</field>
+					</page>
+				</page>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_management_view_contract_form_2">
+			<field name="name">Eagle Management Contract View 2</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<page string="Messages" position="before">
+					<page string="Procurements" attrs="{'invisible':[('activeTab_moves','=',False)]}">
+						<field name="procurement_orders" nolabel="1" colspan="4"/>
+					</page>
+					<page string="Moves" attrs="{'invisible':[('activeTab_moves','=',False)]}">
+						<field name="stock_moves" nolabel="1" colspan="4"/>
+					</page>
+					<page string="Incoming products" attrs="{'invisible':[('activeTab_moves','=',False)]}">
+						<field name="stock_pickings_in" nolabel="1" colspan="4"/>
+					</page>
+					<page string="Outgoing products" attrs="{'invisible':[('activeTab_moves','=',False)]}">
+						<field name="stock_pickings_out" nolabel="1" colspan="4"/>
+					</page>
+				</page>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_management_view_contract_form_3">
+			<field name="name">Eagle Management Contract View 3</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<group name="act_btns_right" position="inside">
+					<field name="eagle_make_sale_button_visible" invisible="1"/>
+					<button name="button_make_sale" states="installation,production" string="Make Sale" type="object" icon="gtk-execute" attrs="{'invisible':[('eagle_make_sale_button_visible','=',False)]}"/>
+				</group>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_management_view_selection">
+			<field name="name">Eagle Management View Selection</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<group name="top" position="inside">
+					<field name="activeTab_moves" invisible="1"/>
+				</group>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_management_view_contract_position_form">
+			<field name="name">Eagle Management Contract Position View</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_form"/>
+			<field name="arch" type="xml">
+				<page string="Informations" position="after">
+					<page string="Dates management">
+						<group name="dt_mgt_left" colspan="2" col="2">
+							<field name="cust_delivery_date" string="Customer Delivery" attrs="{'readonly':[('state','=','done')]}" colspan="2"/>
+							<field name="stock_disposal_date" string="Stock Disposal" attrs="{'readonly':[('state','=','done')]}" on_change="recomp_start_date(stock_disposal_date,product_duration)" colspan="2"/>
+							<field name="product_duration" attrs="{'readonly':[('state','=','done')]}" on_change="recomp_start_date(stock_disposal_date,product_duration)" colspan="2"/>
+							<field name="cl_start_date" colspan="2"/>
+						</group>
+						<group name="dt_mgt_right" colspan="2" col="2">
+							<newline/>
+						</group>
+					</page>
+				</page>
+			</field>
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,104 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* board_restaurant
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:18:59+0000\n"
+"PO-Revision-Date: 2009-11-26 06:18:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: board_restaurant
+#: model:ir.ui.menu,name:board_restaurant.menu_board_restaurant
+msgid "Hotel Restaurant Board"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.actions.act_window,name:board_restaurant.action_hotel_restaurant_order_form_tree
+msgid "Current Table Orders"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "Current Table Order"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "KOT list"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.actions.act_window,name:board_restaurant.action_hotel_kot_form_tree
+msgid "Kitchen Order Tickets List"
+msgstr ""
+
+#. module: board_restaurant
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.actions.act_window,name:board_restaurant.open_board_restaurant
+msgid "Restaurant Dashboard"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.module.module,shortdesc:board_restaurant.module_meta_information
+msgid "Board for Hotel Restaurant users"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.actions.act_window,name:board_restaurant.action_hotel_restaurant_reservation_form_tree
+msgid "Today's Reservation"
+msgstr ""
+
+#. module: board_restaurant
+#: model:ir.module.module,description:board_restaurant.module_meta_information
+msgid "\n"
+"This module implements a dashboard for project member that includes:\n"
+"	* list of current orders\n"
+"	* List of Kitchen order tickets \n"
+"	* List of current table reservation\n"
+"	\n"
+"	"
+msgstr ""
+
+#. module: board_restaurant
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "restaurant board"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "Reservation"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "Current Orders"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board_restaurant.action_hotel_restaurant_reservation_order_form_tree
+msgid "Order Of Reservation"
+msgstr ""
+
+#. module: board_restaurant
+#: view:board.board:0
+msgid "Today's Table Reservation"
+msgstr ""
+

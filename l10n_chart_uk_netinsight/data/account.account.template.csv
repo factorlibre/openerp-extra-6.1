@@ -1,0 +1,222 @@
+"id","code","name","parent_id:id","type","user_type:id","reconcile"
+"acc_0","COMP","Company",,"view","account_type_view",FALSE
+0,0000,"Balance Sheet","acc_0","view","account_type_view",FALSE
+1,0001,"Fixed Assets",0,"view","account_type_view",FALSE
+4,2998,"Working Capital",0,"consolidation","account_type_view",FALSE
+5,2999,"Net Assets",0,"consolidation","account_type_view",FALSE
+1000,1000,"Current Assets",0,"view","account_type_view",FALSE
+2000,2000,"Current Liabilities",0,"view","account_type_view",FALSE
+3000,3000,"Capital",0,"other","account_type_equity",FALSE
+10,0010,"Leasehold",1,"view","account_type_view",FALSE
+11,0011,"Leasehold depreciation",1,"other","account_type_expense",FALSE
+20,0020,"Product tooling",1,"view","account_type_view",FALSE
+21,0021,"Product tooling depreciation",1,"other","account_type_expense",FALSE
+30,0030,"Office equipment",1,"view","account_type_view",FALSE
+31,0031,"Office equipment depreciation",1,"other","account_type_expense",FALSE
+32,0032,"Computers",1,"view","account_type_view",FALSE
+33,0033,"Computers depreciation",1,"other","account_type_expense",FALSE
+40,0040,"Furniture",1,"view","account_type_view",FALSE
+41,0041,"Furniture depreciation",1,"other","account_type_expense",FALSE
+50,0050,"Warehouse Equipment",1,"view","account_type_view",FALSE
+51,0051,"Warehouse Equipment depreciation",1,"other","account_type_expense",FALSE
+52,0052,"Manufacturing Equ",1,"view","account_type_view",FALSE
+53,0053,"Manufacturing Equ depreciation",1,"other","account_type_expense",FALSE
+9998,9998,"Suspense Account",1,"other","account_type_asset",TRUE
+9999,9999,"Mispostings Account",1,"other","account_type_asset",TRUE
+1001,1001,"Stock",1000,"other","account_type_asset",FALSE
+1002,1002,"Work in Progress",1000,"other","account_type_asset",FALSE
+1100,1100,"Debtors Control Account",1000,"view","account_type_view",FALSE
+1101,1101,"Sundry Debtors",1100,"receivable","account_type_receivable",TRUE
+1102,1102,"Other Debtors",1100,"receivable","account_type_receivable",TRUE
+1103,1103,"Prepayments",1100,"receivable","account_type_receivable",TRUE
+1104,1104,"Loan  ",1100,"other","account_type_asset",TRUE
+1200,1200,"Bank Current Account",1000,"other","account_type_asset",TRUE
+1210,1210,"Bank Deposit Account",1000,"other","account_type_asset",TRUE
+1220,1220,"Building Society Account",1000,"other","account_type_asset",TRUE
+1223,1223,"Bank US$",1000,"other","account_type_asset",TRUE
+1224,1224,"Bank €",1000,"other","account_type_asset",TRUE
+1226,1226,"Long term Deposit £",1000,"other","account_type_asset",TRUE
+1228,1228,"Long term Deposit USD",1000,"other","account_type_asset",TRUE
+1230,1230,"Petty Cash",1000,"other","account_type_asset",TRUE
+1232,1232,"Petty Cash €",1000,"other","account_type_asset",TRUE
+1240,1240,"Company Credit Card",1000,"other","account_type_asset",TRUE
+2100,2100,"Creditors Control Account",2000,"view","account_type_view",FALSE
+2101,2101,"Sundry Creditors",2000,"payable","account_type_payable",TRUE
+2102,2102,"Other Creditors",2000,"payable","account_type_payable",TRUE
+2103,2103,"Audit Accrual",2000,"payable","account_type_payable",TRUE
+2105,2105,"Old - accruals",2000,"payable","account_type_payable",TRUE
+2109,2109,"Accruals",2000,"payable","account_type_payable",TRUE
+2151,2151,"Creditors - Number 1",2000,"payable","account_type_payable",TRUE
+2152,2152,"Creditors - Number 2",2000,"payable","account_type_payable",TRUE
+2153,2153,"Creditors - Equipment deposits",2000,"payable","account_type_payable",TRUE
+2154,2154,"Creditor - Net pay control",2000,"payable","account_type_payable",TRUE
+2200,2200,"Sales Tax Control Account",2000,"view","account_type_view",FALSE
+2201,2201,"Purchase Tax Control Account",2000,"other","account_type_liability",TRUE
+2202,2202,"VAT Liability",2000,"other","account_type_liability",TRUE
+2212,2212,"PAYE & NIC",2000,"other","account_type_liability",TRUE
+2220,2220,"Healthcare, Life & PHI",2000,"other","account_type_liability",TRUE
+2221,2221,"Pension scheme accrual",2000,"other","account_type_liability",TRUE
+2222,2222,"Salaries - accruals",2000,"other","account_type_liability",TRUE
+2223,2223,"Bonus - accruals",2000,"other","account_type_liability",TRUE
+2230,2230,"Pension Fund",2000,"other","account_type_liability",TRUE
+2300,2300,"Loans",2000,"view","account_type_view",FALSE
+2310,2310,"Hire Purchase",2000,"other","account_type_liability",TRUE
+2330,2330,"Mortgages",2000,"other","account_type_liability",TRUE
+2203,2203,"VAT (15%) - New 2009 VAT",2202,"other","account_type_liability",TRUE
+2204,2204,"VAT (17.5%) - EEC STD Code",2202,"other","account_type_liability",TRUE
+2205,2205,"VAT (5%) - Heating VAT",2202,"other","account_type_liability",TRUE
+2206,2206,"VAT (8%) - Oil VAT",2202,"other","account_type_liability",TRUE
+2207,2207,"VAT (17.06%) - 2.5% Disc Rate",2202,"other","account_type_liability",TRUE
+2208,2208,"VAT (17.50%) - Standard",2202,"other","account_type_liability",TRUE
+2209,2209,"VAT (0%) - Zero Rated",2202,"other","account_type_liability",TRUE
+3002,3002,"Preference Shares",3000,"other","account_type_equity",TRUE
+3090,3090,"Share Premium",3000,"other","account_type_equity",TRUE
+3092,3092,"Share Premium Charges",3000,"other","account_type_equity",TRUE
+3100,3100,"Reserves",3000,"other","account_type_equity",TRUE
+3101,3101,"Undistributed Reserves",3000,"other","account_type_equity",TRUE
+3200,3200,"Trading Profit and Loss Account",3000,"view","account_type_view",FALSE
+3204,3204,"Trading Account",3200,"view","account_type_view",FALSE
+3205,3205,"Profit and Loss Account",3200,"view","account_type_view",FALSE
+3206,3206,"Net Sales",3204,"view","account_type_view",FALSE
+3207,3207,"Cost of Goods Sold",3204,"view","account_type_view",FALSE
+4400,4400,"Credit Charges (Late Payments)",3205,"other","account_type_income",TRUE
+4500,4500,"Asset Sales",3205,"other","account_type_income",TRUE
+4610,4610,"Miscellaneous sales",3205,"other","account_type_income",TRUE
+4900,4900,"Miscellaneous Income",3205,"view","account_type_income",TRUE
+6000,6000,"Expenses",3205,"view","account_type_view",FALSE
+7000,7000,"Gross Wages",3205,"view","account_type_view",FALSE
+8000,8000,"Depreciation",3205,"view","account_type_expense",TRUE
+8100,8100,"Bad Debt Write Off",3205,"other","account_type_expense",TRUE
+8102,8102,"Bad Debt Provision",3205,"other","account_type_expense",TRUE
+4000,4000,"Sales – Product",3206,"view","account_type_view",FALSE
+4100,4100,"Sales – Service",3206,"view","account_type_view",FALSE
+3208,3208,"Net Purchases",3207,"view","account_type_view",FALSE
+5200,5200,"Stock",3207,"view","account_type_view",FALSE
+5000,5000,"Purchases",3208,"view","account_type_view",FALSE
+4001,4001,"Sales Type A",4000,"other","account_type_income",TRUE
+4009,4009,"Discounts Allowed",4000,"other","account_type_income",TRUE
+4010,4010,"Sales Computers",4000,"other","account_type_income",TRUE
+4011,4011,"Sales Printers",4000,"other","account_type_income",TRUE
+4012,4012,"Sales Other equipment",4000,"other","account_type_income",TRUE
+4013,4013,"Sales Furniture",4000,"other","account_type_income",TRUE
+4014,4014,"Sales Consumables",4000,"other","account_type_income",TRUE
+4015,4015,"Sales Other 1",4000,"other","account_type_income",TRUE
+4018,4018,"Sales Other 2",4000,"other","account_type_income",TRUE
+4125,4125,"Installation Computers",4100,"other","account_type_income",TRUE
+4150,4150,"Installation Printers",4100,"other","account_type_income",TRUE
+4151,4151,"Installation Other equipment",4100,"other","account_type_income",TRUE
+4152,4152,"Installation Furniture",4100,"other","account_type_income",TRUE
+4156,4156,"Installation Spare 1",4100,"other","account_type_income",TRUE
+4157,4157,"Installation Spare 2",4100,"other","account_type_income",TRUE
+4158,4158,"Installation Servicing",4100,"other","account_type_income",TRUE
+4175,4175,"Maintenance Contracts",4100,"other","account_type_income",TRUE
+4901,4901,"Royalties Received",4900,"other","account_type_income",TRUE
+4902,4902,"Commissions Received",4900,"other","account_type_income",TRUE
+4903,4903,"Insurance Claims",4900,"other","account_type_income",TRUE
+4905,4905,"Distribution and Carriage",4900,"other","account_type_income",TRUE
+4910,4910,"Interest Income",4900,"other","account_type_income",TRUE
+5001,5001,"Purchases – products",5000,"other","account_type_expense",TRUE
+5002,5002,"Miscellaneous Purchases",5000,"other","account_type_expense",TRUE
+5009,5009,"Discounts Taken",5000,"other","account_type_expense",TRUE
+5010,5010,"Sales Computers costs",5000,"other","account_type_expense",TRUE
+5011,5011,"Sales Printers costs",5000,"other","account_type_expense",TRUE
+5012,5012,"Sales Other equipment costs",5000,"other","account_type_expense",TRUE
+5013,5013,"Sales Furniture costs",5000,"other","account_type_expense",TRUE
+5014,5014,"Sales Consumables costs",5000,"other","account_type_expense",TRUE
+5017,5017,"Installation Computers costs",5000,"other","account_type_expense",TRUE
+5018,5018,"Installation Printers costs",5000,"other","account_type_expense",TRUE
+5100,5100,"Installation Other equipment costs",5000,"view","account_type_expense",TRUE
+5666,5666,"Internal Projects",5000,"other","account_type_expense",TRUE
+5125,5125,"Installation Furniture costs",5100,"other","account_type_expense",TRUE
+5152,5152,"Installation Service costs",5100,"other","account_type_expense",TRUE
+5156,5156,"Maintenance Contracts costs",5100,"other","account_type_expense",TRUE
+5201,5201,"Opening Stock - P&L",5200,"other","account_type_expense",TRUE
+5202,5202,"Closing Stock - P&L",5200,"other","account_type_income",TRUE
+6052,6052,"Transport to sales exhibitions",6000,"other","account_type_expense",TRUE
+6054,6054,"Hire of Equipment for exhibitions",6000,"other","account_type_expense",TRUE
+6056,6056,"Samples and Prototypes",6000,"other","account_type_expense",TRUE
+6058,6058,"Brochures for exhibitions",6000,"other","account_type_expense",TRUE
+6062,6062,"Advertising",6000,"other","account_type_expense",TRUE
+6900,6900,"Miscellaneous Expenses",6000,"other","account_type_expense",TRUE
+7001,7001,"Directors Salaries",7000,"other","account_type_expense",TRUE
+7002,7002,"Directors Remuneration",7000,"other","account_type_expense",TRUE
+7003,7003,"Directors Bonus",7000,"other","account_type_expense",TRUE
+7004,7004,"Staff Bonus",7000,"other","account_type_expense",TRUE
+7005,7005,"Recruitment Fees",7000,"other","account_type_expense",TRUE
+7006,7006,"(Employers N.I.) NOT IN USE",7000,"other","account_type_expense",TRUE
+7007,7007,"Employers Pensions",7000,"other","account_type_expense",TRUE
+7008,7008,"Employee Benefits Healthcare",7000,"other","account_type_expense",TRUE
+7009,7009,"Employee Benefits PHI Life Assurance",7000,"other","account_type_expense",TRUE
+7010,7010,"SSP Reclaimed",7000,"other","account_type_expense",TRUE
+7011,7011,"SMP Reclaimed",7000,"other","account_type_expense",TRUE
+7012,7012,"Staff Entertainment",7000,"other","account_type_expense",TRUE
+7100,7100,"Rent",7000,"other","account_type_expense",TRUE
+7103,7103,"General Rates",7000,"other","account_type_expense",TRUE
+7200,7200,"Electricity",7000,"other","account_type_expense",TRUE
+7201,7201,"Gas",7000,"other","account_type_expense",TRUE
+7202,7202,"Oil",7000,"other","account_type_expense",TRUE
+7203,7203,"Other Heating Costs",7000,"other","account_type_expense",TRUE
+7300,7300,"Fuel and Oil",7000,"other","account_type_expense",TRUE
+7304,7304,"Miscellaneous Motor Expenses",7000,"other","account_type_expense",TRUE
+7400,7400,"Travel UK",7000,"other","account_type_expense",TRUE
+7401,7401,"Travel Europe",7000,"other","account_type_expense",TRUE
+7402,7402,"Travel  Asia",7000,"other","account_type_expense",TRUE
+7403,7403,"Travel USA",7000,"other","account_type_expense",TRUE
+7404,7404,"Overseas Entertainment",7000,"other","account_type_expense",TRUE
+7405,7405,"Overseas Travelling",7000,"other","account_type_expense",TRUE
+7406,7406,"Subsistence",7000,"other","account_type_expense",TRUE
+7410,7410,"Entertainment UK",7000,"other","account_type_expense",TRUE
+7411,7411,"Entertainment Europe",7000,"other","account_type_expense",TRUE
+7412,7412,"Entertainment Asia",7000,"other","account_type_expense",TRUE
+7413,7413,"Entertainment USA",7000,"other","account_type_expense",TRUE
+7500,7500,"Printing Postage & Stationary",7000,"other","account_type_expense",TRUE
+7501,7501,"Telephone - Internet lines",7000,"other","account_type_expense",TRUE
+7502,7502,"Telephone - Land lines",7000,"other","account_type_expense",TRUE
+7503,7503,"Mobile Phones",7000,"other","account_type_expense",TRUE
+7504,7504,"Office Stationery",7000,"other","account_type_expense",TRUE
+7505,7505,"Books etc.",7000,"other","account_type_expense",TRUE
+7506,7506,"Computer Consumables",7000,"other","account_type_expense",TRUE
+7507,7507,"Computer Maintenance",7000,"other","account_type_expense",TRUE
+7508,7508,"Courier Services",7000,"other","account_type_expense",TRUE
+7600,7600,"Legal Fees",7000,"other","account_type_expense",TRUE
+7601,7601,"Audit and Accountancy Fees",7000,"other","account_type_expense",TRUE
+7602,7602,"Consultancy Fees",7000,"other","account_type_expense",TRUE
+7603,7603,"Professional Fees",7000,"other","account_type_expense",TRUE
+7604,7604,"Accounting Services",7000,"other","account_type_expense",TRUE
+7605,7605,"Investor Monitoring Fees",7000,"other","account_type_expense",TRUE
+7607,7607,"Outsourced QA",7000,"other","account_type_expense",TRUE
+7608,7608,"Non-Exec Director Fees",7000,"other","account_type_expense",TRUE
+7609,7609,"Technology Consultancy",7000,"other","account_type_expense",TRUE
+7610,7610,"Visitors Subsistence",7000,"other","account_type_expense",TRUE
+7651,7651,"Public Relations",7000,"other","account_type_expense",TRUE
+7652,7652,"Website Maintenance",7000,"other","account_type_expense",TRUE
+7653,7653,"Marketing Support",7000,"other","account_type_expense",TRUE
+7654,7654,"Exhibitions",7000,"other","account_type_expense",TRUE
+7655,7655,"Sales Agents",7000,"other","account_type_expense",TRUE
+7691,7691,"New R&D",7000,"other","account_type_expense",TRUE
+7696,7696,"Technology consumables",7000,"other","account_type_expense",TRUE
+7700,7700,"Equipment Hire",7000,"other","account_type_expense",TRUE
+7701,7701,"Office Machine Maintenance",7000,"other","account_type_expense",TRUE
+7800,7800,"Repairs and Renewals",7000,"other","account_type_expense",TRUE
+7803,7803,"Premises Expenses",7000,"other","account_type_expense",TRUE
+7900,7900,"Bank Interest Paid",7000,"other","account_type_expense",TRUE
+7901,7901,"Bank Charges",7000,"other","account_type_expense",TRUE
+7902,7902,"Currency Charges",7000,"other","account_type_expense",TRUE
+7903,7903,"Loan Interest Paid",7000,"other","account_type_expense",TRUE
+7904,7904,"H.P. Interest",7000,"other","account_type_expense",TRUE
+7905,7905,"Credit Charges",7000,"other","account_type_expense",TRUE
+7906,7906,"Exchange Rate Variance",7000,"other","account_type_expense",TRUE
+8200,8200,"Miscellaneous",7000,"other","account_type_expense",TRUE
+8001,8001,"Leasehold Improvements DPN",8000,"other","account_type_expense",TRUE
+8002,8002,"Technical Equipment DPN",8000,"other","account_type_expense",TRUE
+8003,8003,"Computers DPN",8000,"other","account_type_expense",TRUE
+8004,8004,"Computer Software DPN",8000,"other","account_type_expense",TRUE
+8005,8005,"Furniture DPN",8000,"other","account_type_expense",TRUE
+8006,8006,"Product tooling DPN",8000,"other","account_type_expense",TRUE
+8007,8007,"Warehouse Equ DPN",8000,"other","account_type_expense",TRUE
+8008,8008,"Manufacturing Equ DPN",8000,"other","account_type_expense",TRUE
+8201,8201,"Subscriptions",8200,"other","account_type_expense",TRUE
+8202,8202,"Clothing Costs",8200,"other","account_type_expense",TRUE
+8203,8203,"Training Costs",8200,"other","account_type_expense",TRUE
+8204,8204,"Insurance",8200,"other","account_type_expense",TRUE
+8205,8205,"Refreshments",8200,"other","account_type_expense",TRUE

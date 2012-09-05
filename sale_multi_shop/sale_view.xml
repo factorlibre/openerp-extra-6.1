@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<!-- res.users -->
+        <record model="ir.ui.view" id="sale_shop_res_users_form_view">
+            <field name="name">sale.shop.res_users.form</field>
+            <field name="model">sale.shop</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_shop_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='company_id']" position="after">
+                    <field name="journal_id" domain="[('type', '=', 'sale')]"/>
+                    <field name="sequence_id"/>
+                </xpath>
+                <xpath expr="/form/field[@name='project_id']" position="after">
+                    <separator string="Users" colspan="4"/>
+                    <field name="user_ids" nolabel="1" colspan="4"/>
+                </xpath>
+            </field>
+        </record>
+
+       <record model="ir.ui.view" id="sale_order_filter_multishop" >
+            <field name="name">sales.order.filter.multishop</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="/search/field[@name='partner_id']" position="after">
+                    <field name="shop_id" widget="selection"/>
+                </xpath>
+            </field>
+        </record>
+
+       <record model="ir.ui.view" id="sale_order_tree_multishop" >
+            <field name="name">sales.order.tree.multishop</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="shop_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sale_shop_form_multishop">
+            <field name="name">sale_shop_form_multishop</field>
+            <field name="model">sale.shop</field>
+            <field name="inherit_id" ref="sale.view_shop_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="company_id" position="after" >
+                        <field name="exclude_lines_notes" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

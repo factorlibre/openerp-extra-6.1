@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+<!--  state_range2 -->
+        <record model="ir.ui.view" id="contact_state_range2_form_view">
+            <field name="name">contact.state_range2.form.all</field>
+            <field name="model">contact.state_range2</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="State range">
+                    <field name="lstate" />
+                    <field name="contact_id" />
+                    <field name="datetime_from" />
+                    <field name="datetime_to" />
+                    <field name="annotation_ids" colspan="4" />
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="contact_state_range2_tree_view">
+            <field name="name">contact.state_range2.tree.all</field>
+            <field name="model">contact.state_range2</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Planning state changes">
+                    <field name="lstate" />
+                    <field name="contact_id" />
+                    <field name="datetime_from" />
+                    <field name="datetime_to" />
+                    <field name="anno_ids_text" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="contact_state_range2_list_act">
+            <field name="name">State ranges</field>
+            <field name="res_model">contact.state_range2</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+		<record id="ir_actions_act_window_view_contact_state_range2_1" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_state_range2_list_act" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="contact_state_range2_form_view" />
+			<field eval="20" name="sequence" />
+		</record>
+		<record id="ir_actions_act_window_view_contact_state_range2_0" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_state_range2_list_act" />
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="contact_state_range2_tree_view" />
+			<field eval="10" name="sequence" />
+		</record>
+
+<!-- normalitza estats -->
+        <record model="ir.ui.view" id="contact_normalitza_form_view">
+            <field name="name">contact.state_range2_norm.form.all</field>
+            <field name="model">contact.state_range2_norm</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Normalize state ranges">
+                    <label string="When the button is clicked, all the contact state ranges will be recomputed." />
+                    <newline />
+                    <button name="normalitza" type="object" string="Normalize" />
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="contact_normalitza_list_act">
+            <field name="name">Normalize State ranges</field>
+            <field name="res_model">contact.state_range2_norm</field>
+            <field name="target">new</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+
+		<record id="ir_actions_act_window_view_contact_normalitza_1" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="contact_normalitza_list_act" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="contact_normalitza_form_view" />
+			<field eval="20" name="sequence" />
+		</record>
+
+<!-- menu -->
+        <menuitem
+            id="state_range_mi"
+            parent="annotations_mi"
+            action="contact_state_range2_list_act"/>
+        <menuitem
+            id="state_normalitza_mi"
+            parent="annotations_mi" icon="STOCK_EXECUTE"
+            action="contact_normalitza_list_act"/>
+
+    </data>
+</openerp>

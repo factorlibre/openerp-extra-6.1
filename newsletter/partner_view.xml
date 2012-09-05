@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record id="view_partner_address_newsletter_form" model="ir.ui.view">
+        <field name="name">res.partner.address.newsletter.form</field>
+        <field name="model">res.partner.address</field>
+        <field name="type">form</field>
+        <field eval="8" name="priority"/>
+        <field name="arch" type="xml">
+            <form string="Address">
+                <group colspan="4" col="6">
+                    <field name="partner_id" colspan="2"/>
+                    <field name="company_id" groups="base.group_multi_company" widget="selection" colspan="2"/>
+                    <newline/>
+                    <field name="name"/>
+                    <field domain="[('domain', '=', 'contact')]" name="title" widget="selection"/>
+                    <field name="function"/>
+                </group>
+                <notebook colspan="4">
+                    <page string="Address">
+                        <group colspan="2" col="2">
+                            <separator string="Postal Address" colspan="4" col="4"/>
+                            <field name="type"/>
+                            <field name="street"/>
+                            <field name="street2"/>
+                            <field name="zip"/>
+                            <field name="city"/>
+                            <field name="country_id"/>
+                            <field name="state_id"/>
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Communication" colspan="4" col="4"/>
+                            <field name="phone"/>
+                            <field name="fax"/>
+                            <field name="mobile"/>
+                            <field name="email" widget="email"/>
+                        </group>
+                    </page>
+                    <page string="Newsletter">
+                        <group col="6" colspan="4">
+                            <field colspan="4" mode="form,tree" name="newsletter" nolabel="1" select="1">
+                                <form string="Newsletter">
+			                        <separator string="Newsletter" colspan="4"/>
+                                    <field name="newsletter_id" select="2" colspan="4" nolabel="1"/>
+                                    <newline/>
+			                        <separator string="Unsubscribe" colspan="4"/>
+                                    <field name="newsletter_unsubscribe" select="1"/>
+                                    <field name="newsletter_unsubscribe_reason_id" attrs="{'readonly':[('newsletter_unsubscribe','!=',1)]}" select="2" />
+                                </form>
+                                <tree string="Newsletter">
+                                    <field name="newsletter_id"/>
+                                    <field name="newsletter_unsubscribe" select="1"/>
+                                    <field name="newsletter_unsubscribe_reason_id" select="2" />
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_partner_addess_newsletter">
+        <field name="name">Partner Contacts with Newsletter</field>
+        <field name="res_model">res.partner.address</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_partner_address_newsletter_tree_view" model="ir.actions.act_window.view">
+        <field eval="10" name="sequence"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="base.view_partner_address_tree"/>
+        <field name="act_window_id" ref="action_partner_addess_newsletter"/>
+    </record>
+    <record id="action_partner_address_newsletter_form_view" model="ir.actions.act_window.view">
+        <field eval="20" name="sequence"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_partner_address_newsletter_form"/>
+        <field name="act_window_id" ref="action_partner_addess_newsletter"/>
+    </record>
+
+    <menuitem id="menu_partner_address_newsletter_main" parent="base.menu_partner_address_form" action="action_partner_addess_newsletter" sequence="1"/>
+</data>
+</openerp>

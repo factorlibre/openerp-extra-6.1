@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<!--
+  File: leads_view.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<!--
+				Partners
+		-->
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_leads_inherit2">
+			<field name="name">Eagle CRM Leads Form</field>
+			<field name="type">form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+			<field name="arch" type="xml">
+				<field name="partner_id" position="replace">
+					<group colspan="2" col="4">
+						<group colspan="2">
+							<field name="partner_id"/>
+							<newline/>
+							<field 
+								name="sel_contact_id"
+								required="True"
+								on_change="onchange_contact_id(partner_id, sel_contact_id)"/>
+						</group>
+						<group colspan="2">
+							<button
+								colspan="1"
+								name="%(eagle_crm.eagle_action_newcontact4partner)d"
+								icon="gtk-index" type="action"
+								string="Create a contact"
+								context="{'addr':address}"
+								attrs="{'invisible':[('partner_id','=',False)]}"/>
+							<newline/>
+							<field name="partner_addresses" invisible="1"/>
+							<field name="contacts_jobs" invisible="1"/>
+						</group>
+					</group>
+				</field>
+			</field>
+		</record>
+		
+		<!--
+				Leads
+		
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_leads_inherit3">
+			<field name="name">Eagle CRM Lead Form Inherit 3</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<xpath expr="/form/notebook/page[@string='Extra Info']" position="attributes">
+					   <attribute name="invisible">True</attribute>
+					</xpath>			
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_leads_inherit4">
+			<field name="name">Eagle CRM Lead Form Inherit 4</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<xpath expr="/form/notebook/page[@string='Communication &amp; History']" position="attributes">
+					   <attribute name="invisible">True</attribute>
+					</xpath>			
+			</field>
+		</record>
+		
+		-->
+		
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_leads_inherit5">
+			<field name="name">Eagle CRM Lead Form Inherit 5</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="stage_id" position="replace" />
+				<button name="stage_previous" position="replace" />
+				 <button name="stage_next" position="replace" />
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_leads_inherit6">
+			<field name="name">Eagle CRM Lead Form Inherit 6</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+			<field name="priority">14</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="stage_id" position="after">
+					<button string="Schedule/Log Call"
+						name="%(crm.opportunity2phonecall_act)d" icon="terp-call-start" type="action" groups="base.group_extended"/>
+					<button name="action_makeMeeting" type="object"
+						string="Schedule Meeting" icon="gtk-redo" />
+				</field>
+			</field>
+		</record>
+		
+		<!--
+				Opportunities
+		-->
+			
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_oppor_inherit1">
+			<field name="name">Eagle CRM Opportunites Form 1</field>
+			<field name="type">form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="arch" type="xml">
+				<field name="partner_id" position="replace">
+					<field name="partner_id" required="true" on_change="onchange_partner_id(partner_id, email_from)"/>
+				</field>
+			</field>
+		</record>
+	
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_oppor_inherit2">
+			<field name="name">Eagle CRM Opportunites Form 2</field>
+			<field name="type">form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="arch" type="xml">
+				<button name="%(crm.action_crm_lead2partner)d" position="after">
+					<group colspan="2">
+						<field name="sel_contact_id" attrs="{'invisible':[('partner_id','=',False)]}"/>
+						<button
+							colspan="1"
+							name="%(eagle_crm.eagle_action_newcontact4opport)d"
+							icon="gtk-index" type="action"
+							string="Create a contact"
+							attrs="{'invisible':[('partner_id','=',False)]}"/>
+					</group>
+				</button>
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_oppor_inherit3">
+			<field name="name">Eagle CRM Opportunites Form 3</field>
+			<field name="type">form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="arch" type="xml">
+				<field name="type" position="after">
+					<field name="lead_statut" select="1"/>
+					<newline/>
+				</field>
+			</field>
+		</record>
+	
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_opport_inherit4">
+			<field name="name">Eagle CRM Opportunites Form 4</field>
+			<field name="type">form</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="arch" type="xml">
+				<page string="Extra Info" position="after">
+					<page string="Partners">
+						<field name="partner_ids" string="Partners" colspan="4" nolabel="1"/>
+					</page>
+				</page>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_prod_crm_case_form_view_opport_inherit5">
+			<field name="name">Eagle CRM Opportunity Form 5</field>
+			<field name="model">crm.lead</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="arch" type="xml">
+				<field name="type" position="after">
+					<field name="contract_id" select="1" string="Contract" attrs="{'readonly':[('state','!=','draft')]}"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_crm_opportunities_list">
+			<field name="name">Eagle CRM Opportunities List</field>
+			<field name="model">crm.lead</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="crm.crm_case_tree_view_oppor"/>
+			<field name="arch" type="xml">
+				<tree string="Opportunities" position="replace">
+					<tree string="Opportunities" colors="blue:lead_statut=='late';red:lead_statut=='old'">
+						<field name="date_deadline" invisible="1"/>
+						<field name="create_date"/>
+						<field name="name" string="Opportunity"/>
+						<field name="lead_statut"/>
+						<field name="partner_id" string="Customer"/>
+						<field name="country_id" invisible="context.get('invisible_country', True)" />
+						<field name="date_action"/>
+						<field name="title_action" />
+						<field name="stage_id"/>
+						<field name="channel_id" invisible="1"/>
+						<field name="type_id" invisible="1"/>
+						<button name="stage_previous" string="Previous Stage"
+							states="open,pending" type="object" icon="gtk-go-back" />
+						<button name="stage_next" string="Next Stage"
+							states="open,pending" type="object"
+							icon="gtk-go-forward" />
+						<field name="planned_revenue" sum="Expected Revenues"/>
+						<field name="probability" widget="progressbar" avg="Avg. of Probability"/>
+						<field name="section_id"
+							invisible="context.get('invisible_section', True)" />
+						<field name="user_id"/>
+						<field name="priority" invisible="1"/>
+						<field name="categ_id" invisible="1"/>
+						<field name="state"/>
+						<button name="case_open" string="Open"
+							states="draft,pending" type="object"
+							icon="gtk-go-forward" />
+						<button name="case_pending" string="Pending"
+							states="open,draft" type="object"
+							icon="gtk-media-pause" />
+						<button name="case_close" string="Won"
+							states="open,draft,pending" type="object"
+							icon="gtk-apply" />
+					</tree>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_crm_action_running_opport">
+			<field name="name">Running Opportunities</field>
+			<field name="res_model">crm.lead</field>
+			<field name="view_mode">tree,form,graph,calendar</field>
+			<field name="domain">[('type','=','opportunity'),('lead_statut','=','running')]</field>
+			<field name="context">{'search_default_user_id':uid,'search_default_current':0, 'search_default_section_id':section_id, 'stage_type': 'opportunity'}</field>
+			<field name="view_id" ref="crm.crm_case_tree_view_oppor"/>
+			<field name="search_view_id" ref="crm.view_crm_case_opportunities_filter"/>
+		 </record>
+
+		<menuitem 
+			name="Running Opportunities" 
+			id="eagle_crm_menu_running_opport"
+			action="eagle_crm_action_running_opport"
+			parent="crm.menu_crm_case_opp" 
+			sequence="1" />
+		
+		<record model="ir.actions.act_window" id="eagle_crm_action_late_opport">
+			<field name="name">Late Opportunities</field>
+			<field name="res_model">crm.lead</field>
+			<field name="view_mode">tree,form,graph,calendar</field>
+			<field name="domain">[('type','=','opportunity'),('lead_statut','=','late')]</field>
+			<field name="context">{'search_default_user_id':uid,'search_default_current':0, 'search_default_section_id':section_id, 'stage_type': 'opportunity'}</field>
+			<field name="view_id" ref="crm.crm_case_tree_view_oppor"/>
+			<field name="search_view_id" ref="crm.view_crm_case_opportunities_filter"/>
+		 </record>
+
+		<menuitem 
+			name="Late Opportunities" 
+			id="eagle_crm_menu_late_opport"
+			action="eagle_crm_action_late_opport"
+			parent="crm.menu_crm_case_opp" 
+			sequence="2" />
+		
+		<record model="ir.actions.act_window" id="eagle_crm_action_old_opport">
+			<field name="name">Old Opportunities</field>
+			<field name="res_model">crm.lead</field>
+			<field name="view_mode">tree,form,graph,calendar</field>
+			<field name="domain">[('type','=','opportunity'),('lead_statut','=','old')]</field>
+			<field name="context">{'search_default_user_id':uid,'search_default_current':0, 'search_default_section_id':section_id, 'stage_type': 'opportunity'}</field>
+			<field name="view_id" ref="crm.crm_case_tree_view_oppor"/>
+			<field name="search_view_id" ref="crm.view_crm_case_opportunities_filter"/>
+		 </record>
+
+		<menuitem 
+			name="Old Opportunities" 
+			id="eagle_crm_menu_old_opport"
+			action="eagle_crm_action_old_opport"
+			parent="crm.menu_crm_case_opp" 
+			sequence="3" />
+		
+		<!--
+				Leads
+		-->
+		<record model="ir.ui.view" id="eagle_view_leads_scheduler_tree">
+			<field name="name">Eagle CRM Leads Scheduler List</field>
+			<field name="model">crm.lead</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Leads" colors="blue:lead_statut=='late';red:lead_statut in ('old', 'old')">
+					<field name="date_deadline" invisible="1"/>
+					<field name="create_date"/>
+					<field name="name" string="Subject"/>
+					<field name="contact_name"/>
+					<field name="country_id" invisible="context.get('invisible_country', True)"/>
+					<field name="email_from"/>
+					<field name="phone"/>
+		
+					
+					<field name="categ_id" invisible="1"/>
+					<field name="type_id" invisible="1"/>
+					<field name="referred" invisible="1"/>
+					<field name="channel_id" invisible="1"/>
+		
+					<field name="stage_id"/>
+					<button name="stage_previous" string="Previous Stage" states="open,pending" type="object" icon="gtk-go-back"/>
+					<button name="stage_next" string="Next Stage" states="open,pending" type="object" icon="gtk-go-forward"/>
+					<field name="section_id" invisible="context.get('invisible_section', True)"/>
+					<field name="user_id"/>
+					<field name="state"/>
+					<button name="case_open" string="Open" states="draft,pending" type="object" icon="gtk-go-forward"/>
+					<button name="case_close" string="Close" states="open,draft,pending" type="object" icon="gtk-close"/>
+					<button string="Convert to Opportunity" name="convert_opportunity" states="draft,open,pending" icon="gtk-go-forward" type="object"/>
+					<button name="case_escalate" string="Escalate" states="open,draft,pending" type="object" icon="gtk-go-up"/>
+				</tree>
+			</field>
+		</record>
+	
+		
+
+		<!--
+				Link from contracts to opportunities
+		-->
+		<record model="ir.ui.view" id="eagle_view_opportunities_tree">
+			<field name="name">Eagle CRM Opportunities List</field>
+			<field name="model">crm.lead</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Opportunities" colors="blue:state=='pending';grey:state in ('cancel', 'done');red:date_deadline and (date_deadline &lt; current_date)">
+					<field name="name" string="Opportunity"/>
+					<field name="partner_id"/>
+					<field name="stage_id"/>
+					<button name="stage_previous" string="Previous Stage" states="open,pending" type="object" icon="gtk-go-back"/>
+					<button name="stage_next" string="Next Stage" states="open,pending" type="object" icon="gtk-go-forward"/>
+					<field name="planned_revenue" sum="Total of Planned Revenue"/>
+					<field name="probability" widget="progressbar" avg="Avg. of Probability"/>
+					<field name="date_deadline" invisible="1"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id)]" 
+			id="eagle_action_contract_2_corr_opportunities"
+			name="Corr. opportunities" 
+			view_id="eagle_view_opportunities_tree"
+			res_model="crm.lead" 
+			src_model="eagle.contract"/>
+	
+		<!-- 
+				CRM Leads Search View
+		-->
+		<record model="ir.ui.view" id="eagle_view_leads_search">
+			<field name="name">Eagle CRM Leads Search</field>
+			<field name="model">crm.lead</field>
+			<field name="type">search</field>
+			<field name="inherit_id" ref="crm.view_crm_case_leads_filter"/>
+			<field name="arch" type="xml">
+				<filter string="7 Days" position="after">
+					<filter icon="terp-go-week" string="News"
+						help="Leads updated during last 7 days"
+						domain="[('write_date','&lt;', time.strftime('%%Y-%%m-%%d 23:59:59')),('write_date','&gt;=',(datetime.date.today()-datetime.timedelta(days=7)).strftime('%%Y-%%m-%%d 00:00:00'))]"
+						/>
+					<field name="lead_statut"/>
+					<newline/>
+				</filter>
+			</field>
+		</record>
+
+		<!-- 
+				CRM Opportunities Search View
+		-->
+		<record model="ir.ui.view" id="eagle_view_opportunities_search">
+			<field name="name">Eagle CRM Opportunities Search</field>
+			<field name="model">crm.lead</field>
+			<field name="type">search</field>
+			<field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
+			<field name="arch" type="xml">
+				<filter string="Pending" position="after">
+					<separator orientation="vertical"/>
+					<filter icon="terp-go-week" string="News"
+						help="Leads updated during last 7 days"
+						domain="[('write_date','&lt;', time.strftime('%%Y-%%m-%%d 23:59:59')),('write_date','&gt;=',(datetime.date.today()-datetime.timedelta(days=7)).strftime('%%Y-%%m-%%d 00:00:00'))]"
+						/>
+					<field name="lead_statut"/>
+					<newline/>
+				</filter>
+			</field>
+		</record>
+
+	</data>
+</openerp>

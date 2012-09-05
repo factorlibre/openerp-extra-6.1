@@ -1,0 +1,15 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_hr_evaluation_setting","hr.evaluation.setting","model_hr_evaluation_setting","hr.group_hr_user",1,1,0,0
+"access_hr_evaluation_setting_m","hr.evaluation.setting","model_hr_evaluation_setting","hr.group_hr_manager",1,1,1,1
+"access_hr_evaluation_criteria","hr.evaluation.criteria","model_hr_evaluation_criteria","hr.group_hr_user",1,1,0,0
+"access_hr_evaluation_criteria_m","hr.evaluation.criteria","model_hr_evaluation_criteria","hr.group_hr_manager",1,1,1,1
+"access_hr_evaluation_form","hr.evaluation.form","model_hr_evaluation_form","hr.group_hr_user",1,1,1,1
+"access_hr_evaluation_form_m","hr.evaluation.form","model_hr_evaluation_form","hr.group_hr_manager",1,1,1,1
+"access_hr_evaluation_grid","hr.evaluation.history","model_hr_evaluation_grid","hr.group_hr_user",1,0,0,0
+"access_hr_evaluation_grid_m","hr.evaluation.history","model_hr_evaluation_grid","hr.group_hr_user",1,1,1,1
+"access_hr_evaluation_history","hr.evaluation.history","model_hr_evaluation_history","hr.group_hr_user",0,0,0,0
+"access_hr_evaluation_history_m","hr.evaluation.history","model_hr_evaluation_history","hr.group_hr_manager",1,1,1,1
+"access_hr_evaluation_section","hr.evaluation.section","model_hr_evaluation_section","hr.group_hr_user",1,1,0,0
+"access_hr_evaluation_section_m","hr.evaluation.section","model_hr_evaluation_section","hr.group_hr_manager",1,1,1,1
+"access_hr_evaluation_values","hr.evaluation.values","model_hr_evaluation_values","hr.group_hr_user",1,1,1,1
+"access_hr_evaluation_values_m","hr.evaluation.values","model_hr_evaluation_values","hr.group_hr_manager",1,1,1,1

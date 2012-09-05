@@ -1,0 +1,76 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_categ_taxes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-29 16:30+0000\n"
+"PO-Revision-Date: 2011-03-29 16:30+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_categ_taxes
+#: model:ir.model,name:product_categ_taxes.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: product_categ_taxes
+#: view:product.category:0
+msgid "Purchase Taxes"
+msgstr "Purchase Taxes"
+
+#. module: product_categ_taxes
+#: model:ir.model,name:product_categ_taxes.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: product_categ_taxes
+#: view:product.category:0
+msgid "Sales Taxes"
+msgstr "Sales Taxes"
+
+#. module: product_categ_taxes
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "¡Error! No puede crear categorías recursivas."
+
+#. module: product_categ_taxes
+#: field:product.category,taxes_id:0
+msgid "Customer Taxes"
+msgstr "Impuestos en Venta"
+
+#. module: product_categ_taxes
+#: code:addons/product_categ_taxes/product.py:116
+#, python-format
+msgid "Configuration Error !"
+msgstr "Error de Configuracion !"
+
+#. module: product_categ_taxes
+#: field:product.category,supplier_taxes_id:0
+msgid "Supplier Taxes"
+msgstr "Impuestos en Compra"
+
+#. module: product_categ_taxes
+#: code:addons/product_categ_taxes/product.py:117
+#, python-format
+msgid "Can not find account chart for this company, Please Create account."
+msgstr "No puede encontrar el plan de cuentas para esta compañia. Por favor crear uno."
+
+#. module: product_categ_taxes
+#: code:addons/product_categ_taxes/product.py:53
+#, python-format
+msgid "No Partner Defined !"
+msgstr "No hay un Partner Definido !"
+
+#. module: product_categ_taxes
+#: code:addons/product_categ_taxes/product.py:53
+#, python-format
+msgid "You must first select a partner !"
+msgstr "Debes primero seleccionar un partner !"
+

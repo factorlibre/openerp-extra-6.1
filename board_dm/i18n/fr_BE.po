@@ -1,0 +1,142 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* board_dm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:17:38+0000\n"
+"PO-Revision-Date: 2009-11-26 06:17:38+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Offer Manager Board"
+msgstr ""
+
+#. module: board_dm
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: board_dm
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.board_customer_manager
+#: model:ir.ui.menu,name:board_dm.menu_board_customer_manager
+msgid "Customers Files Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.ui.menu,name:board_dm.next_id_112
+msgid "Direct Marketing"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Campaign Manager Board"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Desktop Publishing Manager Board"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.board_manufacturing_manager
+#: model:ir.ui.menu,name:board_dm.menu_board_manufacturing_manager
+msgid "Mailing Manufacturing Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Draft Offer Ideas"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Tasks With Deadline Passed"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.board_offer_manager
+#: model:ir.ui.menu,name:board_dm.menu_board_offer_manager
+msgid "Offer Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Mailing Manufacturing Manager Board"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.board_dtp_manager
+#: model:ir.ui.menu,name:board_dm.menu_board_dtp_manager
+msgid "Desktop Publishing Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Current Campaigns"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Draft Offers"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.module.module,shortdesc:board_dm.module_meta_information
+msgid "Board for DM users"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.open_board_campaign
+#: model:ir.ui.menu,name:board_dm.menu_board_campaign
+msgid "Campaign Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.actions.act_window,name:board_dm.board_item_manager
+#: model:ir.ui.menu,name:board_dm.menu_board_item_manager
+msgid "Items Procurement Manager Dashboard"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Customers Files Manager Board"
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Tasks For Today"
+msgstr ""
+
+#. module: board_dm
+#: model:ir.module.module,description:board_dm.module_meta_information
+msgid "\n"
+"This module implements a dashboard for campaign manager that includes:\n"
+"    * List of campaigns that have started at max 2 month ago and those that will start in the 2 month to come\n"
+"    * List of the tasks of the day\n"
+"    * List of  the tasks with a deadline passed\n"
+"    \n"
+"This module implements a dashboard for offer manager that includes:\n"
+"    * Offers\n"
+"    * Offer Ideas\n"
+"    "
+msgstr ""
+
+#. module: board_dm
+#: view:board.board:0
+msgid "Items Procurement Manager Board"
+msgstr ""
+

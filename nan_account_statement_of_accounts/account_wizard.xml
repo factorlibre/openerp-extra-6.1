@@ -1,0 +1,34 @@
+<openerp>
+<data>
+	<!-- shipping.invoicing.wizard -->
+	<record model="ir.ui.view" id="account_statement_accounts_wizard">
+		<field name="name">account.statement.accounts.wizard</field>
+		<field name="model">account.statement.accounts.wizard</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Statement of Accounts">
+				<field name="company_id" colspan="4" groups="base.group_multi_company"/>
+				<field name="account_id" colspan="4"/>
+				<field name="partner_id" colspan="4"/>
+				<label string="" colspan="4"/>
+				<button icon="gtk-cancel" special="cancel" string="Cancel" name="action_cancel" type="object" colspan="2"/>
+				<button icon="gtk-ok" name="action_open" string="Open" type="object" colspan="2"/>
+			</form>
+		</field>
+	</record>
+	<record id="action_statement_accounts" model="ir.actions.act_window">
+		<field name="name">Statement of Accounts</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">account.statement.accounts.wizard</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">form</field>
+		<field name="target">new</field>
+	</record>
+	<menuitem 
+		action="action_statement_accounts"
+		id="menu_action_statement_accounts"
+		parent="account.menu_finance_entries"
+		/>
+</data>
+</openerp>
+

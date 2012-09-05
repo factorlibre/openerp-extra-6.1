@@ -1,0 +1,89 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* google_blogger
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-01-01 10:43:03+0000\n"
+"PO-Revision-Date: 2010-01-01 10:43:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: google_blogger
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_button:google.blogger,export,end:0
+msgid "Ok"
+msgstr ""
+
+#. module: google_blogger
+#: field:res.users,blogger_email:0
+msgid "Blogger Email Id"
+msgstr ""
+
+#. module: google_blogger
+#: model:ir.ui.menu,name:google_blogger.menu_blogger
+#: view:res.users:0
+msgid "Blogger"
+msgstr ""
+
+#. module: google_blogger
+#: model:ir.module.module,shortdesc:google_blogger.module_meta_information
+msgid "Google Blogger"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_view:google.blogger,export:0
+#: wizard_field:google.blogger,export,summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_field:google.blogger,init,blog_id:0
+msgid "Export "
+msgstr ""
+
+#. module: google_blogger
+#: wizard_view:google.blogger,init:0
+msgid "Export"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_button:google.blogger,init,export:0
+#: model:ir.actions.wizard,name:google_blogger.wizard_google_blogger
+#: model:ir.ui.menu,name:google_blogger.menu_tools_google_blogger
+msgid "Export to Blog"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_button:google.blogger,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: google_blogger
+#: wizard_view:google.blogger,init:0
+msgid "Export Tasks to Blog"
+msgstr ""
+
+#. module: google_blogger
+#: field:res.users,blogger_password:0
+msgid "Password"
+msgstr ""
+
+#. module: google_blogger
+#: model:ir.module.module,description:google_blogger.module_meta_information
+msgid "\n"
+"        This module creates wizard in Project Management/Tasks/Export to blog\n"
+"            - which export user's tasks to blog provided blog id and password in user's form\n"
+"    "
+msgstr ""
+

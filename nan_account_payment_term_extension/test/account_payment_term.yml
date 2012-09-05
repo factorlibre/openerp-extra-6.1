@@ -1,0 +1,52 @@
+-
+  In order to test payment term extension I create a payment terms and check dates.
+-
+  In order to test the new months field I create a payment terms and check result.
+-
+  !record {model: account.payment.term, id: account_payment_term_0}:
+    name: 3 months
+    line_ids:
+      - name: 3 months
+        sequence: 1
+        value: balance
+        value_amount: 1
+        days: 0
+        months: 3 
+        days2: 0
+-
+  I check that due date for 2011-01-31 is 2011-04-30
+-
+  !assert {model: account.payment.term, id: account_payment_term_0}:
+    - compute(3000.0, '2011-01-31') == [('2011-04-30', 3000.0)]
+-
+  In order to test the new division value I create a payment term and check result.
+-
+  !record {model: account.payment.term, id: account_payment_term_1}:
+    name: 1, 2 and 3 months
+    line_ids:
+      - name: 1 month
+        sequence: 1
+        value: division
+        value_amount: 3
+        days: 0
+        months: 1 
+        days2: 0
+      - name: 2 month
+        sequence: 2
+        value: division
+        value_amount: 3
+        days: 0
+        months: 2 
+        days2: 0
+      - name: 3 month
+        sequence: 3
+        value: balance
+        value_amount: 0
+        days: 0
+        months: 3 
+        days2: 0
+-
+  I check that due date for 2011-01-31 is 2011-04-30
+-
+  !assert {model: account.payment.term, id: account_payment_term_1}:
+    - compute(200.0, '2011-01-31') == [('2011-02-28', 66.67),('2011-03-31',66.67),('2011-04-30',66.66)]

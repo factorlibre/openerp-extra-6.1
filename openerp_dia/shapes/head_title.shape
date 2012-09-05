@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - head_title</name>
+  <icon>head_title.png</icon>
+  <connections/>
+  <aspectratio type="free"/>
+  <textbox x1="1.5" y1="0.2" x2="44" y2="2" /> 
+  <svg:svg>
+    <svg:image x="0" y="0" width="50" height="3.25" href="head_title_real.png"/>
+  </svg:svg>
+</shape>

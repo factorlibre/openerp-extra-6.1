@@ -1,0 +1,62 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-04 09:01+0200\n"
+"PO-Revision-Date: 2011-07-04 08:51+0200\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /tmp/tmp.PW6M8OzY6r:785 /tmp/tmp.PW6M8OzY6r:1037 /tmp/tmp.PW6M8OzY6r:1289
+msgid "Period Total"
+msgstr "Total período"
+
+#: /tmp/tmp.PW6M8OzY6r:809 /tmp/tmp.PW6M8OzY6r:1061 /tmp/tmp.PW6M8OzY6r:1313
+#, fuzzy
+msgid "Taxes by Invoice"
+msgstr "Factura"
+
+#: /tmp/tmp.PW6M8OzY6r:825 /tmp/tmp.PW6M8OzY6r:1077 /tmp/tmp.PW6M8OzY6r:1329
+msgid "Date"
+msgstr "Fecha"
+
+#: /tmp/tmp.PW6M8OzY6r:829 /tmp/tmp.PW6M8OzY6r:1081 /tmp/tmp.PW6M8OzY6r:1333
+msgid "Tax"
+msgstr "Impuesto"
+
+#: /tmp/tmp.PW6M8OzY6r:833 /tmp/tmp.PW6M8OzY6r:1085 /tmp/tmp.PW6M8OzY6r:1337
+msgid "Invoice Total"
+msgstr "Total factura"
+
+#: /tmp/tmp.PW6M8OzY6r:837 /tmp/tmp.PW6M8OzY6r:1089 /tmp/tmp.PW6M8OzY6r:1341
+msgid "Base"
+msgstr "Base"
+
+#: /tmp/tmp.PW6M8OzY6r:841 /tmp/tmp.PW6M8OzY6r:1093 /tmp/tmp.PW6M8OzY6r:1345
+msgid "Invoice"
+msgstr "Factura"
+
+#: /tmp/tmp.PW6M8OzY6r:845 /tmp/tmp.PW6M8OzY6r:1097 /tmp/tmp.PW6M8OzY6r:1349
+msgid "Account"
+msgstr "Cuenta"
+
+#: /tmp/tmp.PW6M8OzY6r:849 /tmp/tmp.PW6M8OzY6r:1101 /tmp/tmp.PW6M8OzY6r:1353
+msgid "VAT"
+msgstr "NIF"
+
+#: /tmp/tmp.PW6M8OzY6r:929 /tmp/tmp.PW6M8OzY6r:1181 /tmp/tmp.PW6M8OzY6r:1433
+msgid "Year Total"
+msgstr "Total anual"
+
+#~ msgid "Trial Balance"
+#~ msgstr "Balance de sumas y saldos"

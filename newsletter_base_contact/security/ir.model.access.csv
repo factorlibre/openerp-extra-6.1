@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_newsletter_newsletter_user","newsletter_newsletter group_user","model_newsletter_newsletter","base.group_partner_manager",1,1,1,1
+"access_newsletter_unsubscribe_reason_user","newsletter_unsubscribe_reason group_user","model_newsletter_unsubscribe_reason","base.group_partner_manager",1,1,1,1
+"access_newsletter_subscription_user","newsletter_subscription group_user","model_newsletter_subscription","base.group_partner_manager",1,1,1,1

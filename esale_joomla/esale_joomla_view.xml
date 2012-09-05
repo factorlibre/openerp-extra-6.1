@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <!-- eSale Module -->
+    <menuitem name="eSale" parent="sale.menu_sale_root" id="menu_esale"/>
+    <menuitem name="Configuration" parent="menu_esale" id="menu_esale_definition"/>
+
+    <!-- Web -->
+    <record model="ir.ui.view" id="view_esale_joomla_web">
+        <field name="name">esale_joomla.web.form</field>
+        <field name="model">esale_joomla.web</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Web Shop">
+                <notebook>
+                    <page string="General Informations">
+                        <separator string="Web Shop Info" colspan="4"/>
+                        <field name="name" select="1"/>
+                        <field name="active" select="1"/>
+                        <field name="url" widget="url" required="1"/>
+                        <newline/>
+                        <field name="login" required="1"/>
+                        <field name="password" password="1" required="1"/>
+                        <field name="shop_id" select="1" required="1"/>
+                        <field name="language_id" select="1" required="1"/>
+                        <separator string="Configuration Instructions" colspan="4"/>
+                        <label string="After having completed the above data, proceed to the taxes, languages and categories mapping. Go to the next tabs, import data form the website and complete the third column." align="0.0" colspan="4"/>
+                    </page>
+                    <page string="Taxes Mapping">
+                        <field colspan="4" name="tax_ids" nolabel="1">
+                            <tree editable="bottom" colors="red:status=='deleted'">
+                                <field name="tax_id"/>
+                                <field name="esale_joomla_country_id"/>
+                                <field name="esale_joomla_id"/>
+                                <field name="esale_joomla_rate"/>
+                                <field name="status"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Categories Mapping">
+                        <field colspan="4" name="category_ids" nolabel="1">
+                            <tree editable="bottom" colors="red:status=='deleted'">
+                                <field name="category_id"/>
+                                <field name="esale_joomla_name"/>
+                                <field name="esale_joomla_id"/>
+                                <field name="esale_joomla_parent_id"/>
+                                <field name="status"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Product Types Mapping">
+                        <field colspan="4" name="producttypes_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="category_id"/>
+                                <field name="esale_joomla_id"/>
+                                <field name="esale_joomla_name"/>
+                                <field name="state"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_web_form">
+        <field name="name">esale_joomla.web</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.web</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Web Shops" parent="menu_esale_definition" id="menu_action_esale_joomla_web" action="action_esale_joomla_web_form" groups="base.group_system"/>
+
+    <!-- Tax -->
+    <!-- Copy menu entry from addons/account.tax -->
+    <menuitem name="Taxes" parent="menu_esale_definition" id="menu_action_esale_joomla_tax" action="account.action_tax_form"/>
+
+    <!-- Tax Mapping -->
+    <record model="ir.ui.view" id="view_esale_joomla_tax_map_form">
+        <field name="name">esale_joomla.tax_map.form</field>
+        <field name="model">esale_joomla.tax_map</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Taxes Mapping">
+                <field name="tax_id" colspan="4"/>
+                <newline/>
+                <field name="web_id" select="1"/>
+                <newline/>
+                <field name="esale_joomla_country_id"/>
+                <newline/>
+                <separator string="Set by import/export" colspan="4"/>
+                <field name="status"/>
+                <newline/>
+                <field name="esale_joomla_id"/>
+                <field name="esale_joomla_rate"/>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_esale_joomla_tax_map_tree">
+        <field name="name">esale_joomla.tax_map.tree</field>
+        <field name="model">esale_joomla.tax_map</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSale Taxes Mapping" colors="red:status=='deleted'">
+                <field name="tax_id"/>
+                <field name="web_id" select="1"/>
+                <field name="esale_joomla_country_id"/>
+                <field name="esale_joomla_id"/>
+                <field name="esale_joomla_rate"/>
+                <field name="status" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_tax_map_form">
+        <field name="name">esale_joomla.tax_map</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.tax_map</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Taxes Mappings" parent="menu_esale_definition" id="menu_action_esale_joomla_tax_map" action="action_esale_joomla_tax_map_form" groups="base.group_system"/>
+
+    <!-- Web Category -->
+    <record model="ir.ui.view" id="view_esale_joomla_category_form">
+        <field name="name">esale_joomla.category.form</field>
+        <field name="model">esale_joomla.category</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Web Category">
+                <field name="name" colspan="4"/>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_esale_joomla_category_tree">
+        <field name="name">esale_joomla.category.tree</field>
+        <field name="model">esale_joomla.category</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSale Web Category">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_category_form">
+        <field name="name">esale_joomla.category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.category</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Web Categories" parent="menu_esale_definition" id="menu_action_esale_joomla_category" action="action_esale_joomla_category_form"/>
+
+    <!-- Web Category Mapping -->
+    <record model="ir.ui.view" id="view_esale_joomla_category_map_form">
+        <field name="name">esale_joomla.category_map.form</field>
+        <field name="model">esale_joomla.category_map</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Web Categories Mapping">
+                <field name="category_id" colspan="4"/>
+                <newline/>
+                <field name="web_id" select="1"/>
+                <newline/>
+                <field name="esale_joomla_name"/>
+                <newline/>
+                <field name="esale_joomla_parent_id"/>
+                <separator string="Set by import/export" colspan="4"/>
+                <field name="status"/>
+                <newline/>
+                <field name="esale_joomla_id"/>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_esale_joomla_category_map_tree">
+        <field name="name">esale_joomla.category_map.tree</field>
+        <field name="model">esale_joomla.category_map</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSale Web Categories Mapping" colors="red:status=='deleted'">
+                <field name="category_id" select="1" />
+                <field name="web_id" select="2" />
+                <field name="esale_joomla_name" select="1"/>
+                <field name="esale_joomla_id" />
+                <field name="esale_joomla_parent_id" select="1" />
+                <field name="status" select="2" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_category_map_form">
+        <field name="name">esale_joomla.category_map</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.category_map</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Web Categories Mappings"
+              parent="menu_esale_definition"
+              id="menu_action_esale_joomla_category_map"
+              action="action_esale_joomla_category_map_form"
+              groups="base.group_system"/>
+
+    <!-- Product Type Mapping -->
+    <record model="ir.ui.view" id="view_esale_joomla_producttype_map_form">
+        <field name="name">esale_joomla.producttype_map.form</field>
+        <field name="model">esale_joomla.producttype_map</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Product Types Mapping">
+                <field name="category_id" colspan="4"/>
+                <newline/>
+                <field name="web_id" select="1"/>
+                <newline/>
+                <separator string="Set by import" colspan="4"/>
+                <field name="state"/>
+                <newline/>
+                <field name="esale_joomla_id"/>
+                <field name="esale_joomla_name"/>
+                <separator string="Parameters" colspan="4"/>
+                <field colspan="4" name="producttypeparam_map_ids" nolabel="1">
+                    <tree editable="bottom">
+                        <field name="esale_joomla_id"/>
+                        <field name="esale_joomla_name"/>
+                        <field name="attribute"/>
+                        <field name="translate"/>
+                        <field name="state"/>
+                    </tree>
+                    <form>
+                        <field name="esale_joomla_id"/>
+                        <field name="esale_joomla_name"/>
+                        <field name="translate"/>
+                        <field name="state"/>
+                        <separator string="Product Attribute"/>
+                        <field name="attribute" nolabel="1" colspan="4"/>
+                    </form>
+                </field>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_esale_joomla_producttype_map_tree">
+        <field name="name">esale_joomla.productype_map.tree</field>
+        <field name="model">esale_joomla.producttype_map</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSale Product Types Mapping">
+                <field name="category_id"/>
+                <field name="web_id" select="1"/>
+                <field name="esale_joomla_id"/>
+                <field name="esale_joomla_name"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_producttype_map_form">
+        <field name="name">esale_joomla.producttype_map</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.producttype_map</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Product Types Mappings" parent="menu_esale_definition" id="menu_action_esale_joomla_producttype_map" action="action_esale_joomla_producttype_map_form" groups="base.group_system"/>
+
+    <!-- Product Mapping -->
+    <record model="ir.ui.view" id="view_esale_joomla_product_map_tree">
+        <field name="name">esale_joomla.product_map.tree</field>
+        <field name="model">esale_joomla.product_map</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSale Products Mapping">
+                <field name="product_id" select="1"/>
+                <field name="web_id" select="1"/>
+                <field name="esale_joomla_id" select="1"/>
+                <field name="status" select="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_product_map_form">
+        <field name="name">esale_joomla.product_map</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.product_map</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem name="Products Mappings"
+              parent="menu_esale_definition"
+              id="menu_action_esale_joomla_product_map"
+              action="action_esale_joomla_product_map_form"
+              groups="base.group_system"/>
+
+    <record model="ir.ui.view" id="view_order_tree">
+        <field name="name">esale_joomla.order.tree</field>
+        <field name="model">esale_joomla.order</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Sales Orders">
+                <field name="name"/>
+                <field name="date_order"/>
+                <field name="epartner_id"/>
+                <field name="web_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_order_form">
+        <field name="name">esale_joomla.order.form</field>
+        <field name="model">esale_joomla.order</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Order">
+                <notebook>
+                    <page string="eSale Order">
+                        <field name="name" select="1"/>
+                        <field name="web_id" select="1"/>
+                        <field name="web_ref" select="1"/>
+                        <field name="date_order" select="1"/>
+                        <field name="epartner_id" select="1"/>
+                        <field name="order_id" readonly="1"/>
+                        <newline/>
+
+                        <field name="order_lines" colspan="4">
+                            <tree string="Order Lines">
+                                <field name="name"/>
+                                <field name="web_product_item_price" />
+                                <field name="web_product_final_price" />
+                                <field name="web_product_item_currency" />
+                                <field name="product_qty" />
+                            </tree>
+                        </field>
+
+                        <group col="12" colspan="4">
+                          <group col="6" colspan="4">
+                            <field name="state" readonly="1" select="1" />
+                            <button name="create_order" states="draft" string="Create Order" type="object" />
+                            <!--<button name="cancel_order" states="done" string="Cancel Order" type="object" />-->
+                          </group>
+                          <group col="6" colspan="8">
+                          </group>
+                        </group>
+                    </page>
+                    <page string="Details">
+                        <field name="total"/>
+                        <field name="subtotal"/>
+                        <field name="coupon_discount"/>
+                        <field name="coupon_code"/>
+                        <field name="order_discount"/>
+
+                        <field name="tax" />
+
+                        <newline />
+                        <separator string="Shipping Details" colspan="4" />
+                        <field name="shipping"/>
+                        <field name="shipping_tax"/>
+                        <field name="shipping_tax_rate"/>
+                        <field name="shipping_type"/>
+                        <field name="shipping_shipper_name"/>
+                        <field name="shipping_method_name"/>
+                        <field name="shipping_range"/>
+                        <field name="shipping_rate_total_amount"/>
+                        <field name="shipping_joomla_ref"/>
+                        <separator string="Shipping Details Raw Description" colspan="4" />
+                        <field name="shipping_method_description" nolabel="1" colspan="4" />
+
+                        <newline />
+                        <separator string="Tax Details" colspan="4" />
+                        <field name="tax_detail"  nolabel="1"  colspan="4" />
+
+                        <newline />
+                        <separator string="Notes" colspan="4" />
+                        <field name="note" nolabel="1"  colspan="4" />
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_order_form">
+        <field name="name">esale_joomla.order.form</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.order</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_order_form"/>
+    </record>
+    <record model="ir.actions.act_window" id="action_order_tree">
+        <field name="name">esale_joomla.order.tree</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.order</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_order_tree"/>
+    </record>
+    <menuitem name="eSale Orders" parent="menu_esale" id="menu_action_order_form" action="action_order_tree" groups="base.group_system"/>
+
+    <record model="ir.actions.act_window" id="action_draft_order_tree">
+        <field name="name">esale_joomla.order</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.order</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('state','=','draft')]</field>
+    </record>
+    <menuitem name="Draft eSale Orders" parent="menu_action_order_form" id="menu_action_order_tree" action="action_draft_order_tree" groups="base.group_system"/>
+
+    <record model="ir.ui.view" id="view_order_line_form">
+        <field name="name">esale_joomla.order.line.form</field>
+        <field name="model">esale_joomla.order.line</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSales Order Line">
+                <field name="name"/>
+                <field name="order_id" />
+                <field name="order_item_id" />
+                <field name="web_product_id" />
+                <field name="web_creation_date" />
+                <field name="web_modification_date" />
+                <field name="web_product_item_price" />
+                <field name="web_product_final_price" />
+                <field name="web_product_item_currency" />
+                <field name="product_qty" />
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_order_line_tree">
+        <field name="name">esale_joomla.order.line.tree</field>
+        <field name="model">esale_joomla.order.line</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="eSales Order Line">
+                <field name="name"/>
+                <field name="order_id" />
+                <field name="order_item_id" />
+                <field name="web_product_id" />
+                <field name="web_creation_date" />
+                <field name="web_modification_date" />
+                <field name="web_product_item_price" />
+                <field name="web_product_final_price" />
+                <field name="web_product_item_currency" />
+                <field name="product_qty" />
+            </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_web_synchronisation_log_form">
+        <field name="name">esale_joomla.web.exportlog.form</field>
+        <field name="model">esale_joomla.web.exportlog</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Web Synchronization Logs">
+                <field name="name"/>
+                <field name="web_id"/>
+                <field name="log_date"/>
+                <field name="log_type"/>
+                <field name="user_id"/>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_web_synchronisation_log_tree">
+        <field name="name">esale_joomla.synclog.tree</field>
+        <field name="model">esale_joomla.synclog</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Web Synchronization Log">
+                <field name="web_id"/>
+                <field name="date"/>
+                <field name="type"/>
+                <field name="user_id"/>
+                <field name="errors"/>
+                <field name="junk"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_esale_joomla_synclog_tree">
+        <field name="name">esale_joomla.synclog</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.synclog</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Synchronization" parent="menu_esale" id="menu_esale_synch"/>
+    <menuitem name="Website Import/Export log"
+              parent="menu_esale_synch"
+              id="menu_action_esale_joomla_synclog_tree"
+              sequence="100"
+              action="action_esale_joomla_synclog_tree" />
+
+    <!-- Extend product -->
+    <record model="ir.ui.view" id="view_product_book_form">
+        <field name="name">product.normal.form.view.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Web Categories">
+                    <field colspan="4" name="esale_category_ids" nolabel="1" select="2">
+                        <tree editable="bottom">
+                            <field name="name"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_product_book_form2">
+        <field name="name">product.normal.form.view.inherit2</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="view_product_book_form"/>
+        <field name="arch" type="xml">
+            <field name="rental" position="after">
+                <field name="online" select="2"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Extend addons/product -->
+    <record id="esale_joomla_category_tree_view" model="ir.ui.view">
+        <field name="name">esale_joomla.category.tree</field>
+        <field name="model">esale_joomla.category</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Product Web Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="esale_joomla_category_action" model="ir.actions.act_window">
+        <field name="name">Products by Web Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.category</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="esale_joomla_category_tree_view"/>
+    </record>
+    <menuitem action="esale_joomla_category_action" id="menu_product_category_action" parent="product.menu_main_product" sequence="1"/>
+
+    <record id="esale_joomla_category_action_form" model="ir.actions.act_window">
+        <field name="name">Products Web Categories</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.category</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_esale_joomla_category_tree"/>
+    </record>
+    <menuitem action="esale_joomla_category_action_form" id="menu_product_category_action_form" parent="product.menu_config_product" sequence="1"/>
+
+    <!-- Web Products -->
+
+    <record model="ir.ui.view" id="view_web_product_tree">
+        <field name="name">esale_joomla.web.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Web Products">
+                <field name="name"/>
+                <field name="esale_category_names"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="esale_joomla_web_product_action" model="ir.actions.act_window">
+        <field name="name">Web Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.product</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_web_product_tree" />
+        <field name="domain">[('esale_category_ids', '!=', '1')]</field>
+    </record>
+    <menuitem action="esale_joomla_web_product_action" id="menu_web_product_action" parent="menu_esale_definition" sequence="100"/>
+
+    <record id="esale_joomla_partner_form_view" model="ir.ui.view">
+        <field name="name">esale_joomla.partner.form</field>
+        <field name="model">esale_joomla.partner</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="eSale Partner">
+                <notebook>
+                    <page string="Web Customer">
+                        <group col="4" colspan="4">
+                            <field name="name"/>
+                            <field name="webuser_id"/>
+                            <field name="web_id"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <separator colspan="2" string="Billing Address" />
+                        <separator colspan="2" string="Shipping Address" />
+                        <field name="name_billing"/>
+                        <field name="name_shipping"/>
+                        <field name="first_name_billing"/>
+                        <field name="first_name_shipping"/>
+                        <field name="last_name_billing"/>
+                        <field name="last_name_shipping"/>
+                        <field name="company_billing"/>
+                        <field name="company_shipping"/>
+                        <field name="address_1_billing" />
+                        <field name="address_1_shipping" />
+                        <field name="address_2_billing" />
+                        <field name="address_2_shipping" />
+                        <field name="city_billing" />
+                        <field name="city_shipping" />
+                        <field name="zip_billing" />
+                        <field name="zip_shipping" />
+                        <field name="country_billing" />
+                        <field name="country_shipping" />
+                        <field name="email_billing" />
+                        <field name="email_shipping" />
+                        <field name="state_billing" />
+                        <field name="state_shipping" />
+                        <field name="phone_billing" />
+                        <field name="phone_shipping" />
+                        <field name="mobile_phone_billing" />
+                        <field name="mobile_phone_shipping" />
+                        <field name="fax_billing" />
+                        <field name="fax_shipping" />
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+    <record id="esale_joomla_web_user_action" model="ir.actions.act_window">
+        <field name="name">Web Users</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">esale_joomla.partner</field>
+        <field name="view_type">form</field>
+    </record>
+    <menuitem action="esale_joomla_web_user_action" id="menu_web_user_action" parent="menu_action_order_form" sequence="200"/>
+
+</data>
+</openerp>

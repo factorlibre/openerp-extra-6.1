@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<record id="reversed_form" model="ir.ui.view">
+		        <field name="name">mrp.reversed.bom.form</field>
+		        <field name="model">mrp.reversed.bom</field>
+		        <field name="type">form</field>
+		        <field name="arch" type="xml">
+		              <form string="Reverse BOM">
+				    <separator colspan="4" string="Reverse BOM" />
+				    <label string="Do you want to Reverse this BOM?"/>
+				<button special="cancel" string="Cancel" icon='gtk-cancel'/>
+        <button name="do_reverse" string="Yes" type="object" icon="gtk-apply"/>				
+				</form>
+			</field>
+		</record>
+        <act_window name="Reverse BOM"		    
+		    res_model="mrp.reversed.bom"
+		    src_model="mrp.bom"
+		    view_mode="form"
+		    target="new"        
+            key2="client_action_multi"    
+		    id="action_reversebom"/>		    		
+	</data>
+</openerp>

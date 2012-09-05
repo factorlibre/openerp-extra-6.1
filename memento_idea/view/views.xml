@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_vote_form" model="ir.ui.view">
+            <field name="name">memento_idea.vote.form</field> 
+            <field name="model">memento_idea.vote</field> 
+            <field name="type">form</field> 
+            <field name="arch" type="xml">
+                <form string="Vote form">
+                   <field name="idea_id"/>
+                   <field name="vote"/>
+                   <field name="partner_id"/>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_category_form" model="ir.ui.view">
+            <field name="name">memento_idea.category.form</field> 
+            <field name="model">memento_idea.category</field> 
+            <field name="type">form</field> 
+            <field name="arch" type="xml">
+                <form string="Category form">
+                   <field name="name"/>
+                   <field name="parent_id"/>
+                   <separator string="Description"/>
+                   <field name="description" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_category_list" model="ir.ui.view">
+            <field name="name">memento_idea.category.list</field> 
+            <field name="model">memento_idea.category</field> 
+            <field name="type">tree</field> 
+            <field name="arch" type="xml">
+                <tree string="Categories">
+                    <field name="name"/>
+                    <field name="parent_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_category_tree" model="ir.ui.view">
+            <field name="name">memento_idea.category.tree</field> 
+            <field name="model">memento_idea.category</field> 
+            <field name="type">tree</field> 
+            <field name="field_parent">child_ids</field>
+            <field name="arch" type="xml">
+                <tree string="Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_idea_form" model="ir.ui.view">
+            <field name="name">memento_idea.idea.form</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">form</field> 
+            <field name="arch" type="xml">
+                <form string="Idea form">
+                    <group col="6" colspan="4">
+                        <group colspan="5" col="6">
+                            <field name="name" select="1" colspan="6"/>
+                            <field name="inventor_id" select="1"/>
+                            <field name="inventor_country" />
+                            <field name="score" select="2"/>
+                        </group>
+                        <group colspan="1" col="2">
+                            <field name="active"/>
+                            <field name="invent_date"/>
+                            <field name="vote_avg"/>
+                            <field name="vote_num"/>
+                        </group>
+                    </group>
+                    <field name="category_id" select="1"/>
+                    <notebook colspan="4">
+                       <page string="General">
+                            <separator string="Description"/>
+                            <field colspan="4" name="description" widget="text_wiki" nolabel="1"/>
+                       </page>
+                       <page string="Votes">
+                           <field colspan="4" mode="tree" name="vote_ids" nolabel="1" select="1">
+                               <tree string="Votes" editable="top">
+                                   <field name="partner_id"/>
+                                   <field name="vote"/>
+                                </tree>
+                            </field>
+                       </page>
+                       <page string="Sponsors">
+                           <field colspan="4" mode="tree" name="sponsor_ids" nolabel="1" select="1"/>
+                       </page>
+                   </notebook>
+                   <field name="state"/>
+                   <button type="workflow" string="Confirm" states="draft" name="button_confirm"/>
+                   <button type="workflow" string="Close" states="confirmed" name="button_close"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_idea_list" model="ir.ui.view">
+            <field name="name">Ideas list</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">tree</field> 
+            <field name="priority">8</field> 
+            <field name="arch" type="xml">
+                <tree string="Ideas">
+                	<field name="sequence"/>	
+                    <field name="name" select="1"/>
+                    <field name="description" select="1"/>
+                    <field name="inventor_id"/>
+                    <field name="score"/>
+                </tree>
+            </field> 
+        </record>
+
+        <record id="view_idea_calendar" model="ir.ui.view">
+            <field name="name">view.idea.calendar</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">calendar</field> 
+            <field name="arch" type="xml">
+                <calendar string="Ideas" date_start="invent_date" color="inventor_id">
+                    <field name="name"/>
+                </calendar>
+            </field> 
+        </record>
+
+        <record id="view_idea_gantt" model="ir.ui.view">
+            <field name="name">view.idea.gantt</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">gantt</field> 
+            <field name="arch" type="xml">
+                <gantt string="Ideas" date_start="invent_date" color="inventor_id">
+                    <level object="memento_idea.idea" link="id" domain="[]">
+                        <field name="inventor_id"/>
+                        <field name="inventor_country"/>
+                    </level>
+                </gantt>
+            </field> 
+        </record>
+
+        <record id="view_idea_graph" model="ir.ui.view">
+            <field name="name">view.idea.graph</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">graph</field> 
+            <field name="arch" type="xml">
+                <graph string="Total score by inventor" type="bar">
+                    <field name="inventor_id"/>
+                    <field name="score"/>
+                </graph>
+            </field> 
+        </record>
+
+        <record id="view_idea_filter" model="ir.ui.view">
+            <field name="name">memento_idea.idea.select</field> 
+            <field name="model">memento_idea.idea</field> 
+            <field name="type">search</field> 
+            <field name="arch" type="xml">
+                <search string="Search Ideas">
+                    <group col='6' colspan='4'>     
+                        <filter string="My Ideas" icon="terp-partner"
+                            domain="[('inventor_id','=',uid)]" 
+                            help="My own ideas"/>
+                        <field name="name" select="1"/>
+                        <field name="description" select="1"/>
+                        <field name="inventor_id" select="1"/>
+                        <field name="inventor_country" select="1" widget="selection" context="{'inventor_contry': self}"/>
+                    </group>
+                </search>
+            </field> 
+        </record>
+
+
+        <record id="action_memento_idea_ideas_all" model="ir.actions.act_window">
+            <field name="name">All ideas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">memento_idea.idea</field>
+            <field name="view_type">form</field>
+            <field name="search_view_id" ref="view_idea_filter"/>
+            <field name="view_mode">tree,form,calendar,graph,gantt</field>
+        </record>
+        <record id="action_memento_idea_votes_all" model="ir.actions.act_window">
+            <field name="name">Votes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">memento_idea.vote</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="action_memento_idea_categories_all" model="ir.actions.act_window">
+            <field name="name">Categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">memento_idea.category</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="action_memento_idea_categories_tree" model="ir.actions.act_window">
+            <field name="name">Category Structure</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">memento_idea.category</field>
+            <field name="view_id" ref="view_category_tree"/>
+            <field name="view_type">tree</field>
+            <field name="domain">[('parent_id', '=', False)]</field>
+        </record>
+       
+ 
+
+            
+         <menuitem id="menu_memento_idea_categories_list" 
+            parent="menu_memento_idea_config" 
+            action="action_memento_idea_categories_all"
+            sequence="10"/>
+         <menuitem id="menu_memento_idea_categories_tree" 
+            parent="menu_memento_idea_config" 
+            action="action_memento_idea_categories_tree"
+            sequence="20"/>
+
+        <menuitem id="menu_memento_idea_idea_list" 
+            parent="menu_memento_idea" 
+            action="action_memento_idea_ideas_all"
+            sequence="20"/>
+        <menuitem id="menu_memento_idea_vote_list" 
+            parent="menu_memento_idea" 
+            action="action_memento_idea_votes_all"
+            sequence="30"/>
+
+        
+    </data>
+</openerp>
+

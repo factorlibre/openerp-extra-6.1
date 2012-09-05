@@ -1,0 +1,102 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:51+0000\n"
+"PO-Revision-Date: 2011-08-23 14:28+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "Phone:"
+msgstr "Telefono:"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+#: field:event.event,trainer_id:0
+msgid "Trainer"
+msgstr "Entrenador"
+
+#. module: event_certificate
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "Certifications"
+msgstr "Certificaciones"
+
+#. module: event_certificate
+#: model:ir.actions.report.xml,name:event_certificate.report_event_certificate
+msgid "Certificate"
+msgstr "Certificado"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "Mail:"
+msgstr "Correo:"
+
+#. module: event_certificate
+#: model:ir.module.module,description:event_certificate.module_meta_information
+msgid ""
+"Events Certificate.\n"
+"    This module allow you\n"
+"        * to print certificate related to your events and their "
+"registrations    \n"
+msgstr ""
+"Eventos de certificados.\n"
+"    Este módulo le permite\n"
+"        * Para imprimir certificados relacionados con los eventos y su "
+"registro    \n"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "-"
+msgstr "-"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "Page"
+msgstr "Página"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "To"
+msgstr "Para"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "1.00cm 20.0cm 29.0cm 20.0cm"
+msgstr "1.00cm 20.0cm 29.0cm 20.0cm"
+
+#. module: event_certificate
+#: model:ir.module.module,shortdesc:event_certificate.module_meta_information
+msgid "Event Certificate"
+msgstr "Certificado del evento"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "COL 2"
+msgstr "COL 2"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "COL 1"
+msgstr "COL 1"
+
+#. module: event_certificate
+#: rml:event.certificate:0
+msgid "HAS SUCCESSFULLY COMPLETED"
+msgstr "COMPLETADO CON ÉXITO"

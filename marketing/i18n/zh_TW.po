@@ -1,0 +1,434 @@
+# Chinese (Traditional) translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:05+0000\n"
+"PO-Revision-Date: 2012-08-19 10:41+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:37+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Send an E-Mail"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,name:0
+msgid "Name / Reference"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner.add,init,priority:0
+msgid "Very Good"
+msgstr ""
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_campaign
+msgid "campaign.campaign"
+msgstr ""
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,from:0
+msgid "From"
+msgstr ""
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+#: wizard_field:campaign.partner.add,init,partners:0
+msgid "Partners"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,info:0
+#: view:campaign.partner.history:0
+#: field:campaign.partner.history,info:0
+msgid "Comments"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,planned_costs:0
+msgid "Planned Costs"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Continue Campaign"
+msgstr ""
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,on_error:0
+msgid "Error Return To"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.step,max_try:0
+msgid "Max Attemps"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,date_recall:0
+msgid "Call again on"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Low"
+msgstr ""
+
+#. module: marketing
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: marketing
+#: wizard_button:campaign.partner.email_send,init,send:0
+msgid "Send Email"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Marketing Prospects"
+msgstr ""
+
+#. module: marketing
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Email"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.step:0
+msgid "Marketing Steps"
+msgstr ""
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+msgid "Default Values"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner.add,init,priority:0
+msgid "Good"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,info:0
+#: field:campaign.step,info:0
+msgid "Description"
+msgstr ""
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Header"
+msgstr ""
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,body:0
+msgid "Email Message"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Main Information"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.step,procent:0
+msgid "Success Rate (0<x<1)"
+msgstr ""
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+msgid "Add partners to campaign"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,date_stop:0
+#: field:campaign.step,stop_date:0
+msgid "Stop Date"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.campaign:0
+#: model:ir.ui.menu,name:marketing.menu_marketing_operations_campaigns
+msgid "Campaigns"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,planned_revenue:0
+msgid "Planned Revenue"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,step:0
+#: field:campaign.partner.history,step_id:0
+msgid "Step"
+msgstr ""
+
+#. module: marketing
+#: model:res.groups,name:marketing.group_marketing_user
+msgid "User"
+msgstr "使用者"
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Waiting"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner.history,date:0
+msgid "Date"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,notes:0
+msgid "Prospect Notes"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Call again Later"
+msgstr ""
+
+#. module: marketing
+#: model:ir.ui.menu,name:marketing.menu_op_config
+msgid "Configuration"
+msgstr ""
+
+#. module: marketing
+#: wizard_field:campaign.partner.add,init,campaign_step_id:0
+msgid "First Campaign Step"
+msgstr ""
+
+#. module: marketing
+#: model:ir.ui.menu,name:marketing.menu_marketing_operations
+msgid "Marketing Operations"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,costs:0
+msgid "Initial Costs"
+msgstr ""
+
+#. module: marketing
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner.history,step_attempt:0
+msgid "Attempt"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,name:0
+msgid "Name"
+msgstr ""
+
+#. module: marketing
+#: model:ir.module.module,description:marketing.module_meta_information
+msgid "Marketing management module"
+msgstr ""
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_partner_history
+msgid "campaign.partner.history"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+msgid "Very High"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Step Information"
+msgstr ""
+
+#. module: marketing
+#: wizard_button:campaign.partner.add,init,add:0
+msgid "Add these partners"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,active:0
+#: field:campaign.step,active:0
+msgid "Active"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Medium"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Stopped"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.campaign:0
+#: model:ir.ui.menu,name:marketing.menu_op_config_camp_def
+msgid "Campaign Definition"
+msgstr ""
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_step
+msgid "campaign.step"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Very Low"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.step,costs:0
+msgid "Step Costs"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+#: field:campaign.partner,history_ids:0
+#: view:campaign.partner.history:0
+#: field:campaign.partner.history,name:0
+msgid "History"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner.history,camp_partner_id:0
+msgid "Prospect"
+msgstr ""
+
+#. module: marketing
+#: model:ir.actions.wizard,name:marketing.wizard_load_partners
+msgid "Load partners"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Stop Campaign"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,priority:0
+#: wizard_field:campaign.partner.add,init,priority:0
+msgid "Priority"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,contact:0
+msgid "Partner Contact"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,campaign_id:0
+#: field:campaign.step,campaign_id:0
+msgid "Campaign"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.step,priority:0
+msgid "Sequence"
+msgstr ""
+
+#. module: marketing
+#: field:marketing.installer,marketing_campaign:0
+msgid "Marketing Campaigns"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Normal"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,state:0
+msgid "State"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,part_adr_id:0
+msgid "Partner Address"
+msgstr ""
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+msgid "High"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,step_id:0
+#: view:campaign.step:0
+msgid "Campaign Steps"
+msgstr ""
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_partner
+msgid "campaign.partner"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Prospect Information"
+msgstr ""
+
+#. module: marketing
+#: wizard_button:campaign.partner.add,init,end:0
+#: wizard_button:campaign.partner.email_send,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,partner_id:0
+msgid "Partner"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.campaign,date_start:0
+#: field:campaign.step,start_date:0
+msgid "Start Date"
+msgstr ""
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Marketing::Prospects"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.partner,user_id:0
+msgid "Salesman"
+msgstr ""
+
+#. module: marketing
+#: model:ir.actions.wizard,name:marketing.wizard_email
+msgid "Send an email"
+msgstr ""
+
+#. module: marketing
+#: field:campaign.step,name:0
+msgid "Step Name"
+msgstr ""
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,subject:0
+msgid "Subject"
+msgstr ""

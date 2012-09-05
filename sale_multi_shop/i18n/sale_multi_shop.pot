@@ -1,0 +1,117 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_multi_shop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-02-16 12:09+0000\n"
+"PO-Revision-Date: 2012-02-16 12:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_multi_shop
+#: field:res.users,shop_id:0
+msgid "Shop"
+msgstr "Shop"
+
+#. module: sale_multi_shop
+#: help:sale.shop,sequence_id:0
+msgid "The sequence used for sale order numbers."
+msgstr "The sequence used for sale order numbers."
+
+#. module: sale_multi_shop
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "Order Reference must be unique !"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_sale_order
+msgid "Sales Order"
+msgstr "Sales Order"
+
+#. module: sale_multi_shop
+#: field:sale.shop,exclude_lines_notes:0
+msgid "Exclude Order Line Notes"
+msgstr "Exclude Order Line Notes"
+
+#. module: sale_multi_shop
+#: help:sale.shop,journal_id:0
+msgid "The journal used for this shop."
+msgstr "The journal used for this shop."
+
+#. module: sale_multi_shop
+#: help:sale.shop,exclude_lines_notes:0
+msgid "Exclude copy sale description to sale order line"
+msgstr "Exclude copy sale description to sale order line"
+
+#. module: sale_multi_shop
+#: model:ir.module.module,description:sale_multi_shop.module_meta_information
+msgid "\n"
+"This module allows to manage the multi shops by multi companies: \n"
+"- Relationship between shops and users\n"
+"- Search filter and list by shop\n"
+""
+msgstr "\n"
+"This module allows to manage the multi shops by multi companies: \n"
+"- Relationship between shops and users\n"
+"- Search filter and list by shop\n"
+""
+
+#. module: sale_multi_shop
+#: help:res.users,shop_id:0
+msgid "The current shop related to the user"
+msgstr "The current shop related to the user"
+
+#. module: sale_multi_shop
+#: sql_constraint:res.users:0
+msgid "You can not have two users with the same login !"
+msgstr "You can not have two users with the same login !"
+
+#. module: sale_multi_shop
+#: constraint:res.users:0
+msgid "The chosen company is not in the allowed companies for this user"
+msgstr "The chosen company is not in the allowed companies for this user"
+
+#. module: sale_multi_shop
+#: model:ir.module.module,shortdesc:sale_multi_shop.module_meta_information
+msgid "Sale Multi Shop"
+msgstr "Sale Multi Shop"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_sale_shop
+msgid "Sales Shop"
+msgstr "Sales Shop"
+
+#. module: sale_multi_shop
+#: model:ir.model,name:sale_multi_shop.model_res_users
+msgid "res.users"
+msgstr "res.users"
+
+#. module: sale_multi_shop
+#: view:sale.shop:0
+#: field:sale.shop,user_ids:0
+msgid "Users"
+msgstr "Users"
+
+#. module: sale_multi_shop
+#: view:res.users:0
+#: field:res.users,shop_ids:0
+msgid "Shops"
+msgstr "Shops"
+
+#. module: sale_multi_shop
+#: field:sale.shop,sequence_id:0
+msgid "Sale Order Sequence"
+msgstr "Sale Order Sequence"
+
+#. module: sale_multi_shop
+#: field:sale.shop,journal_id:0
+msgid "Account Journal"
+msgstr "Account Journal"
+

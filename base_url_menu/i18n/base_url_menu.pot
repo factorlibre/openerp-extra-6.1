@@ -1,0 +1,68 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* base_url_menu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 05:37:09+0000\n"
+"PO-Revision-Date: 2009-11-25 05:37:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_url_menu
+#: model:ir.module.module,description:base_url_menu.module_meta_information
+msgid "Module for creating URL menus. Work only with eTiny"
+msgstr ""
+
+#. module: base_url_menu
+#: model:ir.ui.menu,name:base_url_menu.menu_wizard_url_menu
+msgid "Create a menu that links to an URL"
+msgstr ""
+
+#. module: base_url_menu
+#: wizard_field:url.menu.menu,init,url_menu_parent_id:0
+msgid "Parent Menu"
+msgstr ""
+
+#. module: base_url_menu
+#: wizard_button:url.menu.menu,init,create:0
+msgid "Create menu Entries"
+msgstr ""
+
+#. module: base_url_menu
+#: model:ir.ui.menu,name:base_url_menu.menu_wizard_url_menu_main
+msgid "Menu Management"
+msgstr ""
+
+#. module: base_url_menu
+#: wizard_field:url.menu.menu,init,target_id:0
+msgid "Target URL"
+msgstr ""
+
+#. module: base_url_menu
+#: wizard_field:url.menu.menu,init,url_menu_name:0
+msgid "URL Menu Name"
+msgstr ""
+
+#. module: base_url_menu
+#: model:ir.actions.wizard,name:base_url_menu.wizard_url_menu
+#: wizard_view:url.menu.menu,init:0
+msgid "Create URL Menus"
+msgstr ""
+
+#. module: base_url_menu
+#: model:ir.module.module,shortdesc:base_url_menu.module_meta_information
+msgid "Url Menus"
+msgstr ""
+
+#. module: base_url_menu
+#: wizard_button:url.menu.menu,init,end:0
+msgid "Cancel"
+msgstr ""
+

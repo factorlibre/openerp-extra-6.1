@@ -1,0 +1,253 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_bob_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:48:22+0000\n"
+"PO-Revision-Date: 2009-11-26 06:48:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_bob_import
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "An error occured when importing the file \"%s\". Please check that pxview is correclty installed on the server."
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.model,name:account_bob_import.model_config_path_folder
+msgid "config.path.folder"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.path.folder:0
+msgid "Import Bob Data"
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_cash_equity
+msgid "Equity"
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.actions.todo,note:account_bob_import.config_bob_import
+msgid "Specify the company name,type of the BOB installation and Path or a zip containing the BOB Installation Folder."
+msgstr ""
+
+#. module: account_bob_import
+#: help:config.bob.import,path:0
+msgid "Supply a path that is a Bob Installation Folder."
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.bob.import:0
+msgid "Next"
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_asset
+msgid "Asset"
+msgstr ""
+
+#. module: account_bob_import
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_income
+msgid "Income"
+msgstr ""
+
+#. module: account_bob_import
+#: field:config.path.folder,folder:0
+msgid "Folder"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.path.folder:0
+msgid "If the given list appears to be empty, click Back and select a valid path."
+msgstr ""
+
+#. module: account_bob_import
+#: constraint:res.partner:0
+msgid "Error: Invalid Bar Code Number"
+msgstr ""
+
+#. module: account_bob_import
+#: selection:config.bob.import,location:0
+msgid "Remotely(This Machine is the Client)"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.bob.import:0
+msgid "Configure Your BOB Import Options"
+msgstr ""
+
+#. module: account_bob_import
+#: field:config.bob.import,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_liability
+msgid "Liability"
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "User Error"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.path.folder:0
+#: model:ir.actions.act_window,name:account_bob_import.action_config_path_folder_form
+msgid "Select Folder"
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.module.module,description:account_bob_import.module_meta_information
+msgid "\n"
+"        This module provide an easy way to migrate your financial data from Bob software to OpenERP. It includes the import of\n"
+"            * chart of accounts,\n"
+"            * financial journals,\n"
+"            * customers, suppliers and prospects,\n"
+"            * contacts,\n"
+"            * accounting entries\n"
+"\n"
+"        Once the module is installed, all you have to do is run the configuration wizard and provide OpenERP the location of the Bob directory where is your data.\n"
+""
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.module.module,shortdesc:account_bob_import.module_meta_information
+msgid "Import accounting entries from Bob"
+msgstr ""
+
+#. module: account_bob_import
+#: help:config.bob.import,location:0
+msgid "If this machine is the server, select 'locally' as the location.If this is the client machine, create a zip of the 'Bob' folder placed in Root(Drive Letter)://Program Files/Bob.Upload it and follow the further instructions."
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.model,name:account_bob_import.model_config_bob_import
+msgid "config.bob.import"
+msgstr ""
+
+#. module: account_bob_import
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "The Zip file doesn''\'t contain a valid Bob folder.It doesn''\'t have Bob.exe."
+msgstr ""
+
+#. module: account_bob_import
+#: selection:config.bob.import,location:0
+msgid "Locally(This Machine is the Server)"
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "The Path \"%s\" is not a valid BOB Folder.It doesn''\'t have Bob.exe."
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_cash_moves
+msgid "Cash"
+msgstr ""
+
+#. module: account_bob_import
+#: model:ir.actions.act_window,name:account_bob_import.action_config_bob_import_form
+msgid "Configure BOB Import"
+msgstr ""
+
+#. module: account_bob_import
+#: help:config.bob.import,zipped_file:0
+msgid "Upload a .zip file containing information of BOB Installation'"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.path.folder:0
+msgid "Select the BOB folder out of the list given below."
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_expense
+msgid "Expense"
+msgstr ""
+
+#. module: account_bob_import
+#: model:account.account.type,name:account_bob_import.account_type_root
+msgid "View"
+msgstr ""
+
+#. module: account_bob_import
+#: constraint:account.account:0
+msgid "Error ! You can not create recursive accounts."
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "Error Occured"
+msgstr ""
+
+#. module: account_bob_import
+#: code:addons/account_bob_import/bob_import_step_1.py:0
+#, python-format
+msgid "The Path \"%s\" doesn''\'t exist.Please provide a valid one."
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.bob.import:0
+msgid "Configure BOB Import Options"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.path.folder:0
+msgid "Back"
+msgstr ""
+
+#. module: account_bob_import
+#: constraint:res.partner:0
+msgid "The VAT doesn't seem to be correct."
+msgstr ""
+
+#. module: account_bob_import
+#: field:config.bob.import,path:0
+msgid "Path for BOB Folder"
+msgstr ""
+
+#. module: account_bob_import
+#: field:config.bob.import,zipped_file:0
+msgid "Upload a Zip File"
+msgstr ""
+
+#. module: account_bob_import
+#: view:config.bob.import:0
+msgid "Cancel"
+msgstr ""
+
+#. module: account_bob_import
+#: field:config.bob.import,location:0
+msgid "Location"
+msgstr ""
+

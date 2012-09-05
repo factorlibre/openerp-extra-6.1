@@ -1,0 +1,155 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* discount_campaign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:43:27+0000\n"
+"PO-Revision-Date: 2009-11-26 06:43:27+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_category_id:0
+msgid "Category"
+msgstr ""
+
+#. module: discount_campaign
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: discount_campaign
+#: model:ir.model,name:discount_campaign.model_discount_campaign
+msgid "discount.campaign"
+msgstr ""
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: model:ir.actions.act_window,name:discount_campaign.action_discount_campaign_form
+#: model:ir.ui.menu,name:discount_campaign.menu_action_discount_campaign
+#: field:res.partner,discount_campaign:0
+#: field:sale.order,discount_campaign:0
+msgid "Discount Campaign"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign,state:0
+msgid "State"
+msgstr ""
+
+#. module: discount_campaign
+#: model:ir.model,name:discount_campaign.model_discount_campaign_line
+msgid "discount.campaign.line"
+msgstr ""
+
+#. module: discount_campaign
+#: selection:discount.campaign,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: discount_campaign
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign,date_stop:0
+msgid "Stop Date"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_product_id:0
+msgid "Product"
+msgstr ""
+
+#. module: discount_campaign
+#: view:discount.campaign.line:0
+msgid "Discount Campaign Lines"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign,line_ids:0
+#: field:discount.campaign.line,discount_id:0
+msgid "Discount Lines"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign.line,discount:0
+msgid "Discount"
+msgstr ""
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: selection:discount.campaign,state:0
+msgid "Done"
+msgstr ""
+
+#. module: discount_campaign
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign,name:0
+#: field:discount.campaign.line,name:0
+msgid "Name"
+msgstr ""
+
+#. module: discount_campaign
+#: model:ir.module.module,description:discount_campaign.module_meta_information
+msgid "Marketing management module"
+msgstr ""
+
+#. module: discount_campaign
+#: view:sale.order:0
+msgid "Notes"
+msgstr ""
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+msgid "Cancel"
+msgstr ""
+
+#. module: discount_campaign
+#: model:ir.module.module,shortdesc:discount_campaign.module_meta_information
+msgid "Discount on Marketing Campaigns"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign.line,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: discount_campaign
+#: selection:discount.campaign,state:0
+msgid "Canceled"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_quantity:0
+msgid "Min. Quantity"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_sale:0
+msgid "Sale Condition"
+msgstr ""
+
+#. module: discount_campaign
+#: field:discount.campaign,date_start:0
+msgid "Start Date"
+msgstr ""
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: selection:discount.campaign,state:0
+msgid "Open"
+msgstr ""
+

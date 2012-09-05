@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <wizard
+            string="Manage Jobs Batch"
+            model="dm.campaign.document.job"
+            name="wizard_manage_job_batch"
+            id="wizard_manage_job_batch"/>
+    </data>
+</openerp>

@@ -1,0 +1,151 @@
+# German translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-24 13:11+0000\n"
+"PO-Revision-Date: 2010-11-16 10:54+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: German <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-18 05:22+0000\n"
+"X-Generator: Launchpad (build 12177)\n"
+
+#. module: account_coda
+#: help:account.coda,journal_id:0
+#: field:account.coda.import,journal_id:0
+msgid "Bank Journal"
+msgstr "Bank Journal"
+
+#. module: account_coda
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Die Objektbezeichnung muss mit x_ beginnen und darf keine Sonderzeichen "
+"beinhalten!"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda.import,note:0
+msgid "Log"
+msgstr "Protokoll"
+
+msgid "_Open Statement"
+msgstr "Öffne Bankauszug"
+
+msgid "Account CODA"
+msgstr "Konto CODA"
+
+#. module: account_coda
+#: field:account.coda,name:0
+msgid "Coda file"
+msgstr "Datei CODA"
+
+msgid "Clic on 'New' to select your file :"
+msgstr "Klicke 'Neu' um Datei zu wählen :"
+
+msgid "Import Coda File"
+msgstr "Import CODA Datei"
+
+#. module: account_coda
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Fehler bei Modellbezeichnung der Aktion"
+
+#. module: account_coda
+#: field:account.coda,note:0
+msgid "Import log"
+msgstr "Import Protokoll"
+
+msgid "Default receivable Account"
+msgstr "Standard Debitoren Konto"
+
+msgid ""
+"Module provides functionality to import\n"
+"    bank statements from .csv file.\n"
+"    Import coda file wizard is used to import bank statements."
+msgstr ""
+"Modul bietet Funktion für den Import \n"
+"    von Bankauszügen via .csv Datei.\n"
+"    Der Assistent importiert Dateien im CODA Format zur Buchung von "
+"Bankauszügen."
+
+msgid "_Close"
+msgstr "Beenden"
+
+msgid "Generated Bank Statement"
+msgstr "Erzeugter Bankauszug"
+
+#. module: account_coda
+#: view:account.coda:0
+msgid "Coda import"
+msgstr "CODA Import"
+
+#. module: account_coda
+#: view:account.coda:0
+#: field:account.coda,user_id:0
+msgid "User"
+msgstr "Benutzer"
+
+#. module: account_coda
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Fehlerhafter XML Quellcode für diese Ansicht"
+
+#. module: account_coda
+#: model:ir.model,name:account_coda.model_account_coda
+msgid "coda for an Account"
+msgstr "CODA für Konto"
+
+#. module: account_coda
+#: field:account.coda.import,def_payable:0
+msgid "Default Payable Account"
+msgstr "Standard Kreditoren Konto"
+
+msgid "Coda Statements"
+msgstr "CODA Bankauszüge"
+
+#. module: account_coda
+#: model:ir.ui.menu,name:account_coda.menu_account_coda_import
+msgid "Import Coda Statements"
+msgstr "Importiere CODA Bankauszüge"
+
+msgid "_Ok"
+msgstr "OK"
+
+#. module: account_coda
+#: view:account.coda.import:0
+#: model:ir.actions.act_window,name:account_coda.action_account_coda_import
+msgid "Import Coda Statement"
+msgstr "Import CODA Bankauszug"
+
+#. module: account_coda
+#: field:account.bank.statement,coda_id:0
+msgid "Coda"
+msgstr "CODA"
+
+#. module: account_coda
+#: view:account.coda.import:0
+msgid "Results :"
+msgstr "Ergebnis :"
+
+#. module: account_coda
+#: field:account.coda.import,coda:0
+#: model:ir.actions.act_window,name:account_coda.act_account_payment_account_bank_statement
+msgid "Coda File"
+msgstr "CODA Datei"
+
+#. module: account_coda
+#: help:account.coda,date:0
+msgid "Import Date"
+msgstr "Importiere Datum"
+
+msgid "Select your bank journal :"
+msgstr "Wähle Bank Journal :"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_invoice_line_form_average_price" model="ir.ui.view">
+            <field name="name">account.invoice.line.form.average.price</field>
+            <field name="model">account.invoice.line</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_invoice_line_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page/field[@name='price_unit']" position="after">
+                    <field name="quantity_picking" invisible="1"/>
+                    <field name="price_unit_picking" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

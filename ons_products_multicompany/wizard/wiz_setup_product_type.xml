@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_ons_chg_prod_ctx_vals" model="ir.ui.view">
+            <field name="name">view.ons.chg.prod.ctx.vals</field>
+            <field name="model">ons.product.ctx.vals</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Set the product's procurement">
+                    <field name="prod_type"/>
+                    <newline/>
+                    <field name="prod_procure_method"/>
+                    <newline/>
+                    <field name="prod_supply_method"/>
+                    <separator colspan="4"/>
+                    <group colspan="2" col="4">
+                        <button special="cancel" string="Cancel"  icon="gtk-cancel"/>
+                        <button name="store_contextual_values" string="Save" type="object" icon="terp-stock_effects-object-colorize"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_ons_chg_prod_ctx_vals" model="ir.actions.act_window">
+            <field name="name">Change Product Procurement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ons.product.ctx.vals</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_ons_chg_prod_ctx_vals"/>
+            <field name="context">{'record_id' : active_id}</field>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.ui.view" id="ons_ptchg_product_normal_form_view">
+            <field name="name">ons.ptchg.product.normal.form.view</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <separator string="Procurement" position="replace">
+					<group colspan="2" col="4">
+	                    <separator string="Procurement" colspan="2"/>
+	                    <button name="%(action_ons_chg_prod_ctx_vals)d" type="action" string="Change" icon="gtk-apply"/>
+                    </group>
+                </separator>
+            </field>
+        </record>
+
+    </data>
+</openerp>

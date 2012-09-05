@@ -1,0 +1,278 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* csv_file
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-09 10:53+0000\n"
+"PO-Revision-Date: 2011-05-09 10:53+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: csv_file
+#: field:csv.file.field,export_expression:0
+msgid "Export Expression"
+msgstr "Export Expression"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Float"
+msgstr "Float"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "cr - database cursor"
+msgstr "cr - database cursor"
+
+#. module: csv_file
+#: help:csv.file,quote:0
+msgid "Character to use as quote"
+msgstr "Character to use as quote"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Tabulator"
+msgstr "Tabulator"
+
+#. module: csv_file
+#: help:csv.file,name:0
+msgid "Code Name of this file. Use lowcase and az09 characters."
+msgstr "Code Name of this file. Use lowcase and az09 characters."
+
+#. module: csv_file
+#: field:csv.file,state:0
+msgid "State"
+msgstr "State"
+
+#. module: csv_file
+#: selection:csv.file,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "self - objects pointer"
+msgstr "self - objects pointer"
+
+#. module: csv_file
+#: field:csv.file.field,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: csv_file
+#: field:csv.file.field,field_id:0
+msgid "OpenERP Field"
+msgstr "OpenERP Field"
+
+#. module: csv_file
+#: view:csv.file:0
+msgid "Files"
+msgstr "Files"
+
+#. module: csv_file
+#: help:csv.file,file:0
+msgid "CSV Filename"
+msgstr "CSV Filename"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "String"
+msgstr "String"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "re - regular expression"
+msgstr "re - regular expression"
+
+#. module: csv_file
+#: field:csv.file,quote:0
+msgid "Quote"
+msgstr "Quote"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Available global variables:"
+msgstr "Available global variables:"
+
+#. module: csv_file
+#: field:csv.file.field,sequence:0
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: csv_file
+#: help:csv.file,file_csv_separator:0
+msgid "Product File CSV Separator"
+msgstr "Product File CSV Separator"
+
+#. module: csv_file
+#: model:ir.model,name:csv_file.model_csv_file
+msgid "csv.file"
+msgstr "csv.file"
+
+#. module: csv_file
+#: field:csv.file,model:0
+msgid "Model Name"
+msgstr "Model Name"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "value - value return"
+msgstr "value - value return"
+
+#. module: csv_file
+#: selection:csv.file,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Import CSV Expression"
+msgstr "Import CSV Expression"
+
+#. module: csv_file
+#: field:csv.file.field,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: csv_file
+#: field:csv.file,file_csv_separator:0
+msgid "CSV Separator"
+msgstr "CSV Separator"
+
+#. module: csv_file
+#: field:csv.file,field_ids:0
+msgid "Fields"
+msgstr "Fields"
+
+#. module: csv_file
+#: code:addons/csv_file/csv_file.py:67
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: csv_file
+#: field:csv.file,file:0
+#: model:ir.actions.act_window,name:csv_file.csv_file_action
+#: model:ir.ui.menu,name:csv_file.csv_file_menu
+msgid "CSV File"
+msgstr "CSV File"
+
+#. module: csv_file
+#: help:csv.file,path:0
+msgid "The path to the file name. The last slash is not necessary"
+msgstr "The path to the file name. The last slash is not necessary"
+
+#. module: csv_file
+#: help:csv.file,header:0
+msgid "Header (fields name) on files"
+msgstr "Header (fields name) on files"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Integer"
+msgstr "Integer"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "incsv - value csv to OpenERP"
+msgstr "incsv - value csv to OpenERP"
+
+#. module: csv_file
+#: model:ir.model,name:csv_file.model_csv_file_field
+msgid "csv.file.field"
+msgstr "csv.file.field"
+
+#. module: csv_file
+#: field:csv.file,model_id:0
+msgid "OpenERP Model"
+msgstr "OpenERP Model"
+
+#. module: csv_file
+#: field:csv.file.field,import_expression:0
+msgid "Import Expression"
+msgstr "Import Expression"
+
+#. module: csv_file
+#: field:csv.file,name:0
+msgid "Code"
+msgstr "Code"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Semicolon"
+msgstr "Semicolon"
+
+#. module: csv_file
+#: code:addons/csv_file/csv_file.py:67
+#, python-format
+msgid "Another External Mapping have the same code!"
+msgstr "Another External Mapping have the same code!"
+
+#. module: csv_file
+#: help:csv.file.field,export_expression:0
+#: help:csv.file.field,import_expression:0
+msgid "Where we put the python code. The fields are called like '$name_of_field' (without the simple quotes)"
+msgstr "Where we put the python code. The fields are called like '$name_of_field' (without the simple quotes)"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "Export CSV Expression"
+msgstr "Export CSV Expression"
+
+#. module: csv_file
+#: field:csv.file,path:0
+msgid "Path"
+msgstr "Path"
+
+#. module: csv_file
+#: field:csv.file.field,file_id:0
+msgid "External Mapping"
+msgstr "External Mapping"
+
+#. module: csv_file
+#: field:csv.file,header:0
+msgid "Header"
+msgstr "Header"
+
+#. module: csv_file
+#: help:csv.file.field,sequence:0
+msgid "Is the order that you want for the columns field in the file"
+msgstr "Is the order that you want for the columns field in the file"
+
+#. module: csv_file
+#: selection:csv.file.field,type:0
+msgid "Boolean"
+msgstr "Boolean"
+
+#. module: csv_file
+#: selection:csv.file,file_csv_separator:0
+msgid "Comma"
+msgstr "Comma"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "uid - current user ID"
+msgstr "uid - current user ID"
+
+#. module: csv_file
+#: view:csv.file.field:0
+msgid "outcsv - value OpenERP to CSV"
+msgstr "outcsv - value OpenERP to CSV"
+
+#. module: csv_file
+#: help:csv.file.field,name:0
+msgid "The name of the field. It's used if you have selected the Header checkbox"
+msgstr "The name of the field. It's used if you have selected the Header checkbox"
+
+#. module: csv_file
+#: view:csv.file:0
+#: view:csv.file.field:0
+msgid "External Referentials"
+msgstr "External Referentials"
+

@@ -1,0 +1,279 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* report_dm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:14:08+0000\n"
+"PO-Revision-Date: 2009-11-25 14:14:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: report_dm
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_offer_step_per_day
+msgid "Sales by Offer Step per day"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.ui.menu,name:report_dm.menu_dm_sale_all_month
+msgid "All Months"
+msgstr ""
+
+#. module: report_dm
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: report_dm
+#: model:ir.module.module,shortdesc:report_dm.module_meta_information
+msgid "Direct Marketing - Reporting"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_offer_step_this_month_tree
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_offer_step_this_month
+msgid "Sales of Offer Step by Month"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.per.day:0
+msgid "Daily Sales by Segment and Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.segment.per.month:0
+msgid "Average Segment Sales by Month"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.ui.menu,name:report_dm.menu_dm_sale_today
+msgid "Today"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_per_day_all
+#: model:ir.actions.act_window,name:report_dm.action_sale_per_month_all
+#: model:ir.actions.act_window,name:report_dm.action_sale_this_month_tree
+#: model:ir.actions.act_window,name:report_dm.action_sale_today_tree
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_per_day
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_per_month
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_this_month
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_today1
+msgid "Sales by Segment and Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.day,offer_id:0
+#: field:report.dm.sale.offer.step.per.month,offer_id:0
+#: field:report.dm.sale.per.day,offer_id:0
+#: field:report.dm.sale.per.month,offer_id:0
+#: field:report.dm.sale.segment.per.day,offer_id:0
+#: field:report.dm.sale.segment.per.month,offer_id:0
+msgid "Offer"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.ui.menu,name:report_dm.menu_dm_report
+msgid "Reporting"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_offer_step_per_day_all
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_offer_step_per_day
+msgid "Sales Offer Step by Day"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_segment_per_month_all
+#: model:ir.actions.act_window,name:report_dm.action_sale_segment_this_month_tree
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_segment_per_month
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_segment_this_month
+msgid "Sales by Segment"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.day,offer_step_id:0
+#: field:report.dm.sale.offer.step.per.month,offer_step_id:0
+#: field:report.dm.sale.per.day,offer_step_id:0
+#: field:report.dm.sale.per.month,offer_step_id:0
+msgid "Step"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.per.day:0
+msgid "Average Sales by Day for Segment and Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_offer_step_per_month
+msgid "Sales by Offer Step per Month"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_segment_per_month
+msgid "Sales by Segment per Month"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.ui.menu,name:report_dm.menu_dm_sale_all_day
+msgid "All Days"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.segment.per.day,segment_id:0
+#: field:report.dm.sale.segment.per.month,segment_id:0
+msgid "Segment"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.day,name:0
+#: field:report.dm.sale.per.day,name:0
+msgid "Day"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.per.month:0
+msgid "Average Sales by Month"
+msgstr ""
+
+#. module: report_dm
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_segment_per_day_all
+#: model:ir.actions.act_window,name:report_dm.action_sale_segment_today_tree
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_segment_per_day
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_segment_today
+msgid "Sales by Segment by Day"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_segment_per_day
+msgid "Sales by Segment per Day"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.segment.per.day:0
+msgid "Daily Sales by Segment"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.day,sale_amount:0
+#: field:report.dm.sale.offer.step.per.month,sale_amount:0
+#: field:report.dm.sale.per.day,sale_amount:0
+#: field:report.dm.sale.per.month,sale_amount:0
+#: field:report.dm.sale.segment.per.day,sale_amount:0
+#: field:report.dm.sale.segment.per.month,sale_amount:0
+msgid "Amount"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.segment.per.day:0
+msgid "Average Sales by Day for Segment"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.module.module,description:report_dm.module_meta_information
+msgid "\n"
+"\n"
+"        This module allows to see statstic of marketing \n"
+"\n"
+"            "
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.segment.per.month:0
+msgid "Sales Segment by Month"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.day,sale_quantity:0
+#: field:report.dm.sale.offer.step.per.month,sale_quantity:0
+#: field:report.dm.sale.per.day,sale_quantity:0
+#: field:report.dm.sale.per.month,sale_quantity:0
+#: field:report.dm.sale.segment.per.day,sale_quantity:0
+#: field:report.dm.sale.segment.per.month,sale_quantity:0
+msgid "Quantity"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_offer_step_today_tree
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_today
+msgid "Sales by Offer Step by Day"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.per.day,campaign_id:0
+#: field:report.dm.sale.per.month,campaign_id:0
+#: field:report.dm.sale.segment.per.day,campaign_id:0
+#: field:report.dm.sale.segment.per.month,campaign_id:0
+msgid "Campaign"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.offer.step.per.month:0
+msgid "Sales by Offer Step(All Months)"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.ui.menu,name:report_dm.menu_dm_sale_this_month
+msgid "This Month"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.offer.step.per.month:0
+msgid "Average Sales by Offer Step(All Months)"
+msgstr ""
+
+#. module: report_dm
+#: field:report.dm.sale.offer.step.per.month,name:0
+#: field:report.dm.sale.per.month,name:0
+#: field:report.dm.sale.segment.per.day,name:0
+#: field:report.dm.sale.segment.per.month,name:0
+msgid "Month"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.offer.step.per.day:0
+msgid "Average Sales by Day for Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.per.month:0
+msgid "Sales by Month"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_per_day
+msgid "Sales by Segment and Offer Step by day"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.actions.act_window,name:report_dm.action_sale_offer_step_per_month_all
+#: model:ir.ui.menu,name:report_dm.menu_report_sale_offer_step_per_month
+msgid "Sales by Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: view:report.dm.sale.offer.step.per.day:0
+msgid "Daily Sales by Offer Step"
+msgstr ""
+
+#. module: report_dm
+#: model:ir.model,name:report_dm.model_report_dm_sale_per_month
+msgid "Sales by Segment and Offer Step by month"
+msgstr ""
+

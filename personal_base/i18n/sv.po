@@ -1,0 +1,353 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* personal_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 10:50+0000\n"
+"PO-Revision-Date: 2011-02-15 15:16+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_after_login
+msgid "After Login"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_confirmed_account_lines_list
+#: model:ir.ui.menu,name:personal_base.menu_action_confirmed_account_lineslist
+msgid "Confirmed Account Lines"
+msgstr ""
+
+#. module: personal_base
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Entry lines"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Confirm"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.ui.menu,name:personal_base.personal_administration_menu
+msgid "Personal"
+msgstr ""
+
+#. module: personal_base
+#: selection:personal.base.account.type,sign:0
+msgid "Positive"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_open_line_entry
+#: model:ir.actions.wizard,name:personal_base.wizard_open_line_entry_id
+msgid "Open Line Entry"
+msgstr ""
+
+#. module: personal_base
+#: selection:personal.base.account.entry,state:0
+#: selection:personal.base.account.entry.line,state:0
+msgid "Confirmed"
+msgstr ""
+
+#. module: personal_base
+#: selection:personal.base.account.type,sign:0
+msgid "Negative"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,debit_amount:0
+msgid "Debit Amount"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry,state:0
+#: field:personal.base.account.entry.line,state:0
+msgid "State"
+msgstr ""
+
+#. module: personal_base
+#: selection:personal.base.account.entry,state:0
+#: selection:personal.base.account.entry.line,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_account_entries_list
+#: view:personal.base.account.entry:0
+msgid "Account Entries"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,parent_id:0
+msgid "Entry"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.ui.menu,name:personal_base.menu_action_account_form
+msgid "Accounts Definition"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.module.module,shortdesc:personal_base.module_meta_information
+msgid "Personal Base"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_type
+#: field:personal.base.account,type_id:0
+#: view:personal.base.account.type:0
+msgid "Account Type"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_tree
+#: model:ir.ui.menu,name:personal_base.menu_action_account_tree
+#: view:personal.base.account:0
+msgid "Chart of Accounts"
+msgstr ""
+
+#. module: personal_base
+#: field:res.users,created:0
+msgid "Created"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,name:0
+#: field:personal.base.action.login,name:0
+msgid "Name"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,amount_base:0
+msgid "Amount Base"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account.entry:0
+msgid "Return"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry,name:0
+#: field:personal.base.account.entry.line,name:0
+msgid "Description"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account:0
+#: view:personal.base.account.entry:0
+msgid "General Information"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_action_login
+msgid "personal.base.action.login"
+msgstr ""
+
+#. module: personal_base
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account.entry.line:0
+msgid "Account Entry Lines"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,parent_id:0
+msgid "Parent Code"
+msgstr ""
+
+#. module: personal_base
+#: field:res.users,first_login:0
+msgid "First Login"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,child_ids:0
+msgid "Child Codes"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,user_id:0
+#: field:personal.base.account.entry,user_id:0
+#: field:personal.base.account.entry.line,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry,line_ids:0
+msgid "Entries"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry,date:0
+#: field:personal.base.account.entry.line,date:0
+msgid "Date"
+msgstr ""
+
+#. module: personal_base
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account
+#: view:personal.base.account:0
+#: field:personal.base.account.entry.line,account_id:0
+msgid "Account"
+msgstr ""
+
+#. module: personal_base
+#: field:res.users,currency_id:0
+msgid "Default Currency"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry,created_in_model_id:0
+msgid "Created in Model"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_confirmed_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_confirmed_account_entries_list
+msgid "Confirmed Account Entries"
+msgstr ""
+
+#. module: personal_base
+#: view:personal.base.account:0
+#: view:personal.base.account.entry:0
+msgid "Notes"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_entry_line
+#: view:personal.base.account.entry.line:0
+msgid "Account Entry Line"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,note:0
+#: field:personal.base.account.entry,note:0
+msgid "Note"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_personal_base_action_login_list
+#: model:ir.ui.menu,name:personal_base.menu_action_personal_base_action_login_list
+msgid "Actions After Login"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,amount_base_with_sign:0
+msgid "Amount"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.action.login,action_id:0
+msgid "Action"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,credit_amount:0
+msgid "Credit Amount"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,balance:0
+#: field:personal.base.account.entry.line,balance:0
+msgid "Balance"
+msgstr ""
+
+#. module: personal_base
+#: field:res.users,email:0
+msgid "E-Mail Address"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_entry_form_form
+#: model:ir.ui.menu,name:personal_base.menu_action_account_entry_form_form
+msgid "New Account Entry"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.model,name:personal_base.model_personal_base_account_entry
+#: view:personal.base.account.entry:0
+msgid "Account Entry"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,unit_test:0
+#: field:personal.base.account.entry,unit_test:0
+#: field:personal.base.account.entry.line,unit_test:0
+#: field:res.users,unit_test:0
+msgid "unit_test"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.entry.line,currency_rate:0
+msgid "Currency Rate"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.type,sign:0
+msgid "Sign"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account,currency_id:0
+#: field:personal.base.account.entry,currency_id:0
+#: field:personal.base.account.entry.line,currency_id:0
+msgid "Currency"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_form
+msgid "Accounts"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.wizard,name:personal_base.wizard_create_account_types
+#: model:ir.ui.menu,name:personal_base.menu_wizard_create_account_types
+msgid "Create Account Types"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.module.module,description:personal_base.module_meta_information
+msgid "Sandas Personal Financials base module."
+msgstr "Sandas Personal Financials base module."
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_account_type_form
+#: model:ir.ui.menu,name:personal_base.menu_action_account_type_form
+msgid "Account Types"
+msgstr ""
+
+#. module: personal_base
+#: field:personal.base.account.type,name:0
+msgid "Acc. Type Name"
+msgstr ""
+
+#. module: personal_base
+#: model:ir.actions.act_window,name:personal_base.action_draft_account_entries_list
+#: model:ir.ui.menu,name:personal_base.menu_action_draft_account_entries_list
+msgid "Draft Account Entries"
+msgstr ""

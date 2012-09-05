@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	OpenOffice Reports - Sample partner report
+	Autor: Borja López Soilán (Pexego) 
+-->
+<openerp>
+    <data>
+		
+    <!-- Sample odt partner report -->
+        <report id="report_pxgo_openoffice_reports_partner_demo"
+			string="OpenOffice Reports Demo (ODT->PDF)"
+			model="res.partner"
+			name="pxgo_openoffice_reports.partner_demo"
+			rml="pxgo_openoffice_reports/demo/partner_demo.odt"
+			auto="True"
+			header="False" />
+        <record model="ir.actions.report.xml" id="report_pxgo_openoffice_reports_partner_demo">
+            <field name="report_type">oo-pdf</field>
+        </record>
+
+	<!-- Sample ods partner report -->
+        <report id="report_pxgo_openoffice_reports_partner_demo_ods"
+			string="OpenOffice Reports Demo (ODS->XLS)"
+			model="res.partner"
+			name="pxgo_openoffice_reports.partner_demo_ods"
+			rml="pxgo_openoffice_reports/demo/partner_demo.ods"
+			auto="True"
+			header="False" />
+        <record model="ir.actions.report.xml" id="report_pxgo_openoffice_reports_partner_demo_ods">
+            <field name="report_type">oo-xls</field>
+        </record>
+
+        <!-- Sample odt partner with parser when you can add more attributes to context-->
+        <!-- It is commented because in demo data you cannot have python files, this report need report_parser.py file, if
+        you want to test it discommented and write import demo in __init__.py-->
+
+        <!--<report id="report_pxgo_openoffice_reports_partner_demo_ods_not_auto"
+			string="OpenOffice Reports Demo (ODT->PDF) not auto"
+			model="res.partner"
+			name="pxgo_openoffice_reports.partner_demo_ods_not_auto"
+			rml="pxgo_openoffice_reports/demo/partner_demo_not_auto.odt"
+			auto="False"
+			header="False" />
+        <record model="ir.actions.report.xml" id="report_pxgo_openoffice_reports_partner_demo_ods_not_auto">
+            <field name="report_type">oo-pdf</field>
+        </record>-->
+        
+    </data>
+</openerp>
+	

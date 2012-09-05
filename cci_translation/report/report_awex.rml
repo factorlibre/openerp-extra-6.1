@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="7,1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#c0c0c0" start="0,0" stop="7,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica"/>
+    <paraStyle name="P2" fontName="Helvetica-Bold" fontSize="10.5" alignment="LEFT"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="8.0"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="9" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="8.0" leading="10"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="tinyheader" fontName="Helvetica-Bold" fontSize="16.0" leading="20" alignment="CENTER"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="tinyheader">
+      <font color="white"> </font>
+    </para>
+    <para style="tinyheader">Awex Report</para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="500.0" style="Table3">
+      <tr>
+        <td>
+	    <blockTable colWidths="40.0,60.0,60.0,60.0,60.0,80.0,60.0,60.0" style="Table1">
+	      <tr>
+	        <td>
+	          <para style="P2">Num.</para>
+	        </td>
+	        <td>
+	          <para style="P2">Date</para>
+	        </td>
+	        <td>
+	          <para style="P2">Internal Object</para>
+	        </td>
+	        <td>
+	          <para style="P2">Internal Reference</para>
+	        </td>
+	        <td>
+	          <para style="P2">Partner</para>
+	        </td>
+	        <td>
+	          <para style="P2">Description</para>
+	        </td>
+	        <td>
+	          <para style="P2">Invoice Number</para>
+	        </td>
+	        <td>
+	          <para style="P2">Awex Amount</para>
+	        </td>
+	      </tr>
+	    </blockTable>
+	    </td>
+      </tr>
+    </blockTable>
+    
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    
+    <blockTable colWidths="500.0" style="Table3">
+    <para>[[ get_objects(data['form']) or removeParentNode('blockTable') ]]</para>
+      <tr>
+        <td>
+          <para style="P3">[[ repeatIn(get_objects(data['form']),'val') ]]</para>
+          <blockTable colWidths="40.0,60.0,60.0,60.0,60.0,80.0,60.0,60.0" style="Table4">
+            <tr>
+              <td>
+                <para style="P4">[[ val['number'] ]].</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['date'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['obj_name'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['obj_id'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['partner'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['desc'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ val['inv_num'] ]]</para>
+              </td>
+              <td>
+                <para style="P4">[[ formatLang(val['amt']) ]]</para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable> 
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>

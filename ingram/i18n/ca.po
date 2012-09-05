@@ -1,0 +1,426 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* ingram
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-10-28 07:32+0000\n"
+"PO-Revision-Date: 2011-12-12 00:12+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: ingram
+#: field:ingram,category_id:0
+msgid "Category"
+msgstr "Category"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:125
+#, python-format
+msgid "FTP directory not correct!"
+msgstr "FTP directory not correct!"
+
+#. module: ingram
+#: field:ingram,ftp_ip:0
+msgid "IP"
+msgstr "IP"
+
+#. module: ingram
+#: field:ingram,product_mapping_id:0
+msgid "CSV Product"
+msgstr "CSV Product"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:129
+#, python-format
+msgid "Downloaded file %s"
+msgstr "Downloaded file %s"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:132
+#, python-format
+msgid "Not possible obtain the file!"
+msgstr "Not possible obtain the file!"
+
+#. module: ingram
+#: field:ingram,producttpl_mapping_id:0
+msgid "CSV Template"
+msgstr "CSV Template"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:85
+#: code:addons/ingram/ingram.py:118
+#, python-format
+msgid "Username/password FTP connection was not successfully!"
+msgstr "Username/password FTP connection was not successfully!"
+
+#. module: ingram
+#: model:ir.actions.act_window,name:ingram.ingram_product_normal_action
+msgid "Ingram Products"
+msgstr "Ingram Products"
+
+#. module: ingram
+#: selection:ingram,category_codification:0
+#: selection:ingram,product_codification:0
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#. module: ingram
+#: field:csv.file.field,ingram_id:0
+msgid "Ingram ID"
+msgstr "Ingram ID"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:316
+#, python-format
+msgid "Update Product %s"
+msgstr "Actualitzant producte %s"
+
+#. module: ingram
+#: field:product.product,ingram_sku:0
+msgid "Ingram SKU"
+msgstr "Ingram SKU"
+
+#. module: ingram
+#: field:product.product,ean13_upc:0
+msgid "Ingram EAN/UPC"
+msgstr "Ingram EAN/UPC"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:124
+#, python-format
+msgid "Can't change to directory %s"
+msgstr "Can't change to directory %s"
+
+#. module: ingram
+#: view:ingram:0
+msgid "Files"
+msgstr "Files"
+
+#. module: ingram
+#: model:ir.model,name:ingram.model_product_product
+msgid "Product"
+msgstr "Product"
+
+#. module: ingram
+#: model:ir.model,name:ingram.model_product_category
+msgid "Product Category"
+msgstr "Product Category"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:108
+#: code:addons/ingram/ingram.py:110
+#: code:addons/ingram/ingram.py:115
+#: code:addons/ingram/ingram.py:117
+#: code:addons/ingram/ingram.py:122
+#: code:addons/ingram/ingram.py:124
+#: code:addons/ingram/ingram.py:129
+#: code:addons/ingram/ingram.py:131
+#: code:addons/ingram/ingram.py:235
+#: code:addons/ingram/ingram.py:238
+#: code:addons/ingram/ingram.py:240
+#: code:addons/ingram/ingram.py:242
+#: code:addons/ingram/ingram.py:316
+#: code:addons/ingram/ingram.py:319
+#: code:addons/ingram/ingram.py:321
+#: code:addons/ingram/ingram.py:325
+#: code:addons/ingram/ingram.py:327
+#: code:addons/ingram/ingram.py:337
+#: view:ingram:0
+#: model:ir.ui.menu,name:ingram.ingram_product
+#, python-format
+msgid "Ingram"
+msgstr "Ingram"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:87
+#, python-format
+msgid "FTP connection was successfully!"
+msgstr "FTP connection was successfully!"
+
+#. module: ingram
+#: field:ingram,ftp_username:0
+msgid "Username"
+msgstr "Username"
+
+#. module: ingram
+#: view:ingram:0
+msgid "2 - Import Product"
+msgstr "2 - Import Product"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:110
+#, python-format
+msgid "Can't connect to %s"
+msgstr "Can't connect to %s"
+
+#. module: ingram
+#: field:product.category,ingram_code:0
+msgid "Ingram Code"
+msgstr "Ingram Code"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:319
+#, python-format
+msgid "Create Product %s: %s"
+msgstr "Crea producte %s: %s"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:122
+#, python-format
+msgid "Changed to directory %s"
+msgstr "Changed to directory %s"
+
+#. module: ingram
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Invalid ean code"
+
+#. module: ingram
+#: model:ir.model,name:ingram.model_csv_file
+msgid "csv.file"
+msgstr "csv.file"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:95
+#, python-format
+msgid ""
+"There are another ingram configuration with \"Active\" field checked. Only "
+"one configuration is avaible for active field."
+msgstr ""
+"There are another ingram configuration with \"Active\" field checked. Only "
+"one configuration is avaible for active field."
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:238
+#, python-format
+msgid "Create Product Category %s"
+msgstr "Create Product Category %s"
+
+#. module: ingram
+#: field:ingram,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: ingram
+#: field:ingram,category_dir:0
+msgid "Category Directory"
+msgstr "Category Directory"
+
+#. module: ingram
+#: view:ingram:0
+msgid "Are you sure import category? (remember see logs)"
+msgstr "Are you sure import category? (remember see logs)"
+
+#. module: ingram
+#: view:ingram:0
+#: field:ingram,product_ids:0
+msgid "Products"
+msgstr "Products"
+
+#. module: ingram
+#: view:ingram:0
+msgid "FTP"
+msgstr "FTP"
+
+#. module: ingram
+#: field:ingram,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: ingram
+#: view:ingram:0
+msgid "ingram"
+msgstr "ingram"
+
+#. module: ingram
+#: help:csv.file.field,ingram_id:0
+msgid "Identification Ingram CSV"
+msgstr "Identification Ingram CSV"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:240
+#: code:addons/ingram/ingram.py:325
+#, python-format
+msgid "End CSV file %s."
+msgstr "End CSV file %s."
+
+#. module: ingram
+#: model:ir.actions.act_window,name:ingram.ingram_action
+#: model:ir.model,name:ingram.model_ingram
+msgid "Ingram Configuration"
+msgstr "Ingram Configuration"
+
+#. module: ingram
+#: field:ingram,product_dir:0
+msgid "Product Directory"
+msgstr "Product Directory"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:115
+#, python-format
+msgid "Logged in as a %s"
+msgstr "Logged in as a %s"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:82
+#: code:addons/ingram/ingram.py:85
+#: code:addons/ingram/ingram.py:95
+#: code:addons/ingram/ingram.py:111
+#: code:addons/ingram/ingram.py:118
+#: code:addons/ingram/ingram.py:125
+#: code:addons/ingram/ingram.py:132
+#: code:addons/ingram/ingram.py:196
+#: code:addons/ingram/ingram.py:264
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: ingram
+#: selection:ingram,category_codification:0
+#: selection:ingram,product_codification:0
+msgid "iso-8859-15"
+msgstr "iso-8859-15"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:82
+#: code:addons/ingram/ingram.py:111
+#, python-format
+msgid "IP FTP connection was not successfully!"
+msgstr "IP FTP connection was not successfully!"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:337
+#, python-format
+msgid "Run Scheduler %s"
+msgstr "Run Scheduler %s"
+
+#. module: ingram
+#: field:ingram,category_mapping_id:0
+msgid "CSV"
+msgstr "CSV"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:117
+#, python-format
+msgid "Can't login as %s"
+msgstr "Can't login as %s"
+
+#. module: ingram
+#: model:ir.model,name:ingram.model_csv_file_field
+msgid "csv.file.field"
+msgstr "csv.file.field"
+
+#. module: ingram
+#: view:ingram:0
+msgid "Are you sure import products? (remember see logs)"
+msgstr "Are you sure import products? (remember see logs)"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:242
+#: code:addons/ingram/ingram.py:327
+#, python-format
+msgid "CSV file %s don't download and process"
+msgstr "CSV file %s don't download and process"
+
+#. module: ingram
+#: model:ir.ui.menu,name:ingram.ingram_configuration
+msgid "IngramMicro Configuration"
+msgstr "Configuració Ingram"
+
+#. module: ingram
+#: model:ir.actions.act_window,help:ingram.ingram_action
+msgid ""
+"When you import Ingram values to OpenERP, remember see logs in your server. "
+"If you need more fields mapping CSV, into CSV File Fields you can add or "
+"customizate this fields"
+msgstr ""
+"When you import Ingram values to OpenERP, remember see logs in your server. "
+"If you need more fields mapping CSV, into CSV File Fields you can add or "
+"customizate this fields"
+
+#. module: ingram
+#: view:ingram:0
+msgid "Exclude Products"
+msgstr "Exclude Products"
+
+#. module: ingram
+#: field:ingram,category_codification:0
+#: field:ingram,product_codification:0
+msgid "Codification"
+msgstr "Codification"
+
+#. module: ingram
+#: field:ingram,locale:0
+msgid "Locale"
+msgstr "Locale"
+
+#. module: ingram
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Error ! You can not create recursive categories."
+
+#. module: ingram
+#: field:ingram,ftp_password:0
+msgid "Password"
+msgstr "Password"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:321
+#, python-format
+msgid "Skip Product %s: %s"
+msgstr "Aborat producte %s: %s"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:87
+#, python-format
+msgid "Ok!"
+msgstr "Ok!"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:131
+#, python-format
+msgid "Can't download file %s"
+msgstr "Can't download file %s"
+
+#. module: ingram
+#: view:ingram:0
+msgid "Check FTP"
+msgstr "Check FTP"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:196
+#: code:addons/ingram/ingram.py:264
+#, python-format
+msgid "Check in CSV Field one Ingram ID available."
+msgstr "Check in CSV Field one Ingram ID available."
+
+#. module: ingram
+#: view:ingram:0
+msgid "1 - Import Category"
+msgstr "1 - Import Category"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:108
+#, python-format
+msgid "Connected to %s"
+msgstr "Connected to %s"
+
+#. module: ingram
+#: field:ingram,main_dir:0
+msgid "Main Directory"
+msgstr "Main Directory"
+
+#. module: ingram
+#: code:addons/ingram/ingram.py:235
+#, python-format
+msgid "Update Product Category %s"
+msgstr "Update Product Category %s"

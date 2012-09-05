@@ -1,0 +1,104 @@
+# Catalan translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-03-31 19:08+0000\n"
+"PO-Revision-Date: 2011-02-15 15:01+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_reverse
+#: wizard_field:account.move.reverse,init,repeat_param:0
+msgid "Repeat params"
+msgstr "Repeteix paràmetres"
+
+#. module: account_reverse
+#: wizard_field:account.move.reverse,init,reconcile:0
+msgid "Reconcile"
+msgstr "Concilia"
+
+#. module: account_reverse
+#: wizard_view:account.move.reverse,init:0
+msgid "Select period and date"
+msgstr "Selecciona període i data"
+
+#. module: account_reverse
+#: model:ir.module.module,description:account_reverse.module_meta_information
+msgid ""
+" This module adds a wizard to help reversing moves. This can be used to "
+"correct mistakes where it's not possible to cancel moves or even for "
+"creating close/open moves for periods or fiscalyears. "
+msgstr ""
+" Aquest mòdul afegeix un assistent que ajuda a revertir moviments. Pot ser "
+"usat per corregir problemes on no és possible cancel·lar moviments o fins i "
+"tot per crear moviments d'obertura / tancament per períodes o anys fiscals. "
+
+#. module: account_reverse
+#: help:account.move.reverse,init,date:0
+msgid "Date for the move."
+msgstr "Data pel moviment"
+
+#. module: account_reverse
+#: wizard_field:account.move.reverse,init,journal_id:0
+msgid "Journal"
+msgstr "Diari"
+
+#. module: account_reverse
+#: help:account.move.reverse,init,reconcile:0
+msgid "Reconcile Moves?"
+msgstr "Reconcilia moviments?"
+
+#. module: account_reverse
+#: help:account.move.reverse,init,period_id:0
+msgid "Period for the reversion move"
+msgstr "Període per a moviment de reversió"
+
+#. module: account_reverse
+#: wizard_field:account.move.reverse,init,date:0
+msgid "Date"
+msgstr "Data"
+
+#. module: account_reverse
+#: model:ir.module.module,shortdesc:account_reverse.module_meta_information
+msgid "Account Move Reverse"
+msgstr "Compte moviment revertit"
+
+#. module: account_reverse
+#: help:account.move.reverse,init,journal_id:0
+msgid "Journal for the reversion move"
+msgstr "Diari pel moviment de reversió"
+
+#. module: account_reverse
+#: wizard_button:account.move.reverse,init,end:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: account_reverse
+#: wizard_field:account.move.reverse,init,period_id:0
+msgid "Move Period"
+msgstr "Període del moviment"
+
+#. module: account_reverse
+#: model:ir.actions.wizard,name:account_reverse.account_move_reverse
+msgid "Reverse and reconcile move"
+msgstr "Reverteix i reconcilia moviment"
+
+#. module: account_reverse
+#: help:account.move.reverse,init,repeat_param:0
+msgid "Reverse each move on the same date and period as the original move"
+msgstr "Reverteix cada moviment en la mateixa data i període que l'original"
+
+#. module: account_reverse
+#: wizard_button:account.move.reverse,init,reverse:0
+msgid "Reverse"
+msgstr "Reverteix"

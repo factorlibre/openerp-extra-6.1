@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="ir_cron_reminder_action" model="ir.cron">
+            <field name="name">Check for Reminders</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="True" name="doall"/>
+            <field eval="'reminder.reminder'" name="model"/>
+            <field eval="'_call'" name="function"/>
+            <field eval="'()'" name="args"/>
+        </record>
+        
+        <!-- User Reminder Registerations-->
+        <record model="ir.actions.server" id="action_email">
+            <field name="model_id" ref="model_res_reminder"/>
+            <field name="name">Employee Reminders</field>
+        </record>
+        
+        <!-- Daily Reminders-->
+        <record model="reminder.reminder" id="reminder_day">
+            <field name="name">Employee Reminders - Day</field>
+            <field model="ir.model" name="model_id" ref="model_res_reminder"/>
+            <field name="domain">[('state','=','day')]</field>
+            <field name="start_date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="match">one</field>
+            <field name="action_id" ref="action_email"/>
+        </record>
+        
+        <record model="reminder.reminder.line" id="reminder_day_line1">
+            <field name="reminder_id" ref="reminder_day"/>
+            <field name="sequence">5</field>
+            <field name="name">object.repeat == True and object.start_date &lt;= time.strftime('%Y-%m-%d')</field>
+        </record>
+        
+        <!-- Monthly Reminders-->
+        <record model="reminder.reminder" id="reminder_month">
+            <field name="name">Employee Reminders - Month</field>
+            <field model="ir.model" name="model_id" ref="model_res_reminder"/>
+            <field name="domain">[('state','=','month')]</field>
+            <field name="start_date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="match">one</field>
+            <field name="action_id" ref="action_email"/>
+        </record>
+        
+        <record model="reminder.reminder.line" id="reminder_month_line1">
+            <field name="reminder_id" ref="reminder_month"/>
+            <field name="sequence">5</field>
+            <field name="name">object.repeat == True and datetime.fromtimestamp(time.mktime(time.strptime(object.datetime,"%Y-%m-%d"))).strftime('%d') == time.strftime('%d')</field>
+        </record>
+        
+        <!-- Yearly Reminders-->
+        <record model="reminder.reminder" id="reminder_year">
+            <field name="name">Employee Reminders - Year</field>
+            <field model="ir.model" name="model_id" ref="model_res_reminder"/>
+            <field name="domain">[('state','=','year')]</field>
+            <field name="start_date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="match">one</field>
+            <field name="action_id" ref="action_email"/>
+        </record>
+        
+        <record model="reminder.reminder.line" id="reminder_year_line1">
+            <field name="reminder_id" ref="reminder_year"/>
+            <field name="sequence">5</field>
+            <field name="name">object.repeat == True and datetime.fromtimestamp(time.mktime(time.strptime(object.datetime,"%Y-%m-%d"))).strftime('%d-%m') == time.strftime('%d-%m')</field>
+        </record>
+        
+        <!-- Selected Date Reminders-->
+        <record model="reminder.reminder" id="reminder_date">
+            <field name="name">Employee Reminders - Date</field>
+            <field model="ir.model" name="model_id" ref="model_res_reminder"/>
+            <field name="domain">[]</field>
+            <field name="start_date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="match">one</field>
+            <field name="action_id" ref="action_email"/>
+        </record>
+        
+        <record model="reminder.reminder.line" id="reminder_date_line1">
+            <field name="reminder_id" ref="reminder_date"/>
+            <field name="sequence">5</field>
+            <field name="name">object.start_date == time.strftime('%Y-%m-%d')</field>
+        </record>
+        
+        
+        <!-- User Reminder Registerations-->
+        <record model="ir.actions.server" id="action_email_partner">
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="name">Partner Overdue Reminders</field>
+        </record>
+        
+        <!-- Daily Reminders-->
+        <record model="reminder.reminder" id="reminder_partner">
+            <field name="name">Partner Overdue Reminders</field>
+            <field model="ir.model" name="model_id" ref="base.model_res_partner"/>
+            <field name="domain">[('credit','>',0)]</field>
+            <field name="start_date" eval="time.strftime('%Y-%m-%d')"/>
+            <field name="match">one</field>
+            <field name="action_id" ref="action_email_partner"/>
+        </record>
+        
+        <record model="reminder.reminder.line" id="reminder_partner_line1">
+            <field name="reminder_id" ref="reminder_partner"/>
+            <field name="sequence">5</field>
+            <field name="name">object.credit -  object.debit &gt; 0</field>
+        </record>
+    </data>
+</openerp>

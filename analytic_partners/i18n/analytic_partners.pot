@@ -1,0 +1,108 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* analytic_partners
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-24 13:45:39+0000\n"
+"PO-Revision-Date: 2009-11-24 13:45:39+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Information"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Fax"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Tel"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Printed:"
+msgstr ""
+
+#. module: analytic_partners
+#: field:account.analytic.account,address_ids:0
+msgid "Partners Contacts"
+msgstr ""
+
+#. module: analytic_partners
+#: view:account.analytic.account:0
+msgid "Partners"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Mobile"
+msgstr ""
+
+#. module: analytic_partners
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: analytic_partners
+#: model:ir.module.module,shortdesc:analytic_partners.module_meta_information
+msgid "Analytic accounts with multiple partners"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Contact"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Address"
+msgstr ""
+
+#. module: analytic_partners
+#: model:ir.module.module,description:analytic_partners.module_meta_information
+msgid "\n"
+"    This module adds the possibility to assign multiple partners on\n"
+"    the same analytic account. It's usefull when you do a management\n"
+"    by affairs, where you can attach all suppliers and customers to\n"
+"    a project.\n"
+"\n"
+"    A report for the project manager is added to print the analytic\n"
+"    account and all associated partners with their contacts.\n"
+"\n"
+"    It's usefull to give to all members of a project, so that they\n"
+"    get the contacts of all suppliers in this project.\n"
+"    "
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Mail"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid ":"
+msgstr ""
+
+#. module: analytic_partners
+#: rml:analytic_partners.print:0
+msgid "Partner listing"
+msgstr ""
+
+#. module: analytic_partners
+#: model:ir.actions.report.xml,name:analytic_partners.analytic_partners_report
+msgid "Analytic Account with Partners"
+msgstr ""
+

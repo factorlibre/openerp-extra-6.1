@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+  File: contracts_view.xml
+  Module: eagle_invoice
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+			Inherited contract form view from the Eagle Base module 
+	-->
+		<record model="ir.ui.view" id="eagle_financial_base_view_contract_form_1">
+			<field name="name">Eagle Financial base Contract View 1</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<page string="Messages" position="before">
+					<page string="Current Invoice Lines" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="current_invoice_lines" nolabel="1" colspan="4" attrs="{'readonly':[('state','=','done')]}"/>
+					</page>
+					<page string="Past Invoice Lines" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="past_invoice_lines" nolabel="1" colspan="4" attrs="{'readonly':[('state','=','done')]}"/>
+					</page>
+				</page>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_financial_base_view_contract_form_2">
+			<field name="name">Eagle Financial base Contract View 2</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<group name="act_btns_right" position="inside">
+					<field name="eagle_make_invoice_button_visible" invisible="1"/>
+					<button name="button_make_invoice" states="installation,production" string="Make Invoice" type="object" icon="gtk-execute" attrs="{'invisible':[('eagle_make_invoice_button_visible','=',False)]}"/>
+				</group>
+			</field>
+		</record>
+
+	</data>
+</openerp>

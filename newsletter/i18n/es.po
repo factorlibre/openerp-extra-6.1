@@ -1,0 +1,181 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* newsletter
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-09-29 11:08+0000\n"
+"PO-Revision-Date: 2011-02-15 20:11+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: newsletter_base_contact
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto no puede empezar con x_  y contener caracteres "
+"especiales"
+
+#. module: newsletter_base_contact
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_newsletter
+#: view:newsletter.newsletter:0
+msgid "Newsletter Category"
+msgstr "Categorías boletín de noticias"
+
+#. module: newsletter_base_contact
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido para la arquitectura de la vista."
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,parent_id:0
+msgid "Partner Newsletter"
+msgstr "Boletín padre"
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,child_ids:0
+msgid "Child Newsletter"
+msgstr "Boletín hijo"
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_unsubscribe_reason
+#: field:newsletter.subscription,newsletter_unsubscribe:0
+#: view:res.partner.contact:0
+msgid "Unsubscribe"
+msgstr "Anular subscripción"
+
+#. module: newsletter_base_contact
+#: help:newsletter.unsubscribe.reason,active:0
+msgid ""
+"The active field allows you to hide the unsubscribe without removing it."
+msgstr "El campo activo permite ocultar la dessubcripción sin eliminar."
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,active:0
+#: field:newsletter.unsubscribe.reason,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: newsletter_base_contact
+#: field:newsletter.subscription,newsletter_unsubscribe_reason_id:0
+msgid "Newsletter Unsubscribe Reason"
+msgstr "Razón anulación subscripción"
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter_by_category
+msgid "Subscriptions by Newsletter"
+msgstr "Subscripciones para el boletín"
+
+#. module: newsletter_base_contact
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para  la arquitectura  de vista!"
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,name:0
+#: field:newsletter.unsubscribe.reason,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: newsletter_base_contact
+#: view:newsletter.newsletter:0
+msgid "Newsletter Categories"
+msgstr "Categorías de los boletines"
+
+#. module: newsletter_base_contact
+#: help:newsletter.newsletter,active:0
+msgid ""
+"The active field allows you to hide the newsletter without removing it."
+msgstr "El campo activo permite ocultar el boletín sin eliminar."
+
+#. module: newsletter_base_contact
+#: field:newsletter.subscription,partner_contact_id:0
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: newsletter_base_contact
+#: view:newsletter.unsubscribe.reason:0
+msgid "unsubscribe"
+msgstr "anular subscripción"
+
+#. module: newsletter_base_contact
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_unsubscribe_reason
+msgid "Newsletter Unsubscribe reason"
+msgstr "Razón dessubscripción"
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,complete_name:0
+msgid "Full Name"
+msgstr "Nombre completo"
+
+#. module: newsletter_base_contact
+#: view:newsletter.subscription:0
+msgid "subscription"
+msgstr "subscripción"
+
+#. module: newsletter_base_contact
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_unsubscribe_reason
+msgid "Unsubscribe Category"
+msgstr "Categorías de dessubscripción"
+
+#. module: newsletter_base_contact
+#: model:ir.module.module,shortdesc:newsletter_base_contact.module_meta_information
+msgid "Newsletter for contacts (base_contact)"
+msgstr "Boletín de noticias para  contactos (base_contact)"
+
+#. module: newsletter_base_contact
+#: model:ir.module.module,description:newsletter_base_contact.module_meta_information
+msgid ""
+"Creates the categorization of their contacts and then send newsletter with..."
+msgstr ""
+"Crea una categorización de contactos para después enviar boletines con..."
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter_category
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_newsletter
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_newsletter_main
+#: field:newsletter.subscription,newsletter_id:0
+#: view:res.partner.contact:0
+#: field:res.partner.contact,newsletter:0
+msgid "Newsletter"
+msgstr "Boletín de noticias"
+
+#. module: newsletter_base_contact
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_subscription
+msgid "Newsletter subscription"
+msgstr "Subscripción boletín de noticias"
+
+#~ msgid "Partner Address"
+#~ msgstr "Contacto"
+
+#~ msgid "Error ! You can not create recursive Menu."
+#~ msgstr "Error ! You can not create recursive Menu."
+
+#~ msgid "Address"
+#~ msgstr "Direcciones"
+
+#~ msgid "Partner Contacts with Newsletter"
+#~ msgstr "Direcciones de empresa con boletines"
+
+#~ msgid "Postal Address"
+#~ msgstr "Dirección postal"
+
+#~ msgid "Communication"
+#~ msgstr "Communication"
+
+#~ msgid "Partner Addresses"
+#~ msgstr "Direcciones de empresa"
+
+#~ msgid "Size of the field can never be less than 1 !"
+#~ msgstr "Size of the field can never be less than 1 !"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - many2many</name>
+  <icon>m2m_real.png</icon>
+  <aspectratio type="free"/>
+        <textbox x1="1" y1="-0.5" x2="35" y2="2"/> 
+   <svg:svg>
+   <svg:image x="0" y="0" width="38.9" height="8" href="m2m.png"/>
+ </svg:svg>
+</shape>

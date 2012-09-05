@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+<!-- pos.sale.get -->
+        <record model="ir.ui.view" id="pos_sale_get_wizard_view">
+            <field name="name">pos.sale.get</field>
+            <field name="model">pos.sale.get</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Select an Open Sale Order">
+                    <field name="partner_id" invisible="1"/>
+                    <field name="picking_id"
+                            colspan="4"
+                            domain="[
+                                    ('state', 'in', ('assigned','confirmed')),
+                                    ('type', '=', 'out'),
+                                    ('partner_id', '=', partner_id)]"/>
+                    <button string="Cancel"
+                            special="cancel"
+                            icon="gtk-cancel"
+                            states="draft"/>
+                    <button string="Confirm"
+                            name="sale_complete"
+                            type="object"
+                            icon="gtk-ok"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="pos_sale_get_wizard_action">
+            <field name="name">Point of Sale</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.sale.get</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="search_view_id" ref="pos_sale_get_wizard_view"/>
+        </record>
+
+<!-- pos.order -->
+        <record model="ir.ui.view" id="inherited_pos_pos_form_view">
+            <field name="name">inherited.pos.pos</field>
+            <field name="model">pos.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Sale Order']/group/button[@string='Make Payment']"
+                            position="before">
+                    <button string="Get From Picking"
+                            name="%(pos_sale_get_wizard_action)d"
+                            type="action"
+                            icon="stock_effects-object-colorize"
+                            states="draft,advance"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

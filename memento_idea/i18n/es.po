@@ -1,0 +1,427 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-12-11 10:39+0000\n"
+"PO-Revision-Date: 2011-08-27 13:26+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: memento_idea
+#: field:memento_idea.idea,category_id:0
+msgid "Category"
+msgstr "Categoría"
+
+#. module: memento_idea
+#: model:ir.actions.todo,note:memento_idea.config_wizard_cleanup
+msgid ""
+"This module does not implement a real functional specification.\n"
+"It contains the source of most examples used in the Technical Memento for "
+"OpenERP, and\n"
+"can be used as a reference combining all code excerpts into a working "
+"module.\n"
+"\n"
+"For instance, this startup wizard (Cleanup) is merely an example, because "
+"there\n"
+"is no real use for Ideas cleanup at the module installation!              \n"
+"\n"
+"(The XML source for this config wizard can be found at the bottom of "
+"wizard/cleanup.xml\n"
+"in the source of the memento_idea module)\n"
+"            "
+msgstr ""
+
+#. module: memento_idea
+#: selection:memento_idea.idea,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: memento_idea
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: memento_idea
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "Confirm"
+msgstr "Confimar"
+
+#. module: memento_idea
+#: field:memento_idea.idea,vote_num:0
+msgid "Vote Count"
+msgstr ""
+
+#. module: memento_idea
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea
+#: view:memento_idea.idea:0
+msgid "Ideas"
+msgstr "Ideas"
+
+#. module: memento_idea
+#: field:memento_idea.category,child_ids:0
+msgid "Child Categories"
+msgstr "Categorías inferiores"
+
+#. module: memento_idea
+#: view:memento_idea.cleanup.wizard:0
+msgid "Idea Cleanup Wizard"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "Search Ideas"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.idea,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: memento_idea
+#: model:ir.actions.act_window,name:memento_idea.action_idea_cleanup_wizard
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_cleanup
+#: view:memento_idea.cleanup.wizard:0
+msgid "Cleanup"
+msgstr "Limpiar"
+
+#. module: memento_idea
+#: selection:memento_idea.idea,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: memento_idea
+#: selection:memento_idea.idea,state:0
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: memento_idea
+#: view:memento_idea.category:0
+msgid "Category form"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.idea,name:0
+msgid "Title"
+msgstr "Título"
+
+#. module: memento_idea
+#: view:memento_idea.cleanup.wizard:0
+msgid "Select the age (in days) of ideas to cleanup"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.idea,vote_avg:0
+msgid "Votes Average"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.vote:0
+msgid "Vote form"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "Idea form"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.idea,picture:0
+msgid "Picture"
+msgstr "Imagen"
+
+#. module: memento_idea
+#: model:ir.actions.act_window,name:memento_idea.action_memento_idea_votes_all
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_vote_list
+#: view:memento_idea.idea:0
+#: field:memento_idea.idea,vote_ids:0
+msgid "Votes"
+msgstr "Votos"
+
+#. module: memento_idea
+#: view:memento_idea.category:0
+#: field:memento_idea.category,description:0
+#: help:memento_idea.category,description:0
+#: view:memento_idea.idea:0
+#: field:memento_idea.idea,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Idea List"
+msgstr "Lista de ideas"
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Idea name"
+msgstr "Nombre de la idea"
+
+#. module: memento_idea
+#: model:ir.actions.act_window,name:memento_idea.action_memento_idea_categories_tree
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_categories_tree
+msgid "Category Structure"
+msgstr ""
+
+#. module: memento_idea
+#: model:memento_idea.category,description:memento_idea.idea_categ_ergo
+msgid "Ergonomics and workplace improvement ideas"
+msgstr ""
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Weather forecast :"
+msgstr ""
+
+#. module: memento_idea
+#: model:ir.module.module,description:memento_idea.module_meta_information
+msgid ""
+"\n"
+"Technical Memento example: Idea management module\n"
+"\n"
+"This module is a part of the OpenERP technical Memento.\n"
+"This module does not actually implement a complete idea management module,\n"
+"but rather serves as a technical reference when reading the OpenERP "
+"technical memento.\n"
+"The module source contains most of the examples used in the memento, "
+"gathered as \n"
+"a single working module.\n"
+"Do not hesitate to read the (short and simple) source code to understand how "
+"all \n"
+"the different parts of a module fit together.\n"
+"\n"
+"This module contains examples for:\n"
+" - business objects with all kinds of fields (osv.osv)\n"
+" - views of all kinds (form, list, tree, calendar, gantt, chart, ...)\n"
+" - one SXW/RML report with a custom parser environment\n"
+" - groups and access restriction\n"
+" - roles and workflows\n"
+" - wizards, actions, and configuration wizards\n"
+" - internationalization of labels and terms\n"
+" - unit tests\n"
+"  \n"
+"    "
+msgstr ""
+
+#. module: memento_idea
+#: model:ir.model,name:memento_idea.model_memento_idea_vote
+msgid "memento_idea.vote"
+msgstr ""
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Report designed by:"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.category,active:0
+#: field:memento_idea.idea,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: memento_idea
+#: model:memento_idea.category,name:memento_idea.idea_categ_ergo
+msgid "Ergonomics"
+msgstr ""
+
+#. module: memento_idea
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Idea desc"
+msgstr ""
+
+#. module: memento_idea
+#: model:ir.actions.act_window,name:memento_idea.action_memento_idea_categories_all
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_categories_list
+#: view:memento_idea.category:0
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: memento_idea
+#: field:memento_idea.idea,inventor_id:0
+msgid "Inventor"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+#: field:memento_idea.idea,sponsor_ids:0
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#. module: memento_idea
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: memento_idea
+#: field:memento_idea.category,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: memento_idea
+#: field:memento_idea.category,parent_id:0
+msgid "Parent Category"
+msgstr "Categoría Superior"
+
+#. module: memento_idea
+#: field:memento_idea.idea,inventor_country:0
+msgid "Country"
+msgstr "País"
+
+#. module: memento_idea
+#: field:memento_idea.cleanup.wizard,idea_age:0
+msgid "Age"
+msgstr "Edad"
+
+#. module: memento_idea
+#: model:ir.model,name:memento_idea.model_memento_idea_category
+msgid "memento_idea.category"
+msgstr ""
+
+#. module: memento_idea
+#: model:memento_idea.idea,name:memento_idea.idea_window_orientation
+msgid "Proper screen orientation"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "My Ideas"
+msgstr "Mis ideas"
+
+#. module: memento_idea
+#: model:ir.module.module,shortdesc:memento_idea.module_meta_information
+msgid "Technical Memento example: Idea management module"
+msgstr ""
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "Total score by inventor"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.vote,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: memento_idea
+#: model:ir.model,name:memento_idea.model_memento_idea_idea
+msgid "memento_idea.idea"
+msgstr ""
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+msgid "Printed by:"
+msgstr ""
+
+#. module: memento_idea
+#: model:memento_idea.category,description:memento_idea.idea_categ_tech
+msgid "Tools and Technology ideas"
+msgstr ""
+
+#. module: memento_idea
+#: model:memento_idea.category,description:memento_idea.idea_categ_tech_comp
+msgid "IT-related ideas"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.vote,vote:0
+msgid "Vote"
+msgstr "Votar"
+
+#. module: memento_idea
+#: constraint:memento_idea.idea:0
+msgid "Please be polite!"
+msgstr ""
+
+#. module: memento_idea
+#: field:memento_idea.idea,sequence:0
+msgid "Seq"
+msgstr "Sec"
+
+#. module: memento_idea
+#: model:memento_idea.category,name:memento_idea.idea_categ_tech_comp
+msgid "Computing"
+msgstr "Calculando"
+
+#. module: memento_idea
+#: field:memento_idea.vote,idea_id:0
+msgid "Idea"
+msgstr "Idea"
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "General"
+msgstr "General"
+
+#. module: memento_idea
+#: model:ir.model,name:memento_idea.model_memento_idea_cleanup_wizard
+msgid "memento_idea.cleanup.wizard"
+msgstr ""
+
+#. module: memento_idea
+#: help:memento_idea.idea,picture:0
+msgid "Worth 1000 words"
+msgstr ""
+
+#. module: memento_idea
+#: rml:idea.simple.report:0
+#: field:memento_idea.idea,score:0
+msgid "Score"
+msgstr "Puntuación"
+
+#. module: memento_idea
+#: model:ir.actions.act_window,name:memento_idea.action_memento_idea_ideas_all
+#: model:ir.ui.menu,name:memento_idea.menu_memento_idea_idea_list
+msgid "All ideas"
+msgstr "Todas las ideas"
+
+#. module: memento_idea
+#: model:ir.actions.report.xml,name:memento_idea.memento_idea_simple_report
+msgid "Idea Report"
+msgstr "Informe de ideas"
+
+#. module: memento_idea
+#: view:memento_idea.cleanup.wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: memento_idea
+#: view:memento_idea.idea:0
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: memento_idea
+#: model:memento_idea.category,name:memento_idea.idea_categ_tech
+msgid "Technology"
+msgstr "Tecnología"
+
+#. module: memento_idea
+#: field:memento_idea.vote,id:0
+msgid "Id"
+msgstr "ID"
+
+#. module: memento_idea
+#: field:memento_idea.idea,invent_date:0
+msgid "Invent date"
+msgstr ""

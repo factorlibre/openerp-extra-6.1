@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  sale_bundle_product for OpenERP
+  # Copyright (c) 2011 CamptoCamp. All rights reserved. @author Joel Grand-Guillaume
+  The licence is in the file __openerp__.py
+-->
+
+<openerp>
+    <data>
+    
+        <!-- INHERITED VIEW FOR THE OBJECT : product_template -->
+
+        <record id="sale_bundle_product_product_template_view_form" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_product.view_form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field eval="16" name="priority"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <page groups="base.group_extended" string="Packaging" position="after">
+                        <page groups="base.group_extended" string="Item Sets" position="after">
+                            <field name="item_set_ids" nolabel="1"/>
+                        </page>
+                    </page>
+                </data>
+            </field>
+        </record>
+        
+        <record id="sale_bundle_product_product_template_view_form2" model="ir.ui.view">
+            <field name="name">sale_bundle_product.product_product.view_form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field groups="base.group_extended" name="cost_method" position="before">
+                           <field name="dynamic_price" />
+                    </field>
+                </data>
+            </field>
+        </record>
+
+
+
+    </data>
+</openerp>

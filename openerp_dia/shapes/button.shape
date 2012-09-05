@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - button</name>
+  <icon>button.png</icon>
+  <connections/>
+  <textbox x1="5" y1="0.5" x2="168" y2="40"/> 
+  <svg:svg width="173" height="40">
+    <svg:image x="0" y="0" width="173" height="40" href="button_real.png"/>
+  </svg:svg>
+</shape>

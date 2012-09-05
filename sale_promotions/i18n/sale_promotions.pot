@@ -1,0 +1,431 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_promotions
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-14 14:53+0000\n"
+"PO-Revision-Date: 2011-03-14 14:53+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_promotions
+#: field:promos.rules,name:0
+msgid "Promo Name"
+msgstr "Promo Name"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "expressions are"
+msgstr "expressions are"
+
+#. module: sale_promotions
+#: field:promos.rules.conditions.exps,stop_further:0
+msgid "Stop further checks"
+msgstr "Stop further checks"
+
+#. module: sale_promotions
+#: field:promos.rules,uses_per_coupon:0
+msgid "Uses per Coupon"
+msgstr "Uses per Coupon"
+
+#. module: sale_promotions
+#: field:promos.rules,coupon_used:0
+msgid "Number of Coupon Uses"
+msgstr "Number of Coupon Uses"
+
+#. module: sale_promotions
+#: field:promos.rules.actions,product_code:0
+msgid "Product Code"
+msgstr "Product Code"
+
+#. module: sale_promotions
+#: model:ir.actions.act_window,name:sale_promotions.act_promotion_rules
+#: model:ir.model,name:sale_promotions.model_promos_rules
+#: model:ir.ui.menu,name:sale_promotions.promos
+msgid "Promotion Rules"
+msgstr "Promotion Rules"
+
+#. module: sale_promotions
+#: field:sale.order,coupon_code:0
+msgid "Promo Coupon Code"
+msgstr "Promo Coupon Code"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "Applicable Period"
+msgstr "Applicable Period"
+
+#. module: sale_promotions
+#: field:promos.rules,stop_further:0
+msgid "Stop Checks"
+msgstr "Stop Checks"
+
+#. module: sale_promotions
+#: model:ir.model,name:sale_promotions.model_promos_rules_conditions_exps
+msgid "Expressions for conditions"
+msgstr "Expressions for conditions"
+
+#. module: sale_promotions
+#: field:promos.rules,to_date:0
+msgid "To Date"
+msgstr "To Date"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:62
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "not equal to"
+msgstr "not equal to"
+
+#. module: sale_promotions
+#: field:promos.rules.actions,arguments:0
+msgid "Arguments"
+msgstr "Arguments"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:64
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "greater than or equal to"
+msgstr "greater than or equal to"
+
+#. module: sale_promotions
+#: field:promos.rules,expected_logic_result:0
+msgid "Output"
+msgstr "Output"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product UnitPrice combination"
+msgstr "Product UnitPrice combination"
+
+#. module: sale_promotions
+#: help:promos.rules,stop_further:0
+msgid "Stops further promotions being checked"
+msgstr "Stops further promotions being checked"
+
+#. module: sale_promotions
+#: model:ir.model,name:sale_promotions.model_promos_rules_actions
+msgid "Promotions actions"
+msgstr "Promotions actions"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product Discount combination"
+msgstr "Product Discount combination"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "Conditions"
+msgstr "Conditions"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:75
+#: selection:promos.rules.actions,action_type:0
+#, python-format
+msgid "Fixed amount on Sub Total"
+msgstr "Fixed amount on Sub Total"
+
+#. module: sale_promotions
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "Order Reference must be unique !"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+#: field:promos.rules,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: sale_promotions
+#: field:promos.rules.conditions.exps,serialised_expr:0
+msgid "Expression"
+msgstr "Expression"
+
+#. module: sale_promotions
+#: field:promos.rules,coupon_code:0
+msgid "Coupon Code"
+msgstr "Coupon Code"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:68
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "is not in"
+msgstr "is not in"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product Weight combination"
+msgstr "Product Weight combination"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product SubTotal combination"
+msgstr "Product SubTotal combination"
+
+#. module: sale_promotions
+#: help:sale.order.line,promotion_line:0
+msgid "Indicates if the line was created by promotions"
+msgstr "Indicates if the line was created by promotions"
+
+#. module: sale_promotions
+#: field:promos.rules,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: sale_promotions
+#: selection:promos.rules,expected_logic_result:0
+msgid "True"
+msgstr "True"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "Coupon/Voucher Settings"
+msgstr "Coupon/Voucher Settings"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "Promotions"
+msgstr "Promotions"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:76
+#: selection:promos.rules.actions,action_type:0
+#, python-format
+msgid "Buy X get Y free"
+msgstr "Buy X get Y free"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Compute sub total of products"
+msgstr "Compute sub total of products"
+
+#. module: sale_promotions
+#: field:promos.rules.conditions.exps,comparator:0
+msgid "Comparator"
+msgstr "Comparator"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Tax Amount"
+msgstr "Tax Amount"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:42
+#: selection:promos.rules.conditions.exps,attribute:0
+#, python-format
+msgid "Untaxed Total"
+msgstr "Untaxed Total"
+
+#. module: sale_promotions
+#: field:promos.rules.conditions.exps,value:0
+msgid "Value"
+msgstr "Value"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:61
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "equals"
+msgstr "equals"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+#: field:promos.rules,partner_categories:0
+msgid "Partner Categories"
+msgstr "Partner Categories"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product Quantity combination"
+msgstr "Product Quantity combination"
+
+#. module: sale_promotions
+#: field:promos.rules,uses_per_partner:0
+msgid "Uses per Partner"
+msgstr "Uses per Partner"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Compute sub total excluding products"
+msgstr "Compute sub total excluding products"
+
+#. module: sale_promotions
+#: field:promos.rules,logic:0
+msgid "Logic"
+msgstr "Logic"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+msgid "If"
+msgstr "If"
+
+#. module: sale_promotions
+#: field:promos.rules.actions,action_type:0
+msgid "Action"
+msgstr "Action"
+
+#. module: sale_promotions
+#: selection:promos.rules,expected_logic_result:0
+msgid "False"
+msgstr "False"
+
+#. module: sale_promotions
+#: field:promos.rules.actions,promotion:0
+#: field:promos.rules.conditions.exps,promotion:0
+msgid "Promotion"
+msgstr "Promotion"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Custom domain expression"
+msgstr "Custom domain expression"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:74
+#: selection:promos.rules.actions,action_type:0
+#, python-format
+msgid "Discount % on Sub Total"
+msgstr "Discount % on Sub Total"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:66
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "less than or equal to"
+msgstr "less than or equal to"
+
+#. module: sale_promotions
+#: field:sale.order.line,promotion_line:0
+msgid "Promotion Line"
+msgstr "Promotion Line"
+
+#. module: sale_promotions
+#: field:promos.rules,shop:0
+msgid "Shop"
+msgstr "Shop"
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Total Amount"
+msgstr "Total Amount"
+
+#. module: sale_promotions
+#: selection:promos.rules,logic:0
+msgid "All"
+msgstr "All"
+
+#. module: sale_promotions
+#: model:ir.model,name:sale_promotions.model_sale_order
+msgid "Sales Order"
+msgstr "Sales Order"
+
+#. module: sale_promotions
+#: field:promos.rules,expressions:0
+msgid "Expressions/Conditions"
+msgstr "Expressions/Conditions"
+
+#. module: sale_promotions
+#: field:promos.rules,sequence:0
+#: field:promos.rules.actions,sequence:0
+#: field:promos.rules.conditions.exps,sequence:0
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:67
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "is in"
+msgstr "is in"
+
+#. module: sale_promotions
+#: field:promos.rules.conditions.exps,attribute:0
+msgid "Attribute"
+msgstr "Attribute"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:65
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "less than"
+msgstr "less than"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+#: field:promos.rules,actions:0
+msgid "Actions"
+msgstr "Actions"
+
+#. module: sale_promotions
+#: help:promos.rules,partner_categories:0
+msgid "Applicable to all if none is selected"
+msgstr "Applicable to all if none is selected"
+
+#. module: sale_promotions
+#: model:ir.model,name:sale_promotions.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Sales Order Line"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:63
+#: selection:promos.rules.conditions.exps,comparator:0
+#, python-format
+msgid "greater than"
+msgstr "greater than"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:72
+#: selection:promos.rules.actions,action_type:0
+#, python-format
+msgid "Discount % on Product"
+msgstr "Discount % on Product"
+
+#. module: sale_promotions
+#: help:promos.rules,coupon_used:0
+msgid "The number of times this coupon has been used."
+msgstr "The number of times this coupon has been used."
+
+#. module: sale_promotions
+#: selection:promos.rules.conditions.exps,attribute:0
+msgid "Product Code in order"
+msgstr "Product Code in order"
+
+#. module: sale_promotions
+#: view:promos.rules:0
+#: view:promos.rules.conditions.expres
+            :0
+#: view:promos.rules.conditions.exps:0
+msgid "Expressions"
+msgstr "Expressions"
+
+#. module: sale_promotions
+#: code:addons/sale_promotions/models/rules.py:73
+#: selection:promos.rules.actions,action_type:0
+#, python-format
+msgid "Fixed amount on Product"
+msgstr "Fixed amount on Product"
+
+#. module: sale_promotions
+#: selection:promos.rules,logic:0
+msgid "Any"
+msgstr "Any"
+
+#. module: sale_promotions
+#: view:sale.order:0
+msgid "Apply Promotions"
+msgstr "Apply Promotions"
+
+#. module: sale_promotions
+#: field:promos.rules,from_date:0
+msgid "From Date"
+msgstr "From Date"
+

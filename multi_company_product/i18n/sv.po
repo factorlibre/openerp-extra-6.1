@@ -1,0 +1,127 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* multi_company_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:17+0000\n"
+"PO-Revision-Date: 2011-02-15 15:14+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: multi_company_product
+#: code:addons/multi_company_product/product.py:0
+#, python-format
+msgid "There is no cost price defined for this company \"%s\" "
+msgstr ""
+
+#. module: multi_company_product
+#: field:company.wise.cost.price,standard_price:0
+msgid "Cost Price"
+msgstr ""
+
+#. module: multi_company_product
+#: help:company.wise.cost.price,standard_price:0
+msgid ""
+"The cost of the product for accounting stock valuation. It can serves as a "
+"base price for supplier price."
+msgstr ""
+
+#. module: multi_company_product
+#: code:addons/multi_company_product/product.py:0
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: multi_company_product
+#: field:company.wise.sale.price,list_price:0
+msgid "Sale Price"
+msgstr ""
+
+#. module: multi_company_product
+#: field:product.template,list_price_ids:0
+#: field:product.template,standard_price_ids:0
+msgid "unknown"
+msgstr ""
+
+#. module: multi_company_product
+#: field:company.wise.cost.price,company_id:0
+#: field:company.wise.sale.price,company_id:0
+#: field:product.supplierinfo,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: multi_company_product
+#: model:ir.model,name:multi_company_product.model_company_wise_sale_price
+msgid "Company Wise Sale Price"
+msgstr ""
+
+#. module: multi_company_product
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: multi_company_product
+#: field:company.wise.cost.price,product_id:0
+#: field:company.wise.sale.price,product_id:0
+msgid "Product Id"
+msgstr ""
+
+#. module: multi_company_product
+#: model:ir.module.module,shortdesc:multi_company_product.module_meta_information
+msgid "MultiCompany Product"
+msgstr ""
+
+#. module: multi_company_product
+#: view:company.wise.cost.price:0
+msgid "Company Wise Cost Prices"
+msgstr ""
+
+#. module: multi_company_product
+#: field:company.wise.cost.price,currency_id:0
+#: field:company.wise.sale.price,currency_id:0
+msgid "Currency"
+msgstr ""
+
+#. module: multi_company_product
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: multi_company_product
+#: model:ir.module.module,description:multi_company_product.module_meta_information
+msgid ""
+"The Module allows to define each product for many companies with their cost "
+"price and sale price\n"
+"    and that update cost price and sale price as per userwise company, for "
+"the purpose of multicompany"
+msgstr ""
+"The Module allows to define each product for many companies with their cost "
+"price and sale price\n"
+"    and that update cost price and sale price as per userwise company, for "
+"the purpose of multicompany"
+
+#. module: multi_company_product
+#: help:company.wise.sale.price,list_price:0
+msgid ""
+"Base price for computing the customer price. Sometimes called the catalog "
+"price."
+msgstr ""
+
+#. module: multi_company_product
+#: view:company.wise.sale.price:0
+msgid "Company Wise Sale Prices"
+msgstr ""
+
+#. module: multi_company_product
+#: model:ir.model,name:multi_company_product.model_company_wise_cost_price
+msgid "Company Wise Cost Price"
+msgstr ""

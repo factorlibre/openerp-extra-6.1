@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <!--
+    ======================
+    Project Management
+    ======================
+    -->
+	<record model="ir.ui.view" id="edit_project_civilengineering">
+		<field name="name">project.project.form.civilengineering</field>
+		<field name="model">project.project</field>
+		<field name="inherit_id" ref="project.edit_project"/>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<notebook position="inside">
+                    <page string="Civil Engineering Works">
+                        <field colspan="4" mode="form,tree" name="ce_work_ids" nolabel="1">
+                            <form string="Civil Engineering Work">
+			                    <field name="sequence"/>
+                                <newline/>
+			                    <field name="area_id"/>
+			                    <field name="work_id"/>
+                            </form>
+                            <tree string="Civil Engineering Works">
+			                    <field name="sequence"/>
+			                    <field name="area_id"/>
+			                    <field name="work_id"/>
+                            </tree>
+                        </field>
+                    </page>
+			</notebook>
+		</field>
+	</record>
+</data>
+</openerp>

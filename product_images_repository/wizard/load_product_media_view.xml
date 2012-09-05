@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_load_product_media_form_view" model="ir.ui.view">
+            <field name="name">load.product.media.form</field>
+            <field name="model">load.product.media</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+			<form string="Load Product Image">
+                <separator string="Select the image or media to load" colspan="4"/>			
+				<field name="media" colspan="4" filename="media_fname" />
+				<field name="media_fname" colspan="4" />
+                <separator string="" colspan="4"/>
+                <button icon="gtk-cancel" special="cancel" string="_Cancel"/>
+                <button icon="gtk-ok" name="load_media" string="_Load Media File" type="object"/>
+			</form>
+            </field>
+        </record>
+        
+        <record id="modify_product_media_act_window" model="ir.actions.act_window">
+            <field name="name">Modify product media</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">load.product.media</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'create': False}</field>
+        </record>
+
+        <record id="load_product_media_act_window" model="ir.actions.act_window">
+            <field name="name">Load an image</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">load.product.media</field>
+            <field name="src_model">product.product</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'create': True, 'product_id': active_id}</field>
+        </record>
+        
+        <record model="ir.values" id="load_product_media_ir_values">
+            <field name="model_id" ref="product.model_product_product" />
+            <field name="object" eval="1" />
+            <field name="name">Load an image</field>
+            <field name="key2">client_action_multi</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('load_product_media_act_window'))" />
+            <field name="key">action</field>
+            <field name="model">product.product</field>
+        </record>
+        
+    </data>
+</openerp>

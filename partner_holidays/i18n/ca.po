@@ -1,0 +1,163 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* partner_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-06-21 01:50+0000\n"
+"PO-Revision-Date: 2011-02-23 16:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: partner_holidays
+#: model:ir.module.module,shortdesc:partner_holidays.module_meta_information
+msgid "Partner Holidays"
+msgstr "Vacances d'empresa"
+
+#. module: partner_holidays
+#: field:res.partner.holidays,end:0
+msgid "End"
+msgstr "Fi"
+
+#. module: partner_holidays
+#: field:res.partner,pays_during_holidays:0
+msgid "Pays During Holidays"
+msgstr "Paga durant les vacances"
+
+#. module: partner_holidays
+#: field:res.partner.holidays,start:0
+msgid "Start"
+msgstr "Inici"
+
+#. module: partner_holidays
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar amb x_ i no contenir cap caràcter "
+"especial!"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid ""
+"The Payment Term of Supplier does not have Payment Term Lines(Computation) "
+"defined !"
+msgstr ""
+"El termini de pagament dels proveïdors no té línies de termini de pagament "
+"(Càlcul) definides!"
+
+#. module: partner_holidays
+#: view:res.partner:0
+#: field:res.partner,holiday_ids:0
+msgid "Holidays"
+msgstr "Vacances"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid ""
+"Please verify the price of the invoice !\n"
+"The real total does not match the computed total."
+msgstr ""
+"Comproveu l'import de la factura!\n"
+"El total real no concorda amb el total calculat."
+
+#. module: partner_holidays
+#: model:ir.model,name:partner_holidays.model_res_partner_holidays
+msgid "res.partner.holidays"
+msgstr ""
+
+#. module: partner_holidays
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML no válid per a la definició de la vista!"
+
+#. module: partner_holidays
+#: view:res.partner:0
+msgid "Notes"
+msgstr "Notes"
+
+#. module: partner_holidays
+#: help:res.partner,pays_during_holidays:0
+msgid ""
+"Indicates whether the partner pays during holidays. If it doesnt, it will be "
+"taken into account when calculating due dates."
+msgstr ""
+"Indica si l'empresa paga durant les vacances. Si no paga, es tindrà en "
+"compte quan es calculin les dates de venciment."
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Warning !"
+msgstr "Avís!"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Taxes missing !"
+msgstr "Falten els impostos !"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "UserError"
+msgstr "Error d'usuari"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid ""
+"Tax base different !\n"
+"Click on compute to update tax base"
+msgstr ""
+"Base d'impostos diferent !\n"
+"Premeu a calcular per a actualitzar la base dels impostos."
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Data Insufficient !"
+msgstr "Dades insuficients!"
+
+#. module: partner_holidays
+#: model:ir.module.module,description:partner_holidays.module_meta_information
+msgid ""
+"This module adds fields to introduce partner's holidays. It also allows due "
+"date in customer invoices to take into account vacations if the partner "
+"doesn't pay during that period."
+msgstr ""
+"Aquest modul afegeix camps per a introduir les vacances de les empreses. "
+"També permet tenir en compte les vacances a l'hora de calcular les dates de "
+"venciment si l'empresa no paga durant d'aquest període."
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Bad total !"
+msgstr "Total incorrecte !"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Global taxes defined, but are not in invoice lines !"
+msgstr "Impostos globals definits, però no estan en línies de la factura!"
+
+#. module: partner_holidays
+#: field:res.partner.holidays,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: partner_holidays
+#: code:addons/partner_holidays/invoice.py:0
+#, python-format
+msgid "Cannot create invoice move on centralised journal"
+msgstr "No es pot crear assentament factura al diari centralitzat"

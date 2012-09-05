@@ -1,0 +1,66 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:41+0000\n"
+"PO-Revision-Date: 2011-08-26 23:15+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: partner_layout
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: partner_layout
+#: view:res.partner:0
+msgid "Layout"
+msgstr "Distribución"
+
+#. module: partner_layout
+#: model:ir.module.module,shortdesc:partner_layout.module_meta_information
+msgid "Partner Layout"
+msgstr ""
+
+#. module: partner_layout
+#: field:res.partner,header:0
+msgid "Header (.odt)"
+msgstr ""
+
+#. module: partner_layout
+#: view:res.partner:0
+msgid "Header"
+msgstr "Cabecera"
+
+#. module: partner_layout
+#: model:ir.module.module,description:partner_layout.module_meta_information
+msgid ""
+"\n"
+"    \n"
+"                    "
+msgstr ""
+"\n"
+"    \n"
+"                    "
+
+#. module: partner_layout
+#: view:res.partner:0
+#: field:res.partner,signature:0
+msgid "Signature"
+msgstr "Firma"
+
+#. module: partner_layout
+#: view:res.partner:0
+#: field:res.partner,logo:0
+msgid "Logo"
+msgstr "Logo"

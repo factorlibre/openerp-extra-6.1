@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_migration_wizard_config" model="ir.ui.view">
+            <field name="name">Load Configuration</field>
+            <field name="model">migration.wizard.config</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Load Configuration">
+                    <group col="8">
+                        <group colspan="8" col="8">
+                                <button special="cancel" string="_Close" icon="gtk-cancel"/>
+                                <button name="load_config" string="_Load" type="object" icon="gtk-ok"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_view_migration_wizard_config" model="ir.actions.act_window">
+            <field name="name">Load Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">migration.wizard.config</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem
+        action="action_view_migration_wizard_config"
+        id="menu_view_migration_wizard_config"
+        parent="server_migration.menu_server_migration"/>
+
+    </data>
+</openerp>

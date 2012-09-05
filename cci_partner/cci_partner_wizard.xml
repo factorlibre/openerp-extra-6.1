@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+
+	<wizard string="Event History"
+			model="res.partner"
+			name="cci.partner_event_history"
+			id="cci_partner_event_history"
+			menu='True'/>
+	<wizard string="Send SMS" model="res.partner" name="res.partner.sms_send_cci" id="base.res_partner_send_sms_wizard"/>
+	<wizard string="Mass Mailing" model="res.partner" name="res.partner.spam_send_cci" id="base.res_partner_mass_mailing_wizard"/>
+	<wizard string="Mass Mailing" model="res.partner.contact" name="res.partner.contact.spam_send_cci" id="res_partner_contact_mass_mailing_wizard"/>
+	<wizard string="Mass Mailing" model="res.partner.job" name="res.partner.job.spam_send_cci" id="res_partner_job_mass_mailing_wizard"/>
+
+  <wizard string="Export Partners for SUMO"
+          name="cci.export.partner"
+          id="sumo_export"/>
+  <menuitem id="export_partner_sumo" 
+          parent="menu_partner_photo" 
+          sequence="1" 
+          action="sumo_export" 
+          type="wizard"/>
+	</data>
+</openerp>

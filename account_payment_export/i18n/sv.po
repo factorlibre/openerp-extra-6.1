@@ -1,0 +1,195 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_payment_export
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-24 13:29+0000\n"
+"PO-Revision-Date: 2012-06-18 22:31+0000\n"
+"Last-Translator: Anders Wallenquist <anders.wallenquist@vertel.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_payment_export
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Objektnamnet måste börja med x_ och får inte innehålla några specialtecken!"
+
+#. module: account_payment_export
+#: wizard_field:account.payment_create,export,note:0
+msgid "Log"
+msgstr "Log"
+
+#. module: account_payment_export
+#: wizard_view:account.payment_create,export:0
+#: wizard_view:account.payment_create,init:0
+#: model:ir.ui.menu,name:account_payment_export.menu_action_action_account_pay
+msgid "Payment Export"
+msgstr "Payment Export"
+
+#. module: account_payment_export
+#: field:account.pay,file:0
+msgid "Saved File"
+msgstr "Saved File"
+
+#. module: account_payment_export
+#: selection:account.pay,state:0
+msgid "Failed"
+msgstr "Failed"
+
+#. module: account_payment_export
+#: model:ir.model,name:account_payment_export.model_charges_code
+msgid "Charges Codes For Export"
+msgstr "Charges Codes For Export"
+
+#. module: account_payment_export
+#: field:account.pay,note:0
+msgid "Creation Log"
+msgstr "Creation Log"
+
+#. module: account_payment_export
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Ogiltigt modellnamn i åtgärdsdefinitionen."
+
+#. module: account_payment_export
+#: model:ir.model,name:account_payment_export.model_payment_method
+msgid "Payment Method For Export"
+msgstr "Betalningsmetod för export"
+
+#. module: account_payment_export
+#: field:account.pay,state:0
+msgid "Status"
+msgstr "Status"
+
+#. module: account_payment_export
+#: wizard_field:account.payment_create,init,payment_method:0
+#: model:ir.actions.act_window,name:account_payment_export.action_payment_method_tree
+#: model:ir.ui.menu,name:account_payment_export.menu_action_payment_method_tree
+#: view:payment.method:0
+msgid "Payment Method"
+msgstr "Betalningsmetod"
+
+#. module: account_payment_export
+#: field:charges.code,description:0
+#: field:payment.method,description:0
+msgid "Description"
+msgstr "Beskrivning"
+
+#. module: account_payment_export
+#: field:account.pay,payment_order_id:0
+msgid "Payment Order Reference"
+msgstr "Betalorder referens"
+
+#. module: account_payment_export
+#: field:account.pay,create_date:0
+msgid "Creation Date"
+msgstr "Skapad datum"
+
+#. module: account_payment_export
+#: view:account.pay:0
+#: model:ir.actions.act_window,name:account_payment_export.action_account_pay_tree
+#: model:ir.ui.menu,name:account_payment_export.menu_action_action_account_pay_tree
+msgid "Payment Export Logs"
+msgstr "Payment Export Logs"
+
+#. module: account_payment_export
+#: wizard_field:account.payment_create,init,charges_code:0
+#: view:charges.code:0
+#: model:ir.actions.act_window,name:account_payment_export.action_charges_code_tree
+#: model:ir.ui.menu,name:account_payment_export.menu_action_charges_code_tree
+msgid "Charges Code"
+msgstr "Charges Code"
+
+#. module: account_payment_export
+#: model:ir.actions.wizard,name:account_payment_export.wizard_account_payment_create
+msgid "Create Payment Export"
+msgstr "Skapa betalfil"
+
+#. module: account_payment_export
+#: field:account.pay,create_uid:0
+msgid "Creation User"
+msgstr "Skapad av användare"
+
+#. module: account_payment_export
+#: model:ir.module.module,description:account_payment_export.module_meta_information
+msgid ""
+"\n"
+"     This module allows to export payment orders.\n"
+"     "
+msgstr ""
+"\n"
+"     Denna modul exporterar betalningsorder.\n"
+"     "
+
+#. module: account_payment_export
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Invalid XML for View Architecture!"
+
+#. module: account_payment_export
+#: wizard_button:account.payment_create,export,close:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: account_payment_export
+#: selection:account.pay,state:0
+msgid "Succeeded"
+msgstr "Succeeded"
+
+#. module: account_payment_export
+#: wizard_field:account.payment_create,export,pay:0
+msgid "Export File"
+msgstr "Exportera fil"
+
+#. module: account_payment_export
+#: field:res.bank,bilateral:0
+msgid "Bilateral Relationship"
+msgstr "Bilateral Relationship"
+
+#. module: account_payment_export
+#: model:ir.model,name:account_payment_export.model_account_pay
+msgid "Payment Export History"
+msgstr "Payment Export History"
+
+#. module: account_payment_export
+#: model:ir.module.module,shortdesc:account_payment_export.module_meta_information
+msgid "Payment Order Export"
+msgstr "Payment Order Export"
+
+#. module: account_payment_export
+#: field:charges.code,name:0
+#: field:payment.method,name:0
+msgid "Code"
+msgstr "Kod"
+
+#. module: account_payment_export
+#: help:res.bank,bilateral:0
+msgid ""
+"This field may contain indications on the processing to be applied, e.g. an "
+"indication concerning the globalisation of these payments.The content of "
+"this field must be laid down on a bilateral basis between the bank and its "
+"client."
+msgstr ""
+"This field may contain indications on the processing to be applied, e.g. an "
+"indication concerning the globalisation of these payments.The content of "
+"this field must be laid down on a bilateral basis between the bank and its "
+"client."
+
+#. module: account_payment_export
+#: wizard_button:account.payment_create,init,export:0
+msgid "Export"
+msgstr "Export"
+
+#. module: account_payment_export
+#: wizard_button:account.payment_create,init,end:0
+msgid "Cancel"
+msgstr "Avbryt"

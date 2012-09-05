@@ -1,0 +1,94 @@
+
+<openerp>
+<data>
+
+	<menuitem name="Order Entries" id="menu_dm_config_custo_entries" parent="dm.menu_dm_config_customer" sequence="0"/>
+
+    <!--
+    =======================================================
+    ORDER VIEWS
+    =======================================================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_order_form">
+        <field name="name">dm.order.form</field>
+        <field name="model">dm.order</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Order">
+	            <separator string="Scanned Data" colspan="4"/>
+	            <field name="raw_datas" colspan="4" on_change="onchange_rawdatas(raw_datas)" nolabel="1"/>
+	            <separator string="Customer Infos" colspan="4"/>
+	            <field name="customer_code" select="1"/>
+	            <field name="title" select="1"/>
+	            <field name="customer_firstname" select="1" required="1"/>
+	            <field name="customer_lastname" select="1" required="1"/>
+	            <newline/>
+	            <group col="13" colspan="4" >
+    	            <field name="partner_id" />
+	                <field name="address_id" />
+                    <button name="%(action_dm_customer_partner)d"
+                                icon="gtk-index" type="action" string="Create"
+                                attrs="{'invisible':[('partner_id','!=',False)]}"/>
+                </group>
+	            <separator string="Address" colspan="4"/>
+	            <field name="customer_add1" select="2"/>
+	            <field name="customer_add2" select="2"/>
+	            <field name="customer_add3" select="2"/>
+	            <field name="customer_add4" select="2"/>
+	            <field name="zip" select="2"/>
+	            <field name="zip_summary" select="2"/>
+	            <field name="country_id" select="1"/>
+	            <field name="distribution_office" select="2"/>
+	            <group colspan="4">
+	             	<separator string="Campaign Infos" colspan="4"/>
+	             	<field name="segment_id" select="1" required="1"/>
+	             	<field name="offer_step_id" select="1" required="1"/>
+				</group>
+				<separator string="Order Infos" colspan="4"/>
+				<field name="amount"/>
+				<field name="prod_amt_total"/>
+				<group colspan="4">
+		 			<field name="dm_order_entry_item_ids" context="{'segment_id':segment_id , 'offer_step_id':offer_step_id}" nolabel="1" colspan="4" mode="tree">
+	                    <tree string="Items" editable="bottom" >
+	                        <field name="product_id" />
+	                        <field name="price"/>
+	                    </tree>
+	                </field>
+					<field name="state_msg" nolabel="1"/>
+				</group>
+				<newline/>
+	            <field name="state" colspan="2" nolabel="1"/>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_order_tree">
+        <field name="name">dm.order.tree</field>
+        <field name="model">dm.order</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Orders">
+                <field name="customer_code"/>
+                <field name="customer_firstname"/>
+                <field name="customer_lastname"/>
+                <field name="country_id"/>
+                <field name="distribution_office"/>
+                <field name="segment_id" select="1"/>
+                <field name="offer_step_id" select="1"/>                
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_order_form">
+        <field name="name">All Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.order</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_dm_order_tree"/>
+    </record>
+
+    <menuitem id="menu_action_dm_order_form" parent="menu_dm_config_custo_entries" action="action_dm_order_form" sequence="3" />
+
+    </data>
+</openerp>

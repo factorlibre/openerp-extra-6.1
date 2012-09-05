@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_crm_analytic_timesheet_user","crm.analytic.timesheet User","crm_timesheet.model_crm_analytic_timesheet","base.group_sale_salesman",1,1,1,1
+"access_crm_analytic_timesheet_configuration","crm.analytic.configuration Manager","crm_timesheet.model_crm_analytic_timesheet_configuration","base.group_sale_manager",1,1,1,1
+"access_res_partner_crm_analytic","res.partner.crm.analytic Manager","crm_timesheet.model_res_partner_crm_analytic","base.group_sale_manager",1,1,1,1
+"access_crm_analytic_timesheet_configuration_user","crm.analytic.configuration User","crm_timesheet.model_crm_analytic_timesheet_configuration","base.group_sale_salesman",1,0,0,0
+"access_res_partner_crm_analytic_user","res.partner.crm.analytic User","crm_timesheet.model_res_partner_crm_analytic","base.group_sale_salesman",1,0,0,0

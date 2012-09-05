@@ -1,0 +1,52 @@
+-
+  This scenario tests the delegation process. Closing all the delegated tasks(task delegation at multiple levels) transits the parent task from pending to open state.  
+- 
+  Creating a project OpenERP Documentation
+- 
+  !record {model: project.project, id: project_project_openerpdocumentation0}:
+    company_id: base.main_company
+    name: OpenERP Documentation    
+    
+- 
+  Creating a task 'Develop book for Technical and Functional reference'
+- 
+  !record {model: project.task, id: project_task_documentation_book}:
+    name: Develop book for Technical and Functional reference
+    planned_hours: 20.0
+    project_id: project_project_openerpdocumentation0
+    remaining_hours: 20.0
+    state: draft
+    
+- 
+  Open the task
+- 
+  !python {model: project.task}: |
+    self.do_open(cr, uid, [ref("project_task_documentation_book")],
+      {"lang": "en_US", "active_model": "ir.ui.menu", "active_ids": [ref("project.menu_action_view_task")],
+      "tz": False, "active_id": ref("project.menu_action_view_task"), }) 
+
+-
+ Delegate task
+-
+ !record {model: project.task.delegate, id: delegation_id}:
+    name: test
+    prefix: ch#
+    user_id: 1
+    new_task_description: Description
+    planned_hours: 2
+    planned_hours_me: 1
+    state: done
+    
+-
+ Do delegation and check new task's tate
+-
+ !python {model: project.task.delegate}: |
+    task_obj = self.pool.get('project.task')
+    new_id = self.delegate(cr, uid, [ref('delegation_id')], {'active_id': ref('project_task_documentation_book')})
+    task_ids = task_obj.search(cr, uid, [])
+    task_ids.sort()
+    task = task_obj.read(cr, uid, task_ids[-1], ['state', 'name'])
+    assert task['state'] == 'open'
+    task = task_obj.read(cr, uid, ref('project_task_documentation_book'), ['state', 'name'])
+    assert task['state'] == 'done'
+

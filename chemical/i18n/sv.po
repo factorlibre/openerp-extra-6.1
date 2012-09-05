@@ -1,0 +1,132 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* chemical
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:35+0000\n"
+"PO-Revision-Date: 2011-02-15 15:02+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: chemical
+#: model:ir.module.module,description:chemical.module_meta_information
+#: model:ir.module.module,shortdesc:chemical.module_meta_information
+msgid "Module for Chemical Industries"
+msgstr "Module for Chemical Industries"
+
+#. module: chemical
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: chemical
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: chemical
+#: field:product.product,risque_ids:0
+msgid "Risk products"
+msgstr ""
+
+#. module: chemical
+#: view:product.danger:0
+msgid "Dangers Produits"
+msgstr ""
+
+#. module: chemical
+#: field:product.danger,name:0
+msgid "Danger"
+msgstr ""
+
+#. module: chemical
+#: model:ir.actions.act_window,name:chemical.product_risque_action
+#: model:ir.ui.menu,name:chemical.menu_product_risque
+msgid "product risque"
+msgstr ""
+
+#. module: chemical
+#: model:ir.actions.act_window,name:chemical.product_danger_action
+#: model:ir.ui.menu,name:chemical.menu_product_danger
+msgid "product danger"
+msgstr ""
+
+#. module: chemical
+#: model:ir.actions.act_window,name:chemical.product_securite_action
+#: model:ir.ui.menu,name:chemical.menu_product_securite
+msgid "product securite"
+msgstr ""
+
+#. module: chemical
+#: field:product.danger,libelle:0
+#: field:product.risque,libelle:0
+#: field:product.securite,libelle:0
+msgid "libelle"
+msgstr ""
+
+#. module: chemical
+#: model:ir.model,name:chemical.model_product_securite
+#: view:product.securite:0
+msgid "Securite Produits"
+msgstr ""
+
+#. module: chemical
+#: model:ir.model,name:chemical.model_product_risque
+#: view:product.risque:0
+msgid "Risques Produits"
+msgstr ""
+
+#. module: chemical
+#: field:product.risque,name:0
+msgid "Risque"
+msgstr ""
+
+#. module: chemical
+#: view:product.product:0
+msgid "Securite"
+msgstr ""
+
+#. module: chemical
+#: model:ir.ui.menu,name:chemical.menu_product_Chimie
+msgid "Chimie"
+msgstr ""
+
+#. module: chemical
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: chemical
+#: view:product.product:0
+msgid "Dangers"
+msgstr ""
+
+#. module: chemical
+#: model:ir.model,name:chemical.model_product_danger
+msgid "Dangers Product"
+msgstr ""
+
+#. module: chemical
+#: view:product.product:0
+msgid "Risques"
+msgstr ""
+
+#. module: chemical
+#: field:product.product,danger_ids:0
+msgid "Dangers products"
+msgstr ""
+
+#. module: chemical
+#: field:product.product,securite_ids:0
+#: field:product.securite,name:0
+msgid "Security"
+msgstr ""

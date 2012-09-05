@@ -1,0 +1,66 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_quality_decoy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:36:55+0000\n"
+"PO-Revision-Date: 2009-11-25 07:36:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_quality_decoy
+#: model:ir.ui.menu,name:dm_quality_decoy.menu_crm_case_section_decoy
+msgid "Decoy Cases Section"
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:crm.case.section,name:dm_quality_decoy.section_dm_quality_decoy
+#: model:ir.ui.menu,name:dm_quality_decoy.menu_dm_quality_decoy
+msgid "Decoy"
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:ir.module.module,shortdesc:dm_quality_decoy.module_meta_information
+msgid "DM Quality Decoy "
+msgstr ""
+
+#. module: dm_quality_decoy
+#: constraint:crm.case.section:0
+msgid "Error ! You cannot create recursive sections."
+msgstr ""
+
+#. module: dm_quality_decoy
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:ir.actions.act_window,name:dm_quality_decoy.crm_case_section_qualtiy_decoy
+msgid "Decoy Cases Sections"
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:ir.actions.act_window,name:dm_quality_decoy.crm_case_qualtiy_decoy
+#: model:ir.ui.menu,name:dm_quality_decoy.menu_crm_case_decoy
+msgid "Decoy Cases"
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:ir.module.module,description:dm_quality_decoy.module_meta_information
+msgid "\n"
+"           \n"
+"            "
+msgstr ""
+
+#. module: dm_quality_decoy
+#: model:ir.ui.menu,name:dm_quality_decoy.menu_dm_quality
+msgid "Quality"
+msgstr ""
+

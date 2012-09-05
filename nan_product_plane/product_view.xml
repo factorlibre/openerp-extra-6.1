@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- menu Product plane -->
+        <record model="ir.ui.view" id="product_plane_form_view">
+            <field name="name">product.plane.form.view</field>
+            <field name="model">product.plane</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Plane" >
+                    <group col="6" >
+                        <group col="2" colspan="1" >
+		                    <field name="name" colspan="1" />
+                            <field name="code" colspan="1"/>
+                            <field name="company_id" colspan="1" />
+                        </group>
+                        <group colspan="1">
+                            <field name="image" colspan="1" nolabel="1" widget="image" />
+                        </group>
+                        <group colspan="3">
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- menu Product plane -->
+        <record model="ir.ui.view" id="product_plane_tree_view">
+            <field name="name">product.plane.tree.view</field>
+            <field name="model">product.plane</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Product Plane">
+		            <field name="name" />
+                    <field name="code" select="1"/>
+                    <field name="image" />
+                    <field name="company_id" select="1" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_product_plane" model="ir.actions.act_window">
+            <field name="name">Product Plane</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.plane</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+	
+        <menuitem 
+            parent="base.menu_product" 
+            name="Product Planes"
+            id="product_plane_sale"
+            action="action_product_plane" />
+        
+        <menuitem 
+            parent="purchase.menu_procurement_management_product" 
+            name="Product Planes"
+            id="product_plane_purchase"
+            action="action_product_plane" />
+        
+        <!-- Product -->
+        <record model="ir.ui.view" id="product_product_form_plane">
+            <field name="name">product.product.form.plane</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//form/notebook[@colspan='4']/page[@string='Information']/group[@name='uos']" position="after">
+                        <group colspan="2" col="2">
+                            <separator string="Plane image" colspan="2" />
+		                    <field name="plane_id" />
+                        </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

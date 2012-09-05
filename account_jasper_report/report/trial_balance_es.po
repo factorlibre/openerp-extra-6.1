@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-08 01:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /tmp/tmp.Up0U7MywGt:753 /tmp/tmp.Up0U7MywGt:953 /tmp/tmp.Up0U7MywGt:1153
+msgid "Trial Balance"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:769 /tmp/tmp.Up0U7MywGt:969 /tmp/tmp.Up0U7MywGt:1169
+msgid "Account"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:773 /tmp/tmp.Up0U7MywGt:973 /tmp/tmp.Up0U7MywGt:1173
+msgid "Account Name"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:777 /tmp/tmp.Up0U7MywGt:789 /tmp/tmp.Up0U7MywGt:977
+#: /tmp/tmp.Up0U7MywGt:989 /tmp/tmp.Up0U7MywGt:1177 /tmp/tmp.Up0U7MywGt:1189
+msgid "Debit"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:781 /tmp/tmp.Up0U7MywGt:793 /tmp/tmp.Up0U7MywGt:981
+#: /tmp/tmp.Up0U7MywGt:993 /tmp/tmp.Up0U7MywGt:1181 /tmp/tmp.Up0U7MywGt:1193
+msgid "Credit"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:785 /tmp/tmp.Up0U7MywGt:797 /tmp/tmp.Up0U7MywGt:985
+#: /tmp/tmp.Up0U7MywGt:997 /tmp/tmp.Up0U7MywGt:1185 /tmp/tmp.Up0U7MywGt:1197
+msgid "Balance"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:801 /tmp/tmp.Up0U7MywGt:1001 /tmp/tmp.Up0U7MywGt:1201
+msgid "Accumulated Period"
+msgstr ""
+
+#: /tmp/tmp.Up0U7MywGt:805 /tmp/tmp.Up0U7MywGt:1005 /tmp/tmp.Up0U7MywGt:1205
+msgid "Accumulated Year"
+msgstr ""

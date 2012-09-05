@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<report auto="False" id="account.account_invoices" menu="False"
+			model="account.invoice" name="account.invoice.domiciliated"
+			rml="account_l10nbe_domiciliation/report/invoice.rml"
+			string="Invoices"
+		/>
+<!--		<report auto="False" id="invoice_domiciliation_save"-->
+<!--			model="account.invoice" name="invoice.domiciliation.dom"-->
+<!--			rml="account_l10nbe_domiciliation/report/domiciliations.rml"-->
+<!--			string="Rapport domiciliations" multi="True"  header="False"-->
+<!--		/>-->
+
+	</data>
+</openerp>

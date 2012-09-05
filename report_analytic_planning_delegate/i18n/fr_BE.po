@@ -1,0 +1,47 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* report_analytic_planning_delegate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:13:12+0000\n"
+"PO-Revision-Date: 2009-11-25 14:13:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: report_analytic_planning_delegate
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: report_analytic_planning_delegate
+#: model:ir.module.module,description:report_analytic_planning_delegate.module_meta_information
+msgid "Planning on analytic accounts, delegation in the hierarchy."
+msgstr ""
+
+#. module: report_analytic_planning_delegate
+#: field:report_account_analytic.planning,delegate_ids:0
+msgid "unknown"
+msgstr ""
+
+#. module: report_analytic_planning_delegate
+#: view:report_account_analytic.planning:0
+msgid "Assigned Planning"
+msgstr ""
+
+#. module: report_analytic_planning_delegate
+#: model:ir.module.module,shortdesc:report_analytic_planning_delegate.module_meta_information
+msgid "Analytic planning - Delegation in the hierarchy"
+msgstr ""
+
+#. module: report_analytic_planning_delegate
+#: field:report_account_analytic.planning.line,delegate_id:0
+msgid "Delegate To"
+msgstr ""
+

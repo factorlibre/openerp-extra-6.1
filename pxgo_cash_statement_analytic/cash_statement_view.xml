@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--*** Extend the line type ****************************************-->
+
+        <record id="view_account_bank_statement_line_type_tree_analytic" model="ir.ui.view">
+            <field name="name">account.bank.statement.line.type.tree.analytic</field>
+            <field name="model">account.bank.statement.line.type</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_account_bank_statement_line_type_tree"/>
+            <field name="arch" type="xml">
+                <field name="account_id" position="after">
+                    <field name="analytic_account_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_account_bank_statement_line_type_form_analytic" model="ir.ui.view">
+            <field name="name">account.bank.statement.line.type.form.analytic</field>
+            <field name="model">account.bank.statement.line.type</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_account_bank_statement_line_type_form"/>
+            <field name="arch" type="xml">
+                <field name="account_id" position="after">
+                    <field name="analytic_account_id"/>
+                </field>
+            </field>
+        </record>
+
+
+        <!--*** Extend the cash statements **********************************-->
+
+        <record id="view_cash_statement_form_analytic_an_1" model="ir.ui.view">
+            <field name="name">account.cash.statement.form.analytic_an_1</field>
+            <field name="model">account.bank.statement</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_cash_statement_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='line_ids']/tree/field[@name='account_id']" position="after">
+                    <field name="analytic_account_id" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_cash_statement_form_analytic_an_2" model="ir.ui.view">
+            <field name="name">account.cash.statement.form.analytic_an_2</field>
+            <field name="model">account.bank.statement</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_cash_statement_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='line_ids']/form/field[@name='account_id']" position="after">
+                    <field name="analytic_account_id"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
+
+        <record id="view_bank_statement_form_analytic_ty_1" model="ir.ui.view">
+            <field name="name">account.cash.statement.form.analytic_ty_1</field>
+            <field name="model">account.bank.statement</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_cash_statement_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='line_ids']/tree/field[@name='line_type_id']" position="replace">
+                    <field name="line_type_id"
+                                widget="selection"
+                                on_change="cash_line_on_change_line_type_id(partner_id, type, line_type_id)"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_bank_statement_form_analytic_ty_2" model="ir.ui.view">
+            <field name="name">account.cash.statement.form.analytic_ty_2</field>
+            <field name="model">account.bank.statement</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="pxgo_cash_statement.view_cash_statement_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='line_ids']/form/field[@name='line_type_id']" position="replace">
+                    <field name="line_type_id"
+                                widget="selection"
+                                on_change="cash_line_on_change_line_type_id(partner_id, type, line_type_id)"/>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <wizard 
+            id="sitp_sotp"
+            model="hr.employee"
+            name="hr_timesheet.sitp_sotp"
+            string="Sign in / Sign out by task project"/>
+        <wizard 
+            id="sitp_sotp_my" 
+            model="hr.employee"
+            name="hr_timesheet.sitp_sotp"
+            string="Sign in / Sign out by my task project"/>
+        <wizard
+            string="Sign in / Sign out"
+            model="project.task"
+            name="hr_timesheet.sitp_sotp"
+            id="sitp_stop_task"
+            menu="True"/>
+
+        <menuitem
+            action="sitp_sotp"
+            id="menu_sitp_sotp"
+            parent="hr_attendance.menu_hr_attendance"
+            type="wizard"
+            string="Sign in / Sign out by task project"/>
+        <menuitem
+            action="sitp_sotp_my"
+            id="menu_sitp_sotp_my"
+            parent="hr_attendance.menu_hr_attendance"
+            type="wizard"
+            string="Sign in / Sign out by my task project"/>
+    </data>
+</openerp>

@@ -1,0 +1,105 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* import_export
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 08:00+0000\n"
+"PO-Revision-Date: 2011-02-15 15:08+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:31+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: import_export
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: import_export
+#: field:product.category,property_account_expense_europe:0
+#: field:product.template,property_account_expense_europe:0
+msgid "Expense Account for Europe"
+msgstr ""
+
+#. module: import_export
+#: model:ir.module.module,shortdesc:import_export.module_meta_information
+msgid "Import Export"
+msgstr ""
+
+#. module: import_export
+#: model:ir.module.module,description:import_export.module_meta_information
+msgid ""
+"\n"
+"This module help user to configure a tiny for Product selling compant doing "
+"\n"
+"Import Export business\n"
+"Take care for the Taxes according to the govt policy for \n"
+"Local Sale\n"
+"With in Country Sale\n"
+"or Sales Outside the Country \n"
+"    "
+msgstr ""
+
+#. module: import_export
+#: field:product.category,property_account_income_world:0
+#: field:product.template,property_account_income_world:0
+msgid "Outside Europe Income Account"
+msgstr ""
+
+#. module: import_export
+#: selection:res.partner,partner_location:0
+msgid "Worldwild Partner"
+msgstr ""
+
+#. module: import_export
+#: field:product.category,property_account_expense_world:0
+#: field:product.template,property_account_expense_world1:0
+msgid "Outside Europe Expense Account"
+msgstr ""
+
+#. module: import_export
+#: field:product.category,property_account_income_europe:0
+#: field:product.template,property_account_income_europe:0
+msgid "Income Account for Europe"
+msgstr ""
+
+#. module: import_export
+#: field:res.partner,partner_location:0
+msgid "Partner Location"
+msgstr ""
+
+#. module: import_export
+#: help:product.category,property_account_income_europe:0
+#: help:product.category,property_account_income_world:0
+#: help:product.template,property_account_income_europe:0
+#: help:product.template,property_account_income_world:0
+msgid ""
+"This account will be used, instead of the default one, to value incoming "
+"stock for the current product"
+msgstr ""
+
+#. module: import_export
+#: selection:res.partner,partner_location:0
+msgid "Local Partner"
+msgstr ""
+
+#. module: import_export
+#: help:product.category,property_account_expense_europe:0
+#: help:product.category,property_account_expense_world:0
+#: help:product.template,property_account_expense_europe:0
+#: help:product.template,property_account_expense_world1:0
+msgid ""
+"This account will be used, instead of the default one, to value outgoing "
+"stock for the current product"
+msgstr ""
+
+#. module: import_export
+#: selection:res.partner,partner_location:0
+msgid "Europe Partner"
+msgstr ""

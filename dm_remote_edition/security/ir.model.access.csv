@@ -1,0 +1,17 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_portal_dm_campaign_document","dm.campaign.document","dm.model_dm_campaign_document","portal_dm_printing_group",1,1,0,0
+"access_portal_dm_campaign_document_job","dm.campaign.document.job","dm_edition.model_dm_campaign_document_job","portal_dm_printing_group",1,1,0,0
+"access_portal_dm_campaign_document_job_batch","dm.campaign.document.job.batch","dm_edition.model_dm_campaign_document_job_batch","portal_dm_printing_group",1,1,0,0
+"access_portal_dm_campaign_document_type","dm.campaign.document.type","dm.model_dm_campaign_document_type","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_campaign_proposition_segment","dm.campaign.proposition.segment","dm.model_dm_campaign_proposition_segment","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_account_analytic_account","account.analytic.account","account.model_account_analytic_account","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_mail_service","dm.mail_service","dm.model_dm_mail_service","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_mail_service_type","dm.mail_service.type","dm.model_dm_mail_service_type","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_res_partner_address","res.partner.address","base.model_res_partner_address","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_res_partner_title","res.partner.title","base.model_res_partner_title","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_res_partner","res.partner","base.model_res_partner","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_campaign_document_job_sorting_rule","dm.campaign.document.job.sorting_rule","dm_edition.model_dm_campaign_document_job_sorting_rule","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_media","dm.media","dm.model_dm_media","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_campaign_proposition","dm.campaign.proposition","dm.model_dm_campaign_proposition","portal_dm_printing_group",1,0,0,0
+"access_portal_dm_customers_list","dm.customers_list","dm.model_dm_customers_list","portal_dm_printing_group",1,0,0,0
+"accss_portal_dm_campaign","dm.campaign","dm.model_dm_campaign","portal_dm_printing_group",1,0,0,0

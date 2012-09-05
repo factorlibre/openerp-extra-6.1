@@ -1,0 +1,11 @@
+======Wiki Files======
+=====Configuración=====
+Conocimiento/Configuración/Wiki/Ficheros de la wiki
+Configure el servidor de FTP. Sólo puede configurar un servidor FTP como activo
+
+=====Uso=====
+Cuando edite una página wiki dispondrá de un asistente para la publicación de ficheros en el servidor público FTP y lo tendrá disponible en el apartado Ficheros de la wiki de la página de la wiki.
+Para publicar un fichero, seleccione un fichero del vuestro disco duro. Se propone un nombre del fichero. Este si contienen caracteres no alfanuméricos (az09) y espacios serán eliminados posteriormente.
+Si es una imagen, se le propondrá la etiqueta de la wiki imagen para que copie e enganche
+Si es otro tipo de documento, se le propondrá la etiqueta de la wiki enlace para que copie e enganche
+Una vez publicada la imagen, esta, no se podrá eliminar.

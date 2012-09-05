@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record model="ir.ui.view" id="view_payment_term_line_form_months">
+	<field name="name">account.payment.term.line.form.months</field>
+	<field name="model">account.payment.term.line</field>
+	<field name="inherit_id" ref="account.view_payment_term_line_form"/>
+	<field name="arch" type="xml">
+		<field name="days" position="after">
+			<field name="months" colspan="4"/>
+		</field>
+	</field>
+    </record>
+    <record model="ir.ui.view" id="view_payment_term_line_tree_months">
+	<field name="name">account.payment.term.line.tree.months</field>
+	<field name="model">account.payment.term.line</field>
+	<field name="inherit_id" ref="account.view_payment_term_line_tree"/>
+	<field name="arch" type="xml">
+		<field name="days" position="after">
+			<field name="months"/>
+		</field>
+	</field>
+    </record>
+</data>
+</openerp>

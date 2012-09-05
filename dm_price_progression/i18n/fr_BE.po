@@ -1,0 +1,170 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_price_progression
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 07:22:37+0000\n"
+"PO-Revision-Date: 2009-11-26 07:22:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_price_progression
+#: view:dm.campaign.proposition:0
+#: model:ir.actions.wizard,name:dm_price_progression.wizard_proposition_products
+msgid "Get Products"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_view:wizard_proposition_products,error:0
+msgid "Error!!!"
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition,force_sm_price:0
+msgid "Force Starting Mail Price"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_field:wizard_proposition_products,name_prices_prog,fixed_prog:0
+msgid "Fixed Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_price_progression
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_view:wizard_proposition_products,new:0
+#: wizard_view:wizard_proposition_products,select:0
+msgid "Price Progresson Assigned"
+msgstr ""
+
+#. module: dm_price_progression
+#: view:dm.campaign.proposition.prices_progression:0
+msgid "Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: model:ir.module.module,shortdesc:dm_price_progression.module_meta_information
+msgid "Price Progression for DM"
+msgstr ""
+
+#. module: dm_price_progression
+#: view:dm.campaign.proposition.prices_progression:0
+msgid "Price Progression Description"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_view:wizard_proposition_products,error:0
+msgid "error test"
+msgstr ""
+
+#. module: dm_price_progression
+#: model:ir.actions.act_window,name:dm_price_progression.action_dm_campaign_proposition_prices_progression_form
+#: model:ir.ui.menu,name:dm_price_progression.menu_action_dm_campaign_proposition_prices_progression_form
+msgid "All Campaign Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,error,init:0
+#: wizard_view:wizard_proposition_products,name_prices_prog:0
+#: wizard_field:wizard_proposition_products,open,prices_progression:0
+msgid "Select Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,open,next:0
+msgid "Assign Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,new,end:0
+#: wizard_button:wizard_proposition_products,select,end:0
+msgid "Ok"
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition.prices_progression,name:0
+#: wizard_field:wizard_proposition_products,name_prices_prog,prices_prog_name:0
+msgid "Name"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,name_prices_prog,new:0
+#: wizard_view:wizard_proposition_products,new:0
+#: wizard_view:wizard_proposition_products,select:0
+msgid "Create Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_field:wizard_proposition_products,name_prices_prog,percent_prog:0
+msgid "Percent Progression Name"
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition,sm_price:0
+msgid "Starting Mail Price"
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition.prices_progression,percent_prog:0
+msgid "Percentage Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition,price_prog_use:0
+msgid "Price Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: model:ir.model,name:dm_price_progression.model_dm_campaign_proposition_prices_progression
+msgid "dm.campaign.proposition.prices_progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: model:ir.module.module,description:dm_price_progression.module_meta_information
+msgid "\n"
+"            This module assigns price progression in campaign propositions for Direct Marketing.\n"
+"            "
+msgstr ""
+
+#. module: dm_price_progression
+#: field:dm.campaign.proposition.prices_progression,fixed_prog:0
+msgid "Fixed Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,open,name_prices_prog:0
+msgid "Create New Prices Progression"
+msgstr ""
+
+#. module: dm_price_progression
+#: wizard_button:wizard_proposition_products,error,end:0
+#: wizard_button:wizard_proposition_products,name_prices_prog,end:0
+#: wizard_button:wizard_proposition_products,open,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: dm_price_progression
+#: view:dm.campaign.proposition.prices_progression:0
+msgid "Campaign Prices Progression"
+msgstr ""
+

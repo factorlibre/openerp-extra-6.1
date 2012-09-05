@@ -1,0 +1,513 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_event
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:09:11+0000\n"
+"PO-Revision-Date: 2009-12-10 10:09:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_event
+#: field:event.meeting.table,service:0
+msgid "Service"
+msgstr "Service"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Add Last Mail for Replying"
+msgstr "Ajouter le dernier email pour Réponse"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Confirm Date"
+msgstr "Date de confirmation"
+
+#. module: cci_event
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect dans la définition de l'action"
+
+#. module: cci_event
+#: help:event.registration,cavalier:0
+msgid "Check if we should print papers with participant name"
+msgstr "Cochez si vous désirez imprimer des cavaliers de table pour ce participant"
+
+#. module: cci_event
+#: field:event.group,name:0
+msgid "Group Name"
+msgstr "Nom du groupe"
+
+#. module: cci_event
+#: wizard_field:event.send_email,init,body:0
+msgid "Body"
+msgstr "Corps du texte"
+
+#. module: cci_event
+#: wizard_view:event.send_email,init:0
+msgid "Send Email from registration"
+msgstr "Envoyer les emails pour l'inscription"
+
+#. module: cci_event
+#: view:event.check:0
+#: view:event.registration:0
+#: model:ir.actions.act_window,name:cci_event.action_event_check
+#: model:ir.ui.menu,name:cci_event.menu_event_check
+#: model:ir.ui.menu,name:cci_event.menu_event_check_main
+msgid "Event Check"
+msgstr "Chèque pour Rencontres"
+
+#. module: cci_event
+#: model:ir.model,name:cci_event.model_event_group
+msgid "event.group"
+msgstr ""
+
+#. module: cci_event
+#: help:event.registration,training_authorization:0
+msgid "Formation Checks Authorization number"
+msgstr "Numéro d'autorisation pour les chèques formations"
+
+#. module: cci_event
+#: wizard_field:event.send_email,init,email_from:0
+msgid "Email From"
+msgstr "Email From"
+
+#. module: cci_event
+#: wizard_button:event.confirm_registrations,init,end:0
+#: wizard_button:event.event_copy,init,end:0
+#: wizard_button:event.send_email,send,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: cci_event
+#: field:event.check,unit_nbr:0
+#: field:event.group,bookmark_name:0
+msgid "Value"
+msgstr "Valeur"
+
+#. module: cci_event
+#: model:ir.model,name:cci_event.model_event_check_type
+msgid "event.check.type"
+msgstr ""
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Confirm Event"
+msgstr "Confirmer la Rencontre"
+
+#. module: cci_event
+#: wizard_view:event.event_copy,init:0
+#: model:ir.actions.wizard,name:cci_event.event_copy
+msgid "Copy Events"
+msgstr "Copier les Rencontres"
+
+#. module: cci_event
+#: field:event.registration,check_amount:0
+msgid "Check Amount"
+msgstr "Valeur du chèque"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Extra Info"
+msgstr "Info supplémentaire"
+
+#. module: cci_event
+#: field:event.meeting.table,contact_id2:0
+msgid "Second Contact"
+msgstr "Second contact"
+
+#. module: cci_event
+#: field:account.move.line,case_id:0
+msgid "Registration"
+msgstr "Inscription"
+
+#. module: cci_event
+#: wizard_field:event.send_email,init,subject:0
+msgid "Subject"
+msgstr "Sujet"
+
+#. module: cci_event
+#: view:event.check:0
+#: selection:event.check,state:0
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Open Event"
+msgstr "Ouvrir la Rencontre"
+
+#. module: cci_event
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML invalid pour l'Architecture de la Vue"
+
+#. module: cci_event
+#: wizard_button:event.send_email,init,send:0
+msgid "Send"
+msgstr "Envoyer"
+
+#. module: cci_event
+#: field:event.check,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: cci_event
+#: field:event.type,check_type:0
+msgid "Default Check Type"
+msgstr "Type de chèque par défaut"
+
+#. module: cci_event
+#: field:event.registration,payment_mode:0
+msgid "Payment Mode"
+msgstr "Mode de paiement"
+
+#. module: cci_event
+#: field:event.meeting.table,contact_id1:0
+msgid "First Contact"
+msgstr "Premier contact"
+
+#. module: cci_event
+#: field:event.check,type_id:0
+#: field:event.group,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: cci_event
+#: field:event.event,fse_hours:0
+msgid "FSE Hours"
+msgstr "Heures FSE"
+
+#. module: cci_event
+#: field:event.registration,training_authorization:0
+msgid "Training Auth."
+msgstr "Numéro d'autorisation de Formation"
+
+#. module: cci_event
+#: field:event.group,picture:0
+msgid "Picture"
+msgstr "Image"
+
+#. module: cci_event
+#: model:ir.model,name:cci_event.model_event_meeting_table
+msgid "event.meeting.table"
+msgstr ""
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Cancel Registration"
+msgstr "Annule l'inscription"
+
+#. module: cci_event
+#: field:event.check,date_submission:0
+msgid "Submission Date"
+msgstr "Date de soumission"
+
+#. module: cci_event
+#: view:event.group:0
+#: field:event.registration,group_id:0
+#: model:ir.actions.act_window,name:cci_event.action_event_group
+#: model:ir.ui.menu,name:cci_event.menu_event_group
+msgid "Event Group"
+msgstr "Groupe de Rencontre"
+
+#. module: cci_event
+#: model:ir.module.module,shortdesc:cci_event.module_meta_information
+msgid "CCI EVENT"
+msgstr "CCI Event"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Parent Category"
+msgstr "Catégorie parente"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Registration Invoiced"
+msgstr "Inscription facturée"
+
+#. module: cci_event
+#: field:event.check,date_limit:0
+msgid "Limit Date"
+msgstr "Date limite"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Cancel Event"
+msgstr "Annule la Rencontre"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Close Event"
+msgstr "Clôture la Rencontre"
+
+#. module: cci_event
+#: view:event.check:0
+msgid "Block"
+msgstr "Bloquer"
+
+#. module: cci_event
+#: view:event.check.type:0
+#: field:event.event,check_type:0
+#: model:ir.actions.act_window,name:cci_event.action_event_check_type
+#: model:ir.ui.menu,name:cci_event.menu_event_check_type
+msgid "Check Type"
+msgstr "Type de Chèque"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Communication"
+msgstr "Communication"
+
+#. module: cci_event
+#: selection:event.group,type:0
+msgid "Image"
+msgstr "Image"
+
+#. module: cci_event
+#: field:event.event,fse_code:0
+msgid "FSE code"
+msgstr "Code FSE"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Event Done"
+msgstr "Rencontre Terminée"
+
+#. module: cci_event
+#: wizard_field:event.confirm_registrations,init,message:0
+#: wizard_view:event.send_email,send:0
+#: wizard_field:event.send_email,send,message:0
+msgid "Result"
+msgstr "Résultat"
+
+#. module: cci_event
+#: selection:event.check,state:0
+msgid "Blocked"
+msgstr "Bloqué"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Historize"
+msgstr ""
+
+#. module: cci_event
+#: model:ir.actions.wizard,name:cci_event.wizard_send_email
+msgid "Send email to partners"
+msgstr "Envoye un email aux partenaires"
+
+#. module: cci_event
+#: view:event.meeting.table:0
+#: model:ir.actions.act_window,name:cci_event.action_event_meeting_table
+#: model:ir.ui.menu,name:cci_event.menu_event_meeting_table
+msgid "Event Meeting"
+msgstr ""
+
+#. module: cci_event
+#: field:event.event,note:0
+msgid "Note"
+msgstr "Note"
+
+#. module: cci_event
+#: field:event.registration,check_mode:0
+msgid "Check Mode"
+msgstr "Mode de Chèque"
+
+#. module: cci_event
+#: selection:event.check,state:0
+msgid "Draft"
+msgstr "Ouverte"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Events"
+msgstr "Rencontres"
+
+#. module: cci_event
+#: field:event.registration,check_ids:0
+msgid "Check ids"
+msgstr "IDs des chèques"
+
+#. module: cci_event
+#: wizard_field:event.event_copy,init,nbr_event:0
+msgid "Event Copied"
+msgstr "Rencontre copiée"
+
+#. module: cci_event
+#: field:event.event,localisation:0
+msgid "Localisation"
+msgstr "Lieu"
+
+#. module: cci_event
+#: model:ir.ui.menu,name:cci_event.menu_group
+msgid "Groups"
+msgstr "Groupes"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Set To Draft"
+msgstr "Mettre à Brouillon"
+
+#. module: cci_event
+#: wizard_view:event.confirm_registrations,init:0
+#: view:event.registration:0
+msgid "Confirm Registration"
+msgstr "Confirmer l'inscription"
+
+#. module: cci_event
+#: field:event.meeting.table,event_id:0
+msgid "Related Event"
+msgstr "Rencontre liée"
+
+#. module: cci_event
+#: model:ir.model,name:cci_event.model_event_check
+msgid "event.check"
+msgstr ""
+
+#. module: cci_event
+#: field:event.check,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: cci_event
+#: selection:event.group,type:0
+msgid "Text"
+msgstr "Texte"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Estimates"
+msgstr "Estimations"
+
+#. module: cci_event
+#: view:event.check:0
+#: selection:event.check,state:0
+#: view:event.registration:0
+#: wizard_button:event.send_email,init,end:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Close"
+msgstr "Clôturer"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Open"
+msgstr "Ouvrir"
+
+#. module: cci_event
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit comment par x_ et ne pas contenir de caractères spéciaux !"
+
+#. module: cci_event
+#: field:event.meeting.table,partner_id1:0
+msgid "First Partner"
+msgstr "Premier partenaire"
+
+#. module: cci_event
+#: field:event.event,agreement_nbr:0
+msgid "Agreement Nbr"
+msgstr "Numéro d'agréation"
+
+#. module: cci_event
+#: model:ir.module.module,description:cci_event.module_meta_information
+msgid "\n"
+"        specific module for cci project which will use Event module.\n"
+"    "
+msgstr "\n"
+"        module spécifique pour les CCI basé sur le module Event.\n"
+"    "
+
+#. module: cci_event
+#: model:ir.actions.wizard,name:cci_event.wizard_missing_checks_reg
+#: model:ir.ui.menu,name:cci_event.menu_missing_checks_reg
+msgid "Registrations with Missing Checks"
+msgstr "Inscriptions avec des chèques manquants"
+
+#. module: cci_event
+#: field:event.registration,contact_order_id:0
+msgid "Contact Order"
+msgstr ""
+
+#. module: cci_event
+#: field:event.registration,payment_ids:0
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: cci_event
+#: field:event.check,date_reception:0
+msgid "Reception Date"
+msgstr "Date de réception"
+
+#. module: cci_event
+#: field:event.check,reg_id:0
+msgid "Inscriptions"
+msgstr ""
+
+#. module: cci_event
+#: field:event.check,name:0
+#: field:event.check.type,name:0
+#: view:event.event:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_event
+#: view:event.registration:0
+msgid "Send Partner & Historize"
+msgstr "Envoie au partenaire et historise"
+
+#. module: cci_event
+#: model:ir.actions.wizard,name:cci_event.wizard_confirm_registrations
+msgid "Confirm Draft Registrations"
+msgstr "Confirmer les inscriptions brouillon"
+
+#. module: cci_event
+#: field:event.registration,cavalier:0
+msgid "Cavalier"
+msgstr "Cavalier de table"
+
+#. module: cci_event
+#: view:event.type:0
+msgid "Event Type"
+msgstr "Type de Rencontre"
+
+#. module: cci_event
+#: field:event.event,signet_type:0
+msgid "Signet type"
+msgstr "Type de Signet"
+
+#. module: cci_event
+#: selection:event.check,state:0
+msgid "Asked"
+msgstr "Demandé"
+
+#. module: cci_event
+#: field:event.meeting.table,partner_id2:0
+msgid "Second Partner"
+msgstr "Second partenaire"
+
+#. module: cci_event
+#: view:event.event:0
+msgid "Event is Running"
+msgstr "La Rencontre est en cours"
+
+#. module: cci_event
+#: field:event.meeting.table,table:0
+msgid "Table"
+msgstr "Table"
+

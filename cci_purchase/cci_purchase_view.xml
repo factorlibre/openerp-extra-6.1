@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="purchase_order_form_inherit">
+			<field name="name">purchase.order.form.inherit</field>
+			<field name="type">form</field>
+			<field name="model">purchase.order</field>
+			<field name="inherit_id" ref="purchase.purchase_order_form"/>
+			<field name="arch" type="xml">
+					<button name="purchase_confirm" states="draft" string="Confirm Purchase Order" position="replace">
+						<button name="button_purchase_temp" states="draft" string="Confirm Purchase Order" type="object"/>
+						<button name="purchase_internal_approval" states="wait_approve" string="Internal Approval" />
+						<button name="purchase_bypass_approval" states="wait_approve" string="By Pass Approval" />
+					</button>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="purchase_order_form_inherit_note">
+			<field name="name">purchase.order.form.inherit.note</field>
+			<field name="type">form</field>
+			<field name="model">purchase.order</field>
+			<field name="inherit_id" ref="purchase.purchase_order_form"/>
+			<field name="arch" type="xml">
+				<field name="notes" colspan="4" nolabel="1" position="replace">
+					<field name="approvator"/>
+					<newline/>
+					<separator string="Notes to display on Purchase Order Report" colspan="4"/>
+					<field name="notes" colspan="4" nolabel="1"/>
+					<separator string="Internal Note" colspan="4"/>
+					<field name="internal_notes" colspan="4" nolabel="1"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="purchase_order_form_inherit_cancel">
+			<field name="name">purchase.order.form.inherit.cancel</field>
+			<field name="type">form</field>
+			<field name="model">purchase.order</field>
+			<field name="inherit_id" ref="purchase.purchase_order_form"/>
+			<field name="arch" type="xml">
+				<button name="purchase_cancel" states="draft,confirmed,wait_auth" string="Cancel Purchase Order" position="replace">
+					<button name="purchase_cancel" states="draft,confirmed,wait_auth,wait_approve" string="Cancel Purchase Order"/>
+				</button>
+			</field>
+		</record>
+
+        <record id="purchase_order_hist_form" model="ir.ui.view">
+            <field name="name">purchase.order.history.form</field>
+            <field name="model">purchase.order.history</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Purchase Order">
+                   <separator string="Purchase Order's Reference " colspan="4"/>
+                      <field name="purchase_id" select="1" colspan="4" readonly="1" nolabel="1"/>
+                   <separator string="Modification Date" colspan="4"/>
+                      <field name="date" select="1" colspan="4" readonly="1" nolabel="1"/>
+                   <separator colspan="4" string="User"/>
+                      <field name="user_id" select="1" colspan="4" readonly="1" nolabel="1"/>
+                </form>
+              </field>
+          </record>
+
+        <record id="purchase_order_hist_tree" model="ir.ui.view">
+            <field name="name">purchase.order.history.tree</field>
+            <field name="model">purchase.order.history</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Purchase Order">
+                        <field name="purchase_id"/>
+                        <field name="date"/>
+                        <field name="user_id"/>
+                </tree>
+              </field>
+          </record>
+
+        <record id="purchase_hist_form_action" model="ir.actions.act_window">
+            <field name="name">Purchase Orders History</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.order.history</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="purchase_hist_form_action" id="menu_purchase_hist_form_action" parent="purchase.menu_purchase_root"/>
+	</data>
+</openerp>

@@ -1,0 +1,62 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* product_special_price
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-04-27 08:41+0000\n"
+"PO-Revision-Date: 2012-04-27 11:27+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: product_special_price
+#: model:ir.model,name:product_special_price.model_product_product
+msgid "Product"
+msgstr "Producte"
+
+#. module: product_special_price
+#: field:sale.shop,special_price:0
+msgid "Apply Special Price"
+msgstr "Aplica preu especial"
+
+#. module: product_special_price
+#: field:sale.shop,type_special_price:0
+msgid "Price"
+msgstr "Preu"
+
+#. module: product_special_price
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Invalid ean code"
+
+#. module: product_special_price
+#: model:ir.model,name:product_special_price.model_sale_shop
+msgid "Sales Shop"
+msgstr "Botiga"
+
+#. module: product_special_price
+#: field:sale.shop,special_pricelist_id:0
+#: selection:sale.shop,type_special_price:0
+msgid "Special Pricelist"
+msgstr "Llista de preu especial"
+
+#. module: product_special_price
+#: model:ir.model,name:product_special_price.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línia comanda venda"
+
+#. module: product_special_price
+#: model:product.price.type,name:product_special_price.special_price
+#: field:product.product,special_price:0
+#: view:sale.shop:0
+#: selection:sale.shop,type_special_price:0
+msgid "Special Price"
+msgstr "Preu especial"

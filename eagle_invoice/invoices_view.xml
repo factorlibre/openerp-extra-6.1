@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: invoices_view.xml
+  Module: eagle_invoice
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="ons_view_cust_invoice_form_inherit_1">
+			<field name="name">ons.cust.invoice.form.inh.1</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="address_invoice_id" position="after">
+					<field name="financial_partner_id"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="ons_view_cust_invoice_form_inherit_2">
+			<field name="name">ons.cust.invoice.form.inh.2</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="move_id" position="after">
+					<field name="contract_id"/>
+				</field>
+			</field>
+		</record>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id),('state','&lt;&gt;','draft')]" 
+			id="eagle_action_contract_2_passed_invoices"
+			name="Passed invoices" 
+			res_model="account.invoice" 
+			src_model="eagle.contract"/>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id),('state','=','draft')]" 
+			id="eagle_action_contract_2_current_invoices"
+			name="Current invoices" 
+			res_model="account.invoice" 
+			src_model="eagle.contract"/>
+
+	</data>
+</openerp>

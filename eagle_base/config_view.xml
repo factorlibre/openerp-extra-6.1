@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: products_view.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<!-- No group. Should be modified by the Administrator only -->
+        <menuitem 
+			action="eagle_config.eagle_action_event_config_view"  
+			id="eagle_action_event_config_menu" 
+			parent="eagle_menu_config" 
+			sequence="100"/>
+
+	</data>
+</openerp>

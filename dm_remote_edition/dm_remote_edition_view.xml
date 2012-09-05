@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+    
+     <!--
+    =======================================================
+    DM CAMPAIGN DOCUMENT JOB VIEWS
+    =======================================================
+    -->
+    <record model="ir.ui.view" id="view_dm_campaign_document_job_inherit_form">
+        <field name="name">dm.campaign.document.job.form.inherit</field>
+        <field name="model">dm.campaign.document.job</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm_edition.view_dm_edition_campaign_document_job_form"/>
+        <field name="arch" type="xml">
+         	<field name="use_bottom_recap" position="after">
+	         	<field name="user_id" />
+        	</field>
+        </field>
+    </record>
+    
+	<record id="act_portal_dm_edition_campaign_dcoument_job_form" model="ir.actions.act_window">
+        <field name="name">Portal Campaign Document Jobs</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.campaign.document.job</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+		<field name="view_id" ref="dm_edition.view_dm_edition_campaign_document_job_tree"/>
+		<field name="domain">[('user_id','=',uid)]</field>
+    </record>
+	
+	<menuitem id="menu_portal_dm_campaign_job_form" parent="board_dm.next_id_112" action="act_portal_dm_edition_campaign_dcoument_job_form"/>
+
+	<record id="act_portal_dm_edition_campaign_job_batch_form" model="ir.actions.act_window">
+        <field name="name">Portal Campaign Document Job Batches</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.campaign.document.job.batch</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+		<field name="view_id" ref="dm_edition.view_dm_edition_campaign_job_batch_tree"/>
+		<field name="context">{'portal_dm':'service'}</field>
+    </record>
+	
+>	<menuitem id="menu_portal_dm_campaign_job_batch_form" parent="board_dm.next_id_112" action="act_portal_dm_edition_campaign_job_batch_form"/>
+
+	<!-- 
+    =======================================================
+		Campaign Document Job Dashboard
+    =======================================================
+	-->
+
+	<record id="view_portal_dm_campaign_job_dashboard_tree" model="ir.ui.view">
+        <field name="name">dm.campaign.document.job.dashboard</field>
+        <field name="model">dm.campaign.document.job</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree colors="red:process_date and (process_date&lt;=current_date)" string="Campaign Document Job">
+                <field name="name"/>
+                <field name="process_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+	
+	<record id="act_portal_dm_edition_campaign_job_dashboard" model="ir.actions.act_window">
+        <field name="name">Portal Campaign Document Job Dashboard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.campaign.document.job</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+		<field name="view_id" ref="view_portal_dm_campaign_job_dashboard_tree"/>
+		<field name="domain">[('state','=','pending')]</field>
+    </record>
+
+	<record id="board_portal_dm_campaign_job_form" model="ir.ui.view">
+        <field name="name">board.portal.dm.campaign.job.form</field>
+        <field name="model">board.board</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Campaign Document Job Manager Board">
+                <hpaned>
+					<child1>
+                        <action colspan="4" name="%(act_portal_dm_edition_campaign_job_dashboard)d" string="Campaign Document Jobs"/>
+					</child1>
+                </hpaned>
+            </form>
+        </field>
+    </record>
+
+	<record id="open_portal_dm_campaign_job_board" model="ir.actions.act_window">
+        <field name="name">Campaign Document Job Manager Dashboard</field>
+        <field name="res_model">board.board</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="usage">menu</field>
+        <field name="view_id" ref="board_portal_dm_campaign_job_form"/>
+    </record>
+
+    <menuitem id="menu_portal_dm_campaign_job_board" parent="board_dm.next_id_112" action="open_portal_dm_campaign_job_board"/>
+
+    
+ </data>
+</openerp>

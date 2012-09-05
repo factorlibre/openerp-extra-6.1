@@ -1,0 +1,268 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 13:16+0000\n"
+"PO-Revision-Date: 2011-08-26 23:01+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:31+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: hr_performance
+#: field:attribute.line,performance_line_id:0
+msgid "Performance Line"
+msgstr ""
+
+#. module: hr_performance
+#: selection:hr.performance,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: hr_performance
+#: field:hr.performance.line,performance:0
+msgid "Performance in (%)"
+msgstr ""
+
+#. module: hr_performance
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "For"
+msgstr "Para"
+
+#. module: hr_performance
+#: view:hr.performance:0
+msgid "Confirm"
+msgstr "Confimar"
+
+#. module: hr_performance
+#: model:ir.module.module,description:hr_performance.module_meta_information
+msgid "A module that Check Performance For the Company Employees."
+msgstr ""
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Performance in (%) :"
+msgstr ""
+
+#. module: hr_performance
+#: model:ir.ui.menu,name:hr_performance.menu_hr_performance
+msgid "Performance HR"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_performance
+#: model:ir.model,name:hr_performance.model_hr_performance
+msgid "Employee Performance "
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance,date_from:0
+msgid "Date From"
+msgstr "Fecha desde"
+
+#. module: hr_performance
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: hr_performance
+#: field:hr.performance,performance_id:0
+msgid "Performance"
+msgstr "Rendimiento"
+
+#. module: hr_performance
+#: field:hr.performance,reviewer_id:0
+#: field:hr.performance.line,employee_id:0
+msgid "Employee"
+msgstr "Trabajador"
+
+#. module: hr_performance
+#: selection:hr.performance,state:0
+msgid "New"
+msgstr "Nuevo"
+
+#. module: hr_performance
+#: model:ir.actions.report.xml,name:hr_performance.performance_report
+msgid "Performance report"
+msgstr ""
+
+#. module: hr_performance
+#: view:hr.performance:0
+msgid "Get Employee List"
+msgstr ""
+
+#. module: hr_performance
+#: model:ir.model,name:hr_performance.model_attribute_line
+msgid "Attributes Lines"
+msgstr ""
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Total Obtained Marks:"
+msgstr ""
+
+#. module: hr_performance
+#: field:attribute.line,description:0
+#: field:attribute.line,name:0
+#: field:hr.performance,name:0
+#: field:hr.performance.line,name:0
+#: field:hr.performance.line.attribute,note:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_performance
+#: field:attribute.line,total_marks:0
+msgid "Total Marks"
+msgstr "calificación total"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid ","
+msgstr ","
+
+#. module: hr_performance
+#: view:hr.performance.line.attribute:0
+#: model:ir.model,name:hr_performance.model_hr_performance_line_attribute
+msgid "Review Attributes"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid ":"
+msgstr ":"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+#: model:ir.module.module,shortdesc:hr_performance.module_meta_information
+msgid "Performance Review"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance.line,performance_id:0
+msgid "Review Point"
+msgstr ""
+
+#. module: hr_performance
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: hr_performance
+#: view:attribute.line:0
+msgid "Attribute Lines"
+msgstr ""
+
+#. module: hr_performance
+#: view:hr.performance:0
+msgid "HR Performance"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance.line.attribute,name:0
+msgid "Attribute Name"
+msgstr "Nombre del atributo"
+
+#. module: hr_performance
+#: field:hr.performance,date_to:0
+msgid "Date To"
+msgstr "Fecha hasta"
+
+#. module: hr_performance
+#: view:hr.performance:0
+msgid "Performance Lines"
+msgstr ""
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Points"
+msgstr "Puntos"
+
+#. module: hr_performance
+#: field:attribute.line,obtained_marks:0
+msgid "Obtained Marks"
+msgstr "Calificaciones obtenidas"
+
+#. module: hr_performance
+#: field:hr.performance.line,attribute_line:0
+msgid "Attributes"
+msgstr "Atributos"
+
+#. module: hr_performance
+#: model:ir.ui.menu,name:hr_performance.menu_hr_performance_attribute
+msgid "Review Attributes HR"
+msgstr ""
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Print on :"
+msgstr ""
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Manager,"
+msgstr ""
+
+#. module: hr_performance
+#: field:attribute.line,attribute_id:0
+msgid "Attribute"
+msgstr "Atributo"
+
+#. module: hr_performance
+#: model:ir.model,name:hr_performance.model_hr_performance_line
+msgid "Performance Review Points"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance.line.attribute,total_point:0
+msgid "Total Point"
+msgstr "Puntuación total"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "Joined :"
+msgstr ""
+
+#. module: hr_performance
+#: field:hr.performance.line,total:0
+msgid "Total"
+msgstr "Total"
+
+#. module: hr_performance
+#: selection:hr.performance,state:0
+msgid "Saved"
+msgstr "Guardado"
+
+#. module: hr_performance
+#: rml:hr_performance.report:0
+msgid "to :"
+msgstr "a :"

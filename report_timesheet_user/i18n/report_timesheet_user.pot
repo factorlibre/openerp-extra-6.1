@@ -1,0 +1,147 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* report_timesheet_user
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 08:43:45+0000\n"
+"PO-Revision-Date: 2009-11-26 08:43:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: report_timesheet_user
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.actions.act_window,name:report_timesheet_user.action_timesheet_user_user_allmonth_mytask
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_all_my_timesheets
+msgid "My task by company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_all
+msgid "All Months"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.model,name:report_timesheet_user.model_report_timesheet_user
+msgid "Tasks by company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: report_timesheet_user
+#: view:report.timesheet.user:0
+#: view:report.timesheet.user.user:0
+msgid "Timesheet Report"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.actions.act_window,name:report_timesheet_user.action_timesheet_user_user_thismonth_mytask
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_my_timesheets
+msgid "My Timesheets by company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_all_timesheets
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_by_company
+msgid "Timesheets by company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_this
+msgid "This Month"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.model,name:report_timesheet_user.model_report_timesheet_user_user
+msgid "Tasks by user and company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user,company_id:0
+#: field:report.timesheet.user.user,company_id:0
+msgid "Company Name"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user.user,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user,total_hours:0
+#: field:report.timesheet.user.user,total_hours:0
+msgid "Task Hours"
+msgstr ""
+
+#. module: report_timesheet_user
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.actions.act_window,name:report_timesheet_user.action_timesheet_user_user_thismonth
+msgid "Timesheets by user and company (this month)"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user,user_company_id:0
+#: field:report.timesheet.user.user,user_company_id:0
+msgid "User's Company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project
+msgid "Project"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.module.module,description:report_timesheet_user.module_meta_information
+msgid "New report for timesheet"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.actions.act_window,name:report_timesheet_user.action_timesheet_user_thismonth
+msgid "Timesheets by company (this month)"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_all_user_company
+#: model:ir.ui.menu,name:report_timesheet_user.menu_timesheet_project_reporting_this_user_company
+msgid "Timesheets by user and company"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user,name:0
+#: field:report.timesheet.user.user,name:0
+msgid "Month"
+msgstr ""
+
+#. module: report_timesheet_user
+#: model:ir.module.module,shortdesc:report_timesheet_user.module_meta_information
+msgid "Report for timesheet"
+msgstr ""
+
+#. module: report_timesheet_user
+#: field:report.timesheet.user,total_cost:0
+#: field:report.timesheet.user.user,total_cost:0
+msgid "Task Cost"
+msgstr ""
+

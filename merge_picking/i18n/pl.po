@@ -1,0 +1,39 @@
+# Polish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:07+0000\n"
+"PO-Revision-Date: 2011-02-15 15:13+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: merge_picking
+#: wizard_button:stock.move.picking.merge,init,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: merge_picking
+#: model:ir.actions.wizard,name:merge_picking.wizard_merge_picking
+msgid "Merge"
+msgstr "Scal"
+
+#. module: merge_picking
+#: model:ir.module.module,shortdesc:merge_picking.module_meta_information
+#: wizard_view:stock.move.picking.merge,init:0
+msgid "Merge Picking"
+msgstr "Scal pobranie"
+
+#. module: merge_picking
+#: wizard_view:stock.move.picking.merge,init:0
+msgid "Merged All Customers Picking Goods!!!"
+msgstr "Scalono wszystkie produkty klienta!"

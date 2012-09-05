@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/wiz_tabs_setup.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+
+        <wizard
+           string="Eagle Tabs Setup"
+           model="eagle.contract"
+           name="eagle_wizard_tabs_setup"
+           id="eagle_action_cnt_wizard_tabs_setup"
+		   keyword="client_action_multi"/>
+
+        <wizard
+           string="Eagle Tabs Setup"
+           model="res.users"
+           name="eagle_wizard_tabs_setup"
+           id="eagle_action_user_wizard_tabs_setup"
+		   keyword="client_action_multi"/>
+
+        <wizard
+           string="Tabs Setup"
+           model="eagle.config.params"
+           name="eagle_wizard_tabs_setup"
+           id="eagle_action_eagle_wizard_tabs_setup"
+		   keyword="client_action_multi"/>
+
+</data>
+</openerp>

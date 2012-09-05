@@ -1,0 +1,795 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* pxgo_account_admin_tools
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-06-14 10:03+0000\n"
+"PO-Revision-Date: 2012-06-14 10:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Severity"
+msgstr "Severity"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "The invoice references have been succesfully set on the account moves!"
+msgstr "The invoice references have been succesfully set on the account moves!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:264
+#, python-format
+msgid "The debit quantity %s doesn't match with a regex float value in account %s"
+msgstr "The debit quantity %s doesn't match with a regex float value in account %s"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "The selected moves will be revalidated, that will regenerate their analytic lines."
+msgstr "The selected moves will be revalidated, that will regenerate their analytic lines."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Only the account code and name are needed, the rest of the required account data will be filled based on its brother accounts (same code begining)."
+msgstr "Only the account code and name are needed, the rest of the required account data will be filled based on its brother accounts (same code begining)."
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_move_importer
+msgid "Account move importation wizard"
+msgstr "Account move importation wizard"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "This wizard will import accounts from a CSV file."
+msgstr "This wizard will import accounts from a CSV file."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "The reference will be set, for the selected account moves, to the reference/number of the (supplier/customer) invoice."
+msgstr "The reference will be set, for the selected account moves, to the reference/number of the (supplier/customer) invoice."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_account_importer,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,company_id:0
+msgid "Company"
+msgstr "Company"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Voucher"
+msgstr "Journal Voucher"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Account moves to update"
+msgstr "Account moves to update"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Updated account moves"
+msgstr "Updated account moves"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Search for moves"
+msgstr "Search for moves"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "A list with the problems found (if any) will be shown afterwards."
+msgstr "A list with the problems found (if any) will be shown afterwards."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Filter for the moves to update"
+msgstr "Filter for the moves to update"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,account_id:0
+msgid "Account"
+msgstr "Account"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Input file"
+msgstr "Input file"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,input_file_name:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,input_file_name:0
+msgid "File name"
+msgstr "File name"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:136
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:202
+#, python-format
+msgid "You need to select a file!"
+msgstr "You need to select a file!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:170
+#, python-format
+msgid "The account %d (%s) is children of %d (%s), but is not listed as its children on the preordered tree"
+msgstr "The account %d (%s) is children of %d (%s), but is not listed as its children on the preordered tree"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Informative"
+msgstr "Informative"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidate selected moves"
+msgstr "Revalidate selected moves"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidate Account Moves"
+msgstr "Revalidate Account Moves"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "This wizard will set the reference in account moves associated with invoices, that don't match the invoice reference/number."
+msgstr "This wizard will set the reference in account moves associated with invoices, that don't match the invoice reference/number."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:136
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:202
+#, python-format
+msgid "UserError"
+msgstr "UserError"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/revalidate_moves.py:76
+#, python-format
+msgid "Revalidate Moves"
+msgstr "Revalidate Moves"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_set_partner_in_moves
+msgid "Set Partner in Moves Wizard"
+msgstr "Set Partner in Moves Wizard"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "You may now search for account moves with missing analytic lines on the given periods, or you may skip this step and select the moves by hand."
+msgstr "You may now search for account moves with missing analytic lines on the given periods, or you may skip this step and select the moves by hand."
+
+#. module: pxgo_account_admin_tools
+#: help:pxgo_account_admin_tools.pxgo_account_importer,overwrite:0
+msgid "If the account already exists, overwrite its name?"
+msgstr "If the account already exists, overwrite its name?"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_name_regexp:0
+msgid "Name regexp"
+msgstr "Name regexp"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Ready"
+msgstr "Ready"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Select the parameters for the account move"
+msgstr "Select the parameters for the account move"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:359
+#, python-format
+msgid "Imported account moves"
+msgstr "Imported account moves"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,overwrite:0
+msgid "Overwrite"
+msgstr "Overwrite"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Not parent of its children"
+msgstr "Not parent of its children"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Note: It will fail if any of the accounts do not exist in OpenERP."
+msgstr "Note: It will fail if any of the accounts do not exist in OpenERP."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Record format"
+msgstr "Record format"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Parameters"
+msgstr "Parameters"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Contra"
+msgstr "Contra"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Select the parameters for the account"
+msgstr "Select the parameters for the account"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools_import
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Import"
+msgstr "Import"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Account importer"
+msgstr "Account importer"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "You may now search for account moves, on the given periods, whose reference does not match the invoice reference or number; or you may skip this step and select the moves by hand."
+msgstr "You may now search for account moves, on the given periods, whose reference does not match the invoice reference or number; or you may skip this step and select the moves by hand."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,ref:0
+msgid "Ref"
+msgstr "Ref"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/set_partner_in_moves.py:78
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_set_partner_in_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_set_partner_in_moves
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+#, python-format
+msgid "Set Partner Reference in Moves"
+msgstr "Set Partner Reference in Moves"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,account_receivable_id:0
+msgid "Account Receivable"
+msgstr "Account Receivable"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Medium"
+msgstr "Medium"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:278
+#, python-format
+msgid "The credit quantity %s doesn't match with a regex float value in account %s"
+msgstr "The credit quantity %s doesn't match with a regex float value in account %s"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_name_index:0
+msgid "Name field"
+msgstr "Name field"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "This wizard will set the receivable/payable account of the partners, in moves and invoices where a generic receivable/payable account was used instead."
+msgstr "This wizard will set the receivable/payable account of the partners, in moves and invoices where a generic receivable/payable account was used instead."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_partner_ref_regexp:0
+msgid "Partner Ref regexp"
+msgstr "Partner Ref regexp"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Set partner in moves"
+msgstr "Set partner in moves"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_move_importer
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_move_importer
+msgid "Import Account Move from CSV"
+msgstr "Import Account Move from CSV"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_move_partner_account
+msgid "Move Partner Account Wizard"
+msgstr "Move Partner Account Wizard"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Not children of its parent"
+msgstr "Not children of its parent"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_credit_index:0
+msgid "Credit field"
+msgstr "Credit field"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Account move parameters"
+msgstr "Account move parameters"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Account move importer"
+msgstr "Account move importer"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Account move lines to update"
+msgstr "Account move lines to update"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "You may now search for move lines with missing partner reference on the given periods, or you may skip this step and select the move lines by hand."
+msgstr "You may now search for move lines with missing partner reference on the given periods, or you may skip this step and select the move lines by hand."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_debit_regexp:0
+msgid "Debit regexp"
+msgstr "Debit regexp"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "The moves have been revalidated sucessfully!"
+msgstr "The moves have been revalidated sucessfully!"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "Check"
+msgstr "Check"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "This wizard will set the partner reference in moves where the receivable/payable account (of a single partner) is used."
+msgstr "This wizard will set the partner reference in moves where the receivable/payable account (of a single partner) is used."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/set_invoice_ref_in_moves.py:76
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_set_invoice_ref_in_moves
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_set_invoice_ref_in_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_set_invoice_ref_in_moves
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#, python-format
+msgid "Set Invoice Reference in Moves"
+msgstr "Set Invoice Reference in Moves"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_importer
+msgid "Account importation wizard"
+msgstr "Account importation wizard"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Purchase"
+msgstr "Journal Purchase"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Accounts to replace with partner accounts"
+msgstr "Accounts to replace with partner accounts"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Select the CSV file with the lines for the account move"
+msgstr "Select the CSV file with the lines for the account move"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:120
+#, python-format
+msgid "Problems Found in the Chart of Accounts"
+msgstr "Problems Found in the Chart of Accounts"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "File format"
+msgstr "File format"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Find moves not matching the invoice reference/number"
+msgstr "Find moves not matching the invoice reference/number"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_chart_checker
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_chart_checker
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "Check the Chart of Accounts"
+msgstr "Check the Chart of Accounts"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,move_line_ids:0
+msgid "Move Lines"
+msgstr "Move Lines"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:240
+#, python-format
+msgid "Imported accounts"
+msgstr "Imported accounts"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Low"
+msgstr "Low"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_thousands_separator:0
+msgid "Thousands sep."
+msgstr "Thousands sep."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Account parameters"
+msgstr "Account parameters"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Status"
+msgstr "Status"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:149
+#, python-format
+msgid "The account %d (%s) is listed as children of %d (%s) in the preordered tree, but its parent is %d (%s)"
+msgstr "The account %d (%s) is listed as children of %d (%s) in the preordered tree, but its parent is %d (%s)"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Cash Receipt"
+msgstr "Cash Receipt"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_ref_index:0
+msgid "Ref field"
+msgstr "Ref field"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,problem_ids:0
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker_problem:0
+msgid "Problems"
+msgstr "Problems"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/move_partner_account.py:169
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_move_partner_account
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_move_partner_account
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#, python-format
+msgid "Set Partner Accounts in Moves"
+msgstr "Set Partner Accounts in Moves"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_chart_checker
+msgid "Account Chart Checker Wizard"
+msgstr "Account Chart Checker Wizard"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_code_index:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_code_index:0
+msgid "Code field"
+msgstr "Code field"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,wizard_id:0
+msgid "Wizard"
+msgstr "Wizard"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Cash Payment"
+msgstr "Cash Payment"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "The partner's receivable/payable accounts have been set succesfuly on the account moves!"
+msgstr "The partner's receivable/payable accounts have been set succesfuly on the account moves!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:263
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:277
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:292
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Problem"
+msgstr "Problem"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Set invoice reference in moves"
+msgstr "Set invoice reference in moves"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,period_id:0
+msgid "Period"
+msgstr "Period"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "This wizard will revalidate the account moves, so their analytic lines are regenerated."
+msgstr "This wizard will revalidate the account moves, so their analytic lines are regenerated."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#: selection:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,period_ids:0
+msgid "Periods"
+msgstr "Periods"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "- It will verify that the preordered tree of accounts, that OpenERP uses to calculate the amounts, matches the parent-children structure"
+msgstr "- It will verify that the preordered tree of accounts, that OpenERP uses to calculate the amounts, matches the parent-children structure"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,move_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,move_ids:0
+msgid "Moves"
+msgstr "Moves"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools
+msgid "Admin Tools"
+msgstr "Admin Tools"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,account_payable_id:0
+msgid "Account Payable"
+msgstr "Account Payable"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_code_regexp:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_code_regexp:0
+msgid "Code regexp"
+msgstr "Code regexp"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "The partner reference will be set, for the selected account move lines, to the one associated with the receivable/payable account."
+msgstr "The partner reference will be set, for the selected account move lines, to the one associated with the receivable/payable account."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_ref_regexp:0
+msgid "Ref regexp"
+msgstr "Ref regexp"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "This wizard will search for problems in the Chart of Accounts:"
+msgstr "This wizard will search for problems in the Chart of Accounts:"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_revalidate_moves
+msgid "Revalidate Account Moves Wizard"
+msgstr "Revalidate Account Moves Wizard"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_partner_ref_index:0
+msgid "Partner Ref field"
+msgstr "Partner Ref field"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Sale"
+msgstr "Journal Sale"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: selection:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "New"
+msgstr "New"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools_repair
+msgid "Check and Repair"
+msgstr "Check and Repair"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Skip"
+msgstr "Skip"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_quotechar:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_quotechar:0
+msgid "Quote"
+msgstr "Quote"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Bank Receipt"
+msgstr "Bank Receipt"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:178
+#, python-format
+msgid "The account %d (%s) is a top level account, but is listed as a child on the preordered tree"
+msgstr "The account %d (%s) is a top level account, but is listed as a child on the preordered tree"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_revalidate_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_revalidate_moves
+msgid "Revalidate Account Moves (Regenerate Analytic Lines)"
+msgstr "Revalidate Account Moves (Regenerate Analytic Lines)"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "This wizard will import one account move from a CSV file."
+msgstr "This wizard will import one account move from a CSV file."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Bank Payment"
+msgstr "Bank Payment"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_decimal_separator:0
+msgid "Decimal sep."
+msgstr "Decimal sep."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:292
+#, python-format
+msgid "Account not found: %s!"
+msgstr "Account not found: %s!"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Set partner accounts"
+msgstr "Set partner accounts"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Find moves with missing partner reference"
+msgstr "Find moves with missing partner reference"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_delimiter:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_delimiter:0
+msgid "Delimiter"
+msgstr "Delimiter"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_debit_index:0
+msgid "Debit field"
+msgstr "Debit field"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Find moves with missing analytic lines"
+msgstr "Find moves with missing analytic lines"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_chart_checker_problem
+msgid "Account Chart Problem"
+msgstr "Account Chart Problem"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "The partner references have been succesfully set on the account moves!"
+msgstr "The partner references have been succesfully set on the account moves!"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_importer
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_importer
+msgid "Import Accounts from CSV"
+msgstr "Import Accounts from CSV"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Account moves to revalidate"
+msgstr "Account moves to revalidate"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidated account moves"
+msgstr "Revalidated account moves"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "High"
+msgstr "High"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_credit_regexp:0
+msgid "Credit regexp"
+msgstr "Credit regexp"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: field:pxgo_account_admin_tools.pxgo_account_importer,input_file:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,input_file:0
+msgid "File"
+msgstr "File"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Updated account move lines"
+msgstr "Updated account move lines"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,oerp_partner_ref_field:0
+msgid "OpenERP Partner field"
+msgstr "OpenERP Partner field"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,journal_id:0
+msgid "Journal"
+msgstr "Journal"
+

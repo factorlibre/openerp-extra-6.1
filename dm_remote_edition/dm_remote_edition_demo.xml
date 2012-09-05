@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+       <!-- User -->
+
+		<record id="res_users_portal_dm_printing" model="res.users">
+			<field eval="[(6,0,[ref('portal_dm_printing_group')])]" name="groups_id"/>
+			<field eval="[(6,0,[])]" name="roles_id"/>
+			<field eval="1" name="active"/>
+			<field name="login">dmportal</field>
+			<field name="password">dmportal</field>
+			<field name="name">Portal DM Printing User</field>
+			<field name="company_id" ref="base.main_company"/>
+			<field name="context_lang">en_US</field>
+			<field model="ir.actions.actions" name="menu_id" search="[('name', '=', 'Menu')]"/>
+			<field model="ir.actions.actions" name="action_id" search="[('name', '=', 'Campaign Document Job Manager Dashboard')]"/>
+		</record>
+       
+    </data>
+</openerp>

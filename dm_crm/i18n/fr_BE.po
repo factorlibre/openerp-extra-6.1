@@ -1,0 +1,70 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:26:35+0000\n"
+"PO-Revision-Date: 2009-11-25 07:26:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_crm
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_crm
+#: model:ir.actions.server,name:dm_crm.ir_actions_server_crm_case_create0
+msgid "Create CRM Case"
+msgstr ""
+
+#. module: dm_crm
+#: model:ir.module.module,shortdesc:dm_crm.module_meta_information
+msgid "DM CRM "
+msgstr ""
+
+#. module: dm_crm
+#: constraint:crm.case.section:0
+msgid "Error ! You cannot create recursive sections."
+msgstr ""
+
+#. module: dm_crm
+#: field:crm.case,segment_id:0
+msgid "Segment"
+msgstr ""
+
+#. module: dm_crm
+#: model:dm.media,code:dm_crm.media_phone
+#: model:dm.media,name:dm_crm.media_phone
+msgid "Phone"
+msgstr ""
+
+#. module: dm_crm
+#: model:dm.offer.step,code:dm_crm.dm_offer_step_phoneintermediatemailingofferforanondemandoffer0
+msgid "IM"
+msgstr ""
+
+#. module: dm_crm
+#: model:ir.module.module,description:dm_crm.module_meta_information
+msgid "\n"
+"           \n"
+"            "
+msgstr ""
+
+#. module: dm_crm
+#: view:crm.case:0
+msgid "Direct Marketing"
+msgstr ""
+
+#. module: dm_crm
+#: model:crm.case.section,name:dm_crm.section_direct_marketing
+msgid "Direct Maketing"
+msgstr ""
+

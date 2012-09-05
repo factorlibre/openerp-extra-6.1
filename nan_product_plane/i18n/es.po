@@ -1,0 +1,81 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_product_plane
+#
+# Jordi Pasquina <jordi@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-15 09:51+0000\n"
+"PO-Revision-Date: 2011-03-31 12:08+0000\n"
+"Last-Translator: Jordi Pasquina - http://www.nan-tic.com <Unknown>\n"
+"Language-Team: Spanish <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: nan_product_plane
+#: model:ir.ui.menu,name:nan_product_plane.product_plane_purchase
+#: model:ir.ui.menu,name:nan_product_plane.product_plane_sale
+msgid "Product Planes"
+msgstr "Mapas de producto"
+
+#. module: nan_product_plane
+#: view:product.product:0
+msgid "Plane image"
+msgstr "Imagen de mapa"
+
+#. module: nan_product_plane
+#: field:product.plane,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: nan_product_plane
+#: constraint:product.product:0
+msgid "Several dimension values for the same dimension type"
+msgstr "Varios valores de dimensión para el mismo tipo"
+
+#. module: nan_product_plane
+#: field:product.plane,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: nan_product_plane
+#: field:product.plane,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: nan_product_plane
+#: model:ir.model,name:nan_product_plane.model_product_product
+#: field:product.plane,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: nan_product_plane
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN no válido"
+
+#. module: nan_product_plane
+#: model:ir.actions.act_window,name:nan_product_plane.action_product_plane
+#: view:product.plane:0
+msgid "Product Plane"
+msgstr "Mapa de Producto"
+
+#. module: nan_product_plane
+#: field:product.product,plane_ids:0
+msgid "Plane"
+msgstr "Mapa"
+
+#. module: nan_product_plane
+#: model:ir.model,name:nan_product_plane.model_product_plane
+msgid "product.plane"
+msgstr "product.plane"
+
+#. module: nan_product_plane
+#: field:product.plane,image:0
+msgid "Image"
+msgstr "Imagen"

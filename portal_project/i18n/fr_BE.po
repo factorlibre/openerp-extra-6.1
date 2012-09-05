@@ -1,0 +1,607 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* portal_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:51:47+0000\n"
+"PO-Revision-Date: 2009-11-26 05:51:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: portal_project
+#: field:crm.case,bug_ids:0
+msgid "Latest Bugs"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.crm_case_category_announce_my
+#: model:ir.ui.menu,name:portal_project.menu_crm_case_category_announce_my
+msgid "My Announces"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Bug Summary"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Financial Data"
+msgstr ""
+
+#. module: portal_project
+#: field:report.crm.case.announce.user,nbr:0
+#: field:report.crm.case.bugs,nbr:0
+#: field:report.crm.case.features.user,nbr:0
+#: field:report.crm.case.support.user,nbr:0
+msgid "# of Cases"
+msgstr ""
+
+#. module: portal_project
+#: selection:report.crm.case.bugs,state:0
+msgid "Cancelled"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.portal_project_event_configuration_action
+msgid "Project Event Configuration"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Supports"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Latest Bugs Reported"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.action_crm_bug_portal
+#: model:ir.ui.menu,name:portal_project.menu_view_portal_crm_bug_view
+msgid "Bug Form"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,member_ids:0
+msgid "Project Members"
+msgstr ""
+
+#. module: portal_project
+#: wizard_button:portal.project.email.send,init,send:0
+msgid "Send Email"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Latests Announces"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.model,name:portal_project.model_report_crm_case_support_user
+msgid "Support by User"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_crm_announce_search_form
+#: model:ir.actions.act_window,name:portal_project.crm_case_categ_announce
+#: model:ir.ui.menu,name:portal_project.menu_crm_announce
+msgid "All Announces"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,section_annouce_id:0
+msgid "Announce Section"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Search a Bug"
+msgstr ""
+
+#. module: portal_project
+#: view:account.analytic.line:0
+msgid "Working hours per day"
+msgstr ""
+
+#. module: portal_project
+#: view:report_account_analytic.planning:0
+msgid "Plannings"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: model:ir.actions.act_window,name:portal_project.act_crm_announce_user_form
+#: model:ir.model,name:portal_project.model_report_crm_case_announce_user
+#: view:report.crm.case.announce.user:0
+msgid "Announces by User"
+msgstr ""
+
+#. module: portal_project
+#: field:crm.case,project_id:0
+#: view:project.project:0
+#: field:report.crm.case.announce.user,project_id:0
+#: field:report.crm.case.bugs,project_id:0
+#: field:report.crm.case.features.user,project_id:0
+#: field:report.crm.case.support.user,project_id:0
+#: field:res.users,context_project_id:0
+#: field:wiki.wiki,project_id:0
+msgid "Project"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: model:ir.actions.act_window,name:portal_project.act_crm_features_user_form
+#: model:ir.model,name:portal_project.model_report_crm_case_features_user
+#: view:report.crm.case.features.user:0
+msgid "Features by User"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.wizard,name:portal_project.wizard_portal_check_section
+msgid "Check Section"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,section_support_id:0
+msgid "Support Section"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_portal_attachment_form
+msgid "Attachments"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.view_crm_announce_portal
+#: model:ir.ui.menu,name:portal_project.menu_view_portal_crm_announce_view
+msgid "Announce Form"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.module.module,shortdesc:portal_project.module_meta_information
+msgid "Project Portal"
+msgstr ""
+
+#. module: portal_project
+#: help:project.project,tasks_detail:0
+msgid "Show open tasks for Project with remaining hours"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Working hours per Day"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: wizard_field:portal.project.email.send,init,subject:0
+#: view:project.project:0
+msgid "Subject"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,doc:0
+msgid "Documents"
+msgstr ""
+
+#. module: portal_project
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:project.project,announce_ids:0
+msgid "Announces"
+msgstr ""
+
+#. module: portal_project
+#: field:report.crm.case.bugs,section_id:0
+msgid "Section"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "New Support Request"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Version"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Search Support Request"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "CRM"
+msgstr ""
+
+#. module: portal_project
+#: code:addons/portal_project/wizard/wizard_check_section.py:0
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: portal_project
+#: wizard_field:portal.project.email.send,init,to:0
+msgid "Recipients"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Gantt Planning"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,hours:0
+msgid "Hours"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.ui.menu,name:portal_project.menu_portal
+msgid "Portal For Project"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_crm_support_search_form
+msgid "All Supports"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Members"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:crm.case,support_ids:0
+msgid "Latest Supports"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Configuration"
+msgstr ""
+
+#. module: portal_project
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Search Feature"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Feature Summary"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,support_req:0
+msgid "Support Requests"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Bugs can be reported by sending an email to the bug email gateway:"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+#: view:report.crm.case.bugs:0
+msgid "Bugs by State"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: model:ir.actions.act_window,name:portal_project.crm_case_categ_announce_new
+#: model:ir.ui.menu,name:portal_project.menu_announce_new
+msgid "New Announce"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Search Announce"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.module.module,description:portal_project.module_meta_information
+msgid " This module allows customers to connect on Project Portal and\n"
+"manage their projects very easily. Customers can be able to manage everything\n"
+"related to a project:\n"
+"  - Tasks\n"
+"  - Timesheets\n"
+"  - Bugs (bugtracker)\n"
+"  - Feature Requests\n"
+"  - Wiki Page\n"
+"  - Financial Data\n"
+"  - Invoices\n"
+"  - Documents\n"
+"  - Dashboard\n"
+""
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_portal_invoice_form
+msgid "Invoices"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.model,name:portal_project.model_report_crm_case_bugs
+msgid "Bugs by state & user"
+msgstr ""
+
+#. module: portal_project
+#: wizard_field:portal.project.email.send,init,body:0
+msgid "Message"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "EMail"
+msgstr ""
+
+#. module: portal_project
+#: code:addons/portal_project/wizard/wizard_check_section.py:0
+#, python-format
+msgid "You did not installed the Bug Tracking when you configured the crm module.' \\n"
+"              '\nyou must create a section with the code \'BugSup\'."
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Report a Bug"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Save Support Request"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Statistics"
+msgstr ""
+
+#. module: portal_project
+#: selection:report.crm.case.bugs,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_hr_timesheet_sheet_portal_form
+#: view:project.project:0
+msgid "Timesheets"
+msgstr ""
+
+#. module: portal_project
+#: selection:report.crm.case.bugs,state:0
+msgid "Closed"
+msgstr ""
+
+#. module: portal_project
+#: selection:report.crm.case.bugs,state:0
+msgid "Pending"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:crm.case,announce_ids:0
+msgid "Latest Announces"
+msgstr ""
+
+#. module: portal_project
+#: field:report.crm.case.bugs,state:0
+msgid "Status"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.action_portal_project_wiki
+msgid "Search a Pages"
+msgstr ""
+
+#. module: portal_project
+#: field:report.crm.case.announce.user,user_id:0
+#: field:report.crm.case.bugs,user_id:0
+#: field:report.crm.case.features.user,user_id:0
+#: field:report.crm.case.support.user,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_financial_portal_form
+msgid "Analytic Accounts"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_project_project_portal
+#: model:ir.ui.menu,name:portal_project.menu_view_project_project_portal
+msgid "Project Form"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:project.project,bugs:0
+#: field:project.project,bugs_ids:0
+msgid "Bugs"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,section_feature_id:0
+msgid "Feature Section"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.action_portal_project_task
+#: field:project.project,tasks_detail:0
+msgid "Tasks"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Project Wiki"
+msgstr ""
+
+#. module: portal_project
+#: field:project.project,section_bug_id:0
+msgid "Bug Section"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:project.project,features:0
+msgid "Features"
+msgstr ""
+
+#. module: portal_project
+#: code:addons/portal_project/wizard/wizard_check_section.py:0
+#: model:ir.actions.act_window,name:portal_project.crm_case_categ_act_new_portal
+#, python-format
+msgid "New Bug"
+msgstr ""
+
+#. module: portal_project
+#: view:project.project:0
+msgid "Shortcuts"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_crm_bug_search_form
+msgid "All Bugs"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Save Feature"
+msgstr ""
+
+#. module: portal_project
+#: wizard_button:portal.project.email.send,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: portal_project
+#: selection:report.crm.case.bugs,state:0
+msgid "Open"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Support Summary"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Information"
+msgstr ""
+
+#. module: portal_project
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.view_crm_feature_portal
+#: model:ir.ui.menu,name:portal_project.menu_view_portal_crm_feature_view
+msgid "Feature Form"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: view:project.project:0
+msgid "Responsible"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_crm_feature_search_form
+msgid "All Features"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.ui.menu,name:portal_project.menu_crm_case_announce
+msgid "Announce"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: model:ir.actions.act_window,name:portal_project.act_crm_bugs_user_form
+#: view:report.crm.case.bugs:0
+msgid "Bugs by User"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:report.crm.case.announce.user,name:0
+msgid "Description"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.wizard,name:portal_project.wizard_portal_project_email_send
+#: wizard_view:portal.project.email.send,init:0
+msgid "Email Send"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: model:ir.actions.act_window,name:portal_project.act_crm_support_user_form
+#: view:report.crm.case.support.user:0
+msgid "Supports by User"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.view_crm_support_portal
+#: model:ir.ui.menu,name:portal_project.menu_view_portal_crm_support_view
+msgid "Support Form"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "New Feature"
+msgstr ""
+
+#. module: portal_project
+#: model:ir.actions.act_window,name:portal_project.act_hr_timesheet_line_portal_form
+msgid "Working Hours"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Save Announce"
+msgstr ""
+
+#. module: portal_project
+#: field:res.users,user_id:0
+msgid "portal"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+#: field:crm.case,feature_ids:0
+msgid "Latest Features"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Save New Bug"
+msgstr ""
+
+#. module: portal_project
+#: view:crm.case:0
+msgid "Quick Report a New Bug"
+msgstr ""
+

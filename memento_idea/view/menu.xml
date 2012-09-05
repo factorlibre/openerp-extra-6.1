@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="menu_memento_idea" name="Ideas" sequence="10"/>
+        <menuitem id="menu_memento_idea_config" name="Configuration" parent="menu_memento_idea" sequence="10"/>
+    </data>
+</openerp>

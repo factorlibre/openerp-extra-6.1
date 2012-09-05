@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+<!-- Create Wiki Files Publish View -->
+        <record id="wiki_files_publish_view" model="ir.ui.view">
+            <field name="name">Wiki Files Publish</field>
+            <field name="model">wiki.files.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Wiki Files Publish">
+                    <group col="4" colspan="4" attrs="{'invisible':[('state','=','done')]}">
+                        <label string="Select file" colspan="4"/>
+			            <field name="file" filename="filename" colspan="4"/>
+			            <field name="filename" colspan="4"/>
+                    </group>
+                    <group col="4" colspan="4" attrs="{'invisible':[('state','=','first')]}">
+                        <field name="result"/>
+                    </group>
+                    <group col="2" colspan="4">
+                        <field name="state" invisible="1" />
+                        <button string="Cancel" special="cancel" icon="gtk-cancel" states="first" />
+                        <button string="Publish" name="publish_image" type="object" icon="gtk-ok" states="first" />
+                        <button string="Close" special="cancel" icon="gtk-ok" states="done" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+<!-- Create Wiki Files Publish Action -->
+        <record id="wiki_files_publish_action" model="ir.actions.act_window">
+            <field name="name">Wiki File Publish</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wiki.files.wizard</field>
+            <field name="view_id" ref="wiki_files_publish_view"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+<!-- Create Wiki Files Publish Index Action -->
+		<act_window
+		    id="wiki_files_publish_index_action"
+    		key2="client_action_multi"
+    		name="Wiki Files Publish"
+    		res_model="wiki.files.wizard"
+    		src_model="wiki.wiki"
+    		view_mode="form"
+    		target="new"
+    		view_type="form" />
+
+    </data>
+</openerp>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <!--
+    ======================
+    Newsletter
+    ======================
+    -->
+	<record id="view_newsletter_newsletter_form" model="ir.ui.view">
+		<field name="name">newsletter.newsletter</field>
+		<field name="model">newsletter.newsletter</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Newsletter Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_newsletter_newsletter_list" model="ir.ui.view">
+        <field name="name">newsletter.newsletter.list</field>
+        <field name="model">newsletter.newsletter</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Newsletter Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_newsletter_newsletter_tree" model="ir.ui.view">
+        <field name="name">newsletter.newsletter.tree</field>
+        <field name="model">newsletter.newsletter</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Newsletter Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_newsletter_newsletter_category" model="ir.actions.act_window">
+        <field name="name">Newsletter</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">newsletter.newsletter</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_newsletter_newsletter_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_newsletter_newsletter_by_category" model="ir.actions.act_window">
+        <field name="name">Subscriptions by Newsletter</field>
+        <field name="res_model">newsletter.subscription</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('newsletter_id','child_of', [active_id])]</field>
+        <field name="context">{'newsletter_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_newsletter_newsletter_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'newsletter.newsletter'" name="model"/>
+        <field name="name">Open Newsletter</field>
+        <field eval="'ir.actions.act_window,%d'%action_newsletter_newsletter_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_newsletter_newsletter" model="ir.actions.act_window">
+        <field name="name">Newsletter</field>
+        <field name="res_model">newsletter.newsletter</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Newsletter Unsubscribe Reason
+    ======================
+    -->
+
+	<record model="ir.ui.view" id="view_newsletter_unsubscribe_reason_form">
+		<field name="name">newsletter.unsubscribe.reason.form</field>
+		<field name="model">newsletter.unsubscribe.reason</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+		<form string="unsubscribe">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>		
+		</form>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="view_newsletter_unsubscribe_reason_tree">
+		<field name="name">newsletter.unsubscribe.reason.tree</field>
+		<field name="model">newsletter.unsubscribe.reason</field>
+		<field name="type">tree</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+			<tree string="unsubscribe">
+                <field name="name" select="1"/>
+                <field name="active" select="1"/>			
+			</tree>
+		</field>
+	</record>
+
+    <record model="ir.actions.act_window" id="action_newsletter_unsubscribe_reason">
+        <field name="name">Unsubscribe</field>
+        <field name="res_model">newsletter.unsubscribe.reason</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Newsletter Subscription
+    ======================
+    -->
+
+	<record model="ir.ui.view" id="view_newsletter_subscription_form">
+		<field name="name">newsletter.subscription.form</field>
+		<field name="model">newsletter.subscription</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+		<form string="subscription">
+            <field name="partner_contact_id" select="1"/>
+            <field name="newsletter_id" select="1"/>
+            <field name="newsletter_unsubscribe" select="1"/>
+            <field name="newsletter_unsubscribe_reason_id" attrs="{'readonly':[('newsletter_unsubscribe','!=',1)]}" select="2" />
+		</form>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="view_newsletter_subscription_tree">
+		<field name="name">newsletter.subscription.tree</field>
+		<field name="model">newsletter.subscription</field>
+		<field name="type">tree</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+			<tree string="subscription">
+                <field name="partner_contact_id" />
+                <field name="newsletter_id" />
+                <field name="newsletter_unsubscribe" />
+                <field name="newsletter_unsubscribe_reason_id" />			
+			</tree>
+		</field>
+	</record>
+
+    <!--menus-->
+    <menuitem name="Newsletter" id="menu_newsletter" parent="base.menu_base_config" />
+    <menuitem id="menu_newsletter_newsletter" parent="newsletter_base_contact.menu_newsletter" action="action_newsletter_newsletter" name="Newsletter Category" />
+    <menuitem id="menu_newsletter_unsubscribe_reason" parent="newsletter_base_contact.menu_newsletter" action="action_newsletter_unsubscribe_reason" name="Unsubscribe Category" />
+    <menuitem id="menu_newsletter_newsletter_main" parent="base_contact.menu_partner_contact_form" action="action_newsletter_newsletter_category" sequence="1"/>
+
+</data>
+</openerp>

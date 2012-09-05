@@ -1,0 +1,126 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bookstore
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-05-19 11:14+0000\n"
+"PO-Revision-Date: 2012-07-11 06:34+0000\n"
+"Last-Translator: Anders Wallenquist <anders.wallenquist@vertel.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: bookstore
+#: view:res.partner:0
+msgid "Partners"
+msgstr "Företag"
+
+#. module: bookstore
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Felaktig XML för vyarkitektur!"
+
+#. module: bookstore
+#: model:product.category,name:bookstore.product_categ_livre
+msgid "Livre"
+msgstr ""
+
+#. module: bookstore
+#: field:account.invoice,to_update:0
+#: field:res.partner,to_update:0
+msgid "To update"
+msgstr ""
+
+#. module: bookstore
+#: view:sale.order:0
+msgid "Sales order lines"
+msgstr ""
+
+#. module: bookstore
+#: field:res.partner.category,export_enabled:0
+msgid "Export this category to financial software"
+msgstr ""
+
+#. module: bookstore
+#: field:account.invoice,export_date:0
+msgid "Export time"
+msgstr ""
+
+#. module: bookstore
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Fel ! Du kan inte skapa rekursiva kategorier."
+
+#. module: bookstore
+#: model:account.journal,name:bookstore.cash_journal
+msgid "Cash"
+msgstr "Kontant"
+
+#. module: bookstore
+#: help:res.partner,partner_ref:0
+msgid "The reference of my company for this partner"
+msgstr ""
+
+#. module: bookstore
+#: field:res.partner,number:0
+msgid "Number"
+msgstr "Nummer"
+
+#. module: bookstore
+#: field:res.partner,partner_ref:0
+msgid "Partner Ref."
+msgstr "Företagsreferense"
+
+#. module: bookstore
+#: model:account.journal,name:bookstore.bancontact
+msgid "Payment Bancontact"
+msgstr ""
+
+#. module: bookstore
+#: field:account.invoice,to_export:0
+#: field:res.partner,to_export:0
+msgid "To export"
+msgstr ""
+
+#. module: bookstore
+#: constraint:res.partner:0
+msgid "The VAT doesn't seem to be correct."
+msgstr "Momsen verkar inte vara korrekt."
+
+#. module: bookstore
+#: model:ir.module.module,description:bookstore.module_meta_information
+msgid ""
+"Module to manage book store.\n"
+"    Add book Information, \n"
+"    Author Information, \n"
+"    Books Category,\n"
+"    Related books,\n"
+"    Available Languages,\n"
+msgstr ""
+"Module to manage book store.\n"
+"    Add book Information, \n"
+"    Author Information, \n"
+"    Books Category,\n"
+"    Related books,\n"
+"    Available Languages,\n"
+
+#. module: bookstore
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Antal"
+
+#. module: bookstore
+#: field:res.partner.address,comment:0
+msgid "Notes"
+msgstr "Anteckningar"
+
+#. module: bookstore
+#: model:ir.module.module,shortdesc:bookstore.module_meta_information
+msgid "Bookstore Verticalisation"
+msgstr ""

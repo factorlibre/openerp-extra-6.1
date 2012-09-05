@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="menu_reminder" name="Reminder"/>
+
+        <record id="view_reminder_tree" model="ir.ui.view">
+            <field name="name">reminder.reminder.form</field>
+            <field name="model">reminder.reminder</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Reminder">
+                    <field name="name"/>
+                    <field name="model_id"/>
+                    <field name="domain"/>
+                    <field name="start_date"/>
+                    <field name="action_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_reminder_form" model="ir.ui.view">
+            <field name="name">reminder.reminder.form</field>
+            <field name="model">reminder.reminder</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reminder">
+                    <group col="6" colspan="4">
+                        <field name="name" colspan="4"/>
+                        <field name="model_id"/>
+                        <field name="domain" colspan="4"/>
+                        <field name="start_date"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Conditions">
+                            <field name="match"/>
+                            <field name="action_id"/>
+                            <field name="line_ids" colspan="4" nolabel="1">
+                                <tree editable="top">
+                                    <field name="sequence"/>
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Description">              
+                            <field name="note" colspan="4" nolabel="1"/>
+                        </page>
+                    </notebook>
+                    <group col="6" colspan="4">
+                        <field name="state"/>
+                        <button name="start" string="Start" states="draft" type="object"/>
+                        <button name="stop" string="Stop" states="done" type="object"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="action_view_reminder_tree" model="ir.actions.act_window">
+            <field name="name">Reminders</field>
+            <field name="res_model">reminder.reminder</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_reminder_tree"/>
+        </record>
+		<menuitem id="menu_reminder_configurations" name="Configuration" parent="menu_reminder" sequence="0"/>
+		<menuitem id="menu_reminder_reminder" action="action_view_reminder_tree" parent="menu_reminder_configurations"/>
+		
+		<record id="action_view_reminder_running_tree" model="ir.actions.act_window">
+            <field name="name">Running Reminders</field>
+            <field name="res_model">reminder.reminder</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_reminder_tree"/>
+            <field name="domain">[('state','=','done')]</field>
+        </record>
+        <menuitem id="menu_reminder_running_reminder" action="action_view_reminder_running_tree" parent="menu_reminder_reminder"/>
+        
+        <record id="action_view_reminder_stop_tree" model="ir.actions.act_window">
+            <field name="name">Stop Reminders</field>
+            <field name="res_model">reminder.reminder</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_reminder_tree"/>
+            <field name="domain">[('state','=','draft')]</field>
+        </record>
+        <menuitem id="menu_reminder_stop_reminder" action="action_view_reminder_stop_tree" parent="menu_reminder_reminder"/>
+        
+        <record id="view_reminder_log_tree" model="ir.ui.view">
+            <field name="name">reminder.log.tree</field>
+            <field name="model">reminder.log</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Reminder Logs" colors="blue:state=='warning';red:state=='exception'">
+                    <field name="date"/>
+                    <field name="state"/>
+                    <field name="name"/>
+                    <field name="reminder_id"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_reminder_log_form" model="ir.ui.view">
+            <field name="name">reminder.log.form</field>
+            <field name="model">reminder.log</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reminder Logs">
+                    <field name="reminder_id"/>
+                    <field name="date"/>
+                    <field name="state"/>
+                    <field name="name" colspan="4"/>
+                    <separator string="More Information" colspan="4"/>
+                    <field name="note" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="action_view_reminder_logs" model="ir.actions.act_window">
+            <field name="name">Reminder Logs</field>
+            <field name="res_model">reminder.log</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_reminder_log_tree"/>
+        </record>
+        <menuitem id="menu_action_view_reminder_logs" action="action_view_reminder_logs" parent="menu_reminder"/>
+        
+        
+        <record id="view_res_reminder_tree" model="ir.ui.view">
+            <field name="name">res.reminder.tree</field>
+            <field name="model">res.reminder</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Reminders" colors="blue:state=='month';red:state=='day';green:state=='year'">
+                    <field name="name"/>
+                    <field name="datetime"/>
+                    <field name="start_date"/>
+                    <field name="active"/>
+                    <field name="repeat"/>
+                    <field name="state"/>
+                    <field name="user_id"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_res_reminder_form" model="ir.ui.view">
+            <field name="name">res.reminder.form</field>
+            <field name="model">res.reminder</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reminder">
+                    <group col="6" colspan="4">
+                        <field name="name" colspan="4"/>
+                        <field name="user_id" on_change="onchange_userid(user_id, notify)"/>
+                    </group>
+                    <group col="2" colspan="2">
+                        <separator colspan="2" string="Reminder Information"/>
+                        <field name="start_date" select="1"/>
+                        <field name="datetime" select="1"/>
+                        <field name="repeat" select="1"/>
+                        <field name="state" attrs="{'readonly':[('repeat','=',False)], 'required':[('repeat','=',True)]}"/>
+                    </group>
+                    <group col="2" colspan="2">
+                        <separator colspan="2" string="Other Information"/>
+                        <field name="notify" select="1" on_change="onchange_userid(user_id, notify)"/>
+                        <field name="email" select="1"/>
+                        <field name="active" select="1"/>
+                    </group>
+                    <separator string="More Information" colspan="4"/>
+                    <field name="note" colspan="4" nolabel="1"/>
+                    
+                </form>
+            </field>
+        </record>
+        <record id="action_view_res_reminder_tree_all" model="ir.actions.act_window">
+            <field name="name">All Reminders</field>
+            <field name="res_model">res.reminder</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_res_reminder_tree"/>
+        </record>
+        <menuitem id="menu_action_view_res_reminder_tree_all" action="action_view_res_reminder_tree_all" parent="menu_reminder" sequence="2"/>
+        
+        <record id="action_view_res_reminder_tree" model="ir.actions.act_window">
+            <field name="name">My Reminders</field>
+            <field name="res_model">res.reminder</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_res_reminder_tree"/>
+            <field name="domain">[('user_id','=',uid)]</field>
+        </record>
+        <menuitem id="menu_action_view_res_reminder_tree" action="action_view_res_reminder_tree" parent="menu_action_view_res_reminder_tree_all"/>
+    </data>
+</openerp>

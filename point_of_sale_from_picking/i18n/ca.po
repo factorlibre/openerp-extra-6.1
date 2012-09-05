@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: point_of_sale_from_picking\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-12-01 14:22+0000\n"
+"PO-Revision-Date: 2012-04-18 20:26+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: Zikzakmedia SL <zikzak@zikzakmedia.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-Language: Catalan\n"
+
+#. module: point_of_sale_from_picking
+#: code:addons/point_of_sale_from_picking/wizard/get_sale.py:57
+#, python-format
+msgid "UserError"
+msgstr "Error de l'usuari"
+
+#. module: point_of_sale_from_picking
+#: view:sale.shop:0
+msgid "Point of sale"
+msgstr "Terminal punt de venda"
+
+#. module: point_of_sale_from_picking
+#: view:pos.sale.get:0
+msgid "Confirm"
+msgstr "Confirma"
+
+#. module: point_of_sale_from_picking
+#: help:pos.order,pos_warn_sale_order:0
+#: help:sale.shop,pos_warn_sale_order:0
+msgid ""
+"Shows a warning if a product added in the POS order has already been "
+"requested by the partner (the partner has a sale order with this product), "
+"so the user can decide if is better to do a POS order from a sale order."
+msgstr ""
+"Mostra una alerta si un producte afegit en una comanda del TPV ja ha estat "
+"demanat pel client (el client té una comanda de venda amb aquest producte), "
+"de manera que l'usuari pot decidir si és millor fer la comanda TPV des de la "
+"comanda de venda."
+
+#. module: point_of_sale_from_picking
+#: model:ir.model,name:point_of_sale_from_picking.model_pos_make_payment
+msgid "Point of Sale Payment"
+msgstr "Pagament terminal punt de venda"
+
+#. module: point_of_sale_from_picking
+#: model:ir.model,name:point_of_sale_from_picking.model_pos_sale_get
+msgid "pos.sale.get"
+msgstr "pos.sale.get"
+
+#. module: point_of_sale_from_picking
+#: field:pos.order,pos_warn_sale_order:0
+#: field:sale.shop,pos_warn_sale_order:0
+msgid "Product in sale order warning"
+msgstr "Alerta de comanda de producte en venda"
+
+#. module: point_of_sale_from_picking
+#: view:pos.order:0
+msgid "Get From Picking"
+msgstr "Obté des de l'albarà"
+
+#. module: point_of_sale_from_picking
+#: code:addons/point_of_sale_from_picking/wizard/pos_payment.py:61
+#, python-format
+msgid ""
+"Product %s is already ordered in picking %s. If you want to order it again "
+"ignoring this picking, you must uncheck the boolean field 'Product in sale "
+"order warning'."
+msgstr ""
+"El producte %s ja està demanat a l'albarà %s. Si voleu demanar-lo un altre "
+"cop ignorant aquest albarà, heu de desmarcar el camp booleà 'Alerta de "
+"comanda de producte en venda'."
+
+#. module: point_of_sale_from_picking
+#: code:addons/point_of_sale_from_picking/wizard/pos_payment.py:60
+#, python-format
+msgid "Warning! Product already ordered"
+msgstr "Atenció! Aquest producte ja està a una comanda"
+
+#. module: point_of_sale_from_picking
+#: code:addons/point_of_sale_from_picking/wizard/get_sale.py:57
+#, python-format
+msgid "You can't modify this order. It has already been paid"
+msgstr "No podeu modificar aquesta comanda. Ja s'ha pagat"
+
+#. module: point_of_sale_from_picking
+#: model:ir.model,name:point_of_sale_from_picking.model_sale_shop
+msgid "Sales Shop"
+msgstr "Botiga"
+
+#. module: point_of_sale_from_picking
+#: view:pos.sale.get:0
+msgid "Select an Open Sale Order"
+msgstr "Seleccioneu una comanda de venda oberta"
+
+#. module: point_of_sale_from_picking
+#: view:pos.sale.get:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: point_of_sale_from_picking
+#: field:pos.sale.get,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: point_of_sale_from_picking
+#: field:pos.sale.get,picking_id:0
+msgid "Picking"
+msgstr "Albarà"
+
+#. module: point_of_sale_from_picking
+#: model:ir.actions.act_window,name:point_of_sale_from_picking.pos_sale_get_wizard_action
+#: model:ir.model,name:point_of_sale_from_picking.model_pos_order
+msgid "Point of Sale"
+msgstr "Terminal punt de venda"
+
+#. module: point_of_sale_from_picking
+#: model:ir.model,name:point_of_sale_from_picking.model_pos_order_line
+msgid "Lines of Point of Sale"
+msgstr "Línies de terminal punt de venda"

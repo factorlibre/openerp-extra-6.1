@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<openerp>
+  <data>
+
+  <record id="product_category_shipping_cost" model="product.category">
+    <field name="name">Shipping Cost</field>
+  </record>
+
+  <record id="product_product_shipping_cost" model="product.product">
+    <field name="default_code">SHIP01</field>
+    <field name="supply_method">produce</field>
+    <field name="list_price">0.0</field>
+    <field name="standard_price">0.0</field>
+    <field name="uom_id" ref="product.product_uom_unit"/>
+    <field name="uom_po_id" ref="product.product_uom_unit"/>
+    <field name="sale_delay">0.0</field>
+    <field name="name">Shipping cost</field>
+    <field name="categ_id" ref="product_category_shipping_cost"/>
+    <field name="taxes_id" eval="False"/>
+    <field name="supplier_taxes_id" eval="False"/>
+    <field name="type">service</field>
+    <field name="sale_delay" eval="0" />
+    <field name="produce_delay">0</field>
+    <field name="state">sellable</field>
+    <field name="purchase_ok" eval="False" />
+  </record>
+
+  </data>
+</openerp>

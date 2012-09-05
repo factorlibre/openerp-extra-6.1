@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		
+		<!-- Web Action / Menuitem / View	-->
+		<record model="ir.actions.act_window" id="action_magento_web_form">
+			<field name="name">Magento Web</field>
+			<field name="res_model">magento.web</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Magento Web" id="menu_magento_web_form" parent="menu_main_magento"
+			action="action_magento_web_form" />
+		<record model="ir.ui.view" id="view_magento_web_form">
+			<field name="name">magento.web.form</field>
+			<field name="model">magento.web</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Magento web">
+					<separator string="Magento Information" colspan="4" />
+					<field name="magento_name" />
+					<newline />
+					<field name="magento_url" />
+					<newline />
+					<field name="magento_flag" />
+					<newline />
+					<field name="auto_update" />
+					<separator string="Magento Api Information" colspan="4" />
+					<field name="api_user" />
+					<newline />
+					<field name="api_pwd" />
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_magento_web_tree">
+			<field name="name">magento.web.tree</field>
+			<field name="model">magento.web</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Magento web">
+					<field name="magento_name" />
+					<field name="magento_url" />
+					<field name="magento_flag" />
+					<field name="auto_update" />
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>

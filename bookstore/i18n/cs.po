@@ -1,0 +1,127 @@
+# Czech translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-05-19 11:14+0000\n"
+"PO-Revision-Date: 2012-04-06 15:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: bookstore
+#: view:res.partner:0
+msgid "Partners"
+msgstr "Partneři"
+
+#. module: bookstore
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Neplatné XML pro architekturu pohledu!"
+
+#. module: bookstore
+#: model:product.category,name:bookstore.product_categ_livre
+msgid "Livre"
+msgstr "Livra"
+
+#. module: bookstore
+#: field:account.invoice,to_update:0
+#: field:res.partner,to_update:0
+msgid "To update"
+msgstr "K aktualizaci"
+
+#. module: bookstore
+#: view:sale.order:0
+msgid "Sales order lines"
+msgstr "Řádky prodejní objednávky"
+
+#. module: bookstore
+#: field:res.partner.category,export_enabled:0
+msgid "Export this category to financial software"
+msgstr "Exportovat tuto kategorii do peněžního software"
+
+#. module: bookstore
+#: field:account.invoice,export_date:0
+msgid "Export time"
+msgstr "Exportovat čas"
+
+#. module: bookstore
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Chyba ! Nemůžete vytvořit rekurzivní kategorie."
+
+#. module: bookstore
+#: model:account.journal,name:bookstore.cash_journal
+msgid "Cash"
+msgstr "Hotovost"
+
+#. module: bookstore
+#: help:res.partner,partner_ref:0
+msgid "The reference of my company for this partner"
+msgstr "Odkaz mé společnosti pro tohoto partnera"
+
+#. module: bookstore
+#: field:res.partner,number:0
+msgid "Number"
+msgstr "Číslo"
+
+#. module: bookstore
+#: field:res.partner,partner_ref:0
+msgid "Partner Ref."
+msgstr "Odkaz partnera"
+
+#. module: bookstore
+#: model:account.journal,name:bookstore.bancontact
+msgid "Payment Bancontact"
+msgstr "Platba Bancontact"
+
+#. module: bookstore
+#: field:account.invoice,to_export:0
+#: field:res.partner,to_export:0
+msgid "To export"
+msgstr "K exportu"
+
+#. module: bookstore
+#: constraint:res.partner:0
+msgid "The VAT doesn't seem to be correct."
+msgstr "DIČ nevypadá jako správné."
+
+#. module: bookstore
+#: model:ir.module.module,description:bookstore.module_meta_information
+msgid ""
+"Module to manage book store.\n"
+"    Add book Information, \n"
+"    Author Information, \n"
+"    Books Category,\n"
+"    Related books,\n"
+"    Available Languages,\n"
+msgstr ""
+"Modul ke správě knihkupectví.\n"
+"    Přidává informace knížek, \n"
+"    Informaci autora, \n"
+"    Kategorie knih,\n"
+"    Vztažené knížky,\n"
+"    Dostupné jazyky,\n"
+
+#. module: bookstore
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Množ."
+
+#. module: bookstore
+#: field:res.partner.address,comment:0
+msgid "Notes"
+msgstr "Poznámky"
+
+#. module: bookstore
+#: model:ir.module.module,shortdesc:bookstore.module_meta_information
+msgid "Bookstore Verticalisation"
+msgstr "Vertikalizace knihkupectví"

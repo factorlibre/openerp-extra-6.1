@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+	<menuitem name="Extractions" id="menu_dm_config_extract" parent="dm.menu_dm_config" sequence="4"/>
+
+    <!--
+    =======================================================
+    Address SEGMENTATION VIEWS
+    =======================================================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_address_segmentation_form">
+        <field name="name">dm.address.segmentation.form</field>
+        <field name="model">dm.address.segmentation</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Segmentation">
+                <separator string="Segmentation Informations" colspan="4"/>
+                <field name="name" select="1"/>
+                <field name="code" select="1"/>
+                <notebook colspan="4">
+                    <page string="General">
+                        <separator string="Description" colspan="4"/>
+                        <field name="notes" nolabel="1" select="2" colspan="4" widget="text_wiki"/>
+                    </page>
+                    <page string="Customers">
+                        <field name="address_text_criteria_ids" colspan="2" nolabel="1" select="2">
+                            <form string="Customer Textual Criteria">
+                                <field name="field_id"/>
+                                <field name="operator" nolabel="1"/>
+                                <field name="value" nolabel="1"/>
+	                        </form>
+                            <tree string="Customer Textual Criteria">
+                                <field name="field_id"/>
+                                <field name="operator"/>
+                                <field name="value"/>
+		                    </tree>
+		                </field>
+                        <field name="address_numeric_criteria_ids" colspan="2" nolabel="1" select="2">
+                            <form string="Customer Numeric Criteria">
+                                <field name="field_id"/>
+                                <field name="operator" nolabel="1"/>
+                                <field name="value" nolabel="1"/>
+                            </form>
+                            <tree string="Customer Numeric Criteria">
+                                <field name="field_id"/>
+                                <field name="operator"/>
+                                <field name="value"/>
+                            </tree>
+                        </field>
+                        <field name="address_boolean_criteria_ids" colspan="2" nolabel="1" select="2">
+                            <form string="Customer Boolean Criteria">
+                                <field name="field_id"/>
+                                <field name="operator" nolabel="1"/>
+                                <field name="value" nolabel="1"/>
+                            </form>
+                            <tree string="Customer Boolean Criteria">
+                                <field name="field_id"/>
+                                <field name="operator"/>
+                                <field name="value"/>
+                            </tree>
+                        </field>
+                        <field name="address_date_criteria_ids" colspan="2" nolabel="1" select="2">
+                            <form string="Customer Date Criteria">
+                                <field name="field_id"/>
+                                <field name="operator" nolabel="1"/>
+                                <field name="value" nolabel="1"/>
+                            </form>
+                            <tree string="Customer Date Criteria">
+                                <field name="field_id"/>
+                                <field name="operator"/>
+                                <field name="value"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="SQL">
+                        <separator string="SQL Query" colspan="4"/>
+                        <field name="sql_query" nolabel="1" select="2" colspan="4"/>
+                        <button string="Compute Sql Query" name="set_address_criteria" type="object"/>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_dm_address_segmentation_tree">
+        <field name="name">dm.address.segmentation.tree</field>
+        <field name="model">dm.address.segmentation</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Segmentations">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="notes"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_dm_address_segmentation_form">
+        <field name="name">All Segmentations</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.address.segmentation</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_dm_address_segmentation_tree"/>
+    </record>
+	
+    <menuitem id="menu_action_dm_address_segmentation_form" parent="dm_extract.menu_dm_config_extract" action="action_dm_address_segmentation_form" sequence="0" />
+   
+    <!--
+    =======================================================
+    Segment Inherit
+    =======================================================
+    -->
+   
+   <!--  Segmentation_id      --> 
+   
+	<record id="view_dm_campaign_proposition_segments" model="ir.ui.view">
+	   <field name="name">dm_campaign_proposition_segments</field>
+	   <field name="model">dm.campaign.proposition.segment</field>
+	   <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	   <field name="type">form</field>
+	   <field name="arch" type="xml">
+   			<notebook colspan="4" position="inside">
+     			<page string="Extraction">
+	  				<field name="segmentation_id" colspan="4" string="Segmentation"/>
+ 				</page>
+     		</notebook>
+   		</field>
+  	</record>
+
+	<!--  Mode      --> 
+
+	<record id="view_dm_campaign_proposition_segments_mode_inherit" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segments.mode.inherit</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="view_dm_campaign_proposition_segments"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+   			<field name="segmentation_id" colspan="4" position="replace" >
+				<field name="segmentation_id" />
+				<field name="mode" />
+				<field name="use_census"/>
+			</field>
+   		</field>
+  	</record>
+
+	<!--  Segmentation Criteria      --> 	
+
+	<record id="view_dm_campaign_proposition_segmentation_criteria_inherit" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segmentation.criteria.inherit</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="view_dm_campaign_proposition_segments_mode_inherit"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+   			<field name="segmentation_criteria" colspan="4" nolabel="1" position="replace" >
+	  			<field name="segmentation_criteria" colspan="4" nolabel="1" attrs="{'readonly':[('mode','!=','manual')]}"/>
+			</field>
+   		</field>
+  	</record>
+
+	<!--  Split      --> 	
+
+	<record id="view_dm_campaign_proposition_segment_split_inherit" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segment.split.inherit</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+   			<field name="split_id" position="replace" >
+	  			<field name="split_id" on_change="onchange_split(split_id)"/>
+			</field>
+   		</field>
+  	</record>
+
+   <!--  start census -readonly for segmentation    --> 
+   
+    <record id="view_dm_campaign_proposition_segments_start_census" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segments_start_census</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+		    <field name="start_census" position="replace">
+		    	<field name="start_census" attrs="{'readonly':[('segmentation_id','!=',False)]}"/>             
+		    </field>
+	    </field>
+    </record>
+   
+   <!--  end census -readonly for segmentation      --> 
+   
+    <record id="view_dm_campaign_proposition_segments_end_census" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segments_end_census</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	        <field name="end_census" position="replace">
+                <field name="end_census" attrs="{'readonly':[('segmentation_id','!=',False)]}"/>             
+	        </field>
+        </field>
+    </record>
+   
+   <!--  type census -readonly for segmentation      --> 
+   
+    <record id="view_dm_campaign_proposition_segments_type_census" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segments_type_census</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+	    	<field name="type_census" position="replace">
+				<field name="type_census" attrs="{'readonly':[('segmentation_id','!=',False)]}"/>             
+	        </field>
+    	</field>
+    </record>
+
+   
+   <!--  Criteria List      --> 
+
+	<record id="view_dm_campaign_proposition_segments_criteria_inherit" model="ir.ui.view">
+	    <field name="name">dm_campaign_proposition_segments_criteria.inherit</field>
+	    <field name="model">dm.campaign.proposition.segment</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_segment_form"/>
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+		    <field name="deduplication_level" position="replace">
+		        <group colspan="4" col="6">
+		            <field name="deduplication_level"  />
+                </group>
+				<group colspan="2">
+                	<field name="list_criteria_id"/>
+				</group>
+		    </field>	    
+		</field>
+	</record>
+
+    <!--
+    =======================================================
+    Segment List criteria
+    =======================================================
+    -->
+
+	<record model="ir.ui.view" id="view_dm_campaign_proposition_segment_list_criteria_tree">
+        <field name="name">dm.campaign.proposition.segment.list_criteria.tree</field>
+        <field name="model">dm.campaign.proposition.segment.list_criteria</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Segment Criteria">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+	<record model="ir.ui.view" id="view_dm_campaign_proposition_segment_list_criteria_form">
+        <field name="name">dm.campaign.proposition.segment.list_criteria.form</field>
+        <field name="model">dm.campaign.proposition.segment.list_criteria</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Segment Criteria">
+                <field name="name" select="1"/>
+                <field name="code" select="1"/>
+            </form>
+        </field>
+    </record>
+	
+	<record model="ir.actions.act_window" id="action_dm_campaign_proposition_segment_list_criteria_form">
+        <field name="name">All Customers List Criteria</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.campaign.proposition.segment.list_criteria</field>
+        <field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_campaign_proposition_segment_list_criteria_tree"/>
+    </record>
+	
+    <menuitem id="menu_dm_campaign_proposition_segment_list_criteria_form" parent="dm.menu_dm_config_custlist_list" action="action_dm_campaign_proposition_segment_list_criteria_form" sequence="4" />
+
+    <!--
+    =======================================================
+    Proposition Inherit : customer list in segment
+    =======================================================
+    -->
+       
+    <record model="ir.ui.view" id="view_campaign_proposition_form_inherit_segment_form">
+        <field name="name">view.campaign.proposition.form.inherit.segment.form</field>
+        <field name="model">dm.campaign.proposition</field>
+        <field name="type">form</field>
+	    <field name="inherit_id" ref="dm.view_campaign_proposition_form"/>        
+        <field name="arch" type="xml">
+		    <field name="deduplication_level" position="replace">
+		        <group colspan="4" col="6">
+		            <field name="deduplication_level"  />
+                </group>
+                <separator string="Customers List Criteria" colspan="4"/>
+                <field name="list_criteria_id" nolabel="1"/>
+            </field>
+        </field>
+    </record>
+    
+  <!--
+    =======================================================
+    CUSTOMER FILE : Segmentation in Customer file 
+    =======================================================
+    -->
+   
+	<record id="view_dm_customers_file_segmentation_inherit_form" model="ir.ui.view">
+	   <field name="name">dm.customers_file.form.segmentation.inherit</field>
+	   <field name="model">dm.customers_file</field>
+	   <field name="inherit_id" ref="dm.view_dm_customers_file_form"/>
+	   <field name="type">form</field>
+	   <field name="arch" type="xml">
+	   		<field name="code" position="after">
+	  			<field name="segmentation_id"/>             
+   			</field>
+   	   </field>
+  	</record>
+  	
+  	<record model="ir.ui.view" id="view_dm_customers_file_segmentation_inherit_tree">
+        <field name="name">dm.customers_file.tree.segmentation.inherit</field>
+        <field name="model">dm.customers_file</field>
+         <field name="inherit_id" ref="dm.view_dm_customers_file_tree"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+	  			<field name="segmentation_id"/>
+	  			<field name="address_ids"/>           
+   			</field>
+        </field>
+    </record>
+  	
+  </data>
+</openerp>
+    

@@ -1,0 +1,150 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_supplier_direct_delivery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:31+0000\n"
+"PO-Revision-Date: 2011-02-15 15:27+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_supplier_direct_delivery
+#: field:mrp.procurement,related_direct_delivery_purchase_order:0
+msgid "Related Direct Delivery Purchase Order"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:product.product,is_direct_delivery_from_product:0
+msgid "Is Supplier Direct Delivery Automatic?"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: model:ir.module.module,description:sale_supplier_direct_delivery.module_meta_information
+msgid ""
+"\n"
+"Enable to send goods directly form supplier to customer taking special care "
+"of:\n"
+"- making only one picking from supplier location to customer location and "
+"using that picking in the sale_order workflow\n"
+"- copying the sale order shipping address to the generate purchase order "
+"line (so merging purchase orders later on will still work)\n"
+"\n"
+"Also take note of the following points:\n"
+"1) We set automatically a Sale Order line to direct delivery if there isn't "
+"enough product in the stock.\n"
+"2) We don't try to split such a line, but we set it entirely to direct "
+"delivery even if some products are available\n"
+"3) In a sale order, some lines can be set to direct while some others are on "
+"stock at the same time\n"
+"4) When we look if there is enough product on virtual stock for a line, we "
+"look at the time the sale order is confirmed,\n"
+"we don't try to anticipate if there will be enough virtual stock is the "
+"future if the sale order is planned for later.\n"
+"    "
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:purchase.order.line,is_supplier_direct_delivery:0
+#: field:sale.order.line,is_supplier_direct_delivery:0
+#: field:stock.picking,is_supplier_direct_delivery:0
+msgid "Is Direct Delivery?"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: model:ir.actions.act_window,name:sale_supplier_direct_delivery.action_picking_supplier_direct_delivery
+#: model:ir.ui.menu,name:sale_supplier_direct_delivery.menu_action_picking_supplier_direct_delivery
+#: view:purchase.order.line:0
+#: view:sale.order:0
+#: view:sale.order.line:0
+msgid "Supplier Direct Delivery"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:sale.order.line,purchase_order:0
+msgid "Related Purchase Order"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:purchase.order.line,partner_address_id:0
+msgid "Shipping address"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: model:ir.module.module,shortdesc:sale_supplier_direct_delivery.module_meta_information
+msgid "Automates direct delivery between a supplier and a customer"
+msgstr "Automates direct delivery between a supplier and a customer"
+
+#. module: sale_supplier_direct_delivery
+#: field:purchase.order,has_supplier_direct_delivery:0
+#: field:sale.order,has_supplier_direct_delivery:0
+msgid "Has Supplier Direct Delivery"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:sale.order.line,purchase_order_line:0
+msgid "Related Purchase Order Line"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:product.supplierinfo,direct_delivery_flag:0
+msgid "Direct delivery possible ?"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:sale.order.line,is_supplier_direct_delivery_advised:0
+msgid "Is Supplier Direct Delivery Advised?"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: view:purchase.order.line:0
+msgid "Supplier Delivery Moves"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:purchase.order.line,sale_order:0
+msgid "Related Sale Order"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:purchase.order.line,sale_order_line:0
+msgid "Related Sale Order Line"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:sale.order.line,purchase_order_state:0
+msgid "Purchase Order State"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: field:res.partner.address,complete_address:0
+msgid "Complete Name"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: view:sale.order:0
+#: view:sale.order.line:0
+msgid "Invoice Lines"
+msgstr ""
+
+#. module: sale_supplier_direct_delivery
+#: view:sale.order.line:0
+msgid "History"
+msgstr ""

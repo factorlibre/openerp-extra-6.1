@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_dm_payment_rule_all","dm.payment_rule","dm_payment_rules.model_dm_payment_rule",,1,0,0,0
+"access_dm_campaign_payment_rule_all","dm.campaign.payment_rule","dm_payment_rules.model_dm_campaign_payment_rule",,1,0,0,0
+"access_dm_campaign_proposition_payment_rule_all","dm.campaign.proposition.payment_rule","dm_payment_rules.model_dm_campaign_proposition_payment_rule",,1,0,0,0

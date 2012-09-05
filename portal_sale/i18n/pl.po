@@ -1,0 +1,119 @@
+# Polish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:52+0000\n"
+"PO-Revision-Date: 2011-02-15 15:16+0000\n"
+"Last-Translator: OpenERP Administrators <Unknown>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "States"
+msgstr ""
+
+#. module: portal_sale
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML niewłaściwy dla tej architektury wyświetlania!"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Reference"
+msgstr "Odnośnik"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Manual Description"
+msgstr "Opis ręczny"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Sales order lines"
+msgstr "Pozycje zamówienia sprzedaży"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Total amount"
+msgstr "Suma kwot"
+
+#. module: portal_sale
+#: model:ir.actions.act_window,name:portal_sale.portal_action_sale_order
+#: model:ir.ui.menu,name:portal_sale.menu_portal_customer_order_sale
+#: view:sale.order:0
+msgid "Sale Order"
+msgstr "Zamówienie sprzedaży"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Automatic Declaration"
+msgstr "Deklaracja automatyczna"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Sales orders"
+msgstr "Zamówienia sprzedaży"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Il."
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Sale Order Lines"
+msgstr "Pozycje zamówienia sprzedaży"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "UoM"
+msgstr "JM"
+
+#. module: portal_sale
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nieprawidłowa nazwa modelu w definicji akcji."
+
+#. module: portal_sale
+#: model:ir.module.module,description:portal_sale.module_meta_information
+msgid ""
+"\n"
+"     "
+msgstr ""
+"\n"
+"     "
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Sales order"
+msgstr "Zamówienie sprzedaży"
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Order Line"
+msgstr "Pozycja zamówienia"
+
+#. module: portal_sale
+#: model:ir.ui.menu,name:portal_sale.menu_portal_customer_order
+msgid "Order"
+msgstr "Kolejność"
+
+#. module: portal_sale
+#: model:ir.module.module,shortdesc:portal_sale.module_meta_information
+msgid "Portal Sale Management"
+msgstr ""
+
+#. module: portal_sale
+#: view:sale.order:0
+msgid "Untaxed amount"
+msgstr "Kwota bez podatku"

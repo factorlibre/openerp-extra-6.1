@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<!-- res.users -->
+        <record model="ir.ui.view" id="res_users_sale_shop_tree_view">
+            <field name="name">res_users.sale.shop.tree</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='date']" position="after">
+                    <field name="shop_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_users_sale_shop_form_view">
+            <field name="name">res_users.sale.shop.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Companies']" position="after">
+                    <page string="Shops">
+                    <field name="shop_ids" nolabel="1"/>
+                    </page>
+                </xpath>
+                <xpath expr="/form/notebook/page/group/field[@name='user_email']" position="after">
+                    <field name="shop_id" domain="[('shop_id', 'in', [x.id for x in shop_ids])]"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="inherit_res_users_form_simple_modif_view">
+            <field name="name">inherit.res.users.simple.modif.form.view</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Current Activity']/field[@name='view']" position="after">
+                    <field name="shop_id" widget="selection" readonly="0"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_csv_file","csv_file","model_csv_file","base.group_system",1,1,1,1
+"access_csv_file_field","csv_file_field","model_csv_file_field","base.group_system",1,1,1,1

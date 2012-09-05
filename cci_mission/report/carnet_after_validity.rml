@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" alignment="RIGHT"/>
+    <paraStyle name="P2" fontName="Helvetica"/>
+    <paraStyle name="P3" fontName="Helvetica" alignment="RIGHT"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="10.0" leading="13"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="Helvetica" alignment="JUSTIFY" leftIndent="70" />
+    <paraStyle name="P7" fontName="Helvetica" textColor="#000000"/>
+    <paraStyle name="P8" fontName="Helvetica-Bold" textColor="#000000"/>
+    <paraStyle name="P9" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="P2">[[repeatIn(carnet_after(),'ata_carnet')]]</para>
+    <para style="P9">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">[[ ata_carnet['partner_name'] or removeParentNode('para') ]]</para>
+    <para style="P3">[[ ata_carnet['partner_address'] or removeParentNode('para') ]]</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font face="Helvetica" size="10.0"/>
+      <font face="Helvetica" size="10.0">Liège, le </font>
+      <font face="Helvetica" size="11.0"/>
+      <font face="Times-Roman" size="11.0">[[ time.strftime('%Y-%m-%d') ]]</font>
+    </para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">Madame/Monsieur,</para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font face="Helvetica-Bold" size="10.0">Concerne:</font>
+      <font face="Helvetica-Bold" size="10.0"> votre carnet A.T.A. n° </font>
+      <font face="Times-Bold" size="10.0"/>
+      <font face="Helvetica-Bold" size="10.0">[[ ata_carnet['name'] ]]</font>
+      <font face="Times-Roman" size="10.0">([[ata_carnet['type'] ]])</font>
+    </para>
+    <para style="P2">
+      <font face="Times-Roman" size="10.0"/>
+    </para>
+        <para style="P4">
+      <font color="white"> </font>
+    </para>
+
+    <para style="P6">
+      <font face="Helvetica-Bold" size="10.0">Date d’émission :</font>
+      <font face="Helvetica-Bold" size="10.0"/>
+      <font face="Times-Roman" size="10.0">[[ata_carnet['creation_date'] or removeParentNode('para') ]]</font>
+    </para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font face="Times-Roman" size="10.0">Le délai de validité du carnet de passages en douane pour l’admission temporaire (A.T.A.) dont référence sous rubrique expirait le </font>
+      <font face="Helvetica-Bold" size="10.0">[[ ata_carnet['validity_date'] or removeParentNode('para') ]]</font>
+      <font face="Helvetica-Bold" size="10.0">.</font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P2">
+      <font face="Times-Roman">Ce document ne nous ayant pas été renvoyé dans les délais prescrits, nous vous invitons à nous le faire parvenir </font>
+      <font face="Helvetica-Bold">PAR RETOUR DE COURRIER.</font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Nous attirons votre attention sur la convention douanière réglant l’utilisation du carnet A.T.A. qui, outre l’application des dispositions normales, prévoit en son article 16, le droit, dans certains cas, de poursuites contre les utilisations abusives.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Il est de votre intérêt de nous renvoyer le carnet périmé et de répondre sans retard, aux justifications éventuelles qui pourraient vous être réclamées par les autorités douanières via notre Chambre de Commerce.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Nous restons à votre entière disposition pour résoudre au mieux de vos intérêts les problèmes qui pourraient se poser dans votre entreprise.</para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">Nous vous présentons, Madame, Monsieur, nos meilleures salutations.</para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">Chantale Cool</para>
+    <para style="P3">Service « Légalisations »</para>
+    <para style="P3">Tél. : 04/341.91.91</para>
+    <para style="P3">Courriel : cc@cciconnect.be</para>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>

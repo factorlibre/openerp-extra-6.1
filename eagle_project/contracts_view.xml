@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<!--
+  File: contracts_view.xml
+  Module: eagle_project
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+			Inherited contract form view from the Eagle Base module 
+	-->
+		<record model="ir.ui.view" id="eagle_project_view_contract_form_1">
+			<field name="name">Eagle Project Contract View 1</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<page string="Messages" position="before">
+					<page string="Project Tasks" attrs="{'invisible':[('activeTab_contract','=',False)]}">
+						<field name="project_id" colspan="4" readonly="1"/>
+						<newline/>
+						<field name="tasks" nolabel="1" colspan="4">
+							<tree colors="grey:state in ('cancelled','done');blue:state == 'pending';red:date_deadline and (date_deadline&lt;current_date) and (state in ('draft','pending','open'))" string="Tasks">
+								<field name="sequence" invisible="not context.get('seq_visible', False)"/>
+								<field name="name"/>
+								<field name="project_id" icon="gtk-indent" domain="['|',('user_id','=',uid),('members','=',uid)]" invisible="context.get('user_invisible', False)"/>
+								<field name="user_id" invisible="context.get('user_invisible', False)"/>
+								<field name="delegated_user_id" invisible="context.get('show_delegated', True)"/>
+								<field name="total_hours" invisible="1"/>
+								<field name="planned_hours"/>
+								<field name="effective_hours" widget="float_time" sum="Spent Hours" invisible="1"/>
+								<field name="remaining_hours" widget="float_time" sum="Remaining Hours" on_change="onchange_remaining(remaining_hours,planned_hours)"/>
+								<field name="date_deadline"/>
+								<field name="type_id" groups="base.group_extended"/>
+								<button name="next_type" invisible="context.get('set_visible',False)" states="draft,open,pending" string="Change Stage" type="object" icon="gtk-go-forward" groups="base.group_extended" help="Change Type"/>
+								<field name="date_start" invisible="1"/>
+								<field name="date_end" invisible="1"/>
+								<field name="progress" widget="progressbar" invisible="context.get('set_visible',False)"/>
+								<field name="state" invisible="context.get('set_visible',False)"/>
+								<button name="do_cancel" states="draft,open,pending" string="Cancel" type="object" icon="gtk-cancel" help="For cancelling the task"/>
+								<button name="do_open" states="pending,draft,done,cancelled" string="Start Task" type="object" icon="gtk-execute" help="For changing to open state" invisible="context.get('set_visible',False)"/>
+								<button groups="base.group_extended" name="476" states="pending,open,draft" string="Delegate" type="action" icon="gtk-sort-descending" help="For changing to delegate state"/>
+								<button name="action_close" states="draft,pending,open" string="Done" type="object" icon="terp-dialog-close" help="For changing to done state"/>
+							</tree>
+							<form string="Task edition">
+								<group colspan="6" col="6">
+									<field name="name" select="1"/>
+									<field name="project_id" select="1" on_change="onchange_project(project_id)" domain="['|',('user_id','=',uid),('members','=',uid)]"/>
+									<field name="total_hours" widget="float_time"/>
+									<field name="date_deadline" attrs="{'readonly':[('state','in',['done', 'cancelled'])]}"/>
+									<field name="user_id" select="1" attrs="{'readonly':[('state','in',['done', 'cancelled'])]}"/>
+									<field name="progress" widget="progressbar"/>
+								</group>
+								<notebook colspan="4">
+									<page string="Information">
+										<group col="2" colspan="2">
+											<field name="planned_hours" widget="float_time" attrs="{'readonly':[('state','!=','draft')]}" on_change="onchange_planned(planned_hours, effective_hours)"/>
+											<field name="effective_hours" widget="float_time" invisible="1"/>
+										</group>
+										<group col="3" colspan="2">
+											<field name="remaining_hours" widget="float_time" attrs="{'readonly':[('state','!=','draft')]}" colspan="2"/>
+											<button name="478" string="Reevaluate" type="action" colspan="1" target="new" states="open,pending" icon="gtk-edit"/>
+										</group>
+			
+										<field colspan="4" name="description" nolabel="1" attrs="{'readonly':[('state','=','done')]}" widget="text_wiki"/>
+										<field colspan="4" name="work_ids" nolabel="1" attrs="{'invisible':[('state','in',['draft'])],'readonly':[('state','=','done')]}">
+											<tree string="Task Work" editable="top">
+												<field name="name"/>
+												<field name="hours" widget="float_time" sum="Spent Hours"/>
+												<field name="user_id"/>
+												<field name="date"/>
+												<field name="ons_hrtif_changed" />
+												<field name="ons_hrtif_to_invoice" attrs="{'readonly':[('ons_hrtif_changed','=',False)]}"/>
+												<field name="ons_hrtif_why_chg" attrs="{'readonly':[('ons_hrtif_changed','=',False)],'required':[('ons_hrtif_changed','&lt;&gt;',False)]}"/>
+											</tree>
+											<form string="Task Work">
+												<field colspan="4" name="name" select="1"/>
+												<field name="hours" select="1" widget="float_time"/>
+												<field name="date" select="1"/>
+												<field name="user_id" select="1"/>
+												<field name="company_id" groups="base.group_multi_company" widget="selection"/>
+												<field name="contract_id" select="1"/>
+											</form>
+										</field>
+										<newline/>
+										<group col="11" colspan="4">
+											<field name="state" select="1"/>
+											<button name="do_cancel" states="draft,open,pending" string="Cancel" type="object" icon="gtk-cancel"/>
+											<button name="do_draft" states="open" string="Draft" type="object" icon="gtk-indent"/>
+											<button name="do_open" states="pending,draft" string="Start Task" type="object" icon="gtk-execute"/>
+											<button name="478" states="done,cancelled" string="Reactivate" type="action" icon="gtk-convert" context="{'button_reactivate':True}"/>
+											<button name="do_pending" states="open" string="Pending" type="object" icon="gtk-media-pause"/>
+											<button groups="base.group_extended" name="476" states="pending,open" string="Delegate" type="action" icon="gtk-sort-descending"/>
+											<button name="action_close" states="pending,open" string="Done" type="object" icon="terp-dialog-close"/>
+										</group>
+									</page>
+									<page groups="base.group_extended" string="Delegations">
+										<separator string="Parent Tasks" colspan="4"/>
+										<field colspan="4" height="150" name="parent_ids" nolabel="1"/>
+										<separator string="Delegated tasks" colspan="4"/>
+										<field colspan="4" height="150" name="child_ids" nolabel="1">
+											<tree string="Delegated tasks">
+												<field name="name"/>
+												<field name="user_id"/>
+												<field name="state"/>
+												<field name="effective_hours" widget="float_time"/>
+												<field name="progress" widget="progressbar"/>
+												<field name="remaining_hours" widget="float_time"/>
+												<field name="date_deadline"/>
+											</tree>
+										</field>
+									</page>
+			
+									<page groups="base.group_extended" string="Extra Info" attrs="{'readonly':[('state','=','done')]}">
+										<group colspan="2" col="2">
+											<separator string="Planning" colspan="2"/>
+											<field name="priority"/>
+											<field name="sequence"/>
+										</group>
+										<group colspan="2" col="2">
+											<separator string="Dates" colspan="2"/>
+											<field name="date_start"/>
+											<field name="date_end"/>
+											<field name="create_date"/>
+										</group>
+										<separator string="Miscelleanous" colspan="4"/>
+										<field name="partner_id"/>
+										<field name="company_id" select="1" groups="base.group_multi_company" widget="selection"/>
+										<group col="4" colspan="2">
+											<field name="type_id" widget="selection" readonly="1"/>
+											<button name="prev_type" string="Previous" type="object" icon="gtk-go-back" help="Change to Previous Stage"/>
+											<button name="next_type" string="Next" type="object" icon="gtk-go-forward" help="Change to Next Stage"/>
+										</group>
+										<separator colspan="4" string="Notes"/>
+										<field colspan="4" name="notes" nolabel="1"/>
+									</page>
+								</notebook>
+							</form>
+						</field>
+						<field name="works" nolabel="1" colspan="4" context="{'filter_by_contract_id':active_id}">
+							<tree string="Task Work" editable="top">
+								<field name="task_id"/>
+								<field name="name"/>
+								<field name="hours" widget="float_time" sum="Spent Hours"/>
+								<field name="user_id"/>
+								<field name="date"/>
+								<field name="ons_hrtif_changed" />
+								<field name="ons_hrtif_to_invoice" attrs="{'readonly':[('ons_hrtif_changed','=',False)]}"/>
+								<field name="ons_hrtif_why_chg" attrs="{'readonly':[('ons_hrtif_changed','=',False)],'required':[('ons_hrtif_changed','&lt;&gt;',False)]}"/>
+							</tree>
+						</field>
+					</page>
+					<page string="Analytic Entries" attrs="{'invisible':[('activeTab_account','=',False)]}">
+						<field name="account_analytic_account" colspan="2"/>
+						<newline/>
+						<field name="account_analytic_lines" nolabel="1" colspan="4"/>
+					</page>
+				</page>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_project_view_contract_form_2">
+			<field name="name">Eagle Project Contract View 2</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_form"/>
+			<field name="arch" type="xml">
+				<group name="price_infos" position="inside">
+					<field name="c_amount"/>
+					<field name="c_taxes"/>
+				</group>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_project_view_contract_list">
+			<field name="name">Eagle Project Contract List</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_tree"/>
+			<field name="arch" type="xml">
+				<field name="c_total" position="before">
+					<field name="c_amount" sum="Tax-free Amount" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+					<field name="c_taxes" sum="Taxes" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_pos_form_1">
+			<field name="name">Eagle Project Contract Position View Taxes</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_form"/>
+			<field name="arch" type="xml">
+				<group name="info_bottom_taxes" position="inside">
+					<field name="tax_id" height="80" nolabel="1" colspan="2" attrs="{'readonly':[('state','=','done')]}" on_change="recomp_line(name,parent.customer_id,qty,list_price,tax_id)"/>
+				</group>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_pos_form_2">
+			<field name="name">Eagle Project Contract Position View Qty</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_form"/>
+			<field name="arch" type="xml">
+				<field name="qty" position="replace">
+					<field name="qty" attrs="{'readonly':[('state','=','done')]}" colspan="2" on_change="recomp_line(name,parent.customer_id,qty,list_price,tax_id)"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_pos_form_3">
+			<field name="name">Eagle Project Contract Position View List Price</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_form"/>
+			<field name="arch" type="xml">
+				<field name="list_price" position="replace">
+					<field name="list_price" attrs="{'readonly':[('state','=','done')],'invisible':[('eagle_parm_use_price','=',False)]}" on_change="recomp_line(name,parent.customer_id,qty,list_price,tax_id)"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_project_view_contract_pos_tree">
+			<field name="name">Eagle Project Contract Position List Amounts</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="eagle_base.eagle_view_contract_pos_tree"/>
+			<field name="arch" type="xml">
+				<field name="cl_total" position="before">
+					<field name="cl_amount" sum="Tax-free Amount" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+					<field name="cl_taxes" sum="Taxes" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+				</field>
+			</field>
+		</record>
+
+	</data>
+</openerp>

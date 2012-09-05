@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <!--
+    ======================
+    Civil engineering work
+    ======================
+    -->
+    <record model="ir.ui.view" id="civil_engineering_work_filter">
+    <field name="name">civil_engineering.work.search</field>
+    <field name="model">civil_engineering.work</field>
+    <field name="type">search</field>
+    <field name="arch" type="xml">
+        <search string="Search Work">
+           <group col='15' colspan='4'>
+                <filter string="Work Class" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'workclass_id'}"/>
+                <filter string="Country" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'country_id'}"/>
+                <filter string="Work Use" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'workuse_id'}"/>
+                <separator orientation="vertical"/>
+                <field name="city" string="City"/>
+                <field name="main_city" string="Main city"/>
+                <newline/>
+                <filter string="Structure Type" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'structuretype_id'}"/>
+                <filter string="Foundation Type" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'foundationtype_id'}"/>
+                <filter string="Structural Model Abstraction" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'modelabstraction_id'}"/> 
+                <filter string="Structure Modeling Software" icon="terp-stock_symbol-selection" domain="[]" context="{'group_by': 'modelingsoftware_id'}"/>
+           </group>
+           <newline/>
+           <group expand="0" string="Group By...">
+                <field name="constructed_area" string="Constructed area"/>
+                <field name="work_construction_cost" string="Work construction cost"/>
+                <field name="work_owner" string="Work owner"/>
+                <field name="work_builder" string="Work builder"/>
+                <field name="architecture" string="Architecture"/>
+                <newline/>
+                <field name="civil_engineer" string="Civil engineer"/>
+                <field name="work_safety" string="Work safety"/>
+                <field name="project_manager" string="Project manager"/>
+                <field name="structural_engineering" string="Structural engineering"/>
+                <field name="plant_engineering" string="Plant engineering"/>
+                <field name="geotechnics" string="Geotechnics"/>
+            </group>
+       </search>
+    </field>
+    </record>
+    
+	<record model="ir.ui.view" id="view_civil_engineering_work">
+		<field name="name">civil_engineering.work.form</field>
+		<field name="model">civil_engineering.work</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+	        <form string="Work">
+                <group colspan="4" col="6">
+					<field name="workclass_id"/>
+                    <newline/>
+					<field name="name" colspan="4"/>
+                </group>
+
+                <notebook colspan="4">
+                    <page string="General">
+                        <group colspan="4" col="4">
+                            <separator string="Location data" colspan="4"/>
+					        <field name="location" />
+                            <newline/>
+					        <field name="city" />
+					        <field name="main_city" />
+					        <field name="country_id" />
+					        <field name="state_id" />
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Work data" colspan="2"/>
+					        <field name="workuse_id"/>
+					        <field name="constructed_area" />
+					        <field name="floors_under_ground_level" />
+					        <field name="floors_above_ground_level" />
+					        <field name="work_construction_cost" />
+                        </group>
+                        <group colspan="2" col="2">
+                            <separator string="Agents" colspan="2"/>
+					        <field name="work_owner" />
+					        <field name="work_builder" />
+					        <field name="architecture" />
+					        <field name="civil_engineer" />
+					        <field name="work_safety" />
+					        <field name="project_manager" />
+                            <separator string="Other consultancies" colspan="2"/>
+					        <field name="structural_engineering" />
+					        <field name="plant_engineering" />
+					        <field name="geotechnics" />
+                        </group>
+                    </page>
+                    <page string="Structure">
+                        <separator string="Structure data" colspan="4"/>
+					    <field name="structuretype_id"/>
+					    <field name="foundationtype_id"/>
+					    <field name="modelabstraction_id"/>
+					    <field name="distance_between_supports" />
+					    <field name="modelingsoftware_id" />
+					    <field name="structure_construction_cost" />
+                    </page>
+                    <page string="Projects">
+                            <field colspan="4" mode="form,tree" name="project_ids" nolabel="1">
+                                <form string="Project">
+				                    <field name="sequence"/>
+                                    <newline/>
+				                    <field name="area_id"/>
+				                    <field name="project_id"/>
+                                </form>
+                                <tree string="Projects">
+				                    <field name="sequence"/>
+				                    <field name="area_id"/>
+				                    <field name="project_id"/>
+                                </tree>
+                            </field>
+                    </page>
+                </notebook>
+            </form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_civil_engineering_work_tree">
+		<field name="name">civil_engineering.work.tree</field>
+		<field name="model">civil_engineering.work</field>
+		<field name="type">tree</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+			<tree string="work">
+				<field name="workclass_id"/>
+				<field name="name"/>
+				<field name="location"/>
+				<field name="city"/>
+                <field name="country_id"/>
+                <field name="workuse_id"/>
+                <field name="structuretype_id"/>
+                <field name="foundationtype_id"/>
+                <field name="modelabstraction_id"/>
+                <field name="modelingsoftware_id"/>
+			</tree>
+		</field>
+	</record>
+
+    <record model="ir.actions.act_window" id="action_civil_engineering_work_action">
+        <field name="name">Civil engineering works</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <act_window context="{'work_id': active_id}" domain="[('work_id', '=', active_id)]" id="act_civil_engineering_sale_order" name="Sales" res_model="sale.order" src_model="civil_engineering.work"/>
+
+    <act_window context="{'work_id': active_id}" domain="[('work_id', '=', active_id)]" id="act_civil_engineering_purchase_order" name="Purchase" res_model="purchase.order" src_model="civil_engineering.work"/>
+
+    <!--
+    ======================
+    Civil engineering area
+    ======================
+    -->
+	<record model="ir.ui.view" id="view_civil_engineering_area">
+		<field name="name">civil_engineering.area.form</field>
+		<field name="model">civil_engineering.area</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+	        <form string="Area">
+				<field name="name" select="1"/>
+            </form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_civil_engineering_area_tree">
+		<field name="name">civil_engineering.area.tree</field>
+		<field name="model">civil_engineering.area</field>
+		<field name="type">tree</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+			<tree string="Area">
+				<field name="name" select="1"/>
+			</tree>
+		</field>
+	</record>
+
+    <record model="ir.actions.act_window" id="action_civil_engineering_area_action">
+        <field name="name">Civil engineering area</field>
+        <field name="res_model">civil_engineering.area</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ==============================
+    Civil engineering work project
+    ==============================
+    -->
+	<record model="ir.ui.view" id="view_civil_engineering_work_project">
+		<field name="name">civil_engineering.work.project.form</field>
+		<field name="model">civil_engineering.work.project</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+	        <form string="Work project">
+				<field name="work_id"/>
+				<field name="sequence"/>
+				<field name="area_id"/>
+				<field name="project_id"/>
+            </form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_civil_engineering_work_project_tree">
+		<field name="name">civil_engineering.work.project.tree</field>
+		<field name="model">civil_engineering.work.project</field>
+		<field name="type">tree</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+			<tree string="Work project">
+				<field name="work_id" select="1"/>
+				<field name="sequence"/>
+				<field name="area_id" select="1"/>
+				<field name="project_id" select="1"/>
+			</tree>
+		</field>
+	</record>
+
+    <record model="ir.actions.act_window" id="action_civil_engineering_work_project_action">
+        <field name="name">Work Project Assignments</field>
+        <field name="res_model">civil_engineering.work.project</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Work Class
+    ======================
+    -->
+	<record id="view_civilengineering_workclass_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.workclassform</field>
+		<field name="model">civil_engineering.workclass</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Work Class Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_workclass_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.workclass.list</field>
+        <field name="model">civil_engineering.workclass</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Work Class Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_workclass_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.workclass.tree</field>
+        <field name="model">civil_engineering.workclass</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Work Class Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_workclass_category" model="ir.actions.act_window">
+        <field name="name">Works by Work Class</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.workclass</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_workclass_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_workclass_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Work Class</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('workclass_id','child_of', [active_id])]</field>
+        <field name="context">{'workclass_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_workclass_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.workclass'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_workclass_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_workclass" model="ir.actions.act_window">
+        <field name="name">Work Class</field>
+        <field name="res_model">civil_engineering.workclass</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Work Use
+    ======================
+    -->
+	<record id="view_civilengineering_workuse_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.workuseform</field>
+		<field name="model">civil_engineering.workuse</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Work Use Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_workuse_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.workuse.list</field>
+        <field name="model">civil_engineering.workuse</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Work Use Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_workuse_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.workuse.tree</field>
+        <field name="model">civil_engineering.workuse</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Work Use Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_workuse_category" model="ir.actions.act_window">
+        <field name="name">Works by Work Use</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.workuse</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_workuse_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_workuse_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Work Use</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('workuse_id','child_of', [active_id])]</field>
+        <field name="context">{'workuse_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_workuse_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.workuse'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_workuse_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_workuse" model="ir.actions.act_window">
+        <field name="name">Work Use</field>
+        <field name="res_model">civil_engineering.workuse</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Structure Type
+    ======================
+    -->
+	<record id="view_civilengineering_structuretype_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.structuretypeform</field>
+		<field name="model">civil_engineering.structuretype</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Structure Type Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_structuretype_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.structuretype.list</field>
+        <field name="model">civil_engineering.structuretype</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Structure Type Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_structuretype_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.structuretype.tree</field>
+        <field name="model">civil_engineering.structuretype</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Structure Type Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_structuretype_category" model="ir.actions.act_window">
+        <field name="name">Works by Structure Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.structuretype</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_structuretype_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_structuretype_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Structure Type</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('structuretype_id','child_of', [active_id])]</field>
+        <field name="context">{'structuretype_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_structuretype_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.structuretype'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_structuretype_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_structuretype" model="ir.actions.act_window">
+        <field name="name">Structure Type</field>
+        <field name="res_model">civil_engineering.structuretype</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Foundation Type
+    ======================
+    -->
+	<record id="view_civilengineering_foundationtype_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.foundationtypeform</field>
+		<field name="model">civil_engineering.foundationtype</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Foundation Type Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_foundationtype_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.foundationtype.list</field>
+        <field name="model">civil_engineering.foundationtype</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Foundation Type Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_foundationtype_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.foundationtype.tree</field>
+        <field name="model">civil_engineering.foundationtype</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Foundation Type Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_foundationtype_category" model="ir.actions.act_window">
+        <field name="name">Works by Foundation Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.foundationtype</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_foundationtype_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_foundationtype_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Foundation Type</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('foundationtype_id','child_of', [active_id])]</field>
+        <field name="context">{'foundationtype_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_foundationtype_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.foundationtype'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_foundationtype_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_foundationtype" model="ir.actions.act_window">
+        <field name="name">Foundation Type</field>
+        <field name="res_model">civil_engineering.foundationtype</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Structural Model Abstraction
+    ======================
+    -->
+	<record id="view_civilengineering_modelabstraction_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.modelabstractionform</field>
+		<field name="model">civil_engineering.modelabstraction</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Structural Model Abstraction Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_modelabstraction_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.modelabstraction.list</field>
+        <field name="model">civil_engineering.modelabstraction</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Structural Model Abstraction Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_modelabstraction_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.modelabstraction.tree</field>
+        <field name="model">civil_engineering.modelabstraction</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Structural Model Abstraction Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_modelabstraction_category" model="ir.actions.act_window">
+        <field name="name">Works by Model Abstraction</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.modelabstraction</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_modelabstraction_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_modelabstraction_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Model Abstraction</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('modelabstraction_id','child_of', [active_id])]</field>
+        <field name="context">{'modelabstraction_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_modelabstraction_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.modelabstraction'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_modelabstraction_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_modelabstraction" model="ir.actions.act_window">
+        <field name="name">Structural Model Abstraction</field>
+        <field name="res_model">civil_engineering.modelabstraction</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Modeling Software
+    ======================
+    -->
+	<record id="view_civilengineering_modelingsoftware_form" model="ir.ui.view">
+		<field name="name">civil_engineering.civil_engineering.modelingsoftwareform</field>
+		<field name="model">civil_engineering.modelingsoftware</field>
+		<field name="type">form</field>
+		<field name="priority" eval="5"/>
+		<field name="arch" type="xml">
+        <form string="Modeling Software Category">
+            <field name="name" select="1"/>
+            <field name="active" select="1"/>
+            <field name="parent_id"/>
+        </form>
+		</field>
+	</record>
+
+    <record id="view_civilengineering_modelingsoftware_list" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.modelingsoftware.list</field>
+        <field name="model">civil_engineering.modelingsoftware</field>
+        <field name="type">tree</field>
+        <field eval="6" name="priority"/>
+        <field name="arch" type="xml">
+            <tree string="Modeling Software Categories">
+                <field name="complete_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_civilengineering_modelingsoftware_tree" model="ir.ui.view">
+        <field name="name">civil_engineering.civil_engineering.modelingsoftware.tree</field>
+        <field name="model">civil_engineering.modelingsoftware</field>
+        <field name="type">tree</field>
+        <field name="field_parent">child_ids</field>
+        <field name="arch" type="xml">
+            <tree string="Modeling Software Categories">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_civilengineering_modelingsoftware_category" model="ir.actions.act_window">
+        <field name="name">Works by Modeling Software</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">civil_engineering.modelingsoftware</field>
+        <field name="view_type">tree</field>
+        <field name="view_id" ref="view_civilengineering_modelingsoftware_tree"/>
+        <field name="domain">[('parent_id','=',False)]</field>
+    </record>
+
+    <record id="action_civilengineering_modelingsoftware_by_category" model="ir.actions.act_window">
+        <field name="name">Works by Modeling Software</field>
+        <field name="res_model">civil_engineering.work</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('modelingsoftware_id','child_of', [active_id])]</field>
+        <field name="context">{'modelingsoftware_id':active_id}</field>
+    </record>
+
+    <record id="ir_action_civilengineering_modelingsoftware_by_category" model="ir.values">
+        <field eval="'tree_but_open'" name="key2"/>
+        <field eval="'civil_engineering.modelingsoftware'" name="model"/>
+        <field name="name">Open Civil Engineering</field>
+        <field eval="'ir.actions.act_window,%d'%action_civilengineering_modelingsoftware_by_category" name="value"/>
+        <field eval="True" name="object"/>
+    </record>
+
+    <record id="action_civilengineering_modelingsoftware" model="ir.actions.act_window">
+        <field name="name">Structural Modeling Software</field>
+        <field name="res_model">civil_engineering.modelingsoftware</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    ======================
+    Menus
+    ======================
+    -->
+    <menuitem name="Civil Engineering" id="menu_civilengineering" icon="terp-go-home" web_icon="images/civil.png" web_icon_hover="images/civil-hover.png"/>
+    <menuitem name="Configuration" id="menu_civilengineering_configuration" parent="civil_engineering.menu_civilengineering" sequence="1" groups="group_civil_engineering_manager"/>
+    <menuitem name="Categories" id="menu_civilengineering_configuration_categories" parent="civil_engineering.menu_civilengineering_configuration" sequence="1"/>
+    <menuitem id="menu_civilengineering_configuration_workclass" parent="civil_engineering.menu_civilengineering_configuration_categories" action="action_civilengineering_workclass" name="Work Classes" />
+    <menuitem id="menu_civilengineering_configuration_workuse" parent="civil_engineering.menu_civilengineering_configuration_categories" action="action_civilengineering_workuse" name="Work Uses" />
+    <menuitem name="Structure" id="menu_civilengineering_configuration_structure" parent="civil_engineering.menu_civilengineering_configuration" sequence="1"/>
+    <menuitem id="menu_civilengineering_configuration_structuretype" parent="civil_engineering.menu_civilengineering_configuration_structure" action="action_civilengineering_structuretype" name="Structure Types" />
+    <menuitem id="menu_civilengineering_configuration_foundationtype" parent="civil_engineering.menu_civilengineering_configuration_structure" action="action_civilengineering_foundationtype" name="Foundation Types" />
+    <menuitem id="menu_civilengineering_configuration_modelabstraction" parent="civil_engineering.menu_civilengineering_configuration_structure" action="action_civilengineering_modelabstraction" name="Structural Model Abstractions" />
+    <menuitem id="menu_civilengineering_configuration_modelingsoftware" parent="civil_engineering.menu_civilengineering_configuration_structure" action="action_civilengineering_modelingsoftware" name="Structural Modeling Softwares" />
+    <menuitem id="menu_civilengineering_configuration_area" parent="civil_engineering.menu_civilengineering_configuration" action="action_civil_engineering_area_action" name="Civil Engineering Areas" />
+
+    <menuitem name="Civil Engineering Works" id="menu_civil_engineering_work" parent="civil_engineering.menu_civilengineering" action="action_civil_engineering_work_action"/>
+<!--
+    <menuitem id="menu_civilengineering_workclass_category_main" parent="civil_engineering.menu_civil_engineering_work" action="action_civilengineering_workclass_category" sequence="1"/>
+    <menuitem id="menu_civilengineering_workuse_category_main" parent="civil_engineering.menu_civil_engineering_work" action="action_civilengineering_workuse_category" sequence="1"/>
+    <menuitem name="Structure" id="menu_civilengineering_structure" parent="civil_engineering.menu_civil_engineering_work" sequence="1"/>
+    <menuitem id="menu_civilengineering_structuretype_category_main" parent="civil_engineering.menu_civilengineering_structure" action="action_civilengineering_structuretype_category"/>
+    <menuitem id="menu_civilengineering_foundationtype_category_main" parent="civil_engineering.menu_civilengineering_structure" action="action_civilengineering_foundationtype_category" />
+    <menuitem id="menu_civilengineering_modelabstraction_category_main" parent="civil_engineering.menu_civilengineering_structure" action="action_civilengineering_modelabstraction_category" />
+    <menuitem id="menu_civilengineering_modelingsoftware_category_main" parent="civil_engineering.menu_civilengineering_structure" action="action_civilengineering_modelingsoftware_category" />
+-->
+    <menuitem name="Work Project Assignments" id="menu_civil_engineering_work_project" parent="civil_engineering.menu_civilengineering" action="action_civil_engineering_work_project_action"/>
+</data>
+</openerp>

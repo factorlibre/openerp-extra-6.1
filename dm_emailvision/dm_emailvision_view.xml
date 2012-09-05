@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+    <openerp>
+       <data>
+
+	<!--
+	=======================================================
+	   MAIL SERVICE EXTENSION
+	=======================================================
+	-->
+
+		<record id="view_dm_mail_service_form_inherit_ev" model="ir.ui.view">
+		  <field name="name">dm.mail_service.form.inherit_ev</field>
+		  <field name="model">dm.mail_service</field>
+		  <field name="type">form</field>
+		  <field name="inherit_id" ref="dm.view_dm_mail_service_form"/>
+		  <field name="arch" type="xml">
+			<field name="type_id" position="after">
+				<group colspan="4" attrs="{'invisible':[('service_type','!=','emailvision')]}">
+				<separator string="Emailvision NMS API Configuration" colspan="4"/>
+				<field name="ev_host"/>
+				<field name="ev_service"/>
+				<field name="ev_template"/>
+				</group>
+			</field>
+		  </field>
+		</record>
+
+	<record model="ir.ui.view" id="view_dm_emailvision_template_tree">
+        <field name="name">dm.emailvision.template.tree</field>
+        <field name="model">dm.emailvision.template</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Emailvision Templates">
+                <field name="name" string="Name"/>
+                 <field name="code"/>
+                  <field name="ev_encrypt"/>
+                <field name="ev_random"/>
+            </tree>
+        </field>
+    </record>
+
+	<record model="ir.ui.view" id="view_dm_emailvision_template_form">
+        <field name="name">dm.emailvision.template.form</field>
+        <field name="model">dm.emailvision.template</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Emailvision Templates">
+                <field name="name" string="Name"/>
+                 <field name="code"/>
+                  <field name="ev_encrypt"/>
+                <field name="ev_random"/>
+            </form>
+         </field>
+   </record>
+   
+     <record model="ir.actions.act_window" id="action_dm_emailvision_template_form">
+        <field name="name">All Emailvision Templates</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">dm.emailvision.template</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_dm_emailvision_template_tree"/>
+    </record>
+
+   <menuitem id="menu_dm_emailvision_template_form" parent="dm.menu_dm_config_mail_service" action="action_dm_emailvision_template_form" sequence="1" />
+
+    <record model="ir.ui.view" id="view_dm_offer_document_form">
+        <field name="name">dm.offer.document.inherit</field>
+        <field name="model">dm.offer.document</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm.view_offer_step_document_form"/>
+        <field name="arch" type="xml">
+        	<notebook position="inside">
+                <page string="Emailvision" attrs="{'invisible':[('media_id','!=','Email')]}">
+        			<field name="ev_template" colspan="4"/>
+        		</page>
+        		</notebook>
+        	</field>
+ 	</record>       
+<!--
+		<record id="view_dm_mail_service_form_inherit2" model="ir.ui.view">
+			<field name="name">dm.mail_service.form.inherit2</field>
+			<field name="model">dm.mail_service</field>
+		  <field name="type">form</field>
+			<field name="inherit_id" ref="dm.view_dm_mail_service_form"/>
+		   <field name="arch" type="xml">
+		  <field name="type_id" position="replace">
+		   <field name="type_id" on_change="on_change_service_type(type_id)" widget="selection"/>
+		  </field>
+		  </field>
+		</record>
+-->
+		</data>
+	</openerp>

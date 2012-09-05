@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_pos_pos_form">
+        <field name="name">pos.order.qty.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        <xpath expr="/form/notebook/page/field[@name='lines']/tree/field[@name='product_id']" position="replace">
+            <field name="product_id" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'product')" ref="kkk"/>
+        </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="pos_account_tax_view_price">
+        <field name="name">pos.order.exlcuded.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+            <field name="price_type" position="replace">
+                <field name="price_type" />
+            </field>
+        </field>
+    </record>
+    <!--record model="ir.ui.view" id="pos_account_tax_view_subtotal_incl">
+        <field name="name">pos.order.exlcuded.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+            <field name="price_subtotal" position="after">
+                <field name="price_subtotal_incl"/>
+            </field>
+        </field>
+    </record-->
+    <record model="ir.ui.view" id="pos_account_tax_view_qty">
+        <field name="name">pos.order.qty.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/tree/field[@name='qty']" position="replace">
+        		<field name="qty" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'qty')"/>
+        	</xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="pos_account_tax_view_qty1">
+        <field name="name">pos.order.qty.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/form/field[@name='qty']" position="replace">
+        		<field name="qty" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'qty')"/>
+        	</xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="pos_account_tax_view_discount">
+        <field name="name">pos.order.discount.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/tree/field[@name='discount']" position="replace">
+        		<field name="discount" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'discount')"/>
+        	</xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="pos_account_tax_view_discount1">
+        <field name="name">pos.order.discount.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/form/field[@name='discount']" position="replace">
+        		<field name="discount" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'discount')"/>
+        	</xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="pos_account_tax_view_price_ded">
+        <field name="name">pos.order.price_ded.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/tree/field[@name='price_ded']" position="replace">
+        		<field name="price_ded" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'price_ded')"/>
+        	</xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="pos_account_tax_view_price_ded1">
+        <field name="name">pos.order.price_ded.view.form</field>
+        <field name="type">form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form" />
+        <field name="arch" type="xml">
+        	<xpath expr="/form/notebook/page/field[@name='lines']/form/field[@name='price_ded']" position="replace">
+        		<field name="price_ded" on_change="onchange_amount(price_ded,discount,price_unit,parent.pricelist_id,product_id,qty, parent.price_type,parent.partner_id,'price_ded')"/>
+        	</xpath>
+        </field>
+    </record>
+
+
+</data>
+</openerp>
+

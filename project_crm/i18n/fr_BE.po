@@ -1,0 +1,75 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* project_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 13:55:34+0000\n"
+"PO-Revision-Date: 2009-11-25 13:55:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_crm
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: project_crm
+#: code:addons/project_crm/project_crm.py:0
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: project_crm
+#: model:ir.module.module,description:project_crm.module_meta_information
+msgid " Synchronize between Project task and CRM Case."
+msgstr ""
+
+#. module: project_crm
+#: model:ir.actions.wizard,name:project_crm.wizard_unsync
+#: wizard_button:wizard_unsync,init,unsync:0
+msgid "Unsynchronize"
+msgstr ""
+
+#. module: project_crm
+#: wizard_view:wizard_unsync,init:0
+msgid "Unsynchronize Event"
+msgstr ""
+
+#. module: project_crm
+#: view:project.task:0
+msgid "UnSync Calendar"
+msgstr ""
+
+#. module: project_crm
+#: field:project.task,case_id:0
+msgid "CRM Case"
+msgstr ""
+
+#. module: project_crm
+#: model:ir.module.module,shortdesc:project_crm.module_meta_information
+msgid "Project CRM"
+msgstr ""
+
+#. module: project_crm
+#: wizard_button:wizard_unsync,init,delete:0
+msgid "Delete"
+msgstr ""
+
+#. module: project_crm
+#: view:project.task:0
+msgid "Sync With Calendar"
+msgstr ""
+
+#. module: project_crm
+#: code:addons/project_crm/project_crm.py:0
+#, python-format
+msgid "No Meeting section exits."
+msgstr ""
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="wizard_base_contact_create_partner" model="ir.ui.view">
+            <field name="name">base.contact.create.partner.wizard.form</field>
+            <field name="model">base.contact.create.partner.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Base Contact">
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','done')]}">
+                    <label string="This wizard create Partner, Address, Contact and Job." colspan="4"/>
+                    <field name="name"/><newline/>
+                    <field name="customer"/>
+                    <field name="supplier"/>
+                    <separator string="Address" colspan="4"/>
+                    <field name="street"/><newline/>
+                    <field name="street2"/><newline/>
+                    <field name="zip"/><newline/>
+                    <field name="city"/><newline/>
+                    <field name="country_id"/><newline/>
+                    <field name="state_id"/>
+                    <separator string="Others" colspan="4"/>
+                    <field name="email"/><newline/>
+                    <field name="phone"/><newline/>
+                    <field name="mobile"/><newline/>
+                    <field name="fax"/>
+                </group>
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','first')]}">
+                    <field name="message" nolabel="1"/><newline/>
+                </group>
+                <group col="2" colspan="4">
+                    <field name="state" invisible="1" />
+                    <button string="Cancel" special="cancel" icon="gtk-cancel" states="first" />
+                    <button string="Create Partner" name="create_partner" type="object" icon="gtk-ok" states="first" />
+                    <button string="Close" special="cancel" icon="gtk-ok" states="done" />
+                </group>
+            </form>
+            </field>
+        </record>
+
+        <act_window name="Create Partner"
+            res_model="base.contact.create.partner.wizard"
+            src_model="res.partner"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_base_contact_create_partner"
+            groups="base.group_extended"/>
+            
+            <menuitem name="Create Partner" action="act_base_contact_create_partner" id="base_create_partner" parent="base.menu_address_book" sequence="55" groups="base.group_extended" />
+    </data>
+</openerp>

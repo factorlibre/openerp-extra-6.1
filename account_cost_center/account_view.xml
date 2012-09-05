@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		
+		<record model='ir.ui.view' id='account_form_view_inherit_cost'>
+			<field name='name'>Account Form Inherit Cost Center</field>
+			<field name='model'>account.account</field>
+			<field name='inherit_id' ref='account.view_account_form'/>
+			<field name='type'>form</field>
+			<field name='arch' type='xml'>
+				<xpath expr="/form/notebook/page[@string='Notes']" position="after">
+					<page string="Invoice Settings">
+                        <separator string="Aditional Journal Entry" colspan="4"/>
+						<field name="property_account_debit" domain="[('type','&lt;&gt;','view'),('type','&lt;&gt;','consolidation')]"/>
+						<field name="property_account_credit" domain="[('type','&lt;&gt;','view'),('type','&lt;&gt;','consolidation')]"/>
+					</page>
+				</xpath>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

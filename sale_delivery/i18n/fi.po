@@ -1,0 +1,127 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:26+0000\n"
+"PO-Revision-Date: 2011-06-28 07:30+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_delivery
+#: code:addons/sale_delivery/sale_delivery.py:0
+#, python-format
+msgid ""
+"The quanitties plannified in Deliveries must be equals to the quantities in "
+"the Sale Order lines. \n"
+"\n"
+" [%s] %s : %f delivery qty , %f sale order qty"
+msgstr ""
+
+#. module: sale_delivery
+#: field:sale.delivery.line,packaging_id:0
+msgid "Packaging"
+msgstr "Pakkaus"
+
+#. module: sale_delivery
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: sale_delivery
+#: code:addons/sale_delivery/sale_delivery.py:0
+#, python-format
+msgid "Error !"
+msgstr "Virhe !"
+
+#. module: sale_delivery
+#: model:ir.module.module,shortdesc:sale_delivery.module_meta_information
+msgid "Sale Delivery Planning"
+msgstr "Myyntitoimitusten suunnittelu"
+
+#. module: sale_delivery
+#: model:ir.model,name:sale_delivery.model_sale_delivery_line
+msgid "sale.delivery.line"
+msgstr ""
+
+#. module: sale_delivery
+#: view:sale.order:0
+msgid "Notes"
+msgstr "Huomautukset"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,product_id:0
+msgid "Product"
+msgstr "Tuote"
+
+#. module: sale_delivery
+#: view:sale.order:0
+msgid "Deliveries"
+msgstr "Toimitukset"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,note:0
+msgid "Note"
+msgstr "Huomautus"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,product_qty:0
+msgid "Product Quantity"
+msgstr "Tuotteen kappalemäärä"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,priority:0
+msgid "Priority"
+msgstr "Prioriteetti"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,product_uom:0
+msgid "Product UoM"
+msgstr "Tuotteen mittayksikkö"
+
+#. module: sale_delivery
+#: code:addons/sale_delivery/sale_delivery.py:0
+#, python-format
+msgid ""
+"You have selected a product %s for Delivery but it is not in supposed to be "
+"saled in this Sale Order"
+msgstr ""
+"Olet valinnut tuotteen %s toimitettavaksi, mutta sitä ei ole tarkoitettu "
+"myytäväksi tässä myyntitilauksessa"
+
+#. module: sale_delivery
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Objektin nimi täytyy alkaa X_ eikä se saa sisältää mitää erikoismerkkejä!"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,date_planned:0
+msgid "Date Planned"
+msgstr "Suunniteltu päivä"
+
+#. module: sale_delivery
+#: field:sale.order.line,deliveries:0
+msgid "Planned Deliveries"
+msgstr "Suunnitellut toimitukset"
+
+#. module: sale_delivery
+#: field:sale.delivery.line,order_id:0
+msgid "Order Ref"
+msgstr "Tilauksen viite"
+
+#. module: sale_delivery
+#: view:sale.order:0
+#: field:sale.order,delivery_line:0
+msgid "Delivery Lines"
+msgstr "Toimitusrivit"

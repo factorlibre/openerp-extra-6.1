@@ -1,0 +1,402 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 06:36+0000\n"
+"PO-Revision-Date: 2011-08-23 12:04+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: commission
+#: view:report.commission.month:0
+#: view:report.commission.month.rate:0
+#: view:report.commission.month_rate:0
+msgid "sales agent commission"
+msgstr "Comisión de agentes comerciales"
+
+#. module: commission
+#: view:sale.agent:0
+msgid "Saleagent"
+msgstr "Agente comercial"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting
+msgid "Reporting"
+msgstr "Informes"
+
+#. module: commission
+#: view:sale.agent:0
+msgid "Basic Info"
+msgstr "Información básica"
+
+#. module: commission
+#: model:ir.module.module,shortdesc:commission.module_meta_information
+msgid "Sale agent Information"
+msgstr "Información de agente comercial"
+
+#. module: commission
+#: field:sale.agent,comprice_id:0
+msgid "commission price list"
+msgstr "Tarifa comisiones"
+
+#. module: commission
+#: model:ir.model,name:commission.model_sale_agent
+msgid "Sale agent sale info"
+msgstr "Información venta agente comercial"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_all_commision
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_this_all
+msgid "All Commissions rate"
+msgstr "Todos los ratios de comisión"
+
+#. module: commission
+#: model:ir.module.module,description:commission.module_meta_information
+msgid "Sale agent Info"
+msgstr "Información agente comercial"
+
+#. module: commission
+#: field:report.commission.month,name:0
+#: field:report.commission.month.rate,name:0
+msgid "Sales Agent Name"
+msgstr "Nombre agente comercial"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Commission"
+msgstr "Comisión"
+
+#. module: commission
+#: wizard_view:sale.agent,init:0
+msgid "Sale Agent Report"
+msgstr "Informe agente comercial"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Partner Name :"
+msgstr "Nombre empresa:"
+
+#. module: commission
+#: selection:report.commission.month.rate,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: commission
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en la definición de la acción."
+
+#. module: commission
+#: field:sale.agent,name:0
+msgid "Saleagent Name"
+msgstr "Nombre agente comercial"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_all
+msgid "All Months"
+msgstr "Todos los meses"
+
+#. module: commission
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto debe empezar con x_ y no debe contener ningún carácter "
+"especial!"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Invoice State :"
+msgstr "Estado factura:"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "SalesAgent :"
+msgstr "Agente comercial :"
+
+#. module: commission
+#: field:report.commission.month,comrate:0
+#: field:report.commission.month.rate,comrate:0
+msgid "Commission Rate (%)"
+msgstr "Ratio comisión (%)"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_all_open
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_this_open
+msgid "Commissions with Opened Invoices"
+msgstr "Comisiones con facturas abiertas"
+
+#. module: commission
+#: field:res.partner,agent_id:0
+msgid "saleagent"
+msgstr "Agente comercial"
+
+#. module: commission
+#: model:ir.actions.act_window,name:commission.action_sales agent commission_tree_month
+msgid "commission.month.form.tree"
+msgstr "comision.mes.formulario.arbol"
+
+#. module: commission
+#: view:sale.agent:0
+msgid "General Information"
+msgstr "Información general"
+
+#. module: commission
+#: wizard_button:sale.agent,init,report:0
+msgid "Print Report."
+msgstr "Imprimir informe"
+
+#. module: commission
+#: field:report.commission.month,inv_total:0
+#: field:report.commission.month.rate,inv_total:0
+msgid "Invoice Amount"
+msgstr "Importe factura"
+
+#. module: commission
+#: field:report.commission.month,in_date:0
+#: field:report.commission.month.rate,in_date:0
+msgid "Invoice Date"
+msgstr "Fecha Factura"
+
+#. module: commission
+#: selection:report.commission.month.rate,state:0
+#: selection:sale.agent,init,state:0
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: commission
+#: model:ir.actions.act_window,name:commission.action_saleagent_form
+#: model:ir.actions.act_window,name:commission.action_saleagent_tree
+msgid "saleagent.info.form"
+msgstr "vendedor.info.formulario"
+
+#. module: commission
+#: view:sale.agent:0
+msgid "Sale agent customers"
+msgstr "Clientes de agente comercial"
+
+#. module: commission
+#: field:report.commission.month,invno:0
+#: field:report.commission.month.rate,invno:0
+msgid "Invoice Number"
+msgstr "Número factura"
+
+#. module: commission
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_rate_tree_all
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_tree_all_open
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_tree_all_paid
+msgid "commission.all.rate.form.tree"
+msgstr "comisión.todos.tipodecambio.formulario.árbol"
+
+#. module: commission
+#: field:report.commission.month,pdate:0
+#: field:report.commission.month.rate,pdate:0
+msgid "Invoice Paid Date"
+msgstr "Fecha pago factura"
+
+#. module: commission
+#: field:report.commission.month,commission:0
+#: field:report.commission.month.rate,commission:0
+msgid "Commissions Amount"
+msgstr "Importe comisión"
+
+#. module: commission
+#: field:product.pricelist,commrate:0
+msgid "Commission Rate(%)"
+msgstr "Ratio comisión (%)"
+
+#. module: commission
+#: selection:sale.agent,init,state:0
+msgid "Open-Paid"
+msgstr "Abierto-pagado"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_root
+msgid "Sales Management"
+msgstr "Gestión de ventas"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_this
+msgid "This Month"
+msgstr "Este Mes"
+
+#. module: commission
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_rate_tree_month
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_tree_open
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_tree_paid
+msgid "commission.month.rate.form.tree"
+msgstr "comisión.mes.tipodecambio.formulario.árbo"
+
+#. module: commission
+#: field:sale.agent,customer:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: commission
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡﻿XML no válido para la definición de la vista!"
+
+#. module: commission
+#: view:report.commission.month:0
+#: view:report.commission.month.rate:0
+msgid "sales agent all commission"
+msgstr "Todas las comisiones de agentes comerciales"
+
+#. module: commission
+#: field:report.commission.month,productname:0
+#: field:report.commission.month.rate,productname:0
+msgid "Product Name"
+msgstr "Nombre de producto"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Sales orderNo"
+msgstr "Nº Pedido de venta"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_agent
+msgid "Sales agent"
+msgstr "Agente comercial"
+
+#. module: commission
+#: selection:report.commission.month.rate,state:0
+msgid "Pro-forma"
+msgstr "Pro-forma"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_new_sale_commisions_agent
+msgid "New Sales agent"
+msgstr "Nuevo agente comercial"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Invoice date"
+msgstr "Fecha factura"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Invoice Total"
+msgstr "Total Factura"
+
+#. module: commission
+#: field:sale.agent,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: commission
+#: field:report.commission.month,state:0
+#: field:report.commission.month.rate,state:0
+msgid "Invoice State"
+msgstr "Estado factura"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_all_of_commision
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_this_of_commision
+msgid "Commissions of Pricelist"
+msgstr "Comisiones de tarifa"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Total :-"
+msgstr "Total :-"
+
+#. module: commission
+#: field:sale.agent,commission_rate:0
+msgid "Commission Rate"
+msgstr "Ratio comisión"
+
+#. module: commission
+#: model:ir.actions.act_window,name:commission.action_sales_agent_commission_tree_all
+msgid "commission.all.form.tree"
+msgstr "comisión.todos.formulario.árbol"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Invoice No"
+msgstr "Nº Factura"
+
+#. module: commission
+#: field:report.commission.month,sono:0
+#: field:report.commission.month.rate,sono:0
+msgid "Sales Order No"
+msgstr "Nº pedido de venta"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Commission :"
+msgstr "Comision:"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_all_paid
+#: model:ir.ui.menu,name:commission.menu_sale_commisions_reporting_this_paid
+msgid "Commissions with Paid Invoices"
+msgstr "Comisión con facturas pagadas"
+
+#. module: commission
+#: model:ir.ui.menu,name:commission.menu_sale_commisions
+msgid "Commissions"
+msgstr "Comisiones"
+
+#. module: commission
+#: rml:commission.sale.agent:0
+msgid "Sales Agent Commission Monthly Report"
+msgstr "Informe de comisión mensual de agentes comerciales"
+
+#. module: commission
+#: field:report.commission.month,product_quantity:0
+#: field:report.commission.month.rate,product_quantity:0
+msgid "Product Quantity"
+msgstr "Cantidad de producto"
+
+#. module: commission
+#: selection:report.commission.month.rate,state:0
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: commission
+#: model:ir.model,name:commission.model_report_commission_month_rate
+msgid "Commission of month rate"
+msgstr "Comisión ratio mensual"
+
+#. module: commission
+#: wizard_field:sale.agent,init,state:0
+msgid "Invoice state"
+msgstr "Estado factura"
+
+#. module: commission
+#: model:ir.actions.report.xml,name:commission.commission_saleagetn
+#: model:ir.actions.wizard,name:commission.wizard_sale_aagent
+msgid "Sale Agent"
+msgstr "Agente comercial"
+
+#. module: commission
+#: wizard_button:sale.agent,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: commission
+#: field:sale.agent,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: commission
+#: selection:report.commission.month.rate,state:0
+#: selection:sale.agent,init,state:0
+msgid "Open"
+msgstr "Abierto"
+
+#. module: commission
+#: model:ir.model,name:commission.model_report_commission_month
+msgid "Commission of month"
+msgstr "Comisión del mes"

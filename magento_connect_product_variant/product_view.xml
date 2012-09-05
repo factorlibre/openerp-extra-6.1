@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Product Template Filter -->
+       <record model="ir.ui.view" id="view_magento_product_template_search" >
+            <field name="name">magento.product.template.search</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product_variant_multi.product_template_search_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="/search/group[@string='Extended Filters...']" position="after">
+                    <newline/>
+                    <group expand="0" string="Magento Filters..." groups="base.group_extended">
+                        <field name="magento_tpl_sku" string="SKU"/>
+                        <field name="magento_tpl_exportable"/>
+                        <field name="magento_tpl_status"/>
+                        <field name="magento_tpl_visibility"/>
+                        <field name="magento_tpl_sale_shop"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Product Template View -->
+        <record model="ir.ui.view" id="view_magento_product_template_form">
+            <field name="name">magento.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/group/field[@name='name']" position="replace">
+                        <field name="name" on_change="onchange_name(name, magento_url_key)"/>
+                    </xpath>
+                    <xpath expr="/form/group/field[@name='purchase_ok']" position="after">
+                        <field name="magento_tpl_exportable" attrs="{'invisible':[('magento_tpl_exportable','==',True)]}"/>
+                    </xpath>
+                    <xpath expr="/form/notebook" position="inside">
+                        <page string="Magento" attrs="{'invisible':[('magento_tpl_exportable','=',False)]}">
+                            <notebook colspan="4">
+                                <page string="General">
+                                    <field name="magento_tpl_sku" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                    <field name="magento_tpl_attribute_group_id" attrs="{'required':[('magento_tpl_exportable','==',True)]}" widget="selection"/>
+                                    <field name="magento_tpl_status"/>
+                                    <field name="magento_tpl_visibility" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                    <field name="magento_tpl_tax_class" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                    <separator string="Short Description" colspan="4"/>
+                                    <field name="magento_tpl_shortdescription" nolabel="1" colspan="4" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                </page>
+                                <page string="SEO">
+                                    <field name="magento_tpl_url_key" colspan="4" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                    <separator string="Metadescription" colspan="4"/>
+                                    <field name="magento_tpl_metadescription" nolabel="1" colspan="4" attrs="{'required':[('magento_tpl_exportable','==',True)]}"/>
+                                    <separator string="Metakeyword" colspan="4"/>
+                                    <field name="magento_tpl_metakeyword" nolabel="1" colspan="4"/>
+                                    <field name="magento_tpl_metatitle" colspan="4"/>
+                                </page>
+                                <page string="Website">
+                                    <separator string="Website" colspan="4" />
+                                    <field name="magento_tpl_sale_shop" colspan="4" nolabel="1" domain="[('magento_shop','=',True)]"/>
+                                </page>
+                            </notebook>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

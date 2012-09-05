@@ -1,0 +1,2 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_import_n_split_wizard","ons_autosplit_picking.import_n_split_wizard","model_ons_import_n_split","stock.group_stock_manager",1,1,1,1

@@ -1,0 +1,165 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_group
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-17 10:40+0000\n"
+"PO-Revision-Date: 2011-05-26 14:31+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: training_group
+#: model:ir.model,name:training_group.model_training_group
+msgid "Group"
+msgstr "Grup"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level3:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 3"
+msgstr "Nivell 3"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid ""
+"If level 1 is SchoolName, level 2 is 1,2 and level 3 is A,B the groups "
+"generated will be: SchoolName, SchoolName-1, SchoolName-2, SchoolName-1-A, "
+"SchoolName-1-B, SchoolName-2-A, SchoolName-2-B."
+msgstr ""
+"Si el nivell 1 és 'NomCentre', nivell 2 és '1,2', i nivell 3 és 'A,B', es "
+"generaran els següents grups: NomCentre, NomCentre-1, NomCentre-2, NomCentre-"
+"1-A, NomCentre-1-B, NomCentre-2-A, NomCentre-2-B."
+
+#. module: training_group
+#: model:ir.module.module,shortdesc:training_group.module_meta_information
+msgid "Training Expanded Group Management"
+msgstr "Gestió del grup ampliat de Training"
+
+#. module: training_group
+#: sql_constraint:training.group:0
+msgid "It already exists a group with this name"
+msgstr "Ja existeix un grup amb aquest nom"
+
+#. module: training_group
+#: selection:training.create.groups.wizard,state:0
+msgid "Draft"
+msgstr "Esborrany"
+
+#. module: training_group
+#: model:ir.model,name:training_group.model_training_create_groups_wizard
+msgid "training.create.groups.wizard"
+msgstr "formació.crea.grups.assistent"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level1:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 1"
+msgstr "Nivell 1"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+#: field:training.create.groups.wizard,session_ids:0
+msgid "Sessions"
+msgstr "Edicions"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level2:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 2"
+msgstr "Nivell 2"
+
+#. module: training_group
+#: model:ir.actions.act_window,name:training_group.training_create_groups_act
+msgid "Groups Generator"
+msgstr "Genera grups"
+
+#. module: training_group
+#: constraint:training.group:0
+msgid "Error! You can not create recursive parent group."
+msgstr "Error! No podeu crear un pare de grup recursiu."
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Generate"
+msgstr "Genera"
+
+#. module: training_group
+#: help:training.create.groups.wizard,level3:0
+msgid ""
+"Enter the level 3 values separated with commas to construct the group name."
+msgstr ""
+"Introdueixi els valors de nivell 3 separats per comes per construir el nom "
+"dels grups."
+
+#. module: training_group
+#: field:training.group,parent_id:0
+msgid "Parent Group"
+msgstr "Grup pare"
+
+#. module: training_group
+#: model:ir.actions.act_window,name:training_group.training_create_groups_wizard_action
+#: model:ir.ui.menu,name:training_group.training_create_groups_groups_wizard_menu
+#: view:training.create.groups.wizard:0
+msgid "Groups Generator Wizard"
+msgstr "Assistent de generació de grups"
+
+#. module: training_group
+#: help:training.create.groups.wizard,level1:0
+msgid ""
+"You must enter the level 1 group name. Values separated with commas to "
+"construct the group name."
+msgstr ""
+"Teniu que introduir el nom del grup de nivell 1. Valors separats per comes "
+"per construir els noms de grup."
+
+#. module: training_group
+#: help:training.create.groups.wizard,level2:0
+msgid ""
+"Enter the level 2 values separated with commas to construct the group name."
+msgstr ""
+"Introdueixi els valors de nivell 2 separats per comes per construir el nom "
+"dels grups."
+
+#. module: training_group
+#: help:training.create.groups.wizard,session_ids:0
+msgid "The session related with the groups."
+msgstr "La edició relacionada amb els grups."
+
+#. module: training_group
+#: field:training.create.groups.wizard,state:0
+msgid "State"
+msgstr "Estat"
+
+#. module: training_group
+#: model:ir.module.module,description:training_group.module_meta_information
+msgid "Expand group features of the training module"
+msgstr "Amplia les característiques de grup del mòdul de formació"
+
+#. module: training_group
+#: selection:training.create.groups.wizard,state:0
+msgid "Done"
+msgstr "Fet"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level_generate_seances:0
+#: field:training.group,generate_seances:0
+msgid "Generate Seances"
+msgstr "Genera Sessions"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Close"
+msgstr "Tanca"

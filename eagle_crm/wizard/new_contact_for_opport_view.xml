@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/new_contact_for_opport_view.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="eagle_view_nc4o_partner_contact_form">
+        <field name="name">eagle.nc4o.res.partner.contact.form</field>
+        <field name="model">eagle.contact4opport</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Partner Contact">
+                <group colspan="4" col="6">
+                    <field name="title" select="1" widget="selection" domain="[('domain', '=', 'contact')]" size="0"/>
+                    <field name="name" select="1"/>
+                    <field name="first_name" select="1"/>
+                </group>
+                <notebook colspan="4" >
+                    <page string="General">                        
+                       <group colspan="4" col="4">
+                            <field colspan="2" name="seq"/>
+                            <newline/>
+                            <field colspan="4" name="function"/>
+                            <newline/>
+                            <group colspan="2" col="4">
+                                <separator string="Communication" colspan="4"/>
+                                <field name="mobile"/>
+                                <field name="email"  widget="email"/>
+                                <field name="website"/>
+                            </group>
+                            <group colspan="2" col="1">
+                                <separator string="Photo" colspan="4"/>
+                                <field name="photo" widget='image' nolabel="1"/>
+                            </group>
+                       </group> 
+                    </page>
+                    <page string="Extra Information">                        
+                        <field name="active"/>
+                        <field name="lang_id" widget="selection"/>
+                        <field name="country_id"/>
+                        <field name="birthdate"/>
+                    </page>
+                    <page string="Notes">
+                        <field name="comment" nolabel="1"/>
+                    </page>
+                    
+                </notebook>
+                <separator string="" colspan="4" />
+				<group col="4" colspan="4">
+					<button special="cancel" string="Cancel" icon="gtk-cancel"/>
+					<button name="make_contact" string="Create" type="object" icon="gtk-ok"/>
+				</group>
+            </form>
+        </field>
+    </record>
+
+	<record model="ir.actions.act_window" id="eagle_action_newcontact4opport">
+		<field name="name">Create a Contact</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">eagle.contact4opport</field>
+		<field name="view_type">form</field>
+		<field name="view_id" ref="eagle_view_nc4o_partner_contact_form"/>
+		<field name="target">new</field>
+	</record>
+
+</data>
+</openerp>

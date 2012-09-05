@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+        <record model="dm.sysmsg" id="dm_sysmsg_transition_deleted">
+            <field name="name">Step Transition Deleted</field>
+            <field name="code">step_stransition_deleted</field>
+            <field name="state">freeze</field>
+            <field name="message">Transition was deleted.</field>
+            <field name="result" eval="0" />
+        </record>
+
+    </data>
+</openerp>

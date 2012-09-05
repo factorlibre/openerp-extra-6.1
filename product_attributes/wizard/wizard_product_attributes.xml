@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="wizard_product_attributes" model="ir.ui.view">
+            <field name="name">product.attributes.wizard.form</field>
+            <field name="model">product.attributes.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Copy attributes">
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','done')]}">
+                    <label string="Are you sure to copy attributes to field product?" colspan="4"/>
+                    <field name="field" widget="selection"/><newline/>
+                    <field name="product_to"/><newline/>
+                    <field name="lang" widget="selection"/><newline/>
+                </group>
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','first')]}">
+                    <field name="result"/><newline/>
+                </group>
+                <group col="2" colspan="4">
+                    <field name="state" invisible="1" />
+                    <button string="Cancel" special="cancel" icon="gtk-cancel" states="first" />
+                    <button string="Copy" name="copy_attributes" type="object" icon="gtk-ok" states="first" />
+                    <button string="Close" special="cancel" icon="gtk-ok" states="done" />
+                </group>
+            </form>
+            </field>
+        </record>
+
+        <act_window name="Copy Attributes"
+            res_model="product.attributes.wizard"
+            src_model="product.product"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_product_attributes"
+            groups="base.group_extended"/>
+
+        <record id="wizard_product_attributes_fields" model="ir.ui.view">
+            <field name="name">product.attributes.fields.wizard.form</field>
+            <field name="model">product.attributes.fields.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Attribute Fields">
+                <separator string="Open Attribute Fields"/>
+                <newline />
+                <label string="Open product in new tab and edit fields by attribute" colspan="2"/>
+                <group col="2" colspan="4">
+                    <button string="Cancel" special="cancel" icon="gtk-cancel" />
+                    <button string="Open" name="open_attribute_fields" type="object" icon="gtk-ok" />
+                </group>
+            </form>
+            </field>
+        </record>
+
+        <act_window name="Attribute Fields"
+            res_model="product.attributes.fields.wizard"
+            src_model="product.product"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_product_attributes_fields"
+            groups="base.group_extended"/>
+    </data>
+</openerp>

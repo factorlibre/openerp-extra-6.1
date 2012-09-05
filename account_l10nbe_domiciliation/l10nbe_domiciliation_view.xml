@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+<!-- Account Invoice object view (inherited) -->
+        <record model="ir.ui.view" id="invoice_form_domicile">
+            <field name="name">account.invoice.domicile.form</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="period_id" position="before">
+                    <field name="domiciled"/>
+                    <field name="domiciled_send_date"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="invoice_form_partner_domiciled">
+            <field name="name">account.invoice.partner.domicile.form</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="replace">
+                    <field name="partner_id" on_change="on_change_partner_id(type, partner_id, date_invoice,payment_term)"/>
+                </field>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="supplier_invoice_form_domicile">
+            <field name="name">supplier.invoice.domicile.form</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <field name="period_id" position="before">
+                    <field name="domiciled"/>
+                    <field name="domiciled_send_date"/>
+                </field>
+            </field>
+        </record>
+
+
+<!-- Partner object view (inherited) -->
+        <record model="ir.ui.view" id="view_partner_domicile_form">
+            <field name="name">res.partner.domicile.form</field>
+            <field name="type">form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="date" position="after">
+                    <field name="domiciliation"/>
+                </field>
+            </field>
+        </record>
+
+    <record model="ir.ui.view" id="view_partner_form_inherit_code">
+        <field name="name">res.partner.form.insti.code.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="bank" position="before">
+                <field name="institution_code" select="1"/>
+                <newline/>
+            </field>
+        </field>
+    </record>
+
+<!--  Export Logs views and menuitems-->
+
+    <record model="ir.ui.view" id="view_account_pay_tree">
+            <field name="name">invoice.export.log.tree</field>
+            <field name="model">invoice.export.log</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Payment Export Logs">
+                    <field name="file"/>
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="note"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_payment_mode_form">
+            <field name="name">invoice.export.log.form</field>
+            <field name="model">invoice.export.log</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Payment Export Logs">
+                    <field name="create_date" select="1"/>
+                    <field name="create_uid" select="2"/>
+                    <newline/>
+                    <field name="file" colspan="4" select="1"/>
+                    <newline/>
+                    <field name="note" colspan="4"/>
+                    <newline/>
+                    <field name="state" select="2"/>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_account_invoice_log_tree">
+            <field name="name">Invoice Export Logs</field>
+            <field name="res_model">invoice.export.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            name="Invoice Export" parent="account.menu_finance_configuration"
+            id="menu_action_action_invoice_export" />
+
+        <menuitem
+            parent="menu_action_action_invoice_export"
+            id="menu_action_action_invoice_export_tree" action="action_account_invoice_log_tree"/>
+
+    </data>
+</openerp>

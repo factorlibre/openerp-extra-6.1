@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <wizard
+            string="Extract Customers"
+            model="dm.address.segmentation"
+            name="wizard.extract.customer"
+            id="wizard_extract_customers"/>
+
+		<wizard
+            string="Force Extraction"
+            model="dm.campaign.proposition.segment"
+            name="wizard.force.extraction"
+            id="wizard_force_extraction"/>
+
+	</data>
+</openerp>

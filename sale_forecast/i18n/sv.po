@@ -1,0 +1,518 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_forecast
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:26+0000\n"
+"PO-Revision-Date: 2011-02-15 15:29+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sale_forecast
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "Progress"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,forecast_rate:0
+#: field:sale.forecast.line,forecast_rate:0
+msgid "Progress (%)"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "TITLE COMPANY"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_cases
+msgid "Cases"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_line_graph_no_sale_order
+msgid "Forecasting base on Number of sales order done"
+msgstr ""
+
+#. module: sale_forecast
+#: wizard_view:sale.forecast.salesman,init:0
+msgid "Sale Forecast by Salesman"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+#: field:sale.forecast,note:0
+msgid "Notes"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,final_evolution:0
+msgid "Bad"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,computation_type:0
+msgid "Number of sale order"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,product_product:0
+msgid "Products"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.report.xml,name:sale_forecast.report_sale_forecast_salesman
+#: rml:sale.forecast.salesman:0
+msgid "Sales Forecast By Salesman"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "<fill color=\"darkblue\"/>"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "<stroke color=\"darkblue\"/>"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.module.module,description:sale_forecast.module_meta_information
+msgid ""
+"This module allows manager to do their sales forecast.\n"
+"Different reports are set up for forecast and sales analysis.\n"
+"    "
+msgstr ""
+"This module allows manager to do their sales forecast.\n"
+"Different reports are set up for forecast and sales analysis.\n"
+"    "
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Forecast Details"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,state_confirmed:0
+msgid "Confirmed"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_no_invoice
+msgid "Number Of Invoice"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_report
+#: view:sale.forecast.line:0
+msgid "Forecast Reports"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,state:0
+#: rml:sale.forecast.detail:0
+msgid "State"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,final_evolution:0
+msgid "Performance"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_my_managing
+msgid "My Managing Sales Forecast"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Filter on Cases Sections"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,final_evolution:0
+msgid "Good"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_amount_invoice
+#: selection:sale.forecast.line,computation_type:0
+msgid "Amount Invoiced"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,computation_type:0
+msgid "Number of Invoice"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Forecasts"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.model,name:sale_forecast.model_sale_forecast_line
+msgid "Forecast Line"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.salesman:0
+msgid "para >"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_line_graph_amount_invoiced
+msgid "Forecasting base on Amount Invoiced Report"
+msgstr ""
+
+#. module: sale_forecast
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_line_graph_cases
+msgid "Forecasting base on Number of Cases "
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,date_to:0
+#: rml:sale.forecast.detail:0
+msgid "End Period"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_line_graph_amount_sales
+msgid "Forecasting base on Amount Sales"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_amount_sales
+#: selection:sale.forecast.line,computation_type:0
+msgid "Amount Sales"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,final_evolution:0
+msgid "Noraml"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,crm_case_section:0
+msgid "Case Section"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast,state:0
+msgid "Canceled"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+msgid ""
+"<lineStyle kind=\"LINEBELOW\" colorName=\"#000000\" start=\"0,0\" stop=\"-"
+"1,0\"/>         <lineStyle kind=\"LINEBELOW\" colorName=\"#000000\" "
+"start=\"0,1\" stop=\"-1,1\"/>"
+msgstr ""
+
+#. module: sale_forecast
+#: wizard_field:sale.forecast.salesman,init,date_start:0
+msgid "Start Date"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,user_id:0
+#: rml:sale.forecast.salesman:0
+#: wizard_field:sale.forecast.salesman,init,user_id:0
+msgid "Salesman"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,final_evolution:0
+msgid "Very Good"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.action_sale_forecast_view_form
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_new
+msgid "New Sales Forecasts"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,forecast_id:0
+msgid "Forecast"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,note:0
+msgid "Note"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast,state:0
+#: field:sale.forecast.line,state_draft:0
+msgid "Draft"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast,state:0
+msgid "Closed"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "<drawRightString x=\"19.8cm\" y=\"28cm\">"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.salesman:0
+msgid "Computation Based on"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,feedback:0
+msgid "Feedback Comment"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.salesman:0
+msgid "</para"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Filter on States"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.model,name:sale_forecast.model_sale_forecast
+#: view:sale.forecast:0
+#: field:sale.forecast,name:0
+#: rml:sale.forecast.detail:0
+msgid "Sales Forecast"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,crm_case_categ:0
+msgid "Case Category"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "COL 1"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "<drawString x=\"4.6cm\" y=\"28.7cm\">"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Feedback"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,computation_type:0
+msgid "Computation Base On"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Filter on Product Categories"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "Header"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "</drawRightString>"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,state_done:0
+msgid "Done"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,state_cancel:0
+#: wizard_button:sale.forecast.salesman,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast,state:0
+msgid "Open"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Forecast Lines"
+msgstr ""
+
+#. module: sale_forecast
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.report.xml,name:sale_forecast.sale_forecast_report1
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "Sale Forecast"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,user_id:0
+#: rml:sale.forecast.detail:0
+msgid "Responsible"
+msgstr ""
+
+#. module: sale_forecast
+#: wizard_button:sale.forecast.salesman,init,print_report:0
+msgid "Print Report"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "logo"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,line_ids:0
+msgid "Forecast lines"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,computed_amount:0
+#: rml:sale.forecast.salesman:0
+msgid "Real Value"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Filter on Cases Categories"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,final_evolution:0
+msgid "To Be Improved"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.module.module,shortdesc:sale_forecast.module_meta_information
+msgid "Sales Forecasts, goals and statistics"
+msgstr ""
+
+#. module: sale_forecast
+#: wizard_field:sale.forecast.salesman,init,date_end:0
+msgid "End Date"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast,date_from:0
+#: rml:sale.forecast.detail:0
+msgid "Start Period"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_view_form_current
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_current
+msgid "Current Sales Forecast"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "</drawString>"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast_no_sales_order
+msgid "Number of Sales order"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.ui.menu,name:sale_forecast.menu_sale_forecast
+msgid "Sales Forecasts"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,product_categ:0
+msgid "Product Category"
+msgstr ""
+
+#. module: sale_forecast
+#: selection:sale.forecast.line,computation_type:0
+msgid "No of Cases"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Filter on Products"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.act_window,name:sale_forecast.sale_forecast_line_graph_invoice_fix
+msgid "Forecasting base on Number of Invoice done"
+msgstr ""
+
+#. module: sale_forecast
+#: field:sale.forecast.line,amount:0
+#: rml:sale.forecast.salesman:0
+msgid "Value Forecasted"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "Page"
+msgstr ""
+
+#. module: sale_forecast
+#: model:ir.actions.wizard,name:sale_forecast.wizard_sale_forecast_salesman
+msgid "Sale Forecast By Salesman"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "Results"
+msgstr ""
+
+#. module: sale_forecast
+#: rml:sale.forecast.detail:0
+#: rml:sale.forecast.salesman:0
+msgid "1cm 27.7cm 20cm 27.7cm"
+msgstr ""
+
+#. module: sale_forecast
+#: view:sale.forecast:0
+msgid "States"
+msgstr ""

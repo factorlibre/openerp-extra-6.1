@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - list</name>
+  <icon>list.png</icon>
+  <connections/>
+  <aspectratio type="free"/>
+  <svg:svg>
+    <svg:image x="0" y="0" width="40.35" height="16.75" href="list_real.png"/>
+  </svg:svg>
+</shape>

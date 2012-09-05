@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_promos_rules","sale_promotions_promos_rules","model_promos_rules","base.group_sale_manager",1,1,1,1
+"access_promos_rules_conditions_exps","sale_promotions_promos_rules_conditions_exps","model_promos_rules_conditions_exps","base.group_sale_manager",1,1,1,1
+"access_promos_rules_actions","sale_promotions_promos_rules_actions","model_promos_rules_actions","base.group_sale_manager",1,1,1,1

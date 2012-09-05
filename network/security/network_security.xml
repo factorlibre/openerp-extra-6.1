@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="group_network_user" model="res.groups">
+            <field name="name">Network / User</field>
+        </record>
+
+        <record id="group_network_manager" model="res.groups">
+            <field name="name">Network / Manager</field>
+        </record>
+
+    </data>
+</openerp>

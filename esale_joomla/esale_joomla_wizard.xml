@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<openerp>
+  <data>
+
+    <wizard
+      string="Export Categories"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.export.categories"
+      id="wizard_esale_joomla_web_export_categories"/>
+    <wizard
+      string="Export"
+      model="esale_joomla.category_map"
+      name="esale_joomla.category_map.wizard.export"
+      id="wizard_esale_joomla_category_map_export"/>
+    <menuitem
+      name="Export Web Categories" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_export_categories"
+      type="wizard"
+      sequence="10"
+      id="menu_esale_joomla_web_export_category"/>
+    <wizard
+      string="Import Categories"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.import.categories"
+      id="wizard_esale_joomla_web_import_categories"/>
+    <wizard
+      string="Import"
+      model="esale_joomla.category_map"
+      name="esale_joomla.category_map.wizard.import"
+      id="wizard_esale_joomla_category_map_import"/>
+    <menuitem
+      name="Import Web Categories" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_import_categories"
+      type="wizard"
+      sequence="130"
+      id="menu_esale_joomla_web_import_category"/>
+
+    <wizard
+      string="Export Taxes"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.export.taxes"
+      id="wizard_esale_joomla_web_export_taxes"/>
+    <wizard
+      string="Export"
+      model="esale_joomla.tax_map"
+      name="esale_joomla.tax_map.wizard.export"
+      id="wizard_esale_joomla_tax_map_export"/>
+    <menuitem
+      name="Export Taxes" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_export_taxes"
+      type="wizard"
+      sequence="30"
+      id="menu_esale_joomla_web_export_tax"/>
+    <wizard
+      string="Import Taxes"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.import.taxes"
+      id="wizard_esale_joomla_web_import_taxes"/>
+    <wizard
+      string="Import"
+      model="esale_joomla.tax_map"
+      name="esale_joomla.tax_map.wizard.import"
+      id="wizard_esale_joomla_tax_map_import"/>
+    <menuitem
+      name="Import Taxes" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_import_taxes"
+      type="wizard"
+      sequence="100"
+      id="menu_esale_joomla_web_import_tax"/>
+
+    <wizard
+      string="Export to website"
+      model="product.product"
+      name="esale_joomla.product_map.wizard.export"
+      id="wizard_esale_joomla_product_map_export"/>
+    <wizard
+      string="Export Products"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.export.products"
+      id="wizard_esale_joomla_web_export_products"/>
+    <menuitem
+      name="Export Products" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_export_products"
+      type="wizard"
+      sequence="40"
+      id="menu_esale_joomla_products"/>
+
+    <wizard
+      string="Import Product Types"
+      model="esale_joomla.web"
+      name="esale_joomla.web.wizard.import.producttypes"
+      id="wizard_esale_joomla_web_import_producttype"/>
+    <wizard
+      string="Import"
+      model="esale_joomla.producttype_map"
+      name="esale_joomla.producttype_map.wizard.import"
+      id="wizard_esale_joomla_producttype_map_import"/>
+    <menuitem
+      name="Import Product Types" parent="menu_esale_synch"
+      action="wizard_esale_joomla_web_import_producttype"
+      type="wizard"
+      sequence="110"
+      id="menu_esale_joomla_producttypes"/>
+
+    <wizard
+      string="Update stocks"
+      model="esale_joomla.web"
+      name="esale_joomla.stocks"
+      menu="False"
+      id="wizard_esale_joomla_stocks"/>
+    <menuitem
+      name="Export Inventory Level" parent="menu_esale_synch"
+      action="wizard_esale_joomla_stocks"
+      type="wizard"
+      sequence="50"
+      id="menu_wizard_esale_joomla_stocks"/>
+
+    <wizard
+      string="Import sale orders"
+      model="esale_joomla.web"
+      name="esale_joomla.saleorders"
+      menu="False"
+      id="wizard_esale_joomla_saleorders"/>
+    <menuitem
+      name="Import eSales Orders" parent="menu_esale_synch"
+      action="wizard_esale_joomla_saleorders"
+      type="wizard"
+      sequence="120"
+      id="menu_esale_joomla_saleorders"/>
+
+  </data>
+</openerp>
+

@@ -1,0 +1,365 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:13:17+0000\n"
+"PO-Revision-Date: 2009-12-10 10:13:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,asked_amount:0
+msgid "Asked Amount"
+msgstr "Montant réclamé"
+
+#. module: cci_timesheet
+#: wizard_field:cci_timesheet.create_lines,init,date1:0
+msgid "Date1"
+msgstr "Date 1"
+
+#. module: cci_timesheet
+#: selection:cci.timesheet,state:0
+msgid "Confirmed"
+msgstr "Confirmée"
+
+#. module: cci_timesheet
+#: wizard_field:cci_timesheet.create_lines,init,date2:0
+msgid "Date2"
+msgstr "Date 2"
+
+#. module: cci_timesheet
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commence par x_ et ne pas comporter de caractères spéciaux"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,zip_id:0
+#: field:crm.case,zip_id:0
+#: field:project.task.work,zip_id:0
+msgid "Zip"
+msgstr "Code postal"
+
+#. module: cci_timesheet
+#: view:cci.timesheet:0
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: cci_timesheet
+#: model:ir.model,name:cci_timesheet.model_cci_timesheet_line
+msgid "CCI Timesheet Line"
+msgstr "Ligne de Timesheet"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,hour_from:0
+#: field:report.timesheet.affectation,hour_from:0
+msgid "Hour From"
+msgstr "Heure de début"
+
+#. module: cci_timesheet
+#: view:cci.timesheet:0
+#: field:cci_timesheet.line,timesheet_id:0
+#: model:ir.actions.act_window,name:cci_timesheet.action_timesheet_tree
+#: model:ir.ui.menu,name:cci_timesheet.menu_hr_root
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_timesheet
+#: model:ir.ui.menu,name:cci_timesheet.menu_timesheet
+msgid "Timesheet"
+msgstr "Timesheet"
+
+#. module: cci_timesheet
+#: wizard_button:cci_timesheet.create_lines,init,open:0
+msgid "Create lines"
+msgstr "Créer des lignes"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: cci_timesheet
+#: model:ir.model,name:cci_timesheet.model_report_timesheet_affectation
+msgid "Report on Timesheet and Affectation"
+msgstr "Rapport sur les timesheet et les affectations"
+
+#. module: cci_timesheet
+#: selection:cci.timesheet,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,date_from:0
+#: field:cci_timesheet.affectation,date_from:0
+#: field:report.timesheet.affectation,date_from:0
+msgid "From Date"
+msgstr "Date de début"
+
+#. module: cci_timesheet
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrecte dans la définition de l'action"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,diff_hours:0
+msgid "Hour To - Hour From"
+msgstr "Heure de fin - heure de fin"
+
+#. module: cci_timesheet
+#: field:report.timesheet.affectation,user_name:0
+msgid "Employee"
+msgstr "Employé"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.grant,name:0
+msgid "Grant Name"
+msgstr "Nom de la subvention"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.affectation,percentage:0
+#: field:report.timesheet.affectation,th_percentage:0
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#. module: cci_timesheet
+#: view:cci.timesheet:0
+msgid "Set to Draft"
+msgstr "Mettre à Brouillon"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,hour_to:0
+#: field:report.timesheet.affectation,hour_to:0
+msgid "Hour To"
+msgstr "Heure de fin"
+
+#. module: cci_timesheet
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_reporting
+msgid "Reporting"
+msgstr "Reporting"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,description:0
+#: field:report.timesheet.affectation,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,line_ids:0
+#: field:cci_timesheet.grant,line_ids:0
+#: view:cci_timesheet.line:0
+#: model:ir.actions.act_window,name:cci_timesheet.action_cci_timesheet_line_tree
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_line
+msgid "Timesheet Lines"
+msgstr "Lignes de timesheet"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,grant_id:0
+#: field:cci_timesheet.affectation,grant_id:0
+#: field:cci_timesheet.line,grant_id:0
+#: field:crm.case,grant_id:0
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_config_grant
+#: field:project.task.work,grant_id:0
+#: field:report.timesheet.affectation,grant_name:0
+msgid "Grant"
+msgstr "Subvention"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.affectation,rate:0
+#: field:report.timesheet.affectation,rate:0
+msgid "Rate"
+msgstr "Taux"
+
+#. module: cci_timesheet
+#: model:ir.model,name:cci_timesheet.model_cci_timesheet
+#: model:ir.module.module,shortdesc:cci_timesheet.module_meta_information
+msgid "CCI Timesheet"
+msgstr "CCI Timesheet"
+
+#. module: cci_timesheet
+#: field:report.timesheet.affectation,diff_hours:0
+msgid "Hours"
+msgstr "Heures"
+
+#. module: cci_timesheet
+#: wizard_field:cci_timesheet.create_lines,init,grant:0
+msgid "Grants"
+msgstr "Subventions"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.affectation,user_id:0
+#: field:cci_timesheet.line,user_id:0
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,kms:0
+msgid "Kilometers"
+msgstr "Kilomètres"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,sending_date:0
+msgid "Sending Date"
+msgstr "Date d'envoi"
+
+#. module: cci_timesheet
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: cci_timesheet
+#: model:ir.actions.act_window,name:cci_timesheet.action_report_timesheet_affectation
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_reporting_employee
+#: view:report.timesheet.affectation:0
+msgid "Timesheets per Employee"
+msgstr "Timesheets par employé"
+
+#. module: cci_timesheet
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,name:0
+#: field:cci_timesheet.affectation,name:0
+#: field:cci_timesheet.line,name:0
+#: field:report.timesheet.affectation,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.affectation,hours_per_week:0
+#: field:report.timesheet.affectation,hours_per_week:0
+msgid "Hours Per Week"
+msgstr "Heures par semaine"
+
+#. module: cci_timesheet
+#: wizard_view:cci_timesheet.create_lines,init:0
+msgid "Create Timesheet Line"
+msgstr "Créer la ligne de timesheet"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,contact_id:0
+#: field:project.task.work,contact_id:0
+msgid "Contact"
+msgstr "Contact"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,partner_id:0
+#: field:project.task.work,partner_id:0
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: cci_timesheet
+#: selection:cci.timesheet,state:0
+msgid "Cancelled"
+msgstr "Annulée"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,accepted_amount:0
+msgid "Accepted Amount"
+msgstr "Montant accepté"
+
+#. module: cci_timesheet
+#: view:cci.timesheet:0
+msgid "Validate"
+msgstr "Valider"
+
+#. module: cci_timesheet
+#: model:ir.model,name:cci_timesheet.model_cci_timesheet_grant
+msgid "CCI Timesheet Grant"
+msgstr "Timesheet de subvention"
+
+#. module: cci_timesheet
+#: model:ir.module.module,description:cci_timesheet.module_meta_information
+msgid "\n"
+"        A Customized timesheet module.\n"
+"    "
+msgstr "\n"
+"        un module de timesheet personalisé.\n"
+"    "
+
+#. module: cci_timesheet
+#: field:crm.case,timesheet_line_id:0
+#: field:project.task.work,timesheet_line_id:0
+msgid "Timesheet Line"
+msgstr "Ligne de timesheet"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,suppl_cost:0
+msgid "Supplementary Cost"
+msgstr "Coûts supplémentaire"
+
+#. module: cci_timesheet
+#: view:cci_timesheet.affectation:0
+#: model:ir.actions.act_window,name:cci_timesheet.action_timesheet_affectation_tree
+#: model:ir.model,name:cci_timesheet.model_cci_timesheet_affectation
+#: model:ir.ui.menu,name:cci_timesheet.menu_time_timesheet_affect
+msgid "Timesheet Affectation"
+msgstr "Affectation de timesheet"
+
+#. module: cci_timesheet
+#: field:cci.timesheet,date_to:0
+#: field:cci_timesheet.affectation,date_to:0
+#: field:report.timesheet.affectation,date_to:0
+msgid "To Date"
+msgstr "Date de fin"
+
+#. module: cci_timesheet
+#: view:cci_timesheet.line:0
+msgid "General"
+msgstr "Général"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.grant,affectation_ids:0
+msgid "Affectation Lines"
+msgstr "Lignes d'affectation"
+
+#. module: cci_timesheet
+#: field:cci_timesheet.line,day_date:0
+#: field:report.timesheet.affectation,day_date:0
+msgid "Date of the Day"
+msgstr "Date du jour"
+
+#. module: cci_timesheet
+#: view:cci_timesheet.line:0
+msgid "Extra Info"
+msgstr "Info supplémentaire"
+
+#. module: cci_timesheet
+#: view:cci.timesheet:0
+#: wizard_button:cci_timesheet.create_lines,init,end:0
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: cci_timesheet
+#: field:report.timesheet.affectation,affectation_name:0
+msgid "Affectation"
+msgstr "Affectation"
+
+#. module: cci_timesheet
+#: selection:cci.timesheet,state:0
+msgid "Validated"
+msgstr "Validée"
+
+#. module: cci_timesheet
+#: view:cci_timesheet.grant:0
+#: model:ir.actions.act_window,name:cci_timesheet.action_grant_tree
+msgid "Timesheet Grant"
+msgstr "Timesheet de subvention"
+
+#. module: cci_timesheet
+#: field:report.timesheet.affectation,timesheet_id:0
+msgid "Timesheet Ref"
+msgstr "Réf de timesheet"
+
+#. module: cci_timesheet
+#: model:ir.actions.wizard,name:cci_timesheet.cci_timesheet_lines
+#: model:ir.ui.menu,name:cci_timesheet.cci_timesheet_lines_menu
+msgid "Create Timesheet Lines"
+msgstr "Créer des lignes de timesheet"
+

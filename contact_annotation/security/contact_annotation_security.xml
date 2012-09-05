@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+        <record id="contact_annotations_manager_group" model="res.groups">
+            <field name="name">Contact Annotations Manager</field>
+        </record>
+    </data>
+</openerp>

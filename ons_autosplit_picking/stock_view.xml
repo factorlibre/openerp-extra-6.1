@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+  File: stock_view.xml
+  Module: ons_autosplit_picking
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="ons_autosplit_tracking_form">
+			<field name="name">Open-Net AutoSplit Tracking Form</field>
+			<field name="model">stock.tracking</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="stock.view_tracking_form"/>
+			<field name="arch" type="xml">
+				<field name="active" position="after">
+					<field name="prodlot_id"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="ons_autosplit_prodlot_form">
+			<field name="name">Open-Net AutoSplit Production Lot Form</field>
+			<field name="model">stock.production.lot</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="stock.view_production_lot_form"/>
+			<field name="arch" type="xml">
+				<page string="Stock Moves" position="after">
+					<page string="Corresponding trackings" groups="base.group_extended">
+						<field name="tracking_ids" nolabel="1" widget="one2many_list"/>
+					</page>
+				</page>
+			</field>
+		</record>
+
+	</data>
+</openerp>

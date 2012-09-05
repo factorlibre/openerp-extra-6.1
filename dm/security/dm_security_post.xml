@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+  <record id="res_groups_control" model="res.groups">
+    <field name="name">Direct Marketing / Control</field>
+    <field eval="[(4, ref('menu_dm_config')), (4, ref('menu_dm_config_lowlevel')), (4, ref('menu_dm_config_lowlevel_campaign_doc')), (4, ref('menu_action_dm_campaign_document'))]" name="menu_access"/>
+  </record>
+
+</data>
+</openerp>
+

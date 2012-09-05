@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="picking_in_inherited_search_view">
+            <field name="name">stock.picking.search</field>
+            <field name="model">stock.picking</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="stock.view_picking_in_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="/search[@string='Incoming Shipments']/group/filter[@string='Back Orders']" position="after">
+                    <filter icon="terp-dolar" name="to_invoice" string="To Invoice" domain="[('invoice_state','=','2binvoiced')]" help="Delivery orders to invoice"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="stock_picking_extension_inherited_form_view">
+            <field name="name">stock.picking.extension.inherited.form.view</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page/field/tree/field[@name='product_id']" position="replace">
+                    <field name="name"/>
+                </xpath>
+                <xpath expr="/form/notebook/page/field/form/group/field[@name='name']" position="replace">
+                    <field name="name" colspan="4"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="stock_picking_out_extension_inherited_form_view">
+            <field name="name">stock.picking.out.extension.inherited.form.view</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="stock.view_picking_out_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/group/field[@name='stock_journal_id']" position="after">
+                    <field name="client_order_ref"/>
+                </xpath>
+                <xpath expr="/form/notebook/page/field/tree/field[@name='product_id']" position="replace">
+                    <field name="name"/>
+                </xpath>
+                <xpath expr="/form/notebook/page/field/form/group/field[@name='name']" position="replace">
+                    <field name="name" colspan="4"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="stock_picking_in_extension_inherited_form_view">
+            <field name="name">stock.picking.in.extension.inherited.form.view</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="stock.view_picking_in_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/group/group/field[@name='stock_journal_id']" position="after">
+                    <field name="client_order_ref"/>
+                </xpath>
+                <xpath expr="/form/notebook/page/field/tree/field[@name='product_id']" position="replace">
+                    <field name="name"/>
+                </xpath>
+                <xpath expr="/form/notebook/page/field/form/group/field[@name='name']" position="replace">
+                    <field name="name" colspan="4"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,692 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* fleet_maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:43:14+0000\n"
+"PO-Revision-Date: 2009-11-25 14:43:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+msgid "Orders Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,maintenance_product_qty:0
+#: field:sale.order.line,maintenance_product_qty:0
+msgid "Maintenance Product Quantity"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Incident date"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Action Description"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.fleet_normal_action
+#: model:ir.ui.menu,name:fleet_maintenance.all_fleets
+msgid "All Fleets"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:crm.case.section:0
+msgid "Error ! You cannot create recursive sections."
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,prodlot_id:0
+msgid "Serial Number"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,intrinsic_anniversary_time:0
+msgid "Intrinsic Time"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,incoming_picking_id:0
+msgid "Incoming Picking"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Claim Description"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:product.product,is_maintenance:0
+msgid "Is Maintenance?"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Incident Cost"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.location:0
+msgid "Fleet Invoice Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:account.invoice.line:0
+#: view:res.partner:0
+#: view:sale.order:0
+#: field:sale.order.line,fleet_id:0
+#: view:stock.location:0
+#: selection:stock.location,fleet_type:0
+msgid "Sub Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Incident Revenue"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Extra Info"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Identification"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:account.analytic.account:0
+msgid "Error! You can not create recursive analytic accounts."
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Responsible"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+msgid "End"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Check Availability"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,incident_ref:0
+msgid "Incident Ref"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,maintenance_month_qty:0
+#: field:sale.order.line,maintenance_month_qty:0
+msgid "Maintenance Month Quantity"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Stage: "
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+#: field:stock.location,account_invoice_lines:0
+#: field:stock.location,fleet_account_invoice_lines:0
+msgid "Invoice Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.fleet_incident_action
+#: model:ir.ui.menu,name:fleet_maintenance.all_fleet_incidents
+msgid "All Fleet Incidents"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.module.module,description:fleet_maintenance.module_meta_information
+msgid "\n"
+"Manage the maintenance contracts of a product fleet (streaming servers originally).\n"
+"\n"
+"Now partners have fleets and sub-fleets for which they can buy products that can eventually\n"
+"be covered by paid maintenance contracts.\n"
+"\n"
+"Fleet: a stock.location for which all products have the same maintenance end date anniversary.\n"
+"Indeed, it's useful to have several maintenance contracts for a given partner with a single anniversary date\n"
+"for an eventual renewal.\n"
+"Meaning that if the customer wants a different end date anniversaries for two mainteance contracts,\n"
+"then he should have several Fleets.\n"
+"Products don't go in the Fleets actually, they go in their Sub-Fleets instead.\n"
+"\n"
+"Sub-Fleet: a stock.location child of a Fleet which might contains some purchased products.\n"
+"In a sub-fleet, ALL the maintenance contracts of the products have exactly the same start date and end date.\n"
+"Meaning that if a customer need several different start date or some years offset for the end date,\n"
+"then he should have several Sub-Fleets.\n"
+"\n"
+"This module also take care of proposing ideal maintenance dates given a few rules that might\n"
+"be changed in your specific case (Ideally they wouldn't be hardcoded or at least have some\n"
+"parameters externalized to the database).\n"
+"\n"
+"Finally, this module also takes care of after sale incidents, extending the native CRM and thus\n"
+"preserving all the CRM power.\n"
+"Given a product serial number (prodlot), it's able to retrieve the Fleet and Partner and know if a product is still covered\n"
+"by a maintenance contract or not. It also deals with reparation movements in a simple manner, that\n"
+"might later on made compatible with the mrp_repair module which was too complex for our first use here. \n"
+"\n"
+"This module is also fully compliant with the native prodlot tracking of OpenERP to knwo\n"
+"where is a serial number, be it a finished product or only a part, and even after a replacement\n"
+"if movements are properly entered in the crm incident. For a better tracking experience, it's\n"
+"advised to use it along with the mrp_prodlot_autosplit module. \n"
+"    "
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:stock.location,name:fleet_maintenance.stock_location_extension0
+msgid "extension1"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,picking_id:0
+msgid "Repair Picking"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Incident Info"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Dates"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.ui.menu,name:fleet_maintenance.menu_fleet_extensions
+#: view:stock.location:0
+msgid "Fleet Extensions"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.ui.menu,name:fleet_maintenance.menu_fleet_maintenance
+msgid "Fleet Maintenance Contracts"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.sub_fleet_normal_action
+#: model:ir.ui.menu,name:fleet_maintenance.all_sub_fleets
+msgid "All Sub Fleets"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+#: view:stock.picking:0
+msgid "Cancel"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Contact"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Qualification"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Force Availability"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Type of Action"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,expire_time:0
+msgid "Maintenance Expire Time"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:sale.order:0
+#: view:stock.location:0
+msgid "Maintenance Dates"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Communication history"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:account.invoice.line:0
+msgid "Analytic Accounting"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.action_maintenance_new
+#: model:ir.ui.menu,name:fleet_maintenance.menu_action_maintenance_new
+msgid "New Maintenance quotation"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.analytic.line,invoice_line_id:0
+msgid "Invoice Line"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Supplier Return?"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: field:res.partner,sub_fleets:0
+#: view:stock.location:0
+msgid "Sub Fleets"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,product_id:0
+msgid "Related Product"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Cancel Availability"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Historize"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.location:0
+msgid "Stock location"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,outgoing_picking_id:0
+msgid "Outgoing Picking"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+msgid "Start"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Action Information"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:account.invoice.line:0
+msgid "Calendar View"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.location:0
+#: field:stock.location,anniversary_time:0
+msgid "Anniversary Time"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:account.invoice.line:0
+#: model:product.category,name:fleet_maintenance.product_category_maintenance0
+#: view:product.product:0
+#: view:product.template:0
+#: view:sale.order:0
+msgid "Maintenance"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Move Information"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,maintenance_end_date:0
+#: field:sale.order.line,maintenance_end_date:0
+msgid "Maintenance End Date"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,is_maintenance:0
+#: field:sale.order.line,is_maintenance:0
+msgid "Is Maintenance"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+#: field:stock.location,crm_cases:0
+#: field:stock.location,fleet_crm_cases:0
+msgid "Events"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Pending"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Status"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.location:0
+msgid "Fleet Orders Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.ui.menu,name:fleet_maintenance.menu_action_fleet_serial_tracking
+msgid "Production Lots"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:crm.case.section,name:fleet_maintenance.crm_case_section_maintenanceincident0
+msgid "Maintenance incident"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.location:0
+msgid "Fleet Events"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.action_fleet_new
+#: model:ir.ui.menu,name:fleet_maintenance.menu_action_fleet_new
+msgid "New Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.action_fleet_extension_new
+#: model:ir.ui.menu,name:fleet_maintenance.menu_action_fleet_extension_new
+msgid "New Fleet Extension"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+msgid "Incidents"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,fleet_id:0
+#: field:account.invoice.line,parent_fleet_id:0
+#: field:crm.case,fleet_id:0
+#: field:crm.case,parent_fleet_id:0
+#: view:res.partner:0
+#: view:sale.order:0
+#: field:sale.order.line,parent_fleet_id:0
+#: view:stock.location:0
+#: selection:stock.location,fleet_type:0
+msgid "Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.module.module,shortdesc:fleet_maintenance.module_meta_information
+msgid "Help managing maintenance contracts related to product fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,related_incoming_picking_state:0
+#: field:crm.case,related_outgoing_picking_state:0
+#: field:crm.case,related_picking_state:0
+msgid "Related Picking State"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "History"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Process Now"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.ui.menu,name:fleet_maintenance.menu_fleet
+#: model:ir.ui.menu,name:fleet_maintenance.menu_main_fleets
+#: view:res.partner:0
+#: field:res.partner,fleets:0
+msgid "Fleets"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,out_supplier_picking_id:0
+msgid "Return From Supplier Picking"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.all_maintenances
+#: model:ir.ui.menu,name:fleet_maintenance.menu_action_all_maintenances
+msgid "All Maintenance Orders"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Done"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Money"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Fleet Incident"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Moves"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Open"
+msgstr ""
+
+#. module: fleet_maintenance
+#: selection:stock.location,fleet_type:0
+msgid "Not a Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:product.template,name:fleet_maintenance.product_product_monthlymaintenancepc0_product_template
+msgid "Monthly Maintenance PC2"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,is_expired:0
+msgid "Expired ?"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:sale.order.line,order_fleet_id:0
+msgid "Default Sale Order Sub Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:product.product,maintenance_analytic_id:0
+msgid "Maintenance Analytic Account"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,in_supplier_picking_id:0
+msgid "Return To Supplier Picking"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,is_fleet_expired:0
+msgid "Is Fleet Expired?"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.actions.act_window,name:fleet_maintenance.fleet_incident_action_new
+#: model:ir.ui.menu,name:fleet_maintenance.new_fleet_incident
+msgid "New Fleet Incident"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+#: field:stock.location,fleet_sale_order_lines:0
+#: field:stock.location,sale_order_lines:0
+msgid "Sale Order Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Process Later"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:ir.ui.menu,name:fleet_maintenance.menu_fleet_incidents
+msgid "Fleet Incidents"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Description"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,parent_partner_id:0
+#: field:stock.location,partner_id:0
+msgid "Customer"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:res.partner:0
+#: view:stock.location:0
+msgid "Name"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,account_analytic_lines:0
+msgid "Analytic Lines"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:sale.order:0
+#: field:sale.order,fleet_id:0
+msgid "Default Sub Fleet"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Send Partner & Historize"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Type of Incident"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,time_to_expire:0
+msgid "Days before expiry"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:crm.case,external_ref:0
+msgid "Ticket Code"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Packing list"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:account.invoice.line,maintenance_start_date:0
+#: field:sale.order.line,maintenance_start_date:0
+msgid "Maintenance Start Date"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:crm.case:0
+msgid "Actions"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Move State"
+msgstr ""
+
+#. module: fleet_maintenance
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr ""
+
+#. module: fleet_maintenance
+#: model:stock.location,name:fleet_maintenance.stock_location_parc0
+msgid "parc1"
+msgstr ""
+
+#. module: fleet_maintenance
+#: field:stock.location,fleet_type:0
+msgid "Fleet type"
+msgstr ""
+
+#. module: fleet_maintenance
+#: view:stock.picking:0
+msgid "Stock Moves"
+msgstr ""
+

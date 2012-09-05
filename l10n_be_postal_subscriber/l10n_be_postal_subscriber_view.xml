@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" ?>
+<openerp>
+    <data>
+
+        <!-- wizards -->
+        <wizard
+            string="Comparaison Photos pour SUMO"
+            model="dated.photo"
+            name="wizard.compare.photos"
+            id="wizard_compare_photos"
+        />
+
+        <!-- Dated Photo -->
+        <record model="ir.ui.view" id="dated_photo_form">
+            <field name="name">dated.photo.form</field>
+            <field name="model">dated.photo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Dated Photo">
+                    <field name="name" select="1"/>
+                    <field name="datetime" select="1"/>
+                    <field name="photo_details_ids" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="dated_photo_tree">
+            <field name="name">dated.photo.tree</field>
+            <field name="model">dated.photo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Dated Photo">
+                     <field name="name"/>
+                     <field name="datetime"/>
+                </tree>
+            </field>
+        </record>
+
+    <menuitem
+        id="postal_subscriber_root"
+        name="Postal Subscriber"/>
+        
+    <record id="open_view_dated_photo" model="ir.actions.act_window">
+            <field name="name">Photos</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">dated.photo</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+        
+    <menuitem
+        action="open_view_dated_photo"
+        id="postal_subscriber_dated_photo_menu"
+        name="Photos"
+        parent="postal_subscriber_root"/>
+
+
+
+<!-- Adding subscription fields-->
+    <record model="ir.ui.view" id="view_paddress_form_inherit">
+        <field name="name">res.partner.address.form</field>
+        <field name="model">res.partner.address</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_address_form1"/>
+			<field name="arch" type="xml">
+				<field name="fax" position="after">
+					<field name="magazine_subscription"/>
+					<field name="magazine_subscription_source"/>
+				</field>
+			</field>
+		</record>
+
+    <record model="ir.ui.view" id="view_pcontact_form_inherit">
+        <field name="name">res.partner.contact.form</field>
+        <field name="model">res.partner.contact</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base_contact.view_partner_contact_form"/>
+        <field name="arch" type="xml">
+            <field name="birthdate" position="after">
+                <field name="magazine_subscription"/>
+                <field name="magazine_subscription_source"/>
+            </field>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_pjob_form_inherit">
+        <field name="name">res.partner.job.form</field>
+        <field name="model">res.partner.job</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base_contact.view_partner_job_form"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="magazine_subscription"/>
+                <field name="magazine_subscription_source"/>
+            </field>
+        </field>
+    </record>
+
+<!-- Adding state_id field on res.partner -->
+<!-- View for res.partner object inherited from base module................ -->
+		<record model="ir.ui.view" id="view_pform_inherit1">
+			<field name="name">res.partner.form</field>
+			<field name="type">form</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="arch" type="xml">
+				<field name="address" position="before">
+					<field name="state_id"/>
+				</field>
+			</field>
+		</record>
+    </data>
+</openerp>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+	<!-- 
+		Order Entry Session
+	-->
+	
+	<record model="ir.ui.view" id="view_dm_order_filter_session_form">
+        <field name="name">dm.order.session.form.inherit</field>
+        <field name="model">dm.order.session</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_order_entry_session.view_dm_order_session_form"/>
+        <field name="arch" type="xml">
+            <field name="order_ids" position="after">
+				<separator string="Filter Criteria" colspan="4"/>
+				<field name="country_id" attrs="{'readonly':[('state','!=','pending')]}"/>
+				<field name="currency_id" attrs="{'readonly':[('state','!=','pending')]}"/>
+				<field name="dealer_id" attrs="{'readonly':[('state','!=','pending')]}"/>
+				<field name="trademark_id" attrs="{'readonly':[('state','!=','pending')]}"/>
+				<field name="payment_method_id" attrs="{'readonly':[('state','!=','pending')]}"/>
+			</field>
+        </field>
+    </record>
+
+    <!--
+    ======================
+    PAYMENT METHODS
+    ======================
+    -->
+
+    <record model="ir.ui.view" id="view_dm_payment_method_form_inherit_so_automation">
+        <field name="name">dm.payment_method.form.inherit.so.automation</field>
+        <field name="model">dm.payment_method</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm_payment_method.view_dm_payment_method_form"/>        
+        <field name="arch" type="xml">
+            <field name="logo" position="after">
+                <group colspan="4" >            
+                    <separator string="Sale Order Automatic actions" colspan="4"/>
+                    <field name="so_confirm_do" />
+                    <field name="invoice_create_do" />
+                    <field name="invoice_validate_do" />
+                    <field name="invoice_pay_do" />
+                </group>
+            </field>
+        </field>
+    </record>        
+
+	<!-- 
+		Order Entry
+	-->
+	
+	<!--record model="ir.ui.view" id="view_dm_order_form_inherit">
+        <field name="name">dm.order.form.inherit</field>
+        <field name="model">dm.order</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_order_entry.view_dm_order_form"/>
+        <field name="arch" type="xml">
+            <separator string="Status" colspan="4" position="before">
+				<separator string="Status Message" colspan="4"/>
+				<field name="state_msg" nolabel="1" colspan="4"/>
+			</separator>
+        </field>
+    </record-->
+
+	</data>
+</openerp>

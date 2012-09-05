@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: wizard/wiz_inv_scheduler.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+        <!--  Compute Schedulers -->
+
+		<record model="ir.ui.view" id="eagle_wiz_setup_crm_sched_form">
+            <field name="name">Setup Eagle CRM Scheduler</field>
+            <field name="model">eagle.setup_crm_sched</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Setup Eagle CRM Scheduler">
+	                <label string="This wizard is going to add a scheduler for Leads. One and only one will be created." colspan="4"/>
+				    <separator colspan="4"/>
+				    <group col="2" colspan="4">
+                		<button icon='gtk-cancel' special="cancel" string="Cancel" />
+                		<button name="setup_scheduler" string="Setup" colspan="1" type="object" icon="gtk-ok" />
+                	</group>
+                </form>
+            </field>
+        </record>
+
+		<record model="ir.actions.act_window" id="eagle_action_wiz_setup_crm_sched">
+			<field name="name">Setup Eagle CRM Scheduler</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">eagle.setup_crm_sched</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="eagle_wiz_setup_crm_sched_form"/>
+			<field name="target">new</field>
+		</record>
+	
+		<menuitem 
+			action="eagle_action_wiz_setup_crm_sched" 
+			id="eagle_menu_wiz_setup_crm_sched" 
+			parent="eagle_base.eagle_menu_config" 
+			sequence="60"
+			groups="eagle_base.group_contracts_managers,eagle_base.group_contracts_editors"/>
+
+	</data>
+</openerp>

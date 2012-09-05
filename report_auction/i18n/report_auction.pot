@@ -1,0 +1,413 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* report_auction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:13:43+0000\n"
+"PO-Revision-Date: 2009-11-25 14:13:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: report_auction
+#: view:report.auction.user.pointing1:0
+msgid "Summary pointing by user "
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.user.pointing1,sheet_id:0
+msgid "Sheet"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.user.pointing1,total_timesheet:0
+msgid "Project Timesheet"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_latest_objects_tree
+msgid "My Latest 10 Objects"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.auction.estimation.adj.category1,state:0
+#: selection:report.auction.object.date1,state:0
+msgid "Unsold"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_sign_in_out_manager_tree
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_sign_in_out_member_tree
+msgid "Summury of Sign_in Sign_out"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,auction_id:0
+#: field:report.auction.object.date1,auction_id:0
+#: field:report.latest.objects,auction_id:0
+msgid "Auction Date"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.latest.deposit,method:0
+msgid "Contact the Seller"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,obj_comm:0
+#: field:report.auction.object.date1,obj_comm:0
+#: field:report.latest.objects,obj_comm:0
+msgid "Commission"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,state:0
+#: field:report.auction.object.date1,state:0
+msgid "State"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.auction.estimation.adj.category1,state:0
+#: selection:report.auction.object.date1,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.auction.estimation.adj.category1,state:0
+#: selection:report.auction.object.date1,state:0
+msgid "Paid"
+msgstr ""
+
+#. module: report_auction
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_auction_reporting_manager_customer
+msgid "Customer Per Seller"
+msgstr ""
+
+#. module: report_auction
+#: view:report.auction.object.date1:0
+msgid "Objects per Day"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_per_seller_customer
+msgid "Customer per seller"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,tax_id:0
+msgid "Expenses"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,date:0
+#: field:report.auction.object.date1,date:0
+msgid "Name"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_auction_reporting_manager_adjustification
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_adjudication_tree1
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_adjudication_tree_member
+msgid "Auction Adjudication"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,info:0
+msgid "Description"
+msgstr ""
+
+#. module: report_auction
+#: view:report.auction.estimation.adj.category1:0
+msgid "estimation/adjudication"
+msgstr ""
+
+#. module: report_auction
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_auction_object_date1
+msgid "Objects per day"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,obj_desc:0
+#: field:report.auction.object.date1,obj_desc:0
+#: field:report.latest.objects,obj_desc:0
+msgid "Object Description"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,obj_price:0
+#: field:report.auction.object.date1,obj_price:0
+#: field:report.latest.objects,obj_price:0
+msgid "Adjudication price"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,lot_id:0
+msgid "Objects"
+msgstr ""
+
+#. module: report_auction
+#: view:report.auction.adjudication1:0
+msgid "Total adjudication"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.user.pointing1,user_id:0
+#: field:report.latest.deposit,user_id:0
+#: field:report.latest.objects,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,name:0
+#: field:report.auction.object.date1,name:0
+msgid "Short Description"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.user.pointing1,name:0
+msgid "Date"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,obj_ret:0
+#: field:report.auction.object.date1,obj_ret:0
+#: field:report.latest.objects,obj_ret:0
+msgid "Price retired"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,lot_num:0
+#: field:report.auction.object.date1,lot_num:0
+msgid "Quantity"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_manager_this
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_this_month
+msgid "This Month"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,lot_est1:0
+msgid "Minimum Estimation"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,specific_cost_ids:0
+msgid "Specific Costs"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_auction_reporting_member
+msgid "Member"
+msgstr ""
+
+#. module: report_auction
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_auction_estimation_adj_category1
+msgid "comparison estimate/adjudication "
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,total_neg:0
+msgid "Allow Negative Amount"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,partner_id:0
+#: field:report.latest.objects,partner_id:0
+#: field:report.per.seller.customer,name:0
+msgid "Seller"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.latest.deposit,method:0
+msgid "Keep until sold"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,seller_costs:0
+msgid "Seller Costs"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,bord_vnd_id:0
+#: field:report.auction.object.date1,bord_vnd_id:0
+#: field:report.latest.deposit,name:0
+#: field:report.latest.objects,bord_vnd_id:0
+msgid "Depositer Inventory"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,name:0
+msgid "Auction date"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,date_dep:0
+msgid "Deposit date"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_auction_adjudication1
+msgid "report_auction_adjudication"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,buyer_costs:0
+msgid "Buyer Costs"
+msgstr ""
+
+#. module: report_auction
+#: field:report.per.seller.customer,no_of_buyer:0
+msgid "Buyer"
+msgstr ""
+
+#. module: report_auction
+#: view:report.auction.adjudication1:0
+#: view:report.auction.object.date1:0
+#: view:report.latest.deposit:0
+#: view:report.latest.objects:0
+#: view:report.per.seller.customer:0
+msgid "Customer/Supplier"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,adj_total:0
+#: field:report.auction.estimation.adj.category1,adj_total:0
+msgid "Total Adjudication"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.module.module,description:report_auction.module_meta_information
+msgid "A module that adds new reports based on Auction."
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_latest_deposit
+msgid "Latest 10 Deposits"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_latest_doposit_tree
+msgid "My Latest 10 Deposit"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_auction_user_pointing1
+msgid "user pointing "
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_manager_this_estimation
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_this_month_estimation
+msgid "Estimation"
+msgstr ""
+
+#. module: report_auction
+#: view:report.auction.object.date1:0
+msgid "Object By day"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.latest.deposit,method:0
+msgid "Decrease limit of 10%"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.model,name:report_auction.model_report_latest_objects
+msgid "Latest 10 Objects"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,auction1:0
+msgid "First Auction Day"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.adjudication1,auction2:0
+msgid "Last Auction Day"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.module.module,shortdesc:report_auction.module_meta_information
+msgid "Auction Management - Reporting"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_manager_this_adjustication
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_this_month_adjustication
+msgid "Adjudication"
+msgstr ""
+
+#. module: report_auction
+#: field:report.latest.deposit,method:0
+msgid "Withdrawned method"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_auction_reporting_manager
+msgid "Manager"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,obj_num:0
+#: field:report.auction.object.date1,obj_num:0
+#: field:report.latest.objects,obj_num:0
+msgid "Catalog Number"
+msgstr ""
+
+#. module: report_auction
+#: field:report.per.seller.customer,partner_id:0
+msgid "Partner"
+msgstr ""
+
+#. module: report_auction
+#: view:report.latest.deposit:0
+#: view:report.latest.objects:0
+msgid "My Latest 10 deposit"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,lot_type:0
+#: field:report.auction.object.date1,lot_type:0
+msgid "Object Type"
+msgstr ""
+
+#. module: report_auction
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_object_date_tree
+#: model:ir.ui.menu,name:report_auction.menu_report_auction_object_date_tree1
+msgid "Object Per Day"
+msgstr ""
+
+#. module: report_auction
+#: field:report.auction.estimation.adj.category1,lot_est2:0
+msgid "Maximum Estimation"
+msgstr ""
+
+#. module: report_auction
+#: selection:report.auction.estimation.adj.category1,state:0
+#: selection:report.auction.object.date1,state:0
+msgid "Invoiced"
+msgstr ""
+

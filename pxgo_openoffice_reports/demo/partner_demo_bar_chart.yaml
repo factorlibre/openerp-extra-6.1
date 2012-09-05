@@ -1,0 +1,32 @@
+options:
+    width: 800
+    height: 800
+    background:
+        hide: true
+    legend:
+        hide: true
+    padding:
+        bottom: 50
+        left: 120
+        right: 30
+        top: 10
+    axis:
+        x:
+            label: 'Credit limit'
+            rotate: 25
+            ticks:
+                {% for idx, partner in enumerate(objects) %}
+                - v: $idx
+                  label: $partner.name
+                {% end %}
+        y:
+            rotate: 25
+chart:
+    type: hbar
+    output_type: png
+    dataset:
+      - - ${_('Credit limit')}
+        -
+            {% for idx, partner in enumerate(objects) %}
+            - [$idx, $partner.credit_limit]
+            {% end %}

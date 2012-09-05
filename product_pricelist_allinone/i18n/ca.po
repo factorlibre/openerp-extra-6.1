@@ -1,0 +1,132 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* product_pricelist_allinone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-03-06 19:49+0000\n"
+"PO-Revision-Date: 2012-04-18 20:27+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Category"
+msgstr "Categoria"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Product"
+msgstr "Producte"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Products Listprices Items"
+msgstr "Elements de les tarifes de productes"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Version"
+msgstr "Versió"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,price_version_date_start:0
+msgid "Version Start"
+msgstr "Inici de versió"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist Version"
+msgstr "Versió de tarifa"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_type:0
+msgid "List Type"
+msgstr "Tipus de tarifa"
+
+#. module: product_pricelist_allinone
+#: model:ir.actions.act_window,name:product_pricelist_allinone.product_pricelist_megaview_action
+#: model:ir.ui.menu,name:product_pricelist_allinone.menu_product_pricelist_megaview_action
+msgid "Pricelist MegaView"
+msgstr "Línies de tarifes"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "List"
+msgstr "Tarifa"
+
+#. module: product_pricelist_allinone
+#: model:ir.model,name:product_pricelist_allinone.model_product_pricelist_item
+msgid "Pricelist item"
+msgstr "Element de la tarifa"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,pricelist_name:0
+msgid "List Name"
+msgstr "Nom de tarifa"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Group by..."
+msgstr "Agrupa per"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Base"
+msgstr "Base"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,price_version_name:0
+msgid "Version Name"
+msgstr "Nom de versió"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,price_version_date_end:0
+msgid "Version End"
+msgstr "Fi de versió"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,price_version_active:0
+msgid "Version Active"
+msgstr "Versió activa"
+
+#. module: product_pricelist_allinone
+#: constraint:product.pricelist.item:0
+msgid ""
+"Error ! You cannot assign the Main Pricelist as Other Pricelist in PriceList "
+"Item!"
+msgstr ""
+"Error!  No podeu assignar la tarifa principal com una altre tarifa en un "
+"element de la tarifa!"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_company:0
+msgid "List Company"
+msgstr "Companyia de tarifa"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist"
+msgstr "Tarifa"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_cur:0
+msgid "List Currency"
+msgstr "Moneda de tarifa"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist Item"
+msgstr "Element de la tarifa"

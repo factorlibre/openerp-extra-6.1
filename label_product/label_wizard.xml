@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+<!-- Multi product printing wizard -->
+
+		<record model="ir.ui.view" id="label_wizard_product_form">
+			<field name="name">label.wizard.product.form</field>
+			<field name="model">label.wizard.product</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Label Wizard">
+					<field name="template_id"/>
+					<field name="line_ids" colspan="4" nolabel="1"/>
+                	<group col="2" colspan="2">
+                        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        <button icon="gtk-ok" name="action_print" string="Print" type="object"/>
+                    </group>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="label_wizard_product_line_tree">
+			<field name="name">label.wizard.product.line.tree</field>
+			<field name="model">label.wizard.product.line</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Items" editable="bottom">
+					<field name="product_id"/>
+                	<field name="quantity"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="label_wizard_product_line_form">
+			<field name="name">label.wizard.product.line.form</field>
+			<field name="model">label.wizard.product.line</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Item">
+					<field name="product_id"/>
+                	<field name="quantity"/>
+				</form>
+			</field>
+		</record>
+
+	    <record id="action_label_product" model="ir.actions.act_window">
+	        <field name="name">Print Labels</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">label.wizard.product</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">form</field>
+	        <field name="target">new</field>
+	    </record>
+
+		<menuitem id="menu_label_product" parent="base.menu_product" action="action_label_product"/>
+	</data>
+</openerp>
+

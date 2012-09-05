@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="invoice_cost_breakdown_form_view" model="ir.ui.view">
+            <field name="name">invoice.cost.breakdown.form.view</field>
+            <field name="model">invoice.cost.breakdown</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Break Down Invoice Costs">
+                    <field name="amount"/>
+                    <field name="breakdown_type" attrs="{'invisible': [('state','=','step1')]}" />
+                    <field name="breakdown_line_ids" nolabel="1" colspan="4" attrs="{'invisible': [('state','=','step1')]}">
+                        <tree string="Breakdown Cost Invoices Lines" editable="top">
+                           <field name="product_id"/>
+                           <field name="quantity"  sum="Total Quantity" on_change="onchange_price(quantity, price_cost, parent.amount, parent.breakdown_type, breakdown_id)"/>
+                           <field name="price_cost" on_change="onchange_price(quantity, price_cost, parent.amount, parent.breakdown_type, breakdown_id)"/>
+                           <field name="price_subtotal" sum="Subtotal"/>
+                           <field name="percent" sum="Total Percent"/>
+                           <field name="amount" sum="Total Amount"/>
+                           <field name="breakdown_id" invisible="1"/>
+                        </tree>
+                        <form string="Breakdown Cost Invoices Lines">
+                           <field name="product_id"/>
+                           <field name="quantity" on_change="onchange_price(quantity, price_cost, parent.amount, parent.breakdown_type, breakdown_id)"/>
+                           <field name="price_cost" on_change="onchange_price(quantity, price_cost, parent.amount, parent.breakdown_type, breakdown_id)"/>
+                           <field name="price_subtotal"/>
+                           <field name="percent"/>
+                           <field name="amount"/>
+                           <field name="breakdown_id" invisible="1"/>
+                        </form>
+                    </field>
+                    <field name="invoice_ids" colspan="4" nolabel="1" attrs="{'invisible': [('state','=','step2')]}"/>
+                    <group colspan="4" col="9">
+                        <group colspan="4">
+                            <field name="state" colspan="2"/>
+                        </group>
+                        <group colspan="1">
+                            <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        </group>
+                        <group colspan="1" attrs="{'invisible': [('state','=','step2')]}">
+                            <button icon="terp-gtk-go-back-rtl" string="Next" name="next_step" type="object" default_focus="1"/>
+                        </group>
+                        <group colspan="3" attrs="{'invisible': [('state','=','step1')]}">
+                            <button icon="terp-gtk-go-back-ltr" string="Previous" name="go_back" type="object" colspan="1"/>
+                            <button icon="terp-sale" string="Recompute" name="compute_lines" type="object" default_focus="1" colspan="1"/>
+                            <button icon="terp-camera_test" string="Apply" name="compute" type="object" colspan="1"/>
+                        </group>
+                   </group>
+                </form>
+            </field>
+        </record>
+
+        <act_window
+            id="action_invoice_cost_breakdown_shortcut"
+            name="Break Down Invoice Costs"
+            view_type="form"
+            view_mode="form"
+            src_model="account.invoice"
+            res_model="invoice.cost.breakdown"
+            multi="True"
+            target="new"/>
+
+    </data>
+</openerp>

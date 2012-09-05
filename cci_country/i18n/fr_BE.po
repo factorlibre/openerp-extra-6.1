@@ -1,0 +1,199 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_country
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 09:49:10+0000\n"
+"PO-Revision-Date: 2009-11-25 09:49:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_country
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x_ et ne pas comporter de caractères spéciaux !"
+
+#. module: cci_country
+#: help:cci.country,active:0
+msgid "Indicates if we can still use this country-area code"
+msgstr "Indique si ce code pays-zone est toujours utilisable"
+
+#. module: cci_country
+#: field:cci.country,valid4ata:0
+msgid "ATA"
+msgstr "ATA"
+
+#. module: cci_country
+#: model:ir.actions.act_window,name:cci_country.action_cci_country
+#: model:ir.ui.menu,name:cci_country.menu_cci_country
+msgid "Country and Area"
+msgstr "Pays et Zones"
+
+#. module: cci_country
+#: field:cci.country,cci_country_ids:0
+msgid "Linked Countries-Areas"
+msgstr "Pays et Zones liés"
+
+#. module: cci_country
+#: help:cci.country,valid4certificate:0
+msgid "Indicates if this code can be used for certificates"
+msgstr "Indique si ce code peut être utilisé sur les certificats"
+
+#. module: cci_country
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect pour la définition de l'action"
+
+#. module: cci_country
+#: field:cci.country,valid4certificate:0
+msgid "Certificates"
+msgstr "Certificats"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "IsCountry"
+msgstr "Pays"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Nom"
+msgstr "Nom"
+
+#. module: cci_country
+#: view:cci.country:0
+#: field:cci.country,description:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Embassy folders"
+msgstr "Dossiers ambassade"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Certificates of Origin"
+msgstr "Certificats"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Countries and Areas"
+msgstr "Pays et Zones"
+
+#. module: cci_country
+#: view:cci.country:0
+#: field:cci.country,active:0
+msgid "Active"
+msgstr "Actif"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Phone prefix"
+msgstr "Préfixe téléphonique"
+
+#. module: cci_country
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues !"
+
+#. module: cci_country
+#: field:cci.country,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_country
+#: field:cci.country,iscountry:0
+msgid "Country"
+msgstr "Pays"
+
+#. module: cci_country
+#: model:ir.module.module,shortdesc:cci_country.module_meta_information
+msgid "CCI Country"
+msgstr "CCI Country"
+
+#. module: cci_country
+#: help:cci.country,valid4embassy:0
+msgid "Indicates if this code can be used for Embassies"
+msgstr "Indique si ce code est utilisable pour les dossiers ambassades"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Contains / Part of"
+msgstr "Contient / Fait partie de"
+
+#. module: cci_country
+#: help:cci.country,valid4ata:0
+msgid "Indicates if this code can be used for carnets ATA"
+msgstr "Indique si ce code peut être utilisé pour les carnets ATA"
+
+#. module: cci_country
+#: model:ir.model,name:cci_country.model_cci_country
+msgid "Country or Area for CCI"
+msgstr "Pays ou Zone pour la CCI"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "Valid for use in these modules"
+msgstr "Utilisable dans ces modules"
+
+#. module: cci_country
+#: view:cci.country:0
+#: field:cci.country,postalabbrev:0
+msgid "Postal Abbreviation"
+msgstr "Abréviation postale"
+
+#. module: cci_country
+#: help:cci.country,iscountry:0
+msgid "Indicates if this code designates a country; if False, designates an area"
+msgstr "Indique si ce code désigne un pays; si 'Faux', désigne une zone, un groupe de pays"
+
+#. module: cci_country
+#: field:cci.country,phoneprefix:0
+msgid "Phone Prefix"
+msgstr "Préfixe téléphonique"
+
+#. module: cci_country
+#: view:cci.country:0
+#: field:cci.country,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: cci_country
+#: view:cci.country:0
+msgid "ATA Carnet"
+msgstr "Carnet ATA"
+
+#. module: cci_country
+#: field:cci.country,official_name:0
+msgid "Official Name"
+msgstr "Nom officiel"
+
+#. module: cci_country
+#: model:ir.module.module,description:cci_country.module_meta_information
+msgid "\n"
+"        For some applications in the OpenERP software used by some Belgian Chamber of Commerce,\n"
+"        we need a table regrouping countries and areas (group of countries). The table used by\n"
+"        default in OpenERP doesn't answer to this need, because it's used in other and we need to\n"
+"        specify if this code can be used in some cases or others\n"
+"        This table is by evidence very specific to the Chamber of Commerce dedicated modules.\n"
+"    "
+msgstr "\n"
+"        Pour certains modules du logiciel OpenERP utilisé par certaines Chambre de Commerce Belges,\n"
+"        nous avons besoin d'une table regroupant des pays ou des groupes de pays (zones)\n"
+"        La table utilisée par défaut dans OpenERP ne répond pas à ce besoin car elle est utilisée par d'autres modules\n"
+"        De plus, nous devons pouvoir spécifier module par module quels codes ios peuvent utiliser ou non\n"
+"        Cette table est donc de toute évidence fortement spécifique pour les modules spépcifiques des CCI.\n"
+"    "
+
+#. module: cci_country
+#: field:cci.country,valid4embassy:0
+msgid "Embassy"
+msgstr "Dossier ambassade"
+

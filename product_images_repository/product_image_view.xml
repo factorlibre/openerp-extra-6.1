@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <record model="ir.ui.view" id="view_product_image_form_inherit">
+            <field name="name">product.images.form.inherit</field>
+            <field name="model">product.images</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product_images_olbs.view_product_image_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Image']/group" position="before">
+            		<separator string="Simple update image (use the shortcut on the right sidebar to simply attach a new media)" colspan="4" />
+            		<field name="product_id" invisible="1" />
+                    <button name="%(modify_product_media_act_window)d" string="Modify the image" type="action" attrs="{'readonly':[('product_id','=',False)]}" />
+            		<separator string="Advanced media informations" colspan="4" />
+                </xpath>
+            </field>
+        </record>
+	</data>
+</openerp>

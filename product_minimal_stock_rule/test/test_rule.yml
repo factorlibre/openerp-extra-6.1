@@ -1,0 +1,20 @@
+-
+ Create a new product
+-
+  !record {model: product.product, id: product_product}:
+    categ_id: product.product_category_7
+    cost_method: standard
+    mes_type: fixed
+    name: Partners Training
+    procure_method: make_to_stock
+    supply_method: produce
+    type: product
+    uom_id: product.uom_day
+    uom_po_id: product.uom_day
+
+-
+ Check minimal rule
+-
+ !python {model: product.product}: |
+    res = self.browse(cr, uid, ref('product_product'))
+    assert len(res.stock_rule_ids) == 1

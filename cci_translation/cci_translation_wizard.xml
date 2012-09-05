@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+		<wizard string="Make Invoice" model="translation.folder"
+			name="create_invoice_transfolder" id="invoice_transfolder"
+		/>
+		<wizard string="Awex Report" menu="False"
+			name="translation_awex_report" id="translation_awex_report"
+		/>
+		<menuitem name="Awex Report" id="menu_trans_awex_report"
+			type="wizard" action="translation_awex_report" 
+			parent="cci_translation.menu_translation_root"
+		/>
+		
+	</data>
+</openerp>

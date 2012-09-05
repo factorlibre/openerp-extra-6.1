@@ -1,0 +1,96 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sales_server_action
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:30+0000\n"
+"PO-Revision-Date: 2011-02-15 15:29+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_linkinvoicetosaleorderservice0
+msgid "Link Invoice to SaleOrder - Service"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_salesorderinvoicesmain0
+msgid "Sales Order to Invoice(s) MAIN"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_solineinvoicelinestock0
+msgid "SO Line to Invoice Line - Stock"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_createinvoicelinestock0
+msgid "Create Invoice Line - Stock"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.module.module,shortdesc:sales_server_action.module_meta_information
+msgid "Sales Server Action"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_soinvoicestock0
+msgid "SO to Invoice - Stock"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_solineinvoicelineservice0
+msgid "SO Line to Invoice Line - Service"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_createinvoicelineservice0
+msgid "Create Invoice Line - Service"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_soinvoiceall1
+msgid "SO -> Invoice - All"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_loopinvocesolinemain0
+msgid "Loop 1 Invoce / SO Line MAIN"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.module.module,description:sales_server_action.module_meta_information
+msgid ""
+"Server Action for Sales Management\n"
+"You will get 2 actions, for the demonstration for the Server Action\n"
+"that will helps you to customize the Business process\n"
+"* One Invoice / Each Sales Order Line\n"
+"* Two Invoice for One Sales Order\n"
+"** Invoice for the Stokable products\n"
+"** Invoice for the Service product\n"
+msgstr ""
+"Server Action for Sales Management\n"
+"You will get 2 actions, for the demonstration for the Server Action\n"
+"that will helps you to customize the Business process\n"
+"* One Invoice / Each Sales Order Line\n"
+"* Two Invoice for One Sales Order\n"
+"** Invoice for the Stokable products\n"
+"** Invoice for the Service product\n"
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_soinvoiceservice0
+msgid "SO to Invoice - Service"
+msgstr ""
+
+#. module: sales_server_action
+#: model:ir.actions.server,name:sales_server_action.ir_actions_server_linkinvoicetosaleorderstock0
+msgid "Link Invoice to SaleOrder - Stock"
+msgstr ""

@@ -1,0 +1,84 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 05:36+0000\n"
+"PO-Revision-Date: 2011-08-27 15:27+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: base_report_model
+#: model:ir.module.module,shortdesc:base_report_model.module_meta_information
+msgid "Base Report Model"
+msgstr "Base de los modelos de informe"
+
+#. module: base_report_model
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: base_report_model
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El objeto debe empezar con  x_ y no puede contener ningún carácter especial!"
+
+#. module: base_report_model
+#: model:ir.actions.act_window,name:base_report_model.base_report_model_act
+msgid "Available Models"
+msgstr "Modelos disponibles"
+
+#. module: base_report_model
+#: view:base.report.model:0
+msgid "Models"
+msgstr "Modelos"
+
+#. module: base_report_model
+#: model:ir.model,name:base_report_model.model_base_report_model
+msgid "Visible models for a tool"
+msgstr "Modelos visibles para una herramienta"
+
+#. module: base_report_model
+#: model:ir.ui.menu,name:base_report_model.menu_base_report_model_visible_models
+msgid "OpenOffice Attachment Available Models"
+msgstr "Modelos OpenOffice adjunto disponible"
+
+#. module: base_report_model
+#: model:ir.ui.menu,name:base_report_model.menu_base_report_model
+msgid "Base"
+msgstr "Base"
+
+#. module: base_report_model
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: base_report_model
+#: field:base.report.model,model_id:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: base_report_model
+#: field:base.report.model,name:0
+msgid "Visible Name"
+msgstr "Nombre visible"
+
+#. module: base_report_model
+#: model:ir.module.module,description:base_report_model.module_meta_information
+msgid ""
+"This module allows you to specify the models which can have an attachment "
+"from OpenOffice Report"
+msgstr ""
+"Este módulo le permite especificar los modelos que puede tener un archivo "
+"adjunto del Informe de OpenOffice"

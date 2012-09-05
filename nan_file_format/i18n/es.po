@@ -1,0 +1,314 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_file_format
+#
+# Jordi Pasquina <jordi@nan-tic.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.12\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-08-31 07:07+0000\n"
+"PO-Revision-Date: 2011-11-15 16:37+0000\n"
+"Last-Translator: Jordi Pasquina <jordi@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: nan_file_format
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto debe empezar con x_ y no debe contener ningún carácter "
+"especial!"
+
+#. module: nan_file_format
+#: help:file.format.field,length:0
+msgid ""
+"If the length of the field is 0, it's means that dosen't matter how many "
+"chars it take"
+msgstr ""
+"Si la longitud del campo es 0, significa que no importa cuantos carácteres "
+"lo toman"
+
+#. module: nan_file_format
+#: view:file.format.field:0
+msgid "Deilvery File Field"
+msgstr "Campo del fichero de entrega"
+
+#. module: nan_file_format
+#: help:file.format.field,align:0
+msgid ""
+"If you have writte a specific length, you can decid the alignement of the "
+"value"
+msgstr ""
+"Si usted tiene que anotarse una longitud específica, puede decidir la "
+"alineación del valor"
+
+#. module: nan_file_format
+#: model:ir.model,name:nan_file_format.model_file_format
+msgid "file.format"
+msgstr "formato.fichero"
+
+#. module: nan_file_format
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en la definición de la acción."
+
+#. module: nan_file_format
+#: model:ir.actions.act_window,name:nan_file_format.action_delivery_file_format_config
+msgid "Delivery File Format"
+msgstr "Formato del fichero de entrega"
+
+#. module: nan_file_format
+#: model:ir.ui.menu,name:nan_file_format.file_format_config_menu_id
+msgid "File Format Config"
+msgstr "Configuración del formato de fichero"
+
+#. module: nan_file_format
+#: help:file.format,name:0
+msgid "Format name"
+msgstr "Nombre del formato"
+
+#. module: nan_file_format
+#: field:file.format.field,fill_char:0
+msgid "Fill Char"
+msgstr "Rellene el carácter"
+
+#. module: nan_file_format
+#: field:file.format.field,format_id:0
+msgid "Format"
+msgstr "Formato"
+
+#. module: nan_file_format
+#: field:file.format,quote:0
+msgid "Quote"
+msgstr "cuota"
+
+#. module: nan_file_format
+#: help:file.format,quote:0
+msgid "Character to use as quote"
+msgstr "Carácter a usar como cuota"
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid ""
+"The field 'Fill Char' of the %s is required, because you have selected and "
+"specific length"
+msgstr ""
+"El campo 'Rellene carácter' del %s es necesario, por que has seleccionado y "
+"específicado la longitud"
+
+#. module: nan_file_format
+#: help:file.format,separator:0
+msgid "Put here, if it's necessary, the seprator between each field"
+msgstr "Ponga aquí, si es necesario, el separador entre cada campo"
+
+#. module: nan_file_format
+#: view:file.format.field:0
+msgid "File Format Field"
+msgstr "Campo del formato de fichero"
+
+#. module: nan_file_format
+#: view:file.format:0
+msgid "Deilvery File Configuration"
+msgstr "Configuración del fichero de entrega"
+
+#. module: nan_file_format
+#: view:file.format:0
+msgid "File Format Configuration"
+msgstr "Configuración del formato de fichero"
+
+#. module: nan_file_format
+#: model:ir.module.module,description:nan_file_format.module_meta_information
+msgid ""
+"\n"
+"        Specification for the export file.\n"
+"        We define the model on data extract, configure direcory and filename "
+"separator characters in fields and used as a separator text.\n"
+"        We define each field, indicating the order, the name that will be "
+"used in the header, and if required length, alignment and fill character, "
+"format and number of decimal character.\n"
+"    "
+msgstr ""
+"\n"
+"        Especificaciones para el archivo de exportación.\n"
+"        Se define el modelo de extracción de datos, configurar lo carácteres "
+"separadores del directorio y nombre de archivo en los campos y usarlos como "
+"separador de texto.\n"
+"        Se define cada campo, indicando el orden, el nombre que se utilizará "
+"en el encabezado, y si se requiere la longitud, alinear y rellenar el "
+"carácter, el formato y el número de carácter decimal.\n"
+"    "
+
+#. module: nan_file_format
+#: help:file.format.field,decimal_character:0
+msgid "IF you neeed and specific decimal charcter for the float fields"
+msgstr ""
+"Si usted necesita unas características específicas de decimales para los "
+"campos de punto flotante"
+
+#. module: nan_file_format
+#: field:file.format,path:0
+msgid "Path"
+msgstr "Camino"
+
+#. module: nan_file_format
+#: field:file.format.field,align:0
+msgid "Align"
+msgstr "Alineación"
+
+#. module: nan_file_format
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML inválido para la arquitectura de vistas!"
+
+#. module: nan_file_format
+#: field:file.format,name:0
+#: field:file.format.field,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: nan_file_format
+#: help:file.format.field,format_number:0
+msgid ""
+"This field is only for the format of an integer or a float. E.g. if you have "
+"a float and want 2 decimals you have to write '%.2f' (without simple quotes)"
+msgstr ""
+"Este campo es sólo para el formato de un entero o punto flotante. Por "
+"ejemplo si usted tiene un punto flotante y quiere 2 decimales, tiene que "
+"escribir '%.2f' (sin las comillas simples)"
+
+#. module: nan_file_format
+#: field:file.format,field_ids:0
+msgid "Fields"
+msgstr "Campos"
+
+#. module: nan_file_format
+#: help:file.format,file_name:0
+msgid "File name"
+msgstr "Nombre del archivo"
+
+#. module: nan_file_format
+#: field:file.format.field,decimal_character:0
+msgid "Decimal Character"
+msgstr "Carácter decimal"
+
+#. module: nan_file_format
+#: field:file.format.field,length:0
+msgid "Length"
+msgstr "Longitud"
+
+#. module: nan_file_format
+#: help:file.format,path:0
+msgid "The path to the file name. The last slash is not necessary"
+msgstr ""
+"La ruta de acceso al nombre de archivo. La última barra no es necesaria"
+
+#. module: nan_file_format
+#: field:file.format,separator:0
+msgid "Separator"
+msgstr "Separador"
+
+#. module: nan_file_format
+#: help:file.format,header:0
+msgid "Header (fields name) on files"
+msgstr "Encabezado (nombre de campos) en los archivos"
+
+#. module: nan_file_format
+#: field:file.format,model_id:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: nan_file_format
+#: field:file.format.field,expression:0
+msgid "Expression"
+msgstr "Expresión"
+
+#. module: nan_file_format
+#: selection:file.format.field,align:0
+msgid "Left"
+msgstr "Izquierda"
+
+#. module: nan_file_format
+#: help:file.format.field,fill_char:0
+msgid ""
+"If you have writte a specific length, here you have to specify with which "
+"char the program have to fill the empty chars"
+msgstr ""
+"Si usted tiene anotarse una longitud específica, aquí tiene que especificar "
+"con qué charácter el programa tienen que llenar los  carácteres vacios"
+
+#. module: nan_file_format
+#: selection:file.format.field,align:0
+msgid "Right"
+msgstr "Derecha"
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid "the file %s is write correctly"
+msgstr "el archivo %s se ha escrito correctamente"
+
+#. module: nan_file_format
+#: field:file.format.field,sequence:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: nan_file_format
+#: help:file.format.field,expression:0
+msgid ""
+"Where we put the python code. The fields are called like '$name_of_field' "
+"(without the simple quotes)"
+msgstr ""
+"Dónde ponemos el código python. Los campos son definidos como "
+"'$nombre_de_campo' (sin las comillas simples)"
+
+#. module: nan_file_format
+#: field:file.format,file_name:0
+msgid "File Name"
+msgstr "Nombre de archivo"
+
+#. module: nan_file_format
+#: field:file.format,header:0
+msgid "Header"
+msgstr "Cabecera"
+
+#. module: nan_file_format
+#: help:file.format.field,sequence:0
+msgid "Is the order that you want for the columns field in the file"
+msgstr ""
+"Es importante el orden que desee para el campo de columnas en el archivo"
+
+#. module: nan_file_format
+#: model:ir.module.module,shortdesc:nan_file_format.module_meta_information
+msgid "Configuration File Format"
+msgstr "Configuración del formato de archivo"
+
+#. module: nan_file_format
+#: help:file.format.field,name:0
+msgid ""
+"The name of the field. It's used if you have selected the Header checkbox"
+msgstr ""
+"El nombre del campo. Se utiliza si se ha seleccionado la casilla de "
+"verificación de Encabezado"
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid "The expression to export for the %s file is %s and it's val: %s"
+msgstr "La expresión de la exportación para el archivo %s es %s, y vale: %s"
+
+#. module: nan_file_format
+#: model:ir.model,name:nan_file_format.model_file_format_field
+msgid "file.format.field"
+msgstr "archivo.formato.campo"
+
+#. module: nan_file_format
+#: field:file.format.field,format_number:0
+msgid "Number Format"
+msgstr "Número de formato"

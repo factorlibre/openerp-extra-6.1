@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+<!-- res.partner.contact -->
+        <record model="ir.ui.view" id="res_partner_contact_form_view_vat">
+            <field name="name">Contact form view vat</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Extra Information']" position="inside">
+                    <field name="vat" on_change="on_change_vat(vat)"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_partner_contact_tree_view_vat">
+            <field name="name">Contact tree view vat</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='function']" position="after">
+                    <field name="vat"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_partner_contact_search_view_vat">
+            <field name="name">Contact tree view vat</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_search"/>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <xpath expr="/search/field[@name='partner_id']" position="after">
+                    <field name="vat"/>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

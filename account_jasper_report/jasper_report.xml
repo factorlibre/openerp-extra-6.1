@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+    <report
+        string="Journal"
+        model="account.move.line"
+        auto="True"
+        name="account.journal"
+        rml="account_jasper_report/report/journal.jrxml"
+        id="journal"
+        menu="False"
+        header="False"
+        />
+    <report 
+        string="General Ledger"
+        model="account.move.line"
+        auto="True"
+        name="account.general.ledger"
+        rml="account_jasper_report/report/general_ledger.jrxml"
+        id="general_ledger"
+        menu="False"
+        header="False"
+        />
+    <report string="Trial Balance"
+        model="account.account"
+        auto="True"
+        name="account.trial.balance"
+        rml="account_jasper_report/report/trial_balance.jrxml"
+        id="trial_balance"
+        menu="False"
+        header="False"
+        />
+    <report string="Taxes by Invoice"
+        model="account.invoice"
+        auto="True"
+        name="account.taxes.by.invoice"
+        rml="account_jasper_report/report/taxes_by_invoice.jrxml"
+        id="taxes_by_invoice"
+        menu="False"
+        header="False"
+        />
+</data>
+</openerp>

@@ -1,0 +1,109 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* portal_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:52+0000\n"
+"PO-Revision-Date: 2012-06-18 22:28+0000\n"
+"Last-Translator: Anders Wallenquist <anders.wallenquist@vertel.se>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Information"
+msgstr "Information"
+
+#. module: portal_service
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Felaktig XML för vyarkitektur."
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases_close
+msgid "Closed Cases"
+msgstr "Stängda ärenden"
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Click on 'Get this Case' to acquire the case."
+msgstr "Klicka på 'Hämta detta ärende' för att erhålla ärendet"
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_crm_case_open
+msgid "My opened cases"
+msgstr "Mina öppna ärenden"
+
+#. module: portal_service
+#: model:ir.module.module,shortdesc:portal_service.module_meta_information
+msgid "Portal Management - Service"
+msgstr "Portaladministration - Tjänster"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases_open
+msgid "Opened Cases"
+msgstr "Öppna ärenden"
+
+#. module: portal_service
+#: model:ir.module.module,description:portal_service.module_meta_information
+msgid "Potal Management - Service company specific data."
+msgstr "Portaladministration - specifika data för tjänsteföretag"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_support
+msgid "Support"
+msgstr "Stöd"
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "The list of all your acquired cases are in your leads menu."
+msgstr "Listan över alla erhållna ärenden i din kundämnesmeny"
+
+#. module: portal_service
+#: view:crm.case:0
+#: model:ir.actions.wizard,name:portal_service.wizard_case_get_open
+msgid "Get this Case and Open It"
+msgstr "Hämta detta ärende och öppna det"
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_project
+msgid "Projects"
+msgstr "Projekt"
+
+#. module: portal_service
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Felaktigt namn för klassen i händelsedefinitionen."
+
+#. module: portal_service
+#: view:crm.case:0
+msgid "Get this Case"
+msgstr "Hämta detta ärende"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_all_cases
+msgid "All Support Cases"
+msgstr "Alla supportärenden"
+
+#. module: portal_service
+#: view:crm.case.section:0
+msgid "Case Section"
+msgstr "Ärendesektion"
+
+#. module: portal_service
+#: model:ir.actions.act_window,name:portal_service.portal_action_crm_case_closed
+msgid "My closed cases"
+msgstr "Mina avslutade ärenden"
+
+#. module: portal_service
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_your
+#: model:ir.ui.menu,name:portal_service.menu_portal_customer_your_projects
+msgid "Your Projects"
+msgstr "Dina projekt"

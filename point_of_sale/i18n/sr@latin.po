@@ -1,0 +1,1089 @@
+# Serbian Latin translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-05-19 14:36+0000\n"
+"PO-Revision-Date: 2011-02-23 16:35+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Serbian Latin <sr@latin@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Total paid"
+msgstr "Ukupno placanje"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Qty of product"
+msgstr "Kol.proizvoda"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Set to draft"
+msgstr "Postavi za obradu"
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_report_transaction_pos
+msgid "transaction for the pos"
+msgstr "Transakcija POS-a"
+
+#. module: point_of_sale
+#: wizard_view:pos.discount,init:0
+msgid "Discount :"
+msgstr "Popust :"
+
+#. module: point_of_sale
+#: wizard_field:pos.payment,ask_pay,payment_nb:0
+msgid "Piece number"
+msgstr "Br.Komada"
+
+#. module: point_of_sale
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Pogrešno ime modela u definiciji akcije."
+
+#. module: point_of_sale
+#: field:pos.order,name:0
+msgid "Order Description"
+msgstr "Opis Narudzbe"
+
+#. module: point_of_sale
+#: model:ir.actions.wizard,name:point_of_sale.pos_scan_product
+msgid "Scan Product"
+msgstr "Skeniraj Proizvod"
+
+#. module: point_of_sale
+#: rml:pos.invoice:0
+msgid "Document"
+msgstr "Dokument"
+
+#. module: point_of_sale
+#: view:pos.add.product:0
+msgid "Add product :"
+msgstr "Dodaj proizvod :"
+
+#. module: point_of_sale
+#: rml:pos.lines:0
+msgid "Net Total"
+msgstr "Neto Ukupno"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_action_pos_order_tree2
+msgid "Orders of the day"
+msgstr "Današnje narudžbe"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:640
+#, python-format
+msgid "No Pricelist !"
+msgstr "Nema Cenovnika !"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_get_sale
+#: view:pos.get.sale:0
+msgid "Select an Open Sale Order"
+msgstr "Odaberi otvoreni prodajni nalog"
+
+#. module: point_of_sale
+#: report:account.statement:0 report:all.closed.cashbox.of.the.day:0
+#: report:pos.details:0 report:pos.details_summary:0 report:pos.lines:0
+#: field:pos.order,company_id:0 field:pos.order.line,company_id:0
+#: report:pos.payment.report.user:0 report:pos.sales.user:0
+#: report:pos.sales.user.today:0 report:pos.user.product:0
+#: field:report.pos.order,company_id:0
+msgid "Company"
+msgstr "Preduzeće"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Invoice Date"
+msgstr "Datum Fakture"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/pos.py:0
+#, python-format
+msgid "Cannot create invoice without a partner."
+msgstr ""
+
+#. module: point_of_sale
+#: model:ir.actions.report.xml,name:point_of_sale.pos_lines_detail
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Details of Sales"
+msgstr "Detalji Prodaje"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Base"
+msgstr "Osnova"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_scan_product
+#: model:ir.model,name:point_of_sale.model_pos_scan_product
+#: view:pos.scan.product:0
+msgid "Scan product"
+msgstr "Skeniraj proizvod"
+
+#. module: point_of_sale
+#: field:pos.order.line,price_subtotal_incl:0
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: point_of_sale
+#: rml:pos.invoice:0
+msgid "Partner Ref."
+msgstr "Ref. Partner"
+
+#. module: point_of_sale
+#: field:pos.order.line,name:0
+msgid "Line Description"
+msgstr "Opis linije"
+
+#. module: point_of_sale
+#: field:pos.order,shop_id:0 field:report.pos.order,shop_id:0
+msgid "Shop"
+msgstr "Prodavnica"
+
+#. module: point_of_sale
+#: wizard_button:pos.refund_order,init,refund_n_quit:0
+msgid "Ok"
+msgstr "U redu"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Notes"
+msgstr "Napomene"
+
+#. module: point_of_sale
+#: field:stock.picking,pos_order:0
+msgid "Pos order"
+msgstr "Pos narudzba"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+#: rml:pos.details_summary:0
+msgid "Detail of Sales"
+msgstr "Detalji Prodaje"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.invoice:0 field:pos.order,amount_tax:0
+msgid "Taxes"
+msgstr "Porezi"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_day
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_form
+msgid "Sale line"
+msgstr "Linija prodaje"
+
+#. module: point_of_sale
+#: report:pos.lines:0
+msgid "No. Of Articles"
+msgstr "Br.Artikala"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/report/pos_invoice.py:46
+#, python-format
+msgid "Please create an invoice for this sale."
+msgstr "MOlim kreiraj Fakturu za ovu prodaju"
+
+#. module: point_of_sale
+#: field:pos.order,date_validity:0
+msgid "Validity Date"
+msgstr "Rok Vazenja"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Operation N° :"
+msgstr ""
+
+#. module: point_of_sale
+#: report:pos.lines:0
+msgid "VAT"
+msgstr "PDV"
+
+#. module: point_of_sale
+#: model:ir.actions.wizard,name:point_of_sale.pos_refund
+msgid "Refund Orders"
+msgstr "Storno"
+
+#. module: point_of_sale
+#: field:pos.order,picking_id:0
+msgid "Last Output Picking"
+msgstr "Izlaz zadnjeg biranja"
+
+#. module: point_of_sale
+#: wizard_view:pos.config.journal,init:0
+msgid "Select default journals"
+msgstr "Izaberi POdrazumevani Dnevnik(knjigu)"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+msgid "VAT(%)"
+msgstr "PDV(%)"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Tax"
+msgstr "Porez"
+
+#. module: point_of_sale
+#: view:report.transaction.pos:0
+msgid "Total Transaction"
+msgstr "Ukupna Transakcija"
+
+#. openerp-web
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:64
+msgid "Disc"
+msgstr "Popust"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Fax :"
+msgstr "Faks:"
+
+#. module: point_of_sale
+#: view:pos.scan.product:0
+msgid "Scan Barcode"
+msgstr "Skeniraj Bar-Kod"
+
+#. module: point_of_sale
+#: report:account.statement:0 field:report.pos.order,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: point_of_sale
+#: field:pos.order,payments:0
+msgid "Order Payments"
+msgstr "Nalozi Plaćanja"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Date :"
+msgstr "Datum :"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Disc :"
+msgstr ""
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "POS Orders"
+msgstr "POS Nalozi"
+
+#. module: point_of_sale
+#: report:pos.lines:0
+msgid "Disc. (%)"
+msgstr "Popust (%)"
+
+#. module: point_of_sale
+#: report:pos.details_summary:0
+msgid "Sales total"
+msgstr "Ukupna Prodaja"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Supplier Invoice"
+msgstr "Faktura Dobavljaca"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:1210
+#, python-format
+msgid "Modify line failed !"
+msgstr "Neuspesno modifikovanje linije !"
+
+#. module: point_of_sale
+#: view:pos.order.line:0
+msgid "Sum of subtotals"
+msgstr "Suma Subtotala"
+
+#. module: point_of_sale
+#: field:pos.make.payment,payment_date:0
+msgid "Payment date"
+msgstr "Datum Isplate"
+
+#. module: point_of_sale
+#: field:pos.make.payment,payment_name:0
+msgid "Payment name"
+msgstr "Naziv Isplate"
+
+#. module: point_of_sale
+#: field:pos.order,lines:0
+msgid "Order Lines"
+msgstr "Stavke naloga"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: report:pos.details:0 report:pos.payment.report.user:0
+#: report:pos.user.product:0 field:report.sales.by.margin.pos,qty:0
+#: field:report.sales.by.margin.pos.month,qty:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:32
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:59
+msgid "Qty"
+msgstr "Kol."
+
+#. module: point_of_sale
+#: model:ir.module.module,shortdesc:point_of_sale.module_meta_information
+msgid "Point Of Sale"
+msgstr "Mesto Prodaje"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:293
+#: code:addons/point_of_sale/point_of_sale.py:472
+#: code:addons/point_of_sale/report/pos_invoice.py:46
+#: code:addons/point_of_sale/wizard/pos_box_entries.py:46
+#: code:addons/point_of_sale/wizard/pos_box_entries.py:100
+#: code:addons/point_of_sale/wizard/pos_box_entries.py:105
+#: code:addons/point_of_sale/wizard/pos_box_out.py:86
+#: code:addons/point_of_sale/wizard/pos_box_out.py:88
+#, python-format
+msgid "Error !"
+msgstr "Greska !"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "User :"
+msgstr ""
+
+#. module: point_of_sale
+#: field:pos.order.line,create_date:0
+msgid "Creation Date"
+msgstr "Datum kreiranja"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "PRO-FORMA"
+msgstr "Predračun"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Total :"
+msgstr ""
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_point_rep
+msgid "Reporting"
+msgstr "Izveštavanje"
+
+#. module: point_of_sale
+#: view:report.sales.by.margin.pos:0 view:report.sales.by.margin.pos.month:0
+#: view:report.sales.by.user.pos:0 view:report.sales.by.user.pos.month:0
+#: view:report.transaction.pos:0
+msgid "POS "
+msgstr "POS "
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_pos_config_journal
+msgid "Point of Sale journal configuration."
+msgstr "Dnevnik konfiguracije Prodajnog Mesta ( POS)"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:1202
+#, python-format
+msgid "Create line failed !"
+msgstr "Neuspesno Kreiranje linije"
+
+#. module: point_of_sale
+#: wizard_field:pos.config.journal,init,default_journal:0
+msgid "Default journal"
+msgstr "Glavna Knjiga"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:69
+#, python-format
+msgid "Invalid action !"
+msgstr "Nedozvoljena Akcija !"
+
+#. module: point_of_sale
+#: field:pos.order,account_receivable:0
+msgid "Default Receivable"
+msgstr "Osnovna Potrazivanja"
+
+#. module: point_of_sale
+#: model:ir.actions.wizard,name:point_of_sale.pos_sale_get
+msgid "Get From Order"
+msgstr "Uzmi iz Naloga"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_point_config_product
+msgid "Configuration"
+msgstr "Podešavanje"
+
+#. module: point_of_sale
+#: report:pos.invoice:0 report:pos.lines:0 field:pos.order.line,price_unit:0
+#: report:pos.payment.report.user:0
+msgid "Unit Price"
+msgstr "Cena komada"
+
+#. module: point_of_sale
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Nevažeći XML za pregled arhitekture"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_action_pos_order_line_day
+msgid "POS Lines of the day"
+msgstr "Dnevna prodaja blagajne"
+
+#. module: point_of_sale
+#: field:pos.order,nb_print:0
+msgid "Number of Print"
+msgstr "Br. Odstampanih"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_wizard_default_journal
+msgid "Default journals"
+msgstr "Osnovni Dnevnik"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:1057
+#: code:addons/point_of_sale/point_of_sale.py:1076
+#, python-format
+msgid "No valid pricelist line found !"
+msgstr "NIje pronadjen odgovarajuci cenovnik"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Draft Invoice"
+msgstr "Fakture u Pripremi"
+
+#. module: point_of_sale
+#: field:pos.discount,discount:0 field:pos.order.line,discount:0
+msgid "Discount (%)"
+msgstr "Popust (%)"
+
+#. module: point_of_sale
+#: model:ir.actions.wizard,name:point_of_sale.pos_add_product
+msgid "Add products"
+msgstr "Dodaj proizvod"
+
+#. module: point_of_sale
+#: view:pos.order.line:0
+msgid "Total qty"
+msgstr "Ukupna kol."
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_action_pos_order_line
+msgid "POS Lines"
+msgstr "Blagajne"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Sales Order POS"
+msgstr "Prodajni nalozi POS-a"
+
+#. module: point_of_sale
+#: wizard_button:pos.config.journal,init,set_default_journal:0
+msgid "Define default journals"
+msgstr "Definisi Glavnu Knjigu"
+
+#. module: point_of_sale
+#: field:account.bank.statement.line,pos_statement_id:0
+#: field:pos.order,amount_return:0
+msgid "unknown"
+msgstr "nepoznato"
+
+#. module: point_of_sale
+#: view:account.journal:0 model:ir.model,name:point_of_sale.model_pos_order
+#: model:ir.ui.menu,name:point_of_sale.menu_point_root_touchscreen
+#: view:product.product:0
+msgid "Point of Sale"
+msgstr "Mesto Prodaje"
+
+#. module: point_of_sale
+#: view:pos.order:0 field:pos.payment.report.user,user_id:0
+#: field:pos.sale.user,user_id:0 field:pos.sales.user.today,user_id:0
+#: view:report.pos.order:0 field:report.pos.order,user_id:0
+msgid "Salesman"
+msgstr "Prodavac"
+
+#. module: point_of_sale
+#: report:pos.details:0 view:pos.order:0 selection:pos.order,state:0
+#: view:report.pos.order:0 selection:report.pos.order,state:0
+msgid "Invoiced"
+msgstr "Fakturisani"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Tel :"
+msgstr ""
+
+#. module: point_of_sale
+#: wizard_field:pos.config.journal,init,default_journal_rebate:0
+msgid "Default rebate journal"
+msgstr "Osnovni Dnevnik Rabat-a"
+
+#. module: point_of_sale
+#: model:ir.actions.wizard,name:point_of_sale.wizard_default_journal
+msgid "Wizard default journals"
+msgstr "Carobnjak Glavne Knjige"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Ma_ke Payment"
+msgstr "Izvrsi Uplatu"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:340
+#, python-format
+msgid "No order lines defined for this sale."
+msgstr "Nema narudzbenica definisanih za ovu prodaju."
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid ","
+msgstr ","
+
+#. module: point_of_sale
+#: view:pos.scan.product:0
+msgid "Add"
+msgstr "Dodaj"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Draft"
+msgstr "Priprema"
+
+#. module: point_of_sale
+#: field:pos.order,amount_paid:0 selection:pos.order,state:0
+msgid "Paid"
+msgstr "Plaćeni"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "VAT :"
+msgstr "PDV :"
+
+#. module: point_of_sale
+#: view:pos.order.line:0
+msgid "POS Order lines"
+msgstr "POS nalozi"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "E-mail :"
+msgstr "E-mail :"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Total invoiced"
+msgstr "Ukupno fakturisano"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_trans_pos_tree_today
+msgid "Sales of the day"
+msgstr "Dnevni promet"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:358
+#, python-format
+msgid "Please provide a partner for the sale."
+msgstr "Molim postavi partnera za prodaju"
+
+#. module: point_of_sale
+#: view:pos.order.line:0
+msgid "POS Order line"
+msgstr "Linija POS zahteva"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "."
+msgstr ""
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Discount"
+msgstr "Popust"
+
+#. module: point_of_sale
+#: report:account.statement:0 report:all.closed.cashbox.of.the.day:0
+#: view:pos.details:0 report:pos.sales.user:0 report:pos.sales.user.today:0
+#: report:pos.user.product:0 view:report.cash.register:0
+#: field:report.cash.register,user_id:0
+#: field:report.sales.by.margin.pos,user_id:0
+#: field:report.sales.by.margin.pos.month,user_id:0
+#: field:report.sales.by.user.pos,user_id:0
+#: field:report.sales.by.user.pos.month,user_id:0
+#: field:report.transaction.pos,user_id:0
+#: model:res.groups,name:point_of_sale.group_pos_user
+msgid "User"
+msgstr "Корисник"
+
+#. module: point_of_sale
+#: field:pos.make.payment,payment_date:0
+msgid "Payment Date"
+msgstr "Datum Isplate"
+
+#. module: point_of_sale
+#: field:pos.payment,payment_name:0
+msgid "Payment Name"
+msgstr "Naziv Isplate"
+
+#. module: point_of_sale
+#: report:pos.details:0 field:report.transaction.pos,date_create:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree
+#: model:ir.model,name:point_of_sale.model_report_sales_by_user_pos
+msgid "Sales by user"
+msgstr "Prodaje po korisniku"
+
+#. module: point_of_sale
+#: wizard_button:pos.add_product,init,add:0
+#: view:pos.order:0
+msgid "_Add product"
+msgstr "_Dodaj proizvod"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_discount
+#: view:pos.discount:0
+msgid "Apply Discount"
+msgstr "Prihvati Popust"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+#: rml:pos.details_summary:0
+msgid "Period:"
+msgstr "Period:"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_trans_pos_tree
+msgid "All the sales"
+msgstr "Sve Prodaje"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Compute"
+msgstr "Izracunaj"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: report:all.closed.cashbox.of.the.day:0 report:pos.invoice:0
+#: report:pos.lines:0 report:pos.payment.report.user:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:49
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:93
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:271
+msgid "Total:"
+msgstr "Ukupno:"
+
+#. module: point_of_sale
+#: field:pos.order,picking_id:0
+msgid "Picking"
+msgstr "Biranje"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/wizard/pos_get_sale.py:54
+#, python-format
+msgid "You can't modify this order. It has already been paid"
+msgstr "Ne mozes izmeniti ovu fakturu, vec je placena"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:358
+#, python-format
+msgid "Error"
+msgstr "Greska"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Create _Invoice"
+msgstr "Kreiraj_Fakturu"
+
+#. module: point_of_sale
+#: report:pos.invoice:0 report:pos.lines:0 field:pos.order.line,qty:0
+#: field:report.sales.by.user.pos,qty:0
+#: field:report.sales.by.user.pos.month,qty:0
+msgid "Quantity"
+msgstr "Količina"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Refund"
+msgstr "Refundiraj"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+#: rml:pos.details_summary:0
+msgid "Mode of payment"
+msgstr "Nacin placanja"
+
+#. module: point_of_sale
+#: wizard_button:pos.payment,ask_pay,add_pay:0
+msgid "Ma_ke payment"
+msgstr "Izvrsi Isplatu"
+
+#. module: point_of_sale
+#: field:pos.config.journal,code:0
+msgid "Code"
+msgstr "Šifra"
+
+#. module: point_of_sale
+#: field:pos.order,pricelist_id:0
+msgid "Pricelist"
+msgstr "Cenovnik"
+
+#. module: point_of_sale
+#: wizard_field:pos.discount,init,discount:0
+msgid "Discount percentage"
+msgstr "Procenat popusta"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: model:ir.actions.act_window,name:point_of_sale.action_report_pos_receipt
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:231
+msgid "Receipt"
+msgstr "Racun"
+
+#. module: point_of_sale
+#: view:account.bank.statement:0 view:pos.order:0 field:pos.order,state:0
+#: report:pos.sales.user:0 report:pos.sales.user.today:0
+#: field:report.cash.register,state:0 field:report.pos.order,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: point_of_sale
+#: wizard_view:pos.refund_order,init:0
+msgid "Refund order :"
+msgstr "Nalog Refundacije"
+
+#. module: point_of_sale
+#: field:report.transaction.pos,no_trans:0
+msgid "Number of Transaction"
+msgstr "Broj Transakcija"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Net Total:"
+msgstr "Neto Ukupno"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/pos.py:0
+#, python-format
+msgid "Cannot delete a point of sale which is already confirmed !"
+msgstr ""
+
+#. module: point_of_sale
+#: view:res.company:0
+msgid "Other"
+msgstr "Drugo"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Done"
+msgstr "Gotovo"
+
+#. module: point_of_sale
+#: model:ir.actions.report.xml,name:point_of_sale.pos_invoice_report
+#: report:pos.invoice:0 view:pos.order:0 field:pos.order,invoice_id:0
+msgid "Invoice"
+msgstr "Faktura"
+
+#. module: point_of_sale
+#: view:pos.box.entries:0 view:pos.box.out:0 view:pos.confirm:0
+#: view:pos.make.payment:0 view:pos.open.statement:0 view:pos.receipt:0
+msgid "Cancel"
+msgstr "Otkaži"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: view:pos.details:0 view:pos.discount:0 view:pos.payment.report:0
+#: view:pos.payment.report.user:0 view:pos.sale.user:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:13
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Order lines"
+msgstr "Linije zahteva"
+
+#. module: point_of_sale
+#: field:pos.order,name:0 field:pos.order.line,order_id:0
+msgid "Order Ref"
+msgstr "Veze naloga"
+
+#. module: point_of_sale
+#: view:pos.make.payment:0
+msgid "Add payment :"
+msgstr "Dodaj Placanje :"
+
+#. module: point_of_sale
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Ime objekta mora da počne sa x_ i ne sme da sadrži specijalne karaktere !"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Total of the day"
+msgstr "Dnevni pazar"
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_pos_payment
+msgid "Pos Payment"
+msgstr "POS Isplate"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Total discount"
+msgstr "Popust Ukupno"
+
+#. module: point_of_sale
+#: field:pos.order,invoice_wanted:0
+msgid "Create Invoice"
+msgstr "Kreiraj Fakturu"
+
+#. module: point_of_sale
+#: wizard_view:pos.refund_order,init:0
+msgid "Refund "
+msgstr "Refunidraj "
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_pos_order_line
+msgid "Lines of Point of Sale"
+msgstr "Blagajne"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Taxes:"
+msgstr "Porezi:"
+
+#. module: point_of_sale
+#: view:pos.order:0 view:report.transaction.pos:0
+msgid "Amount total"
+msgstr "Ukupan Iznos"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: model:ir.model,name:point_of_sale.model_product_product
+#: report:pos.details:0 field:pos.order.line,product_id:0
+#: report:pos.payment.report.user:0 report:pos.user.product:0
+#: view:report.pos.order:0 field:report.pos.order,product_id:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:29
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Invoicing"
+msgstr "Fakturisanje"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid ":"
+msgstr ":"
+
+#. module: point_of_sale
+#: view:account.bank.statement:0 report:account.statement:0
+#: report:all.closed.cashbox.of.the.day:0
+#: model:ir.model,name:point_of_sale.model_account_journal
+#: field:pos.config.journal,journal_id:0 field:pos.order,sale_journal:0
+#: view:report.cash.register:0 field:report.cash.register,journal_id:0
+#: field:report.pos.order,journal_id:0
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: point_of_sale
+#: field:pos.scan.product,gencod:0
+msgid "Barcode"
+msgstr "Bar-Kod"
+
+#. module: point_of_sale
+#: rml:pos.invoice:0
+msgid "Canceled Invoice"
+msgstr "Poništen račun"
+
+#. module: point_of_sale
+#: view:report.sales.by.margin.pos:0 view:report.sales.by.margin.pos.month:0
+#: view:report.sales.by.user.pos:0 view:report.sales.by.user.pos.month:0
+#: view:report.transaction.pos:0
+msgid "POS"
+msgstr "POS"
+
+#. module: point_of_sale
+#: model:ir.actions.report.xml,name:point_of_sale.pos_lines_report
+msgid "Pos Lines"
+msgstr "POS Linije"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Tel. :"
+msgstr "Tel.:"
+
+#. module: point_of_sale
+#: field:pos.payment,payment_nb:0
+msgid "Piece Number"
+msgstr "Br. Komada"
+
+#. module: point_of_sale
+#: wizard_field:pos.config.journal,init,default_journal_gift:0
+msgid "Default gift journal"
+msgstr "Glavna Knjiga Poklona"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_payment
+#: report:pos.details:0 view:pos.order:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:87
+msgid "Payment"
+msgstr "Isplata"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_action_pos_order_tree3
+msgid "All orders"
+msgstr "Svi Nalozi"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Sale Order"
+msgstr "Nalog za prodaju"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_trans_pos_tree_month
+msgid "Sales of the month"
+msgstr "Mesecna prodaja"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "D_iscount"
+msgstr "P_opust"
+
+#. module: point_of_sale
+#: field:pos.order,date_order:0
+msgid "Date Ordered"
+msgstr "Naručeno Dana"
+
+#. module: point_of_sale
+#: rml:pos.receipt:0
+msgid "Ce bon est valide jusqu'au"
+msgstr ""
+
+#. module: point_of_sale
+#: field:pos.order,statement_ids:0
+msgid "Payments"
+msgstr "Placanja"
+
+#. module: point_of_sale
+#: report:pos.invoice:0
+msgid "Supplier Refund"
+msgstr "Povrat Dobavljaču"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/wizard/wizard_get_sale.py:0
+#, python-format
+msgid "UserError"
+msgstr ""
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0
+msgid "Summary"
+msgstr "Sumarno"
+
+#. module: point_of_sale
+#: field:pos.config.journal,name:0 report:pos.invoice:0 report:pos.lines:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: point_of_sale
+#: model:ir.actions.report.xml,name:point_of_sale.pos_details_summary
+msgid "Sales (summary)"
+msgstr "Prodaja(sumarno)"
+
+#. module: point_of_sale
+#: field:pos.order,account_move:0
+msgid "Account Entry"
+msgstr "Sadrzaj Naloga"
+
+#. module: point_of_sale
+#: wizard_field:pos.payment,ask_pay,payment_id:0
+#: field:pos.payment,payment_id:0
+msgid "Payment Term"
+msgstr "Uslovi plaćanja"
+
+#. module: point_of_sale
+#: report:account.statement:0 field:pos.box.entries,amount:0
+#: field:pos.box.out,amount:0 report:pos.invoice:0
+#: field:pos.make.payment,amount:0 report:pos.user.product:0
+#: field:report.transaction.pos,amount:0
+msgid "Amount"
+msgstr "Iznos"
+
+#. module: point_of_sale
+#: view:pos.order:0
+msgid "Actions"
+msgstr "Radnje"
+
+#. module: point_of_sale
+#: report:pos.details_summary:0
+msgid "Mode of Taxes"
+msgstr "Vrste Poreza"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+#: rml:pos.details_summary:0
+msgid "Print Date:"
+msgstr "Datum Stampe"
+
+#. module: point_of_sale
+#: rml:pos.details:0
+#: rml:pos.details_summary:0
+msgid "Company:"
+msgstr "Firma:"
+
+#. module: point_of_sale
+#: report:pos.details:0 report:pos.details_summary:0 report:pos.lines:0
+#: report:pos.payment.report.user:0 report:pos.sales.user:0
+#: report:pos.sales.user.today:0 report:pos.user.product:0
+msgid "Print Date"
+msgstr "Datum Stampe"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: field:pos.order,amount_total:0 report:pos.payment.report.user:0
+#: field:report.sales.by.user.pos,amount:0
+#: field:report.sales.by.user.pos.month,amount:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:33
+msgid "Total"
+msgstr "Ukupno"
+
+#. #-#-#-#-#  point_of_sale.pot (OpenERP Server 6.1rc1)  #-#-#-#-#
+#. module: point_of_sale
+#. #-#-#-#-#  point_of_sale.pot.web (PROJECT VERSION)  #-#-#-#-#
+#. openerp-web
+#: report:pos.details:0 report:pos.invoice:0 report:pos.lines:0
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:30
+#: /home/odo/repositories/addons/trunk/point_of_sale/static/src/xml/pos.xml:69
+msgid "Price"
+msgstr "Cena"

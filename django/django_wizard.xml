@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="action_django_model_wizard" model="ir.actions.act_window">
+            <field name="name">Create Django Model</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">django.create.model.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem name="Create Django Model" action="action_django_model_wizard" id="django_wizard_model" parent="base.next_id_9" groups="base.group_extended"/>
+    </data>
+</openerp>

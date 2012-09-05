@@ -1,0 +1,86 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* carrier_picking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.0\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-22 12:46+0000\n"
+"PO-Revision-Date: 2011-08-27 06:38+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: carrier_picking
+#: field:res.partner.address,plate:0
+msgid "Plate"
+msgstr "Matrícula"
+
+#. module: carrier_picking
+#: field:stock.picking,address_carrier_id:0
+msgid "Carrier Address"
+msgstr "Adreça transportista"
+
+#. module: carrier_picking
+#: field:stock.picking,carrier_name:0
+msgid "Carrier Info"
+msgstr "Informació transportista"
+
+#. module: carrier_picking
+#: model:ir.model,name:carrier_picking.model_stock_picking
+msgid "Picking List"
+msgstr "Albarà"
+
+#. module: carrier_picking
+#: model:ir.module.module,shortdesc:carrier_picking.module_meta_information
+msgid "Carrier picking adds carrier contact information"
+msgstr "L'albarà del transportista afegeix la seva informació de contacte"
+
+#. module: carrier_picking
+#: model:ir.module.module,description:carrier_picking.module_meta_information
+msgid ""
+"Carrier picking module:\n"
+"\n"
+"* Adds contact carrier in picking lists and a field to store additional "
+"information (like vehicle's plate) in partner addresses and picking lists"
+msgstr ""
+"Mòdul transportista en els albarans:\n"
+"\n"
+"* Afegeix l'adreça del transportista en els albarans i un camp per "
+"emmagatzemar informació addicional (per exemple la matrícula del vehicle) a "
+"les adreces d'empresa i els albarans."
+
+#. module: carrier_picking
+#: help:res.partner.address,plate:0
+msgid "Vehicle's plate."
+msgstr "Matrícula del vehicle."
+
+#. module: carrier_picking
+#: model:ir.model,name:carrier_picking.model_res_partner_address
+msgid "Partner Addresses"
+msgstr "Adreces de l'empresa"
+
+#. module: carrier_picking
+#: view:res.partner:0
+#: view:res.partner.address:0
+msgid "Vehicle"
+msgstr "Vehicle"
+
+#. module: carrier_picking
+#: help:stock.picking,carrier_name:0
+msgid "Additional carrier information (vehicle's plate, ...)"
+msgstr "Informació addicional del transportista (matrícula del vehicle, ...)"
+
+#~ msgid "Carrier picking"
+#~ msgstr "Transportista en los albaranes"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "﻿XML invàlid per a la definició de la vista!"
+
+#~ msgid "Vehicle's plate"
+#~ msgstr "Matrícula del vehicle"

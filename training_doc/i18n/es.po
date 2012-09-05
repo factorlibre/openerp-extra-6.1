@@ -1,0 +1,122 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_doc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-19 17:44+0000\n"
+"PO-Revision-Date: 2011-04-20 16:43+0000\n"
+"Last-Translator: Jordi Esteve (www.zikzakmedia.com) "
+"<jesteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: training_doc
+#: view:training.course:0
+msgid "Wiki"
+msgstr "Wiki"
+
+#. module: training_doc
+#: view:training.course.add.wiki.wizard:0
+msgid "Search with keyword all wiki pages and add in Course Training"
+msgstr ""
+"Busca todas las páginas wiki que contienen una palabra clave y las añade en "
+"una materia de formación."
+
+#. module: training_doc
+#: field:wiki.wiki,sequence:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: training_doc
+#: model:ir.model,name:training_doc.model_training_course
+msgid "training.course"
+msgstr "formación.materia"
+
+#. module: training_doc
+#: help:training.course.add.wiki.wizard,keyword:0
+msgid "Input a keyword to make a search."
+msgstr "Introduzca una palabra clave para efectuar la búsqueda."
+
+#. module: training_doc
+#: model:ir.model,name:training_doc.model_training_course_add_wiki_wizard
+msgid "training.course.add.wiki.wizard"
+msgstr "formación.materia.añadir.wiki.asistente"
+
+#. module: training_doc
+#: selection:training.course.add.wiki.wizard,state:0
+msgid "Selected"
+msgstr "Seleccionado"
+
+#. module: training_doc
+#: field:training.course.add.wiki.wizard,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: training_doc
+#: model:ir.model,name:training_doc.model_wiki_wiki
+msgid "wiki.wiki"
+msgstr "wiki.wiki"
+
+#. module: training_doc
+#: field:training.course,course_wiki_pages_ids:0
+#: field:training.course.add.wiki.wizard,course_wiki_pages_wizard_ids:0
+msgid "Wiki Docs"
+msgstr "Documentos wiki"
+
+#. module: training_doc
+#: field:training.course.add.wiki.wizard,keyword:0
+msgid "Keywords"
+msgstr "Palabras clave"
+
+#. module: training_doc
+#: selection:training.course.add.wiki.wizard,state:0
+msgid "Second"
+msgstr "Segundo"
+
+#. module: training_doc
+#: view:training.course.add.wiki.wizard:0
+msgid "Continue"
+msgstr "Continuar"
+
+#. module: training_doc
+#: selection:training.course.add.wiki.wizard,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: training_doc
+#: model:ir.actions.act_window,name:training_doc.training_course_add_wiki_action
+#: view:training.course.add.wiki.wizard:0
+msgid "Add Wikis"
+msgstr "Añadir wikis"
+
+#. module: training_doc
+#: view:training.course.add.wiki.wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: training_doc
+#: view:training.course.add.wiki.wizard:0
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: training_doc
+#: constraint:training.course:0
+msgid "Please, Can you check the duration ?"
+msgstr "Por favor, ¿Puede comprobar la duración?"
+
+#. module: training_doc
+#: view:training.course.add.wiki.wizard:0
+msgid "Select wikis to add"
+msgstr "Seleccione wikis a añadir"
+
+#. module: training_doc
+#: selection:training.course.add.wiki.wizard,state:0
+msgid "First"
+msgstr "Primero"

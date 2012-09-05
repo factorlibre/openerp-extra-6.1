@@ -1,0 +1,294 @@
+<?xml version="1.0" ?>
+<openerp>
+<data>
+
+    <record id="view_migration_old_fields_form" model="ir.ui.view">
+        <field name="name">migration.old_field.form</field>
+        <field name="model">migration.old_field</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Fields">
+                <group colspan="4" col="4">
+                    <field name="name" select="1"/>
+                    <field name="model_id" readonly="1"/>
+                    <field colspan="4" name="field_description" select="2"/>
+                </group>
+                <group colspan="2" col="2">
+                    <field name="ttype" select="2"/>
+                    <field name="relation" select="2" attrs="{'required': [('ttype','in', ['many2one','one2many','many2many'])],
+                                                              'readonly': [('ttype','not in', ['many2one','one2many','many2many'])]}"/>
+                    <field name="relation_field" attrs="{'required': [('ttype','=','one2many')], 'readonly': [('ttype','!=','one2many')]}"/>
+                    <field name="selection" attrs="{'required': [('ttype','in',['selection','reference'])], 'readonly': [('ttype','not in',['selection','reference'])]}"/>
+                    <field name="size" attrs="{'required': [('ttype','in',['char','reference'])], 'readonly': [('ttype','not in',['char','reference'])]}"/>
+                </group>
+                <group colspan="2" col="2">
+                    <field name="required" select="2"/>
+                    <field name="readonly" select="2"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_migration_old_fields_tree" model="ir.ui.view">
+        <field name="name">migration.old_field.tree</field>
+        <field name="model">migration.old_field</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Fields">
+                <field name="name"/>
+                <field name="field_description"/>
+            </tree>
+        </field>
+    </record>
+        
+         <record id="view_migration_old_model_form" model="ir.ui.view">
+            <field name="name">migration.old_model.form</field>
+            <field name="model">migration.old_model</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Model Description">
+                    <field name="name" select="1"/>
+                    <field name="model" select="1"/>
+                    <field name="field_id" nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_migration_old_model_tree" model="ir.ui.view">
+            <field name="name">migration.old_model.tree</field>
+            <field name="model">migration.old_model</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="name"/>
+                    <field name="model"/>
+                </tree>
+            </field>
+        </record>
+
+         <record id="view_migration_imported_model_records_form" model="ir.ui.view">
+            <field name="name">migration.imported_model_records.form</field>
+            <field name="model">migration.imported_model_records</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Imported Model Records">
+                    <field name="model_id" select="1"/>
+                    <field name="num_records"/>
+                    <separator string="Record's mapping" colspan="4"/>
+                    <field name="records_dict" select="1" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_migration_imported_model_records_tree" model="ir.ui.view">
+            <field name="name">migration.imported_model_records.tree</field>
+            <field name="model">migration.imported_model_records</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Imported Model Records">
+                    <field name="model_id"/>
+                    <field name="num_records"/>
+                    <field name="records_dict"/>
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.ui.view" id="view_migration_import_models_form">
+		<field name="name">migration.import_models.form</field>
+		<field name="model">migration.import_models</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Import Models">
+				<notebook>
+				    <page string="General">
+				        <field name="name" select="1"/>
+			            <field name="old_name" select="2"/>
+                        <button name="get_fields" string="Get Fields" colspan="2" type="object"/>
+                        <field name="active" select="2"/>
+				        <field name="sequence"/>
+				        <field name="workflow" select="2"/>
+				        <notebook colspan="4">
+				            <page string="Fields">
+				                <field name="field" select="1" nolabel="1" colspan="4"/>
+                            </page>
+				            <page string="Actions">
+				                <field name="actions" select="1" nolabel="1" colspan="4">
+                                    <tree string="Actions" editable="bottom">
+                                        <field name="model"/>
+                                        <field name="name"/>
+                                        <field name="args"/>
+                                        <field name="do_all"/>
+                                    </tree>
+                                    <form string="Actions">
+                                        <field name="model"/>
+                                        <field name="name"/>
+                                        <field name="args"/>
+                                        <field name="do_all"/>
+                                    </form>
+                                </field>
+                            </page>
+				        </notebook>
+                        <field name="message" colspan="4"/>
+				    </page>
+				    <page string="Record Filter">
+				        <field name="domain" nolabel="1" colspan="4"/>
+                        <label string="fields - dictionary of current record values with old server values" align="0.0" colspan="4"/>
+                        <label string="is_valid - boolean variable which will be used as a expression result" align="0.0" colspan="4"/>
+				    </page>
+				</notebook>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_migration_import_models_tree">
+		<field name="name">migration.import_models.tree</field>
+		<field name="model">migration.import_models</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Import Models">
+				<field name="name" />
+				<field name="old_name"/>
+				<field name="sequence"/>
+				<field name="field"/>
+				<field name="actions"/>
+                <field name="active"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_migration_model_fields_form">
+		<field name="name">migration.model_fields.form</field>
+		<field name="model">migration.model_fields</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Import Model Feilds">
+				<group colspan="4">
+					<field name="name" select="1" on_change="change_model(name)" attrs="{'required': [('old_name','=', False)]}"/>
+					<field name="field_name"/>
+				</group>
+				<field name="old_name" select="1" attrs="{'required': [('name','=', False)]}"/>
+				<field name="used_field_value"/>
+				<separator string="Field value" colspan="4"/>
+                <notebook colspan="4">
+					<page string="Editor">
+				        <field name="field_value" nolabel="1" colspan="4" attrs="{'readonly': [('used_field_value','=', False)]}"/>
+                        <label string="value - variable which will be used as a expression result" align="0.0" colspan="4"/>
+                    </page>
+                    <page string="Legend">
+                        <label string="fields - dictionary of current record values (if is used old server field then new value of this field will be under old field name)" align="0.0" colspan="4"/>
+                        <label string="old_values - dictionary of record values with old server values" align="0.0" colspan="4"/>
+                        <label string="mapping - dictionary of imported record ids mapping (Example: mapping['res.partner.address'][15])" align="0.0" colspan="4"/>
+                        <label string="self - objects pointer" align="0.0" colspan="4"/>
+                        <label string="cr - database cursor" align="0.0" colspan="4"/>
+                        <label string="uid - current user ID" align="0.0" colspan="4"/>
+                        <label string="search_old(model_name, domain) - function which search record id(s) on the old server" align="0.0" colspan="4"/>
+                        <label string="read_old(model_name, ids, fields) - function which read record(s) on the old server" align="0.0" colspan="4"/>
+                    </page>
+                </notebook>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_migration_model_fields_tree">
+		<field name="name">migration.model_fields.tree</field>
+		<field name="model">migration.model_fields</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Import Model Feilds">
+				<field name="name" />
+				<field name="field_name" />
+				<field name="old_name" />
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_migration_import_models">
+		<field name="name">Model mapping</field>
+		<field name="res_model">migration.import_models</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_migration_schedule_form">
+		<field name="name">migration.schedule.form</field>
+		<field name="model">migration.schedule</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Scheduled Migration">
+				<notebook colspan="4">
+					<page string="General">
+						<field name="name" select="1"/>
+						<field name="date" select="1"/>
+						<field name="import_model_ids" select="2" nolabel="1" colspan="2" widget="one2many_list" readonly="1"/>
+                        <field name="actions_ids" nolabel="1" colspan="2" widget="one2many_list" readonly="1">
+                            <tree string="Actions">
+                                <field name="model"/>
+                                <field name="name"/>
+                            </tree>
+                            <form string="Actions">
+                                <field name="model" required="1"/>
+                                <field name="name"/>
+                            </form>
+                        </field>
+                        <field name="cron_id"/>
+						<field name="print_log"/>
+					</page>
+					<page string="Log">
+						<field name="log" colspan="4" nolabel="1"/>
+					</page>
+				</notebook>
+				<field name="state" select="1" readonly="1"/>
+				<group>
+					<button name="set_start" states="done,error" string="Restart" type="object"/>
+					<button name="set_start" states="stop" string="Start" type="object"/>
+					<button name="set_stop" states="ready,running" string="Stop (beta)" type="object"/>
+					<button name="test_migration" states="stop,done,error" string="Test" type="object"/>
+				</group>
+			</form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_migration_schedule_tree">
+		<field name="name">migration.schedule.tree</field>
+		<field name="model">migration.schedule</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Scheduled Migrations">
+				<field name="name" />
+				<field name="date"/>
+				<field name="state"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_migration_schedule">
+		<field name="name">Scheduled Migrations</field>
+		<field name="res_model">migration.schedule</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_migration_imported_model_records">
+		<field name="name">Imported Model Records</field>
+		<field name="res_model">migration.imported_model_records</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<wizard string="Connect to the old server" model="migration.server.connect_config" name="migration.server.connect_config.menu" menu="False" id="wizard_remote_server_config"/>
+	<wizard id="wizard_compare_servers" menu="False" model="server.migration.config" name="migration.server_compare.menu" string="Compare New and Old server's modules"/>
+	<wizard id="wizard_compare_models" model="migration.import_models" name="migration.import_models.menu" string="Model fields on New and Old servers"/>
+	<wizard id="wizard_import_config_data" model="migration.import_models" name="migration.import_data_config_wizard" menu="False" string="Create Migration Scheduler"/>
+
+    <menuitem name="Server Migration" parent="base.menu_administration" id="menu_server_migration"/>
+        <menuitem name="Compare New and Old server's modules" action="wizard_compare_servers" icon="STOCK_CONVERT" id="menu_wizard_compare_servers" type="wizard" parent="menu_server_migration"/>
+	<menuitem name="Connect to the old server" action="wizard_remote_server_config" type="wizard" id="menu_remote_server_config_wizard" parent="menu_server_migration"/>
+	<menuitem name="Create Migration Scheduler" action="wizard_import_config_data" type="wizard" id="menu_wizard_import_config_data" parent="menu_server_migration"/>
+	<menuitem name="Imported Model Records" action="action_migration_imported_model_records" id="menu_action_migration_imported_model_records" parent="menu_server_migration"/>
+	<menuitem name="Model mapping" action="action_migration_import_models" id="menu_action_migration_import_models" parent="menu_server_migration"/>
+	<menuitem name="Scheduled Migrations" action="action_migration_schedule" id="menu_action_migration_schedule" parent="menu_server_migration"/>
+
+	</data>
+</openerp>

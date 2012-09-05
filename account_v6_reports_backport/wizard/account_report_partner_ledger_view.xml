@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+     <data>
+
+         <record id="account_partner_ledger_view" model="ir.ui.view">
+            <field name="name">Partner Ledger</field>
+            <field name="model">account.partner.ledger</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Report Options">
+                <separator string="Partner Ledger" colspan="4"/>
+                <label nolabel="1" colspan="4" string="This report is an analysis done by a partner. It is a PDF report containing one line per partner representing the cumulative credit balance"/>
+                  <newline/>
+                   <field name="chart_account_id" widget='selection'/>
+                   <field name="fiscalyear_id"/>
+                   <field name="target_move"/>
+                <field name="result_selection"/>
+                <field name="initial_balance"/>
+                <field name="reconcil"/>
+                <field name="amount_currency"/>
+                <field name="page_split"/>
+                <newline/>
+                       <notebook tabpos="up" colspan="4">
+                            <page string="Filters">
+                                <field name="filter" on_change="onchange_filter(filter, fiscalyear_id)" colspan="4"/>
+                                    <separator string="Dates" colspan="4"/>
+                                    <field name="date_from" attrs="{'readonly':[('filter', '!=', 'filter_date')], 'required':[('filter', '=', 'filter_date')]}" colspan="4"/>
+                                    <field name="date_to" attrs="{'readonly':[('filter', '!=', 'filter_date')], 'required':[('filter', '=', 'filter_date')]}"  colspan="4"/>
+                                    <separator string="Periods"  colspan="4"/>
+                                    <field name="period_from"  domain="[('fiscalyear_id', '=', fiscalyear_id)]" attrs="{'readonly':[('filter','!=','filter_period')], 'required':[('filter', '=', 'filter_period')]}" colspan="4"/>
+                                    <field name="period_to" domain="[('fiscalyear_id', '=', fiscalyear_id)]" attrs="{'readonly':[('filter','!=','filter_period')], 'required':[('filter', '=', 'filter_period')]}" colspan="4"/>
+                            </page>
+                            <page string="Journals">
+                                <field name="journal_ids" colspan="4" nolabel="1"/>
+                            </page>
+                        </notebook>
+                    <separator colspan="4"/>
+                    <group col="4" colspan="4">
+                        <button icon="gtk-cancel" special="cancel" string="Cancel" colspan="2"/>
+                        <button icon="gtk-print" name="check_report" string="Print" type="object" colspan="2" />
+                    </group>
+            </form>
+            </field>
+        </record>
+
+         <record id="action_account_partner_ledger" model="ir.actions.act_window">
+             <field name="name">Select Period</field>
+             <field name="res_model">account.partner.ledger</field>
+             <field name="type">ir.actions.act_window</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+             <field name="view_id" ref="account_partner_ledger_view"/>
+             <field name="context">{'record_id':active_id}</field>
+             <field name="target">new</field>
+       </record>
+
+        <menuitem icon="STOCK_PRINT"
+            name="Partner Ledger"
+            action="action_account_partner_ledger"
+            id="account.menu_third_party_ledger"
+            parent="account.next_id_22"/>
+
+     </data>
+ </openerp>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+        <data>
+            <!--                MAIN MENU                 -->
+            <menuitem id="main" name="Tax Declaration Form"/>
+            
+            <record id="hr_employee_form" model="ir.ui.view">
+                    <field name="name">hr.employee.form</field>
+                    <field name="model">hr.employee</field>
+                    <field name="type">form</field>
+                    <field name="inherit_id" ref="hr.view_employee_form"/>
+                    <field name="arch" type="xml">
+                        <field name="marital" position='after'>
+                                <field name="no_of_childrean"/>
+                        </field>
+                    </field>
+            </record>
+            <record id="account_fiscalyear_form" model="ir.ui.view">
+                    <field name="name">account.fiscalyear.form</field>
+                    <field name="model">account.fiscalyear</field>
+                    <field name="type">form</field>
+                    <field name="inherit_id" ref="account.view_account_fiscalyear_form"/>                                        
+                    <field name="arch" type="xml">
+                         <notebook position='inside'>
+
+                            <page string='Tax Slab'>
+                                <field name="tax_slab_ids"  nolabel="1">
+                                    <tree editable='bottom'>
+                                        <field name='min_amt'/>
+                                        <field name='max_amt'/>
+                                        <field name='gender'/>
+                                        <field name='tax_percent'/>
+                                    </tree>
+                                </field>
+                            </page>
+
+                        </notebook>                    
+                    </field>
+            </record>
+
+            <record id="hr_contract_form" model="ir.ui.view">
+                    <field name="name">hr.contract.form</field>
+                    <field name="model">hr.contract</field>
+                    <field name="type">form</field>
+                    <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>                    
+                    <field name="arch" type="xml">
+                         <field name="date_end" position='after'>
+                            <field name='city_type'/>
+                        </field>
+                    </field>
+            </record>
+            
+            <!--                  INCOME TYPE TREE               -->            
+
+            <record id="hr_calculation_type_tree" model="ir.ui.view">
+                    <field name="name">hr_calculation_type.tree</field>
+                    <field name="model">hr.calculation.type</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="Calculation Types">
+                                <field name="name"/>
+                                <field name="type"/>
+                                <field name="operation"/>
+                          </tree>
+                      </field>
+            </record>
+            <record id="action_hr_calculation_type_tree" model="ir.actions.act_window">
+                    <field name="name">Calculation Types</field>
+                    <field name="res_model">hr.calculation.type</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">form,tree</field>
+                    <field name="view_id" ref="hr_calculation_type_tree"/>
+            </record>            
+
+            <record id="hr_calculation_type_form" model="ir.ui.view">
+                    <field name="name">hr_calculation_type.form</field>
+                    <field name="model">hr.calculation.type</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                          <form string="Calculation Type">
+                                <field name="name"/>
+                                <field name="type"/>
+                                <field name="operation"/>
+                          </form>
+                      </field>
+            </record>
+       
+            <menuitem id="menu_calculation_type" action="action_hr_calculation_type_tree" parent="main"/>
+       
+            <record id="hr_calculation_tree" model="ir.ui.view">
+                    <field name="name">hr.calculation.tree</field>
+                    <field name="model">hr.calculation</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="Calculations">
+                                <field name="type"/>                                
+                          </tree>
+                      </field>
+            </record>
+            <record id="hr_calculation_form" model="ir.ui.view">
+                    <field name="name">hr.calculation.form</field>
+                    <field name="model">hr.calculation</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                        <form string="Calculation">
+                            <field name="type"/>
+                            
+                            <newline/>                                         
+                            <group  attrs="{'invisible':[('type','!=','func')]}" colspan="4">
+                                <field name="function"/>
+                                <newline/>             
+                                <field name="child_calculation_ids" nolabel='1'  colspan="4">                           
+                                
+                                        <form string="Inner Calculations">
+                                            <field name="formula"/>    
+                                            <field name="gender"/>
+                                            <field name="city_type"/>
+                                        </form>
+                                        <tree string="Inner Calculations" editable='bottom'>
+                                            <field name="formula"/>    
+                                            <field name="gender"/>
+                                            <field name="city_type"/>
+                                        </tree>
+                                </field>
+                                
+                            </group>
+                            <group attrs="{'invisible':[('type','!=','fixed')]}"  colspan="4">
+                                <field name="fixed"/>  
+                                <field name="gender"/>
+                                <field name="city_type"/>
+                            </group>
+                            <group attrs="{'invisible':[('type','!=','formula')]}"  colspan="4">                            
+                                <field name="formula"/>                                    
+                                <field name="gender"/>
+                                <field name="city_type"/>
+                            </group>
+
+                        </form>
+                    </field>
+
+            </record>
+    
+            <record id="action_hr_calculation_tree" model="ir.actions.act_window">
+                    <field name="name">Calculation</field>
+                    <field name="res_model">hr.calculation</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">form,tree</field>
+                    <field name="view_id" ref="hr_calculation_tree"/>
+            </record>
+
+            
+            <record id="hr_payment_category_form" model="ir.ui.view">
+                    <field name="name">hr.allounce.deduction.categoty.form</field>
+                    <field name="model">hr.allounce.deduction.categoty</field>
+                    <field name="type">form</field>
+                    <field name="inherit_id" ref="hr_payroll.hr_allounce_deduction_categoty_form"/>
+                    <field name="arch" type="xml">
+                        <notebook position='inside'>
+
+                            <page string='Calculations'>
+                                <field name='calculation_ids' colspan='4' nolabel='1'/>                                
+                            </page>
+
+                        </notebook>
+                        <!--
+                         <field name="sequence" position='after'>
+                            <field name='min_capacity'/>
+                            <field name='max_capacity'/>
+                            <field name='defined_by'/>
+                        </field>
+-->
+                  </field>
+            </record>
+
+            <record id="hr_payment_category1_form" model="ir.ui.view">
+                    <field name="name">hr.allounce.deduction.categoty.form</field>
+                    <field name="model">hr.allounce.deduction.categoty</field>
+                    <field name="type">form</field>
+                    <field name="inherit_id" ref="hr_payroll.hr_allounce_deduction_categoty_form"/>
+                    <field name="arch" type="xml">
+                         <field name="sequence" position='after'>
+                            <field name='min_capacity'/>
+                            <field name='max_capacity'/>
+                            <field name='defined_by'/>
+                        </field>
+                  </field>
+            </record>            
+            <record id="action_hr_payment_category_form" model="ir.actions.act_window">
+                    <field name="name"></field>
+                    <field name="res_model">hr.allounce.deduction.categoty</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="view_id" ref="hr_payment_category_form"/>
+            </record>            
+<!--            
+            <record id="action_hr_payment_category_form" model="ir.actions.act_window">
+                    <field name="name">Calculations</field>
+                    <field name="res_model">hr.allounce.deduction.categoty</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="view_id" ref="hr_payment_category_form"/>
+            </record>
+-->            
+            
+            <record id="hr_tax_declaration_line_income_type_tree" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.income.type.tree</field>
+                    <field name="model">hr.tax.declaration.line.type</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="Income Type">
+                                <field name="name"  string='Narration'/>
+                                <field name="type"/>
+                          </tree>
+                      </field>
+            </record>
+            <!--                INCOME TYPE FORM                 -->
+            <record id="hr_tax_declaration_line_income_type_form" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.income.type.form</field>
+                    <field name="model">hr.tax.declaration.line.type</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                          <form string="Income Type">
+                                <field name="name"  string='Income Type'/>
+                                <field name="type"/>                                
+                          </form>
+                      </field>
+            </record>
+            <!--                INCOME TYPE TREE ACTION                 -->
+            <record id="action_hr_tax_declaration_line_income_type_tree" model="ir.actions.act_window">
+                    <field name="name">Income Types</field>
+                    <field name="res_model">hr.tax.declaration.line.type</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">form,tree</field>
+                    <field name="domain">[('type', '=', 'income')]</field>
+                    <field name="view_id" ref="hr_tax_declaration_line_income_type_tree"/>
+                    
+            </record>
+            
+            <!--                SUBMENU FOR INCOME TYPE TREE                 -->
+            <menuitem id="menu_income_type" action="action_hr_tax_declaration_line_income_type_tree" parent="main"/>        
+
+            <!--                INVESTMENT TYPE TREE                -->
+            <record id="hr_tax_declaration_line_investment_type_tree" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.investment.type.tree</field>
+                    <field name="model">hr.tax.declaration.line.type</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="investment Type">
+                                <field name="name" string='Narration'/>
+                                <field name="type"/>                                
+                          </tree>
+                      </field>
+            </record>
+            <!--                INVESTMENT TYPE FORM                -->
+            <record id="hr_tax_declaration_line_investment_type_form" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.investment.type.form</field>
+                    <field name="model">hr.tax.declaration.line.type</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                          <form string="Investment Type">
+                                <field name="name" string='Narration'/>
+                                <field name="type"/>                                
+                          </form>
+                      </field>
+            </record>
+            <!--                 INVESTMENT TYPE ACTION                -->
+            <record id="action_hr_tax_declaration_line_investment_type_tree" model="ir.actions.act_window">
+                    <field name="name">Investment Types</field>
+                    <field name="res_model">hr.tax.declaration.line.type</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">form,tree</field>
+                    <field name="domain">[('type', '=', 'investment')]</field>
+                    <field name="view_id" ref="hr_tax_declaration_line_investment_type_tree"/>
+            </record>
+            <!--                SUBMENU FOR INVESTMENT TYPE ACTION                 -->
+            <menuitem id="menu_investment_type" action="action_hr_tax_declaration_line_investment_type_tree" parent="main"/>        
+            
+            <!--                 TAX DECLARATION TREE                -->
+            <record id="hr_tax_declaration_tree" model="ir.ui.view">
+                    <field name="name">hr_tax_declaration.tree</field>
+                    <field name="model">hr.tax.declaration</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="Tax Declaration">
+                                <field name="name"/>
+                                <field name="company_id"/>
+                                <field name="total_income"/>
+                                <field name="total_investment"/>
+                                <field name="total_allowance"/>
+                                <field name="tax_to_be_deducted"/>
+                          </tree>
+                      </field>
+            </record>
+            <!--                TAX DECLARATION LINE TREE               -->
+            <record id="tax_declaration_line_tree" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.tree</field>
+                    <field name="model">hr.tax.declaration.line</field>
+                    <field name="type">tree</field>
+                    <field name="arch" type="xml">
+                          <tree string="Declarations">
+                                        <field name="name"/>
+                                        <field name="declaration_line_type_id"/>
+                                        <field name="date"/>
+                                        <field name="amount"/>
+                              </tree>
+                      </field>
+            </record>
+            <!--                TAX DECLARATION LINE FORM               -->                         
+            <record id="tax_declaration_line_form" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.line.form</field>
+                    <field name="model">hr.tax.declaration.line</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                          <form string="Declaration">
+                                        <field name="name"/>
+                                        <field name="declaration_line_type_id"/>
+                                        <field name="date"/>
+                                        <field name="amount"/>
+                          </form>
+                      </field>
+            </record>
+
+            <!--                 TAX DECLARATION FORM                -->
+            <record id="hr_tax_declaration_form" model="ir.ui.view">
+                    <field name="name">hr.tax.declaration.form</field>
+                    <field name="model">hr.tax.declaration</field>
+                    <field name="type">form</field>
+                    <field name="arch" type="xml">
+                          <form string="Tax Declaration">
+                              <group>
+                                <field name="name" select="1"/>
+                                <!--field name="employee_id" select="1"/-->
+                                <field name="company_id" select="1"/>
+                                <field name="salary"/>
+                              </group>
+                              <newline/>
+                              <notebook>
+                                <page string='Income Details'>
+                                    
+                                        <field name="income_ids" nolabel="1" mode='tree,form'>
+                                            <form string='Incomes'>
+                                                <field name="name"/>
+                                                <field name="declaration_line_type_id" string='Income Type' domain="[('type', '=', 'income')]"/>
+                                                <field name="date"/>
+                                                <field name="amount"/>
+                                            </form>
+                                            <tree string='Incomes' editable='True'>
+                                                <field name="name"/>
+                                                <field name="declaration_line_type_id" string='Income Type'/>                                                
+                                                <field name="date"/>
+                                                <field name="amount"/>
+                                            </tree>
+                                            
+                                        </field>
+                                </page>
+                                <page string='Investment Details'>
+                                    <field name="investment_ids"  nolabel="1" mode='tree,form'>
+                                            <form string='Investments'>
+                                                <field name="name"/>
+                                                <field name="declaration_line_type_id" string='Investment Type' domain="[('type', '=', 'investment')]"/>
+                                                <field name="date"/>
+                                                <field name="amount"/>
+                                            </form>
+                                            <tree string='Investments'  editable='True'>
+                                                <field name="name"/>
+                                                <field name="declaration_line_type_id" string='Investment Type'/>
+                                                <field name="date"/>
+                                                <field name="amount"/>
+                                            </tree>
+                                    
+                                    </field>
+                                </page>
+                                <page string='Allowance Details'>
+
+                                    <field name="allowance_ids"  nolabel="1">
+                                            <form string='Allowances'>                                    
+                                                <field name="name"/>
+                                                <field name="allowance_type_ids" string='Allowance Type' />
+                                                <field name="date"/>
+                                                <field name="amount"/>                                    
+                                                <field name="allowed_amount"/>                                               
+                                                
+                                            </form>
+                                            <tree string='Allowances'  editable='top'>                                     
+                                                <field name="name"/>
+                                                <field name="allowance_type_ids" string='Allowance Type'/>
+                                                <field name="date" widget='date'/>
+                                                <field name="amount"/>   
+                                                <field name="allowed_amount"/>                                               
+                                                
+                                                                                        
+                                            </tree>
+                                            
+                                    </field>
+                                </page>
+                                
+                              </notebook>
+                              <newline/>
+                              <group>
+
+                                <field name="total_income"/>
+                                <field name="total_investment"/>
+                                <field name="total_allowance"/>
+                                <field name="tax_to_be_deducted"/>
+                                                                
+                              </group>
+                          </form>
+                      </field>
+            </record>
+            <!--                TAX DECLARATION ACTION                 -->            
+            <record id="action_hr_tax_declaration_form" model="ir.actions.act_window">
+                    <field name="name">Tax Declaration</field>
+                    <field name="res_model">hr.tax.declaration</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">tree,form</field>
+                    <field name="view_id" ref="hr_tax_declaration_form"/>
+            </record>
+
+            <!--                SUB MENU TAX DECLARATION ACTION                 -->
+            <menuitem id="menu_action_hr_tax_declaration_form" action="action_hr_tax_declaration_form" parent="main"/>
+            <!--                                 -->
+            
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+            <!--                                 -->
+        </data>
+</openerp>        

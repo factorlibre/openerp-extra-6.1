@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <wizard string="Send by Email" model="purchase.order" name="purchase.order.email_send_2" id="purchase_order_email_send_wizard_2"/>
+    </data>
+</openerp>

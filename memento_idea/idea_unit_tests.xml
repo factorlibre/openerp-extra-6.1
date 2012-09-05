@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="idea_test_1" model="memento_idea.idea">
+            <field name="name">My Unit Test Idea</field>
+            <field name="description">A sample idea for performing tests</field>
+            <field name="invent_date">20100101</field>
+        </record>
+        <assert id="idea_test_1" model="memento_idea.idea" string="Ideas must start as draft"
+            severity="warning">
+            <test expr="state">draft</test>
+        </assert>
+        <function model="memento_idea.idea" name="unlink">
+            <value eval="[ref('idea_test_1')]"/>
+        </function>
+        
+        
+        <!--  Temporarily disabled this test assertion because the 
+              buildbot does not have my patch for the RNG grammar
+              which is currently not correct (count attribute and 
+              optional test child)! 
+              
+        <assert search="[('name','=','My Unit Test Idea')]" model="memento_idea.idea" 
+           severity="warning" string="Test data is not deleted (name is unique!)"
+           count="0"/>
+        -->
+    </data>
+</openerp>

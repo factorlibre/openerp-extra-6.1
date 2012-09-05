@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Protal Group -->
+
+		<record model="res.groups" id="portal_dm_printing_group">
+			<field name="name">Direct Marketing / Portal DM Printing group</field>
+			<field name="menu_access" eval="[(6,0,[ref('menu_portal_dm_campaign_job_form'),ref('board_dm.next_id_112'), ref('menu_portal_dm_campaign_job_batch_form'),ref('menu_portal_dm_campaign_job_board')])]"/>
+		</record>
+
+		<record model="res.groups" id="portal_dm_printing_extra_group">
+			<field name="name">Direct Marketing / Portal DM Printing Extra group</field>
+			<field name="menu_access" eval="[(6,0,[ref('base.menu_base_partner'),ref('document.menu_document')])]"/>
+		</record>
+
+    </data>
+</openerp>

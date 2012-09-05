@@ -1,0 +1,99 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* portal_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:50+0000\n"
+"PO-Revision-Date: 2011-02-15 15:16+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_refund
+msgid "Customer Refund"
+msgstr "Customer Refund"
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account
+msgid "Account"
+msgstr ""
+
+#. module: portal_account
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Invalid model name in the action definition."
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_invoice
+msgid "Invoices"
+msgstr "Fakturor"
+
+#. module: portal_account
+#: model:ir.module.module,shortdesc:portal_account.module_meta_information
+msgid "Portal Management - Account"
+msgstr "Portal Management - Account"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_refund_invoice
+msgid "Your Refunds"
+msgstr "Your Refunds"
+
+#. module: portal_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Invalid XML for View Architecture!"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Taxes"
+msgstr "Skatter"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_customer_invoice
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_your
+msgid "Your Invoices"
+msgstr "Your Invoices"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Other Info"
+msgstr "Övrig information"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_account_move
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_payable
+msgid "Payables & Receivables"
+msgstr "Payables & Receivables"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Payments"
+msgstr "Betalningar"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Invoice"
+msgstr "Faktura"
+
+#. module: portal_account
+#: model:ir.module.module,description:portal_account.module_meta_information
+msgid "Portal Management - Account specific data."
+msgstr "Portal Management - Account specific data."
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Total amount"
+msgstr "Total amount"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Untaxed amount"
+msgstr "Belopp ex. moms"

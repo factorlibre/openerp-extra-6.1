@@ -1,0 +1,118 @@
+=== modified file 'config/openerp-web.cfg'
+--- config/openerp-web.cfg	2009-07-23 05:32:23 +0000
++++ config/openerp-web.cfg	2009-07-27 07:26:24 +0000
+@@ -51,7 +51,12 @@
+ # will be applied on company logo
+ company.url = ''
+ 
+-# options to limit data rows in M2M/O2M lists, will be overriden 
++# options to limit data rows in M2M/O2M lists, will be overriden
+ # with limit="5", min_rows="5" attributes in the tree view definitions
+ child.listgrid.limit = 5
+ child.listgrid.min_rows = 5
++
++# options for kml (google maps) controller
++kml.db = "trunk"
++kml.user = "admin"
++kml.password = "admin"
+\ No newline at end of file
+
+=== modified file 'openerp/controllers/__init__.py'
+--- openerp/controllers/__init__.py	2009-06-17 06:19:30 +0000
++++ openerp/controllers/__init__.py	2009-07-27 07:26:24 +0000
+@@ -26,6 +26,7 @@
+ import process
+ import wiki
+ import error_page
++import maps
+ 
+ # vim: ts=4 sts=4 sw=4 si et
+ 
+
+=== added file 'openerp/controllers/maps.py'
+--- openerp/controllers/maps.py	1970-01-01 00:00:00 +0000
++++ openerp/controllers/maps.py	2009-07-27 07:26:24 +0000
+@@ -0,0 +1,51 @@
++###############################################################################
++#
++# Copyright (C) 2007-TODAY Tiny ERP Pvt Ltd. All Rights Reserved.
++#
++# $Id$
++#
++# Developed by Tiny (http://openerp.com) and Axelor (http://axelor.com).
++#
++# The OpenERP web client is distributed under the "OpenERP Public License".
++# It's based on Mozilla Public License Version (MPL) 1.1 with following
++# restrictions:
++#
++# -   All names, links and logos of Tiny, Open ERP and Axelor must be
++#     kept as in original distribution without any changes in all software
++#     screens, especially in start-up page and the software header, even if
++#     the application source code has been changed or updated or code has been
++#     added.
++#
++# -   All distributions of the software must keep source code with OEPL.
++#
++# -   All integrations to any other software must keep source code with OEPL.
++#
++# If you need commercial licence to remove this kind of restriction please
++# contact us.
++#
++# You can see the MPL licence at: http://www.mozilla.org/MPL/MPL-1.1.html
++#
++###############################################################################
++
++import cherrypy
++
++from openerp import rpc
++
++from openerp.tools import expose
++from openerp.controllers.base import BaseController
++
++class KML(BaseController):
++    path = '/kml'
++
++    @expose(content_type='application/vnd.google-earth.kml+xml')
++    def default(self, model):
++        db = cherrypy.request.app.config['openerp-web'].get('kml.db')
++        user = cherrypy.request.app.config['openerp-web'].get('kml.user')
++        password = cherrypy.request.app.config['openerp-web'].get('kml.password')
++        if not rpc.session.is_logged():
++            rpc.session.login(db, user, password)
++        proxy = rpc.RPCProxy(model)
++        kml = proxy.get_kml()
++        return kml.encode('UTF-8')
++
++# vim: ts=4 sts=4 sw=4 si et
+\ No newline at end of file
+
+=== modified file 'openerp/controllers/root.py'
+--- openerp/controllers/root.py	2009-07-23 05:32:23 +0000
++++ openerp/controllers/root.py	2009-07-27 07:26:24 +0000
+@@ -104,7 +104,7 @@
+             return dict(result=0)
+ 
+         if style in ('ajax', 'ajax_small'):
+-            return dict(db=db, user=user, password=password, location=location, 
++            return dict(db=db, user=user, password=password, location=location,
+                     style=style, cp_template="templates/login_ajax.mako")
+ 
+         return tiny_login(target=location, db=db, user=user, password=password, action="login")
+@@ -164,7 +164,7 @@
+         from openerp import release
+         version = _("Version %s-%s") % (release.version, release.release)
+         return dict(version=version)
+-    
++
+     profile = profile.profiler
+ 
+     form = controllers.form.Form()
+@@ -195,6 +195,7 @@
+     process = controllers.process.Process()
+     wiki = controllers.wiki.WikiView()
+     errorpage = controllers.error_page.ErrorPage()
++    kml = controllers.maps.KML()
+ 
+ 
+ # vim: ts=4 sts=4 sw=4 si et
+

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+    <!--
+    =======================================================
+    DM MAIL SERVICE VIEWS
+    =======================================================
+    -->
+    
+    <record model="ir.ui.view" id="view_dm_ftp_mail_service_form">
+        <field name="name">dm.mail_service.form.ftp.inherit</field>
+        <field name="model">dm.mail_service</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="dm.view_dm_mail_service_form"/>
+        <field name="arch" type="xml">
+         	<field name="store_document" position="after">
+         		<group colspan="4" attrs="{'invisible':[('service_type','!=','ftp')]}">
+            		<separator string="FTP Configuration" colspan="5"/>
+            		<field name="ftp_address" />
+            		<field name="ftp_port" />
+					<field name="ftp_user"/>
+					<field name="ftp_password"  password="True"/>
+					<field name="ftp_dir"/>
+                	<newline/>
+					<field name="ssh_key"/>
+					<field name="ssh_use"/>
+        		</group>
+        	</field>
+        </field>
+    </record>
+    
+	</data>
+</openerp>

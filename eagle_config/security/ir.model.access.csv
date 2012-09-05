@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_eagle_config_event_managers","eagle_config.eagle_config_event_managers","model_eagle_config_event","group_contracts_config_admins",1,1,1,1
+"access_eagle_config_event_line_managers","eagle_config.eagle_config_event_line_managers","model_eagle_config_event_line","group_contracts_config_admins",1,1,1,1
+"access_eagle_config_event_users","eagle_config.eagle_config_event_users","model_eagle_config_event","group_contracts_config_users",1,0,0,0
+"access_eagle_config_event_line_users","eagle_config.eagle_config_event_line_users","model_eagle_config_event_line","group_contracts_config_users",1,0,0,0
+"access_eagle_config_params_managers","eagle_config.eagle_config_params_managers","model_eagle_config_params","group_contracts_config_admins",1,1,1,1
+"access_eagle_config_params_users","eagle_config.eagle_config_params_users","model_eagle_config_params","group_contracts_config_users",1,0,0,0

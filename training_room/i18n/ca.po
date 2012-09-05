@@ -1,0 +1,139 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_room
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-08-25 09:02+0000\n"
+"PO-Revision-Date: 2011-02-15 16:58+0000\n"
+"Last-Translator: Jordi Esteve <jesteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: training_room
+#: help:training.seance,reserved:0
+msgid "Location is reserved "
+msgstr "Ubicació reservada "
+
+#. module: training_room
+#: help:training.seance,location_id:0
+#: help:training.session,location_id:0
+msgid "The location for seance"
+msgstr "Ubicació per a la convocatòria"
+
+#. module: training_room
+#: field:training.seance,reserved:0
+msgid "Reserved"
+msgstr "Reservada"
+
+#. module: training_room
+#: field:training.location,name:0
+msgid "Room"
+msgstr "Aula"
+
+#. module: training_room
+#: view:training.location:0
+msgid "Location Description"
+msgstr "Descripció d'ubicació"
+
+#. module: training_room
+#: help:training.seance,seats:0
+#: help:training.session,seats:0
+msgid "Maximum seats available in location"
+msgstr "Màximes places disponibles en una ubicació"
+
+#. module: training_room
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar amb x_ i no contenir cap caràcter "
+"especial!"
+
+#. module: training_room
+#: view:res.partner:0
+msgid "Notification Room"
+msgstr ""
+
+#. module: training_room
+#: field:res.partner,notify_location:0
+msgid "Notification for Location"
+msgstr "Notificació del lloc"
+
+#. module: training_room
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML no vàlid per a la definició de la vista!"
+
+#. module: training_room
+#: help:training.location,seats:0
+msgid "Total Seats"
+msgstr "Places totals"
+
+#. module: training_room
+#: model:ir.actions.act_window,name:training_room.training_location_all_act
+#: model:ir.ui.menu,name:training_room.training_config_locations_mi
+#: view:training.location:0
+msgid "Locations"
+msgstr "Ubicacions"
+
+#. module: training_room
+#: field:training.location,seats:0
+msgid "Seats"
+msgstr "Places"
+
+#. module: training_room
+#: field:training.seance,seats:0
+#: field:training.session,seats:0
+msgid "Maximum Seats"
+msgstr "Places màximes"
+
+#. module: training_room
+#: model:ir.module.module,description:training_room.module_meta_information
+msgid ""
+"The module training_room helps the user to manage the training's location"
+msgstr ""
+"El mòdul training_room ajuda a l'usuario a gestionar les ubicacions de les "
+"formacions"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_training_location
+#: view:training.location:0
+#: view:training.seance:0
+#: field:training.seance,location_id:0
+#: view:training.session:0
+#: field:training.session,location_id:0
+msgid "Location"
+msgstr "Ubicació"
+
+#. module: training_room
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de model no vàlid en la definició de l'acció"
+
+#. module: training_room
+#: field:training.location,address_id:0
+msgid "Address"
+msgstr "Adreça"
+
+#. module: training_room
+#: field:training.location,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: training_room
+#: model:ir.actions.act_window,name:training_room.training_location_new_act
+#: model:ir.ui.menu,name:training_room.training_config_locations_new_mi
+msgid "New Location"
+msgstr ""
+
+#. module: training_room
+#: model:ir.module.module,shortdesc:training_room.module_meta_information
+msgid "Training Room"
+msgstr "Sala de formació"

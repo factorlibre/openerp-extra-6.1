@@ -1,0 +1,149 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* report_analytic2
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:12+0000\n"
+"PO-Revision-Date: 2011-02-15 15:26+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: report_analytic2
+#: model:ir.model,name:report_analytic2.model_report_analytic_by_month
+msgid "Reporting by accounts/ by month"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.year:0
+msgid "Analytics Amount by year"
+msgstr ""
+
+#. module: report_analytic2
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.year:0
+msgid "Amount by year"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.model,name:report_analytic2.model_report_analytic_by_product
+msgid "Reporting by accounts/ by product"
+msgstr ""
+
+#. module: report_analytic2
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.ui.menu,name:report_analytic2.menu_report_amount_tree_p
+msgid "Analytic Amounts by product"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.actions.act_window,name:report_analytic2.action_report_analytics_amount_tree
+msgid "Amounts by year"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.month:0
+#: view:report.analytic.by.product:0
+#: view:report.analytic.by.year:0
+msgid "Total Amount"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.month:0
+msgid "Analytics Amount by month"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.product:0
+msgid "Amount by product"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.model,name:report_analytic2.model_report_analytic_by_year
+msgid "Reporting by accounts/ by year"
+msgstr ""
+
+#. module: report_analytic2
+#: field:report.analytic.by.product,name:0
+msgid "Product Name"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.module.module,shortdesc:report_analytic2.module_meta_information
+msgid "report_analytic"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.ui.menu,name:report_analytic2.menu_report_amount_tree
+msgid "Analytic Amount by year"
+msgstr ""
+
+#. module: report_analytic2
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.actions.act_window,name:report_analytic2.action_report_analytics_amount_tree_p
+msgid "Analytics amounts"
+msgstr ""
+
+#. module: report_analytic2
+#: field:report.analytic.by.month,year:0
+#: field:report.analytic.by.product,year:0
+#: field:report.analytic.by.year,year:0
+msgid "Year"
+msgstr ""
+
+#. module: report_analytic2
+#: field:report.analytic.by.month,amount:0
+#: field:report.analytic.by.product,amount:0
+#: field:report.analytic.by.year,amount:0
+msgid "Amount"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.product:0
+msgid "Analytics Amount by Product"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.ui.menu,name:report_analytic2.menu_report_amount_tree_m
+msgid "Analytic Amounts by month"
+msgstr ""
+
+#. module: report_analytic2
+#: field:report.analytic.by.month,month:0
+msgid "Month"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.actions.act_window,name:report_analytic2.action_report_analytics_amount_tree_m
+msgid "Amounts by month"
+msgstr ""
+
+#. module: report_analytic2
+#: view:report.analytic.by.month:0
+msgid "Amount by month"
+msgstr ""
+
+#. module: report_analytic2
+#: model:ir.module.module,description:report_analytic2.module_meta_information
+msgid "Reporting for data related to analytic accounts"
+msgstr "Reporting for data related to analytic accounts"

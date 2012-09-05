@@ -1,0 +1,11 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_kettle_server","kettle.server","model_kettle_server","group_kettle_administrateur",1,1,1,1
+"access_kettle_transformation","kettle.transformation","model_kettle_transformation","group_kettle_administrateur",1,1,1,1
+"access_kettle_task","kettle.task","model_kettle_task","group_kettle_administrateur",1,1,1,1
+"access_kettle_wizard","kettle.wizard","model_kettle_wizard","group_kettle_administrateur",1,1,1,1
+"access_kettle_parameter","All rights on kettle.parameter","model_kettle_parameter","group_kettle_administrateur",1,1,1,1
+"access_kettle_server_user","kettle.server","model_kettle_server","group_kettle_user",1,0,0,0
+"access_kettle_transformation_user","kettle.transformation","model_kettle_transformation","group_kettle_user",1,0,0,0
+"access_kettle_task_user","kettle.task","model_kettle_task","group_kettle_user",1,1,1,0
+"access_kettle_wizard_user","kettle.wizard","model_kettle_wizard","group_kettle_user",1,0,0,0
+"access_kettle_parameter_user","Read on kettle.parameter","model_kettle_parameter","group_kettle_user",1,0,0,0

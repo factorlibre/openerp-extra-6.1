@@ -1,0 +1,329 @@
+<!--
+  File: partner_view.xml
+  Module: eagle_crm
+
+  Created by sbe@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+
+<!--
+Vue a supprimer pour le CRM
+res.partner.task.info.inherit
+res.partner.emails.info.inherit
+res.partner.crm.info.inherit1
+
+-->
+<openerp>
+	<data>
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit1">
+			<field name="name">Eagle CRM Partner Form Inherit 1</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="crm.view_crm_partner_info_form1"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<page string="History" position="replace">
+					<page string="History" invisible="1">
+					</page>
+				</page>
+			</field>
+		</record>	
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit6">
+			<field name="name">Eagle CRM Partner Form Inherit 6</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<page string="History" position="replace">
+					<page string="History" invisible="1" />
+				</page>
+			</field>
+		</record>	
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit3">
+			<field name="name">Eagle CRM Partner Form Inherit 3</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="mail_gateway.view_emails_partner_info_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="emails" position="replace" />
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit_6_1">
+			<field name="name">Eagle CRM Partner Form Inherit 6.1</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="project.view_task_partner_info_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="task_ids" position="replace" />
+			</field>
+		</record>
+         <record model="ir.ui.view" id="base.view_crm_partner_info_History">
+            <field name="name">Eagle CRM Partner Form Inherit 6.2</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='History']" position="attributes">
+                   <attribute name="invisible">True</attribute>
+                </xpath>
+             </field>
+          </record>	
+
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit_6_2">
+			<field name="name">Eagle CRM Partner Form Inherit 6.2</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="crm.view_crm_partner_info_form1"/>
+			<field name="priority">14</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="meeting_ids" position="replace" />
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit_6_3">
+			<field name="name">Eagle CRM Partner Form Inherit 6.3</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="crm.view_crm_partner_info_form1"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="phonecall_ids" position="replace" />
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="res_partner_crm_history_inherit5">
+			<field name="name">Eagle CRM Partner Form Inherit 5</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="title" position="replace" />
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="eagle_view_partner_form_inherit_2">
+			<field name="name">Eagle CRM Partner Form Inherit 2</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<page string="Notes" position="before">
+					<page string="Leads" >
+						<field name="lead" colspan="4" nolabel="1" >
+							 <tree string="Leads" colors="blue:state=='pending';gray:state=='cancel'">
+								 <field name="create_date"/>
+								 <field name="name"/>
+								 <field name="type" invisible="1"/>
+								 <field name="user_id"/>
+								 <field name="state"/>
+							</tree>
+						</field>
+					</page>
+					<page string="Opportunities">
+						<field name="opportunity" colspan="4" nolabel="1" >
+							 <tree string="Opportunities" colors="blue:state=='pending';gray:state=='cancel'">
+								 <field name="create_date"/>
+								 <field name="name"/>
+								 <field name="type"/>
+								 <field name="stage_id"/>
+								 <button name="stage_previous" string="Previous" states="open,pending" type="object" icon="gtk-go-back"/>
+								 <button name="stage_next" string="Next" states="open,pending" type="object" icon="gtk-go-forward"/>
+								 <field name="user_id"/>
+								 <field name="state"/>
+								 <button name="case_cancel" string="Cancel" states="draft,open,pending" type="object" icon="gtk-cancel"/>
+								 <button name="case_open" string="Open" states="draft,pending" type="object" icon="gtk-go-forward"/>
+								 <button name="case_close" string="Close" states="open,draft,pending" type="object" icon="gtk-close"/>
+								 <button string="Convert to Opportunity" name="convert_opportunity" states="draft,open,pending" icon="gtk-index" type="object" attrs="{'invisible':[('type','=','opportunity')]}"/>
+								 <button name="case_escalate" string="Escalate" states="open,draft,pending" type="object" icon="gtk-go-up"/>
+							 </tree>
+						</field>
+					</page>
+					<page string="Meetings">
+						<field name="meeting_ids" colspan="4" nolabel="1" context="{'default_partner_id': active_id}">
+							<tree string="Meetings" colors="gray:state in ('draft', 'cancel','done','pending')">
+								<field name="user_id" string="Responsible"/>
+								<field name="name" string="Subject"/>
+								<field name="date" string="Start Date"/>
+								<field name="date_deadline" string="End Date"/>
+							</tree>
+						</field>
+					</page>
+					<page string="Phone Calls">
+						<field name="phonecall_ids" colspan="4" nolabel="1" context="{'default_partner_id': active_id}" domain="[('date','&gt;=',(datetime.date.today()-datetime.timedelta(days=7)).strftime('%%Y-%%m-%%d'))]">
+							<tree string="Phone Calls" colors="gray:state in ('draft', 'cancel','done','pending')">
+								<field name="date" string="Date"/>
+								<field name="name" string="Call Summary"/>
+								<field name="categ_id" string="Type" widget="selection"/>
+								<field name="user_id"/>
+								<field name="state"/>
+								<button name="case_cancel" string="Cancel" states="draft,open,pending" type="object" icon="gtk-cancel"/>
+								<button name="case_open" string="Open" states="draft,pending" type="object" icon="gtk-go-forward"/>
+								<button name="case_close" string="Held" states="open,draft,pending" type="object" icon="gtk-jump-to"/>
+								<button name="case_pending" string="Not Held" states="open" type="object" icon="gtk-media-pause"/>
+							</tree>
+							<form string="Phone Call">
+								 <group colspan="6" col="7">
+									<field name="name" required="1"/>
+									<field name="partner_phone" attrs="{'required': [('categ_id.name', '=', 'Outbound')]}"/>
+									<field name="duration" widget="float_time" required="1"/>
+									<button string="Schedule a Meeting" name="action_make_meeting" icon="gtk-redo" type="object"/>
+
+									<field name="date" required="1"/>
+									<field name="user_id"/>
+									<field name="section_id" colspan="1" widget="selection"/>
+									<button string="Convert to Opportunity" name="121" icon="gtk-index" type="action" attrs="{'invisible':[('opportunity_id','!=',False)]}"/>
+									<label colspan="6" string=""/>
+									<button string="Schedule Other Call" icon="terp-call-start" name="119" type="action"/>
+
+								</group>
+
+								<group col="3" colspan="2">
+									<separator colspan="3" string="Contacts"/>
+									<field name="partner_id" on_change="onchange_partner_id(partner_id, email_from)"/>
+									<button string="Create a Partner" icon="terp-partner" name="120" type="action" attrs="{'invisible':[('partner_id','!=',False)]}" groups="base.group_partner_manager"/>
+									<newline/>
+									<field name="partner_address_id" on_change="onchange_partner_address_id(partner_address_id, email_from)"/>
+									<newline/>
+									<field name="partner_mobile"/>
+								</group>
+								<group col="2" colspan="2">
+									<separator colspan="2" string="Categorization"/>
+									<field name="categ_id" widget="selection" domain="[('object_id.model', '=', 'crm.phonecall')]" string="Type"/>
+									<field name="priority"/>
+									<field name="opportunity_id"/>
+								</group>
+								<separator string="Description" colspan="4"/>
+								<field name="description" nolabel="1" colspan="4"/>
+								<separator colspan="4"/>
+								<group col="8" colspan="4">
+									<field name="state" select="1"/>
+									<button name="case_cancel" string="Cancel" states="draft,open,pending" type="object" icon="gtk-cancel"/>
+									<button name="case_open" string="Open" states="draft,pending" type="object" icon="gtk-go-forward"/>
+									<button name="case_pending" string="Not Held" states="open" type="object" icon="gtk-media-pause"/>
+									<button name="case_close" string="Held" states="open,draft,pending" type="object" icon="gtk-jump-to"/>
+									<button name="case_reset" string="Reset to Draft" states="done,cancel" type="object" icon="gtk-convert"/>
+								</group>
+							</form>                        
+						</field>
+					</page>
+					<page string="Offres">
+						<field name="offres" colspan="4" nolabel="1" >
+							 <tree string="Offres" colors="blue:state=='pending';gray:state=='cancel'">
+								 <field name="create_date"/>
+								 <field name="name"/>
+								 <field name="type"/>
+								 <field name="stage_id"/>
+								 <button name="stage_previous" string="Previous" states="open,pending" type="object" icon="gtk-go-back"/>
+								 <button name="stage_next" string="Next" states="open,pending" type="object" icon="gtk-go-forward"/>
+								 <field name="user_id"/>
+								 <field name="state"/>
+								 <button name="case_cancel" string="Cancel" states="draft,open,pending" type="object" icon="gtk-cancel"/>
+								 <button name="case_open" string="Open" states="draft,pending" type="object" icon="gtk-go-forward"/>
+								 <button name="case_close" string="Close" states="open,draft,pending" type="object" icon="gtk-close"/>
+								 <button string="Convert to Opportunity" name="convert_opportunity" states="draft,open,pending" icon="gtk-index" type="object" attrs="{'invisible':[('type','=','opportunity')]}"/>
+								 <button name="case_escalate" string="Escalate" states="open,draft,pending" type="object" icon="gtk-go-up"/>
+							 </tree>
+						</field>
+					</page>
+					<page string="Claims">
+						<field name="claims" colspan="4" nolabel="1" context="{'default_partner_id': active_id}">
+							<tree string="Claims" colors="gray:state in ('draft', 'cancel','done','pending')">
+								<field name="name"/>
+								<field name="partner_id"/>
+								<field name="user_id"/>
+								<field name="date"/>
+								<field name="date_action_next"/>
+								<field name="action_next"/>
+								<field name="categ_id" string="Type" select="1"/>
+								<field name="stage_id" invisible="1"/>
+								<field name="date_deadline" invisible="1"/>
+								<field name="date_closed" invisible="1"/>
+								<field name="state"/>
+							</tree>
+						</field>
+					</page>
+					<page string="Tasks">
+					<field name="task_ids" colspan="4" nolabel="1">
+                        <tree string="Tasks" editable="bottom">
+                            <field name="name"/>
+                            <field name="user_id"/>
+                        </tree>
+                    </field>
+					</page>
+				</page>
+			</field>
+		</record>
+		
+	<!--	<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2address" name="Address"
+            res_model="res.partner.address"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />
+	-->	
+		<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2contact" name="Contact"
+            res_model="res.partner.contact"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />
+		<act_window domain="[('partner_id', '=', active_id),('type', '=', 'opportunity')]"
+			id="eagle_crm_partner2opportunity" name="Opportunity"
+    		res_model="crm.lead" src_model="res.partner"
+    		view_id="crm.crm_case_my_open_oppor"
+    		groups="base.group_extended"/>
+			
+		<act_window domain="[('partner_id', '=', active_id),('type', '=', 'opportunity'),('state', '=', 'open')]"
+			id="eagle_crm_partner2offre" name="Offre"
+    		res_model="crm.lead" src_model="res.partner"
+    		view_id="crm.crm_case_my_open_oppor"
+    		groups="base.group_extended"/>
+			
+		<act_window domain="[('customer_id', '=', active_id)]"
+            id="eagle_crm_partner2contract" name="Contact"
+            res_model="eagle.contract"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />	
+			
+		<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2meetings" name="Meetings"
+            res_model="crm.meeting"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />	
+			
+		<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2calls" name="Phone Call"
+            res_model="crm.phonecall"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />	
+			
+		<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2issue" name="Issue"
+            res_model="project.issue.report"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />
+		
+		<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2claim" name="Claim"
+            res_model="crm.claim"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />
+		
+	<!--	<act_window domain="[('partner_id', '=', active_id)]"
+            id="eagle_crm_partner2task" name="Task"
+            res_model="project.task"
+            src_model="res.partner"
+            groups="base.group_extended"
+            />
+	-->	
+		
+	</data>
+</openerp>

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<openerp>
+        <data>
+                <record id="ir_model_access_printjobjoball0" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_job"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_job all&quot;&quot;&quot;" name="name"/>
+                        <field eval="1" name="perm_unlink"/>
+                        <field eval="1" name="perm_write"/>
+                        <field eval="1" name="perm_create"/>
+                </record>
+        </data>
+        <data>
+                <record id="ir_model_access_printjobprinterall0" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_printer"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_printer all&quot;&quot;&quot;" name="name"/>
+                        <field eval="0" name="perm_unlink"/>
+                        <field eval="0" name="perm_write"/>
+                        <field eval="0" name="perm_create"/>
+                </record>
+        </data>
+        <data>
+                <record id="ir_model_access_printjobprintergroup0" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_printer"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_printer group&quot;&quot;&quot;" name="name"/>
+                        <field eval="1" name="perm_unlink"/>
+                        <field eval="1" name="perm_write"/>
+                        <field eval="1" name="perm_create"/>
+                        <field model="res.groups" name="group_id" search="[('name','=','Printing / Print Operator')]"/>
+                </record>
+        </data>
+        <data noupdate="1">
+                <record id="res_groups_printingprintoperator0" model="res.groups">
+                        <field eval="[(6,0,[])]" name="menu_access"/>
+                        <field eval="[(6,0,[])]" name="rule_groups"/>
+                        <field eval="[(6,0,[ref('base.user_root'),ref('base.user_root')])]" name="users"/>
+                        <field eval="&quot;&quot;&quot;Printing / Print Operator&quot;&quot;&quot;" name="name"/>
+                </record>
+                <record id="ir_model_access_printjobprintergroup1" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_printer"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_printer group&quot;&quot;&quot;" name="name"/>
+                        <field eval="1" name="perm_unlink"/>
+                        <field eval="1" name="perm_write"/>
+                        <field eval="1" name="perm_create"/>
+                        <field name="group_id" ref="res_groups_printingprintoperator0"/>
+                </record>
+                <record id="ir_model_access_printjob_action" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_action"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_printer group&quot;&quot;&quot;" name="name"/>
+                        <field eval="1" name="perm_unlink"/>
+                        <field eval="1" name="perm_write"/>
+                        <field eval="1" name="perm_create"/>
+                        <field name="group_id" ref="res_groups_printingprintoperator0"/>
+                </record>
+                <record id="ir_model_access_printjobreportxmlaction" model="ir.model.access">
+                        <field name="model_id" ref="printjob.model_printjob_report_xml_action"/>
+                        <field eval="1" name="perm_read"/>
+                        <field eval="&quot;&quot;&quot;printjob_printer group&quot;&quot;&quot;" name="name"/>
+                        <field eval="1" name="perm_unlink"/>
+                        <field eval="1" name="perm_write"/>
+                        <field eval="1" name="perm_create"/>
+                        <field name="group_id" ref="res_groups_printingprintoperator0"/>
+                </record>
+                <record id="printjob.menu_printjob_printer_form" model="ir.ui.menu">
+                        <field eval="[(6,0,[ref('printjob.res_groups_printingprintoperator0')])]" name="groups_id"/>
+                        <field eval="&quot;&quot;&quot;Printers&quot;&quot;&quot;" name="name"/>
+                        <field eval="10" name="sequence"/>
+                        <field name="parent_id" ref="printjob.menu_printjob_config"/>
+                        <field eval="&quot;&quot;&quot;STOCK_PRINT&quot;&quot;&quot;" name="icon"/>
+                </record>
+        </data>
+</openerp>

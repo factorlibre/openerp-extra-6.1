@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+    <!-- Mail Service Type -->
+  
+        <record model="dm.mail_service.type" id="dm_mail_service_type_ftp">
+            <field name="name" eval="&quot;FTP&quot;"/>
+            <field name="code" eval="&quot;ftp&quot;"/>
+        </record>
+        
+    <!-- System Message -->
+ 
+		<record id="dm_sysmsg_ftp_doc_sent" model="dm.sysmsg">
+			<field eval="&quot;&quot;&quot;ftp_doc_sent&quot;&quot;&quot;" name="code"/>
+			<field eval="&quot;&quot;&quot;FTP Document Sent&quot;&quot;&quot;" name="name"/>
+			<field name="field" ref="dm.field_dm_campaign_document_error_msg"/>
+			<field eval="&quot;&quot;&quot;done&quot;&quot;&quot;" name="state"/>
+			<field eval="1" name="result"/>
+			<field eval="&quot;&quot;&quot;Document sent successfully through FTP&quot;&quot;&quot;" name="message"/>
+			<field name="model" ref="dm.model_dm_campaign_document"/>
+		</record>
+ 
+ 		<record id="dm_sysmsg_ftp_address_missing" model="dm.sysmsg">
+			<field eval="&quot;&quot;&quot;ftp_address_missing&quot;&quot;&quot;" name="code"/>
+			<field eval="&quot;&quot;&quot;FTP Server Address ERROR&quot;&quot;&quot;" name="name"/>
+			<field name="field" ref="dm.field_dm_campaign_document_error_msg"/>
+			<field eval="&quot;&quot;&quot;error&quot;&quot;&quot;" name="state"/>
+			<field eval="&quot;&quot;&quot;FTP server address is not specified&quot;&quot;&quot;" name="message"/>
+			<field name="model" ref="dm.model_dm_campaign_document"/>
+		</record>
+		
+ 		<record id="dm_sysmsg_ftp_error" model="dm.sysmsg">
+			<field eval="&quot;&quot;&quot;ftp_error&quot;&quot;&quot;" name="code"/>
+			<field eval="&quot;&quot;&quot;FTP Server ERROR&quot;&quot;&quot;" name="name"/>
+			<field name="field" ref="dm.field_dm_campaign_document_error_msg"/>
+			<field eval="&quot;&quot;&quot;error&quot;&quot;&quot;" name="state"/>
+			<field eval="&quot;&quot;&quot;FTP server has raised error&quot;&quot;&quot;" name="message"/>
+			<field name="model" ref="dm.model_dm_campaign_document"/>
+		</record>
+
+       <!-- Server Action -->
+       
+		<record id="ir_actions_server_senddocuments_ftp" model="ir.actions.server">
+            <field eval="&quot;&quot;&quot;from dm_ftp import dm_ftp\naction = dm_ftp.send_ftp_document(cr,uid,object.id,context)&quot;&quot;&quot;" name="code"/>
+			<field eval="5" name="sequence"/>
+			<field eval="&quot;&quot;&quot;code&quot;&quot;&quot;" name="state"/>
+			<field name="model_id" ref="dm.model_dm_campaign_document"/>
+			<field eval="&quot;&quot;&quot;Send documents using FTP&quot;&quot;&quot;" name="name"/>
+		</record>
+	
+    </data>
+</openerp>

@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<openerp>
+  <data>
+    <record model="ir.sequence.type" id="seq_type_eval">
+          <field name="name">Evaluations</field>
+          <field name="code">hr.evaluation</field>
+    </record>
+     <record model="ir.sequence" id="seq_eval">
+          <field name="name">Evaluations</field>
+          <field name="code">hr.evaluation</field>
+          <field name="prefix">EVAL%(year)s%(month)s%(day)s_</field>
+          <field name="padding">2</field>
+     </record>
+
+
+  <record model="ir.cron" id="nexteval_date_cron">
+    <field name="name">Next evaluations</field>
+    <field name="interval_number">1</field>
+    <field name="interval_type">days</field>
+    <field name="numbercall">-1</field>
+    <field name="model">hr.employee</field>
+    <field name="function">running_nexteval_dates</field>
+  </record>
+  </data>
+
+  <data>
+		<record id="hr_evaluation_section_0" model="hr.evaluation.section">
+			<field eval="1" name="active"/>
+			<field eval="&quot;&quot;&quot;OE&quot;&quot;&quot;" name="code"/>
+			<field eval="&quot;&quot;&quot;Objective Evaluation&quot;&quot;&quot;" name="name"/>
+		</record>
+
+		<record id="hr_evaluation_section_1" model="hr.evaluation.section">
+			<field eval="1" name="active"/>
+			<field eval="&quot;&quot;&quot;SE&quot;&quot;&quot;" name="code"/>
+			<field eval="&quot;&quot;&quot;Subjective Evaluation&quot;&quot;&quot;" name="name"/>
+		</record>
+
+		<record id="hr_evaluation_section_2" model="hr.evaluation.section">
+			<field eval="1" name="active"/>
+			<field eval="&quot;&quot;&quot;Introduce Employee of the month&quot;&quot;&quot;" name="name"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_3" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Productivity&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_0"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_4" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Punctuality&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_0"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_5" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Time management&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_0"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_6" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Quality of work&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_7" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Attitude of the employee&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_8" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Initiative&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_9" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Dependability&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_10" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Effective communication&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_11" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Proactive exchange of information&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_1"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_12" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Monthly Attendance&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_13" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Performance for the month&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_14" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;New Initiative&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_15" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Suggestion Given&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_16" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Value adding activity&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_criteria_17" model="hr.evaluation.criteria">
+			<field eval="&quot;&quot;&quot;Customer calls attended&quot;&quot;&quot;" name="name"/>
+			<field eval="1" name="format_select"/>
+			<field name="section_id" ref="hr_evaluation_section_2"/>
+			<field eval="1" name="active"/>
+			<field eval="1" name="format_text"/>
+		</record>
+
+		<record id="hr_evaluation_setting_18" model="hr.evaluation.setting">
+			<field eval="[(6,0,[ref('hr_evaluation_criteria_3'),ref('hr_evaluation_criteria_4'),ref('hr_evaluation_criteria_5'),ref('hr_evaluation_criteria_6'),ref('hr_evaluation_criteria_7'),ref('hr_evaluation_criteria_8'),ref('hr_evaluation_criteria_9'),ref('hr_evaluation_criteria_10'),ref('hr_evaluation_criteria_11'),ref('hr_evaluation_criteria_12'),ref('hr_evaluation_criteria_13'),ref('hr_evaluation_criteria_14'),ref('hr_evaluation_criteria_15'),ref('hr_evaluation_criteria_16'),ref('hr_evaluation_criteria_17')])]" name="criteria_ids"/>
+			<field eval="&quot;&quot;&quot;Evaluation-1&quot;&quot;&quot;" name="name"/>
+			<field name="product_id" ref="product.product_product_pc1"/>
+		</record>
+	</data>
+</openerp>

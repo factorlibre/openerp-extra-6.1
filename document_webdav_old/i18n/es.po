@@ -1,0 +1,104 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:59+0000\n"
+"PO-Revision-Date: 2011-08-23 13:38+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: document_webdav_old
+#: view:ir.attachment:0
+msgid "Files"
+msgstr "Ficheros"
+
+#. module: document_webdav_old
+#: view:document.directory:0
+#: view:ir.attachment:0
+msgid "Definition"
+msgstr "Definición"
+
+#. module: document_webdav_old
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: document_webdav_old
+#: constraint:document.directory:0
+msgid "Error! You can not create recursive Directories."
+msgstr "¡Error! No puede crear directorios recursivos."
+
+#. module: document_webdav_old
+#: view:document.directory:0
+#: model:ir.ui.menu,name:document_webdav_old.menu_document_directories
+msgid "Directories"
+msgstr "Directorios"
+
+#. module: document_webdav_old
+#: model:ir.module.module,shortdesc:document_webdav_old.module_meta_information
+msgid "Integrated Document Management System"
+msgstr "Sistema de gestión integrada de documentos"
+
+#. module: document_webdav_old
+#: model:ir.ui.menu,name:document_webdav_old.menu_document
+msgid "Document Management"
+msgstr "Gestión documental"
+
+#. module: document_webdav_old
+#: model:ir.ui.menu,name:document_webdav_old.menu_document_files
+msgid "Search a File"
+msgstr "Buscar un archivo"
+
+#. module: document_webdav_old
+#: view:document.directory:0
+msgid "Directory Type"
+msgstr "Tipo de directorio"
+
+#. module: document_webdav_old
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: document_webdav_old
+#: view:document.directory:0
+#: view:ir.attachment:0
+msgid "Security"
+msgstr "Seguridad"
+
+#. module: document_webdav_old
+#: model:ir.module.module,description:document_webdav_old.module_meta_information
+msgid ""
+"This is a complete document management system:\n"
+"\t* WebDav Interface\n"
+"\t* User Authentification\n"
+"\t* Document Indexation\n"
+msgstr ""
+"Se trata de un sistema de gestión documental completa:\n"
+"\t * Interfaz WebDav\n"
+"\t * Autenticación del usuario\n"
+"\t * Indexación de documentos\n"
+
+#. module: document_webdav_old
+#: model:ir.ui.menu,name:document_webdav_old.menu_document_directories_tree
+msgid "Directorie's Structure"
+msgstr "Estructura del directorio"
+
+#. module: document_webdav_old
+#: view:document.directory:0
+msgid "Contents"
+msgstr "Contenidos"
+
+#. module: document_webdav_old
+#: view:ir.attachment:0
+msgid "Indexed Content"
+msgstr "Contenido indexado"

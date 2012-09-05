@@ -1,0 +1,32 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* currency_numeric_code
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-05-24 08:37+0000\n"
+"PO-Revision-Date: 2012-05-24 08:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: currency_numeric_code
+#: model:ir.model,name:currency_numeric_code.model_res_currency
+msgid "Currency"
+msgstr "Currency"
+
+#. module: currency_numeric_code
+#: help:res.currency,numeric_code:0
+msgid "Currency Numeric Code (Ex, € is 978)"
+msgstr "Currency Numeric Code (Ex, € is 978)"
+
+#. module: currency_numeric_code
+#: field:res.currency,numeric_code:0
+msgid "Numeric Code"
+msgstr "Numeric Code"
+

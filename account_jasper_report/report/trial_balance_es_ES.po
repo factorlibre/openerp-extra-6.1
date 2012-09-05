@@ -1,0 +1,53 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Albert Cervera i Areny <albert@nan-tic.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-04 09:01+0200\n"
+"PO-Revision-Date: 2011-07-04 08:53+0200\n"
+"Last-Translator: Albert Cervera i Areny <albert@nan-tic.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: /tmp/tmp.4LuOHnbVIY:751 /tmp/tmp.4LuOHnbVIY:943 /tmp/tmp.4LuOHnbVIY:1135
+msgid "Trial Balance"
+msgstr "Sumas y saldos"
+
+#: /tmp/tmp.4LuOHnbVIY:767 /tmp/tmp.4LuOHnbVIY:959 /tmp/tmp.4LuOHnbVIY:1151
+msgid "Account"
+msgstr "Cuenta"
+
+#: /tmp/tmp.4LuOHnbVIY:771 /tmp/tmp.4LuOHnbVIY:963 /tmp/tmp.4LuOHnbVIY:1155
+msgid "Account Name"
+msgstr "Nombre de la cuenta"
+
+#: /tmp/tmp.4LuOHnbVIY:775 /tmp/tmp.4LuOHnbVIY:787 /tmp/tmp.4LuOHnbVIY:967
+#: /tmp/tmp.4LuOHnbVIY:979 /tmp/tmp.4LuOHnbVIY:1159 /tmp/tmp.4LuOHnbVIY:1171
+msgid "Debit"
+msgstr "Debe"
+
+#: /tmp/tmp.4LuOHnbVIY:779 /tmp/tmp.4LuOHnbVIY:791 /tmp/tmp.4LuOHnbVIY:971
+#: /tmp/tmp.4LuOHnbVIY:983 /tmp/tmp.4LuOHnbVIY:1163 /tmp/tmp.4LuOHnbVIY:1175
+msgid "Credit"
+msgstr "Haber"
+
+#: /tmp/tmp.4LuOHnbVIY:783 /tmp/tmp.4LuOHnbVIY:795 /tmp/tmp.4LuOHnbVIY:975
+#: /tmp/tmp.4LuOHnbVIY:987 /tmp/tmp.4LuOHnbVIY:1167 /tmp/tmp.4LuOHnbVIY:1179
+msgid "Balance"
+msgstr "Saldo"
+
+#: /tmp/tmp.4LuOHnbVIY:799 /tmp/tmp.4LuOHnbVIY:991 /tmp/tmp.4LuOHnbVIY:1183
+msgid "Accumulated Period"
+msgstr "Acumulado del período"
+
+#: /tmp/tmp.4LuOHnbVIY:803 /tmp/tmp.4LuOHnbVIY:995 /tmp/tmp.4LuOHnbVIY:1187
+msgid "Accumulated Year"
+msgstr "Acumulado del año"

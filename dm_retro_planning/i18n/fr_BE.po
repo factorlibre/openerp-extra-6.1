@@ -1,0 +1,276 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_retro_planning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 07:26:54+0000\n"
+"PO-Revision-Date: 2009-11-26 07:26:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: selection:dm.campaign,customer_file_state:0
+#: selection:dm.campaign,dtp_state:0
+#: selection:dm.campaign,items_state:0
+#: selection:dm.campaign,manufacturing_state:0
+msgid "In Progress"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Set to In Progress"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: field:dm.campaign,customer_file_state:0
+msgid "Customers Files Status"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Real Date"
+msgstr ""
+
+#. module: dm_retro_planning
+#: model:ir.actions.wizard,name:dm_retro_planning.wizard_campaign_group_task
+#: model:ir.actions.wizard,name:dm_retro_planning.wizard_campaign_task
+msgid "View Tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: model:project.task.type,name:dm_retro_planning.project_task_type_items0
+msgid "Items Procurement"
+msgstr ""
+
+#. module: dm_retro_planning
+#: code:addons/dm_retro_planning/wizard/dm_campaign_project.py:0
+#, python-format
+msgid "Drop Date should not be empty !!!"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: model:project.task.type,name:dm_retro_planning.project_task_type_dtp0
+msgid "DTP"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: field:dm.campaign,manufacturing_state:0
+msgid "Manufacturing Status"
+msgstr ""
+
+#. module: dm_retro_planning
+#: selection:dm.campaign,customer_file_state:0
+#: selection:dm.campaign,dtp_state:0
+#: selection:dm.campaign,items_state:0
+#: selection:dm.campaign,manufacturing_state:0
+msgid "Pending"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: view:dm.campaign.group:0
+msgid "Tasks Management"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Customers Files"
+msgstr ""
+
+#. module: dm_retro_planning
+#: code:addons/dm_retro_planning/dm_retro_planning.py:0
+#, python-format
+msgid "You must first close all states related to this campaign."
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: view:dm.campaign.group:0
+msgid "Create Retro-Planning"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: field:dm.campaign,dtp_state:0
+msgid "DTP Status"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:dm.campaign,dtp_task_ids:0
+msgid "DTP tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: model:ir.module.module,shortdesc:dm_retro_planning.module_meta_information
+msgid "Retro-Planning Tasks Management for DM"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:dm.campaign,items_state:0
+msgid "Items Status"
+msgstr ""
+
+#. module: dm_retro_planning
+#: model:project.task.type,name:dm_retro_planning.project_task_type_mailingmanufacturing0
+msgid "Mailing Manufacturing"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Theorical Date"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:dm.campaign,cust_file_task_ids:0
+msgid "Customer Files tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Task Name"
+msgstr ""
+
+#. module: dm_retro_planning
+#: model:ir.module.module,description:dm_retro_planning.module_meta_information
+msgid "\n"
+"            This module adds campaign retro-planning tasks management for Direct Marketing.\n"
+"            "
+msgstr ""
+
+#. module: dm_retro_planning
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_retro_planning
+#: wizard_button:campaign.group.project,init,done:0
+#: wizard_button:campaign.project,init,done:0
+msgid "Ok"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Customers Files Tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "DTP Tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:project.task,date_planned:0
+msgid "Planned Date"
+msgstr ""
+
+#. module: dm_retro_planning
+#: wizard_field:campaign.group.project,init,project_id:0
+#: wizard_field:campaign.project,init,project_id:0
+#: field:dm.campaign,project_id:0
+#: field:dm.campaign.group,project_id:0
+#: model:ir.actions.wizard,name:dm_retro_planning.campaign_group_wiz
+#: model:ir.actions.wizard,name:dm_retro_planning.campaign_wiz
+msgid "Project"
+msgstr ""
+
+#. module: dm_retro_planning
+#: code:addons/dm_retro_planning/dm_retro_planning.py:0
+#, python-format
+msgid "Could not open this Campaign"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:dm.campaign,item_task_ids:0
+msgid "Items Procurement tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Items Procurement Status"
+msgstr ""
+
+#. module: dm_retro_planning
+#: help:dm.campaign,project_id:0
+msgid "Generating the Retro Planning will create and assign the                     different tasks used to plan and manage the campaign"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: field:dm.campaign,manufacturing_task_ids:0
+msgid "Manufacturing tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: code:addons/dm_retro_planning/wizard/dm_campaign_project.py:0
+#, python-format
+msgid "UserError"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Manufacturing"
+msgstr ""
+
+#. module: dm_retro_planning
+#: field:project.task,date_reviewed:0
+msgid "Reviewed Date"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: view:dm.campaign.group:0
+msgid "Retro Planning"
+msgstr ""
+
+#. module: dm_retro_planning
+#: wizard_view:campaign.project,init:0
+msgid "Campaign"
+msgstr ""
+
+#. module: dm_retro_planning
+#: model:project.task.type,name:dm_retro_planning.project_task_type_customerslist0
+msgid "Customers List"
+msgstr ""
+
+#. module: dm_retro_planning
+#: constraint:project.project:0
+msgid "Error ! You can not create recursive projects."
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+#: selection:dm.campaign,customer_file_state:0
+#: selection:dm.campaign,dtp_state:0
+#: selection:dm.campaign,items_state:0
+#: selection:dm.campaign,manufacturing_state:0
+msgid "Done"
+msgstr ""
+
+#. module: dm_retro_planning
+#: wizard_view:campaign.group.project,init:0
+msgid "Campaign Group"
+msgstr ""
+
+#. module: dm_retro_planning
+#: view:dm.campaign:0
+msgid "Items Procurement Tasks"
+msgstr ""
+
+#. module: dm_retro_planning
+#: wizard_button:campaign.group.project,init,end:0
+#: wizard_button:campaign.project,init,end:0
+msgid "Cancel"
+msgstr ""
+

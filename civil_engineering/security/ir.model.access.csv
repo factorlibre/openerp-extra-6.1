@@ -1,0 +1,19 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_civile_workclass_group_user","civile_workclass group_user","model_civil_engineering_workclass","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_workclass_group_manager","civile_workclass group_manager","model_civil_engineering_workclass","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_workuse_group_user","civile_workuse group_user","model_civil_engineering_workuse","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_workuse_group_manager","civile_workuse group_manager","model_civil_engineering_workuse","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_structuretype_group_user","civile_structuretype group_user","model_civil_engineering_structuretype","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_structuretype_group_manager","civile_structuretype group_manager","model_civil_engineering_structuretype","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_foundationtype_group_user","civile_foundationtype group_user","model_civil_engineering_foundationtype","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_foundationtype_group_manager","civile_foundationtype group_manager","model_civil_engineering_foundationtype","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_modelabstraction_group_user","civile_modelabstraction group_user","model_civil_engineering_modelabstraction","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_modelabstraction_group_manager","civile_modelabstraction group_manager","model_civil_engineering_modelabstraction","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_modelingsoftware_group_user","civile_modelingsoftware group_user","model_civil_engineering_modelingsoftware","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_modelingsoftware_group_manager","civile_modelingsoftware group_manager","model_civil_engineering_modelingsoftware","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_area_group_user","civile_area group_user","model_civil_engineering_area","civil_engineering.group_civil_engineering_user",1,0,0,0
+"access_civile_area_group_manager","civile_area group_manager","model_civil_engineering_area","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_work_project_group_user","civile_work_project group_user","model_civil_engineering_work_project","civil_engineering.group_civil_engineering_user",1,1,1,1
+"access_civile_work_project_group_manager","civile_work_project group_manager","model_civil_engineering_work_project","civil_engineering.group_civil_engineering_manager",1,1,1,1
+"access_civile_work_group_user","civile_work group_user","model_civil_engineering_work","civil_engineering.group_civil_engineering_user",1,1,1,1
+"access_civile_work_group_manager","civile_work group_manager","model_civil_engineering_work","civil_engineering.group_civil_engineering_manager",1,1,1,1

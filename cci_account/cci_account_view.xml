@@ -1,0 +1,255 @@
+<?xml version="1.0" ?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_account_invoice_supplier_inherit">
+            <field name="name">account.invoice.supplier.form.inherit</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <field name="comment" position="after">
+                    <field name="internal_note" nolabel="1" colspan="4"/>
+                    <separator string="Internal Note" colspan="4"/>
+                </field>
+            </field>
+        </record>
+
+    <record model="ir.ui.view" id="view_account_invoice_supplier_inherit1">
+            <field name="name">account.invoice.supplier.form.inherit1</field>
+            <field name="type">form</field>
+            <field name="priority">16</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="/form/notebook/page/field[@name='name']" position="replace">
+				</xpath>
+            </field>
+        </record>
+
+
+    <record model="ir.ui.view" id="view_account_invoice_supplier_inherit2">
+            <field name="name">account.invoice.supplier.form.inherit2</field>
+            <field name="priority">16</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <field name="check_total" position="after">
+                	<field name="name" colspan="4"/>
+                </field>
+            </field>
+        </record>
+
+
+    <record model="ir.ui.view" id="view_acc_invoice_supp_inherit_invoice_num1">
+            <field name="name">account.invoice.supplier.form.inherit.num1</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="/form/notebook/page/field[@name='number']" position="replace">
+				</xpath>
+            </field>
+        </record>
+
+
+    <record model="ir.ui.view" id="view_acc_invoice_supp_inherit_invoice_num2">
+            <field name="name">account.invoice.supplier.form.inherit.num2</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <field name="account_id" position="after">
+                	<field name="number" colspan="2"/>
+                </field>
+            </field>
+        </record>
+
+
+    <record model="ir.ui.view" id="view_acc_invoice_supp_inherit_1">
+            <field name="name">account.invoice.supplier.form.inherit.refactor</field>
+            <field name="priority">10</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+				<xpath expr="/form/notebook/page/newline" position="replace">
+				</xpath>
+            </field>
+        </record>
+
+    <record model="ir.ui.view" id="view_account_invoice_inherit">
+            <field name="name">account.invoice.form.inherit</field>
+            <field name="type">form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="comment" position="after">
+                    <field name="internal_note" nolabel="1" colspan="4"/>
+                    <separator string="Internal Note" colspan="4"/>
+                </field>
+            </field>
+        </record>
+
+           <record model="ir.ui.view" id="view_account_invoice_inherit_vat">
+            <field name="name">account.invoice.form.inherit.vat</field>
+            <field name="type">tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="vat_num"/>
+                </field>
+            </field>
+        </record>
+
+    <record model="ir.ui.view" id="view_bank_statement_form_inherit">
+            <field name="name">account.bank.statement.form</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="line_ids" position="replace">
+                    <field name="line_ids" colspan="4" nolabel="1">
+                        <tree string="Statement lines" editable="bottom"
+                            colors="red:amount!=reconcile_amount and reconcile_id">
+                            <field name="date"/>
+                            <field name="ref"/>
+                            <field name="type"/>
+                            <field name="partner_id"
+                                on_change="onchange_partner_id(partner_id, type, parent.currency)"/>
+                            <field name="account_id"
+                                domain="[('journal_id','=',parent.journal_id)]"/>
+                            <field name="amount"/>
+                            <field name="reconcile_id"
+                                context="{'partner_id': partner_id, 'amount': amount, 'account_id': account_id, 'currency_id': parent.currency}"/>
+                            <field name="reconcile_amount" invisible="1"/>
+                            <field name="name"/>
+                        </tree>
+                        <form string="Statement lines">
+                            <field name="date"/>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="partner_id" on_change="onchange_partner_id(partner_id, type, parent.currency)"/>
+                            <field name="account_id" domain="[('journal_id', '=', parent.journal_id), ('type', '&lt;&gt;', 'view')]"/>
+                            <field name="amount"/>
+                            <field name="reconcile_id" context="{'partner_id':partner_id,'amount':amount,'account_id':account_id}"/>
+                            <field name="ref"/>
+                            <separator string="Notes" colspan="4"/>
+                            <field name="note" nolabel="1" colspan="4"/>
+                        </form>
+                    </field>
+                </field>
+            </field>
+    </record>
+
+	<!-- Remove buttons 'import invoices' and 'import payments' -->
+    <record model="ir.ui.view" id="bank_statement_form_inherit_button">
+			<field name="name">account.bank.statement.form.button</field>
+			<field name="type">form</field>
+			<field name="model">account.bank.statement</field>
+			<field name="inherit_id" ref="account.view_bank_statement_form"/>
+			<field name="arch" type="xml">
+				<button position="replace" name="%(account.wizard_populate_statement_from_inv)d"
+                    	string="Import Invoice" type="action" attrs="{'invisible':[('state','=','confirm')]}"/>
+			</field>
+		</record>
+
+    <!--record model="ir.ui.view" id="bank_statement_form_inherit_button_payments">
+			<field name="name">account.bank.statement.form.button.payments</field>
+			<field name="type">form</field>
+			<field name="model">account.bank.statement</field>
+			<field name="inherit_id" ref="account.view_bank_statement_form"/>
+			<field name="arch" type="xml">
+				<button position="replace" name="%(account_payment.wizard_populate_statement)d" string="Import payment lines" type="action"/>
+			</field>
+	</record-->
+	<!-- End -->
+
+    <record model="ir.ui.view" id="invoice_form_inherit_cci_sup">
+            <field name="name">account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="dept" select="2"/>
+                </field>
+            </field>
+    </record>
+    <record model="ir.ui.view" id="invoice_form_inherit_cci">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="dept" select="2"/>
+                </field>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="invoice_form_inherit_cci_sup1">
+            <field name="name">account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="date_due" position="after">
+                    <field name="invoice_special" select="2"/>
+                </field>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="invoice_form_inherit_cci_1">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="date_due" position="after">
+                    <field name="invoice_special" select="2"/>
+                </field>
+            </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_order_form_inherit_cci">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="user_id" position="after">
+                    <field name="dept" select="2"/>
+                </field>
+            </field>
+    </record>
+
+
+     <act_window domain="[('partner_id', '=', active_id),('account_id.code', 'in', ('400000','440000'))]" id="account.act_account_partner_account_move" name="All Account Entries" res_model="account.move.line" src_model="res.partner"/>
+
+        <record id="action_invoice_vatnull_tree" model="ir.actions.act_window">
+            <field name="name">Invoices without VAT</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="view_id" ref="account.invoice_tree"/>
+            <field name="context">{'type':'out_invoice'}</field>
+            <field name="domain">[('vat_num','=',False), ('partner_id.vat_subjected','=',False)]</field>
+        </record>
+        <record id="action_invoice_treevat_view" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="act_window_id" ref="action_invoice_vatnull_tree"/>
+        </record>
+        <record id="action_invoice_treevat_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account.invoice_form"/>
+            <field name="act_window_id" ref="action_invoice_vatnull_tree"/>
+        </record>
+        <menuitem action="action_invoice_vatnull_tree" id="menu_finance_invoice" parent="account.menu_finance" sequence="9"/>
+</data>
+</openerp>
+

@@ -1,0 +1,325 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* l10n_be_postal_subscriber
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 15:21:12+0000\n"
+"PO-Revision-Date: 2009-11-25 15:21:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,city:0
+msgid "City"
+msgstr "Localité"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.actions.wizard,name:l10n_be_postal_subscriber.wizard_compare_photos
+msgid "Comparaison Photos pour SUMO"
+msgstr "Comparaison Photos pour SUMO"
+
+#. module: l10n_be_postal_subscriber
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'objet doit commencer par x_ et ne pas comporter de caractères spéciaux !"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,zip:0
+msgid "Zip"
+msgstr "Code postal"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,title:0
+msgid "Title"
+msgstr "Titre"
+
+#. module: l10n_be_postal_subscriber
+#: selection:res.partner.address,magazine_subscription:0
+#: selection:res.partner.contact,magazine_subscription:0
+#: selection:res.partner.job,magazine_subscription:0
+msgid "Personal"
+msgstr "Personnel"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.model,name:l10n_be_postal_subscriber.model_photo_detail
+msgid "Details about a photo of database"
+msgstr "Détails sur cette photo de la base de données"
+
+#. module: l10n_be_postal_subscriber
+#: selection:res.partner.address,magazine_subscription:0
+#: selection:res.partner.contact,magazine_subscription:0
+#: selection:res.partner.job,magazine_subscription:0
+msgid "Never"
+msgstr "Jamais"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,new_values:0
+msgid "Nouvelles valeurs"
+msgstr "Nouvelles valeurs"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,old_values:0
+msgid "Anciennes valeurs"
+msgstr "Anciennes valeurs"
+
+#. module: l10n_be_postal_subscriber
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect pour la définition de l'action"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.model,name:l10n_be_postal_subscriber.model_photo_diff
+msgid "Details of comparison between 2 photos"
+msgstr "Détails de la comparaison entre 2 photos"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,oldid:0
+msgid "Old ID"
+msgstr "Ancien ID"
+
+#. module: l10n_be_postal_subscriber
+#: field:res.partner.address,magazine_subscription_source:0
+#: field:res.partner.contact,magazine_subscription_source:0
+#: field:res.partner.job,magazine_subscription_source:0
+msgid "Mag. Subscription Source"
+msgstr "Source d'abonnement au Mag"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_field:wizard.compare.photos,init,txtNewPhotoID:0
+msgid "New Photo Name"
+msgstr "Nom de la nouvelle photo"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,street2:0
+msgid "Street2"
+msgstr "Rue (2)"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_view:wizard.compare.photos,open:0
+msgid "Invoices Grouped for Following Partners."
+msgstr ""
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.comparison,new_photo_id:0
+msgid "Newer Photo"
+msgstr "Photo plus récente"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.model,name:l10n_be_postal_subscriber.model_res_partner_state
+msgid "res.partner.state"
+msgstr ""
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.ui.menu,name:l10n_be_postal_subscriber.postal_subscriber_root
+msgid "Postal Subscriber"
+msgstr "Abonné postal"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.actions.act_window,name:l10n_be_postal_subscriber.open_view_dated_photo
+#: model:ir.ui.menu,name:l10n_be_postal_subscriber.postal_subscriber_dated_photo_menu
+msgid "Photos"
+msgstr "Photos"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.model,name:l10n_be_postal_subscriber.model_photo_comparison
+msgid "comparison between 2 photos"
+msgstr "Comparaison entre 2 photos"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,address_id:0
+msgid "Address"
+msgstr "Adresse"
+
+#. module: l10n_be_postal_subscriber
+#: field:dated.photo,datetime:0
+#: field:photo.comparison,datetime:0
+msgid "Date"
+msgstr "Date"
+
+#. module: l10n_be_postal_subscriber
+#: selection:res.partner.address,magazine_subscription:0
+#: selection:res.partner.contact,magazine_subscription:0
+#: selection:res.partner.job,magazine_subscription:0
+msgid "Postal"
+msgstr "Postal"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_button:wizard.compare.photos,open,open_res:0
+msgid "Open Results"
+msgstr "Ouvrir résultats"
+
+#. module: l10n_be_postal_subscriber
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Arcitecture des Vues"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_button:wizard.compare.photos,open,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: l10n_be_postal_subscriber
+#: field:dated.photo,name:0
+#: field:photo.detail,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: l10n_be_postal_subscriber
+#: help:photo.detail,partner_id:0
+msgid "not used if directly addressed to a person"
+msgstr "pas utilisé si directement adressé à une personne"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_field:wizard.compare.photos,init,txtHeader:0
+msgid "Do you want to compare this two photos ?"
+msgstr "Voulez-vous comparer ces deux photos ?"
+
+#. module: l10n_be_postal_subscriber
+#: field:dated.photo,photo_details_ids:0
+msgid "Postal subscribers"
+msgstr "Abonnés postaux"
+
+#. module: l10n_be_postal_subscriber
+#: field:res.partner.address,magazine_subscription:0
+#: field:res.partner.contact,magazine_subscription:0
+#: field:res.partner.job,magazine_subscription:0
+msgid "Magazine subscription"
+msgstr "Abonnement au Mag"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,comparison_id:0
+msgid "Comparison Date"
+msgstr "Date de comparaison"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,partner_contact_id:0
+msgid "Contact"
+msgstr "Contact"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_view:wizard.compare.photos,open:0
+msgid "Result of the comparison"
+msgstr "Résultat de la comparaison"
+
+#. module: l10n_be_postal_subscriber
+#: view:dated.photo:0
+msgid "Dated Photo"
+msgstr "Photo datée"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,resource_id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_be_postal_subscriber
+#: selection:res.partner.address,magazine_subscription:0
+#: selection:res.partner.contact,magazine_subscription:0
+#: selection:res.partner.job,magazine_subscription:0
+msgid "Prospect"
+msgstr "Prospect"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.model,name:l10n_be_postal_subscriber.model_dated_photo
+msgid "Photo of database at a precise date"
+msgstr "Photo de la base de données à une date précise"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_view:wizard.compare.photos,init:0
+msgid "Comparaison entre photos"
+msgstr "Comparaison entre photos"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.module.module,description:l10n_be_postal_subscriber.module_meta_information
+msgid "\n"
+"        Module to permit the manual synchronisation of subscriber between the partners DB of Tiny and\n"
+"        the belgian Post software named SUMO that manage subscriber with preferentials tarifications\n"
+"    "
+msgstr "\n"
+"        Module qui permet la synchronisation manuelle des abonnés postaux entre OpenERP et \n"
+"        le logiciel de la poste belge nommé SUMO\n"
+"    "
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.diff,model:0
+msgid "DataBase"
+msgstr "Base de données"
+
+#. module: l10n_be_postal_subscriber
+#: help:photo.detail,state_id:0
+#: help:res.partner,state_id:0
+msgid "status of activity of the partner"
+msgstr "Etat d'activité du partenaire"
+
+#. module: l10n_be_postal_subscriber
+#: help:photo.detail,partner_contact_id:0
+msgid "only if directly addressed to one person"
+msgstr "seulement si adressé directement à une personne"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,state_id:0
+#: field:res.partner,state_id:0
+msgid "Partner State"
+msgstr ""
+
+#. module: l10n_be_postal_subscriber
+#: field:res.partner.state,name:0
+msgid "Partner Status"
+msgstr "Etat d'activité du partenaire"
+
+#. module: l10n_be_postal_subscriber
+#: model:ir.module.module,shortdesc:l10n_be_postal_subscriber.module_meta_information
+msgid "Belgian Postal Subscriber Management"
+msgstr "Gestion des abonnés postaux belges"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,street:0
+msgid "Street"
+msgstr "Rue"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.comparison,diff_ids:0
+msgid "Found differences"
+msgstr "Différences détectées"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,partner_id:0
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_button:wizard.compare.photos,init,end:0
+msgid "Cancel"
+msgstr "Annule"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.detail,photo_id:0
+msgid "Date de la photo"
+msgstr "Date de la photo"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_button:wizard.compare.photos,init,open:0
+msgid "Yes"
+msgstr "Oui"
+
+#. module: l10n_be_postal_subscriber
+#: wizard_field:wizard.compare.photos,init,txtOldPhotoID:0
+msgid "Old Photo Name"
+msgstr "Nom de l'ancienne photo"
+
+#. module: l10n_be_postal_subscriber
+#: field:photo.comparison,old_photo_id:0
+msgid "Older Photo"
+msgstr "Photo plus ancienne"
+

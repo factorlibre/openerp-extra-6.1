@@ -1,0 +1,42 @@
+<!--
+  File: opportunities_view.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="eagle_crm_opport_view_inherit_1">
+			<field name="name">Eagle CRM Opportunity Form Inherit 1</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<button name="case_close" position="replace">
+					<button name="eagle_crm_case_close" string="Mark Won"
+						states="open,pending" type="object"
+						icon="gtk-apply" />
+				</button>
+			</field>
+		</record>	
+
+		<record model="ir.ui.view" id="eagle_crm_opport_view_inherit_2">
+			<field name="name">Eagle CRM Opportunity Form Inherit 2</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<button name="case_mark_lost" position="replace">
+					<button name="eagle_crm_case_mark_lost" string="Mark Lost"
+						states="open,pending" type="object"
+						icon="gtk-cancel" />
+				</button>
+			</field>
+		</record>	
+
+	</data>
+</openerp>

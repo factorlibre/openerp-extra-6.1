@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+<!--Dia-Version: 0.96.1-->
+<!--File: /home/fp/.dia/sheets/OpenERP.sheet-->
+<!--Date: Wed Nov 12 12:16:55 2008-->
+<!--For: fp-->
+
+<name>Open ERP Interface</name>
+<description>Design Open ERP Interface</description>
+<contents>
+<!--add shapes here-->
+<object name="shape - head_logo">
+<description>Header Logo</description>
+</object>
+<object name="shape - head_title">
+<description>Header (With Title)</description>
+</object>
+<object name="shape - tree_title">
+<description>Tree Header (With Title)</description>
+</object>
+<object name="shape - right_toolbar_header">
+<description>Right Toolbar Header</description>
+</object>
+<object name="shape - right_toolbar_text">
+<description>Right Toolbar Text</description>
+</object>
+<object name="shape - char">
+<description>Char</description>
+</object>
+<object name="shape - text">
+<description>Text</description>
+</object>
+<object name="shape - float">
+<description>Float</description>
+</object>
+<object name="shape - integer">
+<description>Integer</description>
+</object>
+<object name="shape - float_time">
+<description>Float Time</description>
+</object>
+<object name="shape - many2one">
+<description>many2one</description>
+</object>
+<object name="shape - many2many">
+<description>many2many</description>
+</object>
+<object name="shape - notebook_path">
+<description>Notebook</description>
+</object>
+<object name="shape - separator">
+<description>Separator</description>
+</object>
+<object name="shape - selection">
+<description>Selection</description>
+</object>
+<object name="shape - button">
+<description>Button</description>
+</object>
+<object name="shape - url">
+<description>URL</description>
+</object>
+<object name="shape - date">
+<description>Date</description>
+</object>
+<object name="shape - datetime">
+<description>Datetime</description>
+</object>
+<object name="shape - time">
+<description>Time</description>
+</object>
+<object name="shape - binary">
+<description>Binary</description>
+</object>
+<object name="shape - reference">
+<description>Reference</description>
+</object>
+<object name="shape - boolean_on">
+<description>Boolean On</description>
+</object>
+<object name="shape - boolean">
+<description>Boolean Off</description>
+</object>
+<object name="shape - list">
+<description>List and Tree</description>
+</object>
+<object name="shape - one2many">
+<description>one2many</description>
+</object>
+<object name="shape - one2many_list">
+<description>one2many_list</description>
+</object>
+</contents>
+</sheet>

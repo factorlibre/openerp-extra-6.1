@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<terp>
+<data>
+    <delete model="ir.ui.menu" id="account.menu_account_balance_report"/>
+    <delete model="ir.ui.menu" id="account.menu_general_ledger"/>
+    <delete model="ir.ui.menu" id="account.menu_print_journal"/>
+    <delete model="ir.ui.menu" id="account.menu_central_journal"/>
+    <delete model="ir.ui.menu" id="account.menu_general_journal"/>
+
+	<!-- General Ledger -->
+	<record model="ir.actions.wizard" id="account_report_general_ledger_print">
+		<field name="name">Print General Ledger</field>
+		<field name="wiz_name">account_report_general_ledger</field>
+	</record>
+	<menuitem 
+        parent="account.menu_finance_generic_reporting"
+        name="Print General Ledger" 
+        action="account_report_general_ledger_print" 
+        id="account_report_general_ledger_print_menu" 
+        type="wizard"
+        icon="STOCK_PRINT" 
+        />
+
+	<!-- Add General Ledger to parnter's screen -->
+    <!--
+         Hide it by now because it's not working.
+	<wizard string="General Ledger" model="res.partner" name="account_report_general_ledger" id="partner_general_ledger"/>
+    -->
+
+	<!-- Journal -->
+	<record model="ir.actions.wizard" id="account_report_journal_print">
+		<field name="name">Print Journal</field>
+		<field name="wiz_name">account_report_journal</field>
+	</record>
+	<menuitem 
+        parent="account.menu_finance_generic_reporting"
+        name="Print Journal" 
+        action="account_report_journal_print" 
+        id="account_report_journal_print_menu" 
+        type="wizard"
+        icon="STOCK_PRINT" 
+        />
+
+	<!-- Trial Balance -->
+	<record model="ir.actions.wizard" id="account_report_trial_balance_print">
+		<field name="name">Print Trial Balance</field>
+		<field name="wiz_name">account_report_trial_balance</field>
+	</record>
+	<menuitem 
+        parent="account.menu_finance_generic_reporting"
+        name="Print Trial Balance" 
+        action="account_report_trial_balance_print" 
+        id="account_report_trial_balance_print_menu" 
+        type="wizard"
+        icon="STOCK_PRINT" 
+        />
+
+	<!-- Taxes by Invoice -->
+	<record model="ir.actions.wizard" id="account_report_taxes_by_invoice_print">
+		<field name="name">Print Taxes by Invoice</field>
+		<field name="wiz_name">account_report_taxes_by_invoice</field>
+	</record>
+	<menuitem 
+        parent="account.menu_finance_generic_reporting"
+        name="Print Taxes by Invoice" 
+        action="account_report_taxes_by_invoice_print" 
+        id="account_report_taxes_by_invoice_print_menu" 
+        type="wizard"
+        icon="STOCK_PRINT" 
+        />
+</data>
+</terp>
+

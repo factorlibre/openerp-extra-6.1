@@ -1,0 +1,233 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_advertising
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:25:04+0000\n"
+"PO-Revision-Date: 2009-11-25 14:25:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_advertising
+#: model:product.template,name:sale_advertising.advert_product_3_product_template
+msgid "Press Review Advertising Central Pages"
+msgstr "Pages Centrales de le Revue de Presse"
+
+#. module: sale_advertising
+#: field:sale.order,published_customer:0
+msgid "Published Customer"
+msgstr "Client publié"
+
+#. module: sale_advertising
+#: model:ir.model,name:sale_advertising.model_sale_advertising_proof
+msgid "Sale Advertising Proof"
+msgstr "Preuve de parution"
+
+#. module: sale_advertising
+#: model:ir.model,name:sale_advertising.model_sale_advertising_issue
+msgid "Sale Advertising Issue"
+msgstr "Parution publicitaire"
+
+#. module: sale_advertising
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom de modèle incorrect dans la définition de l'action"
+
+#. module: sale_advertising
+#: view:sale.advertising.proof:0
+msgid "Advertising proof"
+msgstr "Preuve de parution"
+
+#. module: sale_advertising
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Erreur: l'unité de mesure par défaut et l'unité de mesure d'achat doivent être dans la même catégorie."
+
+#. module: sale_advertising
+#: field:sale.advertising.issue,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: sale_advertising
+#: model:product.category,name:sale_advertising.product_category_advertisingmedium0
+msgid "Advertising Medium"
+msgstr "Medium publicitaire"
+
+#. module: sale_advertising
+#: view:sale.advertising.issue:0
+msgid "Advertising issue"
+msgstr "Parution publicitaire"
+
+#. module: sale_advertising
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x_ et ne pas comporter de caractères spéciaux !"
+
+#. module: sale_advertising
+#: model:product.template,name:sale_advertising.advert_product_2_product_template
+msgid "Press Review Advertising A4/2"
+msgstr "Page A4/2"
+
+#. module: sale_advertising
+#: view:sale.order:0
+#: view:sale.order.line:0
+#: field:sale.order.line,layout_remark:0
+msgid "Layout Remark"
+msgstr "Remarque de mise en page"
+
+#. module: sale_advertising
+#: field:sale.advertising.proof,target_id:0
+msgid "Target"
+msgstr "Cible"
+
+#. module: sale_advertising
+#: model:product.category,name:sale_advertising.product_category_website0
+msgid "Website"
+msgstr "Site Web"
+
+#. module: sale_advertising
+#: field:sale.advertising.issue,medium:0
+msgid "Medium"
+msgstr "Medium"
+
+#. module: sale_advertising
+#: model:ir.actions.act_window,name:sale_advertising.action_sale_advertising_proof
+#: model:ir.ui.menu,name:sale_advertising.menu_sale_advertising_proof
+msgid "Advertising Proof"
+msgstr "Preuve de parution"
+
+#. module: sale_advertising
+#: model:ir.actions.act_window,name:sale_advertising.advertising_sale_order_action
+#: model:ir.ui.menu,name:sale_advertising.menu_sale_advertising_sale_order
+msgid "All Advertising Sale Orders"
+msgstr "Tous les bons de commande publicitaires"
+
+#. module: sale_advertising
+#: field:sale.order,advertising_agency:0
+msgid "Advertising Agency"
+msgstr "Agence publicitaire"
+
+#. module: sale_advertising
+#: model:ir.actions.act_window,name:sale_advertising.action_sale_advertising_issue
+#: model:ir.ui.menu,name:sale_advertising.menu_sale_advertising_issue
+#: field:sale.order.line,adv_issue:0
+msgid "Advertising Issue"
+msgstr "Parution publicitaire"
+
+#. module: sale_advertising
+#: field:sale.advertising.proof,address_id:0
+msgid "Delivery Address"
+msgstr "Adresse d'expédition"
+
+#. module: sale_advertising
+#: field:sale.advertising.proof,number:0
+msgid "Number of Copies"
+msgstr "Nombre de copies"
+
+#. module: sale_advertising
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture de la Vue!"
+
+#. module: sale_advertising
+#: field:sale.advertising.issue,name:0
+#: field:sale.advertising.proof,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: sale_advertising
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Erreur: l'unité de mesure secondaire doit être d'une catégorie différence de l'unité de mesure par défaut."
+
+#. module: sale_advertising
+#: field:sale.order.line,to_date:0
+msgid "End of Validity"
+msgstr "Fin de validité"
+
+#. module: sale_advertising
+#: model:ir.ui.menu,name:sale_advertising.menu_sale_advertising
+#: view:sale.order:0
+#: view:sale.order.line:0
+msgid "Advertising"
+msgstr "Publicités"
+
+#. module: sale_advertising
+#: model:ir.module.module,description:sale_advertising.module_meta_information
+msgid "This module allow you to use the Sale Management to encode your advertising sales ... TODO\n"
+""
+msgstr "Ce module vous permet d'utiliser le module 'Sale Management' pour encoder vos ventes publicitaires ...\n"
+""
+
+#. module: sale_advertising
+#: model:product.category,name:sale_advertising.product_category_magazine0
+msgid "Press Review"
+msgstr "Revue de Presse"
+
+#. module: sale_advertising
+#: field:sale.order.line,from_date:0
+msgid "Start of Validity"
+msgstr "Début de la validité"
+
+#. module: sale_advertising
+#: field:product.product,equivalency_in_A4:0
+msgid "A4 Equivalency"
+msgstr "Equivalence A4"
+
+#. module: sale_advertising
+#: field:sale.order.line,page_reference:0
+msgid "Reference of the Page"
+msgstr "Référence de la Page"
+
+#. module: sale_advertising
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Erreur ! Vous ne pouvez pas créer de catégories récursives."
+
+#. module: sale_advertising
+#: model:ir.module.module,shortdesc:sale_advertising.module_meta_information
+msgid "Sales: Avertising Sales"
+msgstr "Ventes: Ventes publicitaires"
+
+#. module: sale_advertising
+#: field:sale.advertising.issue,default_note:0
+msgid "Default Note"
+msgstr "Note par défaut"
+
+#. module: sale_advertising
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Erreur : code EAN incorrect"
+
+#. module: sale_advertising
+#: model:product.template,name:sale_advertising.advert_product_1_product_template
+msgid "Half Banner 234x60"
+msgstr "Demi bannière 234x60"
+
+#. module: sale_advertising
+#: selection:sale.advertising.issue,state:0
+msgid "Close"
+msgstr "Clôturée"
+
+#. module: sale_advertising
+#: selection:sale.advertising.issue,state:0
+msgid "Open"
+msgstr "Ouverte"
+
+#. module: sale_advertising
+#: field:sale.advertising.issue,issue_date:0
+msgid "Issue Date"
+msgstr "Date de parution"
+
+#. module: sale_advertising
+#: model:product.template,name:sale_advertising.advert_product_0_product_template
+msgid "Full Banner 468x60"
+msgstr "Bannière complète 468x60"
+

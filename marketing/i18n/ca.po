@@ -1,0 +1,437 @@
+# Catalan translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:05+0000\n"
+"PO-Revision-Date: 2011-02-23 16:32+0000\n"
+"Last-Translator: Jordi Esteve (www.zikzakmedia.com) "
+"<jesteve@zikzakmedia.com>\n"
+"Language-Team: Catalan <ca@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:36+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Send an E-Mail"
+msgstr "Envia email"
+
+#. module: marketing
+#: field:campaign.partner,name:0
+msgid "Name / Reference"
+msgstr "Nom / Referència"
+
+#. module: marketing
+#: selection:campaign.partner.add,init,priority:0
+msgid "Very Good"
+msgstr "Molt bé"
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_campaign
+msgid "campaign.campaign"
+msgstr "campaign.campaign"
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,from:0
+msgid "From"
+msgstr "Des de"
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+#: wizard_field:campaign.partner.add,init,partners:0
+msgid "Partners"
+msgstr "Empreses"
+
+#. module: marketing
+#: field:campaign.partner,info:0
+#: view:campaign.partner.history:0
+#: field:campaign.partner.history,info:0
+msgid "Comments"
+msgstr "Comentaris"
+
+#. module: marketing
+#: field:campaign.campaign,planned_costs:0
+msgid "Planned Costs"
+msgstr "Costos previstos"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Continue Campaign"
+msgstr "Continua campanya"
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,on_error:0
+msgid "Error Return To"
+msgstr "Error re envia a"
+
+#. module: marketing
+#: field:campaign.step,max_try:0
+msgid "Max Attemps"
+msgstr "Intents màxims"
+
+#. module: marketing
+#: field:campaign.partner,date_recall:0
+msgid "Call again on"
+msgstr "Trucar de nou"
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Low"
+msgstr "Baixa"
+
+#. module: marketing
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom del model no vàlid a la definició de l'acció."
+
+#. module: marketing
+#: wizard_button:campaign.partner.email_send,init,send:0
+msgid "Send Email"
+msgstr "Envia Email"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Marketing Prospects"
+msgstr "Expectatives de màrqueting"
+
+#. module: marketing
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nom de l'objecte ha de començar per x_ i no contenir cap caràcter "
+"especial!"
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Email"
+msgstr "Email"
+
+#. module: marketing
+#: view:campaign.step:0
+msgid "Marketing Steps"
+msgstr "Etapes de màrqueting"
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+msgid "Default Values"
+msgstr "Valors per defecte"
+
+#. module: marketing
+#: selection:campaign.partner.add,init,priority:0
+msgid "Good"
+msgstr "Bé"
+
+#. module: marketing
+#: field:campaign.campaign,info:0
+#: field:campaign.step,info:0
+msgid "Description"
+msgstr "Descripció"
+
+#. module: marketing
+#: wizard_view:campaign.partner.email_send,init:0
+msgid "Header"
+msgstr "Capçalera"
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,body:0
+msgid "Email Message"
+msgstr "Missatge de correu"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Main Information"
+msgstr "Informació principal"
+
+#. module: marketing
+#: field:campaign.step,procent:0
+msgid "Success Rate (0<x<1)"
+msgstr "Taxa d'èxit (0<x<1)"
+
+#. module: marketing
+#: wizard_view:campaign.partner.add,init:0
+msgid "Add partners to campaign"
+msgstr "Afegeix empreses a la campanya"
+
+#. module: marketing
+#: field:campaign.campaign,date_stop:0
+#: field:campaign.step,stop_date:0
+msgid "Stop Date"
+msgstr "Data final"
+
+#. module: marketing
+#: view:campaign.campaign:0
+#: model:ir.ui.menu,name:marketing.menu_marketing_operations_campaigns
+msgid "Campaigns"
+msgstr "Campanyes"
+
+#. module: marketing
+#: field:campaign.campaign,planned_revenue:0
+msgid "Planned Revenue"
+msgstr "Ingressos previstos"
+
+#. module: marketing
+#: field:campaign.partner,step:0
+#: field:campaign.partner.history,step_id:0
+msgid "Step"
+msgstr "Etapa"
+
+#. module: marketing
+#: model:res.groups,name:marketing.group_marketing_user
+msgid "User"
+msgstr "Usuari"
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Waiting"
+msgstr "En espera"
+
+#. module: marketing
+#: field:campaign.partner.history,date:0
+msgid "Date"
+msgstr "Data"
+
+#. module: marketing
+#: field:campaign.partner,notes:0
+msgid "Prospect Notes"
+msgstr "Notes expectativa"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Call again Later"
+msgstr "Truca novament més tard"
+
+#. module: marketing
+#: model:ir.ui.menu,name:marketing.menu_op_config
+msgid "Configuration"
+msgstr "Configuració"
+
+#. module: marketing
+#: wizard_field:campaign.partner.add,init,campaign_step_id:0
+msgid "First Campaign Step"
+msgstr "Primera etapa de la campanya"
+
+#. module: marketing
+#: model:ir.ui.menu,name:marketing.menu_marketing_operations
+msgid "Marketing Operations"
+msgstr "Operacions de màrqueting"
+
+#. module: marketing
+#: field:campaign.campaign,costs:0
+msgid "Initial Costs"
+msgstr "Cost inicial"
+
+#. module: marketing
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML no vàlid per a l'estructura de la vista!"
+
+#. module: marketing
+#: field:campaign.partner.history,step_attempt:0
+msgid "Attempt"
+msgstr "Intent"
+
+#. module: marketing
+#: field:campaign.campaign,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: marketing
+#: model:ir.module.module,description:marketing.module_meta_information
+msgid "Marketing management module"
+msgstr "Mòdul de gestió de màrqueting"
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_partner_history
+msgid "campaign.partner.history"
+msgstr "campaign.partner.history"
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+msgid "Very High"
+msgstr "Molt alta"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Step Information"
+msgstr "Informació etapa"
+
+#. module: marketing
+#: wizard_button:campaign.partner.add,init,add:0
+msgid "Add these partners"
+msgstr "Afegeix aquestes empreses"
+
+#. module: marketing
+#: field:campaign.partner,active:0
+#: field:campaign.step,active:0
+msgid "Active"
+msgstr "Actiu"
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Medium"
+msgstr "Mitja"
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Stopped"
+msgstr "Aturada"
+
+#. module: marketing
+#: view:campaign.campaign:0
+#: model:ir.ui.menu,name:marketing.menu_op_config_camp_def
+msgid "Campaign Definition"
+msgstr "Definició de la campanya"
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_step
+msgid "campaign.step"
+msgstr "campaign.step"
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+#: selection:campaign.partner.add,init,priority:0
+msgid "Very Low"
+msgstr "Molt baixa"
+
+#. module: marketing
+#: field:campaign.step,costs:0
+msgid "Step Costs"
+msgstr "Costos etapa"
+
+#. module: marketing
+#: view:campaign.partner:0
+#: field:campaign.partner,history_ids:0
+#: view:campaign.partner.history:0
+#: field:campaign.partner.history,name:0
+msgid "History"
+msgstr "Historial"
+
+#. module: marketing
+#: field:campaign.partner.history,camp_partner_id:0
+msgid "Prospect"
+msgstr "Expectativa"
+
+#. module: marketing
+#: model:ir.actions.wizard,name:marketing.wizard_load_partners
+msgid "Load partners"
+msgstr "Carrega empreses"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Stop Campaign"
+msgstr "Atura campanya"
+
+#. module: marketing
+#: field:campaign.partner,priority:0
+#: wizard_field:campaign.partner.add,init,priority:0
+msgid "Priority"
+msgstr "Prioritat"
+
+#. module: marketing
+#: field:campaign.partner,contact:0
+msgid "Partner Contact"
+msgstr "Contacte empresa"
+
+#. module: marketing
+#: field:campaign.partner,campaign_id:0
+#: field:campaign.step,campaign_id:0
+msgid "Campaign"
+msgstr "Campanya"
+
+#. module: marketing
+#: field:campaign.step,priority:0
+msgid "Sequence"
+msgstr "Seqüència"
+
+#. module: marketing
+#: field:marketing.installer,marketing_campaign:0
+msgid "Marketing Campaigns"
+msgstr "Campanyes de màrqueting"
+
+#. module: marketing
+#: selection:campaign.partner,state:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: marketing
+#: field:campaign.partner,state:0
+msgid "State"
+msgstr "Estat"
+
+#. module: marketing
+#: field:campaign.partner,part_adr_id:0
+msgid "Partner Address"
+msgstr "Adreça empresa"
+
+#. module: marketing
+#: selection:campaign.partner,priority:0
+msgid "High"
+msgstr "Alta"
+
+#. module: marketing
+#: field:campaign.campaign,step_id:0
+#: view:campaign.step:0
+msgid "Campaign Steps"
+msgstr "Etapes campanya"
+
+#. module: marketing
+#: model:ir.model,name:marketing.model_campaign_partner
+msgid "campaign.partner"
+msgstr "campaign.partner"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Prospect Information"
+msgstr "Informació expectativa"
+
+#. module: marketing
+#: wizard_button:campaign.partner.add,init,end:0
+#: wizard_button:campaign.partner.email_send,init,end:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: marketing
+#: field:campaign.partner,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: marketing
+#: field:campaign.campaign,date_start:0
+#: field:campaign.step,start_date:0
+msgid "Start Date"
+msgstr "Data inicial"
+
+#. module: marketing
+#: view:campaign.partner:0
+msgid "Marketing::Prospects"
+msgstr "Màrqueting::Expectatives"
+
+#. module: marketing
+#: field:campaign.partner,user_id:0
+msgid "Salesman"
+msgstr "Comercial"
+
+#. module: marketing
+#: model:ir.actions.wizard,name:marketing.wizard_email
+msgid "Send an email"
+msgstr "Envia email"
+
+#. module: marketing
+#: field:campaign.step,name:0
+msgid "Step Name"
+msgstr "Nom etapa"
+
+#. module: marketing
+#: wizard_field:campaign.partner.email_send,init,subject:0
+msgid "Subject"
+msgstr "Assumpte"

@@ -1,0 +1,57 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* multi_company_share
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-01 09:54+0000\n"
+"PO-Revision-Date: 2011-04-01 09:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: multi_company_share
+#: view:res.company:0
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: multi_company_share
+#: model:ir.model,name:multi_company_share.model_res_company
+msgid "Companies"
+msgstr "Companies"
+
+#. module: multi_company_share
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Error! You can not create recursive companies."
+
+#. module: multi_company_share
+#: view:res.company:0
+msgid "Share Multi Company"
+msgstr "Share Multi Company"
+
+#. module: multi_company_share
+#: model:ir.model,name:multi_company_share.model_product_template
+msgid "Product Template"
+msgstr "Product Template"
+
+#. module: multi_company_share
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Error: The default UOM and the purchase UOM must be in the same category."
+
+#. module: multi_company_share
+#: model:ir.model,name:multi_company_share.model_res_partner
+msgid "Partner"
+msgstr "Partner"
+
+#. module: multi_company_share
+#: model:ir.model,name:multi_company_share.model_res_partner_address
+msgid "Partner Addresses"
+msgstr "Partner Addresses"
+

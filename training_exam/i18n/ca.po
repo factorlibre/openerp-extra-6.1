@@ -1,0 +1,1493 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_exam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-13 16:53+0000\n"
+"PO-Revision-Date: 2011-02-15 15:28+0000\n"
+"Last-Translator: Jordi Esteve (www.zikzakmedia.com) "
+"<jesteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:34+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+"X-Poedit-Language: Catalan\n"
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "The response(s) from the question"
+msgstr "La(es) resposta(es) a la pregunta"
+
+#. module: training_exam
+#: field:training.exam.questionnaire,passing_score:0
+msgid "Global Passing Score"
+msgstr "Puntuació global aprovat"
+
+#. module: training_exam
+#: field:training.exam.questionnaire.course,category_id:0
+msgid "Category of Course"
+msgstr "Categoria d'assignatura"
+
+#. module: training_exam
+#: view:training.exam.questionnaire.course:0
+#: field:training.exam.questionnaire.course,passing_score:0
+#: field:training.participation,passing_score:0
+msgid "Passing Score"
+msgstr "Puntuació aprovat"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire_question
+msgid "training.exam.questionnaire.question"
+msgstr "formacio.examen.questionari.pregunta"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Questionaire:"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: view:training.exam.questionnaire:0
+msgid "Group By..."
+msgstr ""
+
+#. module: training_exam
+#: help:training.exam.questionnaire,len_question_ids:0
+msgid "Total number of questions"
+msgstr "Nombre total de preguntes"
+
+#. module: training_exam
+#: help:training.exam.questionnaire,kind:0
+msgid "How this questionnaire could be corrected"
+msgstr "Com es podria corregir aquest qüestionari."
+
+#. module: training_exam
+#: field:training.exam.question.answer,is_solution:0
+msgid "Acceptable Solution"
+msgstr "Solució acceptable"
+
+#. module: training_exam
+#: help:training.participation,forced_noresult:0
+msgid ""
+"Check if this participation won't have any result, and that is normal. This "
+"particaption will not be taken anymore in account for correction request, "
+"exam certificate"
+msgstr ""
+"Comproveu si aquesta participació no tindrà cap resultat, i si això és "
+"normal. Aquesta participació no es tindrà més en compte per sol·licitar la "
+"correcció, el certificat d'examen"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_contact_results_stat
+msgid "training.exam.contact.results.stat"
+msgstr ""
+
+#. module: training_exam
+#: help:training.exam.questionnaire,name:0
+msgid "Name of questionnaire"
+msgstr "Nom del qüestionari."
+
+#. module: training_exam
+#: field:training.subscription.line,parent_id:0
+msgid "Parent"
+msgstr "Pare"
+
+#. module: training_exam
+#: field:training.exam.questionnaire,category:0
+msgid "Category of  Course"
+msgstr "Categoria d'assignatura"
+
+#. module: training_exam
+#: constraint:training.exam.question:0
+msgid "Can you check the point of your question ?"
+msgstr ""
+
+#. module: training_exam
+#: help:training.exam.question,free_lines_count:0
+msgid ""
+"How many free line available to formulate a response to a plain question"
+msgstr ""
+"Quantes línies lliures permeses per a redactar la resposta a una pregunta "
+"plana"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_course
+msgid "training.course"
+msgstr ""
+
+#. module: training_exam
+#: help:training.participation.line,point:0
+msgid "Number of point get from question"
+msgstr "Número de punts obtinguts en la pregunta."
+
+#. module: training_exam
+#: help:training.exam.questionnaire,duration:0
+msgid "Duration for the exam"
+msgstr "Durada de l'examen"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_validate_wizard
+msgid "training.exam.question.validate.wizard"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_seance
+msgid "training.seance"
+msgstr ""
+
+#. module: training_exam
+#: field:training.participation.line,page_num:0
+msgid "Page N°"
+msgstr "Pàgina Nº"
+
+#. module: training_exam
+#: help:training.participation,passing_score:0
+msgid ""
+"The minimum score needed to succueed to this exam, assigned when "
+"questionnaire is affected to the participation (on \"Exam Sheet\" "
+"generation) and not updated after"
+msgstr ""
+"La puntuació mínima necessària per a superar aquest examen, assignat quan el "
+"qüestionari es veu afectat per la participació (a generació \"Full "
+"d'examen\") i no s'actualitza desprès."
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: view:training.exam.questionnaire:0
+msgid "Validate"
+msgstr "Valida"
+
+#. module: training_exam
+#: help:training.participation,duration_questionnaire_id:0
+msgid "Duration of selected  Questionnaire"
+msgstr "Durada del qüestionari seleccionat"
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "Check Points"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.question,image_position:0
+msgid "Image Position"
+msgstr "Posició imatge"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_wizard
+msgid "Question Wizard"
+msgstr "Assistent preguntes"
+
+#. module: training_exam
+#: field:training.exam.questionnaire,main_course_id:0
+msgid "Main Course"
+msgstr "Assignatura principal"
+
+#. module: training_exam
+#: help:training.exam.questionnaire,passing_score:0
+msgid "The global passing score of the questionnaire"
+msgstr "La puntuació global per aprovar el qüestionari."
+
+#. module: training_exam
+#: help:training.exam.questionnaire,state:0
+msgid "The state of the Questionnaire"
+msgstr "Estat del qüestionari"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire_wizard
+#: view:training.exam.questionnaire.wizard:0
+msgid "Questionnaire Wizard"
+msgstr "Assistent de qüestionari"
+
+#. module: training_exam
+#: view:training.exam.question.answer:0
+msgid "Examen Answer"
+msgstr "Resposta examen"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1038
+#, python-format
+msgid "Can you check the product on the course type of the course %s"
+msgstr ""
+"Podeu comprovar el producte en el tipus d'assignatura de l'assignatura %s"
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.questionnaire.attachment,position:0
+msgid "Position"
+msgstr "Posició"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Exposition of the question"
+msgstr "Exposició de la pregunta"
+
+#. module: training_exam
+#: selection:training.exam.questionnaire,kind:0
+#: selection:training.exam.questionnaire.wizard,kind:0
+msgid "Automatic"
+msgstr "Automàtic"
+
+#. module: training_exam
+#: view:training.exam.questionnaire.course:0
+msgid "Course Scores"
+msgstr "Puntuacions de l'assignatura"
+
+#. module: training_exam
+#: help:training.exam.question,duration:0
+msgid "Time related to question"
+msgstr "Temps relacionat a la pregunta"
+
+#. module: training_exam
+#: field:training.participation,certif_printed:0
+msgid "Certificate Printed"
+msgstr "Certificat imprès"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Response (Plain)"
+msgstr "Resposta (plana)"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_subscription_line
+msgid "training.subscription.line"
+msgstr ""
+
+#. module: training_exam
+#: constraint:training.course:0
+msgid "Please, Can you check the duration ?"
+msgstr ""
+
+#. module: training_exam
+#: constraint:training.seance:0
+msgid "You have a session with a date inferior to the seance's date"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.question,number_of_good_answers:0
+msgid "Number of Good Answers"
+msgstr "Nombre de respostes correctes"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_seance_generate_zip_wizard
+msgid "training.seance.generate.zip.wizard"
+msgstr ""
+
+#. module: training_exam
+#: field:training.participation.line,sequence:0
+msgid "Question N°"
+msgstr "Pregunta Nº"
+
+#. module: training_exam
+#: field:training.participation.line,plain_question:0
+msgid "Solution Plain"
+msgstr "Solució plana"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_email
+msgid "Training Email"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.question.wizard,course_id:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire.course,course_id:0
+#: field:training.exam.questionnaire.wizard,course_id:0
+#: field:training.exam.wizard.helper,course_id:0
+msgid "Course"
+msgstr "Assignatura"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Reset to Draft"
+msgstr "Inicialitza a esborrany"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_session
+msgid "training.session"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_group_deprecate_wizard
+msgid "Deprecate question by lot"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.questionnaire.question,question_exposition:0
+msgid "Exposition"
+msgstr "Exposició"
+
+#. module: training_exam
+#: selection:training.exam.questionnaire.attachment,position:0
+msgid "Before"
+msgstr "Abans"
+
+#. module: training_exam
+#: model:ir.actions.act_window,name:training_exam.exam_questionnaire_all_act
+#: model:ir.actions.act_window,name:training_exam.link_question_to_questionnaire
+#: model:ir.actions.act_window,name:training_exam.show_questionnaire_from_course
+#: model:ir.ui.menu,name:training_exam.library_exam_questionnaire_all_mi
+#: view:training.course:0
+#: view:training.exam.question:0
+#: view:training.exam.questionnaire:0
+msgid "Questionnaires"
+msgstr "Qüestionaris"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Response (Yes/No)"
+msgstr "Resposta (Sí/No)"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:404
+#, python-format
+msgid "Cannot modify important field of a question which is validated"
+msgstr ""
+"No es pot modificar un camp important d'una pregunta que estigui validada"
+
+#. module: training_exam
+#: field:training.exam.question,free_lines_count:0
+msgid "Free Lines"
+msgstr "Línies lliures"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Date:"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,question:0
+#: field:training.exam.question.answer,question_id:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire.question,question_id:0
+#: view:training.participation.line:0
+#: field:training.participation.line,question_id:0
+msgid "Question"
+msgstr "Pregunta"
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,state:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,state:0
+msgid "State"
+msgstr "Estat"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Search Exam Question"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: selection:training.exam.question,state:0
+#: view:training.exam.questionnaire:0
+#: selection:training.exam.questionnaire,state:0
+msgid "Draft"
+msgstr "Esborrany"
+
+#. module: training_exam
+#: help:training.participation.line,point_question:0
+msgid "Point of question"
+msgstr "Punts de la pregunta."
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,type:0
+#: field:training.exam.questionnaire,type:0
+#: field:training.exam.questionnaire.question,question_type:0
+#: field:training.exam.questionnaire.wizard,kind:0
+#: field:training.participation.line,type_question:0
+msgid "Type"
+msgstr "Tipus"
+
+#. module: training_exam
+#: selection:training.exam.questionnaire.wizard,kind:0
+msgid "At Least one open-ended question"
+msgstr "Al menys una pregunta oberta-finalitzada"
+
+#. module: training_exam
+#: model:ir.actions.act_window,name:training_exam.training_participation_line_act
+#: model:ir.model,name:training_exam.model_training_participation
+#: field:training.participation.line,participation_id:0
+msgid "Participation"
+msgstr "Participació"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:124
+#, python-format
+msgid "There is not an available questionnaire for the following course %s"
+msgstr "No existeix cap qüestionari per l'assignatura %s"
+
+#. module: training_exam
+#: constraint:training.subscription.line:0
+msgid "Invalid Subscription"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Question Image"
+msgstr "Imatge de la pregunta"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_course_type
+msgid "The Course's Type"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_wizard_helper
+msgid "training.exam.wizard.helper"
+msgstr "formacio.examen.assistent.ajuda"
+
+#. module: training_exam
+#: view:training.exam.question.answer:0
+msgid "Question Answer"
+msgstr "Resposta a la pregunta"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire_attachment
+msgid "training.exam.questionnaire.attachment"
+msgstr "formacio.examen.questionari.adjunt"
+
+#. module: training_exam
+#: view:training.participation:0
+msgid "Exam Summary"
+msgstr "Resum de l'examen"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:105
+#: code:addons/training_exam/training_exam.py:123
+#: code:addons/training_exam/training_exam.py:941
+#: code:addons/training_exam/training_exam.py:1037
+#, python-format
+msgid "Warning"
+msgstr "Avís"
+
+#. module: training_exam
+#: selection:training.exam.questionnaire,type:0
+msgid "Examen"
+msgstr "Examen"
+
+#. module: training_exam
+#: view:training.participation:0
+msgid "Configuration"
+msgstr "Configuració"
+
+#. module: training_exam
+#: field:training.participation.line,point_question:0
+msgid "Max Point"
+msgstr "Màxima puntuació"
+
+#. module: training_exam
+#: field:training.exam.questionnaire.course,kind:0
+#: field:training.exam.wizard.helper,kind:0
+msgid "Kind"
+msgstr "Classe"
+
+#. module: training_exam
+#: field:training.participation.line,qcm_question:0
+msgid "Solution QCM"
+msgstr "Solució Opció múltiple"
+
+#. module: training_exam
+#: view:training.exam.questionnaire.wizard:0
+msgid "_Cancel"
+msgstr "_Cancel·la"
+
+#. module: training_exam
+#: help:training.participation,forced_result:0
+msgid "If not zero, this is the score that will be forced"
+msgstr "Si no és zero, serà forçada aquesta puntuació."
+
+#. module: training_exam
+#: view:training.exam.questionnaire.wizard:0
+msgid "Information about the questions"
+msgstr "Informació sobre preguntes"
+
+#. module: training_exam
+#: help:training.exam.questionnaire,total_point:0
+msgid "Total point for the questionnaire"
+msgstr "Puntuació total del qüestionari."
+
+#. module: training_exam
+#: selection:training.exam.questionnaire,kind:0
+msgid "Manual"
+msgstr "Manual"
+
+#. module: training_exam
+#: view:training.exam.wizard.helper:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,remark_firstpage:0
+msgid "Remark First Page"
+msgstr "Comentari primera pàgina"
+
+#. module: training_exam
+#: constraint:training.exam.question:0
+msgid "Can you check your type and the solution"
+msgstr "Podeu comprovar el vostre tipus i la solució"
+
+#. module: training_exam
+#: view:training.exam.questionnaire.wizard:0
+msgid "Questionnaire Information"
+msgstr "Informació del qüestionari"
+
+#. module: training_exam
+#: constraint:training.exam.questionnaire:0
+msgid "Can you check the passing score  ?"
+msgstr ""
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1656
+#, python-format
+msgid "The type of the course (%s) of this seance has no product defined"
+msgstr ""
+"El tipus d'assignatura (%s) d'aquesta convocatòria no té cap producte definit"
+
+#. module: training_exam
+#: field:training.exam.questionnaire.attachment,store_in_dms:0
+msgid "Store In DMS"
+msgstr "Guarda al DMS"
+
+#. module: training_exam
+#: help:training.exam.question,type:0
+#: help:training.participation.line,yesno_question:0
+msgid "Question type"
+msgstr "Tipus pregunta"
+
+#. module: training_exam
+#: field:training.exam.question,is_eliminatory:0
+msgid "Eliminatory"
+msgstr "Eliminatori"
+
+#. module: training_exam
+#: selection:training.exam.question,state:0
+#: view:training.exam.questionnaire:0
+#: selection:training.exam.questionnaire,state:0
+msgid "Validated"
+msgstr "Validat"
+
+#. module: training_exam
+#: field:training.subscription.line,computed:0
+msgid "Computed"
+msgstr "Calculat"
+
+#. module: training_exam
+#: field:training.exam.question,point:0
+#: field:training.participation.line,point:0
+msgid "Point"
+msgstr "Punts"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1376
+#, python-format
+msgid "Can't find validated questionnaire for course '%s'"
+msgstr "No es troba un qüestionari validat per a l'assignatura '%s'"
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,image:0
+msgid "Image"
+msgstr "Imatge"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question
+msgid "training.exam.question"
+msgstr "formacio.examen.pregunta"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Sign"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire.course:0
+msgid "Course Information"
+msgstr "Informació assignatura"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:170
+#, python-format
+msgid "There is no product with the code equal to R50H !"
+msgstr "No existeix cap producte amb el codi R50H!"
+
+#. module: training_exam
+#: view:training.participation:0
+#: field:training.participation,result:0
+msgid "Result"
+msgstr "Resultat"
+
+#. module: training_exam
+#: model:ir.actions.act_window,name:training_exam.course_questions
+#: model:ir.actions.act_window,name:training_exam.exam_question_all_act
+#: model:ir.actions.act_window,name:training_exam.show_question_from_questionnaire
+#: model:ir.ui.menu,name:training_exam.library_exam_question_mi
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,question_ids:0
+#: field:training.exam.wizard.helper,question_ids:0
+#: view:training.participation.line:0
+msgid "Questions"
+msgstr "Preguntes"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1367
+#, python-format
+msgid ""
+"Can't assign questionnaire to participation %s because there is not exam "
+"defined on this participation"
+msgstr ""
+"No es pot assignar un qüestionari a la participació %s perquè no existeix un "
+"examen definit a aquesta participació"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Product Line"
+msgstr "Compte analític"
+
+#. module: training_exam
+#: selection:training.exam.question,response_yesno:0
+#: selection:training.exam.question.answer,is_solution:0
+#: selection:training.participation,succeeded:0
+#: selection:training.participation.line,response_yesno:0
+msgid "Yes"
+msgstr "Sí"
+
+#. module: training_exam
+#: help:training.exam.question,image:0
+msgid "Image to be display next to question text"
+msgstr "Imatge a ser mostrada a la propera pregunta de text"
+
+#. module: training_exam
+#: model:ir.ui.menu,name:training_exam.library_exam_mi
+#: view:training.offer:0
+#: field:training.offer,questionnaire_ids:0
+#: field:training.seance.generate.zip.wizard,exams_report:0
+msgid "Exams"
+msgstr "Exàmens"
+
+#. module: training_exam
+#: model:ir.actions.act_window,name:training_exam.exam_questionnaire_wizard_act
+#: model:ir.ui.menu,name:training_exam.library_exam_questionnaire_generate_mi
+msgid "Generate Questionnaire"
+msgstr "Genera qüestionari"
+
+#. module: training_exam
+#: constraint:training.session:0
+msgid "You have a seance with a date inferior to the session's date."
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire_new_version_wizard
+msgid "training.exam.questionnaire.new.version.wizard"
+msgstr ""
+
+#. module: training_exam
+#: selection:training.exam.question,response_yesno:0
+#: selection:training.exam.question.answer,is_solution:0
+#: selection:training.participation,succeeded:0
+#: selection:training.participation.line,response_yesno:0
+msgid "No"
+msgstr "No"
+
+#. module: training_exam
+#: constraint:training.session:0
+msgid "You have a seance with a later date to the session's end date."
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_participation_course_line
+msgid "training.participation.course.line"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,note:0
+#: field:training.participation.line,note:0
+msgid "Note"
+msgstr "Nota"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:942
+#, python-format
+msgid "Can you check the product on the course type of the course ?"
+msgstr ""
+"Podeu comprovar el producte en el tipus d'assignatura de l'assignatura?"
+
+#. module: training_exam
+#: field:training.exam.questionnaire.attachment,attachment_id:0
+msgid "Attachment"
+msgstr "Adjunt"
+
+#. module: training_exam
+#: selection:training.exam.question,type:0
+#: selection:training.exam.questionnaire.question,question_type:0
+#: selection:training.participation.line,type_question:0
+msgid "Yes/No"
+msgstr "Sí/No"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Succeeded:"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+#: selection:training.exam.questionnaire,state:0
+msgid "Pending"
+msgstr "Pendent"
+
+#. module: training_exam
+#: view:training.participation:0
+msgid "Status"
+msgstr "Estat"
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "Question Information"
+msgstr "Informació pregunta"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:69
+#: code:addons/training_exam/training_exam.py:1085
+#: model:training.course.kind,name:training_exam.course_kind_exam
+#: field:training.course_type,exam_product_id:0
+#: model:training.offer.kind,name:training_exam.offer_kind_exam
+#: field:training.participation,course_questionnaire_id:0
+#: view:training.subscription:0
+#: view:training.subscription.line:0
+#: field:training.subscription.line,course_id:0
+#: field:training.subscription.line.second,course_id:0
+#: field:training.subscription.mass.line,course_id:0
+#, python-format
+msgid "Exam"
+msgstr "Examen"
+
+#. module: training_exam
+#: field:training.participation,result_pourcentage:0
+msgid "Result (%)"
+msgstr "Resultat (%)"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_offer
+msgid "training.offer"
+msgstr ""
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:106
+#, python-format
+msgid "You have selected an exam seance but there is no associated course"
+msgstr ""
+"Heu seleccionat una convocatòria d'examen, però no existeix cap assignatura "
+"associada"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Question Description"
+msgstr "Descripció pregunta"
+
+#. module: training_exam
+#: model:ir.actions.wizard,name:training_exam.wizard_training_exam_question_assign_course
+msgid "Assign Course"
+msgstr "Assigna assignatura"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_subscription_line_second
+msgid "training.subscription.line.second"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.actions.report.xml,name:training_exam.training_participation_exam_result_report
+msgid "Exam Result"
+msgstr "Resultat exàmens"
+
+#. module: training_exam
+#: field:training.subscription.mass.line,date_session:0
+msgid "Date"
+msgstr "Data"
+
+#. module: training_exam
+#: help:training.exam.questionnaire.attachment,store_in_dms:0
+msgid ""
+"Indicate if generated document will be store is the document management "
+"system or discared on scan"
+msgstr ""
+"Indica si el document generat es guardarà en el sistema de gestió de "
+"documents o en escànner"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Deprecate"
+msgstr "Descataloga"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Designation"
+msgstr "Designació"
+
+#. module: training_exam
+#: field:training.participation,forced_noresult:0
+msgid "Forced No Result"
+msgstr "Resultat no forçat"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Do you want to validate this questionnaire ?"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_subscription_mass_line
+msgid "training.subscription.mass.line"
+msgstr ""
+
+#. module: training_exam
+#: selection:training.participation,succeeded:0
+msgid "N/A"
+msgstr "No disponible"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Contact:"
+msgstr ""
+
+#. module: training_exam
+#: help:training.exam.question,is_mandatory:0
+msgid "Question is mandatory or not"
+msgstr "La pregunta és obligatòria o no"
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: field:training.exam.question,course_ids:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,course_ids:0
+#: view:training.exam.questionnaire.course:0
+msgid "Courses"
+msgstr "Assignatures"
+
+#. module: training_exam
+#: field:training.participation.line,graded:0
+msgid "Is Graded"
+msgstr "És graduat"
+
+#. module: training_exam
+#: field:training.participation,result_received:0
+msgid "Result received"
+msgstr "Resultat rebut"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:169
+#: code:addons/training_exam/training_exam.py:404
+#: code:addons/training_exam/training_exam.py:1198
+#: code:addons/training_exam/training_exam.py:1366
+#: code:addons/training_exam/training_exam.py:1375
+#: code:addons/training_exam/training_exam.py:1655
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Result %:"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_participation_stakeholder
+msgid "training.participation.stakeholder"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.questionnaire,total_point:0
+#: field:training.exam.questionnaire.course,total_point:0
+msgid "Total Point"
+msgstr "Puntuació total"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1199
+#, python-format
+msgid "The following course has not a valid duration '%s' (%d)"
+msgstr "La següent assignatura no té una durada vàlida '%s' (%d)"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:1149
+#, python-format
+msgid "Cancellation"
+msgstr "Cancel·lació"
+
+#. module: training_exam
+#: selection:training.exam.question,type:0
+#: selection:training.exam.questionnaire.question,question_type:0
+#: selection:training.participation.line,type_question:0
+msgid "Plain"
+msgstr "Pla"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_group_validate_wizard
+msgid "Validate question by lot"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.question,is_mandatory:0
+msgid "Mandatory"
+msgstr "Obligatori"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,attachment_ids:0
+#: view:training.exam.questionnaire.attachment:0
+msgid "Attachments"
+msgstr "Adjunts"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Search Course"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question.answer:0
+msgid "Proposed Answer"
+msgstr "Resposta proposada"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_config_contact_function
+msgid "training.config.contact.function"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "General"
+msgstr "General"
+
+#. module: training_exam
+#: sql_constraint:training.participation.stakeholder:0
+msgid "The contact is already associated to the seance"
+msgstr ""
+
+#. module: training_exam
+#: constraint:training.participation.stakeholder:0
+msgid "The request is not linked to a session of the seance"
+msgstr ""
+
+#. module: training_exam
+#: view:training.seance.generate.zip.wizard:0
+msgid "Exam Reports"
+msgstr "Informe d'examen"
+
+#. module: training_exam
+#: help:training.seance.generate.zip.wizard,exams_report:0
+msgid ""
+"If you select this option, you will print the exams. The filename format is "
+"Exam_DATE_PARTICIPATIONID.pdf"
+msgstr ""
+"Si seleccioneu aquesta opció, imprimireu l'examen. El format de fitxer és "
+"Exam_DATA_IDPARTICIPACIO.pdf"
+
+#. module: training_exam
+#: view:training.course:0
+#: field:training.course,questionnaire_ids:0
+#: field:training.exam.question,questionnaire_ids:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire.attachment,questionnaire_id:0
+#: field:training.exam.questionnaire.course,questionnaire_id:0
+#: field:training.exam.questionnaire.question,questionnaire_id:0
+#: field:training.exam.wizard.helper,questionnaire_id:0
+#: field:training.participation,questionnaire_id:0
+msgid "Questionnaire"
+msgstr "Qüestionari"
+
+#. module: training_exam
+#: sql_constraint:training.participation:0
+msgid "The subscription and the seance must be unique !"
+msgstr ""
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "The response(s) from the student"
+msgstr "La(es) resposta(es) de l'estudiant"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Total Points:"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.actions.act_window,name:training_exam.exam_questionnaire_wizard_helper_act
+#: view:training.exam.questionnaire:0
+#: view:training.exam.wizard.helper:0
+msgid "Add Questions"
+msgstr "Afegiu preguntes"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+#: selection:training.exam.questionnaire,state:0
+msgid "In Progress"
+msgstr "En progrés"
+
+#. module: training_exam
+#: view:training.subscription:0
+msgid "Compute Exam Subscription"
+msgstr "Calcula subscripcions a examen"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_new_version_wizard
+msgid "training.exam.question.new.version.wizard"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Exam Content"
+msgstr "Contingut de l'examen"
+
+#. module: training_exam
+#: constraint:training.course_type:0
+#: constraint:training.seance:0
+msgid "The minimum limit is greater than the maximum limit"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire.course:0
+#: field:training.participation,total_points:0
+msgid "Total Points"
+msgstr "Puntuació total"
+
+#. module: training_exam
+#: sql_constraint:training.config.contact.function:0
+msgid "You can not define twice the same relation !"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,objective:0
+msgid "Objective"
+msgstr "Objectiu"
+
+#. module: training_exam
+#: view:training.exam.questionnaire:0
+msgid "Do you want to deprecate this questionnaire ?"
+msgstr ""
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Partner:"
+msgstr ""
+
+#. module: training_exam
+#: selection:training.exam.question,type:0
+#: selection:training.exam.questionnaire.question,question_type:0
+#: selection:training.participation.line,type_question:0
+msgid "QCM"
+msgstr "Opció múltiple"
+
+#. module: training_exam
+#: view:training.exam.wizard.helper:0
+msgid "Add Questions to Questionnaire"
+msgstr "Afegeix preguntes al qüestionari"
+
+#. module: training_exam
+#: code:addons/training_exam/training_exam.py:65
+#, python-format
+msgid "Class %d"
+msgstr "Classe %d"
+
+#. module: training_exam
+#: view:training.participation:0
+msgid "Exam Participation"
+msgstr "Participació examen"
+
+#. module: training_exam
+#: field:training.exam.questionnaire,description:0
+#: view:training.offer:0
+msgid "Description"
+msgstr "Descripció"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire
+msgid "training.exam.questionnaire"
+msgstr "formacio.examen.questionari"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid "Response (QCU/QCM)"
+msgstr "Resposta (Opció única/múltiple)"
+
+#. module: training_exam
+#: selection:training.exam.questionnaire.attachment,position:0
+msgid "After"
+msgstr "Després"
+
+#. module: training_exam
+#: help:training.participation,questionnaire_id:0
+msgid "Select the Questionnaire for participant"
+msgstr "Selecciona qüestionari per al participant"
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid ""
+"Are you sure you want to set this question to draft? (All Validated "
+"questionnaires related to this question will be set to Pending."
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_subscription
+msgid "training.subscription"
+msgstr ""
+
+#. module: training_exam
+#: view:training.exam.question:0
+#: selection:training.exam.question,state:0
+#: view:training.exam.questionnaire:0
+#: selection:training.exam.questionnaire,state:0
+msgid "Deprecated"
+msgstr "Descatalogat"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_questionnaire_course
+msgid "Training Exam Questionnaire Course"
+msgstr "Qüestionari d'examen de l'assignatura de formació"
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "Notes"
+msgstr "Notes"
+
+#. module: training_exam
+#: field:training.participation.line,yesno_question:0
+msgid "Solution YesNo"
+msgstr "Solució Sí/No"
+
+#. module: training_exam
+#: field:training.participation.line,response_qcm_ids:0
+msgid "Solutions"
+msgstr "Solucions"
+
+#. module: training_exam
+#: help:training.participation,result:0
+msgid "Exam Result of participate"
+msgstr "Resultat d'examen de participació"
+
+#. module: training_exam
+#: field:training.exam.question,name:0
+#: view:training.exam.questionnaire:0
+#: field:training.exam.questionnaire,name:0
+#: field:training.exam.questionnaire.wizard,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: training_exam
+#: field:training.participation,succeeded:0
+msgid "Succeeded"
+msgstr "Aconseguit"
+
+#. module: training_exam
+#: constraint:training.exam.questionnaire:0
+msgid "Only one course allowed for questionnaire with type 'Examen'"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.question,question_answer_ids:0
+#: field:training.exam.question,response_plain:0
+#: field:training.exam.question,response_yesno:0
+#: field:training.exam.question.answer,name:0
+#: field:training.participation.line,response_plain:0
+#: field:training.participation.line,response_yesno:0
+msgid "Solution"
+msgstr "Solució"
+
+#. module: training_exam
+#: sql_constraint:training.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr ""
+
+#. module: training_exam
+#: field:training.participation,forced_result:0
+msgid "Forced Result"
+msgstr "Resultat forçat"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_answer
+msgid "Training Question Answer"
+msgstr "Resposta a pregunta de formació"
+
+#. module: training_exam
+#: constraint:training.participation.line:0
+msgid "Can you check the give point?"
+msgstr ""
+
+#. module: training_exam
+#: field:training.subscription.line,exam_session_id:0
+#: field:training.subscription.line.second,exam_session_id:0
+#: field:training.subscription.mass.line,exam_session_id:0
+msgid "Exam Session"
+msgstr "Edició examen"
+
+#. module: training_exam
+#: view:training.exam.questionnaire.wizard:0
+msgid "_Apply"
+msgstr "_Aplica"
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Result:"
+msgstr ""
+
+#. module: training_exam
+#: field:training.exam.questionnaire,kind:0
+msgid "Mode"
+msgstr "Mode"
+
+#. module: training_exam
+#: field:training.course,has_questionnaire:0
+msgid "Has Questionnaires"
+msgstr "Té qüestionaris"
+
+#. module: training_exam
+#: selection:training.exam.question,image_position:0
+msgid "Before text"
+msgstr "Abans del text"
+
+#. module: training_exam
+#: view:training.participation.line:0
+msgid "Responses"
+msgstr "Respostes"
+
+#. module: training_exam
+#: field:training.participation,participation_line_ids:0
+msgid "Participation Lines"
+msgstr "Línies de participació"
+
+#. module: training_exam
+#: help:training.exam.questionnaire.course,passing_score:0
+msgid "Passing score of  related to Exam"
+msgstr "Passar puntuació del relacionat a l'examen"
+
+#. module: training_exam
+#: help:training.exam.question,point:0
+msgid "Point related to question"
+msgstr "Punts relacionat amb una pregunta."
+
+#. module: training_exam
+#: selection:training.exam.question,image_position:0
+msgid "After text"
+msgstr "Després del text"
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_participation_line
+msgid "training.participation.line"
+msgstr "formacio.participacio.linia"
+
+#. module: training_exam
+#: field:training.exam.questionnaire.attachment,sequence:0
+#: field:training.exam.questionnaire.question,sequence:0
+msgid "Sequence"
+msgstr "Seqüència"
+
+#. module: training_exam
+#: help:training.exam.question,name:0
+msgid "Name of Question"
+msgstr "Nom de la pregunta."
+
+#. module: training_exam
+#: view:training.exam.question:0
+msgid ""
+"Are you sure you want to deprecate this question? (All Validated "
+"questionnaires related to this question will be set to Pending."
+msgstr ""
+
+#. module: training_exam
+#: report:training.participation.exam.result:0
+msgid "Subscription N°"
+msgstr ""
+
+#. module: training_exam
+#: model:ir.model,name:training_exam.model_training_exam_question_assign_course
+msgid "training.exam.question.assign.course"
+msgstr ""
+
+#. module: training_exam
+#: help:training.participation,total_points:0
+msgid "Total Point on Questionnaire"
+msgstr "Puntuació total del qüestionari"
+
+#. module: training_exam
+#: selection:training.exam.question,type:0
+#: selection:training.exam.questionnaire.question,question_type:0
+#: selection:training.participation.line,type_question:0
+msgid "QCU"
+msgstr "Opció única"
+
+#. module: training_exam
+#: field:training.exam.question,duration:0
+#: field:training.exam.questionnaire,duration:0
+#: field:training.participation,duration_questionnaire_id:0
+msgid "Duration"
+msgstr "Durada"
+
+#. module: training_exam
+#: view:training.course:0
+#: field:training.exam.questionnaire,len_question_ids:0
+#: field:training.exam.questionnaire.wizard,number_of_question:0
+msgid "Number of Questions"
+msgstr "Nombre de preguntes"
+
+#. module: training_exam
+#: help:training.participation,result_pourcentage:0
+msgid "Exam Result of Participate in Pourcetage"
+msgstr "Resultat d'examen del participant en percentatge"
+
+#~ msgid "Exam Labels"
+#~ msgstr "Etiquetes d'examen"
+
+#~ msgid "Extra Participants"
+#~ msgstr "Participants extra"
+
+#~ msgid "("
+#~ msgstr "("
+
+#~ msgid "EMPLOYER"
+#~ msgstr "EMPRESA"
+
+#~ msgid "FOR INFORMATION"
+#~ msgstr "PER A MÉS INFORMACIÓ"
+
+#~ msgid ""
+#~ "The Luxembourg Institute for Training in Banking (IFBL) hereby certifies "
+#~ "that the person indicated below has obtained the following exam result:"
+#~ msgstr ""
+#~ "El Centre de formació certifica que la persona indicada a sota ha obtingut "
+#~ "els següents resultats a l'examen:"
+
+#~ msgid "Exam Followup List"
+#~ msgstr "Llista de seguiment examen"
+
+#~ msgid "NAME"
+#~ msgstr "COGNOM"
+
+#~ msgid "SCORE / 100"
+#~ msgstr "PUNTUACIÓ / 100"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Nom de model no vàlid en la definició de l'acció"
+
+#~ msgid "Confirm"
+#~ msgstr "Confirma"
+
+#~ msgid "Preview Exam Sheet With Solution"
+#~ msgstr "Previsualitza el full d'examen amb la solució"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax:"
+
+#~ msgid "Print Original Exam Sheet"
+#~ msgstr "Imprimeix full d'examen original"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "FIRST NAME"
+#~ msgstr "NOM"
+
+#~ msgid "New Questionnaire"
+#~ msgstr "Nou qüestionari"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "XML no vàlid per a la definició de la vista!"
+
+#~ msgid "Objective:"
+#~ msgstr "Objectiu:"
+
+#~ msgid "Exam Result - First Page"
+#~ msgstr "Resultat d'examen - Primera pàgina"
+
+#~ msgid "Remarks:"
+#~ msgstr "Comentaris:"
+
+#~ msgid "This module adds the exam management for the training management"
+#~ msgstr "Aquest mòdul afegeix la gestió d'exàmens per a la gestió de formació"
+
+#~ msgid "Current Questionnaires"
+#~ msgstr "Qüestionaris actuals"
+
+#~ msgid "Examination Result"
+#~ msgstr "Resultat examen"
+
+#~ msgid "Questions Without Course"
+#~ msgstr "Preguntes sense assignatura"
+
+#~ msgid "You Logo - Change X,Y,Width and Height"
+#~ msgstr "El vostre logo - Canvieu X, Y, ample i alt"
+
+#~ msgid "CORRECTOR"
+#~ msgstr "CORRECTOR"
+
+#~ msgid "page bottom"
+#~ msgstr "Peu de pàgina"
+
+#~ msgid "SEND ON"
+#~ msgstr "ENVIAT A"
+
+#~ msgid "EXAM"
+#~ msgstr "EXAMEN"
+
+#~ msgid "PAPER VERSION"
+#~ msgstr "VERSIÓ PAPER"
+
+#~ msgid "E-Mail:"
+#~ msgstr "Email:"
+
+#~ msgid "Participant:"
+#~ msgstr "Participant:"
+
+#~ msgid "Training:"
+#~ msgstr "Formació:"
+
+#~ msgid "New Question"
+#~ msgstr "Nova pregunta"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "El nom de l'objecte ha de començar amb x_ i no contenir cap caràcter "
+#~ "especial!"
+
+#~ msgid "Questions by Course"
+#~ msgstr "Preguntes per assignatura"
+
+#~ msgid "Exam Result:"
+#~ msgstr "Resultat examen:"
+
+#~ msgid ")"
+#~ msgstr ")"
+
+#~ msgid "RECEIVED ON"
+#~ msgstr "REBUT A"
+
+#~ msgid "% ("
+#~ msgstr "% ("
+
+#~ msgid "Tel:"
+#~ msgstr "Tfon:"
+
+#~ msgid "This document is an official certificate issued by the IFBL."
+#~ msgstr ""
+#~ "Aquest document és un certificat oficial emès pel Centre de formació."
+
+#~ msgid "Training Exam"
+#~ msgstr "Examen de formació"
+
+#~ msgid "Preview Exam Sheet"
+#~ msgstr "Previsualitza full d'examen"
+
+#~ msgid "Page:"
+#~ msgstr "Pàgina:"
+
+#~ msgid "Exam Date:"
+#~ msgstr "Data examen:"
+
+#~ msgid "Assign to a new course"
+#~ msgstr "Assigna a una nova assignatura"

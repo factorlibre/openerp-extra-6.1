@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+  File: meetings_view.xml
+  Module: eagle_crm
+
+  Created by sbe@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+	
+		<record model="ir.ui.view" id="eagle_view_meetings_form_inherit_1">
+			<field name="name">Eagle CRM Meetings</field>
+			<field name="model">crm.meeting</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_meet"/>
+			<field name="arch" type="xml">
+				<field name="section_id" position="after">
+					<field name="contract_id" select="1" string="Contract" invisible="1"/>
+					<field name="opportunity_id"/>
+				</field>
+			</field>
+		</record>
+		
+		<record model="ir.ui.view" id="eagle_view_meetings_form_inherit_2">
+			<field name="name">Eagle CRM Meetings inherit 2</field>
+			<field name="model">crm.meeting</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_meet"/>
+			<field name="arch" type="xml">
+				<field name="partner_address_id"  position="replace">
+					<field name="contact_id" select="1" string="Contact"/>
+					<field name="partner_address_id" string="Address" on_change="onchange_partner_address_id(partner_address_id, email_from)"/>
+				</field>
+			</field>
+		</record>
+
+        <record model="ir.ui.view" id="eagle_view_meetings_tree">
+            <field name="name">Eagle CRM Meetings List</field>
+            <field name="model">crm.meeting</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+				<tree string="Meetings" colors="red:state=='open';black:state in ('draft', 'cancel','done','pending')">
+					<field name="name" string="Subject"/>
+					<field name="date" string="Start Date"/>
+					<field name="duration"/>
+					<field name="partner_id" string="Partner"/>
+					<field name="location"/>
+					<field name="categ_id" string="Meeting Type"/>
+					<field name="class" string="Privacy"/>
+					<field name="state" groups="base.group_extended"/>
+					<field name="user_id" invisible="1"/>
+					<field name="show_as" invisible="1" string="Show time as"/>
+				</tree>
+            </field>
+        </record>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id)]" 
+			id="eagle_action_contract_2_corr_meetings"
+			name="Corr. Meetings" 
+			view_id="eagle_view_meetings_tree"
+			res_model="crm.meeting" 
+			src_model="eagle.contract"/>
+
+		<record model="ir.ui.view" id="eagle_view_meetings_calendar_inherit_1">
+			<field name="name">Eagle CRM Meetings Calendar View 1</field>
+			<field name="type">calendar</field>
+			<field name="model">crm.meeting</field>
+			<field name="inherit_id" ref="crm.crm_case_calendar_view_meet"/>
+			<field name="arch" type="xml">
+				<field name="partner_id" position="replace"/>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_meetings_calendar_inherit_2">
+			<field name="name">Eagle CRM Meetings Calendar View 2</field>
+			<field name="type">calendar</field>
+			<field name="model">crm.meeting</field>
+			<field name="inherit_id" ref="crm.crm_case_calendar_view_meet"/>
+			<field name="arch" type="xml">
+				<field name="section_id" position="replace"/>
+			</field>
+		</record>
+
+</data>
+</openerp>

@@ -1,0 +1,168 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* gnucash
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:38+0000\n"
+"PO-Revision-Date: 2011-02-15 15:07+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: gnucash
+#: field:gnucash.index,res_id:0
+msgid "Resource ID"
+msgstr ""
+
+#. module: gnucash
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: gnucash
+#: view:gnucash.index:0
+msgid "Mappings"
+msgstr ""
+
+#. module: gnucash
+#: code:addons/gnucash/gnucash_wizard.py:0
+#, python-format
+msgid ""
+"Default book not set and book GUID is not registered! Please create a book "
+"and specify it in the wizard."
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,date_init:0
+msgid "Init Date"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,to_delete:0
+msgid "Should be deleted"
+msgstr ""
+
+#. module: gnucash
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,noupdate:0
+msgid "Non Updatable"
+msgstr ""
+
+#. module: gnucash
+#: model:ir.module.module,description:gnucash.module_meta_information
+msgid "Gnucash Import from file"
+msgstr ""
+
+#. module: gnucash
+#: model:ir.ui.menu,name:gnucash.menu_gnucash
+msgid "GnuCash"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,model:0
+msgid "Object"
+msgstr ""
+
+#. module: gnucash
+#: help:gnucash.iwiz,init,account:0
+msgid "If book has not been used before, merge it into that account"
+msgstr ""
+
+#. module: gnucash
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: gnucash
+#: wizard_field:gnucash.iwiz,init,account:0
+msgid "Use account"
+msgstr ""
+
+#. module: gnucash
+#: wizard_button:gnucash.iwiz,init,finish:0
+msgid "Ok"
+msgstr ""
+
+#. module: gnucash
+#: model:ir.actions.act_window,name:gnucash.view_gnucash_index_tree_form
+#: model:ir.ui.menu,name:gnucash.menu_gnucash_index
+msgid "Gnucash Mappings"
+msgstr ""
+
+#. module: gnucash
+#: wizard_view:gnucash.iwiz,init:0
+msgid "You can upload, analyze and import a GnuCash file from here."
+msgstr ""
+
+#. module: gnucash
+#: model:ir.actions.wizard,name:gnucash.wizard_gnucash_import
+#: model:ir.ui.menu,name:gnucash.menu_wizard_gnucash_import
+msgid "Import GnuCash File"
+msgstr ""
+
+#. module: gnucash
+#: model:ir.model,name:gnucash.model_gnucash_index
+msgid "gnucash.index"
+msgstr ""
+
+#. module: gnucash
+#: view:gnucash.index:0
+msgid "Module Category"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,guid:0
+msgid "Gnucash UID"
+msgstr ""
+
+#. module: gnucash
+#: wizard_view:gnucash.iwiz,init:0
+msgid "Import new language"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,date_update:0
+msgid "Update Date"
+msgstr ""
+
+#. module: gnucash
+#: wizard_view:gnucash.iwiz,init:0
+msgid "Import GnuCash Data"
+msgstr ""
+
+#. module: gnucash
+#: model:ir.module.module,shortdesc:gnucash.module_meta_information
+msgid "gnucash"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,module:0
+msgid "Module"
+msgstr ""
+
+#. module: gnucash
+#: wizard_field:gnucash.iwiz,init,data:0
+msgid "File"
+msgstr ""
+
+#. module: gnucash
+#: wizard_button:gnucash.iwiz,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: gnucash
+#: field:gnucash.index,parent_book:0
+msgid "Parent book"
+msgstr ""

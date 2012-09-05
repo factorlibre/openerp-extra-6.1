@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+		<report string="Awex Report" model="translation.folder"
+			name="translation.awex" id="invoice_transfolder_report"
+			menu="False" rml="cci_translation/report/report_awex.rml"
+		/>
+	</data>
+</openerp>

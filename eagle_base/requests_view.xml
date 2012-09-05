@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+  File: requests_view.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="ons_cnt_view_request_form_inherit_1">
+			<field name="name">ons.cnt.request.form.inh.1</field>
+			<field name="model">res.request</field>
+			<field name="inherit_id" ref="base.res_request-view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<page string="References" position="inside">
+					<field name="contract_id" select="1" groups="ons_contracts.group_contracts_viewers,ons_contracts.group_contracts_editors,ons_contracts.group_contracts_managers"/>
+				</page>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="ons_cnt_view_request_form_inherit_3">
+			<field name="name">ons.cnt.request.form.inh.1</field>
+			<field name="model">res.request</field>
+			<field name="inherit_id" ref="base.res_request-view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="active" position="replace">
+					<group colspan="2" col="4">
+						<field name="active"/>
+						<field name="can_send_mails" invisible="1"/>
+						<field name="send_mail" attrs="{'invisible':[('can_send_mails','=',False)]}"/>
+					</group>
+				</field>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="ons_cnt_view_request_search_inherit_1">
+			<field name="name">ons.cnt.request.search.inh.1</field>
+			<field name="model">res.request</field>
+			<field name="inherit_id" ref="base.res_request_search_view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<filter string="State" position="after">
+					<filter string="Priority" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'priority'}"/>
+					<filter string="Sender" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'act_from'}"/>
+				</filter>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="ons_cnt_view_request_list_inherit_1">
+			<field name="name">ons.cnt.request.list.inh.1</field>
+			<field name="model">res.request</field>
+			<field name="inherit_id" ref="base.res_request_tree-view"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<button name="request_send" states="draft,active" string="Send" type="object" icon="terp-camera_test"/>
+				</field>
+			</field>
+		</record>
+
+		<menuitem 
+			name="Requests" 
+			id="eagle_menu_requests" 
+			action="base.res_request-act" 
+			parent="eagle_menu_contracts_root" 
+			icon="STOCK_CONNECT" 
+			sequence="10" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+
+	</data>
+</openerp>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+		
+		<record model='ir.ui.view' id='product_account_form_view'>
+			<field name='name'>Product Account Form Inherit</field>
+			<field name='model'>product.product</field>
+			<field name='inherit_id' ref='account.product_normal_form_view'/>
+			<field name='type'>form</field>
+			<field name='arch' type='xml'>
+				<xpath expr="/form/notebook/page[@string='Accounting']/group[@name='properties']" position="inside">
+					
+					<group colspan="2" col="2">
+                        <separator string="Cost Center" colspan="2"/>
+						<field name="property_account_cost_center" domain="[('type','&lt;&gt;','view'),('type','&lt;&gt;','consolidation')]"/>
+						<field name="property_account_charges" domain="[('type','&lt;&gt;','view'),('type','&lt;&gt;','consolidation')]"/>
+					</group>
+				</xpath>
+			</field>
+		</record>
+		
+	</data>
+</openerp>

@@ -1,0 +1,100 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:50+0000\n"
+"PO-Revision-Date: 2011-08-26 23:32+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_refund
+msgid "Customer Refund"
+msgstr "Factura rectificativa de cliente"
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: portal_account
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo no válido en la definición de la acción."
+
+#. module: portal_account
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_invoice
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: portal_account
+#: model:ir.module.module,shortdesc:portal_account.module_meta_information
+msgid "Portal Management - Account"
+msgstr "Gestión de portal - Cuenta"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_refund_invoice
+msgid "Your Refunds"
+msgstr "Sus devoluciones"
+
+#. module: portal_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_customer_invoice
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_your
+msgid "Your Invoices"
+msgstr "Sus facturas"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Other Info"
+msgstr "Otra información"
+
+#. module: portal_account
+#: model:ir.actions.act_window,name:portal_account.portal_action_account_move
+#: model:ir.ui.menu,name:portal_account.menu_portal_configuration_account_payable
+msgid "Payables & Receivables"
+msgstr "Cobros y pagos"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: portal_account
+#: model:ir.module.module,description:portal_account.module_meta_information
+msgid "Portal Management - Account specific data."
+msgstr "Gestión de portal - datos específicos de cuenta"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Total amount"
+msgstr "Importe total"
+
+#. module: portal_account
+#: view:account.invoice:0
+msgid "Untaxed amount"
+msgstr "Base imponible"

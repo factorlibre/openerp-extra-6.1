@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_product_attributes_product_product_form">
+            <field name="name">product.normal.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/group/group/field[@name='name']" position="after">
+                        <field name="attribute_group_id"/>
+                    </xpath>
+                    <xpath expr="/form/notebook" position="inside">
+                        <page string="product_attributes_placeholder"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_attributes_product_product_tree">
+            <field name="name">product.normal.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="state" position="after">
+                        <field name="attribute_group_id" groups="base.group_extended"/>
+                    </field>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>

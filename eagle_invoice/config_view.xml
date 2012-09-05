@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: config_view.xml
+  Module: eagle_invoice
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+		Parameters
+	-->
+		<record model="ir.ui.view" id="eagle_inv_view_config_params_tree">
+			<field name="name">Eagle Invoice Params List</field>
+			<field name="model">eagle.config.params</field>
+			<field name="type">tree</field>
+			<field name="inherit_id" ref="eagle_config.eagle_view_config_params_tree"/>
+			<field name="arch" type="xml">
+				<field name="use_members_list" position="after">
+					<field name="make_inv_lines_with_unbillables" string="Billable/Invoices"/>
+					<field name="invoicing_mode"/>
+				</field>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_inv_view_config_params_form">
+			<field name="name">Eagle Invoice Params View</field>
+			<field name="model">eagle.config.params</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="eagle_config.eagle_view_config_params_form"/>
+			<field name="arch" type="xml">
+				<page string="Eagle Base" position="after">
+					<page string="Eagle Invoices">
+						<field name="make_inv_lines_with_unbillables"/>
+						<field name="invoicing_mode"/>
+					</page>
+				</page>
+			</field>
+		</record>
+
+	</data>
+</openerp>

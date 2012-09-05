@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_base_external_mapping_line","base_external_mapping_line","model_base_external_mapping_line","base.group_user",1,0,0,0
+"access_base_external_mapping","base_external_mapping","model_base_external_mapping","base.group_user",1,0,0,0
+"access_base_external_mapping_line","base_external_mapping_line","model_base_external_mapping_line","base.group_system",1,1,1,1
+"access_base_external_mapping","base_external_mapping","model_base_external_mapping","base.group_system",1,1,1,1

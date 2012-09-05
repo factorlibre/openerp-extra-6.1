@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - reference</name>
+  <description>Reference</description>
+  <icon>reference.png</icon>
+   <aspectratio type="free"/>
+   <textbox x1="0" y1="20.0" x2="0" y2="10.0" resize="no" align="right"/> 
+<svg:svg>
+  <svg:rect x="0" y="0" width="150" height="30" fill="default" stroke="#777777" stroke-width="0.2"/>
+  <svg:rect x="10" y="-10" width="150" height="50" fill="none" stroke="none" stroke-width="0.2"/>
+  <svg:image x="135" y="0" width="15" height="30" href="selection.png"/>
+  <svg:rect x="155" y="0" width="150" height="30" fill="default" stroke="#777777" stroke-width="0.2"/>
+  <svg:image x="310" y="0" width="30" height="30" href="2.png"/>
+  </svg:svg>
+</shape>

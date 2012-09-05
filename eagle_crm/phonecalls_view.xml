@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!--
+  File: phonecalls_view.xml
+  Module: eagle_crm
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+<data>
+
+	<record model="ir.ui.view" id="eagle_view_prod_tree_view_in_phonecall_inherit1">
+		<field name="name">CRM - Inbound Phone Calls Tree</field>
+		<field name="type">form</field>
+		<field name="model">crm.phonecall</field>
+		<field name="inherit_id" ref="crm.crm_case_inbound_phone_tree_view"/>
+		<field name="arch" type="xml">
+			<field name="partner_address_id" position="replace">
+                <field name="partner_address_id" string="Address"
+                        on_change="onchange_partner_address_id(partner_address_id, email_from)" />
+				<field name="partner_addr_contact"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="eagle_view_prod_form_view_in_phonecall_inherit1">
+		<field name="name">CRM - Inbound Phone Call Form</field>
+		<field name="type">form</field>
+		<field name="model">crm.phonecall</field>
+		<field name="inherit_id" ref="crm.crm_case_inbound_phone_form_view"/>
+		<field name="arch" type="xml">
+			<field name="partner_address_id" position="replace">
+                <field name="partner_address_id" string="Address"
+                        on_change="onchange_partner_address_id(partner_address_id, email_from)" />
+                <newline/>
+				<field name="partner_addr_contact"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="eagle_view_prod_form_view_phonecall_inherit1">
+		<field name="name">CRM - Phone Call Form</field>
+		<field name="type">form</field>
+		<field name="model">crm.phonecall</field>
+		<field name="inherit_id" ref="crm.crm_case_phone_form_view"/>
+		<field name="arch" type="xml">
+			<field name="partner_address_id" position="replace">
+                <field name="partner_address_id" string="Address"
+                        on_change="onchange_partner_address_id(partner_address_id, email_from)" />
+                <newline/>
+				<field name="partner_addr_contact"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="eagle_view_prod_tree_view_phonecall_inherit1">
+		<field name="name">CRM - Phone Calls Tree</field>
+		<field name="type">form</field>
+		<field name="model">crm.phonecall</field>
+		<field name="inherit_id" ref="crm.crm_case_phone_tree_view"/>
+		<field name="arch" type="xml">
+			<field name="partner_contact" position="after">
+				<field name="partner_addr_contact"/>
+			</field>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="eagle_view_phonecalls_form_in_inherit_2">
+		<field name="name">Eagle CRM Inbound Phone Calls Form</field>
+		<field name="type">form</field>
+		<field name="model">crm.phonecall</field>
+		<field name="inherit_id" ref="crm.crm_case_inbound_phone_form_view"/>
+		<field name="arch" type="xml">
+			<field name="opportunity_id" position="after">
+					<field name="contract_id" string="Contract" invisible="1" />					
+				</field>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="eagle_view_phonecalls_form_inherit_2">
+			<field name="name">Eagle CRM Phone Calls</field>
+			<field name="model">crm.phonecall</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="crm.crm_case_phone_form_view"/>
+			<field name="arch" type="xml">
+				<field name="opportunity_id" position="after">
+					<field name="contract_id" string="Contract" invisible="1"/>					
+				</field>
+			</field>
+		</record>
+
+        <record model="ir.ui.view" id="eagle_view_phonecalls_tree">
+            <field name="name">Eagle CRM Phone Calls List</field>
+            <field name="model">crm.phonecall</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Phone Calls" colors="grey:state in ('cancel','done');blue:state in ('pending',)" editable="top">
+					<field name="date"/>
+					<field name="name"/>
+					<field name="partner_id" on_change="onchange_partner_id(partner_id)" string="Partner"/>
+					<field name="partner_address_id" on_change="onchange_partner_address_id(partner_address_id)"/>
+					<field name="partner_phone"/>
+					<field name="user_id"/>
+					<field name="categ_id" widget="selection" domain="[('object_id.model', '=', 'crm.phonecall')]" string="Type"/>
+					<field name="state" invisible="1"/>
+					<field name="create_date" invisible="1"/>
+				</tree>
+            </field>
+        </record>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id)]" 
+			id="eagle_action_contract_2_corr_phonecalls"
+			name="Corr. Phone Calls" 
+			view_id="eagle_view_phonecalls_tree"
+			res_model="crm.phonecall" 
+			src_model="eagle.contract"/>
+
+		<record model="ir.ui.view" id="eagle_view_phonecalls_calendar_inherit">
+			<field name="name">Eagle CRM Phone Calls Calendar View</field>
+			<field name="type">calendar</field>
+			<field name="model">crm.phonecall</field>
+			<field name="inherit_id" ref="crm.crm_case_phone_calendar_view"/>
+			<field name="arch" type="xml">
+				<field name="partner_id" position="replace"/>
+			</field>
+		</record>
+	
+</data>
+</openerp>

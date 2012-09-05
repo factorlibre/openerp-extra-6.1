@@ -1,0 +1,99 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-01-01 10:43+0000\n"
+"PO-Revision-Date: 2011-08-23 15:50+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: google_blogger
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: google_blogger
+#: wizard_button:google.blogger,export,end:0
+msgid "Ok"
+msgstr "Acceptar"
+
+#. module: google_blogger
+#: field:res.users,blogger_email:0
+msgid "Blogger Email Id"
+msgstr "Id Email Blogger"
+
+#. module: google_blogger
+#: model:ir.ui.menu,name:google_blogger.menu_blogger
+#: view:res.users:0
+msgid "Blogger"
+msgstr "Blogger"
+
+#. module: google_blogger
+#: model:ir.module.module,shortdesc:google_blogger.module_meta_information
+msgid "Google Blogger"
+msgstr "Google Blogger"
+
+#. module: google_blogger
+#: wizard_view:google.blogger,export:0
+#: wizard_field:google.blogger,export,summary:0
+msgid "Summary"
+msgstr "Resumen"
+
+#. module: google_blogger
+#: wizard_field:google.blogger,init,blog_id:0
+msgid "Export "
+msgstr "Exportar "
+
+#. module: google_blogger
+#: wizard_view:google.blogger,init:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: google_blogger
+#: wizard_button:google.blogger,init,export:0
+#: model:ir.actions.wizard,name:google_blogger.wizard_google_blogger
+#: model:ir.ui.menu,name:google_blogger.menu_tools_google_blogger
+msgid "Export to Blog"
+msgstr "Exportar al blog"
+
+#. module: google_blogger
+#: wizard_button:google.blogger,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: google_blogger
+#: wizard_view:google.blogger,init:0
+msgid "Export Tasks to Blog"
+msgstr "Exportar tareas al blog"
+
+#. module: google_blogger
+#: field:res.users,blogger_password:0
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: google_blogger
+#: model:ir.module.module,description:google_blogger.module_meta_information
+msgid ""
+"\n"
+"        This module creates wizard in Project Management/Tasks/Export to "
+"blog\n"
+"            - which export user's tasks to blog provided blog id and "
+"password in user's form\n"
+"    "
+msgstr ""
+"\n"
+"        Este módulo crea asistente en Gestión de Proyectos/ Tareas/ Exportar "
+"en el blog\n"
+"            - La exportación de tareas del usuario a un blog previsto en el "
+"formulario de usuario el id y contraseña\n"
+"    "

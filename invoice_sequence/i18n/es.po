@@ -1,0 +1,41 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 08:01+0000\n"
+"PO-Revision-Date: 2011-08-26 22:54+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:31+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: invoice_sequence
+#: model:ir.module.module,shortdesc:invoice_sequence.module_meta_information
+msgid "Invoice lines with sequence number"
+msgstr ""
+
+#. module: invoice_sequence
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: invoice_sequence
+#: model:ir.module.module,description:invoice_sequence.module_meta_information
+msgid ""
+"Prodide a new field on the invoice line form, allowing to manage the lines "
+"order.\n"
+"    "
+msgstr ""
+
+#. module: invoice_sequence
+#: field:account.invoice.line,sequence:0
+msgid "Sequence"
+msgstr "Secuencia"

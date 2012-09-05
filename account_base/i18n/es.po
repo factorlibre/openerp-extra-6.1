@@ -1,0 +1,141 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-24 12:58+0000\n"
+"PO-Revision-Date: 2011-08-27 15:00+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_base
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El objeto debe empezar con  x_ y no puede contener ningún carácter especial!"
+
+#. module: account_base
+#: view:wizard.account.base.setup:0
+msgid "Create"
+msgstr "Crear"
+
+#. module: account_base
+#: field:wizard.account.base.setup,excise:0
+msgid "Exices Number"
+msgstr "Número de los impuestos especiales"
+
+#. module: account_base
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: account_base
+#: field:res.partner,pan_no:0
+#: field:wizard.account.base.setup,pan_no:0
+msgid "PAN Number"
+msgstr ""
+
+#. module: account_base
+#: model:ir.module.module,shortdesc:account_base.module_meta_information
+msgid "Accounting Base Properties"
+msgstr "Propiedades de la contabilidad base"
+
+#. module: account_base
+#: field:res.partner,div:0
+#: field:wizard.account.base.setup,div:0
+msgid "Division"
+msgstr "División"
+
+#. module: account_base
+#: model:ir.actions.act_window,name:account_base.action_wizard_account_base_setup_form
+#: view:wizard.account.base.setup:0
+msgid "Company Excise Detail"
+msgstr ""
+
+#. module: account_base
+#: field:res.partner,cst_no:0
+#: field:wizard.account.base.setup,cst_no:0
+msgid "CST Number"
+msgstr "Número CST"
+
+#. module: account_base
+#: field:wizard.account.base.setup,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_base
+#: model:ir.module.module,description:account_base.module_meta_information
+msgid ""
+"Accounting Base Properties is providing the,\n"
+"    Basic properties for the Customer / Suppliers for the Accounting\n"
+"    i.e. PAN No, TIN No, Sales Tax No, and Exise related Information\n"
+"    "
+msgstr ""
+
+#. module: account_base
+#: model:ir.model,name:account_base.model_wizard_account_base_setup
+msgid "wizard.account.base.setup"
+msgstr "asistente.cuenta.base.instalación"
+
+#. module: account_base
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: account_base
+#: field:res.partner,excise:0
+msgid "Excise Number"
+msgstr "Número de los impuestos especiales"
+
+#. module: account_base
+#: view:res.partner:0
+msgid "Excise, Service Tax, and PAN Details"
+msgstr ""
+
+#. module: account_base
+#: field:res.partner,range:0
+#: field:wizard.account.base.setup,range:0
+msgid "Range"
+msgstr "Rango"
+
+#. module: account_base
+#: view:wizard.account.base.setup:0
+msgid "Excise Details"
+msgstr "Detalles de los impuestos especiales"
+
+#. module: account_base
+#: field:res.partner,vat_no:0
+#: field:wizard.account.base.setup,vat_no:0
+msgid "VAT Number"
+msgstr "Numero de IVA"
+
+#. module: account_base
+#: field:res.partner,ser_tax:0
+#: field:wizard.account.base.setup,ser_tax:0
+msgid "Service Tax Number"
+msgstr ""
+
+#. module: account_base
+#: model:ir.actions.todo,note:account_base.config_wizard_account_base_setup_form
+msgid "Define Company Accounting Detail"
+msgstr "Definir detalles contables de la compañía"
+
+#. module: account_base
+#: view:wizard.account.base.setup:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_base
+#: field:wizard.account.base.setup,partner_id:0
+msgid "Partner"
+msgstr "Empresa"

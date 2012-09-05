@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_product_attributes_form">
+            <field name="name">product.attributes.form</field>
+            <field name="model">product.attributes</field>
+            <field name="type">form</field>
+            <field name="priority" eval="5"/>
+            <field name="arch" type="xml">
+                <form string="Product Attributes">
+                    <field name="name" select="1" attrs="{'readonly': [('id','!=',0)]}"/>
+                    <field name="field_description" select="1" attrs="{'readonly': [('id','!=',0)]}"/>
+                    <field name="translate" select="1" />
+                    <field name="required" select="1" />
+                    <field name="ttype" select="1" attrs="{'readonly': [('id','!=',0)]}"/>
+                    <separator string="Field" colspan="4" />
+                    <field name="relation" attrs="{'required': [('ttype','in',['many2one','one2many','many2many'])], 'readonly': ['|',('id','!=',0),('ttype','!=','one2many'), ('ttype','!=','many2one'), ('ttype','!=','many2many')]}"/>
+                    <field name="relation_field" attrs="{'required': [('ttype','=','one2many')], 'readonly': ['|',('ttype','!=','one2many'),('id','!=',0)]}"/>
+                    <field name="selection" attrs="{'required': [('ttype','in',['selection','reference'])], 'readonly': ['|',('ttype','not in',['selection','reference']),('id','!=',0)]}"/>
+                    <field name="id" invisible="True"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_attributes_tree">
+            <field name="name">product.attributes.tree</field>
+            <field name="model">product.attributes</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="5"/>
+            <field name="arch" type="xml">
+                <tree string="Product Attributes">
+                    <field name="name"/>
+                    <field name="field_description"/>
+                    <field name="ttype"/>
+                    <field name="sequence" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_product_attributes">
+            <field name="name">Product Attributes</field>
+            <field name="res_model">product.attributes</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Product Attributes" id="product_attributes_parent_menu" parent="product.prod_config_main"/>
+        <menuitem name="Attributes" id="product_attributes_menu" action="action_product_attributes" parent="product_attributes_parent_menu"/>
+
+        <record model="ir.ui.view" id="view_product_attributes_group_form">
+            <field name="name">product.attributes.group.form</field>
+            <field name="model">product.attributes.group</field>
+            <field name="type">form</field>
+            <field name="priority" eval="5"/>
+            <field name="arch" type="xml">
+                <form string="Product Attributes Group">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1" attrs="{'readonly': [('id','!=',0)]}"/>
+                    <separator string="Attributes" colspan="4"/>
+                    <field name="product_att_ids" colspan="4" nolabel="1"/>
+                    <field name="id" invisible="True"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_attributes_group_tree">
+            <field name="name">product.attributes.group.tree</field>
+            <field name="model">product.attributes.group</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="5"/>
+            <field name="arch" type="xml">
+                <tree string="Product Attributes Group">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_product_attributes_group">
+            <field name="name">Product Attributes Group</field>
+            <field name="res_model">product.attributes.group</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Attributes Group" id="product_attributes_group_menu" action="action_product_attributes_group" parent="product_attributes_parent_menu"/>
+
+    </data>
+</openerp>

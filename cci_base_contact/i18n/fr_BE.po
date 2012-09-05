@@ -1,0 +1,238 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_base_contact
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 09:47:51+0000\n"
+"PO-Revision-Date: 2009-11-25 09:47:51+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+#: field:res.partner.contact,link_ids:0
+msgid "Contact Link"
+msgstr "Lien inter-personnel"
+
+#. module: cci_base_contact
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x- et ne pas comporter de caractères spéciaux !"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,who_date_publication:0
+msgid "Publication"
+msgstr "Date publication"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "FSE Personal Data"
+msgstr "Données personnelles FSE"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,national_number:0
+msgid "National Number"
+msgstr "Numéro national"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,fse_work_status:0
+msgid "FSE Work Status"
+msgstr "Type de travailleur FSE"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Who's who subscription"
+msgstr "Publiable dans le Who's Who"
+
+#. module: cci_base_contact
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nom du modèle incorrect pour la définition de l'action"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,who_description:0
+msgid "WsW Description"
+msgstr "Description pour le Who's Who"
+
+#. module: cci_base_contact
+#: field:res.partner.contact.link,type_id:0
+msgid "Type"
+msgstr "Type"
+
+#. module: cci_base_contact
+#: model:ir.ui.menu,name:cci_base_contact.menu_link_type
+msgid "Contact Link Type"
+msgstr "Type de lien inter-personnel"
+
+#. module: cci_base_contact
+#: field:res.partner.contact.link,name:0
+#: field:res.partner.contact.link.type,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_base_contact
+#: model:ir.actions.act_window,name:cci_base_contact.action_link_type
+#: model:ir.ui.menu,name:cci_base_contact.menu_link
+#: view:res.partner.contact.link.type:0
+msgid "Link Type"
+msgstr "Type de lien"
+
+#. module: cci_base_contact
+#: model:ir.module.module,description:cci_base_contact.module_meta_information
+msgid "\n"
+"        specific module for cci project which will inherit\n"
+"        base_contact module..\n"
+"    "
+msgstr "\n"
+"        module spécifique pour le projet CCI qui est dérivé\n"
+"        du module base_contact ...\n"
+"    "
+
+#. module: cci_base_contact
+#: field:res.partner.contact,who_date_last:0
+msgid "Last Modification"
+msgstr "Dernière modification"
+
+#. module: cci_base_contact
+#: model:ir.model,name:cci_base_contact.model_res_partner_contact_link_type
+msgid "res.partner.contact.link.type"
+msgstr ""
+
+#. module: cci_base_contact
+#: field:res.partner.contact,data_private:0
+msgid "Private data"
+msgstr "Données privées"
+
+#. module: cci_base_contact
+#: field:res.partner.contact.link,current_contact_id:0
+msgid "Current contact"
+msgstr "Contact actuel"
+
+#. module: cci_base_contact
+#: field:res.partner.job,login_name:0
+msgid "Login Name"
+msgstr "Login"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,fse_work_experience:0
+msgid "FSE Work Exp."
+msgstr "Expérience professionnelle FSE"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,fse_studies:0
+msgid "FSE Studies"
+msgstr "Etudes FSE"
+
+#. module: cci_base_contact
+#: field:res.partner.job,password:0
+msgid "Password"
+msgstr "Mot de passe"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,old_id:0
+msgid "Old Datman ID"
+msgstr "Ancien ID DatMan"
+
+#. module: cci_base_contact
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML invalide pour l'Architecture des Vues!"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,who_presence:0
+msgid "In WsW"
+msgstr "Dans Who's Who"
+
+#. module: cci_base_contact
+#: view:res.partner.country.relation:0
+msgid "Partner Country Relation"
+msgstr "Relations étrangères du partenaire"
+
+#. module: cci_base_contact
+#: help:res.partner.contact,self_sufficent:0
+msgid "This contact will not be removed even if all his addresses are deleted"
+msgstr "Ce contact ne sera pas effacé même si toutes ses liens professionnels sont effacés"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,country_ids:0
+msgid "Expertize's Countries"
+msgstr "Pays d'expertise"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Extra Information"
+msgstr "Info supplémentaire"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Personal Links"
+msgstr "Liens inter-personels"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Known Countries"
+msgstr "Pays connus"
+
+#. module: cci_base_contact
+#: field:res.partner.job,token:0
+msgid "Token"
+msgstr "Token"
+
+#. module: cci_base_contact
+#: field:project.project,contact_id2:0
+#: field:res.partner.contact.link,contact_id:0
+msgid "Contact"
+msgstr "Contact"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Who's Who"
+msgstr "Who's Who"
+
+#. module: cci_base_contact
+#: view:res.partner.contact:0
+msgid "Who's who text"
+msgstr "Description Who's Who"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,self_sufficent:0
+msgid "Keep contact"
+msgstr "Conservez ce contact"
+
+#. module: cci_base_contact
+#: model:ir.model,name:cci_base_contact.model_res_partner_contact_link
+msgid "res.partner.contact.link"
+msgstr ""
+
+#. module: cci_base_contact
+#: field:res.partner.contact,who_date_accept:0
+msgid "Accept Date"
+msgstr "Date Acceptation"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,origin:0
+msgid "Origin"
+msgstr "Origine"
+
+#. module: cci_base_contact
+#: field:res.partner.contact,canal_id:0
+msgid "Favourite Channel"
+msgstr "Canal favori"
+
+#. module: cci_base_contact
+#: model:ir.module.module,shortdesc:cci_base_contact.module_meta_information
+msgid "CCI Base Contact"
+msgstr "CCI Base Contact"
+
+#. module: cci_base_contact
+#: help:res.partner.contact,origin:0
+msgid "The DB from which the info is coming from"
+msgstr "La BD dont provient cette info"
+

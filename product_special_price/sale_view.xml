@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+
+<!-- sale.shop -->
+       <record model="ir.ui.view" id="view_sale_shop_view">
+            <field name="name">sale.shop.special.price</field>
+            <field name="model">sale.shop</field>
+            <field name="inherit_id" ref="sale.view_shop_form"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <group colspan="4" col="4">
+                        <separator string="Special Price" colspan="4"/>
+                        <field name="special_price"/>
+                        <newline/>
+                        <field name="type_special_price"/>
+                        <field name="special_pricelist_id" attrs="{'required':[('type_special_price','==','pricelist')]}"/>
+                    </group>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
+

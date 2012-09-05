@@ -1,0 +1,128 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_pricelist_allinone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-03-06 19:49+0000\n"
+"PO-Revision-Date: 2012-03-06 19:49+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Category"
+msgstr "Category"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Product"
+msgstr "Product"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Products Listprices Items"
+msgstr "Products Listprices Items"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Version"
+msgstr "Version"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,price_version_date_start:0
+msgid "Version Start"
+msgstr "Version Start"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist Version"
+msgstr "Pricelist Version"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_type:0
+msgid "List Type"
+msgstr "List Type"
+
+#. module: product_pricelist_allinone
+#: model:ir.actions.act_window,name:product_pricelist_allinone.product_pricelist_megaview_action
+#: model:ir.ui.menu,name:product_pricelist_allinone.menu_product_pricelist_megaview_action
+msgid "Pricelist MegaView"
+msgstr "Pricelist MegaView"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "List"
+msgstr "List"
+
+#. module: product_pricelist_allinone
+#: model:ir.model,name:product_pricelist_allinone.model_product_pricelist_item
+msgid "Pricelist item"
+msgstr "Pricelist item"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,pricelist_name:0
+msgid "List Name"
+msgstr "List Name"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Group by..."
+msgstr "Group by..."
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Base"
+msgstr "Base"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,price_version_name:0
+msgid "Version Name"
+msgstr "Version Name"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,price_version_date_end:0
+msgid "Version End"
+msgstr "Version End"
+
+#. module: product_pricelist_allinone
+#: field:product.pricelist.item,price_version_active:0
+msgid "Version Active"
+msgstr "Version Active"
+
+#. module: product_pricelist_allinone
+#: constraint:product.pricelist.item:0
+msgid "Error ! You cannot assign the Main Pricelist as Other Pricelist in PriceList Item!"
+msgstr "Error ! You cannot assign the Main Pricelist as Other Pricelist in PriceList Item!"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_company:0
+msgid "List Company"
+msgstr "List Company"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist"
+msgstr "Pricelist"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+#: field:product.pricelist.item,pricelist_cur:0
+msgid "List Currency"
+msgstr "List Currency"
+
+#. module: product_pricelist_allinone
+#: view:product.pricelist.item:0
+msgid "Pricelist Item"
+msgstr "Pricelist Item"
+

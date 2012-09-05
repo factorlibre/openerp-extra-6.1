@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="crm_case_claims_section_tree_view">
+            <field name="name">CRM - Claims Section Tree</field>
+            <field name="model">crm.claim</field>
+            <field name="inherit_id" ref="crm_claim.crm_case_claims_tree_view" />
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after" >
+                    <field name="section_id" />
+                </field>
+            </field>
+        </record>
+
+       <record model="ir.ui.view" id="view_crm_case_claims_section_filter">
+            <field name="name">CRM - Claims Search Section</field>
+            <field name="model">crm.claim</field>
+            <field name="inherit_id" ref="crm_claim.view_crm_case_claims_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="/search/field[@name='partner_id']" position="after">
+                    <field name="section_id" />
+                </xpath>
+            </field>
+        </record>
+
+     </data>
+</openerp>

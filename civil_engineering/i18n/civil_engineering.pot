@@ -1,0 +1,682 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* civil_engineering
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-31 09:36+0000\n"
+"PO-Revision-Date: 2011-05-31 09:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,workuse_id:0
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workuse
+msgid "Work Use"
+msgstr "Work Use"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelingsoftware_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelingsoftware_category
+msgid "Works by Modeling Software"
+msgstr "Works by Modeling Software"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_foundationtype_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_foundationtype_category
+msgid "Works by Foundation Type"
+msgstr "Works by Foundation Type"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,foundationtype_id:0
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_foundationtype
+msgid "Foundation Type"
+msgstr "Foundation Type"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Group By..."
+msgstr "Group By..."
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civil_engineering_area_action
+msgid "Civil engineering area"
+msgstr "Civil engineering area"
+
+#. module: civil_engineering
+#: constraint:civil_engineering.foundationtype:0
+#: constraint:civil_engineering.modelabstraction:0
+#: constraint:civil_engineering.modelingsoftware:0
+#: constraint:civil_engineering.structuretype:0
+#: constraint:civil_engineering.workclass:0
+#: constraint:civil_engineering.workuse:0
+msgid "Error ! You can not create recursive records."
+msgstr "Error ! You can not create recursive records."
+
+#. module: civil_engineering
+#: view:civil_engineering.workclass:0
+msgid "Work Class Categories"
+msgstr "Work Class Categories"
+
+#. module: civil_engineering
+#: constraint:project.project:0
+msgid "Error! project start-date must be lower then project end-date."
+msgstr "Error! project start-date must be lower then project end-date."
+
+#. module: civil_engineering
+#: field:civil_engineering.foundationtype,child_ids:0
+msgid "Child Foundation Type"
+msgstr "Child Foundation Type"
+
+#. module: civil_engineering
+#: sql_constraint:purchase.order:0
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique !"
+msgstr "Order Reference must be unique !"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,work_builder:0
+msgid "Work builder"
+msgstr "Work builder"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,floors_under_ground_level:0
+msgid "Floors under ground level"
+msgstr "Floors under ground level"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_area
+msgid "Civil Engineering Areas"
+msgstr "Civil Engineering Areas"
+
+#. module: civil_engineering
+#: field:civil_engineering.workuse,child_ids:0
+msgid "Child Work Use"
+msgstr "Child Work Use"
+
+#. module: civil_engineering
+#: field:civil_engineering.structuretype,child_ids:0
+msgid "Child Structure Type"
+msgstr "Child Structure Type"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_foundationtype
+msgid "Foundation Types"
+msgstr "Foundation Types"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelabstraction_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelabstraction_category
+msgid "Works by Model Abstraction"
+msgstr "Works by Model Abstraction"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.act_civil_engineering_purchase_order
+msgid "Purchase"
+msgstr "Purchase"
+
+#. module: civil_engineering
+#: field:civil_engineering.workuse,parent_id:0
+msgid "Parent Work Use"
+msgstr "Parent Work Use"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_purchase_order
+msgid "Purchase Order"
+msgstr "Purchase Order"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,project_ids:0
+#: field:civil_engineering.work.project,project_id:0
+#: model:ir.model,name:civil_engineering.model_project_project
+msgid "Project"
+msgstr "Project"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,plant_engineering:0
+msgid "Plant engineering"
+msgstr "Plant engineering"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_workclass
+msgid "Civil Engineering Work Class"
+msgstr "Civil Engineering Work Class"
+
+#. module: civil_engineering
+#: view:civil_engineering.foundationtype:0
+msgid "Foundation Type Categories"
+msgstr "Foundation Type Categories"
+
+#. module: civil_engineering
+#: view:civil_engineering.structuretype:0
+msgid "Structure Type Categories"
+msgstr "Structure Type Categories"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Search Work"
+msgstr "Search Work"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,structuretype_id:0
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_structuretype
+msgid "Structure Type"
+msgstr "Structure Type"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_modelabstraction
+msgid "Structural Model Abstractions"
+msgstr "Structural Model Abstractions"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Projects"
+msgstr "Projects"
+
+#. module: civil_engineering
+#: view:civil_engineering.foundationtype:0
+msgid "Foundation Type Category"
+msgstr "Foundation Type Category"
+
+#. module: civil_engineering
+#: field:civil_engineering.modelabstraction,child_ids:0
+msgid "Child Structural Model Abstraction"
+msgstr "Child Structural Model Abstraction"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_sale_order
+msgid "Sales Order"
+msgstr "Sales Order"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "work"
+msgstr "work"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,civil_engineer:0
+msgid "Civil engineer"
+msgstr "Civil engineer"
+
+#. module: civil_engineering
+#: view:civil_engineering.workclass:0
+msgid "Work Class Category"
+msgstr "Work Class Category"
+
+#. module: civil_engineering
+#: view:civil_engineering.area:0
+#: field:civil_engineering.work.project,area_id:0
+msgid "Area"
+msgstr "Area"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Other consultancies"
+msgstr "Other consultancies"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,modelabstraction_id:0
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelabstraction
+msgid "Structural Model Abstraction"
+msgstr "Structural Model Abstraction"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,state_id:0
+msgid "State"
+msgstr "State"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,location:0
+msgid "Location"
+msgstr "Location"
+
+#. module: civil_engineering
+#: help:civil_engineering.modelabstraction,active:0
+msgid "The active field allows you to hide the Structural Model Abstraction without removing it."
+msgstr "The active field allows you to hide the Structural Model Abstraction without removing it."
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_foundationtype
+msgid "Civil Engineering Foundation Type"
+msgstr "Civil Engineering Foundation Type"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civil_engineering_work_project_action
+#: model:ir.ui.menu,name:civil_engineering.menu_civil_engineering_work_project
+msgid "Work Project Assignments"
+msgstr "Work Project Assignments"
+
+#. module: civil_engineering
+#: help:civil_engineering.foundationtype,active:0
+msgid "The active field allows you to hide the Foundation Type without removing it."
+msgstr "The active field allows you to hide the Foundation Type without removing it."
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,country_id:0
+msgid "Country"
+msgstr "Country"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Agents"
+msgstr "Agents"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: civil_engineering
+#: field:civil_engineering.modelabstraction,parent_id:0
+msgid "Parent Structural Model Abstraction"
+msgstr "Parent Structural Model Abstraction"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_categories
+msgid "Categories"
+msgstr "Categories"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,modelingsoftware_id:0
+msgid "Structure Modeling Software"
+msgstr "Structure Modeling Software"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,structure_construction_cost:0
+msgid "Structure construction cost"
+msgstr "Structure construction cost"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work.project,work_id:0
+#: field:purchase.order,work_id:0
+#: field:sale.order,work_id:0
+msgid "Work"
+msgstr "Work"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,distance_between_supports:0
+msgid "Distance between supports"
+msgstr "Distance between supports"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_structuretype
+msgid "Structure Types"
+msgstr "Structure Types"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Work data"
+msgstr "Work data"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_work_project
+msgid "Civil Engineering Work Project"
+msgstr "Civil Engineering Work Project"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,architecture:0
+msgid "Architecture"
+msgstr "Architecture"
+
+#. module: civil_engineering
+#: field:civil_engineering.foundationtype,complete_name:0
+#: field:civil_engineering.modelabstraction,complete_name:0
+#: field:civil_engineering.modelingsoftware,complete_name:0
+#: field:civil_engineering.structuretype,complete_name:0
+#: field:civil_engineering.workclass,complete_name:0
+#: field:civil_engineering.workuse,complete_name:0
+msgid "Full Name"
+msgstr "Full Name"
+
+#. module: civil_engineering
+#: field:civil_engineering.foundationtype,parent_id:0
+msgid "Parent Foundation Type"
+msgstr "Parent Foundation Type"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_workuse
+msgid "Work Uses"
+msgstr "Work Uses"
+
+#. module: civil_engineering
+#: model:ir.module.module,shortdesc:civil_engineering.module_meta_information
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering
+msgid "Civil Engineering"
+msgstr "Civil Engineering"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,constructed_area:0
+msgid "Constructed area"
+msgstr "Constructed area"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,work_construction_cost:0
+msgid "Work construction cost"
+msgstr "Work construction cost"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_workuse
+msgid "Civil Engineering Work Use"
+msgstr "Civil Engineering Work Use"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Structure data"
+msgstr "Structure data"
+
+#. module: civil_engineering
+#: view:civil_engineering.workuse:0
+msgid "Work Use Category"
+msgstr "Work Use Category"
+
+#. module: civil_engineering
+#: view:civil_engineering.modelabstraction:0
+msgid "Structural Model Abstraction Category"
+msgstr "Structural Model Abstraction Category"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,structural_engineering:0
+msgid "Structural engineering"
+msgstr "Structural engineering"
+
+#. module: civil_engineering
+#: field:civil_engineering.foundationtype,active:0
+#: field:civil_engineering.modelabstraction,active:0
+#: field:civil_engineering.modelingsoftware,active:0
+#: field:civil_engineering.structuretype,active:0
+#: field:civil_engineering.workclass,active:0
+#: field:civil_engineering.workuse,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: civil_engineering
+#: help:civil_engineering.structuretype,active:0
+msgid "The active field allows you to hide the Structure Type without removing it."
+msgstr "The active field allows you to hide the Structure Type without removing it."
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_modelingsoftware
+msgid "Structural Modeling Softwares"
+msgstr "Structural Modeling Softwares"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civil_engineering_work
+#: view:project.project:0
+msgid "Civil Engineering Works"
+msgstr "Civil Engineering Works"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_modelabstraction
+msgid "Civil Engineering Model Structural"
+msgstr "Civil Engineering Model Structural"
+
+#. module: civil_engineering
+#: field:civil_engineering.modelingsoftware,child_ids:0
+msgid "Child Modeling Software"
+msgstr "Child Modeling Software"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "Location data"
+msgstr "Location data"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_structuretype
+msgid "Civil Engineering Structure Type"
+msgstr "Civil Engineering Structure Type"
+
+#. module: civil_engineering
+#: field:civil_engineering.workclass,parent_id:0
+msgid "Parent Work Class"
+msgstr "Parent Work Class"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workclass_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workclass_category
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_workclass_category_main
+msgid "Works by Work Class"
+msgstr "Works by Work Class"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.act_civil_engineering_sale_order
+msgid "Sales"
+msgstr "Sales"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+msgid "General"
+msgstr "General"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,work_safety:0
+msgid "Work safety"
+msgstr "Work safety"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_modelingsoftware
+msgid "Civil Engineering Modeling Software"
+msgstr "Civil Engineering Modeling Software"
+
+#. module: civil_engineering
+#: help:civil_engineering.modelingsoftware,active:0
+msgid "The active field allows you to hide the Modeling Software without removing it."
+msgstr "The active field allows you to hide the Modeling Software without removing it."
+
+#. module: civil_engineering
+#: field:civil_engineering.modelingsoftware,parent_id:0
+msgid "Parent Modeling Software"
+msgstr "Parent Modeling Software"
+
+#. module: civil_engineering
+#: model:ir.module.module,description:civil_engineering.module_meta_information
+msgid "Civil Engineering Works:\n"
+"\n"
+"* Adds a new menu to manage civil engineering works: Location, agents and other consultancies, work data, structure data and assignments to projects.\n"
+"\n"
+"* New entities for civil engineering works (all these entities have an hierarchical structure and a tree view, civil engineering works can be filtered from the tree view):\n"
+"    * Work Class\n"
+"    * Work Use\n"
+"    * Structure Type\n"
+"    * Foundation Type\n"
+"    * Structural Model Abstraction\n"
+"    * Structural Modeling Software. \n"
+"\n"
+"* Adds a new tab in the project form, sale form and purchase form to relate these objects to civil engineering works\n"
+""
+msgstr "Civil Engineering Works:\n"
+"\n"
+"* Adds a new menu to manage civil engineering works: Location, agents and other consultancies, work data, structure data and assignments to projects.\n"
+"\n"
+"* New entities for civil engineering works (all these entities have an hierarchical structure and a tree view, civil engineering works can be filtered from the tree view):\n"
+"    * Work Class\n"
+"    * Work Use\n"
+"    * Structure Type\n"
+"    * Foundation Type\n"
+"    * Structural Model Abstraction\n"
+"    * Structural Modeling Software. \n"
+"\n"
+"* Adds a new tab in the project form, sale form and purchase form to relate these objects to civil engineering works\n"
+""
+
+#. module: civil_engineering
+#: view:civil_engineering.modelingsoftware:0
+msgid "Modeling Software Category"
+msgstr "Modeling Software Category"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_area
+msgid "Civil Engineering Area"
+msgstr "Civil Engineering Area"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,city:0
+msgid "City"
+msgstr "City"
+
+#. module: civil_engineering
+#: view:civil_engineering.modelingsoftware:0
+msgid "Modeling Software Categories"
+msgstr "Modeling Software Categories"
+
+#. module: civil_engineering
+#: view:civil_engineering.structuretype:0
+msgid "Structure Type Category"
+msgstr "Structure Type Category"
+
+#. module: civil_engineering
+#: view:civil_engineering.work.project:0
+msgid "Work project"
+msgstr "Work project"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_structuretype_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_structuretype_category
+msgid "Works by Structure Type"
+msgstr "Works by Structure Type"
+
+#. module: civil_engineering
+#: field:civil_engineering.structuretype,parent_id:0
+msgid "Parent Structure Type"
+msgstr "Parent Structure Type"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_modelingsoftware
+msgid "Structural Modeling Software"
+msgstr "Structural Modeling Software"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,workclass_id:0
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workclass
+msgid "Work Class"
+msgstr "Work Class"
+
+#. module: civil_engineering
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_workclass
+msgid "Work Classes"
+msgstr "Work Classes"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: model:ir.ui.menu,name:civil_engineering.menu_civilengineering_configuration_structure
+msgid "Structure"
+msgstr "Structure"
+
+#. module: civil_engineering
+#: field:civil_engineering.area,name:0
+#: field:civil_engineering.foundationtype,name:0
+#: field:civil_engineering.modelabstraction,name:0
+#: field:civil_engineering.modelingsoftware,name:0
+#: field:civil_engineering.structuretype,name:0
+#: field:civil_engineering.workclass,name:0
+#: field:civil_engineering.workuse,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civil_engineering_work_action
+msgid "Civil engineering works"
+msgstr "Civil engineering works"
+
+#. module: civil_engineering
+#: view:civil_engineering.modelabstraction:0
+msgid "Structural Model Abstraction Categories"
+msgstr "Structural Model Abstraction Categories"
+
+#. module: civil_engineering
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workuse_by_category
+#: model:ir.actions.act_window,name:civil_engineering.action_civilengineering_workuse_category
+msgid "Works by Work Use"
+msgstr "Works by Work Use"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,main_city:0
+msgid "Main city"
+msgstr "Main city"
+
+#. module: civil_engineering
+#: view:civil_engineering.workuse:0
+msgid "Work Use Categories"
+msgstr "Work Use Categories"
+
+#. module: civil_engineering
+#: model:ir.model,name:civil_engineering.model_civil_engineering_work
+#: view:project.project:0
+#: field:project.project,ce_work_ids:0
+#: view:purchase.order:0
+#: view:sale.order:0
+msgid "Civil Engineering Work"
+msgstr "Civil Engineering Work"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,work_owner:0
+msgid "Work owner"
+msgstr "Work owner"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,floors_above_ground_level:0
+msgid "Floors above ground level"
+msgstr "Floors above ground level"
+
+#. module: civil_engineering
+#: field:civil_engineering.work,name:0
+msgid "Work description"
+msgstr "Work description"
+
+#. module: civil_engineering
+#: help:civil_engineering.workuse,active:0
+msgid "The active field allows you to hide the Work Use without removing it."
+msgstr "The active field allows you to hide the Work Use without removing it."
+
+#. module: civil_engineering
+#: field:civil_engineering.work.project,sequence:0
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,geotechnics:0
+msgid "Geotechnics"
+msgstr "Geotechnics"
+
+#. module: civil_engineering
+#: help:civil_engineering.workclass,active:0
+msgid "The active field allows you to hide the work class without removing it."
+msgstr "The active field allows you to hide the work class without removing it."
+
+#. module: civil_engineering
+#: field:civil_engineering.workclass,child_ids:0
+msgid "Child Work Class"
+msgstr "Child Work Class"
+
+#. module: civil_engineering
+#: view:civil_engineering.work:0
+#: field:civil_engineering.work,project_manager:0
+msgid "Project manager"
+msgstr "Project manager"
+

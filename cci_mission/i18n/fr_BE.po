@@ -1,0 +1,1077 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_mission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:47:31+0000\n"
+"PO-Revision-Date: 2009-12-10 10:47:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,creation_date:0
+msgid "Emission Date"
+msgstr "Date émission"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Paid Member"
+msgstr "Membre payant"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,copy_cba:0
+msgid "Photocopy Before CBA"
+msgstr "Photocopie avant CBA"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Suite lettre C1"
+msgstr "Suite lettre C1"
+
+#. module: cci_mission
+#: field:cci_missions.letters_log,ata_carnet_id:0
+msgid "Related ATA Carnet"
+msgstr "Carnet ATA concerné"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,documents_invoice:0
+msgid "List of Invoices"
+msgstr "Liste des factures"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_dossier_type
+msgid "cci_missions.dossier_type"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,usage_id:0
+#: field:cci_missions.ata_usage,name:0
+msgid "Usage"
+msgstr "Utilisation"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,customer_reference:0
+msgid "Folders Reference for the Customer"
+msgstr "Référence interne de ce dossier chez le client"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_custom_code
+msgid "cci_missions.custom_code"
+msgstr ""
+
+#. module: cci_mission
+#: selection:cci_missions.courier_log,return_address:0
+msgid "Au client"
+msgstr "Au client"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,embassy_folder_id:0
+#: field:cci_missions.dossier,embassy_folder_id:0
+#: field:cci_missions.embassy_folder_line,folder_id:0
+msgid "Related Embassy Folder"
+msgstr "Dossier ambassade lié"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,invoice_date:0
+msgid "Invoice Date"
+msgstr "Date de facture"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,holder_name:0
+msgid "Holder Name"
+msgstr "Nom du titulaire"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,documents_others:0
+#: field:cci_missions.courier_log,others:0
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Others"
+msgstr "Autres"
+
+#. module: cci_mission
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Embassy Consulate"
+msgstr "Ambassade/Consulat"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,translation:0
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Translation"
+msgstr "Traduction"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Suite lettre C"
+msgstr "Suite lettre C"
+
+#. module: cci_mission
+#: field:product.lines,price_subtotal:0
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,documents_certificate:0
+msgid "List of Certificates"
+msgstr "Liste des certificats"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,address_name_1:0
+msgid "Company Name"
+msgstr "Nom de la Société"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,account_id:0
+#: field:product.lines,account_id:0
+msgid "Account"
+msgstr "Compte"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,additional_pages:0
+msgid "Additional Number of Pages"
+msgstr "Nombre de pages supplémentaires"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_3_product_template
+msgid "Embassy Consulate Product"
+msgstr "Produit Ambassade/Consulat"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,customer_amount:0
+msgid "Invoiced Amount"
+msgstr "Montant facturé"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,awex_eligible:0
+msgid "AWEX Eligible"
+msgstr "Éligible AWEX"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,holder_address:0
+msgid "Holder Address"
+msgstr "Adresse titulaire"
+
+#. module: cci_mission
+#: field:cci_missions.site,name:0
+msgid "Name of the Site"
+msgstr "Nom du site"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Non Member"
+msgstr "Non-membre"
+
+#. module: cci_mission
+#: help:cci_missions.dossier_type,id_letter:0
+msgid "for identify the type of certificate by the federation"
+msgstr "pour identifier le type de certificat par la fédération"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,product_ids:0
+#: field:cci_missions.dossier,product_ids:0
+msgid "Products"
+msgstr "Produits"
+
+#. module: cci_mission
+#: selection:cci_missions.certificate,special_reason:0
+msgid "Commercial Reason"
+msgstr "Raison commerciale"
+
+#. module: cci_mission
+#: selection:cci_missions.certificate,special_reason:0
+msgid "None"
+msgstr "Aucun"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,return_date:0
+msgid "Date of Return"
+msgstr "Date de rentrée"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,validity_date:0
+msgid "Validity Date"
+msgstr "Date de validité"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_ata_usage
+msgid "cci_missions.ata_usage"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,awex_amount:0
+msgid "AWEX Amount"
+msgstr "Montant AWEX"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Old Member"
+msgstr "Ancien membre"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,warranty:0
+msgid "Warranty"
+msgstr "Garantie"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_product_lines
+msgid "Product Lines"
+msgstr "Lignes de produits"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,credit_line_id:0
+msgid "Credit Line"
+msgstr "Ligne de crédit"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier_type,section:0
+msgid "ATA Carnet"
+msgstr "Carnet ATA"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,name:0
+msgid "Reference"
+msgstr "Référence"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,courier_cost:0
+msgid "Couriers Costs"
+msgstr "Coûts pour le coursier"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,representer_address:0
+msgid "Representer Address"
+msgstr "Adresse du représentant"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,consulate_name:0
+msgid "Consulate Name"
+msgstr "Nom du consulat"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_2bis_product_template
+msgid "Attestation - Original "
+msgstr "Attestation - Original"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,insurer_agreement:0
+msgid "Insurer Agreement"
+msgstr "Agréation Assureur"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,partner_id:0
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,original_product_id:0
+msgid "Reference for Original Copies"
+msgstr "Référence pour les copies d'originaux"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_6_product_template
+msgid "Travel Costs Product"
+msgstr "Produit pour les Déplacements"
+
+#. module: cci_mission
+#: field:product.lines,taxes_id:0
+msgid "Sale Taxes"
+msgstr "Taxes sur les ventes"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier,state:0
+msgid "Confirmed"
+msgstr "Confirmé"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_7_product_template
+msgid "Others Product"
+msgstr "Autres produits"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,area_id:0
+msgid "Area"
+msgstr "Zone"
+
+#. module: cci_mission
+#: code:addons/cci_mission/wizard/cci_encode_cash.py:0
+#, python-format
+msgid "No Partner Defined on Embassy folder"
+msgstr "Aucun partenaire défini pour ce dossier ambassade"
+
+#. module: cci_mission
+#: model:ir.module.module,shortdesc:cci_mission.module_meta_information
+msgid "CCI mission"
+msgstr "Missions déléguées"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_ata_carnet
+msgid "cci_missions.ata_carnet"
+msgstr ""
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_2_product_template
+msgid "Ministry Product"
+msgstr "Produit Ministère"
+
+#. module: cci_mission
+#: field:res.partner,insurer_id:0
+msgid "Insurer ID"
+msgstr "ID Assureur ATA"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,warranty_product_id:0
+msgid "Related Warranty Product"
+msgstr "Produit Garantie"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Rappel a remboursement"
+msgstr "Rappel de remboursement"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,section:0
+#: field:cci_missions.embassy_folder_line,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_5_product_template
+msgid "Administrative Product"
+msgstr "Produit Coûts administratifs"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,warranty_product_2:0
+msgid "Warranty product for ATA carnet if not own Risk"
+msgstr "Produit Garantie en cas de risque propre"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder_line,tax_rate:0
+msgid "Tax Rate"
+msgstr "Taux de TVA"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_3_product_template
+msgid "Legalization - Copy"
+msgstr "Légalisation - Copie"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,goods_value:0
+msgid "Goods Value"
+msgstr "Valeur des biens"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_3bis_product_template
+msgid "Attestation - Copie"
+msgstr "Attestation - Copie"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,embassy_name:0
+msgid "Embassy Name"
+msgstr "Nom de l'ambassade"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Mise en demeure"
+msgstr "Mise en demeure"
+
+#. module: cci_mission
+#: code:addons/cci_mission/wizard/cci_encode_cash.py:0
+#, python-format
+msgid "Warning"
+msgstr "Avertissement"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,holder_city:0
+msgid "Holder City"
+msgstr "Localité du titulaire"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,link_ids:0
+msgid "Linked Documents"
+msgstr "Documents liés"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,goods:0
+msgid "Goods Description"
+msgstr "Description des biens"
+
+#. module: cci_mission
+#: field:cci_missions.custom_code,official:0
+msgid "Official Code"
+msgstr "Code officiel"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,legalization_ids:0
+msgid "Related Legalizations"
+msgstr "Légalisations liées"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_5_product_template
+msgid "ATA - Copy"
+msgstr "ATA - Copie"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,documents:0
+msgid "Number of Documents to Legalize"
+msgstr "Nombre de documents à légaliser"
+
+#. module: cci_mission
+#: constraint:product.template:0
+msgid "Error: UOS must be in a different category than the UOM"
+msgstr "Erreur : l'unité secondaire doit être d'une catgéorie différence de l'unité de mesure"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Created"
+msgstr "Créé"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,address_name_2:0
+msgid "Contact Name"
+msgstr "Nom de contact"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,copy_product_id:0
+msgid "Reference for Copies"
+msgstr "Références pour les copies"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_4_product_template
+msgid "ATA - Original"
+msgstr "ATA - Original"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,sequence_id:0
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_site
+msgid "cci_missions.site"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,address_street:0
+msgid "Street"
+msgstr "Rue"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,cba:0
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "CBA"
+msgstr "CBA"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,member_price:0
+msgid "Member Price Allowed"
+msgstr "Prix membre autorisé"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_embassy_folder
+msgid "cci_missions.embassy_folder"
+msgstr ""
+
+#. module: cci_mission
+#: help:cci_missions.certificate,sending_spf:0
+msgid "Date of the sending of this record to the external database"
+msgstr "Date de l'envoi de ce certificat à la base de données externe"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,copy_embassy_consulate:0
+msgid "Photocopy Before Embassy or Consulate"
+msgstr "Photocopies avant l'ambassade ou le consulat"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,invoice_note:0
+msgid "Note to Display on the Invoice"
+msgstr "Note à afficher sur la Facture"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Rappel avant echeance"
+msgstr "Rappel avant échéance"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Cancelled Member"
+msgstr "Membre annulé"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier,state:0
+msgid "Invoiced"
+msgstr "Facturé"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,origin_ids:0
+msgid "Origin Countries"
+msgstr "Pays d'origine"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier_type,section:0
+msgid "Certificate"
+msgstr "Certificat"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Free Member"
+msgstr "Membre gratuit"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,order_partner_id:0
+msgid "Billed Customer"
+msgstr "Client facturé"
+
+#. module: cci_mission
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Erreur : l'unité de mesure par défaut et l'unité de mesure de l'achat doivent être de la même catégorie"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,message:0
+msgid "Message to the Courier"
+msgstr "Message pour le coursier"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Draft"
+msgstr "Ouvert"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,to_bill:0
+msgid "To Be Billed"
+msgstr "A facturer"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Closed"
+msgstr "Clôturé"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,own_risk:0
+msgid "Own Risks"
+msgstr "Risque Propre"
+
+#. module: cci_mission
+#: field:cci_missions.letters_log,letter_type:0
+msgid "Type of Letter"
+msgstr "Type de lettre"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_legalization
+msgid "cci_missions.legalization"
+msgstr ""
+
+#. module: cci_mission
+#: selection:cci_missions.courier_log,return_address:0
+msgid "A la CCI"
+msgstr "A la CCI"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Pending"
+msgstr "En attente"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Dispute"
+msgstr "En litige"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,partner_member_state:0
+#: field:cci_missions.legalization,partner_member_state:0
+msgid "Member State of the Partner"
+msgstr "Etat membre du partenaire"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,partner_address_id:0
+msgid "Courier"
+msgstr "Coursier"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_7_product_template
+msgid "ATA - Insurer Warranty"
+msgstr "ATA - Garantie de l'assureur"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_1_product_template
+msgid "CBA Product"
+msgstr "Produit CBA"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,asker_address:0
+#: field:res.partner,asker_address:0
+msgid "Asker Address"
+msgstr "Adresse du demandeur"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Invoiced Member"
+msgstr "Membre facturé"
+
+#. module: cci_mission
+#: help:cci_missions.dossier_type,copy_product_id:0
+#: help:cci_missions.dossier_type,original_product_id:0
+msgid "for the association with a pricelist"
+msgstr "pour l'association avec une liste de prix"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Waiting Member"
+msgstr "Membre en attente"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,internal_note:0
+msgid "Internal Note"
+msgstr "Note interne"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,destination_id:0
+#: field:cci_missions.embassy_folder,destination_id:0
+msgid "Destination Country"
+msgstr "Pays de destination"
+
+#. module: cci_mission
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Travel Costs"
+msgstr "Coûts de déplacement"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,special_reason:0
+msgid "For special cases"
+msgstr "Cas spécial"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,ministry:0
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Ministry"
+msgstr "Ministère"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,dossier_id:0
+#: field:cci_missions.legalization,dossier_id:0
+msgid "Dossier"
+msgstr "Dossier"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_6_product_template
+msgid "ATA - Own Risk Warranty"
+msgstr "ATA - Garantie Risque propre"
+
+#. module: cci_mission
+#: selection:cci_missions.certificate,special_reason:0
+msgid "Substitution"
+msgstr "Substitution"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,copy_ministry:0
+msgid "Photocopy Before Ministry"
+msgstr "Photocopie avant le Ministère"
+
+#. module: cci_mission
+#: help:cci_missions.embassy_folder,invoice_note:0
+msgid "to display as the last embassy_folder_line of this embassy_folder."
+msgstr "à afficher comme la dernière ligne du dossier ambassade"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,sub_total:0
+msgid "Sub Total for Extra Products"
+msgstr "Sous-total pour les produits supplémentaires"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_1_product_template
+msgid "CO - Copy"
+msgstr "CO - Copie"
+
+#. module: cci_mission
+#: field:cci_missions.site,embassy_sequence_id:0
+msgid "Sequence for Embassy Folder"
+msgstr "Séquence pour les dossiers ambassades"
+
+#. module: cci_mission
+#: field:cci_missions.letters_log,date:0
+msgid "Date of Sending"
+msgstr "Date d'envoi"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,asker_zip_id:0
+#: field:res.partner,asker_zip_id:0
+msgid "Asker Zip Code"
+msgstr "Localité du demandeur"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Suite lettre A"
+msgstr "Suite lettre A"
+
+#. module: cci_mission
+#: field:product.lines,quantity:0
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,member_price:0
+#: field:cci_missions.legalization,member_price:0
+msgid "Apply the Member Price"
+msgstr "Prix membre"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_0_product_template
+msgid "CO - Original"
+msgstr "CO - Original"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,customs_ids:0
+msgid "Custom Codes"
+msgstr "Codes douaniers"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_letters_log
+msgid "cci_missions.letters_log"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.dossier,sender_name:0
+#: field:res.partner,sender_name:0
+msgid "Sender Name"
+msgstr "Nom de l'expéditeur"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,state:0
+#: field:cci_missions.dossier,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,quantity_copies:0
+msgid "Number of Copies"
+msgstr "Nombre de copies"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier_type,section:0
+msgid "Legalization"
+msgstr "Légalisations"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,asker_name:0
+#: field:res.partner,asker_name:0
+msgid "Asker Name"
+msgstr "Nom du demandeur"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,invoice_id:0
+#: field:cci_missions.dossier,invoice_id:0
+#: field:cci_missions.embassy_folder,invoice_id:0
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_2_product_template
+msgid "Legalization - Original"
+msgstr "Légalisation - Original"
+
+#. module: cci_mission
+#: field:product.lines,uos_id:0
+msgid "Unit"
+msgstr "Unité"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,sending_spf:0
+msgid "SPF Sending Date"
+msgstr "Date d'envoi au SPF"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,address_city:0
+msgid "City"
+msgstr "Localité"
+
+#. module: cci_mission
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "Le nom de l'Objet doit commencer par x_ et ne pas contenir de caractères spéciaux !"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier,state:0
+msgid "Canceled by the CCI"
+msgstr "Annulé par la CCI"
+
+#. module: cci_mission
+#: field:product.lines,price_unit:0
+msgid "Unit Price"
+msgstr "Prix unitaire"
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,embassy_folder_line_ids:0
+msgid "Details"
+msgstr "Détails"
+
+#. module: cci_mission
+#: help:cci_missions.dossier_type,sequence_id:0
+msgid "for association with a sequence"
+msgstr "pour l'association avec une séquence"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,double_signature:0
+msgid "Double Signature"
+msgstr "Double signature"
+
+#. module: cci_mission
+#: selection:cci_missions.embassy_folder_line,type:0
+msgid "Administrative"
+msgstr "Frais administratifs"
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,state:0
+msgid "Correct"
+msgstr "Correct"
+
+#. module: cci_mission
+#: field:product.lines,product_id:0
+msgid "Product"
+msgstr "Produit"
+
+#. module: cci_mission
+#: model:product.template,name:cci_mission.cci_product_product_embassy_lines_4_product_template
+msgid "Translation Product"
+msgstr "Produit Traductions"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,name:0
+#: field:cci_missions.embassy_folder_line,name:0
+#: field:product.lines,name:0
+msgid "Description"
+msgstr "Description"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,initial_pages:0
+msgid "Initial Number of Pages"
+msgstr "Nombre initial de pages"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,partner_insurer_id:0
+msgid "Insurer ID of the Partner"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,representer_name:0
+msgid "Representer Name"
+msgstr "Nom du représentant"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Demande de remboursement"
+msgstr "Demande de remboursement"
+
+#. module: cci_mission
+#: selection:cci_missions.dossier,state:0
+msgid "Canceled by Customer"
+msgstr "Annulé par le client"
+
+#. module: cci_mission
+#: model:ir.module.module,description:cci_mission.module_meta_information
+msgid "\n"
+"        specific module for cci project.\n"
+"    "
+msgstr "\n"
+"        Module spécifique pour le projet CCI.\n"
+"    "
+
+#. module: cci_mission
+#: field:cci_missions.custom_code,meaning:0
+msgid "Meaning"
+msgstr "Signification"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,type_id:0
+msgid "Related Type of Carnet"
+msgstr "Type de carnet ATA lié"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_courier_log
+msgid "cci_missions.courier_log"
+msgstr ""
+
+#. module: cci_mission
+#: selection:cci_missions.ata_carnet,partner_member_state:0
+#: selection:cci_missions.legalization,partner_member_state:0
+msgid "Associated Member"
+msgstr "Membre associé"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_dossier
+msgid "cci_missions.dossier"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.dossier,quantity_original:0
+msgid "Quantity of Originals"
+msgstr "Quantité d'originaux"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_embassy_folder_line
+msgid "cci_missions.embassy_folder_line "
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.embassy_folder,crm_case_id:0
+msgid "Case"
+msgstr "Cas"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,goods:0
+msgid "Goods"
+msgstr "Marchandises"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,name:0
+#: field:cci_missions.custom_code,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,warranty_product_1:0
+msgid "Warranty product for ATA carnet if Own Risk"
+msgstr "Produit Garantie du Cranet ATA si Risque Propre"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,qtty_to_print:0
+msgid "Number of Sheets"
+msgstr "Nombre de pages"
+
+#. module: cci_mission
+#: model:ir.model,name:cci_mission.model_cci_missions_certificate
+msgid "cci_missions.certificate"
+msgstr ""
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,id_letter:0
+msgid "ID Letter"
+msgstr "Lettre d'identification"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,type_id:0
+msgid "Dossier Type"
+msgstr "Type de dossier"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,id:0
+#: field:cci_missions.dossier,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,federation_sending_date:0
+msgid "Date of Sending to the Federation"
+msgstr "Date d'envoi à la fédération"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,sub_total:0
+msgid "Subtotal of Extra Products"
+msgstr "Sous-total pour les produits supplémentaires"
+
+#. module: cci_mission
+#: field:cci_missions.site,official_name_1:0
+#: field:cci_missions.site,official_name_2:0
+#: field:cci_missions.site,official_name_3:0
+#: field:cci_missions.site,official_name_4:0
+msgid "Official Name of the Site"
+msgstr "Nom officiel du site"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,text_on_invoice:0
+msgid "Text to Display on the Invoice"
+msgstr "Texte à afficher sur la facture"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,letter_ids:0
+msgid "Letters"
+msgstr "Lettres de suivi"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,ok_state_date:0
+msgid "Date of Closure"
+msgstr "Date de clôture"
+
+#. module: cci_mission
+#: field:product.lines,dossier_product_line_id:0
+#: field:product.lines,product_line_id:0
+msgid "Product Ref"
+msgstr "Référence du produit"
+
+#. module: cci_mission
+#: field:cci_missions.courier_log,return_address:0
+msgid "Address of Return"
+msgstr "Adresse de retour"
+
+#. module: cci_mission
+#: field:cci_missions.legalization,certificate_id:0
+msgid "Related Certificate"
+msgstr "Certificat lié"
+
+#. module: cci_mission
+#: field:cci_missions.dossier_type,site_id:0
+#: field:cci_missions.embassy_folder,site_id:0
+msgid "Site"
+msgstr "Site"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,date:0
+#: field:cci_missions.dossier,date:0
+#: field:cci_missions.legalization,date:0
+msgid "Creation Date"
+msgstr "Date de création"
+
+#. module: cci_mission
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Erreur : code EAN invalide"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Rappel apres echeance"
+msgstr "Rappel après échéance"
+
+#. module: cci_mission
+#: field:cci_missions.certificate,total:0
+#: field:cci_missions.dossier,invoiced_amount:0
+#: field:cci_missions.legalization,total:0
+msgid "Total"
+msgstr "Total"
+
+#. module: cci_mission
+#: field:cci_missions.dossier,goods_value:0
+msgid "Value of the Sold Goods"
+msgstr "Valeur des biens"
+
+#. module: cci_mission
+#: field:cci_missions.ata_carnet,representer_city:0
+msgid "Representer City"
+msgstr "Localité du représentant"
+
+#. module: cci_mission
+#: selection:cci_missions.letters_log,letter_type:0
+msgid "Suite lettre I"
+msgstr "Suite Lettre I"
+

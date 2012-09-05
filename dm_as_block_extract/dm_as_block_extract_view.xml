@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<record model="ir.ui.view" id="view_dm_reject_block_type_form">
+        <field name="name">dm.as.reject.inherit</field>
+        <field name="model">dm.as.reject</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_as_reject.view_dm_reject_form"/>
+        <field name="arch" type="xml">
+           <field name= "type_od" position="after">
+				<newline/>
+					<field name="block_extraction"/>
+			</field>
+        </field>
+    </record>
+</data>
+</openerp>

@@ -1,0 +1,276 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* crm_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-27 00:20+0000\n"
+"PO-Revision-Date: 2011-03-27 00:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,res_id:0
+msgid "Resource ID"
+msgstr ""
+
+#. module: crm_timesheet
+#: code:addons/crm_timesheet/crm_timesheet.py:61
+#, python-format
+msgid "No employee defined for user \"%s\". You must create one."
+msgstr ""
+
+#. module: crm_timesheet
+#: code:addons/crm_timesheet/crm_timesheet.py:69
+#, python-format
+msgid "No journal defined on the related employee.\n"
+"Fill in the timesheet tab of the employee form."
+msgstr ""
+
+#. module: crm_timesheet
+#: field:res.partner,crm_analytic_ids:0
+msgid "CRM Analytic Account"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.module.module,description:crm_timesheet.module_meta_information
+msgid "\n"
+"        This module lets you transfer the entries under CRM Management to\n"
+"        the Timesheet line entries for particular date and particular user with the effect of creating, editing and deleting either ways.\n"
+"    "
+msgstr ""
+
+#. module: crm_timesheet
+#: help:crm.analytic.timesheet.configuration,name:0
+msgid "Name of this parameter, use in partner"
+msgstr ""
+
+#. module: crm_timesheet
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet.configuration,model:0
+#: field:res.partner.crm.analytic,crm_model_id:0
+msgid "Model"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,hours:0
+msgid "Time spent"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.lead,duration_timesheet:0
+#: field:crm.phonecall,duration_timesheet:0
+msgid "Hours spend"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:crm.analytic.timesheet.configuration,analytic_account_id:0
+msgid "Analytic account by default for the model indicated"
+msgstr ""
+
+#. module: crm_timesheet
+#: view:account.analytic.account:0
+#: view:res.partner:0
+msgid "CRM Analytic"
+msgstr ""
+
+#. module: crm_timesheet
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+msgid "Summary Work"
+msgstr ""
+
+#. module: crm_timesheet
+#: view:crm.lead:0
+msgid "Timesheet"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,date:0
+msgid "Date"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,model:0
+msgid "Object Name"
+msgstr ""
+
+#. module: crm_timesheet
+#: sql_constraint:crm.analytic.timesheet.configuration:0
+msgid "The model of the OpenERP must be unique !"
+msgstr ""
+
+#. module: crm_timesheet
+#: view:res.company:0
+msgid "Configuration"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,hr_analytic_timesheet_id:0
+msgid "Related Timeline Id"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:account.analytic.account,rounding_duration:0
+msgid "Rouding Duration"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_crm_analytic_timesheet
+msgid "CRM summary work"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet.configuration,name:0
+msgid "Name"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,name:0
+msgid "Work summary"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.lead,timesheet_ids:0
+#: field:crm.phonecall,timesheet_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:res.partner.crm.analytic,crm_model_id:0
+msgid "Model of crm"
+msgstr ""
+
+#. module: crm_timesheet
+#: code:addons/crm_timesheet/crm_timesheet.py:65
+#, python-format
+msgid "No product defined on the related employee.\n"
+"Fill in the timesheet tab of the employee form."
+msgstr ""
+
+#. module: crm_timesheet
+#: view:res.company:0
+msgid "CRM Management"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_crm_lead
+msgid "crm.lead"
+msgstr ""
+
+#. module: crm_timesheet
+#: view:res.partner:0
+msgid "Section Analytic"
+msgstr ""
+
+#. module: crm_timesheet
+#: constraint:account.analytic.account:0
+msgid "Error! The currency has to be the same as the currency of the selected company"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:res.company,crm_time_mode_id:0
+msgid "This will set the unit of measure used in CRM.\n"
+"If you use the timesheet linked to CRM (crm_timesheet module), don't forget to setup the right unit of measure in your employees."
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_res_partner_crm_analytic
+msgid "CRM Partner Analytic Account"
+msgstr ""
+
+#. module: crm_timesheet
+#: code:addons/crm_timesheet/crm_timesheet.py:60
+#: code:addons/crm_timesheet/crm_timesheet.py:64
+#: code:addons/crm_timesheet/crm_timesheet.py:68
+#: code:addons/crm_timesheet/crm_timesheet.py:75
+#, python-format
+msgid "Bad Configuration !"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:crm.analytic.timesheet.configuration,model:0
+msgid "Model of OpenERP, eg: crm.lead"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,user_id:0
+msgid "Done by"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:res.company,crm_time_mode_id:0
+msgid "CRM Time Unit"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_crm_phonecall
+msgid "crm.phonecall"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:account.analytic.account,rounding_duration:0
+msgid "This field allow to rounding duration of cases.\n"
+"Example :\n"
+"- value to 00:15, we have a case with timesheet to 00:35, the duration will be 00:45\n"
+"- value to 00:15, we have a case with timesheet to 00:30, the duration will be 00:30"
+msgstr ""
+
+#. module: crm_timesheet
+#: field:crm.analytic.timesheet,analytic_account_id:0
+#: field:crm.analytic.timesheet.configuration,analytic_account_id:0
+#: field:crm.lead,analytic_account_id:0
+#: field:crm.phonecall,analytic_account_id:0
+#: model:ir.model,name:crm_timesheet.model_account_analytic_account
+#: field:res.partner.crm.analytic,analytic_account_id:0
+msgid "Analytic Account"
+msgstr ""
+
+#. module: crm_timesheet
+#: help:res.partner.crm.analytic,analytic_account_id:0
+msgid "Ananlytic account by default for this model of crm and for this partner"
+msgstr ""
+
+#. module: crm_timesheet
+#: code:addons/crm_timesheet/crm_timesheet.py:76
+#, python-format
+msgid "No product and product category property account defined on the related employee.\n"
+"Fill in the timesheet tab of the employee form."
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_crm_analytic_timesheet_configuration
+msgid "Add value by default in CRM"
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.model,name:crm_timesheet.model_res_partner
+#: field:res.partner.crm.analytic,partner_id:0
+msgid "Partner"
+msgstr ""
+
+#. module: crm_timesheet
+#: constraint:account.analytic.account:0
+msgid "Error! You can not create recursive analytic accounts."
+msgstr ""
+
+#. module: crm_timesheet
+#: model:ir.module.module,shortdesc:crm_timesheet.module_meta_information
+msgid "CRM Timesheet"
+msgstr ""
+

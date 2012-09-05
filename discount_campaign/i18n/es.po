@@ -1,0 +1,158 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 06:43+0000\n"
+"PO-Revision-Date: 2011-08-23 13:11+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_category_id:0
+msgid "Category"
+msgstr "Categoría"
+
+#. module: discount_campaign
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El objeto debe empezar con  x_ y no puede contener ningún carácter especial!"
+
+#. module: discount_campaign
+#: model:ir.model,name:discount_campaign.model_discount_campaign
+msgid "discount.campaign"
+msgstr "descuento.campaña"
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: model:ir.actions.act_window,name:discount_campaign.action_discount_campaign_form
+#: model:ir.ui.menu,name:discount_campaign.menu_action_discount_campaign
+#: field:res.partner,discount_campaign:0
+#: field:sale.order,discount_campaign:0
+msgid "Discount Campaign"
+msgstr "Descuento de campaña"
+
+#. module: discount_campaign
+#: field:discount.campaign,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: discount_campaign
+#: model:ir.model,name:discount_campaign.model_discount_campaign_line
+msgid "discount.campaign.line"
+msgstr "descuento.campaña.línea"
+
+#. module: discount_campaign
+#: selection:discount.campaign,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: discount_campaign
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: discount_campaign
+#: field:discount.campaign,date_stop:0
+msgid "Stop Date"
+msgstr "Fecha final"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: discount_campaign
+#: view:discount.campaign.line:0
+msgid "Discount Campaign Lines"
+msgstr "Las líneas de descuento de la campaña"
+
+#. module: discount_campaign
+#: field:discount.campaign,line_ids:0
+#: field:discount.campaign.line,discount_id:0
+msgid "Discount Lines"
+msgstr "Las líneas de descuento"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,discount:0
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: selection:discount.campaign,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: discount_campaign
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: discount_campaign
+#: field:discount.campaign,name:0
+#: field:discount.campaign.line,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: discount_campaign
+#: model:ir.module.module,description:discount_campaign.module_meta_information
+msgid "Marketing management module"
+msgstr "Módulo de gestión de marketing"
+
+#. module: discount_campaign
+#: view:sale.order:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: discount_campaign
+#: model:ir.module.module,shortdesc:discount_campaign.module_meta_information
+msgid "Discount on Marketing Campaigns"
+msgstr "Descuento en las campañas de marketing"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,sequence:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: discount_campaign
+#: selection:discount.campaign,state:0
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_quantity:0
+msgid "Min. Quantity"
+msgstr "Cantidad mínima"
+
+#. module: discount_campaign
+#: field:discount.campaign.line,condition_sale:0
+msgid "Sale Condition"
+msgstr "Condición de venta"
+
+#. module: discount_campaign
+#: field:discount.campaign,date_start:0
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#. module: discount_campaign
+#: view:discount.campaign:0
+#: selection:discount.campaign,state:0
+msgid "Open"
+msgstr "Abierto"

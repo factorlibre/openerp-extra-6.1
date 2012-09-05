@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_pe_sale_order_line_settings_manager","nan_sale_discount.sale_order_line","model_sale_order_line","res_groups_pemanager",1,1,1,1
+"access_pe_sale_order_line_internal_users","nan_sale_discount.sale_order_line","model_sale_order_line","res_groups_peusersi",1,1,1,1
+"access_pe_sale_order_line_external_users","nan_sale_discount.sale_order_line","model_sale_order_line","res_groups_peuserse",1,0,0,0
+

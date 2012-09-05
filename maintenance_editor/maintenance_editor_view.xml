@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="maintenance_maintenance_tree_view" model="ir.ui.view">
+            <field name="name">maintenance.maintenance.tree</field>
+            <field name="model">maintenance.maintenance</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Maintenance">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="type_id"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_maintenance_form_view" model="ir.ui.view">
+            <field name="name">maintenance.maintenance.form</field>
+            <field name="model">maintenance.maintenance</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Maintenance">
+                    <group col="2" colspan="4">
+                        <group col="2">
+                            <field name="name" select="1"/>
+                            <field name="password" readonly="True"/>
+                        </group>
+                        <group col="2">
+                            <field name="type_id" select="1"/>
+                            <field name="state"/>
+                        </group>
+                        <group col="2" string="Partner">
+                            <field name="partner_id" select="1" on_change="onchange_partner_id(partner_id)"/>
+                            <field name="partner_invoice_id"/>
+                        </group>
+                        <group col="2" string="Dates">
+                            <field name="date_from" select="2" on_change="onchange_date_from(date_from)"/>
+                            <field name="date_to" select="2"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Modules">
+                            <field name="module_ids" nolabel="1" colspan="4"/>
+                        </page>
+                        <page string="Notes">
+                            <field name="note" nolabel="1" colspan="4"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_maintenance_form" model="ir.actions.act_window">
+            <field name="name">Maintenance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">maintenance.maintenance</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem parent="base.menu_management"	name="Maintenance Editor" id="menu_maintenance_main"/>
+        <menuitem action="action_maintenance_maintenance_form" id="menu_maintenance_contracts" name="Maintenance Contracts" parent="menu_maintenance_main"/>
+
+        <record id="maintenance_maintenance_module_tree_view" model="ir.ui.view">
+            <field name="name">maintenance.maintenance.module.tree</field>
+            <field name="model">maintenance.maintenance.module</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Maintenance Modules">
+                    <field name="name"/>
+                    <field name="version"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_maintenance_module_form_view" model="ir.ui.view">
+            <field name="name">maintenance.maintenance.module.form</field>
+            <field name="model">maintenance.maintenance.module</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Maintenance Modules">
+                        <field name="name" select="1"/>
+                        <field name="version" select="1"/>
+                        <field name="certificate"/>
+                        <field name="path"/>
+                        <notebook colspan="4">
+                        	<page string="General">
+		                        <field name="technical_certificate"/>
+		                        <field name="functional_certificate"/>
+		                        <field name="tech_certificate"/>
+		                        <field name="func_certificate"/>
+		                        <group colspan="4">
+			                        <field name="nbr_source_line"/>
+			                        <button name="compute_lines" type="object" string="Compute lines" icon="gtk-execute"/>
+		                        </group>
+		                        <field name="module_zip"/>
+		                        <button name="get_code" type="object" states="draft,failed,open" string="Get Certificate Code" icon="gtk-execute"/>
+		                        <field name="state"/>
+		                        <group col="4" colspan="4">
+                                    <button name="set_open" states="draft,failed" string="Open" icon="gtk-execute"/>
+                                    <button name="set_cancel" states="draft,failed,open" string="Cancel" icon="gtk-cancel"/>
+                                    <button name="set_done" states="open" string="Done" icon="gtk-execute" />
+                                    <button name="set_failed" states="open" string="Failed" icon="gtk-convert"/>
+                                </group>
+	                       </page>
+	                       <page string="Sales">
+		                       <separator colspan="4" string="Sale orders"/>
+		                        <field name="sale_ids" nolabel="1"/>
+	                       </page>
+	                       <page string="Technicle Tests">
+	                       		<field name="tech_user_id" />
+	                       		<newline/>
+		                        <field name="test_tech_ids" nolabel="1" colspan="4" >
+		                        	<tree editable="bottom" string="Technicle Tests" >
+	                        			<field name="template_id" domain="[('category_id.type','=','technical')]" />
+										<field name="module_id" domain="[('id','=',parent.id)]"/>
+										<field name="result" />
+		                        	</tree>
+		                        	<form string="Technicle Tests">
+										<field name="template_id" domain="[('category_id.type','=','technical')]"/>
+										<field name="module_id" domain="[('id','=',parent.id)]"/>
+										<field name="result" />
+										<newline/>
+										<field name="remark" colspan="4"/>
+									</form>
+		                        </field>
+	                       </page>
+	                        <page string="Functional Tests">
+		                        <field name="func_user_id"/>
+		                        <newline/>
+		                        <field name="test_func_ids" nolabel="1" colspan="4" >
+		                        	<tree editable="bottom" string="Functional Tests">
+	                        			<field name="template_id" domain="[('category_id.type','=','functional')]"/>
+										<field name="module_id" domain="[('id','=',parent.id)]"/>
+										<field name="result" />
+		                        	</tree>
+		                        	<form string="Technicle Tests">
+										<field name="template_id" domain="[('category_id.type','=','functional')]"/>
+										<field name="module_id" domain="[('id','=',parent.id)]"/>
+										<field name="result" />
+										<newline/>
+										<field name="remark" colspan="4"/>
+									</form>
+
+								</field>
+	                       </page>
+	                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_module_form" model="ir.actions.act_window">
+            <field name="name">Maintenance Modules</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">maintenance.maintenance.module</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_maintenance_module_form" id="menu_maintenance_module" parent="menu_maintenance_main"/>
+
+        <record id="maintenance_contract_type_form_view" model="ir.ui.view">
+            <field name="name">maintenance.contract.type.form</field>
+            <field name="model">maintenance.contract.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Maintenance Contract Type">
+                    <field name="name" colspan="4"/>
+                    <group string="Product" colspan="2" col="2">
+                        <field name="product_id"/>
+                    </group>
+                    <group string="CRM" colspan="2" col="2">
+                        <field name="crm_case_section_id"/>
+                        <field name="crm_case_categ_id"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_contract_type_form" model="ir.actions.act_window">
+            <field name="name">Maintenance Contract Types</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">maintenance.contract.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_maintenance_contract_type_form" id="menu_maintenance_contract_type" parent="menu_maintenance_main"/>
+
+<!-- Test Category -->
+	<record id="test_category_form" model="ir.ui.view">
+		<field name="name">test.category.form</field>
+		<field name="model">test.category</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Test Category">
+				<field name="name" select="1"/>
+				<field name="type" select="1"/>
+			</form>
+		</field>
+	</record>
+
+	<record id="test_category_tree" model="ir.ui.view">
+		<field name="name">test.category.tree</field>
+		<field name="model">test.category</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Test Category">
+				<field name="name" />
+				<field name="type" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_test_category" model="ir.actions.act_window">
+		<field name="name">Test Categories</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">test.category</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem parent="menu_maintenance_main" name="Tests" id="menu_tests_main"/>
+	<menuitem action="action_test_category" id="menu_test_category" parent="menu_tests_main"/>
+
+<!-- Test Template -->
+	<record id="test_template_form" model="ir.ui.view">
+		<field name="name">test.template.form</field>
+		<field name="model">test.template</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Test Template">
+				<field name="name" select="1" colspan="4"/>
+				<field name="category_id" select="1"/>
+				<field name="importance" select="1"/>
+				<field name="description" select="2" colspan="4"/>
+				<field name="add_value" select="2" colspan="4"/>
+			</form>
+		</field>
+	</record>
+
+	<record id="test_template_tree" model="ir.ui.view">
+		<field name="name">test.template.tree</field>
+		<field name="model">test.template</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Test Template">
+				<field name="name" />
+				<field name="category_id" />
+				<field name="importance" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_test_template" model="ir.actions.act_window">
+		<field name="name">Test Template</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">test.template</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem action="action_test_template" id="menu_test_template" parent="menu_tests_main"/>
+
+<!-- Tests -->
+	<record id="test_form" model="ir.ui.view">
+		<field name="name">test.form</field>
+		<field name="model">test</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Test">
+				<field name="template_id" select="1"/>
+				<field name="module_id" select="1"/>
+				<field name="result" select="1"/>
+				<newline/>
+				<field name="remark" colspan="4"/>
+			</form>
+		</field>
+	</record>
+
+	<record id="test_tree" model="ir.ui.view">
+		<field name="name">test.tree</field>
+		<field name="model">test</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Test">
+				<field name="template_id" />
+				<field name="module_id" />
+				<field name="result" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_test" model="ir.actions.act_window">
+		<field name="name">Tests</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">test</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem action="action_test" id="menu_test" parent="menu_tests_main"/>
+
+    </data>
+</openerp>

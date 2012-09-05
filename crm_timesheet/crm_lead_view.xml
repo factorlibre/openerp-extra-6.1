@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        ##############################################################################
+        #
+        #    crm_timesheet module for OpenERP, CRM Timesheet
+        #    Copyright (C) 2011 SYLEAM Info Services ([http://www.Syleam.fr/]) 
+        #              Sebastien LANGE [sebastien.lange@syleam.fr]
+        #
+        #    This file is a part of crm_timesheet
+        #
+        #    crm_timesheet is free software: you can redistribute it and/or modify
+        #    it under the terms of the GNU General Public License as published by
+        #    the Free Software Foundation, either version 3 of the License, or
+        #    (at your option) any later version.
+        #
+        #    crm_timesheet is distributed in the hope that it will be useful,
+        #    but WITHOUT ANY WARRANTY; without even the implied warranty of
+        #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        #    GNU Affero General Public License for more details.
+        #
+        #    You should have received a copy of the GNU Affero General Public License
+        #    along with this program.  If not, see [http://www.gnu.org/licenses/].
+        #
+        ##############################################################################
+
+        <record model="ir.ui.view" id="view_crm_case_form_view_leads_timesheet">
+            <field name="name">crm.lead.timesheet.form</field>
+            <field name="model">crm.lead</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook" position="inside">
+                    <page string="Timesheet">
+                        <field name="duration_timesheet" widget="float_time"/>
+                        <field name="analytic_account_id" domain="[('type','=','normal'),('state','=','open')]"/>
+                        <newline/>
+                        <field name="timesheet_ids" nolabel="1" mode="tree,form" colspan="4" context="{'default_analytic_account_id': analytic_account_id}">
+                            <tree string="Summary Work" editable="bottom">
+                                <field name="date"/>
+                                <field name="user_id"/>
+                                <field name="hours" widget="float_time"/>
+                                <field name="name"/>
+                                <field name="analytic_account_id"/>
+                            </tree>
+                            <form string="Summary Work">
+                                <field name="name" colspan="4"/>
+                                <field name="date"/>
+                                <field name="user_id"/>
+                                <field name="hours" widget="float_time"/>
+                                <field name="analytic_account_id"/>
+                            </form>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1">
+        <record id="base.GBP" model="res.currency">
+            <field name="numeric_code">826</field>
+        </record>
+        <record id="base.EUR" model="res.currency">
+            <field name="numeric_code">978</field>
+        </record>
+        <record id="base.USD" model="res.currency">
+            <field name="numeric_code">840</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,234 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* portal_training
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 05:53:13+0000\n"
+"PO-Revision-Date: 2009-11-26 05:53:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: portal_training
+#: view:purchase.order.line:0
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: portal_training
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_supplier_purchase_order_lines_action
+#: model:ir.ui.menu,name:portal_training.menu_portal_your_purchase_order_line_mi
+msgid "Your Purchase Order Lines"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.menu_partner_portal_training
+msgid "Partner Portal"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,note:0
+msgid "Note"
+msgstr ""
+
+#. module: portal_training
+#: view:board.board:0
+msgid "Board"
+msgstr ""
+
+#. module: portal_training
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.participation_participant_skateholder_portal_act
+#: model:ir.ui.menu,name:portal_training.participation_training_management_skateholder_portal_mi
+msgid "Participations of the Participants"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.menu_portal_purchase_order_lines
+msgid "Purchase Management"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_partner_subscription_all_act
+#: model:ir.ui.menu,name:portal_training.portal_partner_subscription_all_mi
+msgid "Subscriptions"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_supplier_seance_action
+#: model:ir.ui.menu,name:portal_training.menu_training_seance_supplier_portal
+#: view:training.seance:0
+msgid "Seances"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,examen:0
+msgid "Is Examen"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,seance_id:0
+msgid "Seance"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,date:0
+msgid "Date"
+msgstr ""
+
+#. module: portal_training
+#: field:purchase.order.line,confirmed_supplier:0
+msgid "Confirmed by Supplier"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.model,name:portal_training.model_portal_training_subscription
+msgid "portal.training.subscription"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.participation_skateholder_portal_mi
+msgid "Evaluation Form"
+msgstr ""
+
+#. module: portal_training
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.module.module,description:portal_training.module_meta_information
+#: model:ir.ui.menu,name:portal_training.menu_portal_training
+msgid "Training Portals"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_supplier_action_menu
+msgid "Portal Supplier Menu"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.menu_skateholder_portal_training
+msgid "SkateHolder Portal"
+msgstr ""
+
+#. module: portal_training
+#: view:purchase.order.line:0
+msgid "Notes"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.action_board_portal_supplier
+msgid "Board Supplier"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_partner_subscription_act
+#: model:ir.ui.menu,name:portal_training.portal_partner_survey_old_subscription_mi
+msgid "Old Subscriptions"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,contact_id:0
+msgid "Contact"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.portal_partner_survey_mi
+msgid "Survey"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.portal_partner_financial_management_mi
+msgid "Financial Management"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.actions.act_window,name:portal_training.portal_partner_action_menu
+msgid "Portal Partner Menu"
+msgstr ""
+
+#. module: portal_training
+#: view:board.board:0
+#: model:ir.actions.act_window,name:portal_training.action_last_commands
+msgid "Last Commands"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.menu_portal_partner_training
+#: model:ir.ui.menu,name:portal_training.menu_training_supplier_portal
+#: model:ir.ui.menu,name:portal_training.training_management_skateholder_portal_mi
+msgid "Training Management"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.portal_partner_financial_management_incoice_all_mi
+msgid "Customer Invoices"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.menu_supplier_portal_training
+msgid "Supplier Portal"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.module.module,shortdesc:portal_training.module_meta_information
+msgid "Training Portal"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,course_id:0
+msgid "Course"
+msgstr ""
+
+#. module: portal_training
+#: view:board.board:0
+#: model:ir.actions.act_window,name:portal_training.action_next_sessions
+msgid "Next Sessions"
+msgstr ""
+
+#. module: portal_training
+#: model:ir.ui.menu,name:portal_training.portal_partner_subscription_new_mi
+msgid "New Subscription"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,session_id:0
+msgid "Session"
+msgstr ""
+
+#. module: portal_training
+#: view:portal.training.subscription:0
+msgid "Partner Subscriptions"
+msgstr ""
+
+#. module: portal_training
+#: field:portal.training.subscription,partner_id:0
+msgid "Partner"
+msgstr ""
+
+#. module: portal_training
+#: view:purchase.order.line:0
+msgid "Order Line"
+msgstr ""
+
+#. module: portal_training
+#: view:board.board:0
+#: model:ir.actions.act_window,name:portal_training.action_last_modifications
+msgid "Last Modifications"
+msgstr ""
+

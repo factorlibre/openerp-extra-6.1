@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<record model="ir.ui.view" id="view_dm_reject_threshold_incident_form">
+        <field name="name">dm.as.reject.incident.form.inherit</field>
+        <field name="model">dm.as.reject.incident</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="dm_as_reject.view_dm_reject_incident_form"/>
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+				<newline/>
+				<field name="incident_level"/>
+				<field name="incident_threshold"/>
+			</field>
+        </field>
+    </record>
+
+</data>
+</openerp>

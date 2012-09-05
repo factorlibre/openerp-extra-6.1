@@ -1,0 +1,239 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_l10nbe_domiciliation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-24 13:07+0000\n"
+"PO-Revision-Date: 2011-02-15 15:01+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_l10nbe_domiciliation
+#: view:res.company:0
+msgid "Dom80 Export"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.module.module,shortdesc:account_l10nbe_domiciliation.module_meta_information
+msgid "Account l10nbe Domiciliation"
+msgstr "Account l10nbe Domiciliation"
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,export,note:0
+msgid "Log"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:invoice.export.log,file:0
+msgid "Saved File"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:account.invoice,domiciled_send_date:0
+msgid "Domiciliation Sending Date"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,init,msg2:0
+msgid "Message to the payer, part 2."
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,init,collection_date:0
+msgid "Collection Date"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_view:invoice.export.dom,export:0
+msgid "Note"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: selection:invoice.export.log,state:0
+msgid "Failed"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_view:invoice.export.dom,export:0
+msgid "Save File..."
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:invoice.export.log,note:0
+msgid "Creation Log"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.actions.act_window,name:account_l10nbe_domiciliation.action_account_invoice_log_tree
+#: model:ir.ui.menu,name:account_l10nbe_domiciliation.menu_action_action_invoice_export_tree
+msgid "Invoice Export Logs"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:res.company,id_sender:0
+msgid "Identification number of the Sender"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:invoice.export.log,state:0
+msgid "Status"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: help:res.company,id_creditor:0
+msgid "Creditor Id for Dom80 export header"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:invoice.export.log,create_date:0
+msgid "Creation Date"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: view:invoice.export.log:0
+msgid "Payment Export Logs"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,init,msg1:0
+msgid "Message to the payer, part 1."
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:invoice.export.log,create_uid:0
+msgid "Creation User"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:res.partner.bank,institution_code:0
+msgid "Institution Code"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: help:res.company,id_sender:0
+msgid "Sender Id for Dom80 export header"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.ui.menu,name:account_l10nbe_domiciliation.menu_action_action_invoice_export
+msgid "Invoice Export"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_view:invoice.export.dom,init:0
+msgid "Export invoice to DOM80 format"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:res.partner,domiciliation:0
+msgid "Domiciliation Number"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_button:invoice.export.dom,export,close:0
+msgid "Ok"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.actions.wizard,name:account_l10nbe_domiciliation.wizard_invoice_export_dom
+msgid "Export Invoice"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: selection:invoice.export.log,state:0
+msgid "Succeeded"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,export,invoice_file:0
+msgid "Export File"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:res.company,id_creditor:0
+msgid "Identification number of the Creditor"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: help:invoice.export.dom,init,collection_date:0
+msgid "Requested collection date"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_view:invoice.export.dom,init:0
+msgid "Export Invoices"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_field:invoice.export.dom,init,ref_file:0
+msgid "Reference of the file"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:account.invoice,domiciled:0
+msgid "Domiciled"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: help:invoice.export.dom,init,ref_file:0
+msgid "Reference of the file, Used for Dom80 header"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.module.module,description:account_l10nbe_domiciliation.module_meta_information
+msgid ""
+"\n"
+"        Related with l10n_be module.\n"
+"        Adds Domiciled and Domiciled send date fields on invoice.\n"
+"        Domiciliation and Domiciliation Number fields on partner.\n"
+"    "
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_button:invoice.export.dom,init,export:0
+msgid "Export"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: help:res.partner.bank,institution_code:0
+msgid "Code of the financial institution used for Dom80 Export"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: wizard_button:invoice.export.dom,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: field:res.partner,domiciliation_bool:0
+msgid "Domiciliation"
+msgstr ""
+
+#. module: account_l10nbe_domiciliation
+#: model:ir.model,name:account_l10nbe_domiciliation.model_invoice_export_log
+msgid "Invoice Export History"
+msgstr ""

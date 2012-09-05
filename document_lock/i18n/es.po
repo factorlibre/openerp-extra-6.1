@@ -1,0 +1,80 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:57+0000\n"
+"PO-Revision-Date: 2011-08-23 13:21+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: document_lock
+#: model:ir.module.module,shortdesc:document_lock.module_meta_information
+msgid "Document Lock"
+msgstr "Documento bloqueado"
+
+#. module: document_lock
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: document_lock
+#: selection:ir.attachment,state:0
+msgid "Locked"
+msgstr "Bloqueado"
+
+#. module: document_lock
+#: model:ir.module.module,description:document_lock.module_meta_information
+msgid ""
+"The document_lock adds a status on the attachment, allowing you to lock "
+"attachments or not."
+msgstr ""
+"El bloqueo del documento añade un estado en el archivo adjunto, lo que le "
+"permite bloquear los archivos adjuntos o no."
+
+#. module: document_lock
+#: view:ir.attachment:0
+msgid "Lock"
+msgstr "Bloqueado"
+
+#. module: document_lock
+#: selection:ir.attachment,state:0
+msgid "Unlocked"
+msgstr "Desbloqueado"
+
+#. module: document_lock
+#: view:ir.attachment:0
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#. module: document_lock
+#: field:ir.attachment,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: document_lock
+#: code:addons/document_lock/document_lock.py:0
+#, python-format
+msgid "AccessError"
+msgstr "Error de acceso"
+
+#. module: document_lock
+#: code:addons/document_lock/document_lock.py:0
+#, python-format
+msgid "You can not modify one of these documents !"
+msgstr "No se puede modificar uno de estos documentos!"
+
+#. module: document_lock
+#: code:addons/document_lock/document_lock.py:0
+#, python-format
+msgid "You can not modify this document !"
+msgstr "No se puede modificar este documento!"

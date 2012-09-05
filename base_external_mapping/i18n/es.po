@@ -1,0 +1,243 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-12-19 11:02+0000\n"
+"PO-Revision-Date: 2012-06-28 05:20+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: base_external_mapping
+#: view:base.external.mapping:0
+msgid "Mappings"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:70
+#, python-format
+msgid "Code or ids without value"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:70
+#: code:addons/base_external_mapping/base_external_mapping.py:75
+#: code:addons/base_external_mapping/base_external_mapping.py:78
+#: code:addons/base_external_mapping/base_external_mapping.py:149
+#: model:ir.model,name:base_external_mapping.model_base_external_mapping
+#: model:ir.module.module,shortdesc:base_external_mapping.module_meta_information
+#: model:ir.ui.menu,name:base_external_mapping.menu_base_external_mapping
+#, python-format
+msgid "Base External Mapping"
+msgstr ""
+
+#. module: base_external_mapping
+#: view:base.external.mapping.line:0
+#: field:base.external.mapping.line,in_function:0
+msgid "Import in OpenERP Mapping Python Function"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping,state:0
+msgid "State"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,translate:0
+msgid "Translate"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,type:0
+msgid "Type"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,field_id:0
+msgid "OpenERP Field"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,type:0
+msgid "External -> OpenERP"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:195
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,external_type:0
+msgid "String"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:78
+#, python-format
+msgid "Base External Mapping call %s"
+msgstr ""
+
+#. module: base_external_mapping
+#: view:base.external.mapping:0
+#: view:base.external.mapping.line:0
+msgid "External Referentials"
+msgstr ""
+
+#. module: base_external_mapping
+#: model:ir.model,name:base_external_mapping.model_base_external_mapping_line
+msgid "Base External Mapping Line"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,active:0
+msgid "Active"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,external_type:0
+msgid "Integer"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:195
+#, python-format
+msgid "Another External Mapping have same code!"
+msgstr ""
+
+#. module: base_external_mapping
+#: model:ir.actions.act_window,help:base_external_mapping.action_base_external_mapping_action
+msgid ""
+"Remember if you add new field in this mapping, you will inherit model "
+"(Example Django: Administration/Customization/Database Structure/Create "
+"Django Model and update Django Model. Also, you will update SQL Database "
+"Django (use wizard SQL Update))."
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,external_field:0
+msgid "External Field"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping,model:0
+msgid "Model Name"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,external_type:0
+msgid "External Type"
+msgstr ""
+
+#. module: base_external_mapping
+#: model:ir.actions.act_window,name:base_external_mapping.act_base_external_mapping_fields
+msgid "Fields"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping,mapping_ids:0
+msgid "Mappings Lines"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,type:0
+msgid "External <- OpenERP"
+msgstr ""
+
+#. module: base_external_mapping
+#: model:ir.module.module,description:base_external_mapping.module_meta_information
+msgid ""
+"\n"
+"OpenERP integration to External Mapping (webservices, etc).\n"
+"- Create OpenObject Model to External Model.\n"
+"This module was built generically but in focus of the ZZSaaS service of "
+"Zikzakmedia, OpenERP e-sale Zoook, and Magento modules.\n"
+"    "
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:75
+#, python-format
+msgid "Mappline Code %s not found"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,name_function:0
+msgid "Full Name"
+msgstr ""
+
+#. module: base_external_mapping
+#: code:addons/base_external_mapping/base_external_mapping.py:149
+#, python-format
+msgid "%s"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping,model_id:0
+msgid "OpenERP Model"
+msgstr ""
+
+#. module: base_external_mapping
+#: view:base.external.mapping.line:0
+#: field:base.external.mapping.line,out_function:0
+msgid "Export from OpenERP Mapping Python Function"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping,name:0
+msgid "Code"
+msgstr ""
+
+#. module: base_external_mapping
+#: field:base.external.mapping.line,mapping_id:0
+#: model:ir.actions.act_window,name:base_external_mapping.action_base_external_mapping_action
+msgid "External Mapping"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,external_type:0
+msgid "Float"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,external_type:0
+msgid "Boolean"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping,state:0
+msgid "Done"
+msgstr ""
+
+#. module: base_external_mapping
+#: constraint:base.external.mapping.line:0
+msgid ""
+"Error ! Invalid Mapping Line Name: Field and External Field cannot be both "
+"null"
+msgstr ""
+
+#. module: base_external_mapping
+#: help:base.external.mapping.line,translate:0
+msgid ""
+"Check this option to export fields with locale sufix. Example: name_es"
+msgstr ""
+
+#. module: base_external_mapping
+#: selection:base.external.mapping.line,type:0
+msgid "External <-> OpenERP"
+msgstr ""

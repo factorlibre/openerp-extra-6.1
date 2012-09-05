@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<!--
+  File: contracts_view.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+	<!--
+			CONTRACTS 
+	-->
+
+		<record model="ir.ui.view" id="eagle_view_contract_pos_tree">
+			<field name="name">Eagle Contract Position List</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Positions">
+					<field name="eagle_parm_use_price" invisible="1"/>
+					<field name="sequence" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="out_description" string="Concerning" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="qty" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="recurrence_id" on_change="onchange_recurrence(recurrence_id)" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="cancellation_deadline" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="next_invoice_date" attrs="{'readonly':[('state','=','done')],'required':[('state','=','recurrent')]}"/>
+					<button name="button_enable" string="Set to 'Active'" icon="gtk-yes" type="object" attrs="{'invisible':[('state','&lt;&gt;','recurrent')],'readonly':[('is_active','=',True)]}"/>
+					<button name="button_disable" string="Set to 'Inactive'" icon="gtk-cancel" type="object" attrs="{'invisible':[('state','&lt;&gt;','recurrent')],'readonly':[('is_active','=',False)]}"/>
+					<field name="is_active" attrs="{'readonly':[('state','&lt;&gt;','recurrent')]}"/>
+					<field name="is_billable" attrs="{'readonly':[('state','=','done')]}"/>
+					<field name="cl_total" sum="Total" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+					<field name='warranty_near_the_end' string="EoW"/>
+					<field name='state'/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="eagle_view_contract_pos_form">
+			<field name="name">Eagle Contract Position View</field>
+			<field name="model">eagle.contract.position</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Position">
+					<separator string="Description" colspan="4"/>
+					<field name="eagle_parm_use_price" invisible="1"/>
+					<field name="name" attrs="{'readonly':[('state','=','done')]}" on_change="onchange_product(name, qty, parent.date_start, parent.customer_id, parent.pricelist_id)" colspan="2"/>
+					<newline/>
+					<field name="description" attrs="{'readonly':[('state','=','done')]}" on_change="onchange_description(description, recurrence_id, next_invoice_date)" colspan="4" nolabel="1"/>
+					<notebook>
+						<page string="Informations">
+							<group name="info_left" colspan="2" col="2">
+								<field name="qty" attrs="{'readonly':[('state','=','done')]}" colspan="2" on_change="recomp_line(name,parent.customer_id,qty,list_price)"/>
+								<field name="sequence" attrs="{'readonly':[('state','=','done')]}"/>
+								<field name='state'/>
+							</group>
+							<group name="info_right" colspan="2" col="2">
+								<field name="is_active" string="Active (recurrent items only)" attrs="{'readonly':[('state','&lt;&gt;','recurrent')]}"/>
+								<field name="recurrence_id" attrs="{'readonly':[('state','=','done')]}" on_change="onchange_description(description, recurrence_id, next_invoice_date)"/>
+								<field name="cancellation_deadline" attrs="{'readonly':[('state','=','done')]}"/>
+								<field name="next_invoice_date" attrs="{'readonly':[('state','=','done')]}" on_change="onchange_description(description, recurrence_id, next_invoice_date)"/>
+							</group>
+							<group name="info_out" colspan="4" col="4">
+								<separator string="Reported text" colspan="4"/>
+								<field name="out_description" attrs="{'readonly':[('state','=','done')]}" colspan="4" nolabel="1"/>
+							</group>
+							<group name="info_bottom" colspan="4" col="4"  attrs="{'invisible':[('eagle_parm_use_price','=',False)]}">
+								<separator string="Prices / Amounts" colspan="4"/>
+								<group name="info_bottom_amounts" colspan="2" col="2">
+									<field name="list_price" attrs="{'readonly':[('state','=','done')],'invisible':[('eagle_parm_use_price','=',False)]}" on_change="recomp_line(name,parent.customer_id,qty,list_price)"/>
+									<field name="is_billable" attrs="{'readonly':[('state','=','done')],'invisible':[('eagle_parm_use_price','=',False)]}"/>
+									<field name="cl_total" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}"/>
+								</group>
+								<group name="info_bottom_taxes" colspan="2" col="2">
+									<newline/>
+								</group>
+							</group>
+						</page>
+						<page string="Warranty">
+							<group name="warr_left" colspan="2" col="2">
+								<field name='warranty_state'/>
+								<field name='warranty_end_date'/>
+								<field name='warranty_id'/>
+								<field name='warranty_end_days'/>
+								<field name='warranty_near_the_end'/>
+							</group>
+							<group name="warr_right" colspan="2" col="2">
+								<newline/>
+							</group>
+						</page>
+						<page string="Notes">
+							<field name='notes' colspan="4" nolabel="1"/>
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_form">
+			<field name="name">Eagle Contract View</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Contract">
+					<group colspan="4" col="4" name="top">
+						<field name="name" attrs="{'readonly':[('state','&lt;&gt;','draft')]}"/>
+						<field name="customer_id" attrs="{'readonly':[('state','&lt;&gt;','draft')]}" on_change="onchange_customer(customer_id)"/>
+						<field name="eagle_parm_use_price" invisible="1"/>
+						<field name="eagle_parm_use_members_list" invisible="1"/>
+						<field name="eagle_parm_show_all_meta_tabs" invisible="1"/>
+						<field name="view_selection" invisible="1"/>
+						<field name="view_select_is_visible" invisible="1"/>
+						<field name="eagle_view_selection_account_visible" invisible="1"/>
+						<field name="activeTab_contract" invisible="1"/>
+						<field name="activeTab_account" invisible="1"/>
+					</group>
+					<notebook colspan="4">
+						<page string="Content" attrs="{'invisible':[('activeTab_contract','=',False),('eagle_parm_show_all_meta_tabs','=',False)]}">
+							<field name="positions" nolabel="1" colspan="4"/>
+							<group colspan="4" groups="eagle_base.group_contracts_managers">
+								<group name="act_btns_left" colspan="2">
+									<newline/>
+								</group>
+								<group name="act_btns_right" colspan="2">
+									<newline/>
+								</group>
+							</group>
+						</page>
+						<page string="Messages" attrs="{'invisible':[('activeTab_contract','=',False),('eagle_parm_show_all_meta_tabs','=',False)]}">
+							<field name="message_ids" colspan="4" nolabel="1" mode="tree,form">
+								<tree string=" ">
+									<field name="display_text" width="500"/>
+								</tree>
+								<form string=" ">
+									<group col="4" colspan="4">
+										<field name="date"/>
+										<field name="user_id" colspan="2" readonly="1"/>
+									</group>
+									<separator string="Message" colspan="4"/>
+									<field name="description" colspan="4" nolabel="1" height="250" on_change="onchange_msg_txt(description,user_id,date)"/>
+									<field name="display_text" invisible="1"/>
+								</form>
+							</field>
+						</page>
+						<page string="Requests" attrs="{'invisible':[('activeTab_contract','=',False),('eagle_parm_show_all_meta_tabs','=',False)]}">
+							<field name="request_ids" nolabel="1" mode="tree,form">
+								<tree colors="blue:state in ('waiting');gray:state in ('closed')">
+									<field name="create_date"/>
+									<field name="act_from"/>
+									<field name="act_to"/>
+									<field name="name"/>
+									<button name="request_send" states="draft,active" string="Send" type="object" icon="terp-camera_test"/>
+									<field name="priority"/>
+									<field name="trigger_date"/>
+									<field name="state"/>
+								</tree>
+								<form>
+									<group colspan="4" col="6">
+										<field name="name" colspan="4"/>
+										<field name="create_date" string="Request Date"/>
+										<newline/>
+										<field name="act_from"/>
+										<field name="priority"/>
+										<group colspan="2" col="4">
+											<field name="active"/>
+											<field name="can_send_mails" invisible="1"/>
+											<field name="send_mail" attrs="{'invisible':[('can_send_mails','=',False)]}"/>
+										</group>
+									</group>
+									<notebook colspan="4">
+										<page string="Request">
+											<field name="act_to"/>
+											<field name="trigger_date"/>
+											<separator colspan="4" string="Description"/>
+											<newline/>
+											<field colspan="4" name="body" nolabel="1"/>
+											<group col="5" colspan="4">
+												<field name="state"/>
+												<button name="request_close" states="waiting,draft,active" string="Close" type="object" icon="gtk-close"/>
+												<button name="request_send" states="draft,active" string="Send" type="object" icon="terp-camera_test"/>
+												<button name="request_reply" states="waiting" string="Reply" type="object" icon="gtk-undo"/>
+											</group>
+										</page>
+										<page string="References" groups="base.group_extended">
+											<field name="ref_partner_id"/>
+											<field colspan="4" name="ref_doc1"/>
+											<field colspan="4" name="ref_doc2"/>
+										</page>
+										<page string="History" groups="base.group_extended">
+											<field colspan="4" name="history" nolabel="1" widget="one2many_list"/>
+										</page>
+									</notebook>
+								</form>
+							</field>
+						</page>
+						<page string="Other infos" attrs="{'invisible':[('activeTab_contract','=',False),('eagle_parm_show_all_meta_tabs','=',False)]}">
+							<field name="date_start" attrs="{'readonly':[('state','&lt;&gt;','draft')]}"/>
+							<field name="date_end" attrs="{'readonly':[('state','=','close')]}"/>
+							<field name="financial_partner_id" attrs="{'readonly':[('state','&lt;&gt;','draft')]}"/>
+							<field name="user_id"/>
+							<group colspan="4" name="price_infos" attrs="{'invisible':[('eagle_parm_use_price','=',False)]}">
+								<separator colspan="4" string="Price, totals"/>
+								<field name="pricelist_id"/>
+								<field name="c_total"/>
+							</group>
+							<group colspan="4" name="members_list" attrs="{'invisible':[('eagle_parm_use_members_list','=',False)]}">
+								<separator string="Contract members" colspan="4"/>
+								<field name="members" colspan="4" nolabel="1" attrs="{'readonly':[('state','&lt;&gt;','draft')]}" height="300"/>
+							</group>
+						</page>
+						<page string="Debug" groups="base.group_no_one">
+							<button name="button_cyp_debug" string="Cyp:Debug" type="object"/>
+						</page>
+					</notebook>
+					<group name="state_btns" colspan="4" col="6">
+						<field name="state" readonly="1"/>
+						<button name="contract_draft" string="Offer" states="installation" type="object" groups="eagle_base.group_contracts_managers"/>
+						<button name="contract_installation" string="Installation" states="draft" type="object" groups="eagle_base.group_contracts_managers"/>
+						<button name="contract_production" string="Production" states="installation" type="object" groups="eagle_base.group_contracts_managers"/>
+						<button name="contract_close" string="Close" states="production" type="object" groups="eagle_base.group_contracts_managers"/>
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_tree">
+			<field name="name">Eagle Contracts List</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Contract">
+					<field name="name"/>
+					<field name="customer_id"/>
+					<field name="date_start"/>
+					<field name="date_end"/>
+					<field name="user_id"/>
+					<field name="state"/>
+					<field name="warranty_near_the_end" string="EoW"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_filter">
+			<field name="name">Eagle Contracts Filter</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Search Contracts">
+					<field name="name" select="1"/>
+					<field name="customer_id" select="1"/>
+					<newline/>
+					<group expand="0" string="Group By..." groups="base.group_extended">
+						<filter string="Customer" icon="terp-personal" domain="[]" context="{'group_by':'customer_id'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_contract_filter_no_cust">
+			<field name="name">Eagle Contracts Filter</field>
+			<field name="model">eagle.contract</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Search Contracts">
+					<field name="name" select="1"/>
+				</search>
+			</field>
+		</record>
+
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_all_tree">
+			<field name="name">All Contracts</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_draft_form">
+			<field name="name">Offers</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="domain">[('state','=','draft')]</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_inst_form">
+			<field name="name">Installations</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="domain">[('state','=','installation')]</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_prod_form">
+			<field name="name">Productions</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="domain">[('state','=','production')]</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_close_form">
+			<field name="name">Closed Contracts</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="domain">[('state','=','closed'),('members','in',[uid])]</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_filter_my_form">
+			<field name="name">My Contracts</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="domain">[('user_id','=',uid)]</field>
+		</record>
+		
+		<record model="ir.actions.act_window" id="eagle_action_contract_create">
+			<field name="name">Create a new Contract</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+			<field name="search_view_id" ref="eagle_view_contract_filter"/>
+			<field name="view_id" ref="eagle_view_contract_form"/>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_contract_near_end">
+			<field name="name">Warranties near the end</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">eagle.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="eagle_view_contract_tree"/>
+			<field name="domain">[('warranty_near_the_end','=',True)]</field>
+		</record>
+
+
+		<record model="ir.ui.view" id="eagle_view_customers_list">
+			<field name="name">Customers</field>
+			<field name="model">eagle.customer</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Customers">
+					<field name="customer"/>
+					<field name="nb_contracts"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="eagle_action_contract_all_form">
+			<field name="name">All Contracts, by customers</field>
+			<field name="res_model">eagle.customer</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="view_type">tree</field>
+			<field name="view_id" ref="eagle_view_customers_list"/>
+		</record>
+
+		<act_window
+			context="{'customer_id': active_id}"
+			domain="[('customer_id','=',active_id)]"
+			id="eagle_action_cust_2_contracts_list"
+			name="Contracts"
+			res_model="eagle.contract"
+			src_model="eagle.customer"/>
+
+		<record model="ir.values" id="eagle_ir_cust_contract_select">
+			<field name="key2">tree_but_open</field>
+			<field name="model">eagle.customer</field>
+			<field name="name">Open Contracts</field>
+			<field eval="'ir.actions.act_window,%d'%eagle_action_cust_2_contracts_list" name="value"/>
+			<field eval="True" name="object"/>
+			<field name="search_view_id" ref="eagle_view_contract_filter_no_cust"/>
+		</record>
+
+	<!--
+			WARRANTIES
+	-->
+
+		<record model="ir.ui.view" id="eagle_view_warranty_form">
+			<field name="name">Eagle Warranties List</field>
+			<field name="model">eagle.warranty</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Units of Recurrence" col="6">
+					<field name="name" select="True"/>
+					<field name="recurrence_id"/>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_warranty_form">
+			<field name="name">Eagle Warranty Form</field>
+			<field name="model">eagle.warranty</field>
+			<field name="type">tree</field>
+			<field name="priority">1</field>
+			<field name="arch" type="xml">
+				<tree string="Units of Recurrence">
+					<field name="name" select="True"/>
+					<field name="recurrence_id"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="eagle_view_warranty_filter">
+			<field name="name">Eagle Warranty Filter</field>
+			<field name="model">eagle.warranty</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Search Warranties">
+					<field name="name" select="1"/>
+					<field name="recurrence_id" select="1"/>
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="eagle_action_warranty_view">
+			<field name="name">Warranties</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">eagle.warranty</field>
+			<field name="view_type">form</field>
+			<field name="search_view_id" ref="eagle_view_warranty_filter"/>
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,71 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-26 05:18+0000\n"
+"PO-Revision-Date: 2011-08-23 21:37+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:32+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: multi_company_stock
+#: model:ir.module.module,shortdesc:multi_company_stock.module_meta_information
+msgid "Multi company Stock Management"
+msgstr ""
+
+#. module: multi_company_stock
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: multi_company_stock
+#: model:res.company,overdue_msg:multi_company_stock.res_company_shop0
+#: model:res.company,overdue_msg:multi_company_stock.res_company_tinyshop0
+msgid ""
+"Would your payment have been carried out after this mail was sent, please "
+"consider the present one as void. Do not hesitate to contact our accounting "
+"department"
+msgstr ""
+
+#. module: multi_company_stock
+#: field:mrp.bom,company_id:0
+#: field:mrp.procurement,company_id:0
+#: field:mrp.production,company_id:0
+#: field:mrp.workcenter,company_id:0
+#: field:stock.inventory,company_id:0
+#: field:stock.location,company_id:0
+#: field:stock.move,company_id:0
+#: field:stock.picking,company_id:0
+#: field:stock.warehouse,company_id:0
+#: field:stock.warehouse.orderpoint,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: multi_company_stock
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Error! No puede crear compañias recursivas."
+
+#. module: multi_company_stock
+#: model:stock.location,name:multi_company_stock.stock_location_shop1
+msgid "Shop 2"
+msgstr "Tienda 2"
+
+#. module: multi_company_stock
+#: model:stock.location,name:multi_company_stock.stock_location_shop0
+msgid "Shop 1"
+msgstr "Tienda 1"
+
+#. module: multi_company_stock
+#: model:stock.location,name:multi_company_stock.stock_location_intermediatelocation0
+msgid "Internal Shippings"
+msgstr "Envíos internos"

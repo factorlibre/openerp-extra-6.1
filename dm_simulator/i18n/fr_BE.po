@@ -1,0 +1,392 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_simulator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:39:10+0000\n"
+"PO-Revision-Date: 2009-11-25 07:39:10+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_simulator
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,duration_unit:0
+msgid "Weeks"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,logs:0
+msgid "Logs"
+msgstr ""
+
+#. module: dm_simulator
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,duration_unit:0
+msgid "Time Unit"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Start Simulation"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,step_id:0
+msgid "Offer Step"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,section_qty:0
+#: field:dm.simulator.action,section:0
+msgid "Section"
+msgstr ""
+
+#. module: dm_simulator
+#: model:ir.model,name:dm_simulator.model_dm_simulator_action
+msgid "DM Campaign Simulator Action"
+msgstr ""
+
+#. module: dm_simulator
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_simulator
+#: model:ir.module.module,description:dm_simulator.module_meta_information
+msgid "\n"
+"            This module is used to launch simulation on other servers.\n"
+"            "
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Actions Logs"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Statistics"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,error_msg:0
+msgid "Error Message"
+msgstr ""
+
+#. module: dm_simulator
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_simulator
+#: constraint:dm.offer:0
+msgid "Error ! this offer idea is already assigned                                   to an offer"
+msgstr ""
+
+#. module: dm_simulator
+#: model:ir.actions.act_window,name:dm_simulator.act_dm_simulator_form
+#: model:ir.ui.menu,name:dm_simulator.menu_act_dm_simulator_form
+msgid "Campaign Simulator"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Stop Simulation"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,so_gen:0
+msgid "Generate Sale Orders"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,state:0
+#: selection:dm.simulator.action,state:0
+msgid "Pending"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+#: field:dm.simulator,state:0
+msgid "Status"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,cust_qty:0
+msgid "Customers"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,avg_rate:0
+msgid "Average Actions/Second"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,action_start:0
+msgid "Action Start"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Actions Statistics"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Quantities"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,state:0
+msgid "Running"
+msgstr ""
+
+#. module: dm_simulator
+#: model:ir.module.module,shortdesc:dm_simulator.module_meta_information
+msgid "Direct Marketing Campaign Simulator"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Options"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,duration_unit:0
+msgid "Hours"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,source:0
+msgid "source"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,invoice_gen:0
+msgid "Create Invoice from Sale Order"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Simulators"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,date_stop:0
+msgid "Date Stop"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,sale_rate:0
+msgid "Sale Rate (%)"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,action_dur_total:0
+msgid "Total Action Duration"
+msgstr ""
+
+#. module: dm_simulator
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_piforCSDF-1DAY
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_piforCSDF-1HOUR
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_piforCSDF-1WEEK
+msgid "PI"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,segment_id:0
+msgid "Segment"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,type:0
+msgid "Purchase Simulation"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,address_id:0
+msgid "Customer"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Dates"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,name:0
+msgid "Name"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,action_time:0
+msgid "Action Time"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,invoice_pay:0
+msgid "Pay Invoice"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,action_stop:0
+msgid "Action Stop"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,duration_unit:0
+msgid "Months"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,duration_unit:0
+msgid "Days"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Simulation Description"
+msgstr ""
+
+#. module: dm_simulator
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_imforCSDF-1DAY
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_imforCSDF-1HOUR
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_imforCSDF-1WEEK
+msgid "IM"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator.action,state:0
+msgid "Error"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "Simulation Informations"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+#: field:dm.simulator.action,simulator_id:0
+#: model:ir.ui.menu,name:dm_simulator.menu_dm_simulator
+msgid "Simulator"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,duration_unit:0
+msgid "Minutes"
+msgstr ""
+
+#. module: dm_simulator
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alpiforCSDF-1DAY
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alpiforCSDF-1HOUR
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alpiforCSDF-1WEEK
+msgid "ALPI"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,note:0
+msgid "Description"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,type:0
+msgid "Type"
+msgstr ""
+
+#. module: dm_simulator
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alimforCSDF-1DAY
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alimforCSDF-1HOUR
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_alimforCSDF-1WEEK
+msgid "ALIM"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,campaign_id:0
+msgid "Campaign"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,action_pending_qty:0
+msgid "Actions Pending"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,trigger_type_id:0
+msgid "Trigger Condition"
+msgstr ""
+
+#. module: dm_simulator
+#: constraint:account.analytic.account:0
+msgid "Error! You can not create recursive analytic accounts."
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator.action,state:0
+msgid "State"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,action_qty:0
+msgid "Actions"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+msgid "General"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,stats:0
+msgid "Statistics Logs"
+msgstr ""
+
+#. module: dm_simulator
+#: model:ir.model,name:dm_simulator.model_dm_simulator
+msgid "DM Campaign Simulator"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,action_done_qty:0
+msgid "Actions Done"
+msgstr ""
+
+#. module: dm_simulator
+#: selection:dm.simulator,state:0
+#: selection:dm.simulator.action,state:0
+msgid "Done"
+msgstr ""
+
+#. module: dm_simulator
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_smforCSDF-1DAY
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_smforCSDF-1HOUR
+#: model:dm.offer.step,code:dm_simulator.dm_offer_step_smforCSDF-1WEEK
+msgid "SM"
+msgstr ""
+
+#. module: dm_simulator
+#: view:dm.simulator:0
+#: field:dm.simulator,duration:0
+msgid "Duration"
+msgstr ""
+
+#. module: dm_simulator
+#: field:dm.simulator,date_start:0
+msgid "Date Start"
+msgstr ""
+

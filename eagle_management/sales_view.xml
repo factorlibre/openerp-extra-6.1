@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  File: sales_view.xml
+  Module: eagle_management
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="eagle_view_sale_form_inherit_1">
+			<field name="name">Eagle Sale view</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_form"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<field groups="base.group_extended" name="origin" position="after">
+					<field name="contract_id" select="1" groups="base.group_extended"/>
+				</field>
+			</field>
+		</record>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id),('state','=','draft')]" 
+			id="act_contract_2_curr_sale_order"
+			name="Current Sale Order" 
+			res_model="sale.order" 
+			src_model="eagle.contract"/>
+
+		<act_window 
+			domain="[('contract_id', '=', active_id),('state','&lt;&gt;','draft')]" 
+			id="act_contract_2_oth_sale_orders"
+			name="Past Sale Order" 
+			res_model="sale.order" 
+			src_model="eagle.contract"/>
+
+	</data>
+</openerp>

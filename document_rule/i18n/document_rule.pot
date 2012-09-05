@@ -1,0 +1,251 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* document_rule
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 14:58:22+0000\n"
+"PO-Revision-Date: 2009-11-25 14:58:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Delay After Trigger Date:"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,ressource_id:0
+msgid "Resource ID"
+msgstr ""
+
+#. module: document_rule
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: document_rule
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,author:0
+msgid "Author"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "None"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,server_act:0
+#: field:ir.attachment,act:0
+msgid "Action"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,trg_date_range_type:0
+msgid "Delay type"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Regex on Filename"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,trg_date_range:0
+msgid "Delay after  date"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Directory Actions"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditions"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Hours"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,act_move_directory_id:0
+msgid "Move to"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "Creation Date"
+msgstr ""
+
+#. module: document_rule
+#: model:ir.model,name:document_rule.model_document_rule
+msgid "Document Rule"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "Last Action Date"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditon"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,act_assign_user_id:0
+msgid "Assign to User"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,flag:0
+msgid "Flag"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,regex_title:0
+msgid "Regular Expression on Title"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,active:0
+msgid "Active"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,date:0
+msgid "Date Creation"
+msgstr ""
+
+#. module: document_rule
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,act_copy_directory_id:0
+msgid "Copy to"
+msgstr ""
+
+#. module: document_rule
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+#: model:ir.ui.menu,name:document_rule.menu_document_rules
+msgid "Document Rules"
+msgstr ""
+
+#. module: document_rule
+#: model:ir.module.module,shortdesc:document_rule.module_meta_information
+msgid "Extension Module of Document Management System"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Months"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Server Action"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,act_assign_partner_id:0
+msgid "Assign to Partner"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Days"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,regex_filename:0
+msgid "Regular Expression on filename"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,partner_id:0
+msgid "Partner"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,directory_id:0
+msgid "Directory"
+msgstr ""
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Minutes"
+msgstr ""
+
+#. module: document_rule
+#: model:ir.module.module,description:document_rule.module_meta_information
+msgid " This is  module of document management system with\n"
+"     Implementation of document rule "
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+#: field:document.rule,name:0
+msgid "Rule Name"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Regex on Title"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,resource_object:0
+msgid "Resource Model"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Actions"
+msgstr ""
+
+#. module: document_rule
+#: field:ir.attachment,date_action_next:0
+msgid "Next Action"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Assign To"
+msgstr ""
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditions on States"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,trg_date_type:0
+msgid "Trigger Date"
+msgstr ""
+

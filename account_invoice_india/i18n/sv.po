@@ -1,0 +1,708 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_invoice_india
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.14\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-26 06:50+0000\n"
+"PO-Revision-Date: 2011-02-15 15:01+0000\n"
+"Last-Translator: Olivier Dony (OpenERP) <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:29+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: account_invoice_india
+#: model:ir.actions.report.xml,name:account_invoice_india.account_general_ledger_custom
+msgid "Custom General Ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Invoice Date:"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_view:partner.account.create,init:0
+msgid "Partner Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:partner.account.create,init,debit_name:0
+msgid "Receivable Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: selection:account.invoice,retail_tax:0
+msgid "Service"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Canceled Invoice"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Excise Division"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.partner.balance.new:0
+msgid "Particulars"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Invoice No."
+msgstr ""
+
+#. module: account_invoice_india
+#: selection:account.invoice,retail_tax:0
+msgid "Retail"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.general.ledger.report.custom,init,date1:0
+#: wizard_field:account.partner.balance.new.report,init,date1:0
+#: wizard_field:account.third_party_ledger.partner.report,init,date1:0
+msgid "Start of period"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,company_id:0
+#: wizard_field:account.partner.balance.new.report,init,company_id:0
+#: wizard_field:account.third_party_ledger.partner.report,init,company_id:0
+#: wizard_field:partner.account.create,init,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Total (inclu. taxes):"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid ","
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Base"
+msgstr ""
+
+#. module: account_invoice_india
+#: field:account.invoice,other_amount:0
+msgid "Others"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Total for"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+msgid "Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_button:account.aged.trial.balance1,init,print:0
+msgid "Print Aged Trial Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Third Party Balance-"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_view:account.aged.trial.balance1,init:0
+msgid "Aged Trial Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Taxes"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Amount"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Party Name :"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.ui.menu,name:account_invoice_india.menu_third_party_wise_ledger
+msgid "Partner wise Ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_view:account.general.ledger.report.custom,init:0
+#: wizard_view:account.partner.balance.new.report,init:0
+#: wizard_view:account.third_party_ledger.partner.report,init:0
+msgid "Select period"
+msgstr ""
+
+#. module: account_invoice_india
+#: selection:account.invoice,retail_tax:0
+#: rml:tax.retail.account.invoice:0
+msgid "Tax"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Tel.:"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.ui.menu,name:account_invoice_india.menu_action_account_tree21
+msgid "Perediocal Charts of Accounts"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Fax :"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.report.xml,name:account_invoice_india.report_account_invoice
+msgid "Invoice - Exice"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_button:partner.account.create,init,next:0
+msgid "Create Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,partners:0
+#: wizard_field:account.partner.balance.new.report,init,partners:0
+#: wizard_field:account.third_party_ledger.partner.report,init,partners:0
+msgid "Partners"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Code :"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "From"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "For"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Account num."
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Disc. (%)"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Supplier Invoice"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Billing Address"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+#: rml:account.partner.balance.new:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Debit"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_button:account.general.ledger.report.custom,init,report:0
+#: wizard_button:account.partner.balance.new.report,init,report:0
+#: wizard_button:account.third_party_ledger.partner.report,init,report:0
+msgid "Print"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,date_from:0
+msgid "Start date"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "VAT :"
+msgstr ""
+
+#. module: account_invoice_india
+#: selection:account.invoice,retail_tax:0
+msgid "Local Retail"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:partner.account.create,init,debit_parent:0
+msgid "Account Receivable"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+msgid "Vch Type"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Authorised Signatory"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.report.xml,name:account_invoice_india.account_journal
+msgid "Custom Journal Print"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_aged_trial_balance
+msgid "Aged partner balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_view:account.chart.periods,init:0
+msgid "Account charts"
+msgstr ""
+
+#. module: account_invoice_india
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Transaction"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.ui.menu,name:account_invoice_india.menu_aged_trial_balance
+msgid "Aged Partner Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Excise:"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Customer PO No."
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Draft Invoice"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "From :"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+msgid "TOTAL ("
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "CST No. & Date"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.report.xml,name:account_invoice_india.account_3party_ledger
+msgid "Partner ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Narration"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Total (excl. taxes):"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+msgid "):"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+msgid "No"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Phone :"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+msgid "Ledger Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Excise Reg. No. & Date"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Opening Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Sr. No."
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Currency:"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.module.module,shortdesc:account_invoice_india.module_meta_information
+msgid "Accounting Base Configuration and Properties"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "PRO-FORMA"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Shipping Address"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "J. code"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.report.xml,name:account_invoice_india.account_3rdparty_account_balance_new
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_partner_balance_new_report
+msgid "Partner balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Date"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid ":"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.module.module,description:account_invoice_india.module_meta_information
+msgid ""
+"Accounting Base Properties Reports and Wizards,\n"
+"    Basic properties for the Customer / Suppliers for the Accounting\n"
+"    Wizards to Allowd to create a Party Accounts, \n"
+"    Reports that provides Indian Accounting Reports for Invoice\n"
+"    "
+msgstr ""
+"Accounting Base Properties Reports and Wizards,\n"
+"    Basic properties for the Customer / Suppliers for the Accounting\n"
+"    Wizards to Allowd to create a Party Accounts, \n"
+"    Reports that provides Indian Accounting Reports for Invoice\n"
+"    "
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "To:"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:partner.account.create,init,credit_name:0
+msgid "Payable Account"
+msgstr ""
+
+#. module: account_invoice_india
+#: help:account.aged.trial.balance1,init,fiscalyear:0
+#: help:account.chart.periods,init,fiscalyear:0
+#: help:account.chart.periods,init,periods:0
+#: help:account.general.ledger.report.custom,init,fiscalyear:0
+#: help:account.partner.balance.new.report,init,fiscalyear:0
+#: help:account.third_party_ledger.partner.report,init,fiscalyear:0
+msgid "Keep empty for all open fiscal year"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Grand Total"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+#: rml:account.partner.balance.new:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Credit"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.general.ledger.report.custom,init,date2:0
+#: wizard_field:account.partner.balance.new.report,init,date2:0
+#: wizard_field:account.third_party_ledger.partner.report,init,date2:0
+msgid "End of period"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Refund"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,date_to:0
+msgid "End date"
+msgstr ""
+
+#. module: account_invoice_india
+#: field:account.invoice,excise_amount:0
+msgid "Excise"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.ui.menu,name:account_invoice_india.menu_partner_new_balance
+msgid "Partner Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Qty"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,fiscalyear:0
+#: wizard_field:account.chart.periods,init,fiscalyear:0
+#: wizard_field:account.general.ledger.report.custom,init,fiscalyear:0
+#: wizard_field:account.partner.balance.new.report,init,fiscalyear:0
+#: wizard_field:account.third_party_ledger.partner.report,init,fiscalyear:0
+msgid "Fiscal year"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+msgid "Third Party"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.chart.periods,init,periods:0
+msgid "Periods"
+msgstr ""
+
+#. module: account_invoice_india
+#: field:account.invoice,retail_tax:0
+#: rml:tax.retail.account.invoice:0
+msgid "Invoice"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_button:account.aged.trial.balance1,init,end:0
+#: wizard_button:account.chart.periods,init,end:0
+#: wizard_button:account.general.ledger.report.custom,init,end:0
+#: wizard_button:account.partner.balance.new.report,init,end:0
+#: wizard_button:account.third_party_ledger.partner.report,init,end:0
+#: wizard_button:partner.account.create,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:partner.account.create,init,credit_parent:0
+msgid "Account Payable"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Email :"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:report.account.third_party_wise_ledger:0
+msgid "To"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Unit Price"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Account Name"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_partner_account_create
+msgid "Create Party Ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Excise Range"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Taxes:"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_account_general_ledger_custom
+msgid "Custom General ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "PAN No."
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Description"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_button:account.chart.periods,init,open:0
+msgid "Open Charts"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.ui.menu,name:account_invoice_india.indian_accounting_reports2
+msgid "Miscellaneous Reports"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+#: rml:report.account.third_party_wise_ledger:0
+#: rml:tax.retail.account.invoice:0
+msgid "-"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Tel. :"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.partner.balance.new:0
+msgid "Closing Balance"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_third_party_wise_ledger
+msgid "Partner wise ledger"
+msgstr ""
+
+#. module: account_invoice_india
+#: help:account.aged.trial.balance1,init,partners:0
+msgid "All Partners if empty"
+msgstr ""
+
+#. module: account_invoice_india
+#: wizard_field:account.aged.trial.balance1,init,period_length:0
+msgid "Period length (days)"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.general.ledger.custom.print:0
+#: rml:account.journal.period.print.custom:0
+msgid "TOTAL:"
+msgstr ""
+
+#. module: account_invoice_india
+#: field:account.invoice,latest_date:0
+msgid "Latest Date"
+msgstr ""
+
+#. module: account_invoice_india
+#: model:ir.actions.wizard,name:account_invoice_india.wizard_account_chart_periods
+msgid "Perediocal Accounts Charts"
+msgstr ""
+
+#. module: account_invoice_india
+#: field:account.invoice.line,exise_amt:0
+msgid "Exise Amount"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:report.account.third_party_wise_ledger:0
+msgid "Voucher No"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "LST/VAT No. & Date"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Customer Date:"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:account.journal.period.print.custom:0
+msgid "Voucher Nb"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Service Tax No."
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Supplier Refund"
+msgstr ""
+
+#. module: account_invoice_india
+#: rml:tax.retail.account.invoice:0
+msgid "Total"
+msgstr ""

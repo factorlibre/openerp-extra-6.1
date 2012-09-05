@@ -1,0 +1,265 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_file_format
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.12\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-08-31 07:07:33+0000\n"
+"PO-Revision-Date: 2010-08-31 07:07:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nan_file_format
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,length:0
+msgid "If the length of the field is 0, it's means that dosen't matter how many chars it take"
+msgstr ""
+
+#. module: nan_file_format
+#: view:file.format.field:0
+msgid "Deilvery File Field"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,align:0
+msgid "If you have writte a specific length, you can decid the alignement of the value"
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.model,name:nan_file_format.model_file_format
+msgid "file.format"
+msgstr ""
+
+#. module: nan_file_format
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.actions.act_window,name:nan_file_format.action_delivery_file_format_config
+msgid "Delivery File Format"
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.ui.menu,name:nan_file_format.file_format_config_menu_id
+msgid "File Format Config"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,name:0
+msgid "Format name"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,fill_char:0
+msgid "Fill Char"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,format_id:0
+msgid "Format"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,quote:0
+msgid "Quote"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,quote:0
+msgid "Character to use as quote"
+msgstr ""
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid "The field 'Fill Char' of the %s is required, because you have selected and specific length"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,separator:0
+msgid "Put here, if it's necessary, the seprator between each field"
+msgstr ""
+
+#. module: nan_file_format
+#: view:file.format.field:0
+msgid "File Format Field"
+msgstr ""
+
+#. module: nan_file_format
+#: view:file.format:0
+msgid "Deilvery File Configuration"
+msgstr ""
+
+#. module: nan_file_format
+#: view:file.format:0
+msgid "File Format Configuration"
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.module.module,description:nan_file_format.module_meta_information
+msgid "\n"
+"        Specification for the export file.\n"
+"        We define the model on data extract, configure direcory and filename separator characters in fields and used as a separator text.\n"
+"        We define each field, indicating the order, the name that will be used in the header, and if required length, alignment and fill character, format and number of decimal character.\n"
+"    "
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,decimal_character:0
+msgid "IF you neeed and specific decimal charcter for the float fields"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,path:0
+msgid "Path"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,align:0
+msgid "Align"
+msgstr ""
+
+#. module: nan_file_format
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,name:0
+#: field:file.format.field,name:0
+msgid "Name"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,format_number:0
+msgid "This field is only for the format of an integer or a float. E.g. if you have a float and want 2 decimals you have to write '%.2f' (without simple quotes)"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,field_ids:0
+msgid "Fields"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,file_name:0
+msgid "File name"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,decimal_character:0
+msgid "Decimal Character"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,length:0
+msgid "Length"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,path:0
+msgid "The path to the file name. The last slash is not necessary"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,separator:0
+msgid "Separator"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format,header:0
+msgid "Header (fields name) on files"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,model_id:0
+msgid "Model"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,expression:0
+msgid "Expression"
+msgstr ""
+
+#. module: nan_file_format
+#: selection:file.format.field,align:0
+msgid "Left"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,fill_char:0
+msgid "If you have writte a specific length, here you have to specify with which char the program have to fill the empty chars"
+msgstr ""
+
+#. module: nan_file_format
+#: selection:file.format.field,align:0
+msgid "Right"
+msgstr ""
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid "the file %s is write correctly"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,expression:0
+msgid "Where we put the python code. The fields are called like '$name_of_field' (without the simple quotes)"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,file_name:0
+msgid "File Name"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format,header:0
+msgid "Header"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,sequence:0
+msgid "Is the order that you want for the columns field in the file"
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.module.module,shortdesc:nan_file_format.module_meta_information
+msgid "Configuration File Format"
+msgstr ""
+
+#. module: nan_file_format
+#: help:file.format.field,name:0
+msgid "The name of the field. It's used if you have selected the Header checkbox"
+msgstr ""
+
+#. module: nan_file_format
+#: code:addons/nan_file_format/format.py:0
+#, python-format
+msgid "The expression to export for the %s file is %s and it's val: %s"
+msgstr ""
+
+#. module: nan_file_format
+#: model:ir.model,name:nan_file_format.model_file_format_field
+msgid "file.format.field"
+msgstr ""
+
+#. module: nan_file_format
+#: field:file.format.field,format_number:0
+msgid "Number Format"
+msgstr ""
+

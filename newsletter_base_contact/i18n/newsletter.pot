@@ -1,0 +1,149 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* newsletter_base_contact
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.11\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-09-29 11:08:57+0000\n"
+"PO-Revision-Date: 2010-09-29 11:08:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: newsletter_base_contact
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_newsletter
+#: view:newsletter.newsletter:0
+msgid "Newsletter Category"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,parent_id:0
+msgid "Partner Newsletter"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,child_ids:0
+msgid "Child Newsletter"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_unsubscribe_reason
+#: field:newsletter.subscription,newsletter_unsubscribe:0
+#: view:res.partner.contact:0
+msgid "Unsubscribe"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: help:newsletter.unsubscribe.reason,active:0
+msgid "The active field allows you to hide the unsubscribe without removing it."
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,active:0
+#: field:newsletter.unsubscribe.reason,active:0
+msgid "Active"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.subscription,newsletter_unsubscribe_reason_id:0
+msgid "Newsletter Unsubscribe Reason"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter_by_category
+msgid "Subscriptions by Newsletter"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,name:0
+#: field:newsletter.unsubscribe.reason,name:0
+msgid "Name"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: view:newsletter.newsletter:0
+msgid "Newsletter Categories"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: help:newsletter.newsletter,active:0
+msgid "The active field allows you to hide the newsletter without removing it."
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.subscription,partner_contact_id:0
+msgid "Contact"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: view:newsletter.unsubscribe.reason:0
+msgid "unsubscribe"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_unsubscribe_reason
+msgid "Newsletter Unsubscribe reason"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: field:newsletter.newsletter,complete_name:0
+msgid "Full Name"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: view:newsletter.subscription:0
+msgid "subscription"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_unsubscribe_reason
+msgid "Unsubscribe Category"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.module.module,shortdesc:newsletter_base_contact.module_meta_information
+msgid "Newsletter for contacts (base_contact)"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.module.module,description:newsletter_base_contact.module_meta_information
+msgid "Creates the categorization of their contacts and then send newsletter with..."
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter
+#: model:ir.actions.act_window,name:newsletter_base_contact.action_newsletter_newsletter_category
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_newsletter
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter
+#: model:ir.ui.menu,name:newsletter_base_contact.menu_newsletter_newsletter_main
+#: field:newsletter.subscription,newsletter_id:0
+#: view:res.partner.contact:0
+#: field:res.partner.contact,newsletter:0
+msgid "Newsletter"
+msgstr ""
+
+#. module: newsletter_base_contact
+#: model:ir.model,name:newsletter_base_contact.model_newsletter_subscription
+msgid "Newsletter subscription"
+msgstr ""
+

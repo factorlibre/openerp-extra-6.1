@@ -1,0 +1,4 @@
+"id","type_id:id","model_id:id","external_list_method","external_get_method","external_update_method","external_create_method","external_delete_method","external_key_name"
+"salesforce_partners","salesforce","base.model_res_partner","select Id,Name from Account",,,,,"salesforce_id"
+"salesforce_partner_address","salesforce","base.model_res_partner_address",,,,,,"salesforce_id"
+"salesforce_partner_contact","salesforce","base_contact.model_res_partner_contact","select Id,AccountId,FirstName,LastName,MobilePhone,Email from Contact",,,,,"salesforce_id"

@@ -1,0 +1,257 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 14:58+0000\n"
+"PO-Revision-Date: 2011-08-23 13:32+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Delay After Trigger Date:"
+msgstr "Demora después fecha del disparo:"
+
+#. module: document_rule
+#: field:document.rule,ressource_id:0
+msgid "Resource ID"
+msgstr "ID del recurso"
+
+#. module: document_rule
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El objeto debe empezar con  x_ y no puede contener ningún carácter especial!"
+
+#. module: document_rule
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: document_rule
+#: field:document.rule,author:0
+msgid "Author"
+msgstr "Autor"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "None"
+msgstr "Ninguna"
+
+#. module: document_rule
+#: field:document.rule,server_act:0
+#: field:ir.attachment,act:0
+msgid "Action"
+msgstr "Acción"
+
+#. module: document_rule
+#: field:document.rule,trg_date_range_type:0
+msgid "Delay type"
+msgstr "Tipo de retraso"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Regex on Filename"
+msgstr "Regex en nombre del archivo"
+
+#. module: document_rule
+#: field:document.rule,trg_date_range:0
+msgid "Delay after  date"
+msgstr "Demora después de la fecha"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Directory Actions"
+msgstr "Directorio de acciones"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditions"
+msgstr "Condiciones"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Hours"
+msgstr "Horas"
+
+#. module: document_rule
+#: field:document.rule,act_move_directory_id:0
+msgid "Move to"
+msgstr "Mover a"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "Creation Date"
+msgstr "Fecha de creación"
+
+#. module: document_rule
+#: model:ir.model,name:document_rule.model_document_rule
+msgid "Document Rule"
+msgstr "Regla documento"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_type:0
+msgid "Last Action Date"
+msgstr "Fecha última acción"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditon"
+msgstr "Condición"
+
+#. module: document_rule
+#: field:document.rule,act_assign_user_id:0
+msgid "Assign to User"
+msgstr "Asignar al usuario"
+
+#. module: document_rule
+#: field:document.rule,flag:0
+msgid "Flag"
+msgstr ""
+
+#. module: document_rule
+#: field:document.rule,regex_title:0
+msgid "Regular Expression on Title"
+msgstr "Expresiones regulares en el título"
+
+#. module: document_rule
+#: field:document.rule,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: document_rule
+#: field:document.rule,date:0
+msgid "Date Creation"
+msgstr "Fecha de creación"
+
+#. module: document_rule
+#: constraint:ir.cron:0
+msgid "Invalid arguments"
+msgstr "Argumentos inválidos"
+
+#. module: document_rule
+#: field:document.rule,act_copy_directory_id:0
+msgid "Copy to"
+msgstr "Copiar a"
+
+#. module: document_rule
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: document_rule
+#: view:document.rule:0
+#: model:ir.ui.menu,name:document_rule.menu_document_rules
+msgid "Document Rules"
+msgstr "Reglas del documento"
+
+#. module: document_rule
+#: model:ir.module.module,shortdesc:document_rule.module_meta_information
+msgid "Extension Module of Document Management System"
+msgstr "Módulo de ampliación del sistema de gestión documental"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Months"
+msgstr "Meses"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Server Action"
+msgstr "Acción del servidor"
+
+#. module: document_rule
+#: field:document.rule,act_assign_partner_id:0
+msgid "Assign to Partner"
+msgstr "Asignar a la empresa"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Days"
+msgstr "Días"
+
+#. module: document_rule
+#: field:document.rule,regex_filename:0
+msgid "Regular Expression on filename"
+msgstr "Expresiones regulares en nombre de archivo"
+
+#. module: document_rule
+#: field:document.rule,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: document_rule
+#: field:document.rule,directory_id:0
+msgid "Directory"
+msgstr "Directorio"
+
+#. module: document_rule
+#: selection:document.rule,trg_date_range_type:0
+msgid "Minutes"
+msgstr "Minutos"
+
+#. module: document_rule
+#: model:ir.module.module,description:document_rule.module_meta_information
+msgid ""
+" This is  module of document management system with\n"
+"     Implementation of document rule "
+msgstr ""
+" Este es el módulo de sistema de gestión de documentos con\n"
+"     Aplicación de las reglas del documento "
+
+#. module: document_rule
+#: view:document.rule:0
+#: field:document.rule,name:0
+msgid "Rule Name"
+msgstr "Nombre de la regla"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Regex on Title"
+msgstr "Regex en el título"
+
+#. module: document_rule
+#: field:document.rule,sequence:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: document_rule
+#: field:document.rule,resource_object:0
+msgid "Resource Model"
+msgstr "Modelo de recursos"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Actions"
+msgstr "Acciones"
+
+#. module: document_rule
+#: field:ir.attachment,date_action_next:0
+msgid "Next Action"
+msgstr "Acción siguiente"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Assign To"
+msgstr "Asignar a"
+
+#. module: document_rule
+#: view:document.rule:0
+msgid "Conditions on States"
+msgstr "Condiciones en estados"
+
+#. module: document_rule
+#: field:document.rule,trg_date_type:0
+msgid "Trigger Date"
+msgstr "Fecha activación"

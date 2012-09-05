@@ -1,0 +1,14 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_dm_emailvision_template_offeradmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_offeradmin",1,1,1,1
+"access_dm_emailvision_template_offermanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_offermanager",1,1,1,1
+"access_dm_emailvision_template_campadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_campaignadmin",1,0,0,0
+"access_dm_emailvision_template_campmanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_campaignmanager",1,0,0,0
+"access_dm_emailvision_template_custfileadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_custfileadmin",1,0,0,0
+"access_dm_emailvision_template_custfilemanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_custfilemanager",1,0,0,0
+"access_dm_emailvision_template_itemadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_itemadmin",1,0,0,0
+"access_dm_emailvision_template_itemmanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_itemmanager",1,0,0,0
+"access_dm_emailvision_template_manufacturingadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_manufacturingadmin",1,0,0,0
+"access_dm_emailvision_template_manufacturingmanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_manufacturingmanager",1,0,0,0
+"access_dm_emailvision_template_dtpadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_dtpadmin",1,0,0,0
+"access_dm_emailvision_template_dtpmanager","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_dtpmanager",1,0,0,0
+"access_dm_emailvision_template_dmadmin","dm.emailvision.template","model_dm_emailvision_template","dm.res_groups_dmadmin",1,1,1,1

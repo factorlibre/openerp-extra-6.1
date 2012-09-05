@@ -1,0 +1,562 @@
+# Finnish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 05:36+0000\n"
+"PO-Revision-Date: 2011-07-05 09:05+0000\n"
+"Last-Translator: Juha Kotamäki <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,version_not_found:0
+#: wizard_view:download.publish.file,version_not_found:0
+msgid ""
+"Revision for the selected language is not found either in version or in "
+"profile "
+msgstr ""
+"Revisiota valitusta kielestä ei löytynyt kummastakaan profiilin versiosta "
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,same_lang_loaded:0
+#: wizard_view:download.publish.file,same_lang_loaded:0
+msgid ""
+"One version of this language is already loaded ,If you will load other than "
+"that it may create problem."
+msgstr ""
+"Yksi versio kielestä on jo ladattu, jos tarvitset toista, siitä voi seurata "
+"ongelmia"
+
+#. module: base_translation
+#: wizard_view:download.publish.file,file_selection:0
+msgid "Contribution List"
+msgstr "Avustajien lista"
+
+#. module: base_translation
+#: model:ir.actions.wizard,name:base_translation.wizard_downlaod_file_for_contib
+msgid "Install language file for Contributor"
+msgstr "Asenna avustajan kielitiedosto"
+
+#. module: base_translation
+#: field:ir.translation.contribution,state:0
+msgid "Translation State"
+msgstr "Käännöksen tila"
+
+#. module: base_translation
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Virheellinen mallin nimi toiminnon määrittelyssä."
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menu_action_translation_contribution_propose
+msgid "Review Proposed Contribution"
+msgstr "Tarkista avustajan ehdotukset"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,state:0
+msgid "Don't change"
+msgstr "Älä muuta"
+
+#. module: base_translation
+#: wizard_field:download.contrib.file,version,revision:0
+msgid "Revision"
+msgstr "Revisio"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Object"
+msgstr "Objekti"
+
+#. module: base_translation
+#: wizard_view:download.publish.file,file_selection:0
+msgid "Choose a Contribution to install:"
+msgstr "Valitse asennettava paketti:"
+
+#. module: base_translation
+#: model:ir.module.module,shortdesc:base_translation.module_meta_information
+msgid "Translation"
+msgstr "Käännös"
+
+#. module: base_translation
+#: wizard_button:review.proposed.contributions,init,start:0
+msgid "Review Difference"
+msgstr "Vertaile eroja"
+
+#. module: base_translation
+#: wizard_field:upload.contrib,start,propose:0
+msgid "Number of Translation Uploaded(Propose Translation)"
+msgstr "Lähetettyjen käännösten määrä (ehdota käännöstä)"
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,start,end:0
+#: wizard_button:download.publish.file,start,end:0
+#: wizard_button:publish.new.version,start,end:0
+#: wizard_button:review.proposed.contributions,start,end:0
+#: wizard_button:upload.contrib,start,end:0
+msgid "Ok"
+msgstr "OK"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,init:0
+#: wizard_view:download.contrib.file,same_lang_loaded:0
+#: wizard_view:download.contrib.file,start:0
+#: wizard_view:download.contrib.file,version:0
+#: wizard_view:download.contrib.file,version_not_found:0
+#: wizard_view:download.publish.file,file_selection:0
+#: wizard_view:download.publish.file,init:0
+#: wizard_view:download.publish.file,same_lang_loaded:0
+#: wizard_view:download.publish.file,start:0
+#: wizard_view:download.publish.file,version_not_found:0
+#: wizard_view:publish.new.version,init:0
+#: wizard_view:publish.new.version,start:0
+#: wizard_view:review.proposed.contributions,init:0
+#: wizard_view:review.proposed.contributions,start:0
+#: wizard_view:upload.contrib,init:0
+#: wizard_view:upload.contrib,start:0
+msgid ""
+"For more information about translation process ,you can consult : "
+"http://openerp.com/wiki/index.php/Translation_Process"
+msgstr ""
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menu_action_translation_maintainer
+msgid "Maintainer"
+msgstr "Ylläpitäjä"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Help"
+msgstr "Ohjeet"
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,same_lang_loaded,version_check:0
+#: wizard_button:download.publish.file,same_lang_loaded,version_check:0
+msgid "Continue...."
+msgstr "Jatka..."
+
+#. module: base_translation
+#: field:ir.translation.contribution,upload:0
+msgid "upload"
+msgstr "lähetys"
+
+#. module: base_translation
+#: model:ir.actions.wizard,name:base_translation.wizard_review_proposed_contributions
+#: model:ir.ui.menu,name:base_translation.menuwizardwizard_review_proposed_contributions
+msgid "Review Proposed Contributions"
+msgstr "Tarkista ehdotetut käännökset"
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,init,language_check:0
+#: wizard_button:download.publish.file,init,language_check:0
+msgid "Select Version"
+msgstr "Valitse versio"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,init:0
+#: wizard_view:download.contrib.file,version:0
+#: wizard_view:download.publish.file,init:0
+#: wizard_view:publish.new.version,init:0
+#: wizard_view:review.proposed.contributions,init:0
+#: wizard_view:upload.contrib,init:0
+msgid "Language List"
+msgstr "Kieliluettelo"
+
+#. module: base_translation
+#: field:ir.translation.contribution,src:0
+msgid "Source"
+msgstr "Lähde"
+
+#. module: base_translation
+#: wizard_field:download.contrib.file,init,version:0
+#: wizard_field:download.publish.file,init,version:0
+#: wizard_field:publish.new.version,init,version:0
+#: wizard_field:upload.contrib,init,version:0
+msgid "Version"
+msgstr "Versio"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Wizard Button"
+msgstr "Ohjatun toiminnon nappi"
+
+#. module: base_translation
+#: field:ir.translation.contribution,type:0
+msgid "Type"
+msgstr "Tyyppi"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "XSL"
+msgstr ""
+
+#. module: base_translation
+#: wizard_field:upload.contrib,start,total:0
+msgid "Number of Translation"
+msgstr "Käännösten määrä"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+msgid "Translations"
+msgstr "Käännökset"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,init:0
+#: wizard_view:download.contrib.file,version:0
+#: wizard_view:download.publish.file,init:0
+#: wizard_view:publish.new.version,init:0
+#: wizard_view:review.proposed.contributions,init:0
+#: wizard_view:upload.contrib,init:0
+msgid "Language Selection"
+msgstr "Kielen valinta"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,version:0
+#: wizard_view:download.publish.file,file_selection:0
+#: wizard_view:download.publish.file,init:0
+#: wizard_view:publish.new.version,init:0
+#: wizard_view:review.proposed.contributions,init:0
+#: wizard_view:upload.contrib,init:0
+msgid "Note that this operation may take a few minutes."
+msgstr "Huomaa että tämä toiminto voi kestää muutaman minuutin"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,version_not_found:0
+#: wizard_view:download.publish.file,version_not_found:0
+msgid "Revision Not Found"
+msgstr "Revisiota ei löytynyt"
+
+#. module: base_translation
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Virheellinen XML näkymä-arkkitehtuurille!"
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,init,end:0
+#: wizard_button:download.contrib.file,same_lang_loaded,end:0
+#: wizard_button:download.contrib.file,version,end:0
+#: wizard_button:download.contrib.file,version_not_found,end:0
+#: wizard_button:download.publish.file,file_selection,end:0
+#: wizard_button:download.publish.file,init,end:0
+#: wizard_button:download.publish.file,same_lang_loaded,end:0
+#: wizard_button:download.publish.file,version_not_found,end:0
+#: wizard_button:publish.new.version,init,end:0
+#: wizard_button:review.proposed.contributions,init,end:0
+#: wizard_button:upload.contrib,init,end:0
+msgid "Cancel"
+msgstr "Peruuta"
+
+#. module: base_translation
+#: model:ir.actions.wizard,name:base_translation.wizard_upload_contrib
+#: model:ir.ui.menu,name:base_translation.menuwizard_upload_contrib
+msgid "Upload Contributions"
+msgstr "Lähetä käännökset"
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menu_action_translation_mgmt
+msgid "Translations Management"
+msgstr "Käännösten hallinta"
+
+#. module: base_translation
+#: wizard_view:publish.new.version,init:0
+#: wizard_view:upload.contrib,init:0
+msgid "Choose a language to upload:"
+msgstr "Valitse lähetettävä kieli"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Selection"
+msgstr "Valinta"
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menu_action_translation_contrib
+msgid "Contributors"
+msgstr "Tekijät"
+
+#. module: base_translation
+#: field:ir.translation.contribution,contributor_email:0
+msgid "Email Id of Contibutor"
+msgstr "Tekijän sähköpostiosoite"
+
+#. module: base_translation
+#: field:ir.translation.contribution,name:0
+msgid "Field Name"
+msgstr "Kentän nimi"
+
+#. module: base_translation
+#: wizard_field:upload.contrib,init,note:0
+msgid "Note"
+msgstr "Huomautus"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+#: selection:ir.translation.contribution,state:0
+msgid "Draft"
+msgstr "Luonnos"
+
+#. module: base_translation
+#: wizard_field:upload.contrib,start,draft:0
+msgid "Number of Draft Translation"
+msgstr "Luonnostilassa olevien käännösten määrä"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+msgid "Propose"
+msgstr "Ehdota"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+msgid "Translations Contrib"
+msgstr "Käännösten tekijät"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "RML"
+msgstr ""
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+#: selection:ir.translation.contribution,state:0
+msgid "Deny"
+msgstr "Torju"
+
+#. module: base_translation
+#: wizard_field:download.contrib.file,init,lang:0
+#: wizard_field:download.publish.file,init,lang:0
+#: field:ir.translation.contribution,lang:0
+#: wizard_field:publish.new.version,init,lang:0
+#: wizard_field:review.proposed.contributions,init,lang:0
+#: wizard_field:upload.contrib,init,lang:0
+msgid "Language"
+msgstr "Kieli"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Constraint"
+msgstr "Rajoitteeet"
+
+#. module: base_translation
+#: model:ir.actions.act_window,name:base_translation.action_translation_contribution_propose
+msgid "All Proposed Contribution"
+msgstr "Kaikki ehdotukset"
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menuwizard_downlaod_file_for_publish
+msgid "Download Contributor's Proposition"
+msgstr "Lataa kääntäjän ehdotus"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,same_lang_loaded:0
+#: wizard_view:download.publish.file,same_lang_loaded:0
+msgid "One Version is loaded"
+msgstr "Yksi versio on ladattu"
+
+#. module: base_translation
+#: wizard_field:download.publish.file,file_selection,contrib:0
+msgid "Contribution"
+msgstr "Tekijät"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Code"
+msgstr "Koodi"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Wizard Field"
+msgstr "Ohjatun toiminnon kenttä"
+
+#. module: base_translation
+#: wizard_field:upload.contrib,init,email_id:0
+msgid "Contributor's Email-ID"
+msgstr "Tekijän sähköpostiosoite"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,init:0
+msgid "Choose a Version and Profile for language :"
+msgstr "Valitse versio ja profiili kielelle :"
+
+#. module: base_translation
+#: field:ir.translation.contribution,value:0
+msgid "Translation Value"
+msgstr "Käännös"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,state:0
+msgid "Done"
+msgstr "Valmis"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,same_lang_loaded:0
+#: wizard_view:download.contrib.file,version_not_found:0
+#: wizard_view:download.publish.file,same_lang_loaded:0
+#: wizard_view:download.publish.file,version_not_found:0
+msgid "!!! Warning"
+msgstr "!!! varoitus"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,version:0
+msgid "Choose a Version:"
+msgstr "Valitse versio:"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+msgid "Don't Change"
+msgstr "Älä muuta"
+
+#. module: base_translation
+#: field:ir.translation.contribution,res_id:0
+msgid "Resource ID"
+msgstr "Resurssi ID"
+
+#. module: base_translation
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"Objektin nimi täytyy alkaa X_ eikä se saa sisältää mitää erikoismerkkejä!"
+
+#. module: base_translation
+#: model:ir.ui.menu,name:base_translation.menuwizard_downlaod_file_for_contib
+msgid "Download New Version"
+msgstr "Lataa uusi versio"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,state:0
+msgid "Propose for Change"
+msgstr "Ehdota muutosta"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Field"
+msgstr "Kenttä"
+
+#. module: base_translation
+#: model:ir.module.module,description:base_translation.module_meta_information
+msgid "For better translation process"
+msgstr "Parempaa käännösprosessia varten"
+
+#. module: base_translation
+#: wizard_view:upload.contrib,start:0
+msgid "Information For Contribution"
+msgstr "Tietoa käännöksestä"
+
+#. module: base_translation
+#: wizard_field:download.contrib.file,init,profile:0
+#: wizard_field:download.publish.file,init,profile:0
+#: wizard_field:publish.new.version,init,profile:0
+#: wizard_field:upload.contrib,init,profile:0
+msgid "Profile"
+msgstr "Profiili"
+
+#. module: base_translation
+#: wizard_view:review.proposed.contributions,start:0
+msgid ""
+"Csv file for the selected language has been successfully reviewed with the "
+"i18n file"
+msgstr ""
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,version,start:0
+#: wizard_button:download.publish.file,file_selection,start:0
+#: wizard_button:publish.new.version,init,start:0
+msgid "Download File"
+msgstr "Lataa tiedosto"
+
+#. module: base_translation
+#: wizard_button:download.contrib.file,version_not_found,init:0
+#: wizard_button:download.publish.file,version_not_found,init:0
+msgid "Select Again"
+msgstr "Valitse uudelleen"
+
+#. module: base_translation
+#: model:ir.actions.act_window,name:base_translation.action_translation_contribution
+#: model:ir.ui.menu,name:base_translation.menu_action_translation_contribution
+msgid "All Contribution"
+msgstr "Kaikki käännökset"
+
+#. module: base_translation
+#: wizard_field:download.publish.file,init,password:0
+#: wizard_field:publish.new.version,init,password:0
+msgid "Password"
+msgstr "Salasana"
+
+#. module: base_translation
+#: model:ir.actions.wizard,name:base_translation.wizard_downlaod_file_for_publish
+msgid "Install language file for Maintainer"
+msgstr "Asenna kielitiedosto ylläpitäjälle"
+
+#. module: base_translation
+#: model:ir.actions.wizard,name:base_translation.wizard_publish_new_version
+#: model:ir.ui.menu,name:base_translation.menuwizard_publish_new_version
+msgid "Publish New Version"
+msgstr "Julkaise uusi versio"
+
+#. module: base_translation
+#: model:ir.model,name:base_translation.model_ir_translation_contribution
+msgid "Translation Contribution"
+msgstr "Käännöstyö"
+
+#. module: base_translation
+#: wizard_view:download.publish.file,file_selection:0
+msgid "Contribution Selection"
+msgstr "Käännöstyön valinta"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,start:0
+#: wizard_view:download.publish.file,start:0
+#: wizard_view:publish.new.version,start:0
+msgid ""
+"Csv file for the selected language has been successfully installed in i18n"
+msgstr ""
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,start:0
+#: wizard_view:download.publish.file,start:0
+#: wizard_view:publish.new.version,start:0
+#: wizard_view:review.proposed.contributions,start:0
+msgid "Installation done"
+msgstr "Asennus valmis"
+
+#. module: base_translation
+#: wizard_view:download.contrib.file,start:0
+#: wizard_view:download.publish.file,start:0
+#: wizard_view:publish.new.version,start:0
+#: wizard_view:review.proposed.contributions,start:0
+msgid "Language file loaded."
+msgstr "Kielitiedosto ladattu"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "View"
+msgstr "Näkymä"
+
+#. module: base_translation
+#: wizard_button:upload.contrib,init,start:0
+msgid "Upload Contribution"
+msgstr "Lähetä käännös"
+
+#. module: base_translation
+#: view:ir.translation.contribution:0
+#: selection:ir.translation.contribution,state:0
+msgid "Accept"
+msgstr "Hyväksy"
+
+#. module: base_translation
+#: selection:ir.translation.contribution,type:0
+msgid "Wizard View"
+msgstr "Ohjatun toiminnon näkymä"
+
+#. module: base_translation
+#: wizard_view:download.publish.file,init:0
+#: wizard_view:review.proposed.contributions,init:0
+msgid "Choose a language to install:"
+msgstr "Valitse asennettava kieli:"

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Reject Sections -->
+
+        <record model="dm.as.reject.type" id="dm_reject_type_demo">
+            <field name="name">Global Reject</field>
+            <field name="code">global</field>
+        </record>
+    </data>
+</openerp>

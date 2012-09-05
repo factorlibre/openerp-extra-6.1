@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1" >
+
+        <record id="res_partner_contact_0" model="res.partner.contact">
+            <field name="name">Boniquet</field>
+            <field name="first_name">Pepet</field>
+        </record>
+
+        <record id="res_partner_0" model="res.partner">
+            <field name="name">Tutor 1</field>
+            <field name="user_id"  model="res.users" search="[('name','ilike','Administrator')]" />
+        </record>
+
+        <record id="res_groups_0" model="res.groups">
+            <field name="name">Tutors</field>
+        </record>
+
+        <record id="contact_annotation_function_0" model="contact.annotation.function">
+            <field name="name">General</field>
+        </record>
+
+        <record id="contact_partner_function_0" model="contact.partner.function">
+            <field name="contact_id" eval="ref('res_partner_contact_0')" />
+            <field name="partner_id" eval="ref('res_partner_0')" />
+            <field name="function_id" eval="ref('contact_annotation_function_0')" />
+        </record>
+
+        <record id="contact_annotation_state_0" model="contact.annotation.state">
+            <field name="code">flag</field>
+            <field name="group_ids" eval="[(6, 0, [ref('res_groups_0'),ref('base.group_user'),])]" />
+        </record>
+
+        <record id="contact_annotation_state_1" model="contact.annotation.state">
+            <field name="code">flag2</field>
+        </record>
+
+        <record id="contact_annotation_state_2" model="contact.annotation.state">
+            <field name="code">flag3</field>
+        </record>
+
+        <record id="contact_type_annotation_0" model="contact.type_annotation">
+            <field name="name">Flag state add and others</field>
+            <field name="code">FSA</field>
+        </record>
+
+        <record id="contact_anno_type_state_0s" model="contact.anno_type.state">
+            <field name="anno_type" eval="ref('contact_type_annotation_0')" />
+            <field name="op" eval="1" />
+            <field name="state_id" eval="ref('contact_annotation_state_0')" />
+        </record>
+
+        <record id="contact_anno_type_state_01" model="contact.anno_type.state">
+            <field name="anno_type" eval="ref('contact_type_annotation_0')" />
+            <field name="op" eval="1" />
+            <field name="state_id" eval="ref('contact_annotation_state_1')" />
+        </record>
+
+        <record id="contact_anno_type_state_02" model="contact.anno_type.state">
+            <field name="anno_type" eval="ref('contact_type_annotation_0')" />
+            <field name="op" eval="1" />
+            <field name="state_id" eval="ref('contact_annotation_state_2')" />
+        </record>
+
+        <record id="contact_type_annotation_1" model="contact.type_annotation">
+            <field name="name">Only Flag state subs</field>
+            <field name="code">FSS</field>
+<!--            <field name="states">-flag</field> -->
+        </record>
+
+        <record id="contact_anno_type_state_00" model="contact.anno_type.state">
+            <field name="anno_type" eval="ref('contact_type_annotation_1')" />
+            <field name="op" eval="0" />
+            <field name="state_id" eval="ref('contact_annotation_state_0')" />
+        </record>
+
+        <record id="contact_annotation_type_function_access_0" model="contact.annotation_type.function_access">
+            <field name="contact_type_annotation_id" eval="ref('contact_type_annotation_0')" />
+            <field name="function_id" eval="ref('contact_annotation_function_0')" />
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="1" />
+            <field name="perm_unlink" eval="1" />
+            <field name="perm_create" eval="1" />
+        </record>
+
+        <record id="contact_annotation_type_function_access_1" model="contact.annotation_type.function_access">
+            <field name="contact_type_annotation_id" eval="ref('contact_type_annotation_1')" />
+            <field name="function_id" eval="ref('contact_annotation_function_0')" />
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="1" />
+            <field name="perm_unlink" eval="1" />
+            <field name="perm_create" eval="1" />
+        </record>
+
+        <record id="contact_annotation_type_group_access_0" model="contact.annotation_type.group_access">
+            <field name="contact_type_annotation_id" eval="ref('contact_type_annotation_1')" />
+            <field name="group_id" eval="ref('res_groups_0')" />
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="1" />
+            <field name="perm_unlink" eval="1" />
+            <field name="perm_create" eval="1" />
+        </record>
+
+        <record id="contact_annotation_0" model="contact.annotation">
+            <field name="anno_type" eval="ref('contact_type_annotation_0')" />
+            <field name="contact_id" eval="ref('res_partner_contact_0')" />
+            <field name="valid_from">2010-07-01 00:00:00</field>
+            <field name="valid_to">2010-07-31 23:59:59</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="flag_state_ranges2_act_list">
+            <field name="name">Flag State Ranges</field>
+            <field name="res_model">contact.state_range2</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('lstate.code','=','flag')]</field>
+        </record>
+
+        <menuitem
+            id="flag_state_ranges2_mi"
+            parent="annotations_mi"
+            icon="STOCK_JUSTIFY_FILL"
+            action="flag_state_ranges2_act_list"
+            sequence="90" />
+    </data>
+
+
+</openerp>

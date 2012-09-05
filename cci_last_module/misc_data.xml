@@ -1,0 +1,840 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+
+<!-- Partner View Special -->
+        <record id="view_partner_form_new" model="ir.ui.view">
+            <field name="name">res.partner.new.form</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Partners">
+                    <group col="6" colspan="4">
+                        <group colspan="5" col="6">
+                            <field name="name" select="1"/>
+                            <field name="ref" select="1"/>
+                            <newline/>
+                            <field name="membership_state" select="2"/>
+                            <field name="followup_max_level" />
+                        </group>
+                        <group colspan="1" col="2">
+                            <field name="customer" select="1"/>
+                            <field name="supplier" select="2"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="General">
+                        	<field name="lang" select="2"/>
+                       		<field domain="[('domain', '=', 'partner')]" name="title"/>
+                        	<field name="state_id" select="2"/>
+       	                 	<field name="state_id2"/>
+           					<field name="address" mode="form,tree" colspan="4" nolabel="1" select="1">
+			                    <form string="Address">
+			                       	<group string="Postal Address" colspan="2" col="2">
+			                           	<field name="type" select="2" />
+		                           		<field name="street" select="2"/>
+			                           <field name="street2"/>
+			                           <field name="zip_id" select="2"/>
+			                           <!--<field name="city" select="2"/>-->
+			                           <field name="country_id" select="2" completion="1"/>
+			                           <field name="state_id" select="2"/>
+                                                   <field name="active"/>
+			                        </group>
+		                        	<group string="Communication" colspan="2" col="2">
+     						   <field name='name' string="Nom de l'adresse"/>
+			                           <field name="phone" on_change="on_change_phone_num(phone)"/>
+			                           <field name="fax"/>
+			                           <field name="email" widget="email"/>
+                                                   <field name="magazine_subscription"/>
+                                                   <field name="magazine_subscription_source"/>
+                                                   <field name="notdelivered"/>
+			                        </group>
+		                    	<field name="job_ids" mode="tree,form" nolabel="1" colspan="4">
+			                            <tree string="Contacts" editable="top">
+			                                <field name="sequence_partner"/>
+			                                <field name="contact_id"/>
+			                                <!--<field name="function_id"/>-->
+			                                <field name="function_code_label"/>
+			                                <field name="phone" on_change="on_change_phone_num(phone)"/>
+			                                <field name="fax"/>
+		                               	    <field name="extension"/>
+			                                <field name="other"/>
+			                                <field name="email"/>
+			                            </tree>
+			                            <form string="Contacts">
+			                            	<group string="Partner" colspan="2" col="2">
+			                                	<field name="sequence_partner"/>
+		                               			<!--<field name="name"/>-->
+			                                	<field name="contact_id"/>
+			                                	<!--<field name="function_id"/>-->
+                                                                <field name="function_label"/>
+								<field name="function_code_label"/>
+                                                                <field name="magazine_subscription"/>
+                                                                <field name="magazine_subscription_source"/>
+			                            	</group>
+			                            	<group string="Communication" colspan="2" col="2">
+			                                	<field name="phone" on_change="on_change_phone_num(phone)"/>
+			                                	<field name="fax"/>
+		                                		<field name="extension"/>
+				                                <field name="other"/>
+				                                <field name="email" widget="email"/>
+				                                <field name="extension"/>
+				                                <field name="other"/>
+			                            	</group>
+			                            </form>
+			                        </field>
+		                    	</form>
+			                    <tree string="Addresses">
+			                        <field name="type"/>
+			                        <field name="zip"/>
+			                        <field name="city"/>
+		                        <field name="country_id"/>
+			                        <field name="phone" on_change="on_change_phone_num(phone)"/>
+			                        <field name="job_ids"/>
+			                    </tree>
+			                </field>
+                        </page>
+                        <page string="Extra Information">
+                           	<field name="vat" on_change="vat_change(vat)" select="2"/>
+		                    <field name="vat_subjected"/>
+		                    <field name="credit" select="2"/>
+		                    <field name="debit" select="2"/>
+		                    <field name="user_id_readonly" select="2"/>
+		                    <field name="website" widget="url"/>
+                                    <field name="active" select="2"/>
+							<separator string="Miscelleanous" colspan="4"/>
+							<field name="name_official"/>
+							<field name="name_old"/>
+							<field name="wall_exclusion"/>
+							<field name="date_founded"/>
+							<field name="canal_id"/>
+							<separator string="Events" colspan="4"/>
+							<field name="training_authorization"/>
+                                                        <field name="badge_partner"/>
+							<separator string="Alerts" colspan="4"/>
+							<field name="alert_advertising"/>
+							<field name="alert_legalisations"/>
+							<field name="alert_events"/>
+							<field name="alert_membership"/>
+							<field name="alert_others"/>
+							<newline/>
+							<field name="alert_explanation" colspan="4"/>
+						</page>
+                    	<page string="Notes">
+                            <separator string="Description" colspan="4"/>
+                            <field colspan="4" name="comment" nolabel="1"/>
+                            <separator string="History" colspan="4"/>
+                            <field colspan="4" name="events" nolabel="1" widget="one2many_list"/>
+                   		</page>
+                    	<page string="Membership">
+                        	<group colspan="2" col="2">
+		                    	<separator string="employees" colspan="2"/>
+		                    	<field name="employee_nbr" select="2"/>
+				    			<field name="employee_nbr_total"/>
+                         	</group>
+	                        <group colspan="2" col="2">
+	                              <separator string="calls to premium" colspan="2"/>
+	                              <field name="membership_amount" select="2" string="Cotisation A Demander (HTVA)"/>
+	                              <field name="membership_vcs"/>
+	                         </group>
+	                        <group colspan="2" col="2">
+	                          <separator string="dates" colspan="2"/>
+	                              <field name="membership_start"/>
+	                              <field name="membership_stop" />
+	                              <field name="membership_cancel"/>
+                                      <field name="membership_first_year"/>
+	                         </group>
+	                        <group colspan="2" col="2">
+	                            <separator string="special" colspan="2"/>
+	                            <field name="associate_member"/>
+	                            <field name="free_member"/>
+                              <field name="refuse_membership" select="2"/>
+                              <field name="reason_id" colspan="4" attrs="{'readonly':[('refuse_membership','=',False)]}" widget="selection"/>
+	                         </group>
+				<separator string="Membership Explanation" colspan="4"/>
+				<field name="membership_explanation" colspan="4" nolabel="1"/>
+                         	<separator string="Membership Lines" colspan="4"/>
+                        	<field name="member_lines" select="2" colspan="4" nolabel="1">
+	                            <tree string="Membership">
+        	                        <field name="date_from"/>
+                	                <field name="date_to"/>
+                                        <field name="date_cancel"/>
+                                        <field name="date_invoice"/>
+                        	        <field name="state"/>
+                                        <field name="number"/>
+                                        <field name="subtotal"/>
+
+	                            </tree>
+        	                    <form string="Membership">
+                	                <field name="date_from"/>
+                         	        <field name="date_to"/>
+					<field name="date_cancel"/>
+					<field name="date_invoice"/>
+                                	<field name="account_invoice_line"/>
+                                	<field name="number"/>
+                                	<field name="subtotal"/>
+                	            </form>
+				</field>
+                    </page>
+					<page string="Activities">
+						<separator string="Activity Description" colspan="4"/>
+						<field name="activity_description" colspan="4" nolabel="1"/>
+						<separator string="Activity Codes" colspan="4"/>
+						<field name="activity_code_ids" nolabel="1" select="2"  default_get="{'activities': activity_code_ids}">
+							<tree string="Activity" editable="bottom">
+								<field name="activity_id"/>
+								<field name="importance"/>
+							</tree>
+							<form string="Activity">
+								<field name="activity_id"/>
+								<field name="importance"/>
+							</form>
+						</field>
+					</page>
+					<page string="Profiling Categories">
+						<button string="Use a questionnaire" name="%(crm_profiling.wizard_open_questionnaire)d" type="action" colspan="1" icon="gtk-justify-fill"/>
+					  	<newline/>
+					  	<field name="answers_ids" colspan="4" nolabel="1"/>
+					   	<separator colspan="4" string="Categories"/>
+			            <field colspan="4" name="category_id" nolabel="1" select="2" height="90"/>
+					</page>
+					<page string="Missions" groups="cci_mission.group_cci_missions_user">
+                  		<group colspan="2" col="2">
+			  				<separator string="Asker Info" colspan="2"/>
+		                    <field name="asker_name"/>
+		                    <field name="asker_address"/>
+		                    <field name="asker_zip_id"/>
+                  		</group>
+	                  <group colspan="2" col="2">
+	                    	<separator string="Sender Info" colspan="4"/>
+	                    	<field name="sender_name"/>
+	                  </group>
+	                  <group colspan="2" col="2">
+	                  		<separator string="ATA infos" colspan="4"/>
+	                    	<field name="insurer_id" />
+	                  </group>
+	                  <group colspan="2" col="2">
+	                  		<separator string="Translation info" colspan="4"/>
+	                        <field name="awex_eligible"/>
+	                  </group>
+				</page>
+				<page string="Directory" groups="base.group_partner_manager">
+					<field name="dir_name"/>
+					<field name="dir_name2"/>
+					<field name="dir_name3"/>
+					<field name="dir_date_last"/>
+					<field name="dir_date_accept"/>
+					<field name="dir_date_publication"/>
+					<field name="dir_presence"/>
+					<field name="dir_exclude"/>
+				</page>
+				<page string="Relations" groups="base.group_partner_manager">
+		 			<field name="parent_id" widget="selection" colspan="4"/>
+					<field name="relation_ids" mode="tree, form" nolabel="1" colspan="4">
+						<form string="Partner Link">
+							<field name="type_id" select="1"/>
+							<field name="percent" />
+							<newline/>
+							<field name="partner_id" select="1" colspan="4"/>
+							<newline/>
+							<field name="description" colspan="4"/>
+						</form>
+						<tree string="Partner Link">
+							<field name="type_id" select="1"/>
+							<field name="partner_id" select="1"/>
+						</tree>
+					</field>
+				</page>
+				<page string="Accounting" groups="account.group_account_user" >
+					<separator string="invoices" colspan="4"/>
+					<field name="invoice_nbr"/>
+					<field name="invoice_paper"/>
+					<field name="invoice_public"/>
+					<field name="invoice_special"/>
+					<separator string="Domiciliation" colspan="4"/>
+		            <field name="domiciliation"/>
+					<field name="domiciliation_bool" string="Domiciliation (Cotisation)"/>
+					<separator string="miscalleanous" colspan="4"/>
+					<field name="property_account_receivable"/>
+					<field name="property_account_payable"/>
+                    <field name="property_account_position" widget="selection"/>
+                    <field name="property_payment_term" widget="selection"/>
+                    <field name="credit_limit" select="2"/>
+                    <field colspan="4" context="address=address" name="bank_ids" nolabel="1" select="2">
+                        <form string="Bank account">
+                            <field name="state" select="2"/>
+                            <newline/>
+                            <field name="acc_number" select="1"/>
+                            <field name="iban"/>
+                            <newline/>
+                            <field name="bank"/>
+                            <newline/>
+                            <field name="sequence"/>
+                            <field colspan="4" name="name" select="2"/>
+                            <separator colspan="4" string="Bank account owner"/>
+                            <field colspan="4" name="owner_name"/>
+                            <field colspan="4" name="street"/>
+                            <newline/>
+                            <field name="zip"/>
+                            <field name="city"/>
+                            <newline/>
+                            <field completion="1" name="country_id"/>
+                            <field name="state_id"/>
+                        </form>
+                        <tree string="Bank Details">
+                            <field name="state"/>
+                            <field name="owner_name"/>
+                            <field name="acc_number"/>
+                            <field name="iban"/>
+                        </tree>
+                    </field>
+			</page>
+	         <page string="Countries">
+                    <field name="export_procent"/>
+                    <field name="export_year"/>
+                    <field name="import_procent"/>
+                    <field name="import_year"/>
+                    <field name="country_relation" colspan="4" nolabel="1"/>
+              </page>
+             <page string="Articles" groups="base.group_partner_manager">
+                     <field name="article_ids" nolabel="1"/>
+             </page>
+			 <page string="Sales &amp; Purchases" groups="base.group_partner_manager">
+                  	<group colspan="2" col="2">
+                  		<separator string="General Information" colspan="2"/>
+                  		<field name="date" />
+                  	</group>
+		      		<group colspan="2" col="2">
+						<separator string="Stock Properties" colspan="2"/>
+						<field name="property_stock_customer" widget="selection"/>
+						<field name="property_stock_supplier" widget="selection"/>
+					</group>
+					<newline/>
+			        <group col="2" colspan="2" name="sale_list">
+			                <separator string="Sales Properties" colspan="2"/>
+			                <field name="property_product_pricelist"/>
+			        </group>
+					<group colspan="2" col="2">
+					        <separator string="Purchases Properties" colspan="2"/>
+					        <field name="property_product_pricelist_purchase"/>
+					</group>
+	            </page>
+                <page string="Warnings">
+                        <separator string="Warning on the Purchase Order" colspan="4"/>
+                        	<field name="purchase_warn" colspan="4"/>
+                          <field name="purchase_warn_msg" colspan="4" nolabel="1" attrs="{'required':[('purchase_warn','!=','no-message')]}"/>
+                    </page>
+
+    	    </notebook>
+	    </form>
+	</field>
+</record>
+
+        <record id="base.action_partner_form_view2" model="ir.actions.act_window.view">
+            <field eval="20" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_partner_form_new"/>
+            <field name="act_window_id" ref="base.action_partner_form"/>
+        </record>
+
+
+<!--customer invoice Special-->
+
+        <record id="invoice_new_form" model="ir.ui.view">
+            <field name="name">account.invoice.new.form</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <form string="Invoice">
+                    <group colspan="4" col="6">
+                        <field name="journal_id" select="2" groups="base.group_user"/>
+                        <field name="type" readonly="1" select="2"/>
+                        <field name="number" select="1"/>
+                        <field name="partner_id" domain="[('customer','=', 1)]" on_change="onchange_partner_id(type,partner_id,date_invoice,payment_term)" select="1" groups="base.group_user"/>
+                        <field domain="[('partner_id','=',partner_id)]" name="address_invoice_id"/>
+                        <field name="vat_num" readonly="1"/>
+                        <field name="date_invoice" select="1"/>
+                        <field name="period_id" groups="base.group_user"/>
+                        <field name="domiciled"/>
+                        <group colspan="2" col="1" groups="base.group_user">
+                            <label align="0.0" string="(keep empty to use the current period)"/>
+                        </group>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Invoice">
+                            <field name="create_uid" invisible="1" />
+                            <field name="user_id" on_change="_onchange_user_id(user_id, state)"/>
+                            <field name="name" select="2" attrs="{'readonly':[('type','=','out_invoice')]}"/>
+                            <field name="payment_term"/>
+                            <field colspan="4" name="invoice_line" nolabel="1" widget="one2many_list">
+                            <form string="Invoice Line">
+                    			<notebook>
+			                        <page string="Line">
+                                                    <field name="state" select="1" on_change="_onchange_invoice_line_view(state)"/>
+						    <newline/>
+			                            <field name="product_id" on_change="product_id_change(product_id, uos_id, quantity, name, parent.type, parent.partner_id, parent.fiscal_position, price_unit)" select="1"/>
+			                            <field name="uos_id"/>
+			                            <field name="quantity" select="1"/>
+			                            <field name="price_unit" select="1"/>
+			                            <field name="discount"/>
+			                            <field colspan="4" name="name" select="1"/>
+			                            <field colspan="4" name="origin" select="1"/>
+			                            <field domain="[('company_id', '=', parent.company_id), ('journal_id', '=', parent.journal_id), ('type', '&lt;&gt;', 'view')]" name="account_id" on_change="onchange_account_id(parent.fiscal_position,account_id)" groups="base.group_user"/>
+			                            <field required="1" name="analytics_id" domain="[('plan_id','&lt;&gt;',False)]" context="{'journal_id':parent.journal_id}"/>
+			                            <newline/>
+			                            <field name="price_subtotal"/>
+                                  <field name="sequence"/>
+			                            <field colspan="4" name="invoice_line_tax_id" context="{'type':parent.type}" domain="[('parent_id','=',False),('company_id', '=', parent.company_id)]" >
+											<tree string="Account Tax">
+							                    <field name="name"/>
+							                    <field name="description"/>
+							                </tree>
+							            </field>
+			                        </page>
+			                        <page string="Notes">
+			                            <field colspan="4" name="note" nolabel="1"/>
+			                        </page>
+			                    </notebook>
+			                </form>
+                            	<tree string="Invoice Line">
+	                    			<field name="name"/>
+	                    			<field name="account_id" groups="base.group_user"/>
+		                 			<field required="1" name="analytics_id" domain="[('plan_id','&lt;&gt;',False)]" context="{'journal_id':parent.journal_id}"/>
+	                    			<field name="quantity"/>
+	                    			<field name="uos_id"/>
+	                    			<field name="price_unit"/>
+	                    			<field name="discount"/>
+	                    			<field name="price_subtotal"/>
+	                    			<field name="state"/>
+                				</tree>
+                			</field>
+                            <group col="1" colspan="2">
+                                <field name="tax_line" nolabel="1">
+                                    <tree editable="bottom" string="Taxes">
+                                        <field name="name"/>
+                                        <field name="base" on_change="base_change(base,parent.currency_id,parent.company_id,parent.date_invoice)" readonly="1"/>
+                                        <field name="amount" on_change="amount_change(amount,parent.currency_id,parent.company_id,parent.date_invoice)"/>
+                                        <field invisible="True" name="base_amount"/>
+                                        <field invisible="True" name="tax_amount"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group col="4" colspan="2">
+                                <button colspan="2" name="button_reset_taxes" states="draft" string="Compute Taxes" type="object" groups="base.group_user"/>
+                                <field name="amount_untaxed"/>
+                                <label string="" colspan="2"/>
+                                <field name="amount_tax"/>
+                                <field name="reconciled"/>
+                                <field name="amount_total"/>
+                                <field name="state" select="2"/>
+                                <field name="residual"/>
+                                <group col="3" colspan="4" groups="base.group_user">
+                                    <button name="invoice_open" states="draft,proforma2" string="Create" icon="gtk-execute"/>
+                                    <button name="invoice_cancel" states="draft,proforma2,sale,open" string="Cancel" icon="gtk-cancel"/>
+                                    <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object" icon="gtk-convert"/>
+                                    <button name='%(account.wizard_paid_open)d' type='action' string='Re-Open' states='paid' icon="gtk-convert"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Other Info">
+                            <field name="company_id"/>
+                            <field name="dept" select="2"/>
+                            <field name="fiscal_position" groups="base.group_extended,base.group_user"/>
+                            <field name="currency_id" on_change="onchange_currency_id(currency_id)" select="2"/>
+                            <newline/>
+                            <field name="date_due" select="1"/>
+                            <field name="followup_line_id" select="1"/>
+                            <field name="invoice_special" select="2"/>
+                            <newline/>
+                            <field domain="[('partner_id.ref_companies', 'in', [company_id])]" name="partner_bank" select="2"/>
+                            <field name="origin" select="2"/>
+                            <field domain="[('partner_id','=',partner_id)]" name="address_contact_id"/>
+                            <field name="domiciled_send_date"/>
+                            <field name="move_id" groups="base.group_user"/>
+                            <field domain="[('type','&lt;&gt;','view'), ('company_id', '=', company_id),('journal_id','=',journal_id)]" name="account_id" groups="base.group_user"/>
+                            <separator colspan="4" string="Additionnal Information"/>
+                            <field colspan="4" name="comment" nolabel="1"/>
+                            <separator string="Internal Note" colspan="4"/>
+                            <field name="internal_note" nolabel="1" colspan="4"/>
+                        </page>
+                        <page string="Payments">
+                            <field name="payment_ids" colspan="4" nolabel="1">
+                                <tree string="Payments">
+                                    <field name="date"/>
+                                    <field name="ref"/>
+                                    <field name="name"/>
+                                    <field name="journal_id" groups="base.group_user"/>
+                                    <field name="debit"/>
+                                    <field name="credit"/>
+                                    <field name="amount_currency"/>
+                                    <field name="currency_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+		<!-- customer inovices -->
+
+		<record id="account.action_invoice_tree1_new" model="ir.actions.act_window">
+            <field name="name">New Customer Invoice</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree,calendar,graph</field>
+            <field eval="invoice_new_form" name="view_id"/>
+            <field name="domain">[('type','=','out_invoice')]</field>
+            <field name="context">{'type':'out_invoice'}</field>
+        </record>
+
+        <record id="account.action_invoice_tree5_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree5"/>
+        </record>
+
+        <record id="account.action_invoice_tree6_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree6"/>
+        </record>
+
+		<record id="account.action_invoice_tree7_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree7"/>
+        </record>
+
+        <record id="account.action_invoice_tree1_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree1"/>
+        </record>
+
+
+		<!-- refund customers-->
+        <record id="account.action_invoice_tree3_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree3"/>
+        </record>
+
+        <record id="account.action_invoice_tree3_new" model="ir.actions.act_window">
+            <field name="name">New Customer Refund</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree,calendar,graph</field>
+            <field eval="invoice_new_form" name="view_id"/>
+            <field name="domain">[('type','=','out_refund')]</field>
+            <field name="context">{'type':'out_refund'}</field>
+        </record>
+
+		<record id="account.action_invoice_tree10_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree10"/>
+        </record>
+
+        <record id="account.action_invoice_tree11_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree11"/>
+        </record>
+
+<!--Supplier invoice Special-->
+        <record id="invoice_tree_spl" model="ir.ui.view">
+            <field name="name">account.invoice.tree.spl</field>
+            <field name="model">account.invoice</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state=='draft'" string="Invoice">
+                    <field name="reference"/>
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="number"/>
+                    <field name="partner_id" groups="base.group_user"/>
+                    <field name="vat_num"/>
+                    <field name="amount_untaxed" sum="Untaxed amount"/>
+                    <field name="amount_total" sum="Total amount"/>
+                    <field name="date_invoice" select="1"/>
+                    <field name="date_due" select="1"/>
+                    <field name="residual"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+		<record id="invoice_supplier_spl_form" model="ir.ui.view">
+            <field name="name">account.invoice.supplier.spe.form</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+            <form string="Supplier invoice">
+                    <group col="6" colspan="4">
+                        <field domain="[('type', '=', 'purchase')]" name="journal_id" select="2"/>
+                        <field name="type" readonly="1" select="2"/>
+                        <field name="number" select="2"/>
+                        <field name="partner_id" domain="[('supplier','=', 1)]" on_change="onchange_partner_id(type,partner_id,date_invoice,payment_term)" select="1" context="{'default_customer': 0}"/>
+                        <field domain="[('partner_id','=',partner_id)]" name="address_invoice_id"/>
+                        <field name="create_uid" invisible="1" />
+                        <field name="user_id" on_change="_onchange_user_id(user_id, state)"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Invoice">
+                            <field name="date_invoice"/>
+                            <field name="date_due" select="1"/>
+                            <field name="followup_line_id" select="1"/>
+                            <field name="period_id"/>
+                            <label align="0.0" colspan="2" string="(keep empty to use the current period)"/>
+                            <field domain="[('partner_id', '=', partner_id)]" name="partner_bank" on_change="onchange_partner_bank(partner_bank)" select="2"/>
+
+                            <field name="check_total" required="2"/>
+                            <field name="invoice_special" select="2"/>
+                            <field name="name" colspan="4"/>
+                            <field colspan="4" default_get="{'check_total': check_total, 'invoice_line': invoice_line, 'address_invoice_id': address_invoice_id, 'partner_id': partner_id, 'price_type': 'price_type' in dir() and price_type or False}" name="invoice_line" nolabel="1">
+                            	<form string="Invoice Line">
+                    			<notebook>
+			                        <page string="Line">
+			                            <field name="product_id" on_change="product_id_change(product_id, uos_id, quantity, name, parent.type, parent.partner_id, parent.fiscal_position, price_unit)" select="1"/>
+			                            <field name="uos_id"/>
+			                            <field name="quantity" select="1"/>
+			                            <field name="price_unit" select="1"/>
+			                            <field name="discount"/>
+			                            <field name="state" select="1" on_change="_onchange_invoice_line_view(state)"/>
+										<field name="sequence"/>
+			                            <field colspan="4" name="name" select="1"/>
+			                            <field colspan="4" name="origin" select="1"/>
+			                            <field domain="[('company_id', '=', parent.company_id), ('journal_id', '=', parent.journal_id), ('type', '&lt;&gt;', 'view')]" name="account_id" on_change="onchange_account_id(parent.fiscal_position,account_id)" groups="base.group_user"/>
+			                            <field required="1" name="analytics_id" domain="[('plan_id','&lt;&gt;',False)]" context="{'journal_id':parent.journal_id}"/>
+                                  <field name="sequence"/>
+			                            <newline/>
+			                            <field name="price_subtotal"/>
+			                            <field colspan="4" name="invoice_line_tax_id" context="{'type':parent.type}" domain="[('parent_id','=',False),('company_id', '=', parent.company_id)]" >
+											<tree string="Account Tax">
+							                    <field name="name"/>
+							                    <field name="description"/>
+							                </tree>
+							            </field>
+			                        </page>
+			                        <page string="Notes">
+			                            <field colspan="4" name="note" nolabel="1"/>
+			                        </page>
+			                    </notebook>
+			                </form>
+                                <tree string="Invoice lines">
+                                    <field name="product_id" on_change="product_id_change(product_id, uos_id, quantity, name, parent.type, parent.partner_id, parent.fiscal_position, price_unit, parent.address_invoice_id)"/>
+                                    <field domain="[('company_id', '=', parent.company_id), ('journal_id', '=', parent.journal_id), ('type', '&lt;&gt;', 'view')]" name="account_id" on_change="onchange_account_id(parent.fiscal_position,account_id)"/>
+                                    <field name="invoice_line_tax_id" view_mode="2" context="{'type':parent.type}" domain="[('parent_id','=',False)]"/>
+                                    <field required="1" name="analytics_id" domain="[('plan_id','&lt;&gt;',False)]" context="{'journal_id':parent.journal_id}"/>
+                                    <field name="quantity"/>
+                                    <field name="price_unit"/>
+                                     <!-- Removed if subtotal is set -->
+                                    <field name="price_subtotal"/>
+                                    <field name="name"/>
+                                    <field invisible="True" name="uos_id"/>
+                                </tree>
+                            </field>
+                            <group col="1" colspan="2">
+                                <field name="tax_line" nolabel="1">
+                                    <tree editable="bottom" string="Taxes">
+                                        <field name="name"/>
+                                        <field name="base" on_change="base_change(base,parent.currency_id,parent.company_id,parent.date_invoice)" readonly="1"/>
+                                        <field name="amount" on_change="amount_change(amount,parent.currency_id,parent.company_id,parent.date_invoice)"/>
+
+                                        <field invisible="True" name="base_amount"/>
+                                        <field invisible="True" name="tax_amount"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group col="4" colspan="2">
+                                <button colspan="2" name="button_reset_taxes" states="draft" string="Compute Taxes" type="object"/>
+                                <field name="amount_untaxed"/>
+                                <label string="" colspan="2"/>
+                                <field name="amount_tax"/>
+                                <field name="reconciled"/>
+                                <field name="amount_total"/>
+                                <field name="state" select="2"/>
+                                <field name="residual"/>
+                                <group col="3" colspan="4">
+                                    <button name="invoice_open" states="draft,proforma2" string="Validate" icon="gtk-execute"/>
+                                    <button name="invoice_cancel" states="draft,proforma2,sale,open" string="Cancel" icon="gtk-cancel"/>
+                                    <button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object" icon="gtk-convert"/>
+                                    <button name="212" type="action" string="Re-Open" states="paid" icon="gtk-convert"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Other Info">
+                            <field name="company_id"/>
+            	            <field name="dept" select="2"/>
+                            <newline/>
+                            <field name="fiscal_position" groups="base.group_extended"/>
+                            <field name="payment_term"/>
+                            <newline/>
+                            <field name="origin" select="2"/>
+                            <field domain="[('partner_id','=',partner_id)]" name="address_contact_id"/>
+                            <field name="move_id"/>
+                        <field domain="[('type','&lt;&gt;','view'), ('company_id', '=', company_id),('journal_id','=',journal_id)]" name="account_id"/>
+                        <field name="domiciled_send_date"/>
+                        <field name="currency_id" on_change="onchange_currency_id(currency_id)" select="2"/>
+            	            <field name="domiciled"/>
+            	            <field name="amount_to_pay"/>
+                    		<newline/>
+                            <separator colspan="4" string="Additional Information"/>
+                            <field colspan="4" name="comment" nolabel="1"/>
+                            <separator string="Internal Note" colspan="4"/>
+                            <field name="internal_note" nolabel="1" colspan="4"/>
+                        </page>
+                        <page string="Payments">
+                            <field name="payment_ids" colspan="4" nolabel="1">
+                                <tree string="Payments">
+                                    <field name="date"/>
+                                    <field name="ref"/>
+                                    <field name="name"/>
+                                    <field name="journal_id"/>
+                                    <field name="debit"/>
+                                    <field name="credit"/>
+                                    <field name="amount_currency"/>
+                                    <field name="currency_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </form>
+             </field>
+        </record>
+
+		<!-- supplier invoices -->
+		 <record id="action_invoice_tree3_view1_sp" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="invoice_tree_spl"/>
+            <field name="act_window_id" ref="account.action_invoice_tree2"/>
+        </record>
+        <record id="account.action_invoice_tree8_view_sp" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree2"/>
+        </record>
+
+		<record id="account.action_invoice_tree2_new" model="ir.actions.act_window">
+            <field name="name">New Supplier Invoice</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree,calendar,graph</field>
+            <field eval="invoice_supplier_spl_form" name="view_id"/>
+            <field name="domain">[('type','=','in_invoice')]</field>
+            <field name="context">{'type':'in_invoice'}</field>
+        </record>
+		 <record id="action_invoice_tree3_view1_sp_new" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="invoice_tree_spl"/>
+            <field name="act_window_id" ref="account.action_invoice_tree2_new"/>
+        </record>
+        <record id="account.action_invoice_tree8_view_sp_new" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree2_new"/>
+        </record>
+
+		 <record id="account.action_invoice_tree8_view1" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="invoice_tree_spl"/>
+            <field name="act_window_id" ref="account.action_invoice_tree8"/>
+        </record>
+        <record id="account.action_invoice_tree8_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree8"/>
+        </record>
+
+
+		<record id="account.action_invoice_tree9_view1" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="invoice_tree_spl"/>
+            <field name="act_window_id" ref="account.action_invoice_tree9"/>
+        </record>
+        <record id="account.action_invoice_tree9_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree9"/>
+        </record>
+
+        <!-- refund supplier-->
+
+       	<record id="action_invoice_tree3_view1_sp_ref" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <!--<field name="view_id" ref="invoice_tree_spl"/>--> <!-- check me..=> supplier refund tree open special tree view of supplier invoice -->
+            <field name="act_window_id" ref="account.action_invoice_tree4"/>
+        </record>
+        <record id="account.action_invoice_tree8_view_sp_ref" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree4"/>
+        </record>
+
+        <record id="account.action_invoice_tree4" model="ir.actions.act_window">
+            <field name="name">Supplier Refunds</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field eval="invoice_supplier_spl_form" name="view_id"/>
+            <field name="domain">[('type','=','in_refund')]</field>
+            <field name="context">{'type':'in_refund'}</field>
+        </record>
+
+        <record id="account.action_invoice_tree4_new" model="ir.actions.act_window">
+            <field name="name">New Supplier Refund</field>
+            <field name="res_model">account.invoice</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form,tree,calendar,graph</field>
+            <field eval="invoice_supplier_spl_form" name="view_id"/>
+            <field name="domain">[('type','=','in_refund')]</field>
+            <field name="context">{'type':'in_refund'}</field>
+        </record>
+
+         <record id="account.action_invoice_tree12_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree12"/>
+        </record>
+
+		<record id="account.action_invoice_tree13_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_supplier_spl_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree13"/>
+        </record>
+
+	<!-- invoices will open customer invoice form-->
+
+		<record id="account.action_invoice_tree_view2" model="ir.actions.act_window.view">
+            <field eval="2" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="invoice_new_form"/>
+            <field name="act_window_id" ref="account.action_invoice_tree"/>
+        </record>
+
+	</data>
+</openerp>

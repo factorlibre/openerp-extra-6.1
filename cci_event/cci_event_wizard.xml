@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data>
+
+	<wizard string="Copy Events"
+					model="event.event"
+					name="event.event_copy"
+					menu="True"	id="event_copy"/>
+	<wizard
+			string="Registrations with Missing Checks"
+			model="event.registration"
+			name="cci_event.reg_checks"
+			menu="False"
+			id="wizard_missing_checks_reg"/>
+	<menuitem
+			parent="event.menu_report_event"
+			action="wizard_missing_checks_reg"
+			type="wizard"
+			id="menu_missing_checks_reg"/>
+
+	<wizard string="Send email to partners"
+			model="event.registration"
+			name="event.send_email"
+			menu="True"
+			id="wizard_send_email"/>
+
+	<wizard string="Confirm Draft Registrations"
+			model="event.registration"
+			name="event.confirm_registrations"
+			menu="True"
+			id="wizard_confirm_registrations"/>
+
+	<wizard string="Create Registration"
+			model="res.partner.job"
+			menu="True"
+			name="event.job_registration"
+			id="wizard_job_registration" />
+
+	<wizard string="Create Registration"
+			model="res.partner"
+			menu="True"
+			name="event.partner_registration"
+			id="wizard_partner_registration" />
+
+	<wizard string="Create Registration"
+			model="res.partner.contact"
+			menu="True"
+			name="event.contact_registration"
+			id="wizard_contact_registration" />
+
+	<wizard string="Create Registrations for event"
+			model="event.registration"
+			menu="True"
+			name="event.create_registrations"
+			id="wizard_create_registration" />
+	</data>
+</openerp>

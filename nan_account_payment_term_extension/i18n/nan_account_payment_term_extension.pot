@@ -1,0 +1,47 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* nan_account_payment_term_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-03-27 23:16+0000\n"
+"PO-Revision-Date: 2011-03-27 23:16+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nan_account_payment_term_extension
+#: constraint:account.payment.term.line:0
+msgid "Percentages for Payment Term Line must be between 0 and 1, Example: 0.02 for 2% "
+msgstr "Percentages for Payment Term Line must be between 0 and 1, Example: 0.02 for 2% "
+
+#. module: nan_account_payment_term_extension
+#: constraint:account.payment.term:0
+msgid "Error: Payment days field format is not valid."
+msgstr "Error: Payment days field format is not valid."
+
+#. module: nan_account_payment_term_extension
+#: model:ir.model,name:nan_account_payment_term_extension.model_account_payment_term
+msgid "Payment Term"
+msgstr "Payment Term"
+
+#. module: nan_account_payment_term_extension
+#: model:ir.model,name:nan_account_payment_term_extension.model_account_payment_term_line
+msgid "Payment Term Line"
+msgstr "Payment Term Line"
+
+#. module: nan_account_payment_term_extension
+#: help:account.payment.term.line,months:0
+msgid "Number of months to add to invoice date."
+msgstr "Number of months to add to invoice date."
+
+#. module: nan_account_payment_term_extension
+#: field:account.payment.term.line,months:0
+msgid "Number of Months"
+msgstr "Number of Months"
+

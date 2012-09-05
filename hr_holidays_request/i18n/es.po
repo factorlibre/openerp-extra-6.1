@@ -1,0 +1,552 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 13:19+0000\n"
+"PO-Revision-Date: 2011-08-27 15:42+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:31+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday_validate
+msgid "Validate Holidays"
+msgstr "Validar fiestas"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+#: rml:hr_holiday_req_report:0
+msgid "Total Hourly Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model:ir.module.module,shortdesc:hr_holidays_request.module_meta_information
+msgid "HR Holiday Request"
+msgstr "RRHH solicitud de fiesta"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,hourly_leave:0
+#: field:days.holidays.days.history,hourly_leave:0
+msgid "Hourly Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_all_holiday
+msgid "All Holidays Requests"
+msgstr "Todas las solicitudes de fiesta"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,validated_id:0
+msgid "Validated By"
+msgstr "Validado por"
+
+#. module: hr_holidays_request
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre del modelo inválido en la definición de acción."
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Vacations requests"
+msgstr "solicitud de vacaciones"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Employee Holidays"
+msgstr "Fiesta empleado"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Reason(s) for taking leave(s)"
+msgstr "Motivo/s de disfrute del permiso/s"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Set to Draft"
+msgstr "Cambiar a borrador"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.open_ask_holidays
+msgid "Holidays"
+msgstr "Festivos"
+
+#. module: hr_holidays_request
+#: field:public.holidays.days,reason:0
+msgid "Reason"
+msgstr "Razón"
+
+#. module: hr_holidays_request
+#: selection:days.holidays.days,state:0
+#: selection:days.holidays.days.history,state:0
+#: view:hr.holidays:0
+#: selection:hr.holidays.history,state:0
+msgid "Validate"
+msgstr "Validar"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Refuse"
+msgstr "Rechazar"
+
+#. module: hr_holidays_request
+#: wizard_button:hr_holiday_req,init,print:0
+msgid "Ok"
+msgstr "Acceptar"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,notes:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,holiday_status:0
+#: field:days.holidays.days.history,holiday_status:0
+#: field:hr.holidays,holiday_status:0
+msgid "Holiday's Status"
+msgstr ""
+
+#. module: hr_holidays_request
+#: wizard_field:hr_holiday_req,init,active2:0
+msgid "Date Wise"
+msgstr ""
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Create Days"
+msgstr "Crear días"
+
+#. module: hr_holidays_request
+#: wizard_view:hr_holiday_req,init:0
+msgid "Select period"
+msgstr "Seleccionar periodo"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Your Name:"
+msgstr "Tu nombre:"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "Employee name"
+msgstr "Nombre del trabajador"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,date_from1:0
+#: field:hr.holidays.history,date_from1:0
+#: wizard_field:hr_holiday_req,init,fromdate:0
+msgid "From"
+msgstr "De"
+
+#. module: hr_holidays_request
+#: view:days.holidays.days:0
+#: view:days.holidays.days.history:0
+#: view:public.holidays.days:0
+msgid "Holiday's days"
+msgstr "Días festivos"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,contactno:0
+#: field:hr.holidays.history,contactno:0
+msgid "Contact no"
+msgstr "Nº contacto"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,state:0
+#: field:days.holidays.days.history,state:0
+#: field:hr.holidays.history,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,employee_id:0
+msgid "Employee"
+msgstr "Trabajador"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Total No. of days :"
+msgstr "Nº total de días:"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Reason(s) for taking leave(s) :"
+msgstr "Motivo/s de disfrute del permiso/s:"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "Year:"
+msgstr "Año:"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,total_half:0
+#: field:hr.holidays.history,total_half:0
+#: rml:hr_holiday_report_form:0
+#: rml:hr_holiday_req_report:0
+msgid "Total Half Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: view:hr.holidays.history:0
+msgid "Holiday Hisroty"
+msgstr "Historial de festivos"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,total_full:0
+#: field:hr.holidays.history,total_full:0
+#: rml:hr_holiday_report_form:0
+#: rml:hr_holiday_req_report:0
+msgid "Total Full Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Leave Application Form"
+msgstr ""
+
+#. module: hr_holidays_request
+#: field:hr.holidays,holiday_id:0
+#: field:hr.holidays.history,holiday_id:0
+msgid "Holiday's days list"
+msgstr "Lista de los días festivos"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday_history
+msgid "Holidays History"
+msgstr "Historial de festivos"
+
+#. module: hr_holidays_request
+#: model:ir.actions.report.xml,name:hr_holidays_request.wizard_hr_holidays_request_report_form
+msgid "Holidays Report Form"
+msgstr "Formulario del informe de vacaciones"
+
+#. module: hr_holidays_request
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,user_id:0
+msgid "Employee_id"
+msgstr "id_trabajador"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,user_id:0
+#: field:days.holidays.days.history,user_id:0
+msgid "User_id"
+msgstr "id_usuario"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday_draft
+msgid "Draft Holidays"
+msgstr "Borrador festivos"
+
+#. module: hr_holidays_request
+#: wizard_field:hr_holiday_req,init,active1:0
+msgid "Month Wise"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "User name"
+msgstr "Nombre de usuario"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "From :"
+msgstr "Desde:"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,half_day:0
+#: field:days.holidays.days.history,half_day:0
+msgid "Half Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Report of the Leave of the month"
+msgstr ""
+
+#. module: hr_holidays_request
+#: wizard_field:hr_holiday_req,init,month:0
+msgid "Month"
+msgstr "Mes"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,full_day:0
+#: field:days.holidays.days.history,full_day:0
+msgid "Full Leave"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "Month:"
+msgstr "Mes:"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday_waiting
+msgid "Waiting confirmation"
+msgstr "Esperando confirmación"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday_draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Employee Name"
+msgstr "Nombre del trabajador"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,public_h:0
+#: field:days.holidays.days.history,public_h:0
+msgid "Public Holiday"
+msgstr "Día festivo"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday
+msgid "My Holidays Request"
+msgstr "Mis solicitudes de fiesta"
+
+#. module: hr_holidays_request
+#: selection:days.holidays.days,state:0
+#: selection:days.holidays.days.history,state:0
+#: selection:hr.holidays.history,state:0
+msgid "draft"
+msgstr "borrador"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,date1:0
+#: field:days.holidays.days,name:0
+#: field:days.holidays.days.history,date1:0
+#: field:days.holidays.days.history,name:0
+#: field:public.holidays.days,name:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_holidays_request
+#: view:hr.holidays.history:0
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday_history
+msgid "Holiday History"
+msgstr "Historial festivos"
+
+#. module: hr_holidays_request
+#: field:days.holidays.days,holiday_id:0
+#: field:days.holidays.days.history,holiday_id:0
+msgid "Holiday Ref"
+msgstr "Ref. festivos"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Date:"
+msgstr "Fecha:"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,manager_id:0
+msgid "Holiday manager"
+msgstr "Administrador de vacaciones"
+
+#. module: hr_holidays_request
+#: view:public.holidays.days:0
+msgid "Reason for Public Holiday"
+msgstr "Motivo de día festivo"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_open_ask_holidays
+msgid "Holidays Request"
+msgstr "Solicitud de fiesta"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday_refuse
+msgid "Resufed Holidays"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "From Date:"
+msgstr "Desde la fecha:"
+
+#. module: hr_holidays_request
+#: selection:days.holidays.days,state:0
+#: selection:days.holidays.days.history,state:0
+#: view:hr.holidays:0
+#: selection:hr.holidays.history,state:0
+#: wizard_button:hr_holiday_req,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday_validate
+msgid "Validated"
+msgstr "Validado"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_all_holiday
+msgid "All Holidays"
+msgstr "Todas las fiestas"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "To:"
+msgstr "A:"
+
+#. module: hr_holidays_request
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial!"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.public_action_all_holiday_days
+#: model:ir.model,name:hr_holidays_request.model_public_holidays_days
+#: model:ir.ui.menu,name:hr_holidays_request.menu_public_holiday_days
+msgid "Public Holidays"
+msgstr "Días festivos"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Employee holidays"
+msgstr "Vacaciones del empleado"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,date_to1:0
+#: field:hr.holidays.history,date_to1:0
+#: wizard_field:hr_holiday_req,init,todate:0
+msgid "To"
+msgstr "Para"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "Printing date:"
+msgstr "Fecha impresión:"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "at"
+msgstr "a las"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_days_holidays_days
+#: model:ir.model,name:hr_holidays_request.model_days_holidays_days_history
+#: model:ir.model,name:hr_holidays_request.model_hr_holidays_history
+msgid "Holidays history"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_holiday_waiting
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday_waiting
+msgid "Requested Holidays"
+msgstr "fiesta solicitada"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_holiday_waiting
+msgid "Request waiting validation"
+msgstr "Solicitud en espera de validación"
+
+#. module: hr_holidays_request
+#: model:ir.actions.report.xml,name:hr_holidays_request.wizard_hr_holidays_request_report
+#: model:ir.actions.wizard,name:hr_holidays_request.wizard_hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.menu_wizard_hr_holidays_Report
+msgid "Holidays Report"
+msgstr "Informe de fiestas"
+
+#. module: hr_holidays_request
+#: field:hr.holidays.history,name:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+#: view:hr.holidays.history:0
+#: rml:hr_holiday_report_form:0
+msgid "Contact Number/s during leave period:"
+msgstr "Número/s de contacto/s durante el período de vacaciones:"
+
+#. module: hr_holidays_request
+#: selection:days.holidays.days,state:0
+#: selection:days.holidays.days.history,state:0
+#: selection:hr.holidays.history,state:0
+#: model:ir.ui.menu,name:hr_holidays_request.menu_action_my_holiday_refuse
+msgid "Refused"
+msgstr "Rechazado"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_my_holiday
+msgid "My Holidays"
+msgstr "Mis vacaciones"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_all_holiday_days
+msgid "holidays day"
+msgstr "día de vacaciones"
+
+#. module: hr_holidays_request
+#: selection:days.holidays.days,state:0
+#: selection:days.holidays.days.history,state:0
+#: selection:hr.holidays.history,state:0
+msgid "Requested"
+msgstr "Solicitado"
+
+#. module: hr_holidays_request
+#: wizard_view:hr_holiday_req,init:0
+#: wizard_field:hr_holiday_req,init,emp_ids:0
+msgid "Employees"
+msgstr "Trabajadores"
+
+#. module: hr_holidays_request
+#: view:hr.holidays:0
+msgid "Request"
+msgstr "Solicitud"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "To Date:"
+msgstr "Hasta la fecha:"
+
+#. module: hr_holidays_request
+#: field:hr.holidays,total_hour:0
+#: field:hr.holidays.history,total_hour:0
+msgid "Total Hours"
+msgstr "Horas totales"
+
+#. module: hr_holidays_request
+#: view:hr.holidays.history:0
+msgid "Reason(s) for taaking leave(s)"
+msgstr ""
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Your Signature"
+msgstr "Su firma"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_report_form:0
+msgid "Manager's Signature"
+msgstr "Firma del director"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.action_all_holiday_hr
+#: model:ir.ui.menu,name:hr_holidays_request.menu_all_holiday_hr
+msgid "All Validated Holidays"
+msgstr "Todos los fiesta validados"
+
+#. module: hr_holidays_request
+#: wizard_field:hr_holiday_req,init,year:0
+msgid "Year"
+msgstr "Año"
+
+#. module: hr_holidays_request
+#: rml:hr_holiday_req_report:0
+msgid "Total"
+msgstr "Total"

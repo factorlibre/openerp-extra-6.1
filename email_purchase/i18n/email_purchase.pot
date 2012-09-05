@@ -1,0 +1,160 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* email_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-01-03 00:03:56+0000\n"
+"PO-Revision-Date: 2010-01-03 00:03:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "No SMTP Server has been defined!"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_button:purchase.order.email_send_2,send,end:0
+msgid "End"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_view:purchase.order.email_send_2,init:0
+msgid "Message:"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid ". Purchase Num."
+msgstr ""
+
+#. module: email_purchase
+#: wizard_field:purchase.order.email_send_2,init,to:0
+msgid "To"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_view:purchase.order.email_send_2,init:0
+#: wizard_view:purchase.order.email_send_2,send:0
+msgid "Send purchase order/s by Email"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "\n\nSubject: "
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "\n\nText:\n"
+msgstr ""
+
+#. module: email_purchase
+#: model:ir.module.module,shortdesc:email_purchase.module_meta_information
+msgid "E-mail Purchase"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Please check the Server Configuration!"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "You have selected documents for different partners."
+msgstr ""
+
+#. module: email_purchase
+#: wizard_button:purchase.order.email_send_2,init,send:0
+msgid "Send Email"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "To: "
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Purchase_Order"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Error sending email"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Email sent through purchase order wizard"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_field:purchase.order.email_send_2,send,email_sent:0
+msgid "Quantity of Emails sent"
+msgstr ""
+
+#. module: email_purchase
+#: model:ir.actions.wizard,name:email_purchase.purchase_order_email_send_wizard_2
+msgid "Send by Email"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: email_purchase
+#: code:addons/email_purchase/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_button:purchase.order.email_send_2,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: email_purchase
+#: model:ir.module.module,description:email_purchase.module_meta_information
+msgid "Use Email client module to send to suppliers the selected purchase orders attached by Email.\n"
+"\n"
+"  * The invoice and contact emails addresses are proposed\n"
+"  * An email subject and text with the user signature are proposed\n"
+"  * Later, the emails addresses, subject and text can be modified\n"
+"  * A partner event is created with information of the email (partner,\n"
+"    description, channel, document, user)\n"
+"  * Historical and statistical data is recorded in the smtpclient module\n"
+"\n"
+"  The modules has been implemented based on email_sale. Indeed the code is almost the same.\n"
+""
+msgstr ""
+
+#. module: email_purchase
+#: wizard_field:purchase.order.email_send_2,init,text:0
+msgid "Message"
+msgstr ""
+
+#. module: email_purchase
+#: wizard_field:purchase.order.email_send_2,init,subject:0
+msgid "Subject"
+msgstr ""
+

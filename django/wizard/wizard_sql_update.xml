@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="wizard_django_sql_update" model="ir.ui.view">
+            <field name="name">django.sql.update.wizard.form</field>
+            <field name="model">django.sql.update.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Django Model">
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','done')]}">
+                    <label string="Select model OpenObject to create SQL Update." colspan="4"/>
+                    <field name="model"/><newline/>
+                </group>
+                <group col="4" colspan="4" attrs="{'invisible':[('state','=','first')]}">
+                    <field name="filename" /><newline/>
+                    <field name="file" filename="filename" /><newline/>
+                </group>
+                <group col="2" colspan="4">
+                    <field name="state" invisible="1" />
+                    <button string="Cancel" special="cancel" icon="gtk-cancel" states="first" />
+                    <button string="Create SQL" name="sql_update" type="object" icon="gtk-ok" states="first" />
+                    <button string="Close" special="cancel" icon="gtk-ok" states="done" />
+                </group>
+            </form>
+            </field>
+        </record>
+
+        <act_window name="Create SQL Update"
+            res_model="django.sql.update.wizard"
+            src_model="ir.model"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"
+            id="act_django_sql_update"
+            groups="base.group_extended"/>
+    </data>
+</openerp>

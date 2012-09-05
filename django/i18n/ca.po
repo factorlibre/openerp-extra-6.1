@@ -1,0 +1,256 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* django
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-10-03 10:52+0000\n"
+"PO-Revision-Date: 2011-11-09 19:12+0000\n"
+"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
+"<resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:38+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: django
+#: view:django.sql.update.wizard:0
+msgid "Select model OpenObject to create SQL Update."
+msgstr "Select model OpenObject to create SQL Update."
+
+#. module: django
+#: view:django.external.mapping:0
+msgid "Mappings"
+msgstr "Mappings"
+
+#. module: django
+#: model:ir.ui.menu,name:django.menu_django_external_referentials
+msgid "Django External Referentials"
+msgstr "Django External Referentials"
+
+#. module: django
+#: view:django.external.mapping.line:0
+msgid "Import in OpenERP Mapping Python Function"
+msgstr "Import in OpenERP Mapping Python Function"
+
+#. module: django
+#: field:django.create.model.wizard,state:0
+#: field:django.sql.update.wizard,state:0
+msgid "State"
+msgstr "State"
+
+#. module: django
+#: model:ir.model,name:django.model_django_sql_update_wizard
+msgid "django.sql.update.wizard"
+msgstr "django.sql.update.wizard"
+
+#. module: django
+#: field:res.partner,dj_username:0
+msgid "Username ID"
+msgstr "ID usuari"
+
+#. module: django
+#: view:django.external.mapping:0
+#: view:django.external.mapping.line:0
+msgid "External Referentials"
+msgstr "External Referentials"
+
+#. module: django
+#: code:addons/django/django_connect.py:48
+#, python-format
+msgid "Key SSH %s not avaible. See documentation"
+msgstr "Key SSH %s not avaible. See documentation"
+
+#. module: django
+#: view:django.create.model.wizard:0
+msgid "Create Model"
+msgstr "Create Model"
+
+#. module: django
+#: model:ir.actions.act_window,name:django.act_django_sql_update
+msgid "Create SQL Update"
+msgstr "Create SQL Update"
+
+#. module: django
+#: model:ir.model,name:django.model_django_external_mapping_line
+msgid "django.external.mapping.line"
+msgstr "django.external.mapping.line"
+
+#. module: django
+#: selection:django.create.model.wizard,state:0
+#: selection:django.sql.update.wizard,state:0
+msgid "First"
+msgstr "First"
+
+#. module: django
+#: view:django.external.mapping.line:0
+msgid "Export from OpenERP Mapping Python Function"
+msgstr "Export from OpenERP Mapping Python Function"
+
+#. module: django
+#: model:ir.model,name:django.model_django_external_mapping
+msgid "Django External Mapping"
+msgstr "Django External Mapping"
+
+#. module: django
+#: model:ir.model,name:django.model_django_create_model_wizard
+msgid "django.create.model.wizard"
+msgstr "django.create.model.wizard"
+
+#. module: django
+#: model:ir.actions.act_window,name:django.act_django_fields
+msgid "Fields"
+msgstr "Fields"
+
+#. module: django
+#: model:ir.actions.act_window,help:django.action_django_external_referentials_action
+msgid ""
+"Remember if you add new field in this mapping, you will export Django Model "
+"(Administration/Customization/Database Structure/Create Django Model) and "
+"update Django Model. Also, you will update SQL Database Django (use wizard "
+"SQL Update)."
+msgstr ""
+"Remember if you add new field in this mapping, you will export Django Model "
+"(Administration/Customization/Database Structure/Create Django Model) and "
+"update Django Model. Also, you will update SQL Database Django (use wizard "
+"SQL Update)."
+
+#. module: django
+#: view:django.create.model.wizard:0
+msgid "Select model OpenObject to create model Django."
+msgstr "Select model OpenObject to create model Django."
+
+#. module: django
+#: model:ir.actions.act_window,name:django.act_django_create_model
+#: model:ir.actions.act_window,name:django.action_django_model_wizard
+#: model:ir.ui.menu,name:django.django_wizard_model
+msgid "Create Django Model"
+msgstr "Create Django Model"
+
+#. module: django
+#: view:django.create.model.wizard:0
+#: view:django.sql.update.wizard:0
+msgid "Django Model"
+msgstr "Django Model"
+
+#. module: django
+#: model:ir.module.module,shortdesc:django.module_meta_information
+#: view:res.partner:0
+msgid "Django"
+msgstr "Django"
+
+#. module: django
+#: code:addons/django/django_connect.py:48
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: django
+#: model:ir.model,name:django.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: django
+#: field:django.create.model.wizard,model:0
+#: field:django.sql.update.wizard,model:0
+msgid "Model"
+msgstr "Model"
+
+#. module: django
+#: code:addons/django/wizard/wizard_create_model.py:91
+#: code:addons/django/wizard/wizard_create_model.py:96
+#: code:addons/django/wizard/wizard_create_model.py:99
+#: code:addons/django/wizard/wizard_create_model.py:102
+#: code:addons/django/wizard/wizard_create_model.py:105
+#: code:addons/django/wizard/wizard_create_model.py:108
+#: code:addons/django/wizard/wizard_create_model.py:111
+#: code:addons/django/wizard/wizard_create_model.py:114
+#: code:addons/django/wizard/wizard_create_model.py:119
+#: code:addons/django/wizard/wizard_create_model.py:122
+#: code:addons/django/wizard/wizard_create_model.py:135
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+#. module: django
+#: field:res.partner,dj_email:0
+msgid "Email ID"
+msgstr "ID correu"
+
+#. module: django
+#: view:django.sql.update.wizard:0
+msgid "Create SQL"
+msgstr "Create SQL"
+
+#. module: django
+#: model:ir.module.module,description:django.module_meta_information
+msgid ""
+"\n"
+"OpenERP integration to Django.\n"
+"- Use Base External Mapping to define mapping values.\n"
+"- Select model and copy-paste Django Model (wizard)\n"
+"- OpenERP to Django Mapping Fields. Export OpenERP data to Django Models\n"
+"- Update SQL Django. Update Django models when already been created "
+"previously in Django (wizard)\n"
+"This module was built generically but in focus of the ZZSaaS service of "
+"Zikzakmedia and OpenERP e-sale Zoook modules\n"
+"\n"
+"Base Vat module requiered if use dj_check_vat def\n"
+"    "
+msgstr ""
+"\n"
+"OpenERP integration to Django.\n"
+"- Use Base External Mapping to define mapping values.\n"
+"- Select model and copy-paste Django Model (wizard)\n"
+"- OpenERP to Django Mapping Fields. Export OpenERP data to Django Models\n"
+"- Update SQL Django. Update Django models when already been created "
+"previously in Django (wizard)\n"
+"This module was built generically but in focus of the ZZSaaS service of "
+"Zikzakmedia and OpenERP e-sale Zoook modules\n"
+"\n"
+"Base Vat module requiered if use dj_check_vat def\n"
+"    "
+
+#. module: django
+#: model:ir.model,name:django.model_django_connect
+msgid "Django Connect"
+msgstr "Django Connect"
+
+#. module: django
+#: field:django.create.model.wizard,filename:0
+#: field:django.sql.update.wizard,filename:0
+msgid "File Name"
+msgstr "File Name"
+
+#. module: django
+#: model:ir.actions.act_window,name:django.action_django_external_referentials_action
+msgid "External Mapping"
+msgstr "External Mapping"
+
+#. module: django
+#: selection:django.create.model.wizard,state:0
+#: selection:django.sql.update.wizard,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: django
+#: field:django.create.model.wizard,file:0
+#: field:django.sql.update.wizard,file:0
+msgid "File"
+msgstr "File"
+
+#. module: django
+#: view:django.create.model.wizard:0
+#: view:django.sql.update.wizard:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: django
+#: view:django.create.model.wizard:0
+#: view:django.sql.update.wizard:0
+msgid "Close"
+msgstr "Close"

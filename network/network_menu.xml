@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        ##############################################################################
+        #
+        #    network module for OpenERP, Network computer Management
+        #    Copyright (C) 2011 SYLEAM ([http://www.syleam.fr/]) 
+        #              Christophe CHAUVET [christophe.chauvet@syleam.fr]
+        #
+        #    This file is a part of network
+        #
+        #    network is free software: you can redistribute it and/or modify
+        #    it under the terms of the GNU Affero General Public License as published by
+        #    the Free Software Foundation, either version 3 of the License, or
+        #    (at your option) any later version.
+        #
+        #    network is distributed in the hope that it will be useful,
+        #    but WITHOUT ANY WARRANTY; without even the implied warranty of
+        #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        #    GNU Affero General Public License for more details.
+        #
+        #    You should have received a copy of the GNU Affero General Public License
+        #    along with this program.  If not, see [http://www.gnu.org/licenses/].
+        #
+        ##############################################################################
+
+        <menuitem id="base.menu_tools" 
+            name="Tools" 
+            icon="STOCK_PREFERENCES"
+            web_icon="images/tools.png" web_icon_hover="images/tools-hover.png"/>
+
+        <menuitem id="menu_network" 
+            name="Network" 
+            parent="base.menu_tools" 
+            groups="network.group_network_user"/>
+
+        <menuitem id="base.menu_lunch_survey_root" 
+            parent="base.menu_tools"
+            sequence="50"
+            name="Configuration"/>
+
+        <menuitem id="menu_tools_configuration_network" 
+            parent="base.menu_lunch_survey_root"
+            groups="network.group_network_manager" 
+            sequence="20"
+            name="Network"/>
+
+    </data>
+</openerp>

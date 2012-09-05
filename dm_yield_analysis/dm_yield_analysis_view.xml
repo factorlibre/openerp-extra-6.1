@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>	
+		
+	<!--
+    =======================================================
+    INHERITED YIELD OFFER VIEWS
+    =======================================================
+    -->
+
+		<record model="ir.ui.view" id="view_dm_yield_offer_form_inherit">
+	        <field name="name">dm.offer.yield.form.inherit</field>
+	        <field name="model">dm.offer</field>
+	        <field name="type">form</field>
+			<field name="inherit_id" ref="dm.view_offer_form"/>
+			<field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Theoretical Yield">
+						<separator string="Application Countries" colspan="4"/>
+						<field name="tht_yield_country_ids" nolabel="1" colspan="4"/>			
+						<field name="tht_step_yield_ids" nolabel="1" colspan="4" mode="tree,form">
+							<tree string="Yield" editable="top">
+	                            <field name="step_id" readonly="True"/>
+								<field name="country_id" readonly="True"/>
+								<field name="rate"/>
+	                        </tree>
+							<form string="Yield">
+	                            <field name="step_id"/>
+								<field name="country_id"/>
+								<field name="rate"/>
+	                        </form>
+	                    </field>
+						<button name="button_refresh" string="Refresh Theoretical Yields" type="object" colspan="2"/>
+					</page>
+				</notebook>
+			</field>
+		</record>
+
+	</data>
+</openerp>

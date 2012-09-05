@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+        <record model="workflow" id="wkf_change_states">
+            <field name="name">change_states.wkf</field>
+            <field name="osv">contact.planning_change_states</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="workflow.activity" id="act_change_states_ready">
+            <field name="wkf_id" ref="wkf_change_states" />
+            <field name="name">ready</field>
+            <field name="flow_start">True</field>
+            <field name="kind">function</field>
+            <field name="action">action_ready_planning()</field>
+        </record>
+
+        <record model="workflow.activity" id="act_change_states_execute">
+            <field name="wkf_id" ref="wkf_change_states" />
+            <field name="name">execute</field>
+            <field name="kind">function</field>
+            <field name="action">action_execute_planning()</field>
+        </record>
+
+
+        <record model="workflow.transition" id="trans_change_states_ready_to_executed">
+            <field name="act_from" ref="act_change_states_ready" />
+            <field name="act_to" ref="act_change_states_execute" />
+            <field name="signal">execute</field>
+        </record>
+
+
+    </data>
+
+
+</openerp>

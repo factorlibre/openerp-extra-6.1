@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+       <!-- Mail Service -->
+
+		<record id="dm_mail_service_senddocuments_ftp" model="dm.mail_service">
+			<field name="name">Print and Send for FTP</field>
+			<field name="type_id" ref="dm_mail_service_type_ftp"/>
+			<field name="partner_id" ref="dm.res_partner_print_send0"/>
+			<field eval="&quot;&quot;&quot;ftp&quot;&quot;&quot;" name="service_type"/>
+			<field name="action_id" ref="dm_ftp.ir_actions_server_senddocuments_ftp"/>
+			<field name="media_id" ref="dm.media_paper"/>
+		</record>		
+    </data>
+</openerp>

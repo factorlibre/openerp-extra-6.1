@@ -1,0 +1,258 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* cci_membership
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-10 10:09:44+0000\n"
+"PO-Revision-Date: 2009-12-10 10:09:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cci_membership
+#: wizard_field:cci_membership.check_total_sold,init,start_date:0
+msgid "Date1"
+msgstr ""
+
+#. module: cci_membership
+#: field:res.partner,refuse_membership:0
+msgid "Refuse to Become a Member"
+msgstr "Refus d'être membre"
+
+#. module: cci_membership
+#: wizard_field:cci_membership.check_total_sold,init,end_date:0
+msgid "Date2"
+msgstr ""
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Free Member"
+msgstr "Membre gratuit"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Canceled Member"
+msgstr "Membre annulé"
+
+#. module: cci_membership
+#: model:ir.module.module,description:cci_membership.module_meta_information
+msgid "\n"
+"        cci membership\n"
+"            - vcs functionality for cci\n"
+"    "
+msgstr "\n"
+"        CCI membership\n"
+"            - avec fonctionnalité d'un VCS pour le membership aux CCIs\n"
+"    "
+
+#. module: cci_membership
+#: wizard_view:cci_membership.check_total_sold,init:0
+msgid "Members Total Sold"
+msgstr ""
+
+#. module: cci_membership
+#: model:ir.actions.wizard,name:cci_membership.select_partners
+msgid "Select Partners"
+msgstr "Sélection de Partenaire"
+
+#. module: cci_membership
+#: model:ir.actions.wizard,name:cci_membership.wizard_cci_membership_totalsold
+msgid "Total Sold for partners"
+msgstr ""
+
+#. module: cci_membership
+#: wizard_field:show_partners,crm,state:0
+msgid "State"
+msgstr "Etat"
+
+#. module: cci_membership
+#: model:ir.module.module,shortdesc:cci_membership.module_meta_information
+msgid "CCI Membership"
+msgstr "CCI Membership"
+
+#. module: cci_membership
+#: selection:show_partners,crm,state:0
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: cci_membership
+#: wizard_button:show_partners,crm,choose:0
+#: wizard_button:show_partners,entry_lines,choose:0
+msgid "Choose"
+msgstr "Choisissez"
+
+#. module: cci_membership
+#: wizard_button:cci_membership.check_total_sold,init,print:0
+msgid "Print"
+msgstr "Imprimer"
+
+#. module: cci_membership
+#: selection:show_partners,crm,state:0
+msgid "Pending"
+msgstr "En attente"
+
+#. module: cci_membership
+#: field:res.partner,membership_vcs:0
+msgid "VCS number for membership offer"
+msgstr "VCS pour appel à cotisation"
+
+#. module: cci_membership
+#: wizard_field:show_partners,entry_lines,date_from:0
+msgid "Start of period"
+msgstr "Début de la période"
+
+#. module: cci_membership
+#: model:ir.ui.menu,name:cci_membership.select_partners_menu
+msgid "Select Specific Members"
+msgstr "Sélection de membres spécifiques"
+
+#. module: cci_membership
+#: wizard_view:show_partners,entry_lines:0
+msgid "Select Criteria For Partners - Amount Sold"
+msgstr "Critère de sélection des partenaires - Valeur de la consommation"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Paid Member"
+msgstr "Membre payant"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Invoiced Member"
+msgstr "Membre facturé"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Non Member"
+msgstr "Non-membre"
+
+#. module: cci_membership
+#: help:show_partners,crm,state:0
+msgid "The wizard will look if a partner has a registration of that specified state for the chosen event"
+msgstr ""
+
+#. module: cci_membership
+#: wizard_view:show_partners,entry_lines:0
+msgid "This wizard will help you selecting the partners that have/haven't spend more than the specified amount in the specified period."
+msgstr "Ce wizard va vous aider a sélectionner les partenaires qui ont consommé une certaine somme durant une certaine période"
+
+#. module: cci_membership
+#: help:show_partners,crm,removing_from_list:0
+#: help:show_partners,entry_lines,removing_from_list:0
+msgid "The result will be a list of partner:\n"
+"\n"
+"* Either only the fetching partners, if this box is checked.\n"
+"\n"
+"* Otherwise, all the partners minus the ones that fetch the criteria."
+msgstr "Le résultat sera une liste de partenaires:\n"
+"\n"
+"* Soit seulement les partenaires correcpondant si cette case est cochée.\n"
+"\n"
+"* Autrement, tous les partenaires sauf ceux qui répondent à ce critère de sélection."
+
+#. module: cci_membership
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "XML incorrect pour l'Architecture des Vues !"
+
+#. module: cci_membership
+#: selection:show_partners,init,select:0
+msgid "Criteria about registration to specified event"
+msgstr "Crtière sur l'inscription à une certaine rencontre"
+
+#. module: cci_membership
+#: wizard_field:show_partners,init,select:0
+msgid "Select Criteria"
+msgstr "Sélectionner le critère"
+
+#. module: cci_membership
+#: wizard_field:show_partners,entry_lines,member_state:0
+msgid "Current Membership state"
+msgstr "Etat actuel de membre"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Waiting Member"
+msgstr "Membre en attente"
+
+#. module: cci_membership
+#: wizard_button:cci_membership.check_total_sold,init,end:0
+#: wizard_button:show_partners,crm,end:0
+#: selection:show_partners,crm,state:0
+#: wizard_button:show_partners,entry_lines,end:0
+#: wizard_button:show_partners,init,end:0
+msgid "Cancel"
+msgstr "Annnule"
+
+#. module: cci_membership
+#: wizard_field:show_partners,entry_lines,amount:0
+msgid "Amount"
+msgstr "Valeur"
+
+#. module: cci_membership
+#: help:show_partners,entry_lines,member_state:0
+msgid "The wizard will only pay attention to partners in this membership state"
+msgstr "Le wizard ne tiendra compte que des partenaires dans cet état de membership."
+
+#. module: cci_membership
+#: wizard_field:show_partners,entry_lines,date_to:0
+msgid "End of period"
+msgstr "Fin de la période"
+
+#. module: cci_membership
+#: wizard_view:show_partners,init:0
+msgid "Selecting Partners"
+msgstr "En train de sélectionner les partenaires"
+
+#. module: cci_membership
+#: selection:show_partners,entry_lines,member_state:0
+msgid "Old Member"
+msgstr "Ancien membre"
+
+#. module: cci_membership
+#: wizard_field:show_partners,crm,removing_from_list:0
+#: wizard_field:show_partners,entry_lines,removing_from_list:0
+msgid "Keep only fetching partners"
+msgstr "Ne conserve que les partenaires correspondants"
+
+#. module: cci_membership
+#: selection:show_partners,init,select:0
+msgid "Criteria about amount sold and membership state"
+msgstr "Crière sur base du membreship et de la consommation"
+
+#. module: cci_membership
+#: wizard_view:show_partners,crm:0
+msgid "This wizard will help you selecting the partners that have/haven't participated to a specific event."
+msgstr "Ce wizard vous aide à sélectionner les partenaires qui ont participé ou non à une certaine rencontre."
+
+#. module: cci_membership
+#: wizard_button:show_partners,init,go:0
+msgid "Go"
+msgstr "Go"
+
+#. module: cci_membership
+#: selection:show_partners,crm,state:0
+msgid "Close"
+msgstr "Fermer"
+
+#. module: cci_membership
+#: selection:show_partners,crm,state:0
+msgid "Open"
+msgstr "Ouvrir"
+
+#. module: cci_membership
+#: wizard_field:show_partners,crm,section:0
+msgid "Event"
+msgstr "Rencontre"
+
+#. module: cci_membership
+#: wizard_view:show_partners,crm:0
+msgid "Select Criteria For Partners-CRM cases and sections"
+msgstr "Critères de sélection pour les Partenaires - Cas et sections CRM"
+

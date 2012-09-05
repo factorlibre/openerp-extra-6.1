@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Case Sections -->
+
+        <record model="crm.case.section" id="section_direct_marketing">
+            <field name="name">Direct Maketing</field>
+            <field name="code">DM</field>
+        </record>
+
+        <!-- Server Action -->
+
+        <record id="ir_actions_server_crm_case_create0" model="ir.actions.server">
+            <field name="model_id" ref="dm.model_dm_workitem"/>
+            <field eval="&quot;&quot;&quot;# You can use the following variables
+#    - object
+#    - object2
+#    - time
+#    - cr
+#    - uid
+#    - ids
+# If you plan to return an action, assign: action = {...}
+&quot;&quot;&quot;" name="code"/>
+            <field eval="[(6,0,[])]" name="child_ids"/>
+            <field name="srcmodel_id" ref="crm.model_crm_case"/>
+            <field eval="&quot;&quot;&quot;True&quot;&quot;&quot;" name="condition"/>
+            <field eval="&quot;&quot;&quot;Create CRM Case&quot;&quot;&quot;" name="name"/>
+            <field eval="&quot;&quot;&quot;object_create&quot;&quot;&quot;" name="state"/>
+            <field name="record_id" ref="dm.field_dm_workitem_error_msg"/>
+        </record>
+
+        <record id="ir_server_object_lines_0" model="ir.server.object.lines">
+            <field name="server_id"  model="ir.actions.server" search="[('name','=','Create CRM Case')]"/>
+            <field eval="&quot;&quot;&quot;value&quot;&quot;&quot;" name="type"/>
+            <field model="crm.case.section" name="value" search="[('code','=','DM')]"/>
+            <field name="col1" ref="crm.field_crm_case_section_id"/>
+        </record>
+
+        <record id="ir_server_object_lines_1" model="ir.server.object.lines">
+            <field name="server_id"  model="ir.actions.server" search="[('name','=','Create CRM Case')]"/>
+            <field eval="&quot;&quot;&quot;value&quot;&quot;&quot;" name="type"/>
+            <field eval="&quot;&quot;&quot;CRM Test&quot;&quot;&quot;" name="value"/>
+            <!--<field eval="&quot;&quot;&quot;'Case %s %s (Segment: %s)' % (object.address_id.firstname, object.address_id.name, object.segment_id.code)&quot;&quot;&quot;" name="value"/>-->
+            <field name="col1" ref="crm.field_crm_case_name"/>
+        </record>
+
+        <record id="ir_server_object_lines_2" model="ir.server.object.lines">
+            <field name="server_id"  model="ir.actions.server" search="[('name','=','Create CRM Case')]"/>
+            <field name="type" eval="&quot;&quot;&quot;equation&quot;&quot;&quot;"/>
+            <field name="model" model="res.partner.address" />
+            <field name="value" eval="&quot;&quot;&quot;object.address_id.id&quot;&quot;&quot;"/>
+            <field name="col1" ref="crm.field_crm_case_partner_id"/>
+        </record>
+
+        <record model="dm.media" id="media_phone">
+            <field name="name" eval="&quot;Phone&quot;"/>
+            <field name="code" eval="&quot;Phone&quot;"/>
+        </record>
+
+    </data>
+</openerp>
+

@@ -1,0 +1,213 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-11-25 13:56+0000\n"
+"PO-Revision-Date: 2011-08-27 14:13+0000\n"
+"Last-Translator: mgaja (GrupoIsep.com) <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:33+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: project_event
+#: field:project.event.configuration,create:0
+msgid "On Create"
+msgstr "Al crear"
+
+#. module: project_event
+#: model:ir.actions.act_window,name:project_event.project_event_configuration_action
+#: view:project.event.configuration:0
+msgid "Project Event Configuration"
+msgstr "Configuración eventos de proyecto"
+
+#. module: project_event
+#: selection:project.event,action:0
+msgid "Create"
+msgstr "Crear"
+
+#. module: project_event
+#: view:project.project:0
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: project_event
+#: selection:project.event.configuration,action_type:0
+msgid "SMS"
+msgstr "SMS"
+
+#. module: project_event
+#: view:project.event.configuration:0
+msgid "Proejct Event Configuration"
+msgstr "Configuración eventos de proyecto"
+
+#. module: project_event
+#: model:ir.model,name:project_event.model_project_event
+msgid "project.event"
+msgstr "evento.proyecto"
+
+#. module: project_event
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en la definición de la acción."
+
+#. module: project_event
+#: constraint:ir.model:0
+msgid ""
+"The Object name must start with x_ and not contain any special character !"
+msgstr ""
+"El nombre del objeto debe empezar con x_ y no debe contener ningún carácter "
+"especial!"
+
+#. module: project_event
+#: view:project.project:0
+msgid "Ref"
+msgstr "Ref"
+
+#. module: project_event
+#: field:project.event,name:0
+#: view:project.project:0
+#: field:project.project,event_ids:0
+msgid "Events"
+msgstr "Eventos"
+
+#. module: project_event
+#: field:project.event,type:0
+#: field:project.event.configuration,type:0
+msgid "Type of Event"
+msgstr "Tipo de Evento"
+
+#. module: project_event
+#: field:project.event,res_id:0
+msgid "Resource Id"
+msgstr "Id recurso"
+
+#. module: project_event
+#: field:project.event,description:0
+#: view:project.project:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: project_event
+#: selection:project.event,action:0
+msgid "Modify"
+msgstr "Modificar"
+
+#. module: project_event
+#: selection:project.event.configuration,action_type:0
+msgid "Email"
+msgstr "Email"
+
+#. module: project_event
+#: model:ir.module.module,shortdesc:project_event.module_meta_information
+msgid "Project Event"
+msgstr "Eventos de proyecto"
+
+#. module: project_event
+#: field:project.event,user_id:0
+msgid "User"
+msgstr "usuario"
+
+#. module: project_event
+#: field:project.event,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: project_event
+#: model:ir.model,name:project_event.model_project_event_configuration
+msgid "project.event.configuration"
+msgstr "evento.proyecto.configuración"
+
+#. module: project_event
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡﻿XML no válido para la definición de la vista!"
+
+#. module: project_event
+#: field:project.event.configuration,name:0
+#: field:project.event.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: project_event
+#: selection:project.event.configuration,action_type:0
+msgid "Request"
+msgstr "Solicitud"
+
+#. module: project_event
+#: selection:project.event,action:0
+msgid "Remove"
+msgstr "Eliminar"
+
+#. module: project_event
+#: field:project.event,project_id:0
+#: field:project.event.configuration,project_id:0
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project_event
+#: field:project.event.configuration,write:0
+msgid "On Write"
+msgstr "Al escribir"
+
+#. module: project_event
+#: view:project.event.type:0
+msgid "Proejct Event Type"
+msgstr "Tipo de evento en proyecto"
+
+#. module: project_event
+#: model:ir.actions.act_window,name:project_event.project_event_type_action
+#: model:ir.ui.menu,name:project_event.menu_project_event_type
+msgid "Project Event Type"
+msgstr "Tipo de evento de proyecto"
+
+#. module: project_event
+#: field:project.event,action:0
+msgid "Action"
+msgstr "Acción"
+
+#. module: project_event
+#: field:project.event.configuration,unlink:0
+msgid "On Delete"
+msgstr "Al eliminar"
+
+#. module: project_event
+#: field:project.event.type,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: project_event
+#: model:ir.module.module,description:project_event.module_meta_information
+msgid ""
+"This module allow track events on project and perform particular action in "
+"event\n"
+"  - event on create/modify task\n"
+"  - event on document upload\n"
+msgstr ""
+"Este módulo permite el seguimiento de los eventos en un proyecto y ejecutar "
+"acciones particulares en el evento\n"
+"  - evento al crear/modificar tareas\n"
+"  - evento al subir documentos\n"
+
+#. module: project_event
+#: model:ir.model,name:project_event.model_project_event_type
+msgid "project.event.type"
+msgstr "evento.proyecto.tipo"
+
+#. module: project_event
+#: field:project.event.configuration,action_type:0
+msgid "Action Type"
+msgstr "Tipo de acción"
+
+#. module: project_event
+#: view:project.project:0
+#: field:project.project,event_configuration_ids:0
+msgid "Event Configuration"
+msgstr "Configuración de eventos"

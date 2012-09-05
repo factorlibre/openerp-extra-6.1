@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+    <record model="ir.ui.view" id="view_partner_form_v1">
+        <field name="name">res.partner.form.v1</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="sequence">20</field>
+        <field name="arch" type="xml">
+            <xpath expr="/form/notebook/page[@string='General']/field[@name='address']/form/group/field[@name='email']" position="after">
+                <separator string="Vehicle" colspan="2"/>
+                <field name="plate"/>
+            </xpath>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_partner_address_form_v1">
+        <field name="name">res.partner.address.form.v1</field>
+        <field name="model">res.partner.address</field>
+        <field name="inherit_id" ref="base.view_partner_address_form1"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/group/field[@name='email']" position="after">
+                <separator string="Vehicle" colspan="2"/>
+                <field name="plate"/>
+            </xpath>
+        </field>
+    </record>
+
+    </data>
+</openerp>

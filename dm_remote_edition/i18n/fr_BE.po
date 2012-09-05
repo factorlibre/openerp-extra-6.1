@@ -1,0 +1,95 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_remote_edition
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:37:33+0000\n"
+"PO-Revision-Date: 2009-11-25 07:37:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_remote_edition
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.campaign.document.job,use_front_recap:0
+msgid "Use Front Job Recap"
+msgstr ""
+
+#. module: dm_remote_edition
+#: model:res.partner.category,name:dm_remote_edition.dm_remote_edition_print_dealer
+msgid "Printer "
+msgstr ""
+
+#. module: dm_remote_edition
+#: view:dm.mail_service:0
+msgid "Printer Informations"
+msgstr ""
+
+#. module: dm_remote_edition
+#: constraint:res.partner.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.mail_service,default_printer:0
+msgid "Default Printer"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.campaign.document.job,user_id:0
+#: field:dm.mail_service,user_id:0
+msgid "Printer User"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.mail_service,sorting_rule_id:0
+msgid "Sorting Rule"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.mail_service,front_job_recap:0
+msgid "Front Job Recap"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.mail_service,default_printer_tray:0
+msgid "Default Printer Tray"
+msgstr ""
+
+#. module: dm_remote_edition
+#: model:ir.actions.server,name:dm_remote_edition.ir_actions_server_generatedocumentjob0
+msgid "Generate Document Job"
+msgstr ""
+
+#. module: dm_remote_edition
+#: model:ir.module.module,description:dm_remote_edition.module_meta_information
+msgid "\n"
+"           \n"
+"            "
+msgstr ""
+
+#. module: dm_remote_edition
+#: model:ir.module.module,shortdesc:dm_remote_edition.module_meta_information
+msgid "DM REMOTE EDITION "
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.mail_service,bottom_job_recap:0
+msgid "Bottom Job Recap"
+msgstr ""
+
+#. module: dm_remote_edition
+#: field:dm.campaign.document.job,use_bottom_recap:0
+msgid "Use Bottom Job Recap"
+msgstr ""
+

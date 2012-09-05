@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+
+        <!--
+	Resource: product.price.type
+	-->
+        <record id="company_list_price" model="product.price.type">
+            <field name="name">Company Public Price</field>
+            <field name="field">company_list_price</field>
+        </record>
+        <record id="company_standard_price" model="product.price.type">
+            <field name="name">Company Cost Price</field>
+            <field name="field">company_standard_price</field>
+        </record>
+
+        <!--
+	Price list
+	-->
+        <record id="company_list0" model="product.pricelist">
+            <field name="name">Company Public Pricelist</field>
+            <field name="type">sale</field>
+        </record>
+        <record id="company_ver0" model="product.pricelist.version">
+            <field name="pricelist_id" ref="company_list0"/>
+            <field name="name">Default Company Public Pricelist Version</field>
+        </record>
+        <record id="company_item0" model="product.pricelist.item">
+            <field name="price_version_id" ref="company_ver0"/>
+            <field name="base" ref="company_list_price"/>
+            <field name="name">Default Company Public Pricelist Line</field>
+        </record>
+
+        <!--
+        Property
+        -->
+        <record forcecreate="True" id="property_product_pricelist_company" model="ir.property">
+            <field name="name">property_product_pricelist_company</field>
+            <field name="fields_id" search="[('model','=','res.partner'),('name','=','property_product_pricelist_company')]"/>
+            <field eval="'product.pricelist,'+str(ref('company_list0'))" name="value"/>
+        </record>
+
+        <record id="company_purchase_list0" model="product.pricelist">
+            <field name="name">Default Company Purchase Pricelist</field>
+            <field name="type">purchase</field>
+        </record>
+        <record id="company_purchase_ver0" model="product.pricelist.version">
+            <field name="pricelist_id" ref="company_purchase_list0"/>
+            <field name="name">Default Company Purchase Pricelist Version</field>
+        </record>
+        <record id="company_purchase_item0" model="product.pricelist.item">
+            <field name="price_version_id" ref="company_purchase_ver0"/>
+            <field name="base" ref="product.company_strandart_price"/>
+            <field name="name">Default Company Purchase Pricelist Line</field>
+        </record>
+        
+        <record forcecreate="True" id="property_product_pricelist_purchase_company" model="ir.property">
+            <field name="name">property_product_pricelist_purchase_company</field>
+            <field name="fields_id" search="[('model','=','res.partner'),('name','=','property_product_pricelist_purchase')]"/>
+            <field eval="'product.pricelist,'+str(company_purchase_list0)" name="value"/>
+        </record>
+
+    </data>
+</openerp>

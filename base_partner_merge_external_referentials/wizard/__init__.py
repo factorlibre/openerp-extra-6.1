@@ -1,0 +1,3 @@
+import merge_external_referential
+import base_partner_merge
+import base_partner_merge_address

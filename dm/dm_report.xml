@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <report id="dm_offer_report"
+            string="Offer"
+            model="dm.offer"
+            name="dm.offer"
+            rml="dm/report/dm_offer.rml"
+            header="False"
+            auto="False"
+            />
+
+        <report id="dm_offer_model_report"
+            string="Offer Model"
+            model="dm.offer"
+            name="offer.model.report"
+            rml="dm/report/dm_offer_model.rml"
+            multi="True"
+            />
+
+        <report id="dm_preoffer_report"
+            string="PreOffer"
+            model="dm.offer"
+            name="preoffer.report"
+            rml="dm/report/dm_preoffer.rml"
+            multi="True"
+            />
+
+        <report id="dm_offer_report_graph"
+            string="Offer Graph"
+            model="dm.offer"
+            name="dm.offer.graph"
+            auto="False"
+            />
+
+        <report id="dm_campaign_report"
+            string="Campaign"
+            model="dm.campaign"
+            name="dm.campaign.report"
+            rml="dm/report/dm_campaign.rml"
+            auto="False"
+            />
+            
+        <report id="dm_offer_step_report"
+            string="Offer Step"
+            model="dm.offer.step"
+            name="dm.offer.step"
+            rml="dm/report/dm_offer_step.rml"
+            auto="False"
+            header="False"
+            />            
+    </data>
+</openerp>

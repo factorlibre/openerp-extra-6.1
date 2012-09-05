@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <record model="ir.ui.view" id="file_format_form">
+        <field name="name">file.format.form</field>
+        <field name="model">file.format</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="File Format Configuration" >
+                <field name="name" />
+                <field name="path" />
+                <field name="file_name" />
+                <field name="header" />
+                <field name="separator" />
+                <field name="quote" />
+                <field name="model_id" />
+                <newline/>
+                <field name="field_ids" colspan="4" />
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="file_format_tree">
+        <field name="name">file.format.form</field>
+        <field name="model">file.format</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Deilvery File Configuration">
+                <field name="name" />
+                <field name="path" />
+                <field name="file_name" />
+                <field name="header" />
+                <field name="separator" />
+                <field name="quote" />
+            </tree>
+        </field>
+    </record>
+
+
+	<record model="ir.ui.view" id="delivery_file_line_tree">
+		<field name="name">file.format.line.tree</field>
+		<field name="model">file.format.field</field>
+	  	<field name="type">tree</field>
+	  	<field name="arch" type="xml">
+            <tree string="File Format Field">
+                <field name="sequence" />
+                <field name="name" />
+                <field name="length" />
+                <field name="fill_char" />
+                <field name="format_number" />
+                <field name="align" />
+                <field name="expression" />
+            </tree>
+	 	</field>
+	</record>
+
+	<record model="ir.ui.view" id="delivery_file_line_form">
+		<field name="name">file.format.line.form</field>
+		<field name="model">file.format.field</field>
+	  	<field name="type">form</field>
+	  	<field name="arch" type="xml">
+            <form string="Deilvery File Field">
+                <field name="sequence" />
+                <field name="name" />
+                <field name="length" />
+                <field name="fill_char" />
+                <field name="format_number" />
+                <field name="decimal_character" />
+                <field name="align" />
+                <newline/>
+                <field name="expression" colspan="4" />
+            </form>
+	 	</field>
+	</record>
+
+	<record id="action_delivery_file_format_config" model="ir.actions.act_window">
+        <field name="name">Delivery File Format</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">file.format</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+ 
+	<menuitem parent="delivery.menu_delivery" name="File Format Config" id="file_format_config_menu_id" action="action_delivery_file_format_config"/>
+</data>
+</openerp>
+

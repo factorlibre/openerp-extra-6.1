@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-01-02 17:19+0000\n"
+"PO-Revision-Date: 2011-02-15 15:06+0000\n"
+"Last-Translator: Luniz <luniz52@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:30+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "No SMTP Server has been defined!"
+msgstr "Nenhum Servidor SMTP foi definido !"
+
+#. module: email_sale
+#: wizard_button:sale.order.email_send_2,send,end:0
+msgid "End"
+msgstr "Final"
+
+#. module: email_sale
+#: wizard_view:sale.order.email_send_2,init:0
+msgid "Message:"
+msgstr "Mensagem:"
+
+#. module: email_sale
+#: wizard_field:sale.order.email_send_2,init,to:0
+msgid "To"
+msgstr "Para"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Subject: "
+msgstr ""
+"\n"
+"\n"
+"Assunto: "
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Text:\n"
+msgstr ""
+"\n"
+"\n"
+"Texto:\n"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid ". Sale Num."
+msgstr "Número de Venda"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Please check the Server Configuration!"
+msgstr "Por Favor verifique a Configuração do Servidor !"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "You have selected documents for different partners."
+msgstr "Selecionou documentos para diferentes terceiros."
+
+#. module: email_sale
+#: wizard_button:sale.order.email_send_2,init,send:0
+msgid "Send Email"
+msgstr "Enviar Email"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "To: "
+msgstr "Para: "
+
+#. module: email_sale
+#: model:ir.module.module,shortdesc:email_sale.module_meta_information
+msgid ""
+"Email Sale - Use to Send Customers the selected sale orders attachment by "
+"Email"
+msgstr ""
+"Email de Venda - Utilize para Enviar aos Clientes os anexos das ordens de "
+"venda pelo Email"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Error sending email"
+msgstr "Erro ao enviar o email"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Sale_Order"
+msgstr "Sale_Order"
+
+#. module: email_sale
+#: model:ir.module.module,description:email_sale.module_meta_information
+msgid ""
+"Use Email client module to send to customers\n"
+"the selected sale orders attached by Email.\n"
+"\n"
+"  * The invoice and contact emails addresses are proposed\n"
+"  * An email subject and text with the user signature are proposed\n"
+"  * Later, the emails addresses, subject and text can be modified\n"
+"  * A partner event is created with information of the email (partner,\n"
+"    description, channel, document, user)\n"
+"  * Historical and statistical data is recorded in the smtpclient module\n"
+msgstr ""
+"Utilize o módulo Email cliente para enviar para os clientes\n"
+"os anexos de ordens de vendas selecionadas por Email.\n"
+"\n"
+"   * A factura e o endereços de emails do contacto são propostos\n"
+"   * Um assunto email e texto com a assinatura do utilizador são propostos\n"
+"   * Posteriormente os endereços de emails, assunto e texto podem ser "
+"modificados\n"
+"   * Um evento terceiro foio criado com informações do email (terceiro,\n"
+"      descrição, canal, documento, utilizador)\n"
+"   * Dados estatísticos e histórico são gravados no módulo smtp cliente\n"
+
+#. module: email_sale
+#: wizard_field:sale.order.email_send_2,send,email_sent:0
+msgid "Quantity of Emails sent"
+msgstr "Quantidade de Emails enviados"
+
+#. module: email_sale
+#: model:ir.actions.wizard,name:email_sale.sale_order_email_send_wizard_2
+msgid "Send by Email"
+msgstr "Enviar por Email"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Error"
+msgstr "Erro"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Email sent through sale order wizard"
+msgstr "Email enviado através do assistente da ordem de venda"
+
+#. module: email_sale
+#: wizard_view:sale.order.email_send_2,init:0
+#: wizard_view:sale.order.email_send_2,send:0
+msgid "Send sale order/s by Email"
+msgstr "Enviar ordem de venda/por Email"
+
+#. module: email_sale
+#: code:addons/email_sale/wizard/wizard_send_email.py:0
+#, python-format
+msgid "Warning"
+msgstr "Aviso"
+
+#. module: email_sale
+#: wizard_button:sale.order.email_send_2,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: email_sale
+#: wizard_field:sale.order.email_send_2,init,text:0
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: email_sale
+#: wizard_field:sale.order.email_send_2,init,subject:0
+msgid "Subject"
+msgstr "Assunto"

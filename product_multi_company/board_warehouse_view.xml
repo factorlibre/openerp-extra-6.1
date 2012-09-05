@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="note_warehouse_type" model="board.note.type">
+            <field name="name">Warehouse</field>
+        </record>
+
+
+        <record id="action_incoming_product_board" model="ir.actions.act_window">
+            <field name="name">Incoming Product</field>
+            <field name="res_model">stock.move</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','in',('confirmed','assigned')),'|','&amp;',('picking_id','=',False),('location_id.usage', 'in', ['customer','supplier']),'&amp;',('picking_id','!=',False),('picking_id.type','=','in')]</field>
+            <field name="view_id" ref="stock.view_move_tree_reception_picking"/>
+        </record>
+
+        <record id="action_outgoing_product_board" model="ir.actions.act_window">
+            <field name="name">Outgoing Product</field>
+            <field name="res_model">stock.move</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','in',('confirmed','assigned')),'|','&amp;',('picking_id','=',False),('location_dest_id.usage', 'in', ['customer','supplier']),'&amp;',('picking_id','!=',False),('picking_id.type','=','out')]</field>
+            <field name="view_id" ref="stock.view_move_tree_reception_picking"/>
+        </record>
+        <record id="board_warehouse_form" model="ir.ui.view">
+            <field name="name">board.warehouse.form</field>
+            <field name="model">board.board</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Warehouse board">
+                    <hpaned position="200">
+                        <child1>
+                            <action colspan="4" name="%(action_incoming_product_board)d" string="Incoming Product"  width="510"/>
+                            <action colspan="4" name="%(action_outgoing_product_board)d" string="Outgoing Product" width="510"/>
+                        </child1>
+
+                        <child2>
+                        </child2>
+                    </hpaned>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_board_warehouse" model="ir.actions.act_window">
+            <field name="name">Warehouse Dashboard</field>
+            <field name="res_model">board.board</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="board_warehouse_form"/>
+        </record>
+
+
+        <menuitem icon="terp-stock" 
+        id="stock.menu_stock_root" 
+        name="Warehouse" 
+        sequence="5"  
+        groups="stock.group_stock_manager"
+        action="product_multi_company.open_board_warehouse"/>
+
+    </data>
+</openerp>

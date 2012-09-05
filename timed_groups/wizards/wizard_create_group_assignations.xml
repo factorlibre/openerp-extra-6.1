@@ -1,0 +1,48 @@
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="groups_group_assignation_wizard_form_view">
+            <field name="name">groups.group_assignation_wizard.form.all</field>
+            <field name="model">groups.group_assignation_wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Group Assignation Wizard">
+                    <field name="group_id" string="Group" on_change="change_group(group_id)" /><newline />
+                    <field name="datetime_from" />
+                    <field name="datetime_to" /><newline />
+                    <field name="participation_ids" colspan="4" domain="[eval(participation_domain)]" /><newline />
+                    <field name="participation_domain" colspan="4" invisible="1" />
+                    <button special="cancel" string="Cancel" type="object"/>
+                    <button name="create_group_assignations" string="Create assignations" type="object" />
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="groups_group_assignation_wizard_list_act">
+            <field name="name">Group Assignation Wizard</field>
+            <field name="res_model">groups.group_assignation_wizard</field>
+            <field name="src_model">groups.group</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.values" id="ir_open_group_assignation_wizard">
+            <field name="key2">client_action_multi</field>
+            <field name="model">groups.group</field>
+            <field name="name">Group Assignation Wizard</field>
+            <field name="value" eval="'ir.actions.act_window,%d'%groups_group_assignation_wizard_list_act"/>
+            <field name="object" eval="True"/>
+        </record>
+
+		<record id="ir_actions_act_window_view_groups_group_assignation_wizard_0" model="ir.actions.act_window.view">
+			<field name="act_window_id" ref="groups_group_assignation_wizard_list_act" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="groups_group_assignation_wizard_form_view" />
+			<field eval="0" name="sequence" />
+		</record>
+
+
+    </data>
+
+</openerp>

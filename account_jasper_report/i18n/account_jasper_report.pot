@@ -1,0 +1,848 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_jasper_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-07 23:52+0000\n"
+"PO-Revision-Date: 2011-07-07 23:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "code"
+msgstr "code"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Account\")"
+msgstr "tr($V{L},\"Account\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "$F{ref}"
+msgstr "$F{ref}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$V{L}.toString()"
+msgstr "$V{L}.toString()"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "move_id/period_id/name"
+msgstr "move_id/period_id/name"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{name}"
+msgstr "$F{name}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "account_name"
+msgstr "account_name"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tax_line/tax_amount"
+msgstr "tax_line/tax_amount"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "\"Total\""
+msgstr "\"Total\""
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "period_credit"
+msgstr "period_credit"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{tax_name}.indexOf(\"IRPF\")"
+msgstr "$F{tax_name}.indexOf(\"IRPF\")"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_journal,init,journals:0
+msgid "Journals"
+msgstr "Journals"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$P{SUBREPORT_DIR} + \"portrait_header.jasper\""
+msgstr "$P{SUBREPORT_DIR} + \"portrait_header.jasper\""
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "$F{partner_name}"
+msgstr "$F{partner_name}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tax_line/base_amount"
+msgstr "tax_line/base_amount"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{partner_vat}"
+msgstr "$F{partner_vat}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$V{credit_1}"
+msgstr "$V{credit_1}"
+
+#. module: account_jasper_report
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "You can not create move line on closed account."
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{amount_total_1}"
+msgstr "$V{amount_total_1}"
+
+#. module: account_jasper_report
+#: selection:account_report_taxes_by_invoice,init,partner_type:0
+msgid "Suppliers"
+msgstr "Suppliers"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{period_balance}"
+msgstr "$F{period_balance}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$F{account_number}"
+msgstr "$F{account_number}"
+
+#. module: account_jasper_report
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "Wrong credit or debit value in accounting entry !"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "\"Total mes \" + ($F{date}.getMonth()+1)"
+msgstr "\"Total mes \" + ($F{date}.getMonth()+1)"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Balance\")"
+msgstr "tr($V{L},\"Balance\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "amount_total"
+msgstr "amount_total"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.trial.balance:0
+msgid "$V{total_credit}"
+msgstr "$V{total_credit}"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "period_debit"
+msgstr "period_debit"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "name"
+msgstr "name"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "tr($V{L},\"Move\")"
+msgstr "tr($V{L},\"Move\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{period}"
+msgstr "$F{period}"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:62
+#, python-format
+msgid "ALL JOURNALS"
+msgstr "ALL JOURNALS"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "/data/record"
+msgstr "/data/record"
+
+#. module: account_jasper_report
+#: constraint:account.move.line:0
+msgid "Account requires a partner in all its moves."
+msgstr "Account requires a partner in all its moves."
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,accounts:0
+#: wizard_field:account_report_trial_balance,init,accounts:0
+msgid "Accounts"
+msgstr "Accounts"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$V{total_period_credit}"
+msgstr "$V{total_period_credit}"
+
+#. module: account_jasper_report
+#: wizard_button:account_report_general_ledger,init,end:0
+#: wizard_button:account_report_journal,init,end:0
+#: wizard_button:account_report_taxes_by_invoice,init,end:0
+msgid "_Cancel"
+msgstr "_Cancel"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{base_amount_1}"
+msgstr "$V{base_amount_1}"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$V{total_period_balance}"
+msgstr "$V{total_period_balance}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Invoice\")"
+msgstr "tr($V{L},\"Invoice\")"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$F{date}.getMonth()"
+msgstr "$F{date}.getMonth()"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{date_invoice}"
+msgstr "$F{date_invoice}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$P{REPORT_LOCALE}"
+msgstr "$P{REPORT_LOCALE}"
+
+#. module: account_jasper_report
+#: wizard_button:account_report_trial_balance,init,print:0
+msgid "Print"
+msgstr "Print"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.trial.balance:0
+msgid "$V{total_debit}"
+msgstr "$V{total_debit}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$F{journal_name}"
+msgstr "$F{journal_name}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{number_COUNT} == 1"
+msgstr "$V{number_COUNT} == 1"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_trial_balance,init,accumulated_periods:0
+msgid "Accumultated Periods"
+msgstr "Accumultated Periods"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "tr($V{L},\"Reference\")"
+msgstr "tr($V{L},\"Reference\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Tax\")"
+msgstr "tr($V{L},\"Tax\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "tr($V{L},\"Total\")"
+msgstr "tr($V{L},\"Total\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "debit"
+msgstr "debit"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,type:0
+#: wizard_field:account_report_journal,init,type:0
+#: wizard_field:account_report_taxes_by_invoice,init,type:0
+#: wizard_field:account_report_trial_balance,init,type:0
+msgid "Report"
+msgstr "Report"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "ref"
+msgstr "ref"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+msgid "$F{date}"
+msgstr "$F{date}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$P{HEADER_DS}"
+msgstr "$P{HEADER_DS}"
+
+#. module: account_jasper_report
+#: selection:account_report_trial_balance,init,type:0
+#: model:ir.actions.report.xml,name:account_jasper_report.trial_balance
+msgid "Trial Balance"
+msgstr "Trial Balance"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:105
+#: code:addons/account_jasper_report/report/account_reports.py:164
+#, python-format
+msgid "Journals: %s"
+msgstr "Journals: %s"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:91
+#, python-format
+msgid "ALL ACCOUNTS"
+msgstr "ALL ACCOUNTS"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "$F{balance} == null ? 0.0 : $F{balance}"
+msgstr "$F{balance} == null ? 0.0 : $F{balance}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "$V{total_debit} - $V{total_credit}"
+msgstr "$V{total_debit} - $V{total_credit}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "$F{credit}"
+msgstr "$F{credit}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Period Total\")"
+msgstr "tr($V{L},\"Period Total\")"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,order:0
+#: wizard_field:account_report_journal,init,order:0
+msgid "Order By"
+msgstr "Order By"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Account Name\")"
+msgstr "tr($V{L},\"Account Name\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "tr($V{L},\"Number\")"
+msgstr "tr($V{L},\"Number\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.trial.balance:0
+msgid "balance"
+msgstr "balance"
+
+#. module: account_jasper_report
+#: model:ir.actions.wizard,name:account_jasper_report.account_report_trial_balance_print
+#: model:ir.ui.menu,name:account_jasper_report.account_report_trial_balance_print_menu
+msgid "Print Trial Balance"
+msgstr "Print Trial Balance"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{balance}"
+msgstr "$F{balance}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Taxes by Invoice\")"
+msgstr "tr($V{L},\"Taxes by Invoice\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "credit"
+msgstr "credit"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{total_tax}"
+msgstr "$V{total_tax}"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,start_date:0
+#: wizard_field:account_report_journal,init,start_date:0
+#: wizard_field:account_report_taxes_by_invoice,init,start_date:0
+#: wizard_field:account_report_trial_balance,init,start_date:0
+msgid "Start Date"
+msgstr "Start Date"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Accumulated Period\")"
+msgstr "tr($V{L},\"Accumulated Period\")"
+
+#. module: account_jasper_report
+#: model:ir.actions.wizard,name:account_jasper_report.account_report_taxes_by_invoice_print
+#: model:ir.ui.menu,name:account_jasper_report.account_report_taxes_by_invoice_print_menu
+msgid "Print Taxes by Invoice"
+msgstr "Print Taxes by Invoice"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "number"
+msgstr "number"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{base_amount}"
+msgstr "$F{base_amount}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "tr($V{L},\"General Ledger\")"
+msgstr "tr($V{L},\"General Ledger\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "\" \" + $V{PAGE_NUMBER}"
+msgstr "\" \" + $V{PAGE_NUMBER}"
+
+#. module: account_jasper_report
+#: selection:account_report_general_ledger,init,type:0
+#: model:ir.actions.report.xml,name:account_jasper_report.general_ledger
+msgid "General Ledger"
+msgstr "General Ledger"
+
+#. module: account_jasper_report
+#: selection:account_report_taxes_by_invoice,init,partner_type:0
+msgid "Customers"
+msgstr "Customers"
+
+#. module: account_jasper_report
+#: wizard_view:account_report_taxes_by_invoice,init:0
+#: selection:account_report_taxes_by_invoice,init,type:0
+#: model:ir.actions.report.xml,name:account_jasper_report.taxes_by_invoice
+msgid "Taxes by Invoice"
+msgstr "Taxes by Invoice"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{tax_amount}"
+msgstr "$F{tax_amount}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+msgid "tr($V{L},\"Description\")"
+msgstr "tr($V{L},\"Description\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{amount_total}"
+msgstr "$F{amount_total}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$V{debit_2}"
+msgstr "$V{debit_2}"
+
+#. module: account_jasper_report
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "Company must be same for its related account and period."
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Invoice Total\")"
+msgstr "tr($V{L},\"Invoice Total\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+msgid "$F{move_name}"
+msgstr "$F{move_name}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "$F{debit}"
+msgstr "$F{debit}"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "period_balance"
+msgstr "period_balance"
+
+#. module: account_jasper_report
+#: wizard_view:account_report_journal,init:0
+#: wizard_view:account_report_trial_balance,init:0
+#: model:ir.actions.wizard,name:account_jasper_report.account_report_journal_print
+#: model:ir.ui.menu,name:account_jasper_report.account_report_journal_print_menu
+msgid "Print Journal"
+msgstr "Print Journal"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{period_credit}"
+msgstr "$F{period_credit}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "move_id/name"
+msgstr "move_id/name"
+
+#. module: account_jasper_report
+#: selection:account_report_general_ledger,init,order:0
+#: selection:account_report_journal,init,order:0
+msgid "Move Date"
+msgstr "Move Date"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:166
+#: code:addons/account_jasper_report/report/account_reports.py:246
+#, python-format
+msgid "Accounts: %s"
+msgstr "Accounts: %s"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$P{SUBTITLE}"
+msgstr "$P{SUBTITLE}"
+
+#. module: account_jasper_report
+#: model:ir.model,name:account_jasper_report.model_account_move_line
+msgid "Journal Items"
+msgstr "Journal Items"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Debit\")"
+msgstr "tr($V{L},\"Debit\")"
+
+#. module: account_jasper_report
+#: selection:account_report_general_ledger,init,order:0
+#: selection:account_report_journal,init,order:0
+msgid "Move Number"
+msgstr "Move Number"
+
+#. module: account_jasper_report
+#: wizard_button:account_report_general_ledger,init,print:0
+#: wizard_button:account_report_journal,init,print:0
+#: wizard_button:account_report_taxes_by_invoice,init,print:0
+msgid "_Print"
+msgstr "_Print"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:103
+#: code:addons/account_jasper_report/report/account_reports.py:162
+#: code:addons/account_jasper_report/report/account_reports.py:242
+#: code:addons/account_jasper_report/report/account_reports.py:296
+#, python-format
+msgid "Dates: %s - %s"
+msgstr "Dates: %s - %s"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Year Total\")"
+msgstr "tr($V{L},\"Year Total\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "type"
+msgstr "type"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "tr($V{L},\"Journal\")"
+msgstr "tr($V{L},\"Journal\")"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,periods:0
+#: wizard_field:account_report_journal,init,periods:0
+#: wizard_field:account_report_taxes_by_invoice,init,periods:0
+#: wizard_field:account_report_trial_balance,init,periods:0
+msgid "Periods"
+msgstr "Periods"
+
+#. module: account_jasper_report
+#: wizard_button:account_report_trial_balance,init,end:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$V{total_period_debit}"
+msgstr "$V{total_period_debit}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$V{debit_1}"
+msgstr "$V{debit_1}"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "$V{credit_2}"
+msgstr "$V{credit_2}"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{code}"
+msgstr "$F{code}"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Date\")"
+msgstr "tr($V{L},\"Date\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Credit\")"
+msgstr "tr($V{L},\"Credit\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "tr($V{L},\"Partner\")"
+msgstr "tr($V{L},\"Partner\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.taxes.by.invoice:0
+msgid "$F{account_code}"
+msgstr "$F{account_code}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{tax_amount_1}"
+msgstr "$V{tax_amount_1}"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$F{period_debit}"
+msgstr "$F{period_debit}"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_taxes_by_invoice,init,partner_type:0
+msgid "Invoice Type"
+msgstr "Invoice Type"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+msgid "account_id/name"
+msgstr "account_id/name"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+msgid "$F{account_name}"
+msgstr "$F{account_name}"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:107
+#: code:addons/account_jasper_report/report/account_reports.py:244
+#: code:addons/account_jasper_report/report/account_reports.py:298
+#, python-format
+msgid "Periods: %s"
+msgstr "Periods: %s"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+msgid "date"
+msgstr "date"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+msgid "account_id/code"
+msgstr "account_id/code"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "partner_name"
+msgstr "partner_name"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{number}"
+msgstr "$F{number}"
+
+#. module: account_jasper_report
+#: selection:account_report_journal,init,type:0
+#: model:ir.actions.report.xml,name:account_jasper_report.journal
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "partner_id/vat"
+msgstr "partner_id/vat"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+msgid "$F{move_line_name}"
+msgstr "$F{move_line_name}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"VAT\")"
+msgstr "tr($V{L},\"VAT\")"
+
+#. module: account_jasper_report
+#: report:account.journal:0
+msgid "journal_id/code"
+msgstr "journal_id/code"
+
+#. module: account_jasper_report
+#: wizard_field:account_report_general_ledger,init,end_date:0
+#: wizard_field:account_report_journal,init,end_date:0
+#: wizard_field:account_report_taxes_by_invoice,init,end_date:0
+#: wizard_field:account_report_trial_balance,init,end_date:0
+msgid "End Date"
+msgstr "End Date"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tr($V{L},\"Base\")"
+msgstr "tr($V{L},\"Base\")"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+#: report:account.journal:0
+#: report:account.taxes.by.invoice:0
+#: report:account.trial.balance:0
+msgid "$V{PAGE_NUMBER}+\" /\""
+msgstr "$V{PAGE_NUMBER}+\" /\""
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "move_name"
+msgstr "move_name"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "$V{total_balance}"
+msgstr "$V{total_balance}"
+
+#. module: account_jasper_report
+#: wizard_view:account_report_general_ledger,init:0
+#: model:ir.actions.wizard,name:account_jasper_report.account_report_general_ledger_print
+#: model:ir.ui.menu,name:account_jasper_report.account_report_general_ledger_print_menu
+msgid "Print General Ledger"
+msgstr "Print General Ledger"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{total_base}"
+msgstr "$V{total_base}"
+
+#. module: account_jasper_report
+#: code:addons/account_jasper_report/report/account_reports.py:79
+#, python-format
+msgid "ALL PERIODS"
+msgstr "ALL PERIODS"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "date_invoice"
+msgstr "date_invoice"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Trial Balance\")"
+msgstr "tr($V{L},\"Trial Balance\")"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$V{total}"
+msgstr "$V{total}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "$F{tax_name}"
+msgstr "$F{tax_name}"
+
+#. module: account_jasper_report
+#: report:account.taxes.by.invoice:0
+msgid "tax_line/name"
+msgstr "tax_line/name"
+
+#. module: account_jasper_report
+#: report:account.general.ledger:0
+msgid "account_code"
+msgstr "account_code"
+
+#. module: account_jasper_report
+#: report:account.trial.balance:0
+msgid "tr($V{L},\"Accumulated Year\")"
+msgstr "tr($V{L},\"Accumulated Year\")"
+
+#. module: account_jasper_report
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "You can not create move line on view account."
+

@@ -1,0 +1,2 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"account_fiscal_position_rule","account.fiscal.position.rule","account_fiscal_position_rule.model_account_fiscal_position_rule","stock.group_stock_user",1,0,0,0

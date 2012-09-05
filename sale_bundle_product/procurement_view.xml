@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  sale_bundle_product for OpenERP
+  Copyright (C) 2011 Akretion Sébastien BEAU <sebastien.beau@akretion.com>
+  The licence is in the file __openerp__.py
+-->
+
+<openerp>
+    <data>
+    
+        <!-- INHERITED VIEW FOR THE OBJECT : procurement_order -->
+
+		<record id="procurement_order_view_form" model="ir.ui.view">
+			<field name="name">sale_bundle_product.procurement_order.view_form</field>
+			<field name="model">procurement.order</field>
+			<field name="inherit_id" ref="procurement.procurement_form_view" />
+            <field eval="16" name="priority"/>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<data>
+					<field name="close_move" position="after">
+						<field name="sale_order_line_id" />
+                        <field name="so_line_item_set_ids" />
+					</field>
+				</data>
+			</field>
+		</record>
+
+    </data>
+</openerp>

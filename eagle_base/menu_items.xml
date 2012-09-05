@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!--
+  File: menu_items.xml
+  Module: eagle_base
+
+  Created by cyp@open-net.ch
+
+  Copyright (c) 2011 Open-Net Ltd. All rights reserved.
+-->
+<openerp>
+	<data>
+
+		<menuitem 
+			name="Contracts"  
+			id="eagle_menu_contracts_root" 
+			action="eagle_action_contract_filter_all_tree"
+			sequence="1" 
+			icon="terp-personal" 
+			web_icon="images/logo_button.png"
+			web_icon_hover="images/logo_button_hover.png"
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+		<menuitem 
+			name="All Contracts by customers" 
+			id="eagle_menu_contracts_all_form" 
+			action="eagle_action_contract_all_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-accessories-archiver" 
+			sequence="11" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+		<menuitem 
+			name="Offers" 
+			id="eagle_menu_contracts_draft_form" 
+			action="eagle_action_contract_filter_draft_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-folder-orange"
+			sequence="12" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+		<menuitem 
+			name="Installations" 
+			id="eagle_menu_contracts_inst_form" 
+			action="eagle_action_contract_filter_inst_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-folder-green" 
+			sequence="13" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+		<menuitem 
+			name="Productions" 
+			id="eagle_menu_contracts_prod_form" 
+			action="eagle_action_contract_filter_prod_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-folder-green" 
+			sequence="14" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+		<menuitem 
+			name="Closed Contracts" 
+			id="eagle_menu_contracts_close_form" 
+			action="eagle_action_contract_filter_close_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-folder-blue" 
+			sequence="15" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+		<menuitem 
+			name="My Contracts" 
+			id="eagle_menu_contracts_my_form" 
+			action="eagle_action_contract_filter_my_form" 
+			parent="eagle_menu_contracts_root" 
+			icon="terp-folder-yellow" 
+			sequence="16" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+        <menuitem
+			name="Warranties near the end" 
+			action="eagle_action_contract_near_end"
+			id="eagle_menu_contract_near_end"
+			parent="eagle_menu_contracts_root"
+			icon="STOCK_STOP" 
+			sequence="17" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+        <menuitem
+			name="All Contracts" 
+			action="eagle_action_contract_filter_all_tree"
+			id="eagle_menu_contract_all"
+			parent="eagle_menu_contracts_root"
+			icon="STOCK_APPLY" 
+			sequence="18" 
+			groups="eagle_base.group_contracts_viewers,eagle_base.group_contracts_editors,eagle_base.group_contracts_managers"/>
+
+		<menuitem 
+			name="Configuration" 
+			id="eagle_menu_config" 
+			parent="eagle_menu_contracts_root" 
+			sequence="50" 
+			groups="eagle_base.group_contracts_managers"/>
+
+        <menuitem 
+			action="eagle_action_product_recurrence_unit_view"  
+			id="eagle_action_product_recurrence_unit_menu" 
+			parent="eagle_menu_config" 
+			sequence="1"
+			groups="eagle_base.group_contracts_managers,eagle_base.group_contracts_editors"/>
+
+        <menuitem 
+			action="eagle_action_warranty_view"  
+			id="eagle_action_warranty_menu" 
+			parent="eagle_menu_config" 
+			sequence="100"
+			groups="eagle_base.group_contracts_managers,eagle_base.group_contracts_editors"/>
+
+		<menuitem 
+			action="eagle_config.eagle_action_config_params_view" 
+			id="eagle_action_parameters_menu" 
+			parent="eagle_menu_config" 
+			sequence="101"
+			groups="eagle_base.group_contracts_managers,eagle_base.group_contracts_editors"/>
+
+		<menuitem 
+			action="eagle_config.eagle_action_modules_view" 
+			id="eagle_action_modules_menu" 
+			parent="eagle_menu_config" 
+			sequence="102"
+			groups="eagle_base.group_contracts_managers,eagle_base.group_contracts_editors"/>
+	</data>
+</openerp>

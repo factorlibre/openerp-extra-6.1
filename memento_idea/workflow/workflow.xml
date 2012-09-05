@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	   <!--  Idea Workflow --> 
+       <record model="workflow" id="idea_wkf">
+            <field name="name">memento_idea.workflow</field>
+            <field name="osv">memento_idea.idea</field>
+            <field name="on_create" eval="True"/>
+        </record>
+        
+        <!--  Draft Activity --> 
+        <record model="workflow.activity" id="idea_wkf_draft_act">
+            <field name="name">draft</field>
+            <field name="wkf_id" ref="idea_wkf"/>
+            <field name="kind">dummy</field>
+            <field name="flow_start" eval="True"/>
+        </record>
+        
+        <!--  Confirmed Activity -->  
+        <record model="workflow.activity" id="idea_wkf_confirmed_act">
+            <field name="name">confirmed</field>
+            <field name="wkf_id" ref="idea_wkf"/>
+            <field name="kind">function</field>
+            <field name="action">action_confirm()</field>
+        </record>
+
+        <!--  Closed Activity --> 
+        <record model="workflow.activity" id="idea_wkf_closed_act">
+            <field name="name">closed</field>
+            <field name="wkf_id" ref="idea_wkf"/>
+            <field name="kind">function</field>
+            <field name="action">action_close()</field>
+            <field name="flow_stop" eval="True"/>
+        </record>
+          
+        <!--  Draft > Confirmed Transition --> 
+        <record model="workflow.transition" id="idea_wkf_draft_confirmed_trans">
+            <field name="act_from" ref="idea_wkf_draft_act" />
+            <field name="act_to" ref="idea_wkf_confirmed_act" />
+            <field name="signal">button_confirm</field>
+            <field name="role_id" ref="role_idea_validator"/>
+        </record>
+        
+        <!--  Confirmed > Closed Transition -->
+        <record model="workflow.transition" id="idea_wkf_confirmed_closed_trans">
+            <field name="act_from" ref="idea_wkf_confirmed_act" />
+            <field name="act_to" ref="idea_wkf_closed_act" />
+            <field name="signal">button_close</field>
+            <field name="role_id" ref="role_idea_validator"/>
+        </record>
+	</data>
+</openerp>

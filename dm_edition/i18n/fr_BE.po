@@ -1,0 +1,277 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dm_edition
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-11-25 07:28:44+0000\n"
+"PO-Revision-Date: 2009-11-25 07:28:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: dm_edition
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_view:wizard_manage_job_batch,add_in_batch:0
+#: wizard_button:wizard_manage_job_batch,init,add_in_batch:0
+msgid "Add jobs to Batch"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,batch_id:0
+#: wizard_field:wizard_manage_job_batch,add_in_batch,job_batch_id:0
+msgid "Job Batch"
+msgstr ""
+
+#. module: dm_edition
+#: view:dm.campaign.document.job:0
+msgid "Campaign Jobs"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document,verso:0
+#: field:dm.offer.document,verso:0
+msgid "Verso"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_button:wizard_manage_job_batch,add_in_batch,message:0
+msgid "Add In Batch"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,sorting_rule_id:0
+msgid "Sorting Rule"
+msgstr ""
+
+#. module: dm_edition
+#: view:dm.campaign.document.job.sorting_rule:0
+msgid "Campaign Sorting Rules"
+msgstr ""
+
+#. module: dm_edition
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,qty_limit:0
+msgid "Qty. limit"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.actions.act_window,name:dm_edition.act_dm_edition_job_campaign_batch_form
+#: model:ir.ui.menu,name:dm_edition.menu_dm_edition_campaign_job_batch
+msgid "All Campaign Document Job Batches"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_button:wizard_manage_job_batch,message,end:0
+msgid "Ok"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.module.module,shortdesc:dm_edition.module_meta_information
+msgid "Edition for DM"
+msgstr ""
+
+#. module: dm_edition
+#: selection:dm.campaign.document.job,state:0
+#: selection:dm.campaign.document.job.batch,state:0
+msgid "Pending"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,name:0
+#: field:dm.campaign.document.job.batch,name:0
+#: field:dm.campaign.document.job.sorting_rule,name:0
+msgid "Name"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document,printer:0
+#: field:dm.offer.document,printer:0
+msgid "Printer"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,by_layout:0
+msgid "By Layout"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_button:wizard_manage_job_batch,init,new_batch:0
+#: wizard_view:wizard_manage_job_batch,new_batch:0
+msgid "Create Jobs Batch"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_button:wizard_manage_job_batch,new_batch,message:0
+msgid "Create Batch"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,campaign_document_ids:0
+msgid "Campaign Documents"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,by_product:0
+msgid "By Product"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.actions.act_window,name:dm_edition.act_dm_campaign_document_job_sorting_rule_form
+#: model:ir.ui.menu,name:dm_edition.menu_dm_campaign_document_job_sorting_rule_form
+msgid "All Document Job Sorting Rules"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.actions.act_window,name:dm_edition.act_dm_edition_campaign_job_form
+#: model:ir.ui.menu,name:dm_edition.menu_dm_edition_campaign_job_form
+msgid "All Campaign Document Jobs"
+msgstr ""
+
+#. module: dm_edition
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.model,name:dm_edition.model_dm_campaign_document_job
+msgid "dm.campaign.document.job"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.module.module,description:dm_edition.module_meta_information
+msgid "\n"
+"            This module adds edition for Direct Marketing.\n"
+"            "
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.batch,campaign_document_job_ids:0
+msgid "Campaign Document Jobs"
+msgstr ""
+
+#. module: dm_edition
+#: view:dm.campaign.document.job.batch:0
+msgid "Job Batches"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,by_customer_country:0
+msgid "By Customer Country"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,by_offer_step:0
+msgid "By Offer Step"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.offer.document,document_job_position:0
+msgid "Document Job Position"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document,campaign_document_job_position:0
+msgid "Campaign Document Job Position"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,code:0
+msgid "Code"
+msgstr ""
+
+#. module: dm_edition
+#: selection:dm.campaign.document.job,state:0
+#: selection:dm.campaign.document.job.batch,state:0
+msgid "Error"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,process_date:0
+msgid "Processing Date"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.model,name:dm_edition.model_dm_campaign_document_job_batch
+msgid "dm.campaign.document.job.batch"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document,printer_tray:0
+#: field:dm.offer.document,printer_tray:0
+msgid "Printer Tray"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job.sorting_rule,by_page_qty:0
+msgid "By Page Quantity"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document.job,state:0
+#: field:dm.campaign.document.job.batch,state:0
+msgid "State"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.offer.document,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.actions.wizard,name:dm_edition.wizard_manage_job_batch
+#: wizard_view:wizard_manage_job_batch,init:0
+#: wizard_view:wizard_manage_job_batch,message:0
+msgid "Manage Jobs Batch"
+msgstr ""
+
+#. module: dm_edition
+#: view:dm.offer.document:0
+msgid "Edition"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_field:wizard_manage_job_batch,new_batch,name:0
+msgid "Batch Name"
+msgstr ""
+
+#. module: dm_edition
+#: selection:dm.campaign.document.job,state:0
+#: selection:dm.campaign.document.job.batch,state:0
+msgid "Done"
+msgstr ""
+
+#. module: dm_edition
+#: field:dm.campaign.document,campaign_document_job:0
+msgid "Campaign Document Job"
+msgstr ""
+
+#. module: dm_edition
+#: model:ir.model,name:dm_edition.model_dm_campaign_document_job_sorting_rule
+msgid "dm.campaign.document.job.sorting_rule"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_button:wizard_manage_job_batch,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: dm_edition
+#: wizard_field:wizard_manage_job_batch,init,message:0
+#: wizard_field:wizard_manage_job_batch,message,message:0
+msgid "Message"
+msgstr ""
+

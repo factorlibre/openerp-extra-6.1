@@ -1,0 +1,1118 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* esale_joomla
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.9\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-04-13 06:18:34+0000\n"
+"PO-Revision-Date: 2010-04-13 06:18:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "Taxes Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.category_map.wizard.export,init,error:0
+#: wizard_field:esale_joomla.category_map.wizard.import,import,error:0
+#: wizard_field:esale_joomla.producttype_map.wizard.import,import,error:0
+#: wizard_field:esale_joomla.stocks,export,error:0
+#: wizard_field:esale_joomla.tax_map.wizard.export,init,error:0
+#: wizard_field:esale_joomla.tax_map.wizard.import,import,error:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,export,error:0
+#: wizard_field:esale_joomla.web.wizard.export.products,export,error:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,export,error:0
+#: wizard_field:esale_joomla.web.wizard.import.categories,import,error:0
+#: wizard_field:esale_joomla.web.wizard.import.producttypes,import,error:0
+#: wizard_field:esale_joomla.web.wizard.import.taxes,import,error:0
+msgid "Errors"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.category_map.wizard.import,import:0
+#: wizard_view:esale_joomla.category_map.wizard.import,init:0
+#: wizard_view:esale_joomla.web.wizard.import.categories,import:0
+#: wizard_view:esale_joomla.web.wizard.import.categories,init:0
+msgid "Web Categories Import"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttypeparam_map,esale_joomla_id:0
+msgid "Web Parameter Name"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.category_map:0
+#: model:ir.model,name:esale_joomla.model_esale_joomla_category_map
+msgid "eSale Web Categories Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.model,name:esale_joomla.model_esale_joomla_synclog
+msgid "eSale Import/Export log"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "Product Types Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.tax_map.wizard.export,init:0
+#: wizard_view:esale_joomla.web.wizard.export.taxes,export:0
+#: wizard_view:esale_joomla.web.wizard.export.taxes,init:0
+msgid "Taxes Export"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.tax_map.wizard.import,import:0
+#: wizard_view:esale_joomla.tax_map.wizard.import,init:0
+#: wizard_view:esale_joomla.web.wizard.import.taxes,import:0
+#: wizard_view:esale_joomla.web.wizard.import.taxes,init:0
+msgid "Taxes Import"
+msgstr ""
+
+#. module: esale_joomla
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,name:0
+msgid "Order Description"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,state:0
+msgid "Order State"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_order_form
+msgid "eSale Orders"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.stocks,init,target:0
+#: selection:esale_joomla.web.wizard.export.categories,init,target:0
+#: selection:esale_joomla.web.wizard.export.products,init,target:0
+#: selection:esale_joomla.web.wizard.export.taxes,init,target:0
+msgid "all rows"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order.line,product_uom_id:0
+msgid "Unit of Measure"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_category
+#: view:product.product:0
+msgid "Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,junk:0
+msgid " "
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,web_id:0
+#: wizard_field:esale_joomla.category_map.wizard.import,init,web_shop:0
+#: field:esale_joomla.order,web_id:0
+#: field:esale_joomla.product_map,web_id:0
+#: field:esale_joomla.producttype_map,web_id:0
+#: wizard_field:esale_joomla.producttype_map.wizard.import,init,web_shop:0
+#: wizard_field:esale_joomla.stocks,init,web_shop:0
+#: field:esale_joomla.synclog,web_id:0
+#: field:esale_joomla.tax_map,web_id:0
+#: wizard_field:esale_joomla.tax_map.wizard.import,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.export.products,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.import.categories,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.import.producttypes,init,web_shop:0
+#: wizard_field:esale_joomla.web.wizard.import.taxes,init,web_shop:0
+msgid "Web Shop"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.tax_map,esale_joomla_state_id:0
+msgid "Web State"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,zip:0
+msgid "Zip"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,esale_joomla_parent_id:0
+msgid "Parent"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_product_map
+msgid "Products Mappings"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,epartner_shipping_id:0
+msgid "Joomla Shipping Address"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.category_map.wizard.export,init,new:0
+#: wizard_field:esale_joomla.category_map.wizard.import,import,new:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,export,new:0
+#: wizard_field:esale_joomla.web.wizard.import.categories,import,new:0
+msgid "New Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.module.module,shortdesc:esale_joomla.module_meta_information
+msgid "eSale Interface - Joomla"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_producttype_map
+msgid "Product Types Mappings"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_order_tree
+msgid "Draft eSale Orders"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.synclog:0
+msgid "Web Synchronization Log"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.tax_map,esale_joomla_rate:0
+msgid "Web Rate"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_synch
+msgid "Synchronization"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "Cancel Order"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.tax_map.wizard.export,init,new:0
+#: wizard_field:esale_joomla.tax_map.wizard.import,import,new:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,export,new:0
+#: wizard_field:esale_joomla.web.wizard.import.taxes,import,new:0
+msgid "New Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,url:0
+msgid "URL"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.category_map.wizard.export,init,delete:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,export,delete:0
+msgid "Deleted Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,note:0
+msgid "Notes"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,order_id:0
+msgid "Sale Order"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_saleorders
+msgid "Import sale orders"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,tax_ids:0
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_tax
+msgid "Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.esale_joomla_category_action
+#: model:ir.ui.menu,name:esale_joomla.menu_product_category_action
+msgid "Products by Web Category"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,product_ids:0
+msgid "Products"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_web_import_producttype
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_producttypes
+msgid "Import Product Types"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "Web Shop Info"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_category_map_form
+msgid "esale_joomla.category_map"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,partner_invoice_id:0
+msgid "Invoice Address"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_definition
+msgid "Configuration"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.synclog,object:0
+#: field:esale_joomla.tax_map,tax_id:0
+msgid "Tax"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.producttype_map.wizard.import,import:0
+#: wizard_view:esale_joomla.producttype_map.wizard.import,init:0
+#: wizard_view:esale_joomla.web.wizard.import.producttypes,import:0
+#: wizard_view:esale_joomla.web.wizard.import.producttypes,init:0
+msgid "Product Types Import"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_producttype_map_form
+msgid "esale_joomla.producttype_map"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,esale_id:0
+msgid "eSale ID"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+#: field:esale_joomla.order.line,name:0
+msgid "Order Line"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.producttype_map:0
+msgid "Set by import"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_synclog_tree
+msgid "Website Import/Export log"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_button:esale_joomla.category_map.wizard.export,init,end:0
+#: wizard_button:esale_joomla.category_map.wizard.import,import,end:0
+#: wizard_button:esale_joomla.producttype_map.wizard.import,import,end:0
+#: wizard_button:esale_joomla.stocks,export,end:0
+#: wizard_button:esale_joomla.tax_map.wizard.export,init,end:0
+#: wizard_button:esale_joomla.tax_map.wizard.import,import,end:0
+#: wizard_button:esale_joomla.web.wizard.export.categories,export,end:0
+#: wizard_button:esale_joomla.web.wizard.export.products,export,end:0
+#: wizard_button:esale_joomla.web.wizard.export.taxes,export,end:0
+#: wizard_button:esale_joomla.web.wizard.import.categories,import,end:0
+#: wizard_button:esale_joomla.web.wizard.import.producttypes,import,end:0
+#: wizard_button:esale_joomla.web.wizard.import.taxes,import,end:0
+msgid "End"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.web.wizard.export.products,export,delete:0
+msgid "Deleted Products"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.producttype_map:0
+msgid "Parameters"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.category_map.wizard.export,init:0
+#: wizard_view:esale_joomla.web.wizard.export.categories,export:0
+#: wizard_view:esale_joomla.web.wizard.export.categories,init:0
+msgid "Web Categories Export"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,epartner_invoice_id:0
+msgid "Joomla Invoice Address"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,state:0
+msgid "State"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_web_export_category
+msgid "Export Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,order_lines:0
+msgid "Order Lines"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.category_map:0
+#: view:esale_joomla.tax_map:0
+msgid "Set by import/export"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.model,name:esale_joomla.model_esale_joomla_partner
+msgid "eShop Partner"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "imported"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,state:0
+#: field:esale_joomla.product_map,state:0
+#: field:esale_joomla.producttype_map,state:0
+#: field:esale_joomla.producttypeparam_map,state:0
+#: field:esale_joomla.tax_map,state:0
+msgid "state"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_web
+msgid "Web Shops"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "new"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttypeparam_map,producttype_map_id:0
+#: selection:esale_joomla.synclog,object:0
+msgid "Product Type"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,esale_joomla_name:0
+msgid "Web Name"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_product_map_export
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_products
+msgid "Export Products"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,category_ids:0
+msgid "Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "General Informations"
+msgstr ""
+
+#. module: esale_joomla
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web.exportlog:0
+msgid "Web Synchronization Logs"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_stocks
+msgid "Update stocks"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "deleted"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_saleorders
+msgid "Import eSales Orders"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "Create Addresses"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale
+msgid "eSale"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_tax_map_form
+msgid "esale_joomla.tax_map"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.category:0
+#: model:ir.model,name:esale_joomla.model_esale_joomla_category
+msgid "eSale Web Category"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttype_map,esale_joomla_name:0
+msgid "Web Product Type Name"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order.line,order_id:0
+msgid "eOrder Ref"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "Create Order"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "After having completed the above data, proceed to the taxes, languages and categories mapping. Go to the next tabs, import data form the website and complete the third column."
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "Configuration Instructions"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,object:0
+msgid "Object type"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.category_map.wizard.export,init:0
+#: wizard_view:esale_joomla.category_map.wizard.import,import:0
+#: wizard_view:esale_joomla.producttype_map.wizard.import,import:0
+#: wizard_view:esale_joomla.stocks,export:0
+#: wizard_view:esale_joomla.tax_map.wizard.export,init:0
+#: wizard_view:esale_joomla.tax_map.wizard.import,import:0
+#: wizard_view:esale_joomla.web.wizard.export.categories,export:0
+#: wizard_view:esale_joomla.web.wizard.export.products,export:0
+#: wizard_view:esale_joomla.web.wizard.export.taxes,export:0
+#: wizard_view:esale_joomla.web.wizard.import.categories,import:0
+#: wizard_view:esale_joomla.web.wizard.import.producttypes,import:0
+#: wizard_view:esale_joomla.web.wizard.import.taxes,import:0
+msgid "Result"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_wizard_esale_joomla_stocks
+msgid "Export Inventory Level"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_web_form
+msgid "esale_joomla.web"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.stocks,init,target:0
+#: selection:esale_joomla.web.wizard.export.categories,init,target:0
+#: selection:esale_joomla.web.wizard.export.products,init,target:0
+#: selection:esale_joomla.web.wizard.export.taxes,init,target:0
+msgid "new, modified and deleted since last export"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.model,name:esale_joomla.model_esale_joomla_order_line
+msgid "eSale Order line"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+msgid "exported"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttype_map,category_id:0
+#: selection:esale_joomla.synclog,object:0
+msgid "Category"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,partner_id:0
+msgid "Contact Address"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "Categories Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.category_map.wizard.export,init,log:0
+#: wizard_field:esale_joomla.category_map.wizard.import,import,log:0
+#: wizard_field:esale_joomla.producttype_map.wizard.import,import,log:0
+#: wizard_field:esale_joomla.stocks,export,log:0
+#: wizard_field:esale_joomla.tax_map.wizard.export,init,log:0
+#: wizard_field:esale_joomla.tax_map.wizard.import,import,log:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,export,log:0
+#: wizard_field:esale_joomla.web.wizard.export.products,export,log:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,export,log:0
+#: wizard_field:esale_joomla.web.wizard.import.categories,import,log:0
+#: wizard_field:esale_joomla.web.wizard.import.producttypes,import,log:0
+#: wizard_field:esale_joomla.web.wizard.import.taxes,import,log:0
+msgid "Log"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "Others data"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.model,name:esale_joomla.model_esale_joomla_web
+msgid "eCommerce Website"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_synclog_tree
+msgid "esale_joomla.synclog"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.tax_map:0
+#: model:ir.model,name:esale_joomla.model_esale_joomla_tax_map
+msgid "eSale Taxes Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.order,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,web_ref:0
+msgid "Web Ref"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.web.wizard.export.products,export,new:0
+msgid "New Products"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_button:esale_joomla.category_map.wizard.import,init,import:0
+#: wizard_button:esale_joomla.producttype_map.wizard.import,init,import:0
+#: selection:esale_joomla.synclog,type:0
+#: wizard_button:esale_joomla.tax_map.wizard.import,init,import:0
+#: wizard_button:esale_joomla.web.wizard.import.categories,init,import:0
+#: wizard_button:esale_joomla.web.wizard.import.producttypes,init,import:0
+#: wizard_button:esale_joomla.web.wizard.import.taxes,init,import:0
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_category_map_import
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_producttype_map_import
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_tax_map_import
+msgid "Import"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_tax_map
+msgid "Taxes Mappings"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.category:0
+msgid "Product Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_web_export_taxes
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_web_export_tax
+msgid "Export Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,date:0
+msgid "Log date"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,status:0
+#: field:esale_joomla.product_map,status:0
+#: field:esale_joomla.tax_map,status:0
+msgid "Status"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.tax_map.wizard.export,init,delete:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,export,delete:0
+msgid "Deleted Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.producttype_map.wizard.import,import,update:0
+#: wizard_field:esale_joomla.web.wizard.import.producttypes,import,update:0
+msgid "Updated Product Types"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.stocks,init,target:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,init,target:0
+#: wizard_field:esale_joomla.web.wizard.export.products,init,target:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,init,target:0
+msgid "Which Rows"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,partner_shipping_id:0
+msgid "Shipping Address"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "Sales Orders"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_web_import_taxes
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_web_import_tax
+msgid "Import Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_category_form
+msgid "esale_joomla.category"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,esale_joomla_id:0
+#: field:esale_joomla.product_map,esale_joomla_id:0
+#: field:esale_joomla.producttype_map,esale_joomla_id:0
+#: field:esale_joomla.tax_map,esale_joomla_id:0
+msgid "Web ID"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,active:0
+msgid "Active"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_esale_joomla_web_import_category
+msgid "Import Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.tax_map.wizard.export,init,update:0
+#: wizard_field:esale_joomla.tax_map.wizard.import,import,update:0
+#: wizard_field:esale_joomla.web.wizard.export.taxes,export,update:0
+#: wizard_field:esale_joomla.web.wizard.import.taxes,import,update:0
+msgid "Updated Taxes"
+msgstr ""
+
+#. module: esale_joomla
+#: field:product.product,esale_category_ids:0
+msgid "eSale Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,language_id:0
+msgid "Language"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,errors:0
+msgid "Number of errors"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.stocks,export:0
+#: wizard_view:esale_joomla.stocks,init:0
+#: wizard_view:esale_joomla.web.wizard.export.products,export:0
+#: wizard_view:esale_joomla.web.wizard.export.products,init:0
+msgid "Products Export"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.category_map.wizard.import,init:0
+#: wizard_view:esale_joomla.producttype_map.wizard.import,init:0
+#: wizard_view:esale_joomla.tax_map.wizard.import,init:0
+#: wizard_view:esale_joomla.web.wizard.import.categories,init:0
+#: wizard_view:esale_joomla.web.wizard.import.producttypes,init:0
+#: wizard_view:esale_joomla.web.wizard.import.taxes,init:0
+msgid "Select the Web Shop to import"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.web.wizard.export.products,init:0
+msgid "To add a Product for exporting, just add a Web Category to it."
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_web_import_categories
+msgid "Import Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.product_map:0
+#: model:ir.model,name:esale_joomla.model_esale_joomla_product_map
+msgid "eSale Products Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.model,name:esale_joomla.model_esale_joomla_producttypeparam_map
+msgid "eSale Product Type Parameters Mapping"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order.line,product_qty:0
+msgid "Quantity"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.producttype_map.wizard.import,import,new:0
+#: wizard_field:esale_joomla.web.wizard.import.producttypes,import,new:0
+msgid "New Product Types"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.stocks,export,update:0
+#: wizard_field:esale_joomla.web.wizard.export.products,export,update:0
+msgid "Updated Products"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttype_map,producttypeparam_map_ids:0
+msgid "Product Type Parameters"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.esale_joomla_category_action_form
+#: model:ir.ui.menu,name:esale_joomla.menu_product_category_action_form
+msgid "Products Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "modified"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.stocks,init:0
+#: wizard_view:esale_joomla.web.wizard.export.categories,init:0
+#: wizard_view:esale_joomla.web.wizard.export.products,init:0
+#: wizard_view:esale_joomla.web.wizard.export.taxes,init:0
+msgid "Select the Web Shop and the rows to export"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.order,state:0
+msgid "Done"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,shop_id:0
+msgid "Sale Shop"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "error"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_button:esale_joomla.category_map.wizard.import,init,end:0
+#: selection:esale_joomla.order,state:0
+#: wizard_button:esale_joomla.producttype_map.wizard.import,init,end:0
+#: wizard_button:esale_joomla.stocks,init,end:0
+#: wizard_button:esale_joomla.tax_map.wizard.import,init,end:0
+#: wizard_button:esale_joomla.web.wizard.export.categories,init,end:0
+#: wizard_button:esale_joomla.web.wizard.export.products,init,end:0
+#: wizard_button:esale_joomla.web.wizard.export.taxes,init,end:0
+#: wizard_button:esale_joomla.web.wizard.import.categories,init,end:0
+#: wizard_button:esale_joomla.web.wizard.import.producttypes,init,end:0
+#: wizard_button:esale_joomla.web.wizard.import.taxes,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,city:0
+msgid "City"
+msgstr ""
+
+#. module: esale_joomla
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: esale_joomla
+#: selection:esale_joomla.category_map,state:0
+#: selection:esale_joomla.category_map,status:0
+#: selection:esale_joomla.product_map,state:0
+#: selection:esale_joomla.product_map,status:0
+#: selection:esale_joomla.producttype_map,state:0
+#: selection:esale_joomla.producttypeparam_map,state:0
+#: selection:esale_joomla.tax_map,state:0
+#: selection:esale_joomla.tax_map,status:0
+msgid "synchronized"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.module.module,description:esale_joomla.module_meta_information
+msgid "Joomla (Virtuemart) eCommerce interface synchronisation.\n"
+"Users can order on the website, orders are automatically imported in OpenERP.\n"
+"\n"
+"You can export products, product's categories, account taxes,  stock level and create links between\n"
+"categories of products, taxes and languages.\n"
+""
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.ui.menu,name:esale_joomla.menu_action_esale_joomla_category_map
+msgid "Web Categories Mappings"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order.line,price_unit:0
+msgid "Unit Price"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.web:0
+msgid "eSale Web Shop"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,email:0
+msgid "Mail"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,producttypes_ids:0
+msgid "Product Types"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttypeparam_map,attribute:0
+msgid "Product Attribute"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_view:esale_joomla.category_map.wizard.export,init:0
+#: wizard_view:esale_joomla.category_map.wizard.import,import:0
+#: wizard_view:esale_joomla.producttype_map.wizard.import,import:0
+#: wizard_view:esale_joomla.stocks,export:0
+#: wizard_view:esale_joomla.tax_map.wizard.export,init:0
+#: wizard_view:esale_joomla.tax_map.wizard.import,import:0
+#: wizard_view:esale_joomla.web.wizard.export.categories,export:0
+#: wizard_view:esale_joomla.web.wizard.export.products,export:0
+#: wizard_view:esale_joomla.web.wizard.export.taxes,export:0
+#: wizard_view:esale_joomla.web.wizard.import.categories,import:0
+#: wizard_view:esale_joomla.web.wizard.import.producttypes,import:0
+#: wizard_view:esale_joomla.web.wizard.import.taxes,import:0
+msgid "Error Log"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order.line,product_id:0
+#: field:esale_joomla.product_map,product_id:0
+#: selection:esale_joomla.synclog,object:0
+msgid "Product"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_field:esale_joomla.category_map.wizard.export,init,update:0
+#: wizard_field:esale_joomla.category_map.wizard.import,import,update:0
+#: wizard_field:esale_joomla.web.wizard.export.categories,export,update:0
+#: wizard_field:esale_joomla.web.wizard.import.categories,import,update:0
+msgid "Updated Web Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,user_id:0
+msgid "Exported By"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_order_form
+#: model:ir.actions.act_window,name:esale_joomla.action_order_tree
+#: model:ir.model,name:esale_joomla.model_esale_joomla_order
+msgid "esale_joomla.order"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,address:0
+msgid "Address"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,password:0
+msgid "Password"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,address_id:0
+msgid "Partner Address"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category,name:0
+#: field:esale_joomla.partner,name:0
+#: field:esale_joomla.web,name:0
+msgid "Name"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "eSale Order"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.partner,country:0
+msgid "Country"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.order,date_order:0
+msgid "Date Ordered"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.category_map,category_id:0
+msgid "Web Category"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.producttypeparam_map,esale_joomla_name:0
+msgid "Web Parameter Label"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_web_export_categories
+msgid "Export Categories"
+msgstr ""
+
+#. module: esale_joomla
+#: model:ir.actions.act_window,name:esale_joomla.action_esale_joomla_product_map_form
+msgid "esale_joomla.product_map"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order.line:0
+msgid "eSales Order Line"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.web,login:0
+msgid "Login"
+msgstr ""
+
+#. module: esale_joomla
+#: field:product.product,image:0
+msgid "Image Name"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.product_map,export_date:0
+msgid "Export date"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.order:0
+msgid "States"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.tax_map,esale_joomla_country_id:0
+msgid "Web Country"
+msgstr ""
+
+#. module: esale_joomla
+#: wizard_button:esale_joomla.stocks,init,export:0
+#: selection:esale_joomla.synclog,type:0
+#: wizard_button:esale_joomla.web.wizard.export.categories,init,export:0
+#: wizard_button:esale_joomla.web.wizard.export.products,init,export:0
+#: wizard_button:esale_joomla.web.wizard.export.taxes,init,export:0
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_category_map_export
+#: model:ir.actions.wizard,name:esale_joomla.wizard_esale_joomla_tax_map_export
+msgid "Export"
+msgstr ""
+
+#. module: esale_joomla
+#: field:esale_joomla.synclog,type:0
+msgid "Synchronization direction"
+msgstr ""
+
+#. module: esale_joomla
+#: view:esale_joomla.producttype_map:0
+#: model:ir.model,name:esale_joomla.model_esale_joomla_producttype_map
+msgid "eSale Product Types Mapping"
+msgstr ""
+

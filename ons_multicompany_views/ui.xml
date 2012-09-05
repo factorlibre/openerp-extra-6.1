@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+			<record id="ons_view_products_2-form" model="ir.ui.view">
+				<field name="name">ons_view_products_2.form</field>
+				<field name="model">product.product</field>
+				<field name="type">form</field>
+				<field name="inherit_id" ref="product.product_normal_form_view"/>
+				<field name="arch" type="xml">
+					<page position="after" string="Descriptions">
+						<page string="Companies">
+									<field name="ons_companies" colspan="4" nolabel="1"/>
+						</page>
+					</page>
+				</field>
+			</record>
+
+<!--	2010-03-17/Cyp: disabled (version 1.0.3)
+			<record id="ons_view_addr_2-form" model="ir.ui.view">
+				<field name="name">ons_view_addr_2.form</field>
+				<field name="model">res.partner.address</field>
+				<field name="type">form</field>
+				<field name="inherit_id" ref="base.view_partner_address_form1"/>
+				<field name="arch" type="xml">
+					<form string="Address" position="inside">
+						<field name="ons_companies" colspan="4" nolabel="1"/>
+					</form>
+				</field>
+			</record>
+-->
+			<record id="ons_view_partner_2-form" model="ir.ui.view">
+				<field name="name">ons_view_partner_2.form</field>
+				<field name="model">res.partner</field>
+				<field name="type">form</field>
+				<field name="inherit_id" ref="base.view_partner_form"/>
+				<field name="arch" type="xml">
+					<page position="after" string="General">
+						<page string="Companies">
+							<field name="ons_companies" colspan="4" nolabel="1"/>
+						</page>
+					</page>
+				</field>
+			</record>
+
+	</data>
+</openerp>

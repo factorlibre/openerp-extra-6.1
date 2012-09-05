@@ -1,0 +1,280 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* pxgo_openoffice_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.0-rc1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-10-29 08:32:31+0000\n"
+"PO-Revision-Date: 2010-10-29 10:40+0100\n"
+"Last-Translator: omar <omar@pexego.es>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml,openoffice_report:0
+msgid "Is OpenOffice Report?"
+msgstr ""
+
+#: model:ir.module.module,description:pxgo_openoffice_reports.module_meta_information
+msgid ""
+"Pexego OpenOffice Reports - Reporting Engine based on Relatorio and "
+"OpenOffice.\n"
+"\n"
+"Reporting engine that uses OpenOffice and Relatorio to create reports from "
+"several kind of templates (like an OpenDocument Text, a Microsoft Excel "
+"spreadsheet, or even a PowerPoint!) \n"
+"and export them on several formats (i.e.: it may create a Microsoft Excel "
+"spreadsheet from a OpenDocument spreadshet template).\n"
+"\n"
+"Based on Relatorio (see http://relatorio.openhex.org/), PyODConverter "
+"(http://www.artofsolving.com/opensource/pyodconverter) and the Jasper "
+"Reports addon from Koo (https://code.launchpad.net/openobject-client-kde).\n"
+"\n"
+"\n"
+"*** FEATURES ***\n"
+"\n"
+"- The next template formats and output formats are supported:\n"
+"  * Text (any text format supported by OpenOffice like odt, doc, rtf, txt): "
+"\n"
+"        pdf, html, odt, doc (MS Word 97), rtf, txt\n"
+"  * Web (hmtl): \n"
+"        pdf, odt\n"
+"  * Spreadsheet (ods, xls): \n"
+"        pdf, html, ods, xls (MS Excel 97), csv\n"
+"  * Presentation (odp, ppt): \n"
+"        pdf, html, odp, ppt\n"
+"  * Drawing (odg): \n"
+"        pdf, swf\n"
+"\n"
+"- Subreports (inserting another file anywhere on the document) are supported "
+"for text formats,\n"
+"  they are recursive (will be processed by the template system and may have "
+"their own subreports)\n"
+"  and they can be loaded from a binary field.\n"
+"  \n"
+"- Dynamic insertion of images is supported too, and they can be loaded from "
+"a file or a binary field.\n"
+"\n"
+"- Conditional statements (if) and repetitive structures (for) are supported. "
+"And they can be used in tables.\n"
+"\n"
+"\n"
+"*** TEMPLATE LANGUAGE ***\n"
+"\n"
+"Templates are based on Relatorio and Genshi, you might find useful this "
+"introduction to Relatorio: "
+"http://relatorio.openhex.org/wiki/IndepthIntroduction\n"
+"\n"
+"Some additional features, mainly related to OpenERP, where added:\n"
+"\n"
+"    - Support for subreports (text documents only).\n"
+"        * From OpenObject binary fields:\n"
+"            ${ subreport(object.file_field, object.filename_field) }\n"
+"        * From files on disk:\n"
+"            ${ subreport(filepath='/tmp/something.odt') }\n"
+"        * From buffers (open files, strings):\n"
+"            ${ subreport(source=buffer, source_format='odt') }\n"
+"\n"
+"    - Translations using the OpenERP translation engine:\n"
+"        ${ _(\"Object Name\") }\n"
+"\n"
+"    - Access to attachments of an OpenObject:\n"
+"        * Get the attachment names:\n"
+"            ${ ', '.join([a.name for a in get_attachments(object)]) }\n"
+"        * Use the first attachment as a subreport (only text documents):\n"
+"            ${ subreport(get_attachments(object)[0].datas, "
+"get_attachments(object)[0].datas_fname) }\n"
+"\n"
+"    - Using images from fields:\n"
+"        * On a frame name (see Relatorio documentation about including "
+"images),\n"
+"            instead of \"image: (file, mimetype)'\",\n"
+"            use \"image: field_to_image(object.field)\"\n"
+"\n"
+"\n"
+"*** REQUIREMENTS ***\n"
+"\n"
+"- Relatorio (0.5.0 or better) for basic templating (odt->odt and ods->ods "
+"only),\n"
+"- OpenOffice (2.4 or better) and PyUno for file conversions and subreports.\n"
+"- Python Imaging Library (PIL) if you want to use images from binary "
+"fields.\n"
+"- PyCha (3.0 or better) if you want to use charts.\n"
+"- Genshi (0.5.1 or better) for using ${} instead of relatorio://\n"
+"\n"
+"        "
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/openoffice_report.py:0
+#, python-format
+msgid "Error loading the OpenOffice template: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.ui.menu,name:pxgo_openoffice_reports.openoffice_reports_menu
+msgid "OpenOffice Reports"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/openoffice_report.py:0
+#, python-format
+msgid "Error processing the OpenOffice template: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: view:ir.actions.report.xml:0
+msgid "openoffice Reports"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.actions.report.xml,name:pxgo_openoffice_reports.report_pxgo_openoffice_reports_partner_demo_ods
+msgid "OpenOffice Reports Demo (ODS->XLS)"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: view:ir.actions.report.xml:0
+#: field:ir.actions.report.xml,openoffice_file_ids:0
+msgid "Files"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: view:ir.actions.report.xml.file:0
+msgid "Openoffice Reports File"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.actions.act_window,name:pxgo_openoffice_reports.ir_action_report_openoffice
+#: view:ir.actions.report.xml:0
+#: model:ir.ui.menu,name:pxgo_openoffice_reports.menu_ir_action_report_openoffice
+msgid "Openoffice Reports"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: view:ir.actions.report.xml:0
+msgid "Update from attachments"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/oo_template.py:0
+#, python-format
+msgid "Error inserting file %s on the OpenOffice document: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/report_xml.py:0
+#, python-format
+msgid "There is more than one report marked as default"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/oo_template.py:0
+#, python-format
+msgid "Error saving file %s with OpenOffice: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: view:ir.actions.report.xml:0
+msgid "Groups"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml.file,report_id:0
+msgid "Report"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/__openerp__.py:0
+#, python-format
+msgid "Object Name"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/oo_template.py:0
+#, python-format
+msgid "Error loading file %s with OpenOffice: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/oo_template.py:0
+#, python-format
+msgid "Couldn't connect to OpenOffice. Make sure you have an OpenOffice instance running and listening on the %s port. Details: %s"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.model,name:pxgo_openoffice_reports.model_ir_actions_report_xml_file
+msgid "ir.actions.report.xml.file"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml.file,default:0
+msgid "Default"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/report_xml.py:0
+#, python-format
+msgid "No report has been marked as default."
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: code:addons/pxgo_openoffice_reports/report_xml.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml,openoffice_model_id:0
+msgid "Model"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.actions.report.xml,name:pxgo_openoffice_reports.report_pxgo_openoffice_reports_partner_demo
+msgid "OpenOffice Reports Demo (ODT->PDF)"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml.file,filename:0
+msgid "File Name"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: model:ir.model,name:pxgo_openoffice_reports.model_ir_actions_report_xml
+msgid "ir.actions.report.xml"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: field:ir.actions.report.xml.file,file:0
+msgid "File"
+msgstr ""
+
+#. module: pxgo_openoffice_reports
+#: sql_constraint:ir.model.fields:0
+msgid "Size of the field can never be less than 1 !"
+msgstr ""
+

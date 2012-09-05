@@ -1,0 +1,23 @@
+options:
+    width: 400
+    height: 400
+    background:
+        hide: true
+    legend:
+        hide: true
+    padding: 
+        bottom: 10
+        left: 70
+        right: 10
+        top: 10
+    axis:
+        labelFontSize: 16
+chart:
+    type: pie
+    output_type: png
+    dataset:
+        {% for partner in objects %}
+        - - ${partner.id}
+          - - [0, $partner.credit_limit]
+        {% end %}
+

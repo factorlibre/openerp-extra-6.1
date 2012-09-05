@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="481" height="728"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="6.0" leading="8"/>
+    <paraStyle name="P3" fontName="Times-Bold" fontSize="11.0" leading="14"/>
+    <paraStyle name="P4" fontName="Times-Bold" fontSize="11.0" leading="14" textColor="#0066cc"/>
+    <paraStyle name="P5" fontName="Times-Roman" fontSize="18.0" leading="22" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P6" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="10.0"/>
+    <paraStyle name="P8" fontName="Times-Bold" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="10.0"/>
+    <paraStyle name="P9" fontName="Times-BoldItalic" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P10" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P11" fontName="Times-Roman" fontSize="11.0" leading="14" spaceBefore="0.0" spaceAfter="0.0" textColor="#0066cc"/>
+    <paraStyle name="P12" fontName="Times-Roman"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="annotation text" fontName="Times-Roman" fontSize="10.0" leading="13"/>
+    <images/>
+  </stylesheet>
+  <story>
+    <para style="P2">[[ repeatIn(objects,'offer') ]][[setLang(user.context_lang) ]]</para>
+    <para style="P5">OFFER</para>
+    <para style="P5">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="83.0,109.0,86.0,204.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P8">Offer Code :</para>
+        </td>
+        <td>
+          <para style="P8">[[ offer.code ]]</para>
+        </td>
+        <td>
+          <para style="P8">Offer Name :</para>
+        </td>
+        <td>
+          <para style="P8">[[ offer.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="241.0,241.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P8">Recommended trademark :</para>
+        </td>
+        <td>
+          <para style="P8">[[ offer.recommended_trademark_id.name ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+
+    <para style="P9">Steps :</para>
+    <blockTable colWidths="482.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P6">[[ repeatIn(offer.step_ids,'step_ids') ]]</para>
+          <section>
+            <para style="P6">
+              <font color="white"> </font>
+            </para>
+            <para style="P10">
+              <font face="Times-Roman">Type : </font>
+              <font face="Times-Roman">[[ step_ids.type_id.code ]]</font>
+            </para>
+            <blockTable colWidths="69.0,115.0,76.0,219.0" style="Table3">
+              <tr>
+                <td>
+                  <para style="P10">Step code :</para>
+                </td>
+                <td>
+                  <para style="P11">[[ step_ids.code ]]</para>
+                </td>
+                <td>
+                  <para style="P10">Step Name:</para>
+                </td>
+                <td>
+                  <para style="P11">[[ step_ids.name ]]</para>
+                </td>
+              </tr>
+            </blockTable>
+            <para style="P10">Number of Documents : <font face="Times-Roman">[[ step_ids.doc_number ]]</font></para>
+          </section>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="482.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P3">DESCRIPTION</para>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+          <para style="P4">[[ offer.notes ]]</para>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>

@@ -1,0 +1,882 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* pxgo_account_admin_tools
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.3\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-06-14 10:03+0000\n"
+"PO-Revision-Date: 2012-06-18 14:33+0000\n"
+"Last-Translator: jmartin (Zikzakmedia) <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-08-28 08:39+0000\n"
+"X-Generator: Launchpad (build 15864)\n"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Severity"
+msgstr "Gravetat"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid ""
+"The invoice references have been succesfully set on the account moves!"
+msgstr ""
+"Les referències de les factures s'han establert amb èxit als assentaments "
+"comptables!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:264
+#, python-format
+msgid ""
+"The debit quantity %s doesn't match with a regex float value in account %s"
+msgstr ""
+"La quantitat %s del deure no quadra amb la expressió regular de número real "
+"en el compte %s"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid ""
+"The selected moves will be revalidated, that will regenerate their analytic "
+"lines."
+msgstr ""
+"Els assentaments seleccionats es revalidaran, el que generarà les seves "
+"línies analítiques."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid ""
+"Only the account code and name are needed, the rest of the required account "
+"data will be filled based on its brother accounts (same code begining)."
+msgstr ""
+"Només es necessiten el codi comptable i el nom, la resta de les dades "
+"comptables requerides s'ompliran sobre els seus comptes germans (mateix codi "
+"d'inici)."
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_move_importer
+msgid "Account move importation wizard"
+msgstr "Assistent importació assentament comptable"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "This wizard will import accounts from a CSV file."
+msgstr "Aquest assistent importarà comptes des d'un arxiu CSV."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid ""
+"The reference will be set, for the selected account moves, to the "
+"reference/number of the (supplier/customer) invoice."
+msgstr ""
+"La referència per als assentaments comptables s'establirà a la "
+"referència/número de la factura de client/proveïdor."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_account_importer,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,company_id:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,company_id:0
+msgid "Company"
+msgstr "Companyia"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Voucher"
+msgstr "Diari de vals"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Account moves to update"
+msgstr "Assentaments comptables a actualitzar"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Updated account moves"
+msgstr "Assentaments comptables actualitzats"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Search for moves"
+msgstr "Cerca per assentaments"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "A list with the problems found (if any) will be shown afterwards."
+msgstr ""
+"Després es mostrarà una llista amb els problemes trobats (si n'hi han hagut)."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Filter for the moves to update"
+msgstr "Filtre dels assentaments a actualitzar"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,account_id:0
+msgid "Account"
+msgstr "Compte"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Input file"
+msgstr "Arxiu d'entrada"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,input_file_name:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,input_file_name:0
+msgid "File name"
+msgstr "Nom de l'arxiu"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:136
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:202
+#, python-format
+msgid "You need to select a file!"
+msgstr "Heu de seleccionar un arxiu!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:170
+#, python-format
+msgid ""
+"The account %d (%s) is children of %d (%s), but is not listed as its "
+"children on the preordered tree"
+msgstr ""
+"El compte %d (%s) és fill de %d (%s), però no està llistat como el seu fill "
+"en l'arbre pre-ordre."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Informative"
+msgstr "Informatiu"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidate selected moves"
+msgstr "Revalida assentaments seleccionats"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidate Account Moves"
+msgstr "Revalida assentaments comptables"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid ""
+"This wizard will set the reference in account moves associated with "
+"invoices, that don't match the invoice reference/number."
+msgstr ""
+"Aquest assistent establirà les referències amb les factures en els "
+"assentaments comptables associats, el que no concorda amb la "
+"referència/número de la factura."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:136
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:202
+#, python-format
+msgid "UserError"
+msgstr "Error d'usuari"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/revalidate_moves.py:76
+#, python-format
+msgid "Revalidate Moves"
+msgstr "Revalida assentaments"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_set_partner_in_moves
+msgid "Set Partner in Moves Wizard"
+msgstr "Assistent per establir empreses en els assentaments"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid ""
+"You may now search for account moves with missing analytic lines on the "
+"given periods, or you may skip this step and select the moves by hand."
+msgstr ""
+"Ara podeu cercar assentaments comptables amb línies analítiques perdudes en "
+"el període, o podeu saltar-vos aquest pas i seleccionar els assentaments "
+"manualment."
+
+#. module: pxgo_account_admin_tools
+#: help:pxgo_account_admin_tools.pxgo_account_importer,overwrite:0
+msgid "If the account already exists, overwrite its name?"
+msgstr "Si el compte encara existeix, sobreescriure el seu nom?"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_name_regexp:0
+msgid "Name regexp"
+msgstr "Expressió regular nom"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Ready"
+msgstr "Preparat"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Select the parameters for the account move"
+msgstr "Seleccioneu els paràmetres per l'apunt comptable"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:359
+#, python-format
+msgid "Imported account moves"
+msgstr "Assentaments comptables importats"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,overwrite:0
+msgid "Overwrite"
+msgstr "Sobreescriure"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Not parent of its children"
+msgstr "No és pare dels seus fills"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Note: It will fail if any of the accounts do not exist in OpenERP."
+msgstr "Nota: Fallarà si algun compte no existeix a OpenERP."
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Record format"
+msgstr "Format del registre"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Parameters"
+msgstr "Paràmetres"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Contra"
+msgstr "Contra"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Select the parameters for the account"
+msgstr "Seleccioneu els paràmetres per al compte"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools_import
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Import"
+msgstr "Importa"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Account importer"
+msgstr "Importador de comptes"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid ""
+"You may now search for account moves, on the given periods, whose reference "
+"does not match the invoice reference or number; or you may skip this step "
+"and select the moves by hand."
+msgstr ""
+"Ara podeu cercar assentaments comptables dels períodes, les referències dels "
+"quals no concorden amb la referència o número de la factura, o podeu saltar-"
+"vos aquest pas i seleccionar els assentaments manualment."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,ref:0
+msgid "Ref"
+msgstr "Referència"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/set_partner_in_moves.py:78
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_set_partner_in_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_set_partner_in_moves
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+#, python-format
+msgid "Set Partner Reference in Moves"
+msgstr "Estableix la referència a empresa als assentaments"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,account_receivable_id:0
+msgid "Account Receivable"
+msgstr "Compte a cobrar"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Medium"
+msgstr "Mitjana"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:278
+#, python-format
+msgid ""
+"The credit quantity %s doesn't match with a regex float value in account %s"
+msgstr ""
+"La quantitat %s del haver no quadra amb la expressió regular de número real "
+"en el compte %s"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_name_index:0
+msgid "Name field"
+msgstr "Camp nom"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid ""
+"This wizard will set the receivable/payable account of the partners, in "
+"moves and invoices where a generic receivable/payable account was used "
+"instead."
+msgstr ""
+"Aquest assistent establirà el compte a pagar/cobrar de l'empresa, en "
+"assentaments i factures on s'usa en lloc dels comptes genèrics a "
+"cobrar/pagar."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_partner_ref_regexp:0
+msgid "Partner Ref regexp"
+msgstr "Expressió regular empresa"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Set partner in moves"
+msgstr "Estableix empreses en assentaments"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_move_importer
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_move_importer
+msgid "Import Account Move from CSV"
+msgstr "Importa assentaments comptables des de CSV"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_move_partner_account
+msgid "Move Partner Account Wizard"
+msgstr "Assistent empresa assentaments comptables"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Not children of its parent"
+msgstr "No són fills del seu pare"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_credit_index:0
+msgid "Credit field"
+msgstr "Camp haver"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Account move parameters"
+msgstr "Paràmetres assentaments comptables"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Account move importer"
+msgstr "Importador assentaments comptables"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Account move lines to update"
+msgstr "Apunts comptables a actualitzar"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid ""
+"You may now search for move lines with missing partner reference on the "
+"given periods, or you may skip this step and select the move lines by hand."
+msgstr ""
+"Ara hauríeu de cercar apunts comptables al període amb referències a "
+"empreses perdudes, o podeu saltar-vos aquest pas i seleccionar un apunt "
+"manualment."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_debit_regexp:0
+msgid "Debit regexp"
+msgstr "Expressió regular deure"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "The moves have been revalidated sucessfully!"
+msgstr "Els apunts s'han revalidat amb èxit!"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "Check"
+msgstr "Comprova"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid ""
+"This wizard will set the partner reference in moves where the "
+"receivable/payable account (of a single partner) is used."
+msgstr ""
+"Aquest assistent establirà la referència a empresa en assentaments on s'usa "
+"el compte a cobrar/pagar (d'una única empresa)."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/set_invoice_ref_in_moves.py:76
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_set_invoice_ref_in_moves
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_set_invoice_ref_in_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_set_invoice_ref_in_moves
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#, python-format
+msgid "Set Invoice Reference in Moves"
+msgstr "Estableix referència a factures en assentaments"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_importer
+msgid "Account importation wizard"
+msgstr "Assistent importació comptes"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Purchase"
+msgstr "Diari de compres"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Accounts to replace with partner accounts"
+msgstr "Comptes a reemplaçar amb comptes d'empreses"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "Select the CSV file with the lines for the account move"
+msgstr "Seleccioneu l'arxiu CSV amb els apunts per l'assentament comptable."
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:120
+#, python-format
+msgid "Problems Found in the Chart of Accounts"
+msgstr "Problemes trobats en els comptes comptables"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "File format"
+msgstr "Format de l'arxiu"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Find moves not matching the invoice reference/number"
+msgstr ""
+"Troba assentaments sense concordança amb la referència/número de factura"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_chart_checker
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_chart_checker
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "Check the Chart of Accounts"
+msgstr "Comprova els comptes comptables"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,move_line_ids:0
+msgid "Move Lines"
+msgstr "Apunts"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_importer.py:240
+#, python-format
+msgid "Imported accounts"
+msgstr "Comptes importats"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "Low"
+msgstr "Baixa"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_thousands_separator:0
+msgid "Thousands sep."
+msgstr "Separador de milers"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+msgid "Account parameters"
+msgstr "Paràmetres comptables"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Status"
+msgstr "Estat"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:149
+#, python-format
+msgid ""
+"The account %d (%s) is listed as children of %d (%s) in the preordered tree, "
+"but its parent is %d (%s)"
+msgstr ""
+"El compte %d (%s) està llistat com a fill de %d (%s) en l'arbre pre-ordre, "
+"però el seu pare és %d (%s)."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Cash Receipt"
+msgstr "Rebut de caixa"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_ref_index:0
+msgid "Ref field"
+msgstr "Camp referència"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker,problem_ids:0
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker_problem:0
+msgid "Problems"
+msgstr "Problemes"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/move_partner_account.py:169
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_move_partner_account
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_move_partner_account
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#, python-format
+msgid "Set Partner Accounts in Moves"
+msgstr "Estableix comptes d'empresa en assentaments"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,date:0
+msgid "Date"
+msgstr "Data"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_chart_checker
+msgid "Account Chart Checker Wizard"
+msgstr "Assistent per comprovar comptes comptables"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_code_index:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_code_index:0
+msgid "Code field"
+msgstr "Camp codi"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,wizard_id:0
+msgid "Wizard"
+msgstr "Assistent"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Cash Payment"
+msgstr "Pagament de caixa"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid ""
+"The partner's receivable/payable accounts have been set succesfuly on the "
+"account moves!"
+msgstr ""
+"Els comptes d'empresa a pagar/cobrar s'han establert amb èxit als "
+"assentaments comptables!"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:263
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:277
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:292
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,problem:0
+msgid "Problem"
+msgstr "Problema"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Type"
+msgstr "Tipus"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+msgid "Set invoice reference in moves"
+msgstr "Estableix referència a factura en assentaments"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,period_id:0
+msgid "Period"
+msgstr "Període"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid ""
+"This wizard will revalidate the account moves, so their analytic lines are "
+"regenerated."
+msgstr ""
+"Aquest assistent revalida els assentaments comptables, motiu pel qual les "
+"seves línies analítiques es regeneraran."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#: selection:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "Done"
+msgstr "Realitzat"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,period_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_partner_in_moves,period_ids:0
+msgid "Periods"
+msgstr "Períodes"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid ""
+"- It will verify that the preordered tree of accounts, that OpenERP uses to "
+"calculate the amounts, matches the parent-children structure"
+msgstr ""
+"Verificarà que l'arbre pre-ordre de comptes, que OpenERP utilitza per "
+"calcular quantitats, coincideix amb l'estructura pare-fill."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_revalidate_moves,move_ids:0
+#: field:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,move_ids:0
+msgid "Moves"
+msgstr "Assentaments"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools
+msgid "Admin Tools"
+msgstr "Eines administració"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_move_partner_account,account_payable_id:0
+msgid "Account Payable"
+msgstr "Compte a pagar"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_code_regexp:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_code_regexp:0
+msgid "Code regexp"
+msgstr "Expressió regular codi"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid ""
+"The partner reference will be set, for the selected account move lines, to "
+"the one associated with the receivable/payable account."
+msgstr ""
+"La referència a l'empresa, per als apunts comptables seleccionats, "
+"s'establirà a la que està associada amb el compte a cobrar/pagar."
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_ref_regexp:0
+msgid "Ref regexp"
+msgstr "Expressió regular referència"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_chart_checker:0
+msgid "This wizard will search for problems in the Chart of Accounts:"
+msgstr "Aquest assistent cercarà problemes en els comptes comptables:"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_revalidate_moves
+msgid "Revalidate Account Moves Wizard"
+msgstr "Assistent per a revalidar assentaments comptables"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_partner_ref_index:0
+msgid "Partner Ref field"
+msgstr "Camp empresa"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Journal Sale"
+msgstr "Diari de vendes"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker,state:0
+#: selection:pxgo_account_admin_tools.pxgo_move_partner_account,state:0
+#: selection:pxgo_account_admin_tools.pxgo_revalidate_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves,state:0
+#: selection:pxgo_account_admin_tools.pxgo_set_partner_in_moves,state:0
+msgid "New"
+msgstr "Nou"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,description:0
+msgid "Description"
+msgstr "Descripció"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_admin_tools_repair
+msgid "Check and Repair"
+msgstr "Comprova i repara"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Skip"
+msgstr "Salta"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_quotechar:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_quotechar:0
+msgid "Quote"
+msgstr "Delimitador"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Bank Receipt"
+msgstr "Rebut bancari"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_chart_checker.py:178
+#, python-format
+msgid ""
+"The account %d (%s) is a top level account, but is listed as a child on the "
+"preordered tree"
+msgstr ""
+"El compte %d (%s) és del nivell comptable més alt, però està llistat com a "
+"fill en l'arbre pre-ordre."
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_revalidate_moves
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_revalidate_moves
+msgid "Revalidate Account Moves (Regenerate Analytic Lines)"
+msgstr "Revalida assentaments comptables (regenera línies analítiques)"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+msgid "This wizard will import one account move from a CSV file."
+msgstr ""
+"Aquest assistent importarà un assentament comptable des d'un arxiu CSV."
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_move_importer,type:0
+msgid "Bank Payment"
+msgstr "Pagament bancari"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_decimal_separator:0
+msgid "Decimal sep."
+msgstr "Separador de decimals"
+
+#. module: pxgo_account_admin_tools
+#: code:addons/pxgo_account_admin_tools/account_move_importer.py:292
+#, python-format
+msgid "Account not found: %s!"
+msgstr "Compte no trobat: %s!"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_move_partner_account:0
+msgid "Set partner accounts"
+msgstr "Estableix comptes empresa"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Find moves with missing partner reference"
+msgstr "Troba assentaments amb referència a empreses perdudes"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_importer,csv_delimiter:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_delimiter:0
+msgid "Delimiter"
+msgstr "Separador"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_debit_index:0
+msgid "Debit field"
+msgstr "Camp deure"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Find moves with missing analytic lines"
+msgstr "Troba assentaments amb línies analítiques perdudes"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.model,name:pxgo_account_admin_tools.model_pxgo_account_admin_tools_pxgo_account_chart_checker_problem
+msgid "Account Chart Problem"
+msgstr "Problema comptes comptables"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid ""
+"The partner references have been succesfully set on the account moves!"
+msgstr ""
+"Les referències a empreses s'han establert amb èxit als assentaments "
+"comptables!"
+
+#. module: pxgo_account_admin_tools
+#: model:ir.actions.act_window,name:pxgo_account_admin_tools.action_pxgo_account_importer
+#: model:ir.ui.menu,name:pxgo_account_admin_tools.menu_action_pxgo_account_importer
+msgid "Import Accounts from CSV"
+msgstr "Importa comptes des de CSV"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Account moves to revalidate"
+msgstr "Assentaments comptables a revalidar"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_revalidate_moves:0
+msgid "Revalidated account moves"
+msgstr "Assentaments comptables revalidats"
+
+#. module: pxgo_account_admin_tools
+#: selection:pxgo_account_admin_tools.pxgo_account_chart_checker_problem,severity:0
+msgid "High"
+msgstr "Alta"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,csv_credit_regexp:0
+msgid "Credit regexp"
+msgstr "Expressió regular haver"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_account_importer:0
+#: field:pxgo_account_admin_tools.pxgo_account_importer,input_file:0
+#: view:pxgo_account_admin_tools.pxgo_account_move_importer:0
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,input_file:0
+msgid "File"
+msgstr "Arxiu"
+
+#. module: pxgo_account_admin_tools
+#: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
+msgid "Updated account move lines"
+msgstr "Apunts actualitzats"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,oerp_partner_ref_field:0
+msgid "OpenERP Partner field"
+msgstr "Camp empresa OpenERP"
+
+#. module: pxgo_account_admin_tools
+#: field:pxgo_account_admin_tools.pxgo_account_move_importer,journal_id:0
+msgid "Journal"
+msgstr "Diari"
