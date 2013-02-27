@@ -21,7 +21,7 @@
 import time
 import netsvc
 from osv import fields, osv
-import ir
+
 
 class sale_order(osv.osv):
     _inherit = "sale.order"
